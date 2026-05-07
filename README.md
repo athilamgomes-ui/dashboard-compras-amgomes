@@ -1,7 +1,10 @@
 # Dashboard de Compras — Grupo A.M. Gomes
 
+**Acesso da equipe:** https://athilamgomes-ui.github.io/dashboard-compras-amgomes/dashboard_compras.html
+
 Monitora cobertura de estoque (60 dias + 15 lead time) e sugere compras das
-marcas curva A e B nas 4 lojas: L1, L3, L4, L5.
+marcas curva A e B nas 4 lojas: L1, L3, L4, L5. Atualizado automaticamente
+seg-sáb às 12:30 e 18:30 (cron + GitHub push).
 
 ## Estrutura
 
