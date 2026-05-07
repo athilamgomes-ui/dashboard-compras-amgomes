@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dashboard de Compras — Grupo A.M. Gomes</title>
+<style>
+  :root {
+    --bg: #fafbfc;
+    --card: #ffffff;
+    --border: #e6e8eb;
+    --text: #2c3e50;
+    --muted: #7a8794;
+    --accent: #3b82f6;
+    --ok: #10b981;
+    --warn: #f59e0b;
+    --crit: #ef4444;
+    --curva-a: #eef4ff;
+    --curva-b: #f6f6fb;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "SF Pro Display", "Segoe UI", Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 24px;
+    font-size: 14px;
+  }
+  h1 { margin: 0 0 6px; font-size: 22px; font-weight: 600; }
+  .subtitle { color: var(--muted); font-size: 13px; margin-bottom: 18px; }
+  .toolbar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 16px; }
+  .toolbar select, .toolbar button {
+    padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px;
+    background: #fff; font-size: 13px; color: var(--text);
+  }
+  .toolbar button { cursor: pointer; }
+  .toolbar button:hover { background: #f0f2f5; }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(4, 1fr); margin-bottom: 16px; }
+  .kpi { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+  .kpi .label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .5px; }
+  .kpi .value { font-size: 22px; font-weight: 600; margin-top: 4px; }
+  .kpi .sub { color: var(--muted); font-size: 12px; margin-top: 2px; }
+  .card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+    padding: 16px; margin-bottom: 16px;
+  }
+  .card h2 { margin: 0 0 12px; font-size: 15px; font-weight: 600; color: var(--text); }
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  th, td { padding: 8px 10px; text-align: right; border-bottom: 1px solid var(--border); }
+  th:first-child, td:first-child, td.brand { text-align: left; }
+  thead th {
+    position: sticky; top: 0;
+    background: #f7f9fb; color: var(--muted); font-weight: 600;
+    font-size: 11.5px; text-transform: uppercase; letter-spacing: .3px;
+  }
+  tr.curva-a td { background: var(--curva-a); }
+  tr.curva-b td { background: var(--curva-b); }
+  tr.curva-a td.brand::before, tr.curva-b td.brand::before {
+    display: inline-block; padding: 1px 6px; border-radius: 4px;
+    font-size: 10.5px; font-weight: 600; margin-right: 6px;
+  }
+  tr.curva-a td.brand::before { content: "A"; background: #dbeafe; color: #1e40af; }
+  tr.curva-b td.brand::before { content: "B"; background: #ede9fe; color: #5b21b6; }
+  td.cob-ok    { color: var(--ok);   font-weight: 600; }
+  td.cob-warn  { color: var(--warn); font-weight: 600; }
+  td.cob-crit  { color: var(--crit); font-weight: 700; }
+  td.sug { font-weight: 600; }
+  td.sug.has { color: var(--crit); }
+  .caret { display: inline-block; width: 12px; color: var(--muted); font-size: 10px; margin-right: 2px; }
+  tr.produtos-row > td { padding: 0 10px 6px; background: #fafbfc !important; }
+  tr.produtos-row table { font-size: 12px; }
+  tr.produtos-row th { font-size: 10.5px; }
+  tr:hover td:not(.brand) { background-color: #f0f4f8 !important; }
+  .legend { color: var(--muted); font-size: 12px; margin-top: 8px; }
+  .footer { color: var(--muted); font-size: 12px; text-align: center; margin-top: 24px; }
+  .muted { color: var(--muted); }
+  #status-empty { padding: 30px; text-align: center; color: var(--muted); }
+</style>
+</head>
+<body>
+  <h1>Dashboard de Compras</h1>
+  <div class="subtitle">
+    Grupo A.M. Gomes · cobertura-alvo 60 dias + lead time 15 dias ·
+    <span id="ts">carregando…</span>
+  </div>
+
+  <div class="toolbar">
+    <label>Loja:
+      <select id="filtro-loja">
+        <option value="ALL">Todas</option>
+        <option value="L1">L1 — Casa Altamira</option>
+        <option value="L3">L3 — Casa Itaituba</option>
+        <option value="L4">L4 — MissBeleza Altamira</option>
+        <option value="L5">L5 — MissBeleza Santarém</option>
+      </select>
+    </label>
+    <label>Curva:
+      <select id="filtro-curva">
+        <option value="ALL">A + B</option>
+        <option value="A">Somente A</option>
+        <option value="B">Somente B</option>
+      </select>
+    </label>
+    <label>Status:
+      <select id="filtro-status">
+        <option value="ALL">Todos</option>
+        <option value="CRIT">Crítico (&lt; 60d)</option>
+        <option value="WARN">Atenção (60–90d)</option>
+        <option value="OK">OK (&gt; 90d)</option>
+      </select>
+    </label>
+    <button onclick="window.location.reload()">↻ Atualizar página</button>
+  </div>
+
+  <div class="grid" id="kpis"></div>
+
+  <div class="card">
+    <h2>📦 Compras mês a mês · por marca × loja (ano corrente)</h2>
+    <div id="tabela-mensal"></div>
+  </div>
+
+  <div class="card">
+    <h2>📋 Sugestões de compra · ordenadas por urgência</h2>
+    <div id="tabela-sugestoes"></div>
+    <div class="legend">
+      cobertura = (estoque atual + em trânsito) ÷ (vendas 60d ÷ 60) ·
+      sugestão = vendas/dia × (60 + 15) − estoque atual − em trânsito
+    </div>
+  </div>
+
+  <div class="footer" id="rodape">—</div>
+
+<script src="dados.js"></script>
+<script>
+const STATUS = {
+  CRIT: { cls: "cob-crit", limite: 60 },
+  WARN: { cls: "cob-warn", limite: 90 },
+  OK:   { cls: "cob-ok",   limite: Infinity }
+};
+
+function classifica(c) {
+  if (c < 60) return "CRIT";
+  if (c < 90) return "WARN";
+  return "OK";
+}
+
+const fmtUnid = n => (n||0).toLocaleString('pt-BR', { maximumFractionDigits: 0 }) + ' un';
+const fmtBRL  = fmtUnid; // valores estão em peças, manter alias para compatibilidade
+const fmtNum  = n => (n||0).toLocaleString('pt-BR', { maximumFractionDigits: 0 });
+
+let DATA = null;
+const NOMES_LOJA = {
+  L1: 'Casa da Beleza Altamira',
+  L3: 'Casa da Beleza Itaituba',
+  L4: 'MissBeleza Altamira',
+  L5: 'MissBeleza Santarém'
+};
+
+async function carregar() {
+  // 1ª tentativa: window.DADOS injetado por dados.js (funciona em file://)
+  if (window.DADOS) {
+    DATA = window.DADOS;
+  } else {
+    // Fallback: fetch (servido via http)
+    try {
+      const resp = await fetch('dados.json?t=' + Date.now());
+      DATA = await resp.json();
+    } catch (e) {
+      document.getElementById('ts').textContent = '⚠️ dados.js/json não encontrado — rode a skill dashboard-compras-update.';
+      return;
+    }
+  }
+  document.getElementById('ts').textContent = 'gerado em ' + (DATA.gerado_em || '?');
+  render();
+}
+
+function render() {
+  if (!DATA) return;
+  const filtroLoja  = document.getElementById('filtro-loja').value;
+  const filtroCurva = document.getElementById('filtro-curva').value;
+  const filtroStat  = document.getElementById('filtro-status').value;
+
+  let sug = (DATA.sugestoes || []).filter(s => {
+    if (filtroLoja !== 'ALL' && s.loja !== filtroLoja) return false;
+    if (filtroCurva !== 'ALL' && s.curva !== filtroCurva) return false;
+    if (filtroStat !== 'ALL' && classifica(s.cobertura_dias) !== filtroStat) return false;
+    return true;
+  });
+
+  // KPIs
+  const totSug = sug.reduce((a,s) => a + s.sugestao_compra, 0);
+  const crits = sug.filter(s => classifica(s.cobertura_dias) === 'CRIT').length;
+  const warns = sug.filter(s => classifica(s.cobertura_dias) === 'WARN').length;
+  const oks   = sug.filter(s => classifica(s.cobertura_dias) === 'OK').length;
+  document.getElementById('kpis').innerHTML = `
+    <div class="kpi"><div class="label">Marcas monitoradas</div><div class="value">${sug.length}</div><div class="sub">curva A + B (filtradas)</div></div>
+    <div class="kpi"><div class="label">Sugestão total</div><div class="value">${fmtUnid(totSug)}</div><div class="sub">peças p/ cobrir 60+15 dias</div></div>
+    <div class="kpi"><div class="label">Críticas</div><div class="value" style="color:var(--crit)">${crits}</div><div class="sub">cobertura &lt; 60 dias</div></div>
+    <div class="kpi"><div class="label">Atenção / OK</div><div class="value">${warns} / ${oks}</div><div class="sub">60–90d / acima de 90d</div></div>
+  `;
+
+  // Tabela de sugestões
+  let html = `<table>
+    <thead><tr>
+      <th>Marca</th><th>Curva</th>
+      <th>Vendas 60d (un)</th><th>Estoque (un)</th><th>Trânsito (un)</th>
+      <th>Cobertura (dias)</th><th>Sugestão (un)</th>
+    </tr></thead><tbody>`;
+  if (sug.length === 0) {
+    html += `<tr><td colspan="7" id="status-empty">Sem dados para o filtro selecionado.</td></tr>`;
+  } else {
+    sug.forEach((s, idx) => {
+      const stat = classifica(s.cobertura_dias);
+      const cls = 'curva-' + s.curva.toLowerCase();
+      const rowId = `sug-${idx}`;
+      html += `<tr class="${cls}" data-key="${s.loja}|${s.marca}" onclick="toggleProdutos('${rowId}', '${s.loja}', '${s.marca.replace(/'/g, "\\'")}')" style="cursor:pointer">
+        <td><span class="caret" id="caret-${rowId}">▶</span> <span class="brand">${s.marca}</span></td>
+        <td>${s.curva}</td>
+        <td>${fmtUnid(s.venda_60d)}</td>
+        <td>${fmtUnid(s.saldo_atual)}</td>
+        <td>${fmtUnid(s.transito)}</td>
+        <td class="${STATUS[stat].cls}">${s.cobertura_dias === 9999 ? '∞' : s.cobertura_dias}</td>
+        <td class="sug ${s.sugestao_compra > 0 ? 'has' : ''}">${fmtUnid(s.sugestao_compra)}</td>
+      </tr>
+      <tr id="prod-${rowId}" class="produtos-row" style="display:none"><td colspan="7"></td></tr>`;
+    });
+  }
+  html += `</tbody></table>`;
+  document.getElementById('tabela-sugestoes').innerHTML = html;
+
+  // Tabela mensal: compras por MARCA × LOJA × MÊS em R$
+  const meses = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+  const fmtRS = n => 'R$ ' + (n||0).toLocaleString('pt-BR', {minimumFractionDigits:2, maximumFractionDigits:2});
+  const lojasFilt = filtroLoja === 'ALL' ? ['L1','L3','L4','L5'] : [filtroLoja];
+  let m = `<table>
+    <thead><tr>
+      <th>Marca</th>
+      ${meses.map(x => `<th>${x}</th>`).join('')}
+      <th>Total ${(DATA.periodo && DATA.periodo.ano) || ''}</th>
+    </tr></thead><tbody>`;
+  const linhasMarca = [];
+  (DATA.marcas || []).forEach(brand => {
+    const mu = brand.marca.toUpperCase();
+    let curva = '';
+    for (const lj of lojasFilt) {
+      const cv = (DATA.curva && DATA.curva[lj]) || {};
+      if ((cv.A||[]).some(x => x.toUpperCase() === mu)) { curva = 'A'; break; }
+      if ((cv.B||[]).some(x => x.toUpperCase() === mu)) { curva = 'B'; }
+    }
+    if (!curva) return;
+    if (filtroCurva !== 'ALL' && filtroCurva !== curva) return;
+    linhasMarca.push({brand, curva});
+  });
+  linhasMarca.sort((a,b) => (a.curva.localeCompare(b.curva)) || a.brand.marca.localeCompare(b.brand.marca));
+  if (linhasMarca.length === 0) {
+    m += `<tr><td colspan="${meses.length+2}" id="status-empty">Sem dados — aguarde próxima atualização da skill.</td></tr>`;
+  } else {
+    linhasMarca.forEach(({brand, curva}) => {
+      // somar todas lojas filtradas por mês
+      let totalLinha = 0;
+      const cells = meses.map((_, i) => {
+        let v = 0;
+        lojasFilt.forEach(lj => {
+          const mensal = (brand.compras_mensais_rs && brand.compras_mensais_rs[lj]) || {};
+          v += mensal[i+1] || 0;
+        });
+        totalLinha += v;
+        return fmtRS(v);
+      });
+      m += `<tr class="curva-${curva.toLowerCase()}">
+        <td class="brand">${brand.marca}</td>
+        ${cells.map(c => `<td>${c}</td>`).join('')}
+        <td><strong>${fmtRS(totalLinha)}</strong></td>
+      </tr>`;
+    });
+  }
+  m += `</tbody></table>`;
+  document.getElementById('tabela-mensal').innerHTML = m;
+
+  document.getElementById('rodape').textContent =
+    `Atualização automática: 12h e 18h · Próxima atualização agendada via launchd`;
+}
+
+function toggleProdutos(rowId, loja, marca){
+  const tr = document.getElementById('prod-'+rowId);
+  const caret = document.getElementById('caret-'+rowId);
+  if (tr.style.display === 'none') {
+    // expandir — buscar produtos da marca
+    const m = (DATA.marcas || []).find(x => x.marca === marca);
+    if (!m || !m.produtos) {
+      tr.querySelector('td').innerHTML = '<em class="muted">Sem detalhamento de produtos disponível (próxima atualização da skill traz).</em>';
+    } else {
+      // filtrar produtos com vendas ou estoque na loja escolhida
+      const lojaUpper = loja;
+      const prods = m.produtos
+        .map(p => ({...p, _v: p[lojaUpper]?.vendas||0, _s: p[lojaUpper]?.saldo||0, _t: p[lojaUpper]?.transito||0}))
+        .filter(p => p._v !== 0 || p._s !== 0 || p._t !== 0)
+        .sort((a,b) => b._v - a._v);
+      let h = '<table style="margin:6px 0; background:#fafbfc"><thead><tr>'
+        +'<th style="text-align:left">Cód</th>'
+        +'<th style="text-align:left">Descrição</th>'
+        +'<th>Vendas 60d</th><th>Estoque</th><th>Trânsito</th>'
+        +'</tr></thead><tbody>';
+      if (prods.length === 0) {
+        h += `<tr><td colspan="5" style="text-align:center;color:var(--muted)">Sem produtos com movimentação em ${loja}</td></tr>`;
+      } else {
+        prods.forEach(p => {
+          h += `<tr><td style="text-align:left">${p.codigo}</td>`
+            +`<td style="text-align:left">${p.descricao}</td>`
+            +`<td>${fmtUnid(p._v)}</td>`
+            +`<td>${fmtUnid(p._s)}</td>`
+            +`<td>${fmtUnid(p._t)}</td></tr>`;
+        });
+        h += `<tr style="font-weight:600;border-top:2px solid var(--border)">`
+          +`<td colspan="2" style="text-align:right">TOTAL (${prods.length} produto${prods.length>1?'s':''})</td>`
+          +`<td>${fmtUnid(prods.reduce((a,p)=>a+p._v,0))}</td>`
+          +`<td>${fmtUnid(prods.reduce((a,p)=>a+p._s,0))}</td>`
+          +`<td>${fmtUnid(prods.reduce((a,p)=>a+p._t,0))}</td></tr>`;
+      }
+      h += '</tbody></table>';
+      tr.querySelector('td').innerHTML = h;
+    }
+    tr.style.display = '';
+    caret.textContent = '▼';
+  } else {
+    tr.style.display = 'none';
+    caret.textContent = '▶';
+  }
+}
+
+['filtro-loja','filtro-curva','filtro-status'].forEach(id => {
+  document.getElementById(id).addEventListener('change', render);
+});
+carregar();
+</script>
+</body>
+</html>

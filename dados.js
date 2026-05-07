@@ -1,0 +1,40082 @@
+window.DADOS = {
+  "gerado_em": "2026-05-07T11:59:14.377Z",
+  "periodo": {
+    "venda_ini": "08/03/2026",
+    "venda_fim": "07/05/2026",
+    "compra_ini": "01/01/2026",
+    "compra_fim": "07/05/2026",
+    "ano": 2026
+  },
+  "marcas": [
+    {
+      "marca": "Beauty Color",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 48,
+          "saldo_atual": 275,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 0,
+          "vendas_60d": 27,
+          "saldo_atual": 42,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 45,
+          "saldo_atual": 51,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 44,
+          "saldo_atual": 243,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "16637",
+          "descricao": "1/0 KIT BEAUTY COLOR ARGAN E COCO",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13428",
+          "descricao": "11/11 BEAUTY COLOR HOLLYWOOD BLONDES ARGAN E COCO",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "12159",
+          "descricao": "11/11 BEAUTY COLOR INDIVIDUAL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13448",
+          "descricao": "2/11  KIT BEAUTY COLOR PURISSI SEM AMONIA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13418",
+          "descricao": "3/0 KIT BEAUTY COLOR ARGAN E COCO",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "2282",
+          "descricao": "4/0 BEAUTY COLOR INDIVIDUAL",
+          "L1": {
+            "vendas": 1,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 9,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13419",
+          "descricao": "4/0 KIT BEAUTY COLOR ARGAN E COCO",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "20031",
+          "descricao": "4/0 KIT BEAUTY COLOR PURISSI  SEM AMONIA",
+          "L1": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "2281",
+          "descricao": "4/66 BEAUTY COLOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60350",
+          "descricao": "4/66 KIT BEAUTY COLOR",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "14242",
+          "descricao": "42/26 BEAUTY COLOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "2273",
+          "descricao": "5/0 BEAUTY COLOR INDIVIDUAL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 16,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "20034",
+          "descricao": "5/0 KIT BEAUTY  COLOR  PURISSI SEM AMONIA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "12839",
+          "descricao": "5/3 BEAUTY COLOR INDIVIDUAL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "42786",
+          "descricao": "5/3 KIT BEAUTY COLOR ARGAN E COCO",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13436",
+          "descricao": "5/37 BEAUTY COLOR INDIVIDUAL",
+          "L1": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13421",
+          "descricao": "5/37 KIT BEAUTY COLOR ARGAN E COCO",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "2276",
+          "descricao": "5/4 BEAUTY COLOR",
+          "L1": {
+            "vendas": 1,
+            "saldo": 13,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "41584",
+          "descricao": "5/4 KIT BEAUTY COLOR  ARGAN E COCO",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "20046",
+          "descricao": "6.35 BEAUTY COLOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "12163",
+          "descricao": "6/1 BEAUTY COLOR INDIVIDUAL",
+          "L1": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 15,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "2283",
+          "descricao": "6/34 BEAUTY COLOR INDIVIDUAL",
+          "L1": {
+            "vendas": 1,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 9,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "2272",
+          "descricao": "6/35 BEAUTY COLOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13431",
+          "descricao": "6/66 KIT BEAUTY COLOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "16639",
+          "descricao": "6/88 KIT BEAUTY COLOR",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "30100",
+          "descricao": "66.74 RUIVO DOCE DE LEITE BEAUTY COLOR INDIVIDUAL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "12156",
+          "descricao": "66/26 BEAUTY COLOR INDIVIDUAL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "2284",
+          "descricao": "66/46 BEAUTY COLOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13433",
+          "descricao": "66/46 KIT BEAUTY COLOR",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "42596",
+          "descricao": "7.7 KIT BEAUTY COLOR ARGAN E COCO",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "2278",
+          "descricao": "7/0 BEAUTY COLOR INDIVIDUAL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13425",
+          "descricao": "7/0 KIT BEAUTY COLOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18407",
+          "descricao": "7/1  KIT BEAUTY COLOR  ARGAN E COCO",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "2266",
+          "descricao": "7/1 BEAUTY COLOR INDIVIDUAL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "2280",
+          "descricao": "7/3 BEAUTY COLOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "12843",
+          "descricao": "7/3 KIT BEAUTY COLOR ARGAN E COCO",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "28980",
+          "descricao": "7/43 KIT BEAUTY COLOR PURISSI SEM AMONIA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59571",
+          "descricao": "76.66 KIT BEAUTY COLOR ARGAN E COCO RUIVOS PERFEIT",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59572",
+          "descricao": "76.77 KIT BEAUTY COLOR ARGAN E COCO RUIVOS PERFEIT",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13434",
+          "descricao": "76/44 KIT BEAUTY COLOR ARGAN E COCO RUIVOS PERFEIT",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62605",
+          "descricao": "76/44 KIT BEAUTY COLOR PURISSI SEM AMONIA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "12164",
+          "descricao": "8/0 BEAUTY COLOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "61011",
+          "descricao": "86.74 KIT BEAUTY COLOR ARGAN E COCO RUIVOS PERFEIT",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "30648",
+          "descricao": "AGUA OXIGENADA BELA E COE BEAUTY COLOR 70 ML 30VOL",
+          "L1": {
+            "vendas": 4,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "40822",
+          "descricao": "AGUA OXIGENADA BELA E COR BEAUTY COLOR  70 ML 10VO",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "30649",
+          "descricao": "AGUA OXIGENADA BELA E COR BEAUTY COLOR 70 ML 40VOL",
+          "L1": {
+            "vendas": 8,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "30651",
+          "descricao": "AGUA OXIGENADA BELA E COR BEAUTY COLOR VL20 1L",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "12167",
+          "descricao": "BEAUTY COLOR BELA COR KIT 11.11",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "12177",
+          "descricao": "COL BEAUTY COLOR BELA E COR 7/1",
+          "L1": {
+            "vendas": 3,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62607",
+          "descricao": "COL BEAUTY COLOR BELA E COR 96/44",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "45487",
+          "descricao": "COL CREME KIT BEAUTY COLOR SEM AMONIA 7.1",
+          "L1": {
+            "vendas": 3,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 32,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "45486",
+          "descricao": "COL CREME KIT BEAUTY COLOR SEM AMONIA 7.43",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 31,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "30464",
+          "descricao": "COL CREME PERM INDI BEAUTY COLOR 6.36",
+          "L1": {
+            "vendas": 1,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13860",
+          "descricao": "COND ANTIQ BIG HELP BOMB BEAUTY COLOR 315ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13865",
+          "descricao": "CR CURLY CREAM BOMB BEAUTY  COLOR 500ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13863",
+          "descricao": "CR CURLY ON BEAUTY COLOR 500ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13879",
+          "descricao": "GEL CURLY GELATINE BEAUTY  COLOR 400G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13878",
+          "descricao": "GEL LIQ MODELING CURLS  SEIVA BEAUTY COLOR 315ML",
+          "L1": {
+            "vendas": 4,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13869",
+          "descricao": "MS BOMB FORCE BEAUTY COLOR 400G",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13866",
+          "descricao": "MS NUT BOOSTER BEAUTY COLOR 400G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13867",
+          "descricao": "MS POWER BUTTER BEAUTY COLOR 400G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "12152",
+          "descricao": "OX 10 BEAUTY COLOR 1L",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "12148",
+          "descricao": "OX 10 BEAUTY COLOR 67,5ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 24,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "12153",
+          "descricao": "OX 20 BEAUTY COLOR 1L",
+          "L1": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "12154",
+          "descricao": "OX 30 BEAUTY COLOR 1L",
+          "L1": {
+            "vendas": 3,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "12155",
+          "descricao": "OX 40 BEAUTY COLOR 1L",
+          "L1": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "12151",
+          "descricao": "OX 40 BEAUTY COLOR 67,5ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": 53,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13857",
+          "descricao": "SH BIG WASH BOMB BEAUTY COLOR 315ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13856",
+          "descricao": "SH MAGIC WASH BEAUTY COLOR 315ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13877",
+          "descricao": "UMIDIFICADOR DAY AFTER BEAUTY  COLOR 315ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {},
+        "L4": {},
+        "L5": {}
+      }
+    },
+    {
+      "marca": "Belliz",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 5,
+          "saldo_atual": -47,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 0,
+          "vendas_60d": 10,
+          "saldo_atual": 42,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 4,
+          "saldo_atual": -22,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 25,
+          "saldo_atual": 33,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "12958",
+          "descricao": "TES LASER 6,5 BELLIZ",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "12955",
+          "descricao": "ADER UNHAS DISCO BELLIZ",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7569",
+          "descricao": "CAIXA TIPS BELLIZ 100 UNID FANCY",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 16,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58357",
+          "descricao": "CAIXA TIPS CURVA C TRANSP BELLIZ 100 UNI",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7576",
+          "descricao": "CILIOS BELLIZ GLAMOUR FASHION GLITTER",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63465",
+          "descricao": "COLA PARA CILIOS 48HRS PRETA BELLIZ",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62349",
+          "descricao": "DISCO DE ALGODAO BELLIZ",
+          "L1": {
+            "vendas": 0,
+            "saldo": -29,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7554",
+          "descricao": "ESC BELLIZ BLACK E GOLD VENTILADA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "64860",
+          "descricao": "ESC BELLIZ FLEX POCKET CASSIS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11723",
+          "descricao": "ESC ELEGANT OVAL BELLIZ 804",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "16233",
+          "descricao": "ESC GOL WHITE RAQUETE BELLIZ",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "16214",
+          "descricao": "ESC PENTE SOBRANC BELLIZ",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53173",
+          "descricao": "ESC. BELLIZ PINK CASSIS OVAL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53174",
+          "descricao": "ESC. BELLIZ PINK CASSIS VENTILADA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "20237",
+          "descricao": "ESCOVA BELLIZ GOLDEN WHITE OVAL",
+          "L1": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11722",
+          "descricao": "ESCOVA RAQUETE ELEGANT BELLIZ",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "16222",
+          "descricao": "ESP TEXT DUPLA BELLIZ",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3647",
+          "descricao": "ESPLH DE MESA RICCA BELLIZ",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58322",
+          "descricao": "ESPONJA BELLIZ MAKE UP MICROFRIBRA GOTA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "20238",
+          "descricao": "FIXADOR DE MAQUIAGEM 50ML BELLIZ",
+          "L1": {
+            "vendas": 0,
+            "saldo": -7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11799",
+          "descricao": "LAMINA  BARBEAR ENOX BELLIZ",
+          "L1": {
+            "vendas": 1,
+            "saldo": -25,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -18,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "61513",
+          "descricao": "PINCEL BELLIZ DUO FIBER",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60865",
+          "descricao": "PINCEL BELLIZ WOOD BASE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "75400",
+          "descricao": "PINCEL BELLIZ WOOD DELINEADOR ANGULADO",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "16139",
+          "descricao": "PINCEL WOOD BLUSH BELLIZ",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60164",
+          "descricao": "PINCEL WOOD BLUSH CHANFRADO BELLIZ",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11679",
+          "descricao": "TIPS CURVA NAT BELLIZ",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53175",
+          "descricao": "UNHAS BELLIZ BAILARINA",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3643",
+          "descricao": "PALITO DE MANICURE VERTIX BELLIZ",
+          "L1": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "274",
+          "descricao": "REMOVEDOR DE CALOS BELLIZ 587",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {},
+        "L4": {},
+        "L5": {}
+      }
+    },
+    {
+      "marca": "Bruna Tavares",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 2,
+          "saldo_atual": 2,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 0,
+          "vendas_60d": 2,
+          "saldo_atual": 4,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 0,
+          "saldo_atual": 0,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 0,
+          "saldo_atual": 0,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "61692",
+          "descricao": "BATOM  LIQ. BRUNA MATTE BRUNA TAVARES",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "42233",
+          "descricao": "BTO LIQ. KEL MATTE  BRUNA TAVARES",
+          "L1": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {},
+        "L4": {},
+        "L5": {}
+      }
+    },
+    {
+      "marca": "CBB",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 8781.12,
+          "vendas_60d": 115,
+          "saldo_atual": 660,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 3159.12,
+          "vendas_60d": 128,
+          "saldo_atual": 434,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 76,
+          "saldo_atual": -42,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 4541.44,
+          "vendas_60d": 35,
+          "saldo_atual": 575,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "203399",
+          "descricao": "BODY SPLASH GLOW SEDUCTION CBB 200ML",
+          "L1": {
+            "vendas": 3,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 5,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203397",
+          "descricao": "BODY SPLASH TROPICAL GLOW CBB 200ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 17,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 14,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203381",
+          "descricao": "CONDICIONADOR  NUTRY HORSE CBB 1L",
+          "L1": {
+            "vendas": 8,
+            "saldo": 36,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 12,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 9,
+            "saldo": -9,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 23,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203464",
+          "descricao": "CONDICIONADOR MAMONA E BABOSA CBB 1L",
+          "L1": {
+            "vendas": 0,
+            "saldo": 25,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 24,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203383",
+          "descricao": "CONDICIONADOR POS PROGRESSIVA CBB 1L",
+          "L1": {
+            "vendas": 1,
+            "saldo": 26,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 8,
+            "saldo": 13,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 27,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203378",
+          "descricao": "CONDICIONADOR VERNIZ CBB 1L",
+          "L1": {
+            "vendas": 7,
+            "saldo": 18,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 25,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203406",
+          "descricao": "CREME  SEBO DE CARNEIRO CBB 24OG",
+          "L1": {
+            "vendas": 2,
+            "saldo": 13,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 20,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203407",
+          "descricao": "CREME MAOS DE SEDA CBB 120G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203409",
+          "descricao": "DEO COLONIA DEUSA CBB 100ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": 28,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203410",
+          "descricao": "DEO COLONIA GOOD BOY CBB 100ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 27,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203391",
+          "descricao": "ESFOLIANTE BLUEBERRY SMOOTHIE CBB 300G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203390",
+          "descricao": "ESFOLIANTE DE MELANCIA CBB  300G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203389",
+          "descricao": "ESFOLIANTE GELATO DE PITAYA CBB 300G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "204131",
+          "descricao": "GEL CBB MASSAG SEBO 220G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203404",
+          "descricao": "GEL HIDRATANTE CAIPIRINHA CBB",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203403",
+          "descricao": "GEL HIDRATANTE MERENGUE E MORANGO CBB 200G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203402",
+          "descricao": "KIT BELLA MULHER AQUA GLOW CBB 200ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203400",
+          "descricao": "KIT BELLA MULHER VELVET GLOW CBB 200ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203398",
+          "descricao": "LOCAO HIDRATANTE TROPICAL GLOW CBB 200ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203379",
+          "descricao": "MASCARA CAPILAR DE VERNIZ CBB 1KG",
+          "L1": {
+            "vendas": 12,
+            "saldo": 29,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 23,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203465",
+          "descricao": "MASCARA MAMONA E BABOSA CBB 1L",
+          "L1": {
+            "vendas": 0,
+            "saldo": 37,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 24,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203385",
+          "descricao": "MASCARA NUTRY HORSE CBB 1L",
+          "L1": {
+            "vendas": 12,
+            "saldo": 30,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 11,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 10,
+            "saldo": -10,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 5,
+            "saldo": 20,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203382",
+          "descricao": "MASCARA POS PROGRESSSIVA CBB 1KG",
+          "L1": {
+            "vendas": 1,
+            "saldo": 38,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 7,
+            "saldo": 24,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 25,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203461",
+          "descricao": "PERFUME CAPILAR BON JOUR CBB 60ML",
+          "L1": {
+            "vendas": 4,
+            "saldo": 21,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 9,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203460",
+          "descricao": "PERFUME CAPILAR KARIM CBB 60ML",
+          "L1": {
+            "vendas": 3,
+            "saldo": 23,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 10,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 20,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203462",
+          "descricao": "PERFUME CAPILAR NEFERTARI CBB 60ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "204058",
+          "descricao": "POMADA MASSAG CANELA DE VELHO 220G CBB",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203388",
+          "descricao": "REPARADOR DE PONTAS NUTRY HORSE CBB 50ML",
+          "L1": {
+            "vendas": 4,
+            "saldo": 26,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 11,
+            "saldo": 25,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203467",
+          "descricao": "REPARADOR DE PONTAS OLEO DE COCO CBB 50ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 24,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 23,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203386",
+          "descricao": "REPARADOR DE PONTAS POS PROGRESSIVA CBB 50ML",
+          "L1": {
+            "vendas": 8,
+            "saldo": 21,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 5,
+            "saldo": 15,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203387",
+          "descricao": "REPARADOR DE PONTAS VERNIZ CBB 50ML",
+          "L1": {
+            "vendas": 11,
+            "saldo": 19,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 8,
+            "saldo": 31,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 6,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203394",
+          "descricao": "SABONETE INTIMO AROEIRA CBB 200ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203395",
+          "descricao": "SABONETE INTIMO BARBATIMAO CBB 200ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203396",
+          "descricao": "SABONETE INTIMO MORANGO CBB 200ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203384",
+          "descricao": "SHAMPOO  NUTRY HORSE CBB 1L",
+          "L1": {
+            "vendas": 13,
+            "saldo": 28,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 16,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 14,
+            "saldo": -14,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 47,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203463",
+          "descricao": "SHAMPOO MAMONA E BABOSA CBB 1L",
+          "L1": {
+            "vendas": 1,
+            "saldo": 36,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 35,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203380",
+          "descricao": "SHAMPOO POS PROGRESSIVA CBB 1L",
+          "L1": {
+            "vendas": 2,
+            "saldo": 37,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 10,
+            "saldo": 23,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 47,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203377",
+          "descricao": "SHAMPOO VERNIZ CBB 1L",
+          "L1": {
+            "vendas": 12,
+            "saldo": 27,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 47,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {
+          "4": 8781.12
+        },
+        "L3": {
+          "4": 3159.12
+        },
+        "L4": {},
+        "L5": {
+          "4": 4541.44
+        }
+      }
+    },
+    {
+      "marca": "Cinco",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 3828.88,
+          "vendas_60d": 7,
+          "saldo_atual": 124,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 3209.38,
+          "vendas_60d": 14,
+          "saldo_atual": 40,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 8,
+          "saldo_atual": 3,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 1,
+          "saldo_atual": 19,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "78081",
+          "descricao": "BASE VITAMINA CINCO  10ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78083",
+          "descricao": "COBERTURA VERNIZ CINCO 10ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203850",
+          "descricao": "EMULSAO REVELADORA CREMOSA 20V CINCO 100 ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 25,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 7,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18499",
+          "descricao": "OLEO BANANA DILUEX 5 CINCO 50ML",
+          "L1": {
+            "vendas": 3,
+            "saldo": 19,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18495",
+          "descricao": "REMOV LUTEX MEK 5 CINCO 100ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 38,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 5,
+            "saldo": 13,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18496",
+          "descricao": "REMOV LUTEX MEK 5 CINCO 500 ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 15,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 19,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18500",
+          "descricao": "SPRAY SEC ESM 5 CINCO 400NL",
+          "L1": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {
+          "1": 3828.88
+        },
+        "L3": {
+          "1": 3209.38
+        },
+        "L4": {},
+        "L5": {}
+      }
+    },
+    {
+      "marca": "Colorama",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 15,
+          "saldo_atual": 893,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 0,
+          "vendas_60d": 2,
+          "saldo_atual": 10,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 29,
+          "saldo_atual": 51,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 918.98,
+          "vendas_60d": 60,
+          "saldo_atual": 187,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "4119",
+          "descricao": "ESM COLORAMA  AMANHECER 8ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 40,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545008",
+          "descricao": "ESM COLORAMA  BATIDA COCO 8ML",
+          "L1": {
+            "vendas": 3,
+            "saldo": 143,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 10,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545018",
+          "descricao": "ESM COLORAMA  CAFE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 65,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60849",
+          "descricao": "ESM COLORAMA  CREM PAIXAO",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545042",
+          "descricao": "ESM COLORAMA  INCOLOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "40044",
+          "descricao": "ESM COLORAMA  JABUTICABA 8ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 40,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545015",
+          "descricao": "ESM COLORAMA  PETALA",
+          "L1": {
+            "vendas": 2,
+            "saldo": -23,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545012",
+          "descricao": "ESM COLORAMA  PRENDA NATURAL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 78,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545022",
+          "descricao": "ESM COLORAMA  ROSA ANTIGO",
+          "L1": {
+            "vendas": 1,
+            "saldo": 20,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545041",
+          "descricao": "ESM COLORAMA  SAMBA JULIANA",
+          "L1": {
+            "vendas": 1,
+            "saldo": 50,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 6,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65379",
+          "descricao": "ESM COLORAMA  UNIVERSO PARALELO BRANCO LUN",
+          "L1": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65558",
+          "descricao": "ESM COLORAMA  UNIVERSO PARALELO PRATA FUTU",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "30787",
+          "descricao": "ESM COLORAMA  VEU 8ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": -19,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545013",
+          "descricao": "ESM COLORAMA  VIA LACTEA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 64,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545019",
+          "descricao": "ESM COLORAMA BLACK",
+          "L1": {
+            "vendas": 0,
+            "saldo": 33,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60224",
+          "descricao": "ESM COLORAMA CREM BONECA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 62,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545006",
+          "descricao": "ESM COLORAMA LEITE DE COCO",
+          "L1": {
+            "vendas": 1,
+            "saldo": 54,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 5,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545016",
+          "descricao": "ESM COLORAMA PETALA BRANCA",
+          "L1": {
+            "vendas": 1,
+            "saldo": 37,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545021",
+          "descricao": "ESMALTE COLORAMA  CHIC PELE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 52,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545004",
+          "descricao": "ESMALTE COLORAMA 40 GRAUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 14,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545023",
+          "descricao": "ESMALTE COLORAMA ALGODAO DOCE 8ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202898",
+          "descricao": "ESMALTE COLORAMA BARBIE BOSS",
+          "L1": {
+            "vendas": 0,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202897",
+          "descricao": "ESMALTE COLORAMA BARBIE CHIC BARBIE",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202899",
+          "descricao": "ESMALTE COLORAMA BARBIE GIRL",
+          "L1": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202900",
+          "descricao": "ESMALTE COLORAMA BARBIE KEN DISSE",
+          "L1": {
+            "vendas": 0,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 6,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79971",
+          "descricao": "ESMALTE COLORAMA BASE NUTRITIVA",
+          "L1": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545011",
+          "descricao": "ESMALTE COLORAMA BASE SETIM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 32,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78863",
+          "descricao": "ESMALTE COLORAMA BL NUDE 4.0 6X8ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 36,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79970",
+          "descricao": "ESMALTE COLORAMA BL SECANTE TURBO 8ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 6,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1052",
+          "descricao": "ESMALTE COLORAMA CEREJA",
+          "L1": {
+            "vendas": 1,
+            "saldo": 79,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 13,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545043",
+          "descricao": "ESMALTE COLORAMA COBERTURA INTENSIFICADOR 8ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 15,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 5,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "26657",
+          "descricao": "ESMALTE COLORAMA NOITE QUENTE 8ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "29621",
+          "descricao": "ESMALTE COLORAMA NUTRIBASE PRO-CRESCIMENTO",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "76863",
+          "descricao": "ESMALTE COLORAMA UNIVERSO PARALELO PRETO",
+          "L1": {
+            "vendas": 0,
+            "saldo": 36,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 8,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {},
+        "L4": {},
+        "L5": {
+          "3": 918.9815072463765
+        }
+      }
+    },
+    {
+      "marca": "Dafu",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 62,
+          "saldo_atual": 90,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 0,
+          "vendas_60d": 100,
+          "saldo_atual": 53,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 62,
+          "saldo_atual": -9,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 48,
+          "saldo_atual": 142,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "57001",
+          "descricao": "LANTERNA DAFU",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203456",
+          "descricao": "BRINCO DE METAL -  IMITACAO PEROLA - DAFU",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203450",
+          "descricao": "BRINCO DE METAL - DAFU",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203455",
+          "descricao": "BRINCO DE METAL - DAFU",
+          "L1": {
+            "vendas": 3,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": -9,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203452",
+          "descricao": "BRINCO DE METAL COMUM LATAO - DAFU",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203454",
+          "descricao": "BRINCO DE METAL DE FLOR - DAFU",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203453",
+          "descricao": "BRINCO DE METAL PEDRA DE VIDRO - DAFU",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203451",
+          "descricao": "BRINCO DE PLASTICO COLORIDO - DAFU",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27606",
+          "descricao": "CILIOS POSTICOS FIO A FIO DE FIBRA DE TEREFTALATO DE POLIETILENO DAFU",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203423",
+          "descricao": "CILIOS POSTICOS FIO A FIO DE FIBRA TEREFTALA - DAFU",
+          "L1": {
+            "vendas": 6,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "47827",
+          "descricao": "COLA DE CIANOACRILATO PARA UNHAS POSTICAS - DAFU",
+          "L1": {
+            "vendas": 1,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "56993",
+          "descricao": "COPO DE VIDRO - DAFU",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18045",
+          "descricao": "DAFU ESMALTE UV E LED",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79570",
+          "descricao": "DF-UNPA-03-UNHA POSTICA DE PLASTICO - MARCA: DAFU - PACOTE COM 24 CAIXAS, CADA CAIXA COM 12 PECAS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 19,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203361",
+          "descricao": "ELASTICO - DAFU",
+          "L1": {
+            "vendas": 5,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 6,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203362",
+          "descricao": "ELASTICO - DAFU",
+          "L1": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "10523",
+          "descricao": "ESMALTE UV- LED DAFU",
+          "L1": {
+            "vendas": 1,
+            "saldo": -12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 13,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "28430",
+          "descricao": "ESPONJA - DAFU",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "28464",
+          "descricao": "ESPONJA PARA MAQUIAGEM - DAFU",
+          "L1": {
+            "vendas": 0,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203421",
+          "descricao": "FRASCO VAZIO DE PLASTICO COM CAPACIDADE: 50 ML - MARCA: DAFU",
+          "L1": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27746",
+          "descricao": "KIT PRESILHA PARA CABELO DAFU",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 5,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27605",
+          "descricao": "LIXA DE EVA - DAFU",
+          "L1": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203426",
+          "descricao": "LIXA DE EVA - DAFU",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": -20,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27607",
+          "descricao": "LIXA DE UNHA DE ESPONJA - DAFU",
+          "L1": {
+            "vendas": 1,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203425",
+          "descricao": "LIXA DE UNHA DE ESPONJA -DAFU",
+          "L1": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 7,
+            "saldo": -20,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "47896",
+          "descricao": "MASSAGEADOR FACIAL DE RESINA - DAFU",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "42257",
+          "descricao": "MODELADOR DE CACHO - DAFU",
+          "L1": {
+            "vendas": 0,
+            "saldo": 24,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79615",
+          "descricao": "NAVALHA DE PLASTICO - DAFU",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 8,
+            "saldo": -10,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203431",
+          "descricao": "NAVALHA DE PLASTICO - DAFU",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27614",
+          "descricao": "NECESSAIRE COLORIDA DAFU",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203370",
+          "descricao": "ORNAMENTO PARA CABELO (PRESILHA) DE METAL - DAFU",
+          "L1": {
+            "vendas": 2,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 6,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27599",
+          "descricao": "PINCEL APLICADOR DE GLOSS DE PLASTICO - DAFU",
+          "L1": {
+            "vendas": 0,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203433",
+          "descricao": "PINCEL PARA UNHA COM PONTA BOLEADOR, 2 EM 1, DE PLASTICO DAFU",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27610",
+          "descricao": "PIRANHA DE FLOR DE PLASTICO - DAFU",
+          "L1": {
+            "vendas": 3,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203363",
+          "descricao": "PIRANHA DE METAL - DAFU",
+          "L1": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203365",
+          "descricao": "PIRANHA DE METAL - DAFU",
+          "L1": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203373",
+          "descricao": "PIRANHA DE METAL - DAFU",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 6,
+            "saldo": -8,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203366",
+          "descricao": "PIRANHA DE METAL COM ORNAMENTO DE PLASTICO - DAFU",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 8,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203367",
+          "descricao": "PIRANHA DE METAL COM ORNAMENTO DE PLASTICO - DAFU",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203372",
+          "descricao": "PIRANHA DE METAL COM PEDRA DE VIDRO -  DAFU",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203438",
+          "descricao": "PIRANHA DE METAL EM ACRILICO (IMITACAO PEROLA) - DAFU",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203364",
+          "descricao": "PIRANHA DE PLASTICO - DAFU",
+          "L1": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203374",
+          "descricao": "PIRANHA DE PLASTICO - DAFU",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 6,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203375",
+          "descricao": "PIRANHA DE PLASTICO - DAFU",
+          "L1": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203376",
+          "descricao": "PIRANHA DE PLASTICO - DAFU",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203360",
+          "descricao": "PIRANHAS E PRESILHAS DE METAL - DAFU",
+          "L1": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 7,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79605",
+          "descricao": "POLY NAIL GEL - DAFU",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203442",
+          "descricao": "PRESILHA DE METAL C0M POLIESTER- DAFU",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203439",
+          "descricao": "PRESILHA DE METAL COM DE POLIESTER - DAFU",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203444",
+          "descricao": "PRESILHA DE METAL COM POLIESTER - DAFU",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203446",
+          "descricao": "PRESILHA DE METAL COM POLIESTER - DAFU",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203447",
+          "descricao": "PRESILHA DE METAL COM POLIESTER - DAFU",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203369",
+          "descricao": "RABICO DE POLIESTER - DAFU",
+          "L1": {
+            "vendas": 1,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203371",
+          "descricao": "RABICO DE POLIESTER - DAFU",
+          "L1": {
+            "vendas": 3,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203434",
+          "descricao": "RABICO DE POLIESTER - DAFU",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203436",
+          "descricao": "RABICO DE POLIESTER - DAFU",
+          "L1": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 5,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44500",
+          "descricao": "REFIL DE BROCA DAFU",
+          "L1": {
+            "vendas": 4,
+            "saldo": -9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 7,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 26,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27572",
+          "descricao": "TIARA COM PEDRINHAS - DAFU",
+          "L1": {
+            "vendas": 1,
+            "saldo": -7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203448",
+          "descricao": "TIARA DE PLASTICO - DAFU",
+          "L1": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203449",
+          "descricao": "TIARA DE PLASTICO - DAFU",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203405",
+          "descricao": "UNHA POSTICA DE PLASTICO - DAFU",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {},
+        "L4": {},
+        "L5": {}
+      }
+    },
+    {
+      "marca": "Depil Bella",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 0,
+          "saldo_atual": -15,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 3810.03,
+          "vendas_60d": 0,
+          "saldo_atual": 18,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 0,
+          "saldo_atual": 0,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 0,
+          "saldo_atual": 12,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "46175",
+          "descricao": "LENCO DEPIL BELLA 20UND",
+          "L1": {
+            "vendas": 0,
+            "saldo": -8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "16267",
+          "descricao": "LENCO PARA DEPILACAO DEPIL BELLA 50UND",
+          "L1": {
+            "vendas": 0,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "16268",
+          "descricao": "ROLO DEPILACAO DEPIL BELLA 50MT",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {
+          "3": 3810.03
+        },
+        "L4": {},
+        "L5": {}
+      }
+    },
+    {
+      "marca": "Depilflax",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 91,
+          "saldo_atual": 292,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 0,
+          "vendas_60d": 1,
+          "saldo_atual": 2,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 89,
+          "saldo_atual": 68,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 38,
+          "saldo_atual": 336,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "202311",
+          "descricao": "CERA DEPILATÓRIA NEGRA 1KG - DEPILFLAX",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53158",
+          "descricao": "CERA EM TABLETES HORTELA 250G -  DEPILFLAX",
+          "L1": {
+            "vendas": 0,
+            "saldo": 13,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53157",
+          "descricao": "CERA EM TABLETES HORTELA 500G -  DEPILFLAX",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44665",
+          "descricao": "CERA EM TABLETES ROSA 250G -  DEPILFLAX",
+          "L1": {
+            "vendas": 3,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44666",
+          "descricao": "CERA EM TABLETES ROSA 500G  -  DEPILFLAX",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203081",
+          "descricao": "CERA GLITTER JADE 1KG -  DEPILFLAX",
+          "L1": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "75429",
+          "descricao": "CERA MICRO-ONDAS NATURAL 200G - DEPILFLAX",
+          "L1": {
+            "vendas": 2,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "75430",
+          "descricao": "CERA MICRO-ONDAS ROSAS 200G -  DEPILFLAX",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53162",
+          "descricao": "CERA MICROONDAS NATURAL 100G -  DEPILFLAX",
+          "L1": {
+            "vendas": 1,
+            "saldo": 21,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53161",
+          "descricao": "CERA MICROONDAS ROSAS 100G -  DEPILFLAX",
+          "L1": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44669",
+          "descricao": "CERA QUENTE DEPILFLAX COCO 250G DEPILFLAX",
+          "L1": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44670",
+          "descricao": "CERA QUENTE DEPILFLAX COCO 500G DEPILFLAX",
+          "L1": {
+            "vendas": 1,
+            "saldo": 13,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44664",
+          "descricao": "CERA QUENTE DEPILFLAX NATURAL 1KG DEPILFLAX",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44662",
+          "descricao": "CERA QUENTE DEPILFLAX NATURAL 250G DEPILFLAX",
+          "L1": {
+            "vendas": 2,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44663",
+          "descricao": "CERA QUENTE DEPILFLAX NATURAL 500G DEPILFLAX",
+          "L1": {
+            "vendas": 1,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44668",
+          "descricao": "CERA QUENTE DEPILFLAX ROSA 1KG  DEPILFLAX",
+          "L1": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53160",
+          "descricao": "CERA QUENTE NEGRA 250G -  DEPILFLAX",
+          "L1": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53159",
+          "descricao": "CERA QUENTE NEGRA 500G -  DEPILFLAX",
+          "L1": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 7,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44675",
+          "descricao": "FOLHAS PRONTAS CORPORAIS HORTELA DEPILFLAX C/20UN",
+          "L1": {
+            "vendas": 7,
+            "saldo": 51,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 9,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 11,
+            "saldo": 13,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44673",
+          "descricao": "FOLHAS PRONTAS CORPORAIS MORANGO C/20UN -  DEPILFLAX",
+          "L1": {
+            "vendas": 9,
+            "saldo": 38,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 10,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 5,
+            "saldo": 15,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53155",
+          "descricao": "FOLHAS PRONTAS CORPORAIS NATURAL C/20 UN -  DEPILFLAX",
+          "L1": {
+            "vendas": 4,
+            "saldo": 29,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 9,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44676",
+          "descricao": "FOLHAS PRONTAS FACIAIS HORTELA C/24 UN -  DEPILFLAX",
+          "L1": {
+            "vendas": 14,
+            "saldo": 22,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 14,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44674",
+          "descricao": "FOLHAS PRONTAS FACIAIS MORANGO C/24 UN -  DEPILFLAX",
+          "L1": {
+            "vendas": 2,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44672",
+          "descricao": "FOLHAS PRONTAS FACIAIS NATURAL C/24 UN -  DEPILFLAX",
+          "L1": {
+            "vendas": 4,
+            "saldo": 25,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79828",
+          "descricao": "FOLHAS PRONTAS P/ SOBRANCELHAS ROSA C/20 UN. -  DEPILFLAX",
+          "L1": {
+            "vendas": 6,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "57799",
+          "descricao": "GEL PRE PIL DEPILFLAX 250 ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "75449",
+          "descricao": "MOUSSE RETARDANTE STARPIL 150ML - DEPILFLAX",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "57778",
+          "descricao": "OLEO POS DEPIL DEPILFLAX 100ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "57779",
+          "descricao": "OLEO POS DEPIL DEPILFLAX 250 ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53167",
+          "descricao": "REFIL CHOCOLATE -  DEPILFLAX",
+          "L1": {
+            "vendas": 15,
+            "saldo": -14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 46,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53168",
+          "descricao": "REFIL NEGRA -  DEPILFLAX",
+          "L1": {
+            "vendas": 5,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 24,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 25,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44679",
+          "descricao": "REFIL ROLLON HORTELA DEPILFLAX",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 41,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53166",
+          "descricao": "REFIL ROLLON MAMAO DEPILFLAX",
+          "L1": {
+            "vendas": 0,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 48,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44677",
+          "descricao": "REFIL ROLLON NATURAL DEPILFLAX",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44678",
+          "descricao": "REFIL ROLLON ROSA DEPILFLAX",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 30,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "75445",
+          "descricao": "REFIL STARPIL CHOCOLATE - DEPILFLAX",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "75441",
+          "descricao": "REFIL STARPIL MEL - DEPILFLAX",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {},
+        "L4": {},
+        "L5": {}
+      }
+    },
+    {
+      "marca": "Felps",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 67,
+          "saldo_atual": 2,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 8583.92,
+          "vendas_60d": 72,
+          "saldo_atual": 227,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 48,
+          "saldo_atual": 63,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 54,
+          "saldo_atual": 232,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "61090",
+          "descricao": "ACIDIFICANTE INNER REGENER REGENERACAO FELPS 120G",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53082",
+          "descricao": "ALINHAMENTO CAPILAR XBTX QUIABO OKRA FELPS  1L",
+          "L1": {
+            "vendas": 7,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 24,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79046",
+          "descricao": "AMPOLA POTENCIALIZADOR DE NUTRICAO AZEITE ABACATE 15ML - FELPS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53130",
+          "descricao": "ATIVADOR AZEITE DE ABACATE FELPS  500ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79048",
+          "descricao": "ATIVADOR DE CACHOS  AZEITE DE ABACATE 4ABC 500ML - FELPS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79047",
+          "descricao": "ATIVADOR DE CACHOS 2ABC AZEITE DE ABACATE  500ML - FELPS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "56717",
+          "descricao": "BOMADA  MEN POKER   FELPS 240GR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51011",
+          "descricao": "BOTOX QUIABO ALINHAMENTO CAPILAR FELPS  300ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 34,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 13,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77257",
+          "descricao": "CELEBRATE PERFUME CAPILAR FELPS 25ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203325",
+          "descricao": "CERA MODELADORA EFEITO MATTE FELPS 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203326",
+          "descricao": "CERA MODELADORA EFEITO MOLHADO FELPS 120G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "61097",
+          "descricao": "CONDICIONADOR   MARULA HIPERNUTRICAO FELPS  250ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65020",
+          "descricao": "CONDICIONADOR  BANHO DE VERNIZ FELPS 250ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "56715",
+          "descricao": "CONDICIONADOR  MEN POKER FELPS 240ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "75831",
+          "descricao": "CONDICIONADOR  QUIABO XBTX POS PROGRESSIVA  FELPS 250ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203320",
+          "descricao": "CONDICIONADOR FORCE GLOSS  FELPS 250ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "56703",
+          "descricao": "CONDICIONADOR HIPERNUTRIÇAO MARULA FELPS  1l",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53067",
+          "descricao": "CONDICIONADOR NUTRILEVEZA EQUILIBRIO FELPS  250ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "61108",
+          "descricao": "CONDICIONADOR S.O.S RECONSTRUCAO FELPS 1L",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63813",
+          "descricao": "CONDICIONADOR S.O.S. RECONSTRUCAO FELPS  250ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53132",
+          "descricao": "GELATINA FIXADORA CACHOS AZEITE DE ABACATE  FELPS 500G",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78323",
+          "descricao": "KIT CRONOGRAMA CAPILAR POWER UP FELPS 3X15ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203321",
+          "descricao": "LEAVE IN FORCE GLOSS FELPS 120G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51019",
+          "descricao": "LISS EXPRESS  S.O.S FELPS  230ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "61095",
+          "descricao": "MACADAMIA PROGRESSIVA ULTIMATE BLONDE FELPS  1L",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "61096",
+          "descricao": "MACADAMIA PROGRESSIVA ULTIMATE BLONDE FELPS 300ML",
+          "L1": {
+            "vendas": 8,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77254",
+          "descricao": "MARULA HIPERNUTRICAO LEAVE-IN 150ML - FELPS",
+          "L1": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53092",
+          "descricao": "MASCARA  BANHO DE VERNIZ FELPS  300G",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "61082",
+          "descricao": "MASCARA  BANHO DE VERNIZ FELPS 1KG",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "56696",
+          "descricao": "MASCARA  NUTRITIVE X FELPS  300G",
+          "L1": {
+            "vendas": 2,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "56700",
+          "descricao": "MASCARA  OKRA XBTX   FELPS 300G",
+          "L1": {
+            "vendas": 0,
+            "saldo": -11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51010",
+          "descricao": "MASCARA  REDUTORA FELPS 500GR",
+          "L1": {
+            "vendas": 3,
+            "saldo": -9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51028",
+          "descricao": "MASCARA  SOU LOIRA FELPS 300G",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53086",
+          "descricao": "MASCARA  X REPAIR  FELPS 300G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53128",
+          "descricao": "MASCARA AZEITE DE ABACATE  FELPS 300g",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203322",
+          "descricao": "MASCARA FORCE GLOSS FELPS 300G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51021",
+          "descricao": "MASCARA HIPERNUTRICAO MARULA FELPS 300G",
+          "L1": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 5,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "61093",
+          "descricao": "MASCARA INNER REGENER REGENERACAO FELPS 300G",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "56702",
+          "descricao": "MASCARA PROGRESSIVA QUIABO XBTX FELPS  300G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51014",
+          "descricao": "MASCARA RECONSTRUCAO  S.O.S FELPS   300G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "61104",
+          "descricao": "MASCARA REDUTORA DE VOLUME  QUIABO XBTX FELPS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "75840",
+          "descricao": "MASCARA SACHE DOSE ECONOMICA BANHO DE VERNIZ  50G - FELPS",
+          "L1": {
+            "vendas": 4,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 20,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "61086",
+          "descricao": "MATIZADOR VIOLETA EFEITO PEROLA  FELPS 500ML",
+          "L1": {
+            "vendas": 3,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "56721",
+          "descricao": "MEN BLACK JACK SHAVING FELPS  240GR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "56731",
+          "descricao": "OIL ARGAN  FELPS 7ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 14,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "56716",
+          "descricao": "OLEO  MEN POKER  FELPS 30ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51023",
+          "descricao": "OLEO DE MARULA  FELPS 50ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 5,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65023",
+          "descricao": "OMEGA ZERO XBTX ORGANIC FELPS  300G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "61087",
+          "descricao": "OX 20 VOL FELPS  90ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 14,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78324",
+          "descricao": "OXIDANTE 20 VOL 900ML - FELPS",
+          "L1": {
+            "vendas": 10,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 6,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65022",
+          "descricao": "OXIDANTE 30 VOL  FELPS 90ML",
+          "L1": {
+            "vendas": 10,
+            "saldo": -7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 16,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78325",
+          "descricao": "OXIDANTE 8 VOL 900ML - FELPS",
+          "L1": {
+            "vendas": 2,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65024",
+          "descricao": "OXIDANTE 8 VOL FELPS  90ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "75832",
+          "descricao": "POS PROGRESSIVA FLUIDO ANTIFRIZZ  QUIABO XBTX  FELPS 120ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "61099",
+          "descricao": "SELAGEM  OMEGA ZERO NANOPLASTIA RESISTANCE FELPS  1L",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203324",
+          "descricao": "SHAMPO MARULA HIPERNUTRICAO FELPS 500ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53139",
+          "descricao": "SHAMPOO  ANTIRRESIDUO FELPS  1L",
+          "L1": {
+            "vendas": 4,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "56699",
+          "descricao": "SHAMPOO  ANTIRRESIDUO FELPS  250ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "56733",
+          "descricao": "SHAMPOO  HIPERNUTRIÇÃO  FELPS  1L",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "61106",
+          "descricao": "SHAMPOO  S.O.S. RECONSTRUCAO FELPS  1L",
+          "L1": {
+            "vendas": 2,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51032",
+          "descricao": "SHAMPOO  SOU LOIRA FELPS  250ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "56705",
+          "descricao": "SHAMPOO ANTICASPA  EQUILIBRIO FELPS 250ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "56704",
+          "descricao": "SHAMPOO ANTIOLEOSIDADE  EQUILIBRIO FELPS  250ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53066",
+          "descricao": "SHAMPOO ANTIQUEDA EQUILIBRIO FELPS  250ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53111",
+          "descricao": "SHAMPOO AZEITE DE ABACATE CACHOS  FELPS  500mL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "75839",
+          "descricao": "SHAMPOO BAMBO FELPS 250ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65021",
+          "descricao": "SHAMPOO BANHO DE VERNIZ FELPS  250ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203323",
+          "descricao": "SHAMPOO FORCE GLOSS FELPS 250ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63814",
+          "descricao": "SHAMPOO S.O.S. RECONSTRUCAO FELPS  250ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 5,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79053",
+          "descricao": "SHAMPOO UNIQ 6 EM 1 FELPS 250ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53135",
+          "descricao": "TONICO CAPILAR MEN POKER FELPS  60ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53068",
+          "descricao": "TONICO EQUILIBRIO CAPILAR FELPS  120ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53134",
+          "descricao": "UMECTANTE AZEITE DE ABACATE FELPS  50ML -",
+          "L1": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79050",
+          "descricao": "UNIQ 6 EM 1 CONDICIONADOR 250ML - FELPS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "75833",
+          "descricao": "XBTX POS PROGRESSIVA SHAMPOO QUIABO 250ML - FELPS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "75836",
+          "descricao": "XFORCE CONDICIONADOR 250ML - FELPS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "75837",
+          "descricao": "XFORCE SHAMPOO 250ML - FELPS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78326",
+          "descricao": "XREPAIR LEAVE-IN 150ML - FELPS",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {
+          "1": 2490.444509711916,
+          "3": 6093.48
+        },
+        "L4": {},
+        "L5": {}
+      }
+    },
+    {
+      "marca": "Gama",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 0,
+          "saldo_atual": -2,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 0,
+          "vendas_60d": 0,
+          "saldo_atual": 0,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 0,
+          "saldo_atual": 0,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 1,
+          "saldo_atual": 2,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "58133",
+          "descricao": "APARELHO PARA ALISAR CABELO  PRANCHA GAMA SE SPECI",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {},
+        "L4": {},
+        "L5": {}
+      }
+    },
+    {
+      "marca": "Hair Extrattus",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 118,
+          "saldo_atual": -282,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 0,
+          "vendas_60d": 124,
+          "saldo_atual": 317,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 79,
+          "saldo_atual": 59,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 34,
+          "saldo_atual": 292,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "77067",
+          "descricao": "ALISANTE DEFINITIVA JAPONESA 150 GR HAIR EXTRATTUS.",
+          "L1": {
+            "vendas": 10,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 18,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18711",
+          "descricao": "AMPOLA BB CREAM  HAIR EXTRATTUS 13ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 19,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51710",
+          "descricao": "AMPOLA BLOND MATIZER 13 ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 3,
+            "saldo": -7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51751",
+          "descricao": "ARGAN OIL  7 ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": -11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51747",
+          "descricao": "ARGAN OIL HAIR EXTRATTUS 45ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77161",
+          "descricao": "ATIVADOR CACHOS 250 ML HAIR EXTRATTUS.",
+          "L1": {
+            "vendas": 4,
+            "saldo": -9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202440",
+          "descricao": "BALM PISTACHE HIDRANUTRI 120 ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11255",
+          "descricao": "BOTTOX VINTAGE 1 KG HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 10,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 10,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11256",
+          "descricao": "BOTTOX VINTAGE 100 GR HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 6,
+            "saldo": 16,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "30897",
+          "descricao": "BOTTOX VINTAGE BLACK 100 GR HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "14946",
+          "descricao": "BOTTOX VINTAGE BLOND 1 KG - HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 3,
+            "saldo": 17,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "14476",
+          "descricao": "BOTTOX VINTAGE BLOND 100 GR - HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 13,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 12,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51790",
+          "descricao": "BOTTOX VINTAGE MARSALA 100 GR HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 4,
+            "saldo": -15,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "40275",
+          "descricao": "COND ABACATE HAIR EXTRATTUS 300ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "54264",
+          "descricao": "COND BABOSA 300 ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": -10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "45076",
+          "descricao": "COND CACHOS 1000 ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "45077",
+          "descricao": "COND COCO LICIOUS 1000 ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13717",
+          "descricao": "COND COCO LICIOUS HAIR  EXTRATTUS 300 ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1453",
+          "descricao": "COND JABORANDI HAIR EXTRATTUS  300ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3034",
+          "descricao": "COND MANDIOCA HAIR EXTRATTUS  300ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -36,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5673",
+          "descricao": "COND MATIZER BLOND HAIR EXTRATTUS 300 ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51777",
+          "descricao": "COND VINTAGE FINISH MAIS LISO HAIR EXTRATTUS 300ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "45075",
+          "descricao": "CONDICIONADOR MANDIOCA 1000ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": -9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11079",
+          "descricao": "CONDICIONADOR MATIZER PLATINUM BLACK HAIR EXTRATTUS 300ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1452",
+          "descricao": "CONDICIONADOR NEUTRO HAIR EXTRATTUS 300ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 67,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1451",
+          "descricao": "CONDICIONADOR PESSEGO HAIR EXTRATTUS 300ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202430",
+          "descricao": "CONDICIONADOR PISTACHE HIDRANUTRI 300ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77052",
+          "descricao": "CONDICIONADOR POS PROGRESSIVA 300ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 4,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "45131",
+          "descricao": "CONDICIONADOR POS PROGRESSIVA HAIR EXTRATTUS 1L",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202443",
+          "descricao": "CREME ALISANTE PISTACHE HIDRANUTRI 100 GR HAIR EXTRATTUS.",
+          "L1": {
+            "vendas": 9,
+            "saldo": -11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 9,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203637",
+          "descricao": "FIBRA DE BAMBU OIL  7 ML HAIR EXTRATTUS.",
+          "L1": {
+            "vendas": 2,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51752",
+          "descricao": "FINALIZ BOTTOX VINTAGE MAIS LISO HAIR EXTRATTUS 60",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203636",
+          "descricao": "FLOR DE LOTUS OIL 7 ML HAIR EXTRATTUS.",
+          "L1": {
+            "vendas": 0,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63925",
+          "descricao": "FLUIDO BIPHASIC 120ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 1,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77063",
+          "descricao": "KIT MASCARA CRONOGRAMA CAPILAR 250 ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 1,
+            "saldo": 13,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77053",
+          "descricao": "KIT MORTE ESCANDALOSA SH 1000ML / COND 800ML HAIR EXTRATTUS.",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77056",
+          "descricao": "KIT SALAO NA SUA CASA SH 900ML / COND 800ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 2,
+            "saldo": -19,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13719",
+          "descricao": "LEAVE-IN COCO LICIOUS HAIR EXTRATTUS 200 G",
+          "L1": {
+            "vendas": 2,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77066",
+          "descricao": "LEAVE-IN MANDIOCA 250 ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78610",
+          "descricao": "LEAVE-IN NEUTRO 250 ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": -46,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202436",
+          "descricao": "LEAVE-IN PESSEGO 250 GR HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77064",
+          "descricao": "LEAVE-IN POS PROGRESSIVA 250 ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59377",
+          "descricao": "MAGICA DO LISO 300 ML LISS 4X HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 17,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59376",
+          "descricao": "MAGICA DO LISO 4X LISS 1L HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51743",
+          "descricao": "MASC BABOSA 250 GR HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63918",
+          "descricao": "MASC JABORANDI 250 GR HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77059",
+          "descricao": "MASC MILAGRES DO FIOS 1000ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 3,
+            "saldo": -17,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 16,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77062",
+          "descricao": "MASC MORTE ESCANDALOSA 1000ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 19,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77060",
+          "descricao": "MASC SALAO EM CASA 1000ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 18,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51745",
+          "descricao": "MASC VINTAGE MAIS LISO 250GR HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 5,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51742",
+          "descricao": "MASCARA ABACATE 250GR HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 3,
+            "saldo": -11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11082",
+          "descricao": "MASCARA CACHOS 250 GR HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11254",
+          "descricao": "MASCARA MANDIOCA  HAIR EXTRATTUS 250G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18713",
+          "descricao": "MASCARA MARSALA 250 GR HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 6,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11253",
+          "descricao": "MASCARA MATIZER BLOND 250GR HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": -35,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202431",
+          "descricao": "MASCARA MATIZER CASTANHO 250 GR HAIR EXTRATTUS.",
+          "L1": {
+            "vendas": 0,
+            "saldo": -18,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11084",
+          "descricao": "MASCARA MATIZER PLATINUM BLACK 250GR HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 9,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "12185",
+          "descricao": "MASCARA PESSEGO HAIR EXTRATTUS 250G",
+          "L1": {
+            "vendas": 0,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202434",
+          "descricao": "MASCARA PISTACHE HIDRANUTRI 250GR HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 2,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11081",
+          "descricao": "MASCARA POS PROGRESSIVA HAIR EXTRATTUS 250G",
+          "L1": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "12186",
+          "descricao": "MS JABORANDI 250G - HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11083",
+          "descricao": "MS MATIZER RED 250 GR HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": -10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 6,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11257",
+          "descricao": "MS SOS BOMBA 250 GR HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77065",
+          "descricao": "PERFUME CAPILAR E CORPORAL 45ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": -19,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202439",
+          "descricao": "PISTACHE OIL 7 ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202438",
+          "descricao": "PISTACHE OIL HIDRANUTRI 60 ML  HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 8,
+            "saldo": -8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77159",
+          "descricao": "SELANTE MAGICA DO LISO BLOND 1 L HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6447",
+          "descricao": "SERUM POS PROGRESSIVA HAIR EXTRATTUS 45 ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 19,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 18,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13716",
+          "descricao": "SH COCO LICIOUS HAIR EXTRATTUS 300 ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "45139",
+          "descricao": "SH MANDIOCA HAIR EXTRATTUS 1LITRO",
+          "L1": {
+            "vendas": 0,
+            "saldo": -19,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5672",
+          "descricao": "SH MATIZER BLOND HAIR EXTRATTUS 300 ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1448",
+          "descricao": "SH PESSEGO HAIR EXTRATTUS 300ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "45127",
+          "descricao": "SH POS PROGRESSIVA HAIR EXTRATTUS 1 LITRO",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "40274",
+          "descricao": "SHAMPOO ABACATE HAIR EXTRATTUS 300ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": -8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18901",
+          "descricao": "SHAMPOO ANTIRRESIDUOS HAIR EXTRATTUS 300ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -38,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 9,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 5,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11073",
+          "descricao": "SHAMPOO CACHOS 300 ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "45129",
+          "descricao": "SHAMPOO CACHOS HAIR EXTRATTUS 1L",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1450",
+          "descricao": "SHAMPOO JABORANDI HAIR EXTRATTUS 300ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 13,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3033",
+          "descricao": "SHAMPOO MANDIOCA HAIR EXTRATTUS 300ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -44,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51608",
+          "descricao": "SHAMPOO NEUTRO 300ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": -8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202429",
+          "descricao": "SHAMPOO PISTACHE HIDRANUTRI 300 ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51610",
+          "descricao": "SHAMPOO POS PROGRESSIVA 300ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 3,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51619",
+          "descricao": "SHAMPOO VINTAGE MAIS LISO 300ML HAIR EXTRATTUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 5,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {},
+        "L4": {},
+        "L5": {}
+      }
+    },
+    {
+      "marca": "Igora",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 9011.39,
+          "vendas_60d": 115,
+          "saldo_atual": 157,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 0,
+          "vendas_60d": 36,
+          "saldo_atual": 30,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 114,
+          "saldo_atual": 40,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 3114.26,
+          "vendas_60d": 41,
+          "saldo_atual": 107,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "64180",
+          "descricao": "0-55 TOM DE MISTURA DOURADA IGORA 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19722",
+          "descricao": "0/77 COBRE IGORA 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19723",
+          "descricao": "0/88 VERMELHO IGORA 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19724",
+          "descricao": "0/89 VERMELHO VIOLETA IGORA 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19682",
+          "descricao": "1/0 PRETO NATURAL IGORA 60G",
+          "L1": {
+            "vendas": 3,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19695",
+          "descricao": "1/1 PRETO AZULADO IGORA 60G",
+          "L1": {
+            "vendas": 3,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77739",
+          "descricao": "12-0 SUPER CLAREADOR NATURAL IGORA 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19683",
+          "descricao": "3/0  CASTANHO ESCURO IGORA 60G",
+          "L1": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19684",
+          "descricao": "4/0 CASTANHO MEDIO NATURAL  IGORA  60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "54304",
+          "descricao": "5-7 CASTANHO CLARO COBRE IGORA 60G",
+          "L1": {
+            "vendas": 5,
+            "saldo": 13,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 5,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 9,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77983",
+          "descricao": "5-88 CASTANHO CLARO VERMELHO EXTRA IGORA 60G",
+          "L1": {
+            "vendas": 4,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19685",
+          "descricao": "5/0 CASTANHO CLARO NATURAL IGORA  60G",
+          "L1": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19706",
+          "descricao": "5/6 CASTANHO CLARO MARROM IGORA 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19686",
+          "descricao": "6/0 LOURO ESCURO NATURAL IGORA 60G",
+          "L1": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19696",
+          "descricao": "6/1 LOURO ESCURO CINZA IGORA 60G",
+          "L1": {
+            "vendas": 2,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19713",
+          "descricao": "6/68 LOURO ESCURO MARROM VERMELHO IGORA 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19714",
+          "descricao": "6/77 LOURO ESCURO COBRE EXTRA IGORA 60G",
+          "L1": {
+            "vendas": 7,
+            "saldo": 21,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 9,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19717",
+          "descricao": "6/88 LOURO ESCURO VERMELHO EXTRA IGORA 60G",
+          "L1": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44494",
+          "descricao": "7-57 LOURO MEDIO DOURADO COBRE IGORA 60G",
+          "L1": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "54305",
+          "descricao": "7-70 LOURO MEDIO COBRE NATURAL IGORA 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19687",
+          "descricao": "7/0 LOURO MEDIO IGORA 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19697",
+          "descricao": "7/1 LOURO MEDIO CINZA IGORA 60G",
+          "L1": {
+            "vendas": 2,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19701",
+          "descricao": "7/4 LOURO MEDIO BEGE IGORA 60G",
+          "L1": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19715",
+          "descricao": "7/77 LOURO MEDIO COBRE EXTRA IGORA 60G",
+          "L1": {
+            "vendas": 15,
+            "saldo": 33,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 7,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 15,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19688",
+          "descricao": "8/0 LOURO CLARO NATURAL IGORA 60G",
+          "L1": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19698",
+          "descricao": "8/1 LOURO CINZA CLARO IGORA 60G",
+          "L1": {
+            "vendas": 3,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19702",
+          "descricao": "8/4 LOURO CLARO BEGE IGORA 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19716",
+          "descricao": "8/77 LOURO CLARO COBRE EXTRA IGORA 60G",
+          "L1": {
+            "vendas": 25,
+            "saldo": 29,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 7,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 24,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 40,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65367",
+          "descricao": "9-55 LOURO EXTRA CLARO DOURADO IGORA 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "40445",
+          "descricao": "9-7 LOURO EXTRA CLARO COBRE IGORA 60G",
+          "L1": {
+            "vendas": 15,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 14,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 5,
+            "saldo": 25,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51009",
+          "descricao": "9-98 LOURO EXTRA CLARO VIOLETA VERMELHO IGORA 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "40448",
+          "descricao": "L-77 IGORA ROYAL  FASHION LIGHTS  60ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "80098",
+          "descricao": "OX  30 volumes  IGORA 60ml",
+          "L1": {
+            "vendas": 9,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "29485",
+          "descricao": "OX IGORA  ROYAL 20 VOL 60ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 15,
+            "saldo": 7,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {
+          "1": 9011.39
+        },
+        "L3": {},
+        "L4": {},
+        "L5": {
+          "1": 3114.26
+        }
+      }
+    },
+    {
+      "marca": "Itallian",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 7025.83,
+          "vendas_60d": 383,
+          "saldo_atual": 422,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 4524.88,
+          "vendas_60d": 86,
+          "saldo_atual": 282,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 8695.98,
+          "vendas_60d": 394,
+          "saldo_atual": 442,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 7075.18,
+          "vendas_60d": 201,
+          "saldo_atual": 763,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "60269",
+          "descricao": "00S ACENTUADOR DE CLAREAMENTO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 4,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 8,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58143",
+          "descricao": "1.0 PRETO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 6,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 16,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "57401",
+          "descricao": "10.0 LOIRO PLATINA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 4,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 6,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78044",
+          "descricao": "10.01 LOIRO PLATINA NATURAL CINZA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78045",
+          "descricao": "10.02 LOIRO PLATINA NATURAL VIOLETA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59437",
+          "descricao": "12.1 LOIRO ULTRACLARISSIMO CINZA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60279",
+          "descricao": "12.11 LOIRO ULTRACLARISSIMO CINZA INTENSO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 5,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59435",
+          "descricao": "12.89 LOIRO ULTRACLARISSIMO PEROLA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 3,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58161",
+          "descricao": "2.1 PRETO AZULADO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 5,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 8,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 15,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58158",
+          "descricao": "3.0 CASTANHO ESCURO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 18,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58159",
+          "descricao": "4.0 CASTANHO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 3,
+            "saldo": 24,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 8,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "74830",
+          "descricao": "4.00 CASTANHO PLUS ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "64889",
+          "descricao": "4.1 CASTANHO CINZA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58160",
+          "descricao": "5.0 CASTANHO CLARO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 7,
+            "saldo": 30,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 8,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59425",
+          "descricao": "5.00 CASTANHO CLARO PLUS ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 3,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "64890",
+          "descricao": "5.1 CASTANHO CLARO CINZA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 17,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62966",
+          "descricao": "5.17 CASTANHO CLARO CINZA MARROM ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59431",
+          "descricao": "5.3 CASTANHO CLARO DOURADO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "64892",
+          "descricao": "5.34 CASTANHO CLARO DOURADO COBRE ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 4,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 27,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59434",
+          "descricao": "5.41 CASTANHO CLARO COBRE CINZA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60266",
+          "descricao": "5.5 CASTANHO CLARO MOGNO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58151",
+          "descricao": "5.62 CASTANHO CLARO VERMELHO VIOLETA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 5,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62970",
+          "descricao": "5.7 CASTANHO CLARO MARROM ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 2,
+            "saldo": 18,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58144",
+          "descricao": "6.0 LOIRO ESCURO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 12,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 9,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 7,
+            "saldo": 30,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "74831",
+          "descricao": "6.00 LOIRO ESCURO PLUS ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 7,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59427",
+          "descricao": "6.1 LOIRO ESCURO CINZA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 4,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 37,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62964",
+          "descricao": "6.13 LOIRO ESCURO CINZA DOURADO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62967",
+          "descricao": "6.17 LOIRO ESCURO CINZA MARROM ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60267",
+          "descricao": "6.26 LOIRO ESCURO VIOLETA VERMELHO MARSALA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 4,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "55676",
+          "descricao": "6.31 LOIRO DOURADO CINZA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 16,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60272",
+          "descricao": "6.34 LOIRO ESCURO DOURADO COBRE ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59436",
+          "descricao": "6.4 LOIRO ESCURO COBRE ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "55672",
+          "descricao": "6.41 LOIRO ESCURO COBRE CINZA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 4,
+            "saldo": 16,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 6,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60271",
+          "descricao": "6.43 LOIRO ESCURO COBRE DOURADO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60239",
+          "descricao": "6.60 LOIRO ESCURO VERMELHO NATURAL ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 4,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59439",
+          "descricao": "6.62 LOIRO ESCURO VERMELHO VIOLETA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60276",
+          "descricao": "6.66 LOIRO ESCURO VERMELHO INTENSO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58150",
+          "descricao": "6.7 LOIRO ESCURO MARROM ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 8,
+            "saldo": 18,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 9,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 15,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78046",
+          "descricao": "6.74 LOIRO ESCURO MORENA ILUMINADA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 3,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 13,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60278",
+          "descricao": "6.77 LOIRO ESCURO MARROM INTENSO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 6,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59426",
+          "descricao": "7.0 LOIRO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 12,
+            "saldo": 24,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 12,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 10,
+            "saldo": 26,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "74832",
+          "descricao": "7.00 LOIRO PLUS ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 4,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59429",
+          "descricao": "7.1 LOIRO CINZA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 7,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 7,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 8,
+            "saldo": 20,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59432",
+          "descricao": "7.13 LOIRO CINZA DOURADO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 3,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62968",
+          "descricao": "7.17 LOIRO CINZA MARROM ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58148",
+          "descricao": "7.3 LOIRO DOURADO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 6,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58149",
+          "descricao": "7.31 LOIRO DOURADO CINZA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 4,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "55675",
+          "descricao": "7.34 LOIRO DOURADO COBRE ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 2,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78047",
+          "descricao": "7.37 LOIRO MORENA ILUMINADA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "57422",
+          "descricao": "7.4 LOIRO COBRE ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 2,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63570",
+          "descricao": "7.40 LOIRO COBRE NATURAL ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "57425",
+          "descricao": "7.44 LOIRO COBRE INTENSO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": -20,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60264",
+          "descricao": "7.66 LOIRO VERMELHO INTENSO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "57420",
+          "descricao": "7.7 LOIRO MARROM ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 9,
+            "saldo": 15,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 9,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 5,
+            "saldo": 15,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "74833",
+          "descricao": "7.89 LOIRO PEROLA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 2,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58145",
+          "descricao": "8.0 LOIRO CLARO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 8,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 6,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 6,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 16,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "29940",
+          "descricao": "8.00 LOIRO CLARO PLUS ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58147",
+          "descricao": "8.1 LOIRO CLARO CINZA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 5,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "55674",
+          "descricao": "8.12 LOIRO CLARO CINZA VIOLETA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 19,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "64891",
+          "descricao": "8.13 LOIRO CLARO CINZA DOURADO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 2,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62969",
+          "descricao": "8.17 LOIRO CLARO CINZA MARROM ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "61387",
+          "descricao": "8.3 LOIRO CLARO DOURADO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 4,
+            "saldo": 21,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 6,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "57414",
+          "descricao": "8.31 LOIRO CLARO DOURADO CINZA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "55673",
+          "descricao": "8.43 LOIRO CLARO COBRE DOURADO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "57427",
+          "descricao": "8.44 LOURO CLARO COBRE INTENSO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78048",
+          "descricao": "8.75 LOIRO CLARO MORENA ILUMINADA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58152",
+          "descricao": "8.89 LOIRO CLARO PEROLA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58146",
+          "descricao": "9.0 LOIRO CLARISSIMO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 5,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62963",
+          "descricao": "9.1 LOIRO CLARISSIMO CINZA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 6,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62965",
+          "descricao": "9.13 LOIRO CLARISSIMO CINZA DOURADO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60274",
+          "descricao": "9.17 LOIRO CLARISSIMO CINZA MARROM ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60277",
+          "descricao": "9.21 LOIRO CLARISSIMO VIOLETA CINZA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "57403",
+          "descricao": "9.3 LOIRO CLARISSIMO DOURADO ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 6,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 8,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "57419",
+          "descricao": "9.31 LOIRO CLARISSIMO DOURADO CINZA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 4,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59438",
+          "descricao": "9.89 LOIRO CLARISSIMO PEROLA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 3,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62980",
+          "descricao": "AMPOLA TRIVITT ACIDO HIALURONICO POWER DOSE ITALLIAN - 10ML",
+          "L1": {
+            "vendas": 8,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 32,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78050",
+          "descricao": "BLIDAGEM MAGICA TRIVITT GLOW ITALLIAN - 110ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62961",
+          "descricao": "CAUTERIZACAO TRIVITT ITALLIAN 300ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "40339",
+          "descricao": "CB CORRETOR AZUL ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 3,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "204005",
+          "descricao": "COLORACAO IC SEM AMONIA 0.03 INTENSIFICADOR DOURADO 60G - ITALLIAN",
+          "L1": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "204001",
+          "descricao": "COLORACAO IC SEM AMONIA 4.0 CASTANHO 60G - ITALLIAN",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "204002",
+          "descricao": "COLORACAO IC SEM AMONIA 5.0 CASTANHO CLARO 60G - ITALLIAN",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "204003",
+          "descricao": "COLORACAO IC SEM AMONIA 6.0 LOIRO ESCURO 60G - ITALLIAN",
+          "L1": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "204004",
+          "descricao": "COLORACAO IC SEM AMONIA 7.0 LOIRO 60G - ITALLIAN",
+          "L1": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "55664",
+          "descricao": "CONDICIONADOR HIDRATANTE ITALLIAN COLOR  2,5L",
+          "L1": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63571",
+          "descricao": "CZ CORRETOR CINZA ITALLIAN COLOR 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "57428",
+          "descricao": "HIDRATACAO ITALLIAN COLOR  200G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "55655",
+          "descricao": "HIDRATACAO ITALLIAN COLOR 2KG",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78409",
+          "descricao": "KIT HOME CARE EXTREME-UP ITALLIAN",
+          "L1": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "55660",
+          "descricao": "KIT HOME CARE ITALLIAN COLOR",
+          "L1": {
+            "vendas": 8,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 5,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51858",
+          "descricao": "KIT ITALLIAN HAIRTECH CRONOGRAMA CAPILAR",
+          "L1": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 17,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 15,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79150",
+          "descricao": "MASCARA LIQUIDA DE NUTRICAO ITALLIAN - 110ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44424",
+          "descricao": "MASCARA RECONSTRUCAO EXTREME-UP ITALLIAN - 250G",
+          "L1": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "55661",
+          "descricao": "OX 06 VOL ITALLIAN COLOR 1L",
+          "L1": {
+            "vendas": 2,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 21,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79997",
+          "descricao": "OX 06 VOL ITALLIAN COLOR 90ML",
+          "L1": {
+            "vendas": 9,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 5,
+            "saldo": 13,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 15,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 52,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60283",
+          "descricao": "OX 20 VOL ITALLIAN COLOR  1L",
+          "L1": {
+            "vendas": 11,
+            "saldo": 43,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 17,
+            "saldo": 18,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58153",
+          "descricao": "OX 20 VOL ITALLIAN COLOR 90ML",
+          "L1": {
+            "vendas": 33,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 28,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 47,
+            "saldo": 40,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60284",
+          "descricao": "OX 30 VOL ITALLIAN COLOR  1L",
+          "L1": {
+            "vendas": 4,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79998",
+          "descricao": "OX 30 VOL ITALLIAN COLOR 90ML",
+          "L1": {
+            "vendas": 51,
+            "saldo": -137,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 26,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 5,
+            "saldo": 35,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "61400",
+          "descricao": "OX 40 VOL ITALLIAN COLOR 1L",
+          "L1": {
+            "vendas": 5,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "61388",
+          "descricao": "OX 40 VOL ITALLIAN COLOR 90ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 5,
+            "saldo": 17,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "204112",
+          "descricao": "OXIDANTE 02 VOL ITALLIAN COLOR 1L 2026",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "54871",
+          "descricao": "OXIDANTE 40 VOL ITALLIAN COLOR 90ML",
+          "L1": {
+            "vendas": 13,
+            "saldo": -53,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 15,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 16,
+            "saldo": 51,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63872",
+          "descricao": "PO DESCOLORANTE  POUCH ITALLIAN COLOR - 600G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 22,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "55671",
+          "descricao": "PO DESCOLORANTE ITALLIAN COLOR - 400G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 18,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "61392",
+          "descricao": "PO DESCOLORANTE POUNCH ITALLIAN COLOR - 300G",
+          "L1": {
+            "vendas": 6,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "55646",
+          "descricao": "SHAMPOO HIDRATANTE ITALLIAN COLOR - 2,5LT",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "55668",
+          "descricao": "SHAMPOO HIDRATANTE ITALLIAN COLOR - 250ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44421",
+          "descricao": "SHAMPOO RECONSTRUCAO EXTREME-UP ITALLIAN - 280ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {
+          "3": 7025.83
+        },
+        "L3": {
+          "1": 4524.88
+        },
+        "L4": {
+          "1": 8695.98
+        },
+        "L5": {
+          "1": 2610.25,
+          "3": 4464.93
+        }
+      }
+    },
+    {
+      "marca": "Kamaleao",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 2,
+          "saldo_atual": 5,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 0,
+          "vendas_60d": 0,
+          "saldo_atual": 0,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 6,
+          "saldo_atual": -3,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 10,
+          "saldo_atual": 16,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "43071",
+          "descricao": "MAS. PIGM. KAMALEAO COLOR - CAPIVARA 150 ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 5,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "43263",
+          "descricao": "MAS. PIGM. KAMALEAO COLOR - CARPA 150ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "43066",
+          "descricao": "MAS. PIGM. KAMALEAO COLOR - FLAMINGO 150 ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "43079",
+          "descricao": "MAS. PIGM. KAMALEAO COLOR - GUARA 150 ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "43076",
+          "descricao": "MAS. PIGM. KAMALEAO COLOR - PONEI 150ML UNICO",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {},
+        "L4": {},
+        "L5": {}
+      }
+    },
+    {
+      "marca": "Kiss",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 13654.87,
+          "vendas_60d": 54,
+          "saldo_atual": 618,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 0,
+          "vendas_60d": 4,
+          "saldo_atual": 19,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 11107.14,
+          "vendas_60d": 35,
+          "saldo_atual": 222,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 12369.12,
+          "vendas_60d": 36,
+          "saldo_atual": 271,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "10501",
+          "descricao": "ESP PUF04BR KISS",
+          "L1": {
+            "vendas": 0,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "28363",
+          "descricao": "LIXA BLOCO PRETA KISS",
+          "L1": {
+            "vendas": 1,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -12,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "10483",
+          "descricao": "PINCEL CHANF BLUSH KISS",
+          "L1": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "12386",
+          "descricao": "RK STIX OMIRACLE KISS LIP ELIXIR",
+          "L1": {
+            "vendas": 1,
+            "saldo": -10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202509",
+          "descricao": "ALCCOL GEL ANTISSEPTICO AÇAI KISS NY",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 13,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79019",
+          "descricao": "ALCOOL GEL ANTISSEPTICO MELANCIA KISS NY",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13589",
+          "descricao": "BATOM CASTANHO CAP KISS NY",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13588",
+          "descricao": "BATOM MARROM ESC CAP KISS NY",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13587",
+          "descricao": "BATOM PRETO CAPILAR KISS NY",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77265",
+          "descricao": "BODY SPLASH LADY IN RED KISS NY",
+          "L1": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79004",
+          "descricao": "BODY SPLASH NIGHT LOVE KISS NY",
+          "L1": {
+            "vendas": 1,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79008",
+          "descricao": "BODY SPLASH PINK ROMANCE KISS NY",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79012",
+          "descricao": "BODY SPLASH ROSE GLAMOUR KISS NY",
+          "L1": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79010",
+          "descricao": "BODY SPLASH SEDUCTION GOLD KISS NY",
+          "L1": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77267",
+          "descricao": "BODY SPLASH SUN KISSES KISS NY",
+          "L1": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77266",
+          "descricao": "BODY SPLASH SWEET HEART KISS NY",
+          "L1": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11452",
+          "descricao": "CILIOS KPED10BR KISS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8393",
+          "descricao": "CILIOS POSTI?S JUICY VOL 04 KISS NEW YO",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8691",
+          "descricao": "COLA CILIOS INCOLOR FIRST KISS 7G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "204120",
+          "descricao": "COLA DE UNHAS KISS BROADWAY",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 49,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "15328",
+          "descricao": "EDGE FIXER CERA EM STICK ORIGINAL KISS NY",
+          "L1": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62528",
+          "descricao": "KISS NY ABA ADESIVA DE UNHA",
+          "L1": {
+            "vendas": 1,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "204097",
+          "descricao": "KISS NY COLA UNHA PRECISION",
+          "L1": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77278",
+          "descricao": "KISS NY MODELADOR CACHOS CURLING 1-1/2",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "204099",
+          "descricao": "KISS NY NAVALHA SOBRANC CURTO (72 UN)",
+          "L1": {
+            "vendas": 1,
+            "saldo": 71,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 68,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11100",
+          "descricao": "KISS NY NAVALHA SOBRANC LONGO",
+          "L1": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": -8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "204098",
+          "descricao": "KISS NY NAVALHA SOBRANC LONGO (72 UN)",
+          "L1": {
+            "vendas": 4,
+            "saldo": 68,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "28366",
+          "descricao": "KISS NY PINCA PONTA DIAGONAL",
+          "L1": {
+            "vendas": 3,
+            "saldo": 62,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "52210",
+          "descricao": "KISS NY PINCA PONTA RETA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 109,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65033",
+          "descricao": "KISS UNHA - TRANSPARENTE",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "204108",
+          "descricao": "KISS UNHAS - CELESTE CHIQUE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "204107",
+          "descricao": "KISS UNHAS - ROSA IT GIRL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "14226",
+          "descricao": "KIT UNHA  KSN02BR KISS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "14984",
+          "descricao": "KIT UNHA KSN03BR KISS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79009",
+          "descricao": "KNY BODY SPLASH DARK KISS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6334",
+          "descricao": "LIXA BANANA  FIRST KISS",
+          "L1": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "28365",
+          "descricao": "LIXA BLOCO 4 FACES KISS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 31,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6320",
+          "descricao": "LIXA BLOCO FKWBB01 KISS",
+          "L1": {
+            "vendas": 1,
+            "saldo": 19,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202522",
+          "descricao": "LOÇAO CORPORAL DARK KISS NY",
+          "L1": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79015",
+          "descricao": "LOÇAO CORPORAL LADY IN RED KISS NY",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202519",
+          "descricao": "LOÇAO CORPORAL PINK ROMANCE KISS NY",
+          "L1": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202520",
+          "descricao": "LOÇAO CORPORAL ROSE GLAMOUR KISS NY",
+          "L1": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202521",
+          "descricao": "LOÇAO CORPORAL SEDUCTION GOLD KISS NY",
+          "L1": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79014",
+          "descricao": "LOÇAO CORPORAL SWEET HEART KISS NY",
+          "L1": {
+            "vendas": 1,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13368",
+          "descricao": "MOD RED PRO KISS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "10488",
+          "descricao": "PINCEL RMUB11BR KISS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 19,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "14224",
+          "descricao": "RETOQUE CAB MARROM KISS",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "14222",
+          "descricao": "RETOQUE CABELO PRETO KISS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "40314",
+          "descricao": "RK LIP FIX GLOSSY TINT - CHERRY KISS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62524",
+          "descricao": "SHAMPOO TONALIZANTE CASTANHO ESCURO KISS NY",
+          "L1": {
+            "vendas": 14,
+            "saldo": 22,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 32,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 7,
+            "saldo": 30,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62523",
+          "descricao": "SHAMPOO TONALIZANTE PRETO KISS NY",
+          "L1": {
+            "vendas": 14,
+            "saldo": 27,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 16,
+            "saldo": 20,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 6,
+            "saldo": 31,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6321",
+          "descricao": "UNHAS PORT  KISS",
+          "L1": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202349",
+          "descricao": "CAIXA KISS HIDRATANTE + DEO COLONIA CICLO - 30ML/240ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202352",
+          "descricao": "DEO COLONIA KISS YOU MORE CICLO - 100ML LATA",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202346",
+          "descricao": "ESTOJO BODY SPLASH KISS + KISS YOU MORE CICLO - 100ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "74916",
+          "descricao": "MAGICAL GLOSS WITCH KISS RR72022 MELU RUBYROSE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {
+          "3": 13654.87
+        },
+        "L3": {},
+        "L4": {
+          "4": 11107.14
+        },
+        "L5": {
+          "3": 12369.12
+        }
+      }
+    },
+    {
+      "marca": "Latika",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 3,
+          "saldo_atual": 0,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 0,
+          "vendas_60d": 1,
+          "saldo_atual": 0,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 2,
+          "saldo_atual": 12,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 0,
+          "saldo_atual": 4,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "77545",
+          "descricao": "BB CREAM LATIKA FPS 44 CLAREADOR ESCURO N30",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77547",
+          "descricao": "LATIKA POWDER REFIL FPS 27 BEGE CLARO",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79933",
+          "descricao": "LATIKA POWDER REFIL FPS 27 BEGE ESCURO FRASCO 11 g",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77553",
+          "descricao": "LIP GLOSS LATIKA NO 27",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79935",
+          "descricao": "LIP GLOSS LATIKA NO. 21 - VERMELHO GLOSS FRASCO 4 ml",
+          "L1": {
+            "vendas": 1,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {},
+        "L4": {},
+        "L5": {}
+      }
+    },
+    {
+      "marca": "Let me be",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 80,
+          "saldo_atual": 76,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 497.22,
+          "vendas_60d": 48,
+          "saldo_atual": 70,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 83,
+          "saldo_atual": 58,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 21,
+          "saldo_atual": 104,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "65737",
+          "descricao": "ALISANTE SMOOTHING PHYTO COMPLEX LET ME BE - 300ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 7,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59365",
+          "descricao": "ALISANTE SMOOTHING PHYTO COMPLEX LET ME BE -70ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79445",
+          "descricao": "ATIVADOR DE CACHOS LET ME BE - 500ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "54186",
+          "descricao": "B-BTOX BLOND MATIZADORA LET ME BE - 1KG",
+          "L1": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59027",
+          "descricao": "B-BTOX BLOND MATIZADORA LET ME BE - 250G",
+          "L1": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "54194",
+          "descricao": "B-BTOX PRO REPAIR LET ME BE - 1KG",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "56913",
+          "descricao": "B-BTOX PRO REPAIR LET ME BE - 250G",
+          "L1": {
+            "vendas": 8,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "42326",
+          "descricao": "B-BTOX PRO REPAIR LET ME BE - 500G",
+          "L1": {
+            "vendas": 13,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 7,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65736",
+          "descricao": "B-BTOX SUPREME ULTRA LET ME BE - 250GR",
+          "L1": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203753",
+          "descricao": "CAUTER ONE 120ML LET ME BE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "75061",
+          "descricao": "CAUTERIZACAO CAUTER ONE LET ME BE - 500ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62483",
+          "descricao": "CONDICIONADOR ANTI FRIZZ PHYTO LET ME BE - 250ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "50340",
+          "descricao": "CONDICIONADOR BIORESTORE LET ME BE - 240ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "57901",
+          "descricao": "CONDICIONADOR CACHOS LET ME BE - 240ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78286",
+          "descricao": "CONDICIONADOR COM VOCE - ALOE VERA LET ME BE - 1LT",
+          "L1": {
+            "vendas": 0,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "50343",
+          "descricao": "CONDICIONADOR PROTEIN HOME CARE LET ME BE - 240ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79446",
+          "descricao": "KIT CRONOGRAMA CAPILAR AMPOLAS CRONOFORCE LET ME BE - 15ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202272",
+          "descricao": "LINE UP! MODELADOR DE FIOS 10G - LET ME BE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 21,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62484",
+          "descricao": "MASCARA ANTI FRIZZ PHYTO LET ME BE - 250G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "55436",
+          "descricao": "MASCARA BIORESTORE LET ME BE - 250G",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "47736",
+          "descricao": "MASCARA BLACK BLOND LET ME BE - 500G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "57896",
+          "descricao": "MASCARA CACHOS LET ME BE - 250G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "55439",
+          "descricao": "MASCARA CHAMPANHE MATIZADORA LET ME BE - 500G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78293",
+          "descricao": "MASCARA COM VOCE - ACIDO HIALURONICO LET ME BE - 1,5KG",
+          "L1": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78287",
+          "descricao": "MASCARA COM VOCE - ALOE VERA LET ME BE - 1,5KG",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78290",
+          "descricao": "MASCARA COM VOCE BLEND ULTRA CONCENTRADO LET ME BE 1,5KG",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78294",
+          "descricao": "MASCARA COM VOCE CACHOS LET ME BE 1,5KG",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60476",
+          "descricao": "MASCARA FIBER FINISH PHYTO COMPLEX LET ME BE - 1KG",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65738",
+          "descricao": "PROTEIN SMOOTHING (SELAGEM) LET ME BE - 100ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44446",
+          "descricao": "PROTEIN SMOOTHING BLOND PASSO UNICO (SELAGEM) LET ME BE - 1L",
+          "L1": {
+            "vendas": 1,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "54193",
+          "descricao": "PROTEIN SMOOTHING BLOND PASSO UNICO (SELAGEM) LET ME BE - 500ML",
+          "L1": {
+            "vendas": 4,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "42319",
+          "descricao": "PROTEIN SMOOTHING PASSO UNICO (SELAGEM) LET ME BE - 1000ML",
+          "L1": {
+            "vendas": 5,
+            "saldo": 16,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 10,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "42321",
+          "descricao": "PROTEIN SMOOTHING PASSO UNICO (SELAGEM) LET ME BE - 500ML",
+          "L1": {
+            "vendas": 18,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 17,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63801",
+          "descricao": "PROTETOR TERMICO SPRAY DUO EFFECT LISO MAGICO LET ME BE - 60ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79391",
+          "descricao": "REPARADOR DE PONTAS VELVET DROPS - LET ME BE 30ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79635",
+          "descricao": "REPARADOR DE PONTAS VELVET DROPS LET ME BE 7ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62482",
+          "descricao": "SHAMPOO ANTI FRIZZ PHYTO LET ME BE - 250ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "57905",
+          "descricao": "SHAMPOO CACHOS LET ME BE - 240ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79443",
+          "descricao": "SHAMPOO CACHOS LET ME BE - 500ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 14,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78291",
+          "descricao": "SHAMPOO COM VOCE - ACIDO HIALURONICO LET ME BE - 1LT",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78285",
+          "descricao": "SHAMPOO COM VOCE - ALOE VERA LET ME BE - 1LT",
+          "L1": {
+            "vendas": 0,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "64313",
+          "descricao": "SHAMPOO PREPARATORIO PHYTO DETOX LET ME BE - 1L",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44443",
+          "descricao": "SHAMPOO SUPREME KERATIN PASSO 1 (SELAGEM) LET ME BE - 1L",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 5,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44358",
+          "descricao": "SHAMPOO SUPREME KERATIN PASSO 1 (SELAGEM) LET ME BE - 500ML",
+          "L1": {
+            "vendas": 5,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 8,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58459",
+          "descricao": "SUPREME KERATIN PASSO 2 (SELAGEM) LET ME BE - 1000ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 5,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44355",
+          "descricao": "SUPREME KERATIN PASSO 2 (SELAGEM) LET ME BE - 500ML",
+          "L1": {
+            "vendas": 5,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 6,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78281",
+          "descricao": "TONICO FORTALECEDOR KORE HAIR LET ME BE - 140ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {
+          "1": 497.21876909646437
+        },
+        "L4": {},
+        "L5": {}
+      }
+    },
+    {
+      "marca": "Lizze",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 14,
+          "saldo_atual": 7,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 0,
+          "vendas_60d": 10,
+          "saldo_atual": 10,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 9219.88,
+          "vendas_60d": 3,
+          "saldo_atual": 14,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 6,
+          "saldo_atual": 8,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "80155",
+          "descricao": "PRANCHA LIZZE FUSION 480  127V",
+          "L1": {
+            "vendas": 9,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 9,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "26462",
+          "descricao": "SECADOR LIZZE EXTREME 127V",
+          "L1": {
+            "vendas": 5,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 8,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {},
+        "L4": {
+          "3": 9219.88
+        },
+        "L5": {}
+      }
+    },
+    {
+      "marca": "MQ",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 3,
+          "saldo_atual": 1,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 0,
+          "vendas_60d": 0,
+          "saldo_atual": 0,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 1,
+          "saldo_atual": 1,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 2,
+          "saldo_atual": 2,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "76896",
+          "descricao": "ESCOVA PROF.  VENTILADA GDE AIR FLOWING NATURAL INDIGO - MQ",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "80156",
+          "descricao": "MODELADOR EM ANGULO 90 CURLING GOLD 32MM - MQ",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "48580",
+          "descricao": "TESOURA TALENT LASER GOLD 5.5 - MQ 199",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51920",
+          "descricao": "TESOURA TALENT NAVALHA  BLUE 5.5 - MQ 206",
+          "L1": {
+            "vendas": 2,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51929",
+          "descricao": "TESOURA TALENT NAVALHA SAND FINISH 6.0 - MQ 195",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {},
+        "L4": {},
+        "L5": {}
+      }
+    },
+    {
+      "marca": "Marco Boni",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 75,
+          "saldo_atual": -63,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 89.91,
+          "vendas_60d": 22,
+          "saldo_atual": 66,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 57,
+          "saldo_atual": 120,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 6,
+          "saldo_atual": 13,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "18699",
+          "descricao": "AVENTAL PROFISSIONAL FRENTE UNICA MARCO BONI",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "36",
+          "descricao": "BOB MEDIO C/ VELCRO 4305 MARCO BONI",
+          "L1": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "56692",
+          "descricao": "BOBES G AUTOADERENTE COM 4 UNID MARCO BONI",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "30481",
+          "descricao": "CAPAS PARA CORTE SEM MANGA BARBERSHOP MARCO BONI",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "4799",
+          "descricao": "CONJ TINTURA MARCO BONI 1438",
+          "L1": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3556",
+          "descricao": "ESC MARCO BONI 7758-T",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6097",
+          "descricao": "ESC MARCO BONI 7809",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8270",
+          "descricao": "ESC MARCO BONI 8042",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8271",
+          "descricao": "ESC MARCO BONI 8043",
+          "L1": {
+            "vendas": 2,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8273",
+          "descricao": "ESC MARCO BONI 8047",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8274",
+          "descricao": "ESC MARCO BONI 8048",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "30447",
+          "descricao": "ESC PROF THERMAL METALLIC CLASS COLORS MARCO BONI",
+          "L1": {
+            "vendas": 2,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "2126",
+          "descricao": "ESC THERMAL MARCO BONI 75MM",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "2125",
+          "descricao": "ESCOVA  MARCO BONI 7967",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7646",
+          "descricao": "ESCOVA  MARCO BONI 8014",
+          "L1": {
+            "vendas": 0,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "41734",
+          "descricao": "ESCOVA PARA BARBA MARCO BONI",
+          "L1": {
+            "vendas": 4,
+            "saldo": -8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "41951",
+          "descricao": "ESCOVA PROFISSIONAL GDE AZUL MARCO BONI",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "41952",
+          "descricao": "ESCOVA PROFISSIONAL MEDIA AZUL 25MM MARCO BONI",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "41953",
+          "descricao": "ESCOVA PROFISSIONAL PEQ AZUL MARCO BONI",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "41941",
+          "descricao": "ESCOVA RAQUETE ALMOFADA SATIN MARCO BONI",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "508",
+          "descricao": "HIPER PENTE LISO MARCO BONI",
+          "L1": {
+            "vendas": 1,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1416",
+          "descricao": "KIT C/ 1 PENTE E 1 PINCEL MARCO BONI",
+          "L1": {
+            "vendas": 6,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 7,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13851",
+          "descricao": "KIT ROSE LOOK MARCO BONI",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63321",
+          "descricao": "KIT TIGELA PARA TINTURA E ESPATULA MARCO BONI",
+          "L1": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11398",
+          "descricao": "KIT VIAGEM 3 MINI FRASCOS 6082 MARCO BONI",
+          "L1": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19594",
+          "descricao": "KIT VIAGEM 6 ITENS MARCO BONI",
+          "L1": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11399",
+          "descricao": "KIT VIAGEM COM 2 FRASCOS MARCO  BONI",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "9049",
+          "descricao": "KIT VIAGEM MARCO BONI 3UN 80 ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19607",
+          "descricao": "LIMP ESCOVA MARCO BONI",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1420",
+          "descricao": "LIXA PLANA P/ PES 5941 MARCO BONI",
+          "L1": {
+            "vendas": 2,
+            "saldo": 13,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8431",
+          "descricao": "LUVA BLACK M MARCO BONI 2UN",
+          "L1": {
+            "vendas": 0,
+            "saldo": 13,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 18,
+            "saldo": 69,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11376",
+          "descricao": "PENT ESC SOBRAN N17 MARCO BONI 1316",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "154",
+          "descricao": "PENTE CARB REF 0213 MARCO BONI",
+          "L1": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "152",
+          "descricao": "PENTE CARB REF 0219 MARCO BONI",
+          "L1": {
+            "vendas": 2,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "40970",
+          "descricao": "PENTE DE CARBONO MARCO BONI",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "4401",
+          "descricao": "PENTE ION 0043 MARCO BONI",
+          "L1": {
+            "vendas": 1,
+            "saldo": -11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "69",
+          "descricao": "PENTE MARCO BONI 1437",
+          "L1": {
+            "vendas": 3,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "10080",
+          "descricao": "PENTE MECHAS MARCO BONI",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13",
+          "descricao": "PENTE PROF 1274 MARCO BONI",
+          "L1": {
+            "vendas": 6,
+            "saldo": -10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "9762",
+          "descricao": "PENTE PROF BARBEIRO MARCO BONI",
+          "L1": {
+            "vendas": 0,
+            "saldo": 13,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 23,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "4409",
+          "descricao": "PENTE PROF ION MARCO BONI 0033",
+          "L1": {
+            "vendas": 4,
+            "saldo": -8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 15,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8543",
+          "descricao": "PINCA PNT RETA MARCO BONI",
+          "L1": {
+            "vendas": 3,
+            "saldo": -130,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6764",
+          "descricao": "PINCEL DE TINTURA LARGO 1379 MARCO BONI",
+          "L1": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 20,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "4798",
+          "descricao": "PINCEL ESP BICOLOR MARCO BONI 1451",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8424",
+          "descricao": "PINCEL G  DUO FIBER MARCO BONI",
+          "L1": {
+            "vendas": 0,
+            "saldo": -7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "24",
+          "descricao": "PINCEL P/ TINT MARCO BONI",
+          "L1": {
+            "vendas": 8,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 6,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3561",
+          "descricao": "PINCEL TINT MARCO BONI 1439",
+          "L1": {
+            "vendas": 9,
+            "saldo": 23,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "2500",
+          "descricao": "PULV  CURVO MARCO BONI 300ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7019",
+          "descricao": "PULV LIQUIDO MINI 150ML MARCO BONI",
+          "L1": {
+            "vendas": 4,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "2503",
+          "descricao": "PULV REDONDO 1529 MARCO BONI 300ML",
+          "L1": {
+            "vendas": 3,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "2980",
+          "descricao": "TOUCA MARCO BONI 8415",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5170",
+          "descricao": "TOUCA PLATICA  2UN 8464 MARCO BONI",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {
+          "1": 89.91372741161064
+        },
+        "L4": {},
+        "L5": {}
+      }
+    },
+    {
+      "marca": "Mirra",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 12955.58,
+          "vendas_60d": 18,
+          "saldo_atual": -1,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 0,
+          "vendas_60d": 2,
+          "saldo_atual": 22,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 31,
+          "saldo_atual": -5,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 0,
+          "saldo_atual": 0,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "203803",
+          "descricao": "INOAR LATIFAH OLEO ARGAN E MIRRA 7ML",
+          "L1": {
+            "vendas": 8,
+            "saldo": -11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 22,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202924",
+          "descricao": "ATIVADOR DE CACHOS MIRRA FIX APICE 500g",
+          "L1": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 8,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202922",
+          "descricao": "CONDICIONADOR MIRRA FIX APICE 300mL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203122",
+          "descricao": "GELATINA MIRRA FIX APICE 280g",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203124",
+          "descricao": "MASCARA MIRRA FIX APICE 300g",
+          "L1": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203313",
+          "descricao": "OLEO DE MIRRA CACHOS APICE 30ML",
+          "L1": {
+            "vendas": 3,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202923",
+          "descricao": "SHAMPOO MIRRA FIX APICE 300mL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {
+          "2": 12955.58
+        },
+        "L3": {},
+        "L4": {},
+        "L5": {}
+      }
+    },
+    {
+      "marca": "Mundial",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 13970.55,
+          "vendas_60d": 76,
+          "saldo_atual": 453,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 8934.86,
+          "vendas_60d": 65,
+          "saldo_atual": 273,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 13412.15,
+          "vendas_60d": 75,
+          "saldo_atual": 450,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 13707.78,
+          "vendas_60d": 69,
+          "saldo_atual": 475,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "6683",
+          "descricao": "ALIC  PONTO PRET MUNDIAL 171",
+          "L1": {
+            "vendas": 4,
+            "saldo": 52,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 6,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8607",
+          "descricao": "ALIC CUT 577 MUNDIAL",
+          "L1": {
+            "vendas": 1,
+            "saldo": 23,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8609",
+          "descricao": "ALIC CUT 577CL MUNDIAL",
+          "L1": {
+            "vendas": 1,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7047",
+          "descricao": "ALIC CUT FLEX PROF MUNDIAL 170-FR",
+          "L1": {
+            "vendas": 1,
+            "saldo": 32,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6682",
+          "descricao": "ALIC CUT INOX PROF MUNDIAL 777",
+          "L1": {
+            "vendas": 8,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 12,
+            "saldo": 24,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 13,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 8,
+            "saldo": 14,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8610",
+          "descricao": "ALIC CUT INOX/EMP CUT 778-E MUNDIAL",
+          "L1": {
+            "vendas": 3,
+            "saldo": 23,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "499",
+          "descricao": "ALIC CUT MUNDIAL 522-C",
+          "L1": {
+            "vendas": 6,
+            "saldo": -14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3283",
+          "descricao": "ALIC CUT MUNDIAL 522-C AP",
+          "L1": {
+            "vendas": 0,
+            "saldo": 18,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 16,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 13,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "82",
+          "descricao": "ALIC CUT MUNDIAL PROF  722-PR",
+          "L1": {
+            "vendas": 1,
+            "saldo": 32,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6684",
+          "descricao": "ALIC CUT PONT VERM MUNDIAL 171",
+          "L1": {
+            "vendas": 0,
+            "saldo": 37,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8613",
+          "descricao": "ALIC CUT/EMP CUT FLEX 168-FL MUNDIAL",
+          "L1": {
+            "vendas": 4,
+            "saldo": 13,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 7,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7057",
+          "descricao": "ALIC MUNDIAL 772",
+          "L1": {
+            "vendas": 0,
+            "saldo": 15,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3285",
+          "descricao": "ALIC SANDY PLAST MUNDIAL 756-S",
+          "L1": {
+            "vendas": 2,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13559",
+          "descricao": "APARELHO BARBEAR MUNDIAL BC-130",
+          "L1": {
+            "vendas": 1,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63018",
+          "descricao": "CINZEL FORMAO MODIFICADO PROFESSIONAL MUNDIAL 254A",
+          "L1": {
+            "vendas": 1,
+            "saldo": 17,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8611",
+          "descricao": "CONJ MANICURE FLEX 154-FL MUNDIAL",
+          "L1": {
+            "vendas": 1,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6701",
+          "descricao": "CONJ PINCAS PROF MUNDIAL",
+          "L1": {
+            "vendas": 3,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203976",
+          "descricao": "CORTADOR DE UNHA INFANTIL MISTO ROSA E AZUL JACARE BC-76 KIDS MUNDIAL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13149",
+          "descricao": "CORTADOR DE UNHA MAO MISTO BC-159M COLORS MUNDIAL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203994",
+          "descricao": "CORTADOR DE UNHA PE 121-BL CLASSIC MUNDIAL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 20,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79851",
+          "descricao": "CORTADOR DE UNHA PES FLEX MUNDIAL BC-158BL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 6,
+            "saldo": 18,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203975",
+          "descricao": "CORTADOR UNHA MAO CARTELA 10PC 120CD CLASSIC MUNDIAL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 19,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 49,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3291",
+          "descricao": "CURETA MUNDIAL 261M",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11296",
+          "descricao": "DUO DE PINÇAS MUNDIAL BC-391",
+          "L1": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11294",
+          "descricao": "DUO DE PINÇAS MUNDIAL BC-408",
+          "L1": {
+            "vendas": 1,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 14,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63013",
+          "descricao": "GOIVA PARA UNHA ENCRAVADA PROFESSIONAL MUNDIAL 206",
+          "L1": {
+            "vendas": 1,
+            "saldo": 18,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11293",
+          "descricao": "INST EMP  RASP MUNDIAL 371M",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11292",
+          "descricao": "KIT DESIGN SOBRAN MUNDIAL BC-320",
+          "L1": {
+            "vendas": 0,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59334",
+          "descricao": "LIXA MEDIA PARA UNHA FLEX MUNDIAL BC-84",
+          "L1": {
+            "vendas": 1,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6691",
+          "descricao": "LIXA PE ANATOMICA MUNDIAL",
+          "L1": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6692",
+          "descricao": "LIXA POLIDORA 7 FACES MUNDIAL",
+          "L1": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63008",
+          "descricao": "MICRO NUCLEAR PROFESSIONAL MUNDIAL 208M",
+          "L1": {
+            "vendas": 0,
+            "saldo": 13,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6685",
+          "descricao": "MOLA PARAFUSO 522 MUNDIAL",
+          "L1": {
+            "vendas": 5,
+            "saldo": -63,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6702",
+          "descricao": "NAV MUNDIAL BC-980",
+          "L1": {
+            "vendas": 0,
+            "saldo": -40,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 15,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8606",
+          "descricao": "NAVALHETE PROF INOX MUNDIAL",
+          "L1": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63012",
+          "descricao": "NUCLEAR ESTREITO PROFESSIONAL MUNDIAL 209M",
+          "L1": {
+            "vendas": 0,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63010",
+          "descricao": "NUCLEAR LARGO PROFESSIONAL MUNDIAL 214M",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3292",
+          "descricao": "PINÇA  FLEX MUNDIAL 110",
+          "L1": {
+            "vendas": 5,
+            "saldo": 44,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": -5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11288",
+          "descricao": "PINÇA COLORS RETA 140 MUNDIAL",
+          "L1": {
+            "vendas": 3,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 8,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44363",
+          "descricao": "PINÇA CRISTAL ANATOMICA MUNDIAL",
+          "L1": {
+            "vendas": 1,
+            "saldo": -11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44362",
+          "descricao": "PINCA CRISTAL GOLD MUNDIAL",
+          "L1": {
+            "vendas": 3,
+            "saldo": 18,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13569",
+          "descricao": "PINCA GOLD MUNDIAL  BC-393",
+          "L1": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "50052",
+          "descricao": "PINCA PONTA FINA GOLD MUNDIAL 380P",
+          "L1": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11287",
+          "descricao": "PINÇA PONTA RETA BC-383 MUNDIAL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 20,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7049",
+          "descricao": "PINÇA PROF MUNDIAL 382",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3293",
+          "descricao": "TES BARB MUNDIAL 663",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 20,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7048",
+          "descricao": "TES CABELO FLEX  LASER MUNDIAL",
+          "L1": {
+            "vendas": 3,
+            "saldo": -19,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 15,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3294",
+          "descricao": "TES FLEX NARIZ MUNDIAL 324",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6687",
+          "descricao": "TES UNHA RETA 9CM MUNDIAL",
+          "L1": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "50717",
+          "descricao": "TES UNHA RETA 9CM MUNDIAL",
+          "L1": {
+            "vendas": 0,
+            "saldo": -17,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11285",
+          "descricao": "TESOURA CAB 653-5 MUNDIAL",
+          "L1": {
+            "vendas": 2,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 32,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "61590",
+          "descricao": "TESOURA CABELO FIO LASER COLORS MUNDIAL TE-1008AZ-",
+          "L1": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78302",
+          "descricao": "TESOURA CABELO FIO LASER COLORS MUNDIAL TE-1009AZ-5.5",
+          "L1": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203977",
+          "descricao": "TESOURA CUTICULA CURVA 8,9CM BC-415-3.1/2 CLASSIC MUNDIAL",
+          "L1": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11284",
+          "descricao": "TESOURA PARA CABELO 71/2   163-7 MUNDIAL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 14,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "13566",
+          "descricao": "TESOURA UNHA INF MUNDIAL BC-307",
+          "L1": {
+            "vendas": 1,
+            "saldo": -17,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203974",
+          "descricao": "TESOURA UNHA RETA 8,9CM BC-416-3.1/2 CLASSIC MUNDIAL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78300",
+          "descricao": "CORTADOR DE UNHA MAOS POTE C/72PC FLEX MUNDIAL BC-157P",
+          "L1": {
+            "vendas": 2,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 21,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 35,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 71,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {
+          "1": 12929.15,
+          "2": 1041.4
+        },
+        "L3": {
+          "2": 8934.86
+        },
+        "L4": {
+          "1": 13412.15
+        },
+        "L5": {
+          "1": 12637.31,
+          "3": 1070.47
+        }
+      }
+    },
+    {
+      "marca": "Mutari",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 38,
+          "saldo_atual": -19,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 0,
+          "vendas_60d": 0,
+          "saldo_atual": 10,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 49,
+          "saldo_atual": 74,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 34,
+          "saldo_atual": 113,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "58798",
+          "descricao": "1.0 PRETO COLLOR MUTARI COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "57754",
+          "descricao": "1.11 PRETO AZULADO MUTARI COLOR 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58807",
+          "descricao": "10.0 - LOURO CLARISSIMO MUTARI COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60638",
+          "descricao": "10.2 - LOURO CLARISSIMO IRISADO MUTARI COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58839",
+          "descricao": "12.11 - ULTRA CLAREADOR CINZA INTENSO MUTARI COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "57753",
+          "descricao": "4.0 CASTANHO MEDIO MUTARI COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58802",
+          "descricao": "5.0 - CASTANHO CLARO MUTARI COLOR 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58820",
+          "descricao": "5.3 CASTANHO CLARO DOURADO MUTARI COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79938",
+          "descricao": "6.13 LOURO ESCURO CINZA DOURADO MUTARI COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58837",
+          "descricao": "6.37 - LOURO ESCURO DOURADO MARROM MUTARI COLOR 60G",
+          "L1": {
+            "vendas": 2,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58827",
+          "descricao": "6.66 - LOURO ESCURO VERMELHO INTENSO MUTARI COLOR 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58834",
+          "descricao": "6.7 - LOURO ESCURO MARROM MUTARI COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58810",
+          "descricao": "7.1 - LOURO MEDIO CINZA MUTARI COLOR 60G",
+          "L1": {
+            "vendas": 1,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58822",
+          "descricao": "7.3 - LOURO MEDIO DOURADO MUTARI COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58813",
+          "descricao": "7.31 - LOURO MEDIO DOURADO CINZA MUTARI COLOR",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58805",
+          "descricao": "8.0 - LOURO CLARO MUTARI COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58814",
+          "descricao": "8.13 - LOURO CLARO CINZA DOURADO MUTARI  COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58818",
+          "descricao": "8.44 - LOURO CLARO COBRE INTENSO MUTARI COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58812",
+          "descricao": "9.1 - LOURO MUITO CLARO CINZA MUTARI COLOR 60G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "56045",
+          "descricao": "AMPOLA FASTFORCE RELAX SOS Q10 MUTARI 15ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60649",
+          "descricao": "AMPOLA REPAIR HAIR THERAPY MUTARI PRO 10ML",
+          "L1": {
+            "vendas": 5,
+            "saldo": -7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "64500",
+          "descricao": "AMPOLA SOFT COLOR MUTARI PRO 10ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53058",
+          "descricao": "CONDICIONADOR BLACK MULT CACHOS MUTARI 500ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "56058",
+          "descricao": "CREME DE PENTEAR PROGRESS MUTARI 240ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60659",
+          "descricao": "FINISHING OIL CLASSIC HAIR THERAPY MUTARI PRO 57ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53045",
+          "descricao": "GELATINA BLACK MULT CACHOS MUTARI 500ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53006",
+          "descricao": "MASCARA 48H MUTARI 300G",
+          "L1": {
+            "vendas": 4,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78833",
+          "descricao": "MASCARA ACIDO HIALURONICO AMT MUTARI 500G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "52988",
+          "descricao": "MASCARA COLOR RED MUTARI 300G",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "56055",
+          "descricao": "MASCARA CONDICIONANTE PROGRESS MUTARI 300G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "52996",
+          "descricao": "MASCARA EASY NUTRIT MULTI CEREAIS MUTARI 300G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "64494",
+          "descricao": "MASCARA HYDRA HAIR THERAPY MUTARI PRO 300G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "64493",
+          "descricao": "MASCARA HYDRA HAIR THERAPY MUTARI PRO 500G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "56048",
+          "descricao": "MASCARA POLPA DE COCO COCONUT MUTARI 300G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "75826",
+          "descricao": "MASCARA POWERLOO NUTRICAO CRONOGRAMA MUTARI 300G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "75827",
+          "descricao": "MASCARA POWERLOO RECONSTRUCAO CONOGRAMA MUTARI 300G",
+          "L1": {
+            "vendas": 0,
+            "saldo": -7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53051",
+          "descricao": "MASCARA RECONSTRUTORA SHOCK PLUS MUTARI 500ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "56039",
+          "descricao": "MASCARA RELAX SOS Q10 300G - MUTARI",
+          "L1": {
+            "vendas": 0,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60655",
+          "descricao": "MASCARA REPAIR HAIR THERAPY MUTARI PRO 300G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60656",
+          "descricao": "MASCARA REPAIR HAIR THERAPY MUTARI PRO 500G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "56052",
+          "descricao": "MASCARA SUPLEMENTO POWER HAIR MUTARI 300G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60642",
+          "descricao": "MASCARA SUPLEMENTO POWER HAIR MUTARI PROF 1KG",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53030",
+          "descricao": "OLEO CARIBBEAN MUTARI 30ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53031",
+          "descricao": "OLEO SOS Q10 MUTARI 30ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53048",
+          "descricao": "OLEO VEGETAL BLACK MULT CACHOS MUTARI 60ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58846",
+          "descricao": "OX 20VL MUTARI 90ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -24,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60634",
+          "descricao": "OX REVELUX 10VOL MUTARI 950ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "57750",
+          "descricao": "OX REVELUX 5VOL MUTARI 950ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "52995",
+          "descricao": "PROTETOR FINALIZADOR 48 HORAS 120ML MUTARI",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53057",
+          "descricao": "REDUTOR PROGRESS PREMIUM MUTARI 1L",
+          "L1": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "60633",
+          "descricao": "REDUTOR PROGRESS PREMIUM MUTARI 240ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "57752",
+          "descricao": "REDUTOR RECONSTRUTOR HYALURONIC MUTARI PROF 1L",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53004",
+          "descricao": "SHAMPOO 48H MUTARI 240ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "64502",
+          "descricao": "SHAMPOO COLOR THERAPY MUTARI PRO 1L",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "56060",
+          "descricao": "SHAMPOO DETOX CABELOS DO BRASIL MUTARI 240ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "52998",
+          "descricao": "SHAMPOO EASY NUTRIT MULTI CEREAIS MUTARI 240ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "64497",
+          "descricao": "SHAMPOO HYDRA THERAPY MUTARI PRO 300ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "75823",
+          "descricao": "SHAMPOO MATIZADOR SOS LOUROS MUTARI 240ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "56056",
+          "descricao": "SHAMPOO PROGRESS MUTARI 240ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "57749",
+          "descricao": "SHAMPOO PROTECT SUPLEMENTO POWER HAIR MUTARI 1L",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53052",
+          "descricao": "SHAMPOO RECONSTRUTOR SHOCK PLUS MUTARI 500ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {},
+        "L4": {},
+        "L5": {}
+      }
+    },
+    {
+      "marca": "Natum",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 120,
+          "saldo_atual": 1257,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 0,
+          "vendas_60d": 59,
+          "saldo_atual": 228,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 105,
+          "saldo_atual": 176,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 62,
+          "saldo_atual": 334,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "48075",
+          "descricao": "0/13 NATUM COLOR",
+          "L1": {
+            "vendas": 2,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "10770",
+          "descricao": "1/0 ADVANCED - NÁTUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "48030",
+          "descricao": "1/0 NATUM COLOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5113",
+          "descricao": "10/0 NATUM COLOR",
+          "L1": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "48038",
+          "descricao": "10/0 NATUM COLOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "48070",
+          "descricao": "12/11 NATUM COLOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 36,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "45121",
+          "descricao": "12/89 SUPERCLSREADOR PEROLA  60GR COLOUR NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "10771",
+          "descricao": "3/0 ADVANCED - NÁTUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "48031",
+          "descricao": "3/0 NATUM COLOR",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "48032",
+          "descricao": "4/0 NATUM COLOR",
+          "L1": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 7,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "10778",
+          "descricao": "5/0 ADVANCED - NÁTUM",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "48033",
+          "descricao": "5/0 NATUM COLOR",
+          "L1": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "48063",
+          "descricao": "55/62 NATUM COLOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "10772",
+          "descricao": "6/0 ADVANCED - NÁTUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": -7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "48034",
+          "descricao": "6/0 NATUM COLOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "48040",
+          "descricao": "6/1 NATUM COLOR",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "45116",
+          "descricao": "6/26 NATUM MARSALA  COLOUR",
+          "L1": {
+            "vendas": 1,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "10783",
+          "descricao": "6/3 ADVANCED - NÁTUM",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "48046",
+          "descricao": "6/3 NATUM COLOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5141",
+          "descricao": "6/41 NATUM COLOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 36,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "48066",
+          "descricao": "6/41 NATUM COLOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 36,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "48064",
+          "descricao": "66/46 NATUM COLOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 24,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "48035",
+          "descricao": "7/0 NATUM COLOR",
+          "L1": {
+            "vendas": 2,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "48041",
+          "descricao": "7/1 NATUM COLOR",
+          "L1": {
+            "vendas": 2,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "48050",
+          "descricao": "7/31 NATUM COLOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "48067",
+          "descricao": "7/4 NATUM COLOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "48036",
+          "descricao": "8/0 NATUM COLOR",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "48042",
+          "descricao": "8/1 NATUM COLOR",
+          "L1": {
+            "vendas": 3,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "48037",
+          "descricao": "9/0 NATUM COLOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "48049",
+          "descricao": "9/3 NATUM COLOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51696",
+          "descricao": "AMPOLA ABSOLUT GOLD 13ML NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "54135",
+          "descricao": "AMPOLA COLOUR PROTECTION 15 ML NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 13,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "40354",
+          "descricao": "ARGAN OIL 45 ML NATUM",
+          "L1": {
+            "vendas": 3,
+            "saldo": 42,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8347",
+          "descricao": "BB CREAM FINISHING 120 ML NATUM",
+          "L1": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "54142",
+          "descricao": "CLINIC KERATIN REPAIR 60 ML NATUM",
+          "L1": {
+            "vendas": 5,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51755",
+          "descricao": "CLINIC KERATIN REPAIR NATUM 200ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5391",
+          "descricao": "COND POS COLOUR NATUM 250 ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "64950",
+          "descricao": "COND REVIVAL REPAIR 250 ML NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8585",
+          "descricao": "COND SILVER BLACK NATUM 250ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "4064",
+          "descricao": "CONDICIONADOR   BLOND PASSION NATUM 250ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3533",
+          "descricao": "CONDICIONADOR  ARGAN OIL NATUM 250ML",
+          "L1": {
+            "vendas": 3,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "2292",
+          "descricao": "CONDICIONADOR  KERATRIX NATUM 250ML",
+          "L1": {
+            "vendas": 5,
+            "saldo": 23,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 13,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "502",
+          "descricao": "CONDICIONADOR  NEUTRO BIO NATUM 1L",
+          "L1": {
+            "vendas": 2,
+            "saldo": 26,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "222",
+          "descricao": "CONDICIONADOR  NEUTRO BIO NATUM 300ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1231",
+          "descricao": "CONDICIONADOR  PESSEGO BIO NATUM 1L",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "49488",
+          "descricao": "CONDICIONADOR ACELERATOR HAIR THERAPY NATUM 200ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78606",
+          "descricao": "CONDICIONADOR NEUTRO 250 ML NATUM BIO PROFISSIONAL",
+          "L1": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202458",
+          "descricao": "FINALIZ ACIDIFICANTE EQUILIBRIUM PH 250 ML NATUM",
+          "L1": {
+            "vendas": 2,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51695",
+          "descricao": "FINALIZADOR ABSOLUT GOLD 60 ML NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "64954",
+          "descricao": "FINALIZADOR LEAVE-IN  REVIVAL REPAIR 250 ML NATUM.",
+          "L1": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78609",
+          "descricao": "FINALIZADOR LEAVE-IN NEUTRO 250G  NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 43,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78608",
+          "descricao": "FINALIZADOR LEAVE-IN PESSEGO 250 G NATUM",
+          "L1": {
+            "vendas": 2,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202457",
+          "descricao": "FINALIZADOR LUMINI REFLECT 60ML NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51786",
+          "descricao": "FLUIDO DE BRILHO 90 ML NATUM",
+          "L1": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77144",
+          "descricao": "INSTANT LISS 1000 ML NATUM",
+          "L1": {
+            "vendas": 3,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77143",
+          "descricao": "KIT MASC CRONOGRAMA CAPILAR 250 ML NATUM",
+          "L1": {
+            "vendas": 3,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3534",
+          "descricao": "LEAVE-IN ARGAN OIL NATUM 250ML",
+          "L1": {
+            "vendas": 4,
+            "saldo": 22,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5393",
+          "descricao": "LEAVE-IN COLOUR NATUM 250 ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "2290",
+          "descricao": "LEAVE-IN KERATRIX NATUM 250ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 43,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62625",
+          "descricao": "LUMINI SPA 60ML LUXURY NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51753",
+          "descricao": "LUMINI SPA BODY E HAIR SPARY NATUM 200ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 16,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "54141",
+          "descricao": "LUMINI SPA ROMANTIC NATUM 60ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3784",
+          "descricao": "MASCARA  ARGAN OIL NATUM 250G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 13,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "4065",
+          "descricao": "MASCARA  BLOND PASSION  NATUM 250ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 24,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3124",
+          "descricao": "MASCARA  FIBER KERATRIX 1L NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 26,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "224",
+          "descricao": "MASCARA  NEUTRO BIO NATUM 250G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 67,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "223",
+          "descricao": "MASCARA  PESSEGO 250 G NATUM BIO PROFESSIONAL",
+          "L1": {
+            "vendas": 2,
+            "saldo": 21,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "435",
+          "descricao": "MASCARA  PESSEGO BIO NATUM 1KG",
+          "L1": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51689",
+          "descricao": "MASCARA BANHO DE OURO ABSOLUT GOLD 300ML NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3531",
+          "descricao": "MASCARA FIBER KERATRIX NATUM 250G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51680",
+          "descricao": "MASCARA NEUTRO 1 KG NATUM BIO PROFESSIONAL",
+          "L1": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "64951",
+          "descricao": "MASCARA REVIVAL REPAIR 250 GR NATUM",
+          "L1": {
+            "vendas": 1,
+            "saldo": 15,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6706",
+          "descricao": "MASCARA THERMO RESTORE 250 NATUM.",
+          "L1": {
+            "vendas": 3,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6138",
+          "descricao": "MS POS COLOUR NATUM 1L",
+          "L1": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6370",
+          "descricao": "OJON OIL MIRACLE NATUM 45 ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": 16,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "48084",
+          "descricao": "OLEO BIFASICO SECRET MICELAR  NATUM 120ML",
+          "L1": {
+            "vendas": 3,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 13,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63900",
+          "descricao": "ON LISS 60 ML NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51782",
+          "descricao": "SH DESINTOX NANO OIL 1L NATUM",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6137",
+          "descricao": "SH POS COLOUR NATUM 1L",
+          "L1": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5390",
+          "descricao": "SH POS COLOUR NATUM 250 ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "64949",
+          "descricao": "SH REVIVAL REPAIR 250 ML NATUM",
+          "L1": {
+            "vendas": 1,
+            "saldo": 13,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3532",
+          "descricao": "SHAMPOO  ARGAN OIL NATUM 250ML",
+          "L1": {
+            "vendas": 4,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "4063",
+          "descricao": "SHAMPOO  BLOND PASSION  NATUM 250ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3123",
+          "descricao": "SHAMPOO  KERATINA KERATRIX NATUM 1L",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "2291",
+          "descricao": "SHAMPOO  KERATRIX NATUM 250ML",
+          "L1": {
+            "vendas": 5,
+            "saldo": 44,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1446",
+          "descricao": "SHAMPÓO  KERATRIX NATUM 5L",
+          "L1": {
+            "vendas": 2,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "501",
+          "descricao": "SHAMPOO  NEUTRO BIO NATUM 1L",
+          "L1": {
+            "vendas": 0,
+            "saldo": 61,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "265",
+          "descricao": "SHAMPOO  NEUTRO BIO NATUM 5L",
+          "L1": {
+            "vendas": 0,
+            "saldo": 16,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "500",
+          "descricao": "SHAMPOO  PESSEGO BIO NATUM 1L",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "2545",
+          "descricao": "SHAMPOO  THERMO RESTORE NATUM 250ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63889",
+          "descricao": "SHAMPOO ABSOLUT GOLD NATUM 250ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "49481",
+          "descricao": "SHAMPOO ACELERATOR HAIR THERAPY NATUM 200ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "49480",
+          "descricao": "SHAMPOO ANTICASPA HAIR THERAPY NATUM 200ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78605",
+          "descricao": "SHAMPOO NEUTRO 250ML NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 38,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8584",
+          "descricao": "SHAMPOO SILVER BLACK NATUM 250ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "49482",
+          "descricao": "SHAMPOO VEGAN DETOX  NATUM 300ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 136,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51560",
+          "descricao": "TIN CAST CLARO 5.0 60GR COLOUR NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 27,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51557",
+          "descricao": "TIN CAST ESCURO 3.0 60GR COLOUR NATUM",
+          "L1": {
+            "vendas": 2,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51559",
+          "descricao": "TIN CAST MEDIO 4.0 60GR COLOUR NATUM",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63932",
+          "descricao": "TIN LOURO CL DOUR ACINZEN 8.31 60GR COLOUR NATUM",
+          "L1": {
+            "vendas": 2,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "54143",
+          "descricao": "TIN LOURO CLARO 8.0 60GR COLOUR NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 22,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79700",
+          "descricao": "TIN LOURO CLARO MARROM INTENSO 8.77 60GR COLOUR NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51567",
+          "descricao": "TIN LOURO ESC CINZA 6.1 60GR COLOUR NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77153",
+          "descricao": "TIN LOURO ESC COBRE AVERM ESP 66.46 60GR COLOUR NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63905",
+          "descricao": "TIN LOURO ESC VERM INTENSO 6.66 60GR COLOUR NATUM",
+          "L1": {
+            "vendas": 1,
+            "saldo": 16,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63931",
+          "descricao": "TIN LOURO MED DOUR ACINZEN 7.31 60GR COLOUR NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51562",
+          "descricao": "TIN LOURO MEDIO 7.0 60GR COLOUR NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63906",
+          "descricao": "TIN LOURO MEDIO COBRE 7.4 60GR COLOUR NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51565",
+          "descricao": "TIN LOURO MUITO CLARO 9.0 60GR COLOUR NATUM",
+          "L1": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77151",
+          "descricao": "TIN LOURO MUITO CLARO DOUR 9.3 60GR COLOUR NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 20,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51556",
+          "descricao": "TIN PRETO 1.0 60GR COLOUR NATUM",
+          "L1": {
+            "vendas": 1,
+            "saldo": 25,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51604",
+          "descricao": "TIN SUPER CLAREADOR PEROLA 12.89 60GR COLOUR NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51599",
+          "descricao": "TONALIZ CAST CLARO 5.0 ADVANCED 60 G NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51595",
+          "descricao": "TONALIZ CAST ESCURO 3.0 ADVANCED 60 G NATUM",
+          "L1": {
+            "vendas": 3,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51598",
+          "descricao": "TONALIZ CAST MEDIO 4.0 ADVANCED 60 G NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 23,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51597",
+          "descricao": "TONALIZ LOURO MEDIO 7.0 ADVANCED 60 G NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51573",
+          "descricao": "TONALIZ PRETO 1.0 ADVANCED 60 G NATUM",
+          "L1": {
+            "vendas": 3,
+            "saldo": 22,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203635",
+          "descricao": "TONALIZANTE 7.7 ADVANCED 60G NATUM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "49489",
+          "descricao": "TONICO ACELERATOR HAIR THERAPY NATUM 30ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "64952",
+          "descricao": "VITA CACHOS PERFECT CURLS FINISHING 200 ML NATUM.",
+          "L1": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {},
+        "L4": {},
+        "L5": {}
+      }
+    },
+    {
+      "marca": "Otimo",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 467.7,
+          "vendas_60d": 2,
+          "saldo_atual": -20,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 0,
+          "vendas_60d": 5,
+          "saldo_atual": -5,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 576.7,
+          "vendas_60d": 0,
+          "saldo_atual": 19,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 13,
+          "saldo_atual": 296,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "76229",
+          "descricao": "ANEL OTIMO 76229",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 121,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "76230",
+          "descricao": "ANEL OTIMO 76229",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 50,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "76231",
+          "descricao": "ANEL OTIMO 76229",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 46,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "76240",
+          "descricao": "BRINCO OTIMO 76240",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "76327",
+          "descricao": "BRINCO OTIMO 76327",
+          "L1": {
+            "vendas": 0,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "76355",
+          "descricao": "BRINCO OTIMO 76347",
+          "L1": {
+            "vendas": 0,
+            "saldo": -7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": -8,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 42,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "76363",
+          "descricao": "BRINCO OTIMO 76363",
+          "L1": {
+            "vendas": 0,
+            "saldo": -11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "76380",
+          "descricao": "BRINCO OTIMO 76380",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 5,
+            "saldo": 22,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1708",
+          "descricao": "COLAR BOLINHAS DOURADAS ÓTIMO",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "76384",
+          "descricao": "COLAR OTIMO 76384",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "4602",
+          "descricao": "ESPELHO DE BOLSA OTIMO",
+          "L1": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {
+          "1": 467.7
+        },
+        "L3": {},
+        "L4": {
+          "4": 576.7
+        },
+        "L5": {}
+      }
+    },
+    {
+      "marca": "ProBelle",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 57,
+          "saldo_atual": 461,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 0,
+          "vendas_60d": 116,
+          "saldo_atual": 144,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 64,
+          "saldo_atual": 108,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 67,
+          "saldo_atual": 486,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "15601",
+          "descricao": "AGUA OXIGENADA 30VOL PROBELLE 75ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 27,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65246",
+          "descricao": "CREME DE TRATAMENTO LISO BRILHO ESPELHADO PROBELLE SUPER BONITA 900mL",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79327",
+          "descricao": "CREME DE TRATAMENTO OLEO DE ABACATE PROBELLE SUPER BONITA 900mL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65247",
+          "descricao": "CREME DE TRATAMENTO PROBELLE SUPER BONITA CRESPO BABOSA 900mL",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65239",
+          "descricao": "CREME PARA PENTEAR CACHOS OSTENTACAO PROBELLE SUPER BONITA 800mL",
+          "L1": {
+            "vendas": 0,
+            "saldo": -11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65224",
+          "descricao": "CREME PARA PENTEAR PROBELLE SUPER BONITA CRESPO AGUA DE COCO 800mL",
+          "L1": {
+            "vendas": 0,
+            "saldo": -13,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203600",
+          "descricao": "GEL FIXADOR EXTRA FORTE PODEROSO PROBELLE FOR MAN N4 300g",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202602",
+          "descricao": "GEL FIXADOR FORTE PODEROSO PROBELLE 300G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202604",
+          "descricao": "GELATINA CACHOS OSTENTACAO PROBELLE 500G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65236",
+          "descricao": "GELATINA FIXADORA CACHOS OSTENTACAO PROBELLE SUPER BONITA 300g",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65231",
+          "descricao": "GELATINA FIXADORA DE BABOSA PROBELLE SUPER BONITA 300g",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79299",
+          "descricao": "KIT OLEO DE ABACATE PROBELLE SUPER BONITA 500mL",
+          "L1": {
+            "vendas": 2,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "41964",
+          "descricao": "KIT SUPER BONITA  7.4 PROBELLE",
+          "L1": {
+            "vendas": 2,
+            "saldo": -14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18642",
+          "descricao": "KIT SUPER BONITA 1.0 PROBELLE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 17,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "16235",
+          "descricao": "KIT SUPER BONITA 1.11 PROBELLE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 42,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65252",
+          "descricao": "KIT SUPER BONITA 1.2 PROBELLE",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202625",
+          "descricao": "KIT SUPER BONITA 12.89 PROBELLE",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18643",
+          "descricao": "KIT SUPER BONITA 2.0 PROBELLE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 22,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18644",
+          "descricao": "KIT SUPER BONITA 3.0 PROBELLE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18646",
+          "descricao": "KIT SUPER BONITA 4.0 PROBELLE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18280",
+          "descricao": "KIT SUPER BONITA 5.0 PROBELLE",
+          "L1": {
+            "vendas": 0,
+            "saldo": -9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18281",
+          "descricao": "KIT SUPER BONITA 6.0 PROBELLE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 16,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 5,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18653",
+          "descricao": "KIT SUPER BONITA 6.1 PROBELLE",
+          "L1": {
+            "vendas": 1,
+            "saldo": 13,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18654",
+          "descricao": "KIT SUPER BONITA 6.66 PROBELLE",
+          "L1": {
+            "vendas": 0,
+            "saldo": -10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 6,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "17910",
+          "descricao": "KIT SUPER BONITA 6.7 PROBELLE",
+          "L1": {
+            "vendas": 11,
+            "saldo": -24,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 43,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18656",
+          "descricao": "KIT SUPER BONITA 7.0 PROBELLE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 8,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "20473",
+          "descricao": "KIT SUPER BONITA 7.1 PROBELLE",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "61980",
+          "descricao": "KIT SUPER BONITA 7.3 PROBELLE",
+          "L1": {
+            "vendas": 1,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "17915",
+          "descricao": "KIT SUPER BONITA 7.66 PROBELLE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202607",
+          "descricao": "KIT SUPER BONITA 7.7 PROBELLE",
+          "L1": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18658",
+          "descricao": "KIT SUPER BONITA 8.0 PROBELLE",
+          "L1": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 5,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18659",
+          "descricao": "KIT SUPER BONITA 8.1 PROBELLE",
+          "L1": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18289",
+          "descricao": "KIT SUPER BONITA 8.26 PROBELLE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 8,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "20476",
+          "descricao": "KIT SUPER BONITA 8.4 PROBELLE",
+          "L1": {
+            "vendas": 0,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18290",
+          "descricao": "KIT SUPER BONITA 9.0 PROBELLE",
+          "L1": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202627",
+          "descricao": "KIT SUPER BONITA 9.89 PROBELLE",
+          "L1": {
+            "vendas": 2,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18661",
+          "descricao": "KIT SUPER BONITA 9.98 PROBELLE",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65248",
+          "descricao": "MASCARA CACHOS OSTENTACAO PROBELLE 900ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203601",
+          "descricao": "OLEO CAPILAR ULTRA OIL COCO PROBELLE 100ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "23811",
+          "descricao": "OX 20VOL 75ML PROBELLE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 17,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "15558",
+          "descricao": "AGUA OXIGENADA 20VOL PROBELLE 900ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 25,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "15534",
+          "descricao": "AGUA OXIGENADA 30VOL PROBELLE 900ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 27,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "20358",
+          "descricao": "AMP ARGAN PROBELLE 17 ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 108,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 93,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18615",
+          "descricao": "BOTOX ALIS FORÇA SUPER PROBELLE 950G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18616",
+          "descricao": "BOTOX AZURE PROBELLE 1 KG",
+          "L1": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18620",
+          "descricao": "BOTOX AZURE PROBELLE 150 G",
+          "L1": {
+            "vendas": 2,
+            "saldo": 28,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18619",
+          "descricao": "BOTOX PROBELLE 150 G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 16,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 5,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65196",
+          "descricao": "BTX GLOSS SMOOTH INFUSION PROBELLE 150g",
+          "L1": {
+            "vendas": 1,
+            "saldo": 25,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65193",
+          "descricao": "BTX GLOSS SMOOTH INFUSION PROBELLE 950G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65194",
+          "descricao": "BTX GLOSS ZERO ABSOLUTO PROBELLE 950G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65197",
+          "descricao": "BTX MEGA BOTOX GEL PROBELLE 150G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79290",
+          "descricao": "CONDICIONADOR LUMINO MAX MAIS CRESCIMENTO PROBELLE 400mL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79319",
+          "descricao": "ESFOLIANTE DE MORANGO ROSTO E CORPO PROBELLE LABORATORIO 150g",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18584",
+          "descricao": "FLUIDO RELAX PROBELLE 140 ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77466",
+          "descricao": "KIT SABONETE INTIMO FRESH SINTA-SE BEM PROBELLE LABORATORIO 500mL",
+          "L1": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18272",
+          "descricao": "KIT SUPER BONITA  11/0 PROBELLE",
+          "L1": {
+            "vendas": 2,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18273",
+          "descricao": "KIT SUPER BONITA  12/0 PROBELLE",
+          "L1": {
+            "vendas": 3,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18662",
+          "descricao": "KIT SUPER BONITA 12/1 PROBELLE",
+          "L1": {
+            "vendas": 2,
+            "saldo": 19,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "20480",
+          "descricao": "KIT SUPER BONITA PROBELLE 6.4",
+          "L1": {
+            "vendas": 2,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18651",
+          "descricao": "KIT SUPER PROBELLE 5/5",
+          "L1": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202648",
+          "descricao": "MATIZADOR CINZA 400ML PROBELLE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18629",
+          "descricao": "MS MATIZA VERMELHA PROBELLE 250 G",
+          "L1": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18628",
+          "descricao": "MS MATIZADORA  MARSALA PROBELLE 250 G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18630",
+          "descricao": "MS MATIZADORA  PRETO LUXO PROBELLE 250 G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202629",
+          "descricao": "OLEO MILAGROSO SUPER OIL PROBELLE 45ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 7,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65179",
+          "descricao": "PERFUME CAPILAR ELEGANCE GOLD PROBELLE 17ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 16,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18614",
+          "descricao": "PERFUME CAPILAR PROBELLE 17 ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 34,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 10,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65249",
+          "descricao": "PROBELLE BRAZILIAN PROTEIN - SUPER STRENGHT KERATIN 1L",
+          "L1": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202649",
+          "descricao": "SHAMPOO ANTI RESIDUO 400ML PROBELLE",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79289",
+          "descricao": "SHAMPOO LUMINO MAX MAIS CRESCIMENTO PROBELLE 400mL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18578",
+          "descricao": "TERMO PROT MULT PROBELLE 120 ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 17,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53678",
+          "descricao": "TONALIZANTE BURGUESINHA 1.11 PROBELLE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53681",
+          "descricao": "TONALIZANTE BURGUESINHA 3.0 PROBELLE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 18,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65255",
+          "descricao": "TONALIZANTE BURGUESINHA 4.7 PROBELLE",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "45279",
+          "descricao": "TONALIZANTE BURGUESINHA 6 0 PROBELLE",
+          "L1": {
+            "vendas": 1,
+            "saldo": -9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 18,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53683",
+          "descricao": "TONALIZANTE BURGUESINHA 6.1 PROBELLE",
+          "L1": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 31,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65256",
+          "descricao": "TONALIZANTE BURGUESINHA 6.7 PROBELLE",
+          "L1": {
+            "vendas": 1,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53684",
+          "descricao": "TONALIZANTE BURGUESINHA 7.0 PROBELLE",
+          "L1": {
+            "vendas": 4,
+            "saldo": -9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53685",
+          "descricao": "TONALIZANTE BURGUESINHA 7.1 PROBELLE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65182",
+          "descricao": "TONALIZANTE BURGUESINHA 7.37 PROBELLE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {},
+        "L4": {},
+        "L5": {}
+      }
+    },
+    {
+      "marca": "Repos",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 34,
+          "saldo_atual": 137,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 81.49,
+          "vendas_60d": 18,
+          "saldo_atual": 63,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 27,
+          "saldo_atual": 82,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 13,
+          "saldo_atual": 90,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "63761",
+          "descricao": "AMACIANTE CUTICULAS CALOSIDADE COPAIBA REPOS 150ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77379",
+          "descricao": "AMACIANTE CUTICULAS CALOSIDADE COPAIBA REPOS 500ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "29705",
+          "descricao": "AMACIANTE CUTICULAS CALOSIDADE REPOS 1,1L",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59173",
+          "descricao": "AMACIANTE DE CUTICULAS EM GEL REPOS 140G",
+          "L1": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "45549",
+          "descricao": "BASE INCOLOR REPOS  9ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 24,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 19,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "29702",
+          "descricao": "BASE MAXI BRILHO REPOS  9ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 22,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 20,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53400",
+          "descricao": "Base Repos Maxi Brilho 120 ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77375",
+          "descricao": "CONDICIONADOR PROTEINAS REPOS 1,1KG",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "30735",
+          "descricao": "CREME MAOS E PES C/UREIA REPOS 500GR",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "49437",
+          "descricao": "Creme Maos e Pes Repos c/Ureia 110 GR",
+          "L1": {
+            "vendas": 3,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "57803",
+          "descricao": "Creme Pes Repos c/Oleo Copaiba 110GR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "29700",
+          "descricao": "OLEO BANANA REPOS 60ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 7,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 16,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53405",
+          "descricao": "OLEO DE MELALEUCA REPOS 9ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 13,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202914",
+          "descricao": "OLEO ESSENCIAL LAVANDA REPOS 10ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202915",
+          "descricao": "OLEO ESSENCIAL MELALEUCA REPOS 10ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78060",
+          "descricao": "PEDRA HUME REPOS 10G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "48085",
+          "descricao": "REMOVEDOR CUTICULA REPOS 90GR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "29708",
+          "descricao": "REMOVEDOR DE CUTICULA REPOS 120GR",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "29706",
+          "descricao": "REMOVEDOR DE CUTICULAS REPOS 500GR",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "29707",
+          "descricao": "REMOVEDOR DE ESMALTE C/ACETONA REPOS 140ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 5,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77381",
+          "descricao": "REMOVEDOR DE ESMALTE C/ACETONA REPOS 500ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 39,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 20,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "29699",
+          "descricao": "REMOVEDOR DE ESMALTE S/ACETONA REPOS 140ML",
+          "L1": {
+            "vendas": 4,
+            "saldo": 15,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77382",
+          "descricao": "REMOVEDOR DE ESMALTE S/ACETONA REPOS 500ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": 17,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78061",
+          "descricao": "SECANTE RAPIDIN REPOS 60ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77368",
+          "descricao": "SHAMPOO ALOE VERA REPOS 1,2L",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77369",
+          "descricao": "SHAMPOO CABELO OLEOSOS REPOS  1,2L",
+          "L1": {
+            "vendas": 0,
+            "saldo": -7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53411",
+          "descricao": "SHAMPOO NEUTRO REPOS 1,2L",
+          "L1": {
+            "vendas": 2,
+            "saldo": -10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77370",
+          "descricao": "SHAMPOO NEUTRO S/SAL REPOS 1,2L",
+          "L1": {
+            "vendas": 5,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77371",
+          "descricao": "SHAMPOO QUIMICAMENTE TRATADOS REPOS 1,2L",
+          "L1": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {
+          "1": 81.48863160192056
+        },
+        "L4": {},
+        "L5": {}
+      }
+    },
+    {
+      "marca": "Risque",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 21,
+          "saldo_atual": 329,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 0,
+          "vendas_60d": 0,
+          "saldo_atual": 0,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 13,
+          "saldo_atual": 24,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 2778.38,
+          "vendas_60d": 74,
+          "saldo_atual": 315,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "12119",
+          "descricao": "ESM RISQUE LEO MANDOU FLOR",
+          "L1": {
+            "vendas": 3,
+            "saldo": -7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203683",
+          "descricao": "ESMALTE RISQUE BL DESEJO 6X8ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78866",
+          "descricao": "ESMALTE RISQUE BL DORITOS CREM ULTIMO DORITOS DO PACOTE 6X8ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78867",
+          "descricao": "ESMALTE RISQUE BL DORITOS MUCHO NACHO 6X8ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203694",
+          "descricao": "ESMALTE RISQUE NU CREMOSOS NUDE 6X8ML",
+          "L1": {
+            "vendas": 3,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203688",
+          "descricao": "ESMALTE RISQUE NU NATURAL CONDESSA 6X8ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "30734",
+          "descricao": "ESM RISQUE BASE HOM FOSCA 8ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": -14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79527",
+          "descricao": "ESM RISQUE BIO BASE",
+          "L1": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79528",
+          "descricao": "ESM RISQUE BIO CANELA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545026",
+          "descricao": "ESM RISQUE BRANCO PURISSIMO",
+          "L1": {
+            "vendas": 0,
+            "saldo": 59,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62995",
+          "descricao": "ESM RISQUE CARE BASE FORTALECEDOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 18,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "4573",
+          "descricao": "ESM RISQUE COBERT BRILHANTE",
+          "L1": {
+            "vendas": 0,
+            "saldo": -23,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 13,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "4389",
+          "descricao": "ESM RISQUE CONDESSA 8ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 37,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59135",
+          "descricao": "ESM RISQUE CREM NINFA",
+          "L1": {
+            "vendas": 2,
+            "saldo": 19,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62682",
+          "descricao": "ESM RISQUE CREM NUDE",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "10340",
+          "descricao": "ESM RISQUE CREM NUDE GRAO ARROZ",
+          "L1": {
+            "vendas": 0,
+            "saldo": -24,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59141",
+          "descricao": "ESM RISQUE CREM VERMELHO FELICIDE",
+          "L1": {
+            "vendas": 0,
+            "saldo": -7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "50736",
+          "descricao": "ESM RISQUE CREM_ULTRA ROSE BOMBOM",
+          "L1": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1047",
+          "descricao": "ESM RISQUE CRISTAL",
+          "L1": {
+            "vendas": 1,
+            "saldo": -30,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79542",
+          "descricao": "ESM RISQUE DORITOS ATE ULTIMA TORTI",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "573",
+          "descricao": "ESM RISQUE DUNA 8ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 23,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1045",
+          "descricao": "ESM RISQUE GABRIELA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 18,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "41745",
+          "descricao": "ESM RISQUE GEL TOP COAT",
+          "L1": {
+            "vendas": 0,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 9,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11222",
+          "descricao": "ESM RISQUE GEL TOP COAT EFEITO PAETE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "10339",
+          "descricao": "ESM RISQUE GOTA DOS ANJOS",
+          "L1": {
+            "vendas": 0,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5202",
+          "descricao": "ESM RISQUE GRAO DE CAFE",
+          "L1": {
+            "vendas": 0,
+            "saldo": -13,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545025",
+          "descricao": "ESM RISQUE LAGRIMAS DE VENUS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 16,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 60,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545029",
+          "descricao": "ESM RISQUE LICOR",
+          "L1": {
+            "vendas": 1,
+            "saldo": 32,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "566",
+          "descricao": "ESM RISQUE LOLLA ATRACAO PRINCIPAL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "2410",
+          "descricao": "ESM RISQUE LOLLA FOTO LAMBE LAMBE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "575",
+          "descricao": "ESM RISQUE LOLLA PALCO CHERRY",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545033",
+          "descricao": "ESM RISQUE LOVE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 16,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545038",
+          "descricao": "ESM RISQUE MACA DO AMOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 21,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545036",
+          "descricao": "ESM RISQUE MELISSA",
+          "L1": {
+            "vendas": 0,
+            "saldo": -7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59142",
+          "descricao": "ESM RISQUE MIL PURPURINAS",
+          "L1": {
+            "vendas": 2,
+            "saldo": -13,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "613",
+          "descricao": "ESM RISQUE MINI SAIA",
+          "L1": {
+            "vendas": 0,
+            "saldo": -36,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "576",
+          "descricao": "ESM RISQUE PARIS",
+          "L1": {
+            "vendas": 1,
+            "saldo": 53,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "572",
+          "descricao": "ESM RISQUE PEROLA",
+          "L1": {
+            "vendas": 0,
+            "saldo": -27,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "29450",
+          "descricao": "ESM RISQUE PLATINO 8ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 29,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 31,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "2560",
+          "descricao": "ESM RISQUE PO DE ARROZ",
+          "L1": {
+            "vendas": 0,
+            "saldo": -35,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "612",
+          "descricao": "ESM RISQUE REBU",
+          "L1": {
+            "vendas": 3,
+            "saldo": 27,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "30732",
+          "descricao": "ESM RISQUE REG EFFECT GRA ROSE 8ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545034",
+          "descricao": "ESM RISQUE RENDA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 101,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11224",
+          "descricao": "ESM RISQUE RENDA  VIDRILHOS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 30,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 15,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "29440",
+          "descricao": "ESM RISQUE RENDA RENDINHA 8ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 15,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62685",
+          "descricao": "ESM RISQUE TECHN SERUM REPARADOR",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1563",
+          "descricao": "ESM RISQUE VANGUARDA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78637",
+          "descricao": "ESM RISQUE_CREM LAVANDA ALMA",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545010",
+          "descricao": "ESMALTE RISQUE  BALI",
+          "L1": {
+            "vendas": 0,
+            "saldo": 30,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545027",
+          "descricao": "ESMALTE RISQUE ASTRAL",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 5,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "10336",
+          "descricao": "ESMALTE RISQUE CAPPUCCINO",
+          "L1": {
+            "vendas": 0,
+            "saldo": -20,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "76995",
+          "descricao": "ESMALTE RISQUE CARE SECANTE EXPRESS 6X8ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203355",
+          "descricao": "ESMALTE RISQUE LOOK DO DIA GOOD VIBES",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545046",
+          "descricao": "ESMALTE RISQUE NUDE LINDA LEVE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7896013545040",
+          "descricao": "ESMALTE RISQUE PRETO SEPIA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 49,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "4579",
+          "descricao": "ESMALTE RISQUE TAMARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {},
+        "L4": {},
+        "L5": {
+          "3": 2778.3784927536235
+        }
+      }
+    },
+    {
+      "marca": "Santa Clara",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 105,
+          "saldo_atual": -883,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 13574.78,
+          "vendas_60d": 314,
+          "saldo_atual": 744,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 223,
+          "saldo_atual": 171,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 5412.14,
+          "vendas_60d": 164,
+          "saldo_atual": 812,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "19861",
+          "descricao": "APLICADOR SANTA CLARA TINT 200ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8929",
+          "descricao": "APONTADOR LAPIS SANTA CLARA 1332",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "15980",
+          "descricao": "BACIA CINZA 0 SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "10050",
+          "descricao": "BACIA ESP AZUL PED SANTA CLARA",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "12546",
+          "descricao": "BACIA ROSA PEDICURE 694 SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "9709",
+          "descricao": "BACIA VERDE AG.P/PEDICURE-347 SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "9701",
+          "descricao": "BARBEADOR DE METAL IMPORTADO. SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "14330",
+          "descricao": "BISTURI SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 64,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "42613",
+          "descricao": "BISTURI SANTA CLARA 482",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5538",
+          "descricao": "BOB VELCRO SANTA CLARA 31MM",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6828",
+          "descricao": "BOTA C/AMOL.PCT.C/20 PARES SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8947",
+          "descricao": "BUMPITS ESPUMA SANTA CLARA 2UN",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8646",
+          "descricao": "CANECA GRAD SANTA CLARA 150ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5517",
+          "descricao": "CAPA TINTURA S/M DESC C/6 UN SANTA CLARA",
+          "L1": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "30383",
+          "descricao": "COLA INST.P/UNHA POSTICA 3G SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "30382",
+          "descricao": "COLA INST.P/UNHA POSTICA 5G. SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "15967",
+          "descricao": "DIFUSOR PRETO SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "15968",
+          "descricao": "DIFUSOR ROSA SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8662",
+          "descricao": "DONUTS LOIRO MED SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8661",
+          "descricao": "DONUTS LOIRO PEQ SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "30378",
+          "descricao": "DOSADOR ACETONA C/P.ALGODAO TR SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "49925",
+          "descricao": "ESCOVA PLAS.TRES FILEIRAS SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": -10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 8,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "9683",
+          "descricao": "ESPATULA CREME LUXO PRETO SANTA CLARA",
+          "L1": {
+            "vendas": 3,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 21,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "9678",
+          "descricao": "ESPATULA LUXO P/ CREME SANTA CLARA",
+          "L1": {
+            "vendas": 7,
+            "saldo": -96,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 9,
+            "saldo": -8,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "41042",
+          "descricao": "ESPATULA PLASTICA LUXO PRETA SANTA CLARA",
+          "L1": {
+            "vendas": 3,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 6,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8931",
+          "descricao": "FRASCO MULTIUSO SANTA CLARA 100 ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5540",
+          "descricao": "FRASCO MULTIUSO SANTA CLARA 1000ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8930",
+          "descricao": "FRASCO MULTIUSO SANTA CLARA 50ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5518",
+          "descricao": "GRAMPO 7 LOIRO P/CABELO SANTA CLARA",
+          "L1": {
+            "vendas": 1,
+            "saldo": 22,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 22,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 15,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5530",
+          "descricao": "GRAMPO CAB CAST N5 SANTA CLARA",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 14,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3548",
+          "descricao": "GRAMPO CAB LOIRO N?5 SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3547",
+          "descricao": "GRAMPO CAB PRETO N5 SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": -10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 5,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 6,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63391",
+          "descricao": "GRAMPO N.5 PRETO CARTELA C/12 SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3540",
+          "descricao": "GRAMPO SANTA CLARA 254",
+          "L1": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8645",
+          "descricao": "KIT DESC PEDIC C/AMOL SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 6,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11108",
+          "descricao": "KIT ESTILIZADO TINTURA SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "41165",
+          "descricao": "KIT LIXAS BROCAS POLIDOR SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "9221",
+          "descricao": "KIT MANICURE SANTA CLARA",
+          "L1": {
+            "vendas": 3,
+            "saldo": 17,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1126",
+          "descricao": "LENCOL DESC C/ ELASTICO SANTA CLARA",
+          "L1": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6489",
+          "descricao": "LIXA EVA PES SOFT SANTA CLARA 399",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "15947",
+          "descricao": "LIXA M POP PARDA C/100 SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": -452,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 6,
+            "saldo": 332,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "46448",
+          "descricao": "LIXA MAD.LUXO P/OS PES SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 15,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 10,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "46582",
+          "descricao": "LIXA MADEIRA/EVA C/CABO P/PES SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "15949",
+          "descricao": "LIXA MINI POP PARDA C/100 SANTA CLARA",
+          "L1": {
+            "vendas": 2,
+            "saldo": -298,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7628",
+          "descricao": "LIXA PE RALIXA 284 SANTA CLARA",
+          "L1": {
+            "vendas": 3,
+            "saldo": 23,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 6,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6488",
+          "descricao": "LIXA PES C/P.POMES 376 SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63400",
+          "descricao": "LIXA PL.PR.ANAT.POPULAR PES SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 13,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 6,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "9677",
+          "descricao": "LUVA ESFOLIANTE SANTA CLARA",
+          "L1": {
+            "vendas": 1,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "4827",
+          "descricao": "LUVAS DESC MULTIUSO SANTA CLARA 473",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "49947",
+          "descricao": "MASCARA AZUL DESC.C/ELAST.C/5 SANTA CLARA",
+          "L1": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "17666",
+          "descricao": "MASCARA DESIDRATADA SANTA CLARA",
+          "L1": {
+            "vendas": 6,
+            "saldo": -246,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 5,
+            "saldo": 245,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 115,
+            "saldo": 115,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "29332",
+          "descricao": "MASCARA PRETA DESC.C/ELAST.C/5 SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "29331",
+          "descricao": "MASCARA ROSA DESC.C/ELAST.C/5 SANTA CLARA",
+          "L1": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1816",
+          "descricao": "MS DESC ELAST SANTA CLARA 5UN",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1710",
+          "descricao": "MS TERM SANTA CLARA 1016",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7238",
+          "descricao": "NAVALHETE PLAST SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "14338",
+          "descricao": "PALETA MAQ SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "30385",
+          "descricao": "PALITO OSSO ANIMAL P/UNHA C/25 SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 32,
+            "saldo": 21,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 5,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1731",
+          "descricao": "PALITO UNHA CHANF UN SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": -21,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 24,
+            "saldo": 26,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 17,
+            "saldo": -39,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6493",
+          "descricao": "PAPEL DEPIL  SANTA CLARA 25 UND",
+          "L1": {
+            "vendas": 0,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 10,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8657",
+          "descricao": "PAPEL DEPIL ROLO SANTA CLARA 150M",
+          "L1": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "14331",
+          "descricao": "PAPEL ISOLM SANTA CLARA",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "178",
+          "descricao": "PAPEL P/ DEPILA?O SANTA CLARA 50M 299",
+          "L1": {
+            "vendas": 0,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "41164",
+          "descricao": "PAQUIMETRO PLAST. SANTA CLARA BRANCO 15 CM",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18544",
+          "descricao": "PAQUIMETRO PLAST.PRETO 15CM SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "15924",
+          "descricao": "PENTE AFRO PR DENTES F.ACO SANTA CLARA",
+          "L1": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7261",
+          "descricao": "PENTE COMARE ANT SANTA CLARA",
+          "L1": {
+            "vendas": 1,
+            "saldo": -10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7260",
+          "descricao": "PENTE CP ANT ION 180  ST CLARA 2236 SANTA CLARA",
+          "L1": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "9703",
+          "descricao": "PENTE DESFIADOR ANT/ION/180 SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "14341",
+          "descricao": "PENTE PROF SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "12565",
+          "descricao": "PENTE SANTA CLARA DELRIN DUPONT",
+          "L1": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "9695",
+          "descricao": "PINCA PROF.PONTA FINA DOURADA SANTA CLARA",
+          "L1": {
+            "vendas": 2,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "41051",
+          "descricao": "PINCAS F.MULHER SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 14,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11433",
+          "descricao": "PINCEL ESP PRATA CERDAS SANTA CLARA",
+          "L1": {
+            "vendas": 4,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11117",
+          "descricao": "PINCEL ESP PRETO  4246 SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 6,
+            "saldo": -7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "10045",
+          "descricao": "PINCEL MAS CORP N.5 SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "12472",
+          "descricao": "PIRANHA PLAS PRETA SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 5,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "11429",
+          "descricao": "PIRANHA PLASTICA GRD.PRETA C/6 SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": -10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 5,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18514",
+          "descricao": "PIRANHA PLASTICA SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 59,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 52,
+            "saldo": 68,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 9,
+            "saldo": -12,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 65,
+            "saldo": 62,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7264",
+          "descricao": "PLAQUETE LISA EX LONGA ST CLARA 2526 SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "2431",
+          "descricao": "PLAQUETE LISA SANTA CLARA 597",
+          "L1": {
+            "vendas": 0,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5519",
+          "descricao": "PO ADGISTRENTE SANTA CLARA 20G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 20,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "14340",
+          "descricao": "PREND SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1136",
+          "descricao": "PROTETOR BACIA MANIC SANTA CLARA 165",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "9707",
+          "descricao": "PROTETOR BACIA PEDICURE C/100 SANTA CLARA",
+          "L1": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1142",
+          "descricao": "PROTETOR BACIA PEDICURE SANTA CLARA COM 50UN",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3384",
+          "descricao": "PROTETOR SILIC P/ORELHA C/2 SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 8,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 14,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "14345",
+          "descricao": "PULV BOL SANTA CLARA 280ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1115",
+          "descricao": "PULV BOLINHA 134 ST CLARA 280ML SANTA CLARA",
+          "L1": {
+            "vendas": 2,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8659",
+          "descricao": "PULV LARANJA SANTA CLARA 280ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8658",
+          "descricao": "PULV PINK SANTA CLARA 280ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3442",
+          "descricao": "REDE CAB COQUE SANTA CLARA 364",
+          "L1": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3446",
+          "descricao": "REDE CAB COQUE SANTA CLARA 368",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8935",
+          "descricao": "REDE ESP CAB SANTA CLARA 1959",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7262",
+          "descricao": "REF LIXA GR ST CLARA 50UN 2277 SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "15910",
+          "descricao": "REFIL D.LIXA G.PR.R.116 C/12 SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "15896",
+          "descricao": "REFIL LIXA G PR P/PE SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "54533",
+          "descricao": "REFIL LIXA G.PR.R.655/689 C/12 SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 6,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "42634",
+          "descricao": "REFIL LIXA G.PR.R.655/689 C/50 SANTA CLARA",
+          "L1": {
+            "vendas": 2,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63389",
+          "descricao": "REFIL LIXA GR.PR.R.116A C/50 SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "15880",
+          "descricao": "REFIL LIXA PE REF.116 C/12 SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8651",
+          "descricao": "SEPARADOR DEDOS SANTA CLARA 24UN",
+          "L1": {
+            "vendas": 3,
+            "saldo": -11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "14352",
+          "descricao": "TIGELA PORC SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "2429",
+          "descricao": "TIGELA TINT SANTA CLARA 1087",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "42840",
+          "descricao": "TOUCA AMACIAMENTO PVC EMBORRACHADO SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "49971",
+          "descricao": "TOUCA AT.BR.C/BOTAO P/CABELO SANTA CLARA",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1724",
+          "descricao": "TOUCA BANHO DESC SANTA CLARA 747",
+          "L1": {
+            "vendas": 0,
+            "saldo": -7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "109",
+          "descricao": "TOUCA BANHO LUXO SANTA CLARA 68",
+          "L1": {
+            "vendas": 9,
+            "saldo": -13,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6482",
+          "descricao": "TOUCA BANHO PVC SANTA CLARA 63",
+          "L1": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "28",
+          "descricao": "TOUCA BANHO SANTA CLARA 2UN",
+          "L1": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5534",
+          "descricao": "TOUCA BANHO VOVO SANTA CLARA 967",
+          "L1": {
+            "vendas": 2,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18464",
+          "descricao": "TOUCA C/ENCHIMENTO METALIZADA SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "12518",
+          "descricao": "TOUCA COLORIDA BANHO 6UN  SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19928",
+          "descricao": "TOUCA DESC NAO TECIDO 50UN SANTA CLARA",
+          "L1": {
+            "vendas": 4,
+            "saldo": -7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 5,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1760",
+          "descricao": "TOUCA DESC SANTA CLARA 349 100UN",
+          "L1": {
+            "vendas": 4,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1761",
+          "descricao": "TOUCA DESC SANTA CLARA 392",
+          "L1": {
+            "vendas": 4,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 28,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1818",
+          "descricao": "TOUCA DESC SANTA CLARA 735",
+          "L1": {
+            "vendas": 1,
+            "saldo": -9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 24,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3437",
+          "descricao": "TOUCA ISOPOR MET SANTA CLARA 403",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "15856",
+          "descricao": "TOUCA ISOPOR SANTA CLARA",
+          "L1": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "3436",
+          "descricao": "TOUCA METALIZADA SANTA CLARA 404",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 8,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "41043",
+          "descricao": "TOUCA NERO C/ BARRA PRETA SANTA CLARA",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8938",
+          "descricao": "TOUCA PLAST DESC SANTA CLARA 3187",
+          "L1": {
+            "vendas": 0,
+            "saldo": -12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "29340",
+          "descricao": "TOUCA PRETA DESC.CX.C/25 UNDS. SANTA CLARA",
+          "L1": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "29337",
+          "descricao": "TOUCA PRETA DESC.PCT.C/5 UNDS. SANTA CLARA",
+          "L1": {
+            "vendas": 4,
+            "saldo": -14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "29336",
+          "descricao": "TOUCA ROSA DESC.PCT.C/5 UNDS SANTA CLARA",
+          "L1": {
+            "vendas": 2,
+            "saldo": -11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 20,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1625",
+          "descricao": "TOUCA TERM ST1 SANTA CLARA 1012",
+          "L1": {
+            "vendas": 1,
+            "saldo": -11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8919",
+          "descricao": "BISTURI SANTA CLARA 254",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {
+          "1": 149.8562123526844,
+          "2": 13424.92
+        },
+        "L4": {},
+        "L5": {
+          "2": 5412.14
+        }
+      }
+    },
+    {
+      "marca": "Truss",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 30,
+          "saldo_atual": 89,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 6626.64,
+          "vendas_60d": 6,
+          "saldo_atual": 39,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 10973.26,
+          "vendas_60d": 21,
+          "saldo_atual": 82,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 29,
+          "saldo_atual": 23,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "41512",
+          "descricao": "ATIVADOR CURLY LIGHT TRUSS 250ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "30363",
+          "descricao": "BODY VOLUME TRUSS 250ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19055",
+          "descricao": "BRUSH KERATIN THERMO ACTIVE - 250ML TRUSS",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59854",
+          "descricao": "COND FRIZZ.ZERO TRUSS 300ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5664",
+          "descricao": "CONDICIONADOR CURLY TRUSS 300ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19048",
+          "descricao": "CONDICIONADOR EQUILIBRIUM TRUSS 300ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18309",
+          "descricao": "CONDICIONADOR MIRACLE TRUSS  300ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "80142",
+          "descricao": "CONDICIONADOR NUTRI INFUSION RPK TRUSS 300ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5658",
+          "descricao": "CONDICIONADOR PERFECT TRUSS 300ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5666",
+          "descricao": "CONDICIONADOR ULTRA HYDRATION PLUS TRUSS 300ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18316",
+          "descricao": "CONDICIONADOR ULTRA HYDRATION TRUSS - 300ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78115",
+          "descricao": "CONDICIONADOR USO OBRIGATORIO 300ML - TRUSS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "41506",
+          "descricao": "CURLY FIX TRUSS - 250ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "29291",
+          "descricao": "DAY BY DAY TRUSS 250ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203486",
+          "descricao": "IMPASSABLE BLOND FINALIZADOR IMPERMEAVEL BLOND REVOLUTION 100ML CX-12 - TRUSS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65149",
+          "descricao": "KIT LAVAGEM CRAZY FOR TRUSS",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "80144",
+          "descricao": "KIT LAVAGEM FULL SIZE FRIZZ ZERO TRUSS",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "53797",
+          "descricao": "MASCARA LIQUIDA FRIZZ ZERO TRUSS 260ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "80145",
+          "descricao": "MASCARA NUTRI INFUSION TRUSS 180G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "41480",
+          "descricao": "MASCARA PERFECT TRUSS -  180G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18343",
+          "descricao": "MASCARA SPECIFIC MASK TRUSS 180G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78146",
+          "descricao": "MASCARA USO OBRIGATORIO TRUSS 180G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "80143",
+          "descricao": "OI ILLUMINATT TRUSS 60ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "80147",
+          "descricao": "OLEO NUTRITIVO NUTRI INFUSION TRUSS 60ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78117",
+          "descricao": "OLEO RECONSTRUTOR USO OBRIGATORIO TRUSS 30ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78118",
+          "descricao": "OLEO RECONSTRUTOR USO OBRIGATORIO TRUSS 60ML",
+          "L1": {
+            "vendas": 5,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "29297",
+          "descricao": "SERUM NIGHT SPA TRUSS 250ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59860",
+          "descricao": "SH FRIZZ.ZERO TRUSS 300ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18338",
+          "descricao": "SHAMPOO CURLY TRUSS 300ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19047",
+          "descricao": "SHAMPOO EQUILIBRIUM TRUSS 300ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "64277",
+          "descricao": "SHAMPOO INFUSION TRUSS 1L",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18332",
+          "descricao": "SHAMPOO MIRACLE TRUSS 300ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "80148",
+          "descricao": "SHAMPOO NUTRI INFUSION RPK TRUSS 300ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "45002",
+          "descricao": "SHAMPOO PERFECT TRUSS 300ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203490",
+          "descricao": "SHAMPOO STOP DAMAGE NO METAL TRUSS 300ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "18333",
+          "descricao": "SHAMPOO THERAPY TRUSS 300ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "19049",
+          "descricao": "SHAMPOO ULTRA HYDRATION PLUS TRUSS 300ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6106",
+          "descricao": "SHAMPOO ULTRA HYDRATION TRUSS 300ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78116",
+          "descricao": "SHAMPOO USO OBRIGATORIO TRUSS 300ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203489",
+          "descricao": "TRUSS SHAMPOO ANTIOXIDANTE BLOND REVOLUTION 300ML  CX-6",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "55433",
+          "descricao": "USO OBRIGATORIO PLUS TRUSS 260ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6247",
+          "descricao": "USO OBRIGATORIO RECONSTRUTOR TRUSS 260ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {
+          "1": 2812.1810991924917,
+          "2": 3814.46
+        },
+        "L4": {
+          "4": 10973.26
+        },
+        "L5": {}
+      }
+    },
+    {
+      "marca": "Vizzela",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 6,
+          "saldo_atual": 24,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 0,
+          "vendas_60d": 0,
+          "saldo_atual": 0,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 2,
+          "saldo_atual": 18,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 8641.2,
+          "vendas_60d": 27,
+          "saldo_atual": 79,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "79874",
+          "descricao": "BASE LÍQUIDA FIX - COR 02 - VIZZELA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79120",
+          "descricao": "BASE LÍQUIDA FIX - COR 05 - VIZZELA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78933",
+          "descricao": "Base Líquida Fix - Cor 08 - Vizzela",
+          "L1": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78932",
+          "descricao": "BASE LIQUIDA FIX COR 07 VIZZELA",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "54850",
+          "descricao": "BASE LÍQUIDA MATTE COR 02 - VIZZELA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78930",
+          "descricao": "Beauty Blush - Cor 01 - Beauty Peach  - Vizzela",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79132",
+          "descricao": "CHUVA DE VITAMINAS - VIZZELA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "54849",
+          "descricao": "CORRETIVO LÍQUIDO FIX - COR 02 - VIZZELA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78941",
+          "descricao": "Corretivo Líquido Fix - Cor 04 - Vizzela",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78940",
+          "descricao": "Corretivo Líquido Fix - Cor 06 - Vizzela",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79121",
+          "descricao": "CORRETIVO LÍQUIDO FIX - COR 07 - VIZZELA",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202699",
+          "descricao": "CORRETIVO LÍQUIDOSATIN 5G - COR 03 - VIZZELA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202703",
+          "descricao": "CORRETIVO LÍQUIDOSATIN 5G - COR 07 - VIZZELA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78923",
+          "descricao": "Cream Contour Contorno Em Stick - Cor 03 - Vizzela",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78921",
+          "descricao": "Fix HD Powder - Vizzela",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 6,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "204015",
+          "descricao": "LIP OIL LIMONCELLO - VIZZELA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79131",
+          "descricao": "MÁSCARA PARA CÍLIOS - NO PANDA BROWN - VIZZELA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78926",
+          "descricao": "Máscara Para Cílios No Panda - Vizzela",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 12,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "54848",
+          "descricao": "SATIN POWDER COR 01 - VIZZELA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "78922",
+          "descricao": "Satin Powder Cor 02 - Vizzela",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {},
+        "L4": {},
+        "L5": {
+          "4": 8641.2
+        }
+      }
+    },
+    {
+      "marca": "Widi Care",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 156,
+          "saldo_atual": 279,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 9496.76,
+          "vendas_60d": 116,
+          "saldo_atual": 153,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 16467.96,
+          "vendas_60d": 123,
+          "saldo_atual": 132,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 11957.1,
+          "vendas_60d": 136,
+          "saldo_atual": 203,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "58564",
+          "descricao": "ACIDIFICANTE INFUSAO 2.0 300G - WIDI CARE",
+          "L1": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 5,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 6,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77702",
+          "descricao": "ACIDIFICANTEE JUBA 500ML- WIDI CARE",
+          "L1": {
+            "vendas": 3,
+            "saldo": 16,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59610",
+          "descricao": "ARGAN OIL OLEO HIDRATANTE 60ML-  WIDI CARE",
+          "L1": {
+            "vendas": 1,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79068",
+          "descricao": "ATIVADOR DE CACHOS EFEITO LEVE PHYTOMANGA 500ML- WIDI CARE",
+          "L1": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79069",
+          "descricao": "ATIVADOR DE CACHOS EFEITO PESADO PHYTOMANGA 500ML- WIDI CARE",
+          "L1": {
+            "vendas": 5,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58875",
+          "descricao": "ATIVANDO A JUBA GELATINA FORTALECEDORA - WIDI CARE - 500 G",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59642",
+          "descricao": "BRUMA HIDRATANTE JUBA REVITALIZANTE 300ML- WIDI CARE",
+          "L1": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 6,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58684",
+          "descricao": "CONDICIONADOR  PEROLAS DE CAVIAR 300ML - WIDI CARE",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58689",
+          "descricao": "CONDICIONADOR  SETE OLEOS NUTRITIVO 300ML- WIDI CARE",
+          "L1": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79071",
+          "descricao": "CONDICIONADOR DETOX PURIFICANTE 300ML- WIDI CARE",
+          "L1": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "64834",
+          "descricao": "CONDICIONADOR HIDRATANTE JUBINHA 300ML - WIDI CARE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 6,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62826",
+          "descricao": "CONDICIONADOR HIDRATANTE LISO MARAVILHA 300ML - WIDI CARE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63803",
+          "descricao": "CONDICIONADOR JUBA HIDRO-NUTRITIVO 1L- WIDI CARE",
+          "L1": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58552",
+          "descricao": "CONDICIONADOR JUBA HIDRO-NUTRITIVO 500ML-  WIDI CARE",
+          "L1": {
+            "vendas": 0,
+            "saldo": -9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79058",
+          "descricao": "CONDICIONADOR JUBA TRANSICAO CAPILAR 500ML- WIDI CARE",
+          "L1": {
+            "vendas": 1,
+            "saldo": 15,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58558",
+          "descricao": "CONDICIONADOR REPARADOR PHYTOMANGA 300ML- WIDI CARE",
+          "L1": {
+            "vendas": 8,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 7,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62830",
+          "descricao": "CREME DE PENTEAR ENCARACOLANDO A JUBA 1L- WIDI CARE",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62829",
+          "descricao": "CREME DE PENTEAR ENCRESPANDO A JUBA 1L- WIDI CARE",
+          "L1": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58543",
+          "descricao": "CREME DE PENTEAR JUBA ENCARACOLADO 500ML - WIDI CARE",
+          "L1": {
+            "vendas": 11,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 15,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 9,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 11,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58544",
+          "descricao": "CREME DE PENTEAR JUBA ENCRESPANDO 500ML - WIDI CARE",
+          "L1": {
+            "vendas": 1,
+            "saldo": 25,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 21,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 8,
+            "saldo": 13,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58540",
+          "descricao": "CREME DE PENTEAR JUBA ONDULADO 500ML - WIDI CARE",
+          "L1": {
+            "vendas": 6,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 5,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 10,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79059",
+          "descricao": "CREME DE PENTEAR JUBA TEXTURA LEVE TRANSICAO 500ML- WIDI CARE",
+          "L1": {
+            "vendas": 2,
+            "saldo": 22,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "64836",
+          "descricao": "CREME DE PENTEAR JUBINHA EFEITO LEVINHO 300ML - WIDI CARE",
+          "L1": {
+            "vendas": 6,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 6,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 5,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "64835",
+          "descricao": "CREME DE PENTEAR JUBINHA EFEITO PESADINHO 300ML - WIDI CARE",
+          "L1": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59640",
+          "descricao": "FINALIZADOR MULTIFUNCIONAL PHYTOMANGA 300ML- WIDI CARE",
+          "L1": {
+            "vendas": 6,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62825",
+          "descricao": "FLUIDO ANTI FRIZZ TERMOATIVADO LISO MARAVILHA 200ML- WIDI CARE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "80200",
+          "descricao": "GELATINA ATIVADORA ULTRA NUTRITIVA  PHYTOMANGA  - WIDI CARE - 300 G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202298",
+          "descricao": "GELATINA ATIVANDO A JUBA FORTALECEDORA 300G - WIDI CARE",
+          "L1": {
+            "vendas": 1,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202323",
+          "descricao": "GELATINA ESTILIZANDO A JUBA SUPER DEFINICAO 300G - WIDI CARE",
+          "L1": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202322",
+          "descricao": "GELATINA MODELANDO A JUBA SUPER VOLUME 300G - WIDI CARE",
+          "L1": {
+            "vendas": 3,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58553",
+          "descricao": "GELEIA SELADORA JUBA MODELADORA 300G - WIDI CARE",
+          "L1": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 6,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "80202",
+          "descricao": "JUBA BUTTER OIL MANTEIGA ANTIPOROSIDADE 300G - WIDI CARE",
+          "L1": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "80197",
+          "descricao": "JUBA BUTTER OIL MANTEIGA FORTALECEDORA 300G - WIDI CARE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202155",
+          "descricao": "JUBA BUTTER OIL MANTEIGA UMECTACAO INTENSA 300G - WIDI CARE",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79079",
+          "descricao": "KIT SUPER PODEROSAS CRONOGRAMA CAPILAR 300G - WIDI CARE",
+          "L1": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "80199",
+          "descricao": "MANTEIGA BUTTER OIL PHYTOMANGA ULTRANUTRITIVA 300G - WIDI CARE",
+          "L1": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58664",
+          "descricao": "MASCARA  NUTRITIVA SETE OLEOS WIDI CARE 300G",
+          "L1": {
+            "vendas": 2,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58661",
+          "descricao": "MASCARA CABELEIRA CRESCIMENTO E FORTALECIMENTO 300ML- WIDI CARE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58662",
+          "descricao": "MASCARA HIDRATANTE PEROLAS DE CAVIAR 300G -WIDI CARE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62832",
+          "descricao": "MASCARA JUBA BUTTER OIL NUTRIÇAO 500G - WIDI CARE",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58550",
+          "descricao": "MASCARA JUBA HIDRO-NUTRITIVA 500G - WIDI CARE",
+          "L1": {
+            "vendas": 3,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77704",
+          "descricao": "MASCARA JUBA RECONSTRUTORA 500G - WIDI CARE",
+          "L1": {
+            "vendas": 2,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79061",
+          "descricao": "MASCARA JUBA TRANSICAO CAPILAR 500G - WIDI CARE",
+          "L1": {
+            "vendas": 2,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79076",
+          "descricao": "MASCARA MATIZADORA LOIRO PERFEITO 300G- WIDI CARE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 5,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "59607",
+          "descricao": "MASCARA NUTRITIVA COCONUT OIL 1KG- WIDI CARE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58560",
+          "descricao": "MASCARA ULTRA NUTRITIVA PHYTOMANGA 300G - WIDI CARE",
+          "L1": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 6,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "74818",
+          "descricao": "MASCARA ULTRA NUTRITIVA PHYTOMANGA 500G- WIDI CARE",
+          "L1": {
+            "vendas": 3,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58874",
+          "descricao": "MODELANDO A JUBA GELATINA SUPER VOLUME - WIDI CARE - 500 G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58548",
+          "descricao": "MOUSSE JUBA CRIADOR DE CACHOS 200ML- WIDI CARE",
+          "L1": {
+            "vendas": 6,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 6,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "63804",
+          "descricao": "OLEO HIDRATANTE COCONUT OIL 60ML- WIDI CARE",
+          "L1": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "61548",
+          "descricao": "OLEO JUBA BLEND DE VEGETAIS 60ML- WIDI CARE",
+          "L1": {
+            "vendas": 5,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202299",
+          "descricao": "PHYTOMANGA BUTTER OIL ULTRANUTRITIVA ACAO CONDICIONANTE - WIDI CARE - 500 G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58876",
+          "descricao": "PHYTOMANGA GELATINA ATIVADORA ULTRA NUTRITIVA - WIDI CARE - 500 G",
+          "L1": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79077",
+          "descricao": "SERUM OIL LISO MARAVILHA 7ML - WIDI CARE",
+          "L1": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79067",
+          "descricao": "SERUM REPARADOR DE PONTAS PHYTOMANGA 60ML - WIDI CARE",
+          "L1": {
+            "vendas": 2,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58687",
+          "descricao": "SHAMPOO  PEROLAS DE CAVIAR 300ML-  WIDI CARE",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79078",
+          "descricao": "SHAMPOO CONTROLE DE OLEOSIDADE  LISO MARAVILHA 300ML- WIDI CARE",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79070",
+          "descricao": "SHAMPOO DETOX PURIFICANTE 300ML- WIDI CARE",
+          "L1": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62827",
+          "descricao": "SHAMPOO HIDRATANTE LISO MARAVILHA 300ML - WIDI CARE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58551",
+          "descricao": "SHAMPOO HIGIENIZANDO A JUBA 500ML- WIDI CARE",
+          "L1": {
+            "vendas": 10,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 8,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 8,
+            "saldo": 10,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58569",
+          "descricao": "SHAMPOO INFUSAO 2.0  REVITALIZANTE 300ML -WIDI CARE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79057",
+          "descricao": "SHAMPOO JUBA TRANSICAO CAPILAR 500ML- WIDI CARE",
+          "L1": {
+            "vendas": 2,
+            "saldo": 18,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79073",
+          "descricao": "SHAMPOO MATIZADOR LOIRO PERFEITO 300ML- WIDI CARE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 15,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58554",
+          "descricao": "SHAMPOO REPARADOR PHYTOMANGA 300ML - WIDI CARE",
+          "L1": {
+            "vendas": 11,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 9,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79072",
+          "descricao": "SHAMPOO REVITALIZANTE LOIRO PERFEITO 300ML - WIDI CARE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58688",
+          "descricao": "SHAMPOO SETE OLEOS NUTRITIVO 300ML - WIDI CARE",
+          "L1": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "64838",
+          "descricao": "SPRAY DESEMBARAÇANTE JUBINHA 300ML - WIDI CARE",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79441",
+          "descricao": "TONICO DE CRESCIMENTO JUBA TRANSIÇAO 120ML- WIDI CARE",
+          "L1": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {
+          "1": 9496.757050632912
+        },
+        "L4": {
+          "1": 16467.96
+        },
+        "L5": {
+          "1": 11957.1
+        }
+      }
+    },
+    {
+      "marca": "Yama",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 77,
+          "saldo_atual": 249,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 0,
+          "vendas_60d": 17,
+          "saldo_atual": 26,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 94,
+          "saldo_atual": 65,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 61,
+          "saldo_atual": 231,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "203102",
+          "descricao": "ACIDIFICANTE GLYCOLIC REPAIR YAMA 200ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51804",
+          "descricao": "COL PROF NANO INFUSION YAMÁ 8/89",
+          "L1": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51805",
+          "descricao": "COL PROF NANO INFUSION YAMÁ 9/26",
+          "L1": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65725",
+          "descricao": "COLORAÇAO EXPERT SEM AMONIA 1.1 YAMA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65727",
+          "descricao": "COLORAÇAO EXPERT SEM AMONIA 4.0 YAMA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65728",
+          "descricao": "COLORAÇAO EXPERT SEM AMONIA 5.0 YAMA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65729",
+          "descricao": "COLORAÇAO EXPERT SEM AMONIA 6.0 YAMA",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "76851",
+          "descricao": "COLORAÇAO EXPERT SEM AMONIA 6.3 YAMA",
+          "L1": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "75118",
+          "descricao": "COLORAÇAO EXPERT SEM AMONIA 7.1 YAMA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79403",
+          "descricao": "COLORAÇAO EXPERT SEM AMONIA 7.3 YAMA",
+          "L1": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "75120",
+          "descricao": "COLORAÇAO EXPERT SEM AMONIA 9.0 YAMA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203105",
+          "descricao": "COLORAÇAO EXPERT SEM AMONIA 9.1 YAMA",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51791",
+          "descricao": "COLORAÇAO NANO INFUSION 1.0 YAMA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51794",
+          "descricao": "COLORAÇAO NANO INFUSION 3.0 YAMA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 14,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51795",
+          "descricao": "COLORAÇAO NANO INFUSION 4.0 YAMA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 16,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51798",
+          "descricao": "COLORAÇAO NANO INFUSION 6.1 YAMA",
+          "L1": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51799",
+          "descricao": "COLORAÇAO NANO INFUSION 6.66 YAMA",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "77500",
+          "descricao": "COLORAÇAO NANO INFUSION 6.7 YAMA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51801",
+          "descricao": "COLORAÇAO NANO INFUSION 7.1 YAMA",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58894",
+          "descricao": "COLORAÇAO NANO INFUSION 7.17 YAMA",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "55738",
+          "descricao": "COLORAÇAO NANO INFUSION 7.4 YAMA",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58897",
+          "descricao": "COLORAÇAO NANO INFUSION 8.0 YAMA",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 5,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51802",
+          "descricao": "COLORAÇAO NANO INFUSION 8.1 YAMA",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "51803",
+          "descricao": "COLORAÇAO NANO INFUSION 8.26 YAMA",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58899",
+          "descricao": "COLORAÇAO NANO INFUSION 8.31 YAMA",
+          "L1": {
+            "vendas": 1,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58901",
+          "descricao": "COLORAÇAO NANO INFUSION 9.0 YAMA",
+          "L1": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203098",
+          "descricao": "CONDICIONADOR GLYCOLIC REPAIR YAMA 200ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203094",
+          "descricao": "CONDICIONADOR SCALP REPAIR YAMA 200ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5249",
+          "descricao": "CONJ YAMA FASH.COLOR N 4.0+OX.20VOL 60ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5270",
+          "descricao": "CONJ YAMA FASH.COLOR N10.1+OX.30VOL 60ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "52588",
+          "descricao": "DEKAPCOLOR REMOV COLORACAO YAMA 120ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "55741",
+          "descricao": "EMULSAO REVELADORA YAMA 6 VOL 100ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 5,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203100",
+          "descricao": "MASCARA ANTIPOROSIDADE GLYCOLIC REPAIR YAMA 250G",
+          "L1": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "8368",
+          "descricao": "OX AMETISTA YAMA 40VOL 100ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5234",
+          "descricao": "OX YAMA 30V 900ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": -6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5236",
+          "descricao": "OX YAMA 40V 100ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 8,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5237",
+          "descricao": "OX YAMA 40V 900ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "5240",
+          "descricao": "PO DESCOLARANTE AMETISTA YAMA 50G",
+          "L1": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 11,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "16322",
+          "descricao": "PO DESCOLORANTE  PLATINADO YAMA 300G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 16,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "16321",
+          "descricao": "PO DESCOLORANTE  PLATINADO YAMA 50G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 8,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65258",
+          "descricao": "PO DESCOLORANTE ACIDO HIALURONICO YAMA 300G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "75115",
+          "descricao": "PO DESCOLORANTE ACIDO HIALURONICO YAMA 50G",
+          "L1": {
+            "vendas": 8,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 5,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7127",
+          "descricao": "PO DESCOLORANTE CAMOMILA YAMA 20G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7343",
+          "descricao": "PO DESCOLORANTE CAMOMILA YAMA 300G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7135",
+          "descricao": "PO DESCOLORANTE CAMOMILA YAMA 50G",
+          "L1": {
+            "vendas": 7,
+            "saldo": 21,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 8,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "16319",
+          "descricao": "PO DESCOLORANTE PEROLADO YAMA 300G",
+          "L1": {
+            "vendas": 4,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 7,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "16318",
+          "descricao": "PO DESCOLORANTE PEROLADO YAMA 50G",
+          "L1": {
+            "vendas": 5,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 28,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6837",
+          "descricao": "REFIL PO DESC GERME TRIGO YAMA 300G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 4,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203096",
+          "descricao": "SHAMPOO ESFOLIANTE SCALP REPAIR YAMA 150ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "203099",
+          "descricao": "SHAMPOO SCALP REPAIR YAMA 280ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7041",
+          "descricao": "TONALIZANTE GREEN YAMA",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7040",
+          "descricao": "TONALIZANTE RED YAMA",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62762",
+          "descricao": "YAMA BEAUTY CARE SHAMPOO ARGAN 900ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "62763",
+          "descricao": "YAMA BEAUTY CARE SHAMPOO CRISTAL 900ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 16,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "55737",
+          "descricao": "YAMA BEAUTY CARE SHAMPOO NEUTRO 900ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 13,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65261",
+          "descricao": "YAMA BLOND REPAIR SERUM FINALIZADOR 30ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79406",
+          "descricao": "YAMA CURLY REPAIR AMPOLA NUTRITIVA 18 ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 15,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65266",
+          "descricao": "YAMA CURLY REPAIR GELEIA MODELADORA 500ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "79409",
+          "descricao": "YAMA CURLY REPAIR HIDRATACAO NOTURNA 150 ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65267",
+          "descricao": "YAMA CURLY REPAIR MASCARA 500G",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65268",
+          "descricao": "YAMA CURLY REPAIR OLEO DE UMECTACAO 100ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65269",
+          "descricao": "YAMA CURLY REPAIR SHAMPOO LOW POO 280ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58908",
+          "descricao": "YAMA HAIR FOOD LEAVE IN COCONUT 250G",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58910",
+          "descricao": "YAMA HAIR FOOD MASCARA CONDICIONADORA PAPAYA 250G",
+          "L1": {
+            "vendas": 4,
+            "saldo": 20,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58911",
+          "descricao": "YAMA HAIR FOOD MASCARA HIDRATANTE COCONUT 250G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58913",
+          "descricao": "YAMA HAIR FOOD MASCARA NUTRITIVA AVOCADO 250G",
+          "L1": {
+            "vendas": 2,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "64176",
+          "descricao": "YAMA HAIR FOOD OLEO AVOCADO 30ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "64177",
+          "descricao": "YAMA HAIR FOOD OLEO COCONUT 30ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58915",
+          "descricao": "YAMA HAIR FOOD SHAMPOO COCONUT 280ML",
+          "L1": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58917",
+          "descricao": "YAMA HAIR FOOD SHAMPOO PAPAYA 280ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58918",
+          "descricao": "YAMA LISS REPAIR CONDICIONADOR 200ML",
+          "L1": {
+            "vendas": 1,
+            "saldo": 12,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58920",
+          "descricao": "YAMA LISS REPAIR PROTETOR TERMICO 150ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": -9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 14,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "58921",
+          "descricao": "YAMA LISS REPAIR SHAMPOO 280ML",
+          "L1": {
+            "vendas": 4,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65270",
+          "descricao": "YAMA LONG REPAIR CONDICIONADOR FORTALECEDOR 200ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 13,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65271",
+          "descricao": "YAMA LONG REPAIR MASCARA FORTALECEDORA 180G",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 2,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "65272",
+          "descricao": "YAMA LONG REPAIR SHAMPOO FORTALECEDOR 280ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 7,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "75113",
+          "descricao": "YAMA LONG REPAIR SPRAY LEAVE-IN FORTALECEDOR 120ML",
+          "L1": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "41672",
+          "descricao": "YAMASTEROL BABOSA YAMA 200G",
+          "L1": {
+            "vendas": 1,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 4,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "6856",
+          "descricao": "YAMASTEROL BABOSA YAMA 320G",
+          "L1": {
+            "vendas": 3,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 3,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "76858",
+          "descricao": "YAMASTEROLPROTEINA HIDROLISADA  BRANCO YAMA 200ML",
+          "L1": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {},
+        "L4": {},
+        "L5": {}
+      }
+    },
+    {
+      "marca": "ZGY",
+      "lojas": {
+        "L1": {
+          "compras_periodo": 0,
+          "vendas_60d": 23,
+          "saldo_atual": -39,
+          "transito": 0
+        },
+        "L3": {
+          "compras_periodo": 0,
+          "vendas_60d": 2,
+          "saldo_atual": 11,
+          "transito": 0
+        },
+        "L4": {
+          "compras_periodo": 0,
+          "vendas_60d": 10,
+          "saldo_atual": -90,
+          "transito": 0
+        },
+        "L5": {
+          "compras_periodo": 0,
+          "vendas_60d": 41,
+          "saldo_atual": 151,
+          "transito": 0
+        }
+      },
+      "produtos": [
+        {
+          "codigo": "27720",
+          "descricao": "ARGOLA COLORIDA PEROLADA - ZGY",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27414",
+          "descricao": "ARGOLA CORRENTE COM PEDRAS STRASS BRILHANTE - ZGY",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "28371",
+          "descricao": "ARGOLA TRIANGULAR COLORIDA - ZGY",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "43046",
+          "descricao": "BRACELETE QUADRADO 01 - ZGY",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7918",
+          "descricao": "BRINCO ARGOLA - ZGY",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 9,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "16851",
+          "descricao": "BRINCO ARGOLA GRANDE-  ZGY",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27524",
+          "descricao": "BRINCO ARGOLA MEIA LUA COLORIDA - ZGY",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "76254",
+          "descricao": "BRINCO CARTELA COM 3 PARES ARGOLA PEROLADA / BOTAO / ROSQUINHA - ZGY",
+          "L1": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7900",
+          "descricao": "BRINCO COM DETALHE EM PEDRAS - ZGY",
+          "L1": {
+            "vendas": 2,
+            "saldo": -11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -8,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27688",
+          "descricao": "BRINCO FLOR DUPLA COM PEDRAS - ZGY",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27577",
+          "descricao": "BRINCO FORMATO FOLHA COLORIDO - ZGY",
+          "L1": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27834",
+          "descricao": "BRINCO LAÇO BRILHANTE COM PEROLA - ZGY",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202178",
+          "descricao": "BRINCO PEDRA - ZGY",
+          "L1": {
+            "vendas": 0,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 2,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7917",
+          "descricao": "BRINCO PEQUENO COM DETALHE EM PEDRAS - ZGY",
+          "L1": {
+            "vendas": 1,
+            "saldo": -8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 4,
+            "saldo": 5,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27417",
+          "descricao": "BRINCO PEQUENO COM STRASS BRILHANTE - ZGY",
+          "L1": {
+            "vendas": 1,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27835",
+          "descricao": "BRINCO PEROLAS DUPLA GRANDE - ZGY",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "44381",
+          "descricao": "COLAR CIRCULO FECHADO - ZGY",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27612",
+          "descricao": "COLAR COM CORRENTE DUPLA PIGENTE RETANGULAR SIMPLES - ZGY",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202183",
+          "descricao": "COLAR DIVERSO COM PIGENTE - ZGY",
+          "L1": {
+            "vendas": 1,
+            "saldo": 6,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 7,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27568",
+          "descricao": "COLAR FLOR ABERTA - ZGY",
+          "L1": {
+            "vendas": 0,
+            "saldo": -4,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202182",
+          "descricao": "COLAR FOLHEADO COM PEROLAS ALONGADAS TRANSPARENTE - ZGY",
+          "L1": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 5,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202185",
+          "descricao": "COLAR PEROLAS PEQUENAS - ZGY",
+          "L1": {
+            "vendas": 1,
+            "saldo": 24,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27779",
+          "descricao": "COLAR PEROLAS PEQUENAS COM LAÇO - ZGY",
+          "L1": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "202179",
+          "descricao": "CONJUNTO BRINCO DE 3 PARES - ZGY",
+          "L1": {
+            "vendas": 0,
+            "saldo": 3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27683",
+          "descricao": "CONJUNTO DE BRINCOS PEDRINHAS COM 3 PARES -  ZGY",
+          "L1": {
+            "vendas": 2,
+            "saldo": -11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -6,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 7,
+            "saldo": 8,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27685",
+          "descricao": "KIT 1 PIRANHA E 3 PRESILHA DOURADA - ZGY",
+          "L1": {
+            "vendas": 2,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27836",
+          "descricao": "KIT 4 GRAPOS COM DETALHES CEREJA - ZGY",
+          "L1": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 2,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27412",
+          "descricao": "KIT COLAR COM 4 - ZGY",
+          "L1": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 4,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7908",
+          "descricao": "KIT DE BRINCO 6 PARES - ZGY",
+          "L1": {
+            "vendas": 0,
+            "saldo": -10,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 14,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 5,
+            "saldo": 52,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "1340",
+          "descricao": "KIT PIRANHA E PRESILHA COM DETALHE - ZGY",
+          "L1": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 3,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27628",
+          "descricao": "KIT PRESILHA CARTELA COM 4 DETALHES DO MAR - ZGY",
+          "L1": {
+            "vendas": 0,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -5,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27584",
+          "descricao": "PIRANHA COM BORBOLETA EM PEDRINHSA E FLORES COLORIDAS - ZGY",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27409",
+          "descricao": "PIRANHA COM FLOR TECIDO GRANDE - ZGY",
+          "L1": {
+            "vendas": 1,
+            "saldo": -1,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 9,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 2,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27569",
+          "descricao": "PIRANHA COM FLOR TECIDO MÉDIA - ZGY",
+          "L1": {
+            "vendas": 2,
+            "saldo": -2,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 1,
+            "saldo": 3,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "7895",
+          "descricao": "PIRANHA CONCHA COM PEROLA - ZGY",
+          "L1": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27851",
+          "descricao": "PIRANHA LAÇO COM DETALHES - ZGY",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "27531",
+          "descricao": "PIRINHA COM PEDRAS STRASS FORMATO ESTRELA - ZGY",
+          "L1": {
+            "vendas": 1,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 0,
+            "saldo": -3,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "80179",
+          "descricao": "PULSEIRA DETALHES EM PEDRA - ZGY",
+          "L1": {
+            "vendas": 0,
+            "saldo": 11,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -19,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 1,
+            "transito": 0
+          }
+        },
+        {
+          "codigo": "80180",
+          "descricao": "PULSEIRA SIMPLES PEDRA BRANCA - ZGY",
+          "L1": {
+            "vendas": 0,
+            "saldo": 8,
+            "transito": 0
+          },
+          "L3": {
+            "vendas": 0,
+            "saldo": 0,
+            "transito": 0
+          },
+          "L4": {
+            "vendas": 1,
+            "saldo": -20,
+            "transito": 0
+          },
+          "L5": {
+            "vendas": 0,
+            "saldo": 5,
+            "transito": 0
+          }
+        }
+      ],
+      "compras_mensais_rs": {
+        "L1": {},
+        "L3": {},
+        "L4": {},
+        "L5": {}
+      }
+    }
+  ],
+  "sugestoes": [
+    {
+      "loja": "L1",
+      "marca": "Santa Clara",
+      "curva": "A",
+      "venda_60d": 105,
+      "saldo_atual": -883,
+      "transito": 0,
+      "cobertura_dias": -504.6,
+      "sugestao_compra": 1014
+    },
+    {
+      "loja": "L1",
+      "marca": "Hair Extrattus",
+      "curva": "A",
+      "venda_60d": 118,
+      "saldo_atual": -282,
+      "transito": 0,
+      "cobertura_dias": -143.4,
+      "sugestao_compra": 430
+    },
+    {
+      "loja": "L1",
+      "marca": "Marco Boni",
+      "curva": "A",
+      "venda_60d": 75,
+      "saldo_atual": -63,
+      "transito": 0,
+      "cobertura_dias": -50.4,
+      "sugestao_compra": 157
+    },
+    {
+      "loja": "L4",
+      "marca": "CBB",
+      "curva": "A",
+      "venda_60d": 76,
+      "saldo_atual": -42,
+      "transito": 0,
+      "cobertura_dias": -33.2,
+      "sugestao_compra": 137
+    },
+    {
+      "loja": "L4",
+      "marca": "Mirra",
+      "curva": "A",
+      "venda_60d": 31,
+      "saldo_atual": -5,
+      "transito": 0,
+      "cobertura_dias": -9.7,
+      "sugestao_compra": 44
+    },
+    {
+      "loja": "L1",
+      "marca": "Mirra",
+      "curva": "A",
+      "venda_60d": 18,
+      "saldo_atual": -1,
+      "transito": 0,
+      "cobertura_dias": -3.3,
+      "sugestao_compra": 24
+    },
+    {
+      "loja": "L1",
+      "marca": "Felps",
+      "curva": "A",
+      "venda_60d": 67,
+      "saldo_atual": 2,
+      "transito": 0,
+      "cobertura_dias": 1.8,
+      "sugestao_compra": 82
+    },
+    {
+      "loja": "L1",
+      "marca": "MQ",
+      "curva": "A",
+      "venda_60d": 3,
+      "saldo_atual": 1,
+      "transito": 0,
+      "cobertura_dias": 20,
+      "sugestao_compra": 3
+    },
+    {
+      "loja": "L4",
+      "marca": "Igora",
+      "curva": "A",
+      "venda_60d": 114,
+      "saldo_atual": 40,
+      "transito": 0,
+      "cobertura_dias": 21.1,
+      "sugestao_compra": 103
+    },
+    {
+      "loja": "L1",
+      "marca": "Lizze",
+      "curva": "A",
+      "venda_60d": 14,
+      "saldo_atual": 7,
+      "transito": 0,
+      "cobertura_dias": 30,
+      "sugestao_compra": 11
+    },
+    {
+      "loja": "L3",
+      "marca": "Dafu",
+      "curva": "A",
+      "venda_60d": 100,
+      "saldo_atual": 53,
+      "transito": 0,
+      "cobertura_dias": 31.8,
+      "sugestao_compra": 72
+    },
+    {
+      "loja": "L4",
+      "marca": "Yama",
+      "curva": "A",
+      "venda_60d": 94,
+      "saldo_atual": 65,
+      "transito": 0,
+      "cobertura_dias": 41.5,
+      "sugestao_compra": 53
+    },
+    {
+      "loja": "L4",
+      "marca": "Let me be",
+      "curva": "A",
+      "venda_60d": 83,
+      "saldo_atual": 58,
+      "transito": 0,
+      "cobertura_dias": 41.9,
+      "sugestao_compra": 46
+    },
+    {
+      "loja": "L4",
+      "marca": "Hair Extrattus",
+      "curva": "A",
+      "venda_60d": 79,
+      "saldo_atual": 59,
+      "transito": 0,
+      "cobertura_dias": 44.8,
+      "sugestao_compra": 40
+    },
+    {
+      "loja": "L4",
+      "marca": "Depilflax",
+      "curva": "A",
+      "venda_60d": 89,
+      "saldo_atual": 68,
+      "transito": 0,
+      "cobertura_dias": 45.8,
+      "sugestao_compra": 43
+    },
+    {
+      "loja": "L4",
+      "marca": "Santa Clara",
+      "curva": "A",
+      "venda_60d": 223,
+      "saldo_atual": 171,
+      "transito": 0,
+      "cobertura_dias": 46,
+      "sugestao_compra": 108
+    },
+    {
+      "loja": "L5",
+      "marca": "Truss",
+      "curva": "A",
+      "venda_60d": 29,
+      "saldo_atual": 23,
+      "transito": 0,
+      "cobertura_dias": 47.6,
+      "sugestao_compra": 13
+    },
+    {
+      "loja": "L3",
+      "marca": "Igora",
+      "curva": "A",
+      "venda_60d": 36,
+      "saldo_atual": 30,
+      "transito": 0,
+      "cobertura_dias": 50,
+      "sugestao_compra": 15
+    },
+    {
+      "loja": "L1",
+      "marca": "Let me be",
+      "curva": "A",
+      "venda_60d": 80,
+      "saldo_atual": 76,
+      "transito": 0,
+      "cobertura_dias": 57,
+      "sugestao_compra": 24
+    },
+    {
+      "loja": "L3",
+      "marca": "Lizze",
+      "curva": "A",
+      "venda_60d": 10,
+      "saldo_atual": 10,
+      "transito": 0,
+      "cobertura_dias": 60,
+      "sugestao_compra": 3
+    },
+    {
+      "loja": "L4",
+      "marca": "MQ",
+      "curva": "A",
+      "venda_60d": 1,
+      "saldo_atual": 1,
+      "transito": 0,
+      "cobertura_dias": 60,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L4",
+      "marca": "Widi Care",
+      "curva": "A",
+      "venda_60d": 123,
+      "saldo_atual": 132,
+      "transito": 0,
+      "cobertura_dias": 64.4,
+      "sugestao_compra": 22
+    },
+    {
+      "loja": "L1",
+      "marca": "Itallian",
+      "curva": "A",
+      "venda_60d": 383,
+      "saldo_atual": 422,
+      "transito": 0,
+      "cobertura_dias": 66.1,
+      "sugestao_compra": 57
+    },
+    {
+      "loja": "L4",
+      "marca": "Itallian",
+      "curva": "A",
+      "venda_60d": 394,
+      "saldo_atual": 442,
+      "transito": 0,
+      "cobertura_dias": 67.3,
+      "sugestao_compra": 51
+    },
+    {
+      "loja": "L4",
+      "marca": "Beauty Color",
+      "curva": "A",
+      "venda_60d": 45,
+      "saldo_atual": 51,
+      "transito": 0,
+      "cobertura_dias": 68,
+      "sugestao_compra": 5
+    },
+    {
+      "loja": "L3",
+      "marca": "ProBelle",
+      "curva": "A",
+      "venda_60d": 116,
+      "saldo_atual": 144,
+      "transito": 0,
+      "cobertura_dias": 74.5,
+      "sugestao_compra": 1
+    },
+    {
+      "loja": "L4",
+      "marca": "Felps",
+      "curva": "A",
+      "venda_60d": 48,
+      "saldo_atual": 63,
+      "transito": 0,
+      "cobertura_dias": 78.8,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L3",
+      "marca": "Widi Care",
+      "curva": "A",
+      "venda_60d": 116,
+      "saldo_atual": 153,
+      "transito": 0,
+      "cobertura_dias": 79.1,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L1",
+      "marca": "Igora",
+      "curva": "A",
+      "venda_60d": 115,
+      "saldo_atual": 157,
+      "transito": 0,
+      "cobertura_dias": 81.9,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L3",
+      "marca": "Let me be",
+      "curva": "A",
+      "venda_60d": 48,
+      "saldo_atual": 70,
+      "transito": 0,
+      "cobertura_dias": 87.5,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "Widi Care",
+      "curva": "A",
+      "venda_60d": 136,
+      "saldo_atual": 203,
+      "transito": 0,
+      "cobertura_dias": 89.6,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L3",
+      "marca": "Yama",
+      "curva": "A",
+      "venda_60d": 17,
+      "saldo_atual": 26,
+      "transito": 0,
+      "cobertura_dias": 91.8,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L3",
+      "marca": "Beauty Color",
+      "curva": "A",
+      "venda_60d": 27,
+      "saldo_atual": 42,
+      "transito": 0,
+      "cobertura_dias": 93.3,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L4",
+      "marca": "Natum",
+      "curva": "A",
+      "venda_60d": 105,
+      "saldo_atual": 176,
+      "transito": 0,
+      "cobertura_dias": 100.6,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L4",
+      "marca": "ProBelle",
+      "curva": "A",
+      "venda_60d": 64,
+      "saldo_atual": 108,
+      "transito": 0,
+      "cobertura_dias": 101.3,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L4",
+      "marca": "Colorama",
+      "curva": "A",
+      "venda_60d": 29,
+      "saldo_atual": 51,
+      "transito": 0,
+      "cobertura_dias": 105.5,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L1",
+      "marca": "Widi Care",
+      "curva": "A",
+      "venda_60d": 156,
+      "saldo_atual": 279,
+      "transito": 0,
+      "cobertura_dias": 107.3,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L4",
+      "marca": "Risque",
+      "curva": "A",
+      "venda_60d": 13,
+      "saldo_atual": 24,
+      "transito": 0,
+      "cobertura_dias": 110.8,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L3",
+      "marca": "Depilflax",
+      "curva": "A",
+      "venda_60d": 1,
+      "saldo_atual": 2,
+      "transito": 0,
+      "cobertura_dias": 120,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "Gama",
+      "curva": "A",
+      "venda_60d": 1,
+      "saldo_atual": 2,
+      "transito": 0,
+      "cobertura_dias": 120,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L4",
+      "marca": "Marco Boni",
+      "curva": "A",
+      "venda_60d": 57,
+      "saldo_atual": 120,
+      "transito": 0,
+      "cobertura_dias": 126.3,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L3",
+      "marca": "Santa Clara",
+      "curva": "A",
+      "venda_60d": 314,
+      "saldo_atual": 744,
+      "transito": 0,
+      "cobertura_dias": 142.2,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L3",
+      "marca": "Hair Extrattus",
+      "curva": "A",
+      "venda_60d": 124,
+      "saldo_atual": 317,
+      "transito": 0,
+      "cobertura_dias": 153.4,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "Vizzela",
+      "curva": "A",
+      "venda_60d": 27,
+      "saldo_atual": 79,
+      "transito": 0,
+      "cobertura_dias": 175.6,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "Dafu",
+      "curva": "A",
+      "venda_60d": 48,
+      "saldo_atual": 142,
+      "transito": 0,
+      "cobertura_dias": 177.5,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L1",
+      "marca": "Truss",
+      "curva": "A",
+      "venda_60d": 30,
+      "saldo_atual": 89,
+      "transito": 0,
+      "cobertura_dias": 178,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L3",
+      "marca": "Marco Boni",
+      "curva": "A",
+      "venda_60d": 22,
+      "saldo_atual": 66,
+      "transito": 0,
+      "cobertura_dias": 180,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "Colorama",
+      "curva": "A",
+      "venda_60d": 60,
+      "saldo_atual": 187,
+      "transito": 0,
+      "cobertura_dias": 187,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L3",
+      "marca": "Felps",
+      "curva": "A",
+      "venda_60d": 72,
+      "saldo_atual": 227,
+      "transito": 0,
+      "cobertura_dias": 189.2,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L1",
+      "marca": "Depilflax",
+      "curva": "A",
+      "venda_60d": 91,
+      "saldo_atual": 292,
+      "transito": 0,
+      "cobertura_dias": 192.5,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L1",
+      "marca": "Yama",
+      "curva": "A",
+      "venda_60d": 77,
+      "saldo_atual": 249,
+      "transito": 0,
+      "cobertura_dias": 194,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L3",
+      "marca": "Itallian",
+      "curva": "A",
+      "venda_60d": 86,
+      "saldo_atual": 282,
+      "transito": 0,
+      "cobertura_dias": 196.7,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L3",
+      "marca": "CBB",
+      "curva": "A",
+      "venda_60d": 128,
+      "saldo_atual": 434,
+      "transito": 0,
+      "cobertura_dias": 203.4,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L3",
+      "marca": "Repos",
+      "curva": "A",
+      "venda_60d": 18,
+      "saldo_atual": 63,
+      "transito": 0,
+      "cobertura_dias": 210,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "ZGY",
+      "curva": "A",
+      "venda_60d": 41,
+      "saldo_atual": 151,
+      "transito": 0,
+      "cobertura_dias": 221,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L3",
+      "marca": "Natum",
+      "curva": "A",
+      "venda_60d": 59,
+      "saldo_atual": 228,
+      "transito": 0,
+      "cobertura_dias": 231.9,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L4",
+      "marca": "Truss",
+      "curva": "A",
+      "venda_60d": 21,
+      "saldo_atual": 82,
+      "transito": 0,
+      "cobertura_dias": 234.3,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L3",
+      "marca": "Mundial",
+      "curva": "A",
+      "venda_60d": 65,
+      "saldo_atual": 273,
+      "transito": 0,
+      "cobertura_dias": 252,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "Risque",
+      "curva": "A",
+      "venda_60d": 74,
+      "saldo_atual": 315,
+      "transito": 0,
+      "cobertura_dias": 255.4,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L4",
+      "marca": "Lizze",
+      "curva": "A",
+      "venda_60d": 3,
+      "saldo_atual": 14,
+      "transito": 0,
+      "cobertura_dias": 280,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "Let me be",
+      "curva": "A",
+      "venda_60d": 21,
+      "saldo_atual": 104,
+      "transito": 0,
+      "cobertura_dias": 297.1,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "Santa Clara",
+      "curva": "A",
+      "venda_60d": 164,
+      "saldo_atual": 812,
+      "transito": 0,
+      "cobertura_dias": 297.1,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L3",
+      "marca": "Colorama",
+      "curva": "A",
+      "venda_60d": 2,
+      "saldo_atual": 10,
+      "transito": 0,
+      "cobertura_dias": 300,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "Natum",
+      "curva": "A",
+      "venda_60d": 62,
+      "saldo_atual": 334,
+      "transito": 0,
+      "cobertura_dias": 323.2,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "Beauty Color",
+      "curva": "A",
+      "venda_60d": 44,
+      "saldo_atual": 243,
+      "transito": 0,
+      "cobertura_dias": 331.4,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L1",
+      "marca": "Beauty Color",
+      "curva": "A",
+      "venda_60d": 48,
+      "saldo_atual": 275,
+      "transito": 0,
+      "cobertura_dias": 343.8,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L1",
+      "marca": "CBB",
+      "curva": "A",
+      "venda_60d": 115,
+      "saldo_atual": 660,
+      "transito": 0,
+      "cobertura_dias": 344.3,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L1",
+      "marca": "Mundial",
+      "curva": "A",
+      "venda_60d": 76,
+      "saldo_atual": 453,
+      "transito": 0,
+      "cobertura_dias": 357.6,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L4",
+      "marca": "Mundial",
+      "curva": "A",
+      "venda_60d": 75,
+      "saldo_atual": 450,
+      "transito": 0,
+      "cobertura_dias": 360,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L3",
+      "marca": "Truss",
+      "curva": "A",
+      "venda_60d": 6,
+      "saldo_atual": 39,
+      "transito": 0,
+      "cobertura_dias": 390,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "ProBelle",
+      "curva": "A",
+      "venda_60d": 67,
+      "saldo_atual": 486,
+      "transito": 0,
+      "cobertura_dias": 435.2,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L1",
+      "marca": "ProBelle",
+      "curva": "A",
+      "venda_60d": 57,
+      "saldo_atual": 461,
+      "transito": 0,
+      "cobertura_dias": 485.3,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "Hair Extrattus",
+      "curva": "A",
+      "venda_60d": 34,
+      "saldo_atual": 292,
+      "transito": 0,
+      "cobertura_dias": 515.3,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L1",
+      "marca": "Natum",
+      "curva": "A",
+      "venda_60d": 120,
+      "saldo_atual": 1257,
+      "transito": 0,
+      "cobertura_dias": 628.5,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L3",
+      "marca": "Mirra",
+      "curva": "A",
+      "venda_60d": 2,
+      "saldo_atual": 22,
+      "transito": 0,
+      "cobertura_dias": 660,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L1",
+      "marca": "Risque",
+      "curva": "A",
+      "venda_60d": 21,
+      "saldo_atual": 329,
+      "transito": 0,
+      "cobertura_dias": 940,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "CBB",
+      "curva": "A",
+      "venda_60d": 35,
+      "saldo_atual": 575,
+      "transito": 0,
+      "cobertura_dias": 985.7,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "Cinco",
+      "curva": "A",
+      "venda_60d": 1,
+      "saldo_atual": 19,
+      "transito": 0,
+      "cobertura_dias": 1140,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "Otimo",
+      "curva": "A",
+      "venda_60d": 13,
+      "saldo_atual": 296,
+      "transito": 0,
+      "cobertura_dias": 1366.2,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L1",
+      "marca": "Colorama",
+      "curva": "A",
+      "venda_60d": 15,
+      "saldo_atual": 893,
+      "transito": 0,
+      "cobertura_dias": 3572,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "Bruna Tavares",
+      "curva": "A",
+      "venda_60d": 0,
+      "saldo_atual": 0,
+      "transito": 0,
+      "cobertura_dias": 9999,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L1",
+      "marca": "Gama",
+      "curva": "A",
+      "venda_60d": 0,
+      "saldo_atual": -2,
+      "transito": 0,
+      "cobertura_dias": 9999,
+      "sugestao_compra": 2
+    },
+    {
+      "loja": "L3",
+      "marca": "Gama",
+      "curva": "A",
+      "venda_60d": 0,
+      "saldo_atual": 0,
+      "transito": 0,
+      "cobertura_dias": 9999,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L4",
+      "marca": "Gama",
+      "curva": "A",
+      "venda_60d": 0,
+      "saldo_atual": 0,
+      "transito": 0,
+      "cobertura_dias": 9999,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "Latika",
+      "curva": "A",
+      "venda_60d": 0,
+      "saldo_atual": 4,
+      "transito": 0,
+      "cobertura_dias": 9999,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L3",
+      "marca": "MQ",
+      "curva": "A",
+      "venda_60d": 0,
+      "saldo_atual": 0,
+      "transito": 0,
+      "cobertura_dias": 9999,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L3",
+      "marca": "Risque",
+      "curva": "A",
+      "venda_60d": 0,
+      "saldo_atual": 0,
+      "transito": 0,
+      "cobertura_dias": 9999,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L3",
+      "marca": "Vizzela",
+      "curva": "A",
+      "venda_60d": 0,
+      "saldo_atual": 0,
+      "transito": 0,
+      "cobertura_dias": 9999,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L1",
+      "marca": "Belliz",
+      "curva": "B",
+      "venda_60d": 5,
+      "saldo_atual": -47,
+      "transito": 0,
+      "cobertura_dias": -564,
+      "sugestao_compra": 53
+    },
+    {
+      "loja": "L4",
+      "marca": "ZGY",
+      "curva": "B",
+      "venda_60d": 10,
+      "saldo_atual": -90,
+      "transito": 0,
+      "cobertura_dias": -540,
+      "sugestao_compra": 103
+    },
+    {
+      "loja": "L4",
+      "marca": "Belliz",
+      "curva": "B",
+      "venda_60d": 4,
+      "saldo_atual": -22,
+      "transito": 0,
+      "cobertura_dias": -330,
+      "sugestao_compra": 27
+    },
+    {
+      "loja": "L1",
+      "marca": "ZGY",
+      "curva": "B",
+      "venda_60d": 23,
+      "saldo_atual": -39,
+      "transito": 0,
+      "cobertura_dias": -101.7,
+      "sugestao_compra": 68
+    },
+    {
+      "loja": "L1",
+      "marca": "Mutari",
+      "curva": "B",
+      "venda_60d": 38,
+      "saldo_atual": -19,
+      "transito": 0,
+      "cobertura_dias": -30,
+      "sugestao_compra": 67
+    },
+    {
+      "loja": "L4",
+      "marca": "Dafu",
+      "curva": "B",
+      "venda_60d": 62,
+      "saldo_atual": -9,
+      "transito": 0,
+      "cobertura_dias": -8.7,
+      "sugestao_compra": 87
+    },
+    {
+      "loja": "L5",
+      "marca": "Belliz",
+      "curva": "B",
+      "venda_60d": 25,
+      "saldo_atual": 33,
+      "transito": 0,
+      "cobertura_dias": 79.2,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L1",
+      "marca": "Dafu",
+      "curva": "B",
+      "venda_60d": 62,
+      "saldo_atual": 90,
+      "transito": 0,
+      "cobertura_dias": 87.1,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L4",
+      "marca": "Mutari",
+      "curva": "B",
+      "venda_60d": 49,
+      "saldo_atual": 74,
+      "transito": 0,
+      "cobertura_dias": 90.6,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "Kamaleao",
+      "curva": "B",
+      "venda_60d": 10,
+      "saldo_atual": 16,
+      "transito": 0,
+      "cobertura_dias": 96,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "Marco Boni",
+      "curva": "B",
+      "venda_60d": 6,
+      "saldo_atual": 13,
+      "transito": 0,
+      "cobertura_dias": 130,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "Igora",
+      "curva": "B",
+      "venda_60d": 41,
+      "saldo_atual": 107,
+      "transito": 0,
+      "cobertura_dias": 156.6,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L4",
+      "marca": "Repos",
+      "curva": "B",
+      "venda_60d": 27,
+      "saldo_atual": 82,
+      "transito": 0,
+      "cobertura_dias": 182.2,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "Yama",
+      "curva": "B",
+      "venda_60d": 61,
+      "saldo_atual": 231,
+      "transito": 0,
+      "cobertura_dias": 227.2,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L1",
+      "marca": "Vizzela",
+      "curva": "B",
+      "venda_60d": 6,
+      "saldo_atual": 24,
+      "transito": 0,
+      "cobertura_dias": 240,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L1",
+      "marca": "Repos",
+      "curva": "B",
+      "venda_60d": 34,
+      "saldo_atual": 137,
+      "transito": 0,
+      "cobertura_dias": 241.8,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L3",
+      "marca": "Belliz",
+      "curva": "B",
+      "venda_60d": 10,
+      "saldo_atual": 42,
+      "transito": 0,
+      "cobertura_dias": 252,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "Felps",
+      "curva": "B",
+      "venda_60d": 54,
+      "saldo_atual": 232,
+      "transito": 0,
+      "cobertura_dias": 257.8,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L3",
+      "marca": "Kiss",
+      "curva": "B",
+      "venda_60d": 4,
+      "saldo_atual": 19,
+      "transito": 0,
+      "cobertura_dias": 285,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L4",
+      "marca": "Kiss",
+      "curva": "B",
+      "venda_60d": 35,
+      "saldo_atual": 222,
+      "transito": 0,
+      "cobertura_dias": 380.6,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "Repos",
+      "curva": "B",
+      "venda_60d": 13,
+      "saldo_atual": 90,
+      "transito": 0,
+      "cobertura_dias": 415.4,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L4",
+      "marca": "Vizzela",
+      "curva": "B",
+      "venda_60d": 2,
+      "saldo_atual": 18,
+      "transito": 0,
+      "cobertura_dias": 540,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L1",
+      "marca": "Kiss",
+      "curva": "B",
+      "venda_60d": 54,
+      "saldo_atual": 618,
+      "transito": 0,
+      "cobertura_dias": 686.7,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L1",
+      "marca": "Depil Bella",
+      "curva": "B",
+      "venda_60d": 0,
+      "saldo_atual": -15,
+      "transito": 0,
+      "cobertura_dias": 9999,
+      "sugestao_compra": 15
+    },
+    {
+      "loja": "L3",
+      "marca": "Depil Bella",
+      "curva": "B",
+      "venda_60d": 0,
+      "saldo_atual": 18,
+      "transito": 0,
+      "cobertura_dias": 9999,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L4",
+      "marca": "Depil Bella",
+      "curva": "B",
+      "venda_60d": 0,
+      "saldo_atual": 0,
+      "transito": 0,
+      "cobertura_dias": 9999,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L3",
+      "marca": "Kamaleao",
+      "curva": "B",
+      "venda_60d": 0,
+      "saldo_atual": 0,
+      "transito": 0,
+      "cobertura_dias": 9999,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L5",
+      "marca": "Mirra",
+      "curva": "B",
+      "venda_60d": 0,
+      "saldo_atual": 0,
+      "transito": 0,
+      "cobertura_dias": 9999,
+      "sugestao_compra": 0
+    },
+    {
+      "loja": "L3",
+      "marca": "Mutari",
+      "curva": "B",
+      "venda_60d": 0,
+      "saldo_atual": 10,
+      "transito": 0,
+      "cobertura_dias": 9999,
+      "sugestao_compra": 0
+    }
+  ],
+  "curva": {
+    "L1": {
+      "A": [
+        "Itallian",
+        "Beauty Color",
+        "Gama",
+        "Widi Care",
+        "CBB",
+        "Apse",
+        "Natum",
+        "Hair Extrattus",
+        "ProBelle",
+        "Let me be",
+        "Felps",
+        "Depilflax",
+        "Risque",
+        "Truss",
+        "Santa Clara",
+        "Marco Boni",
+        "Igora",
+        "Mundial",
+        "Colorama",
+        "Lizze",
+        "Mirra",
+        "Yama",
+        "MQ"
+      ],
+      "B": [
+        "Vizzela",
+        "Dafu",
+        "Repos",
+        "Kiss",
+        "Mutari",
+        "Belliz",
+        "Depil Bella",
+        "ZGY"
+      ]
+    },
+    "L4": {
+      "A": [
+        "Itallian",
+        "Beauty Color",
+        "Gama",
+        "Widi Care",
+        "CBB",
+        "Apse",
+        "Natum",
+        "Hair Extrattus",
+        "ProBelle",
+        "Let me be",
+        "Felps",
+        "Depilflax",
+        "Risque",
+        "Truss",
+        "Santa Clara",
+        "Marco Boni",
+        "Igora",
+        "Mundial",
+        "Colorama",
+        "Lizze",
+        "Mirra",
+        "Yama",
+        "MQ"
+      ],
+      "B": [
+        "Vizzela",
+        "Dafu",
+        "Repos",
+        "Kiss",
+        "Mutari",
+        "Belliz",
+        "Depil Bella",
+        "ZGY"
+      ]
+    },
+    "L3": {
+      "A": [
+        "Itallian",
+        "Beauty Color",
+        "Gama",
+        "Widi Care",
+        "CBB",
+        "Apse",
+        "Natum",
+        "Hair Extrattus",
+        "ProBelle",
+        "Let me be",
+        "Felps",
+        "Depilflax",
+        "Risque",
+        "Truss",
+        "Santa Clara",
+        "Marco Boni",
+        "Igora",
+        "Mundial",
+        "Colorama",
+        "Lizze",
+        "Mirra",
+        "Vizzela",
+        "Dafu",
+        "Repos",
+        "Yama",
+        "MQ"
+      ],
+      "B": [
+        "Truss",
+        "Kiss",
+        "Mutari",
+        "Igora",
+        "Belliz",
+        "Kamaleao",
+        "Depil Bella"
+      ]
+    },
+    "L5": {
+      "A": [
+        "Beauty Color",
+        "Gama",
+        "Widi Care",
+        "CBB",
+        "Apse",
+        "Natum",
+        "Hair Extrattus",
+        "ProBelle",
+        "Let me be",
+        "Vizzela",
+        "Dafu",
+        "Truss",
+        "ZGY",
+        "Otimo",
+        "Mari Maria",
+        "Latika",
+        "Bruna Tavares",
+        "Colorama",
+        "Risque",
+        "Santa Clara",
+        "Cinco"
+      ],
+      "B": [
+        "Felps",
+        "Repos",
+        "Yama",
+        "Igora",
+        "Belliz",
+        "Kamaleao",
+        "Marco Boni",
+        "Mirra"
+      ]
+    }
+  },
+  "_meta": {
+    "unidade": "peças",
+    "marcas_com_match": 35,
+    "sugestoes_total": 117
+  }
+};

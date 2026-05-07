@@ -1,0 +1,30 @@
+{
+  "_descricao": "Curva A/B por loja para o dashboard de compras. Editável manualmente.",
+  "_ultima_edicao": "2026-05-06",
+  "L1": {
+    "_loja": "Casa da Beleza Altamira (Empresa 1)",
+    "A": ["Itallian", "Beauty Color", "Gama", "Widi Care", "CBB", "Apse", "Natum", "Hair Extrattus", "ProBelle", "Let me be", "Felps", "Depilflax", "Risque", "Truss", "Santa Clara", "Marco Boni", "Igora", "Mundial", "Colorama", "Lizze", "Mirra", "Yama", "MQ"],
+    "B": ["Vizzela", "Dafu", "Repos", "Kiss", "Mutari", "Belliz", "Depil Bella", "ZGY"]
+  },
+  "L4": {
+    "_loja": "MissBeleza Altamira (Empresa 4)",
+    "A": ["Itallian", "Beauty Color", "Gama", "Widi Care", "CBB", "Apse", "Natum", "Hair Extrattus", "ProBelle", "Let me be", "Felps", "Depilflax", "Risque", "Truss", "Santa Clara", "Marco Boni", "Igora", "Mundial", "Colorama", "Lizze", "Mirra", "Yama", "MQ"],
+    "B": ["Vizzela", "Dafu", "Repos", "Kiss", "Mutari", "Belliz", "Depil Bella", "ZGY"]
+  },
+  "L3": {
+    "_loja": "Casa da Beleza Itaituba (Empresa 3)",
+    "A": ["Itallian", "Beauty Color", "Gama", "Widi Care", "CBB", "Apse", "Natum", "Hair Extrattus", "ProBelle", "Let me be", "Felps", "Depilflax", "Risque", "Truss", "Santa Clara", "Marco Boni", "Igora", "Mundial", "Colorama", "Lizze", "Mirra", "Vizzela", "Dafu", "Repos", "Yama", "MQ"],
+    "B": ["Truss", "Kiss", "Mutari", "Igora", "Belliz", "Kamaleao", "Depil Bella"]
+  },
+  "L5": {
+    "_loja": "MissBeleza Santarém (Empresa 10)",
+    "A": ["Beauty Color", "Gama", "Widi Care", "CBB", "Apse", "Natum", "Hair Extrattus", "ProBelle", "Let me be", "Vizzela", "Dafu", "Truss", "ZGY", "Otimo", "Mari Maria", "Latika", "Bruna Tavares", "Colorama", "Risque", "Santa Clara", "Cinco"],
+    "B": ["Felps", "Repos", "Yama", "Igora", "Belliz", "Kamaleao", "Marco Boni", "Mirra"]
+  },
+  "_lojas_meta": {
+    "L1": {"empresa_id": 1,  "nome": "Casa da Beleza Altamira",  "cidade": "Altamira"},
+    "L3": {"empresa_id": 3,  "nome": "Casa da Beleza Itaituba",  "cidade": "Itaituba"},
+    "L4": {"empresa_id": 4,  "nome": "MissBeleza Altamira",      "cidade": "Altamira"},
+    "L5": {"empresa_id": 10, "nome": "MissBeleza Santarém",      "cidade": "Santarém"}
+  }
+}
