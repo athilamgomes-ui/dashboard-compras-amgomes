@@ -15,6 +15,7 @@
     --ok: #10b981;
     --warn: #f59e0b;
     --crit: #ef4444;
+    --curva-s: #fff1f2;
     --curva-a: #eef4ff;
     --curva-b: #f6f6fb;
   }
@@ -54,12 +55,16 @@
     background: #f7f9fb; color: var(--muted); font-weight: 600;
     font-size: 11.5px; text-transform: uppercase; letter-spacing: .3px;
   }
+  tr.curva-s td { background: var(--curva-s); }
   tr.curva-a td { background: var(--curva-a); }
   tr.curva-b td { background: var(--curva-b); }
-  tr.curva-a td.brand::before, tr.curva-b td.brand::before {
+  tr.curva-s td:first-child { box-shadow: inset 3px 0 0 #ef4444; }
+  tr.curva-s td.brand, tr.curva-a td.brand, tr.curva-b td.brand { font-weight: 600; }
+  tr.curva-s td.brand::before, tr.curva-a td.brand::before, tr.curva-b td.brand::before {
     display: inline-block; padding: 1px 6px; border-radius: 4px;
-    font-size: 10.5px; font-weight: 600; margin-right: 6px;
+    font-size: 10.5px; font-weight: 700; margin-right: 6px;
   }
+  tr.curva-s td.brand::before { content: "S"; background: #fee2e2; color: #b91c1c; }
   tr.curva-a td.brand::before { content: "A"; background: #dbeafe; color: #1e40af; }
   tr.curva-b td.brand::before { content: "B"; background: #ede9fe; color: #5b21b6; }
   td.cob-ok    { color: var(--ok);   font-weight: 600; }
@@ -97,7 +102,8 @@
     </label>
     <label>Curva:
       <select id="filtro-curva">
-        <option value="ALL">A + B</option>
+        <option value="ALL">S + A + B</option>
+        <option value="S">⭐ Estratégicas (S)</option>
         <option value="A">Somente A</option>
         <option value="B">Somente B</option>
       </select>
@@ -194,7 +200,7 @@ function render() {
   const warns = sug.filter(s => classifica(s.cobertura_dias) === 'WARN').length;
   const oks   = sug.filter(s => classifica(s.cobertura_dias) === 'OK').length;
   document.getElementById('kpis').innerHTML = `
-    <div class="kpi"><div class="label">Marcas monitoradas</div><div class="value">${sug.length}</div><div class="sub">curva A + B (filtradas)</div></div>
+    <div class="kpi"><div class="label">Marcas monitoradas</div><div class="value">${sug.length}</div><div class="sub">curva S + A + B (filtradas)</div></div>
     <div class="kpi"><div class="label">Sugestão total</div><div class="value">${fmtUnid(totSug)}</div><div class="sub">peças p/ cobrir 60+15 dias</div></div>
     <div class="kpi"><div class="label">Críticas</div><div class="value" style="color:var(--crit)">${crits}</div><div class="sub">cobertura &lt; 60 dias</div></div>
     <div class="kpi"><div class="label">Atenção / OK</div><div class="value">${warns} / ${oks}</div><div class="sub">60–90d / acima de 90d</div></div>
@@ -239,12 +245,14 @@ function render() {
       ${meses.map(x => `<th>${x}</th>`).join('')}
       <th>Total ${(DATA.periodo && DATA.periodo.ano) || ''}</th>
     </tr></thead><tbody>`;
+  const curvaOrder = {S: 0, A: 1, B: 2};
   const linhasMarca = [];
   (DATA.marcas || []).forEach(brand => {
     const mu = brand.marca.toUpperCase();
     let curva = '';
     for (const lj of lojasFilt) {
       const cv = (DATA.curva && DATA.curva[lj]) || {};
+      if ((cv.S||[]).some(x => x.toUpperCase() === mu)) { curva = 'S'; break; }
       if ((cv.A||[]).some(x => x.toUpperCase() === mu)) { curva = 'A'; break; }
       if ((cv.B||[]).some(x => x.toUpperCase() === mu)) { curva = 'B'; }
     }
@@ -252,7 +260,7 @@ function render() {
     if (filtroCurva !== 'ALL' && filtroCurva !== curva) return;
     linhasMarca.push({brand, curva});
   });
-  linhasMarca.sort((a,b) => (a.curva.localeCompare(b.curva)) || a.brand.marca.localeCompare(b.brand.marca));
+  linhasMarca.sort((a,b) => (curvaOrder[a.curva] - curvaOrder[b.curva]) || a.brand.marca.localeCompare(b.brand.marca));
   if (linhasMarca.length === 0) {
     m += `<tr><td colspan="${meses.length+2}" id="status-empty">Sem dados — aguarde próxima atualização da skill.</td></tr>`;
   } else {
