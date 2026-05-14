@@ -154,6 +154,11 @@ function classifica(c) {
 const fmtUnid = n => (n||0).toLocaleString('pt-BR', { maximumFractionDigits: 0 }) + ' un';
 const fmtBRL  = fmtUnid; // valores estão em peças, manter alias para compatibilidade
 const fmtNum  = n => (n||0).toLocaleString('pt-BR', { maximumFractionDigits: 0 });
+const fmtCobertura = c => {
+  if (c === 9999 || !isFinite(c)) return '99+ dias';
+  const v = Math.max(0, Math.round(c||0));
+  return (v > 99 ? '99+' : v) + ' dias';
+};
 
 let DATA = null;
 const NOMES_LOJA = {
@@ -226,7 +231,7 @@ function render() {
         <td>${fmtUnid(s.venda_60d)}</td>
         <td>${fmtUnid(s.saldo_atual)}</td>
         <td>${fmtUnid(s.transito)}</td>
-        <td class="${STATUS[stat].cls}">${s.cobertura_dias === 9999 ? '∞' : s.cobertura_dias}</td>
+        <td class="${STATUS[stat].cls}">${fmtCobertura(s.cobertura_dias)}</td>
         <td class="sug ${s.sugestao_compra > 0 ? 'has' : ''}">${fmtUnid(s.sugestao_compra)}</td>
       </tr>
       <tr id="prod-${rowId}" class="produtos-row" style="display:none"><td colspan="7"></td></tr>`;
