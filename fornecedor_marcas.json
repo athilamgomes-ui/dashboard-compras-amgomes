@@ -1,0 +1,12 @@
+{
+  "_descricao": "Mapeamento Fornecedor (CNPJ ou substring do Nome/RazaoSocial) → Marca no ERP. Usado pela skill quando a descrição dos produtos da NFe NÃO contém o nome da marca (caso da Kamaleão Color: produtos descritos como 'MASCARA PIGMENTANTE FLAMINGO 100ML KC'). EDITÁVEL manualmente — adicionar entradas conforme novos fornecedores apareçam.",
+  "_formato": "CNPJ (14 dígitos sem pontuação) → marca | Nome contendo substring → marca",
+  "_ultima_edicao": "2026-05-15",
+  "por_cnpj": {
+    "31768865000126": "Kamaleao"
+  },
+  "por_nome_substring": {
+    "KAMALEAO COLOR": "Kamaleao",
+    "KAMALEÃO COLOR": "Kamaleao"
+  }
+}
