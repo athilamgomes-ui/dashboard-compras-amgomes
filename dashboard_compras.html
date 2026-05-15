@@ -310,7 +310,12 @@ function toggleProdutos(rowId, loja, marca){
         .map(p => ({...p, _v: p[lojaUpper]?.vendas||0, _s: p[lojaUpper]?.saldo||0, _t: p[lojaUpper]?.transito||0}))
         .filter(p => p._v !== 0 || p._s !== 0 || p._t !== 0)
         .sort((a,b) => b._v - a._v);
-      let h = '<table style="margin:6px 0; background:#fafbfc"><thead><tr>'
+      const numOrfaos = prods.filter(p => p._origem === 'NFe pendente').length;
+      let h = '';
+      if (numOrfaos > 0) {
+        h += `<div style="margin:6px 0;padding:6px 10px;background:#fef3c7;border-left:3px solid #f59e0b;font-size:12px;color:#78350f">⚠️ ${numOrfaos} produto${numOrfaos>1?'s':''} com badge <strong>NOVO</strong>: chegaram em NFe pendente mas não têm cadastro correspondente no ERP. Pode ser <strong>produto novo</strong> (primeira compra) ou <strong>código alterado pelo fabricante</strong>.</div>`;
+      }
+      h += '<table style="margin:6px 0; background:#fafbfc"><thead><tr>'
         +'<th style="text-align:left">Cód</th>'
         +'<th style="text-align:left">Ref</th>'
         +'<th style="text-align:left">Descrição</th>'
@@ -320,9 +325,12 @@ function toggleProdutos(rowId, loja, marca){
         h += `<tr><td colspan="6" style="text-align:center;color:var(--muted)">Sem produtos com movimentação em ${loja}</td></tr>`;
       } else {
         prods.forEach(p => {
-          h += `<tr><td style="text-align:left">${p.codigo}</td>`
+          const orfao = p._origem === 'NFe pendente';
+          const styleRow = orfao ? 'background:#fef3c7;' : '';
+          const badge = orfao ? ' <span style="background:#f59e0b;color:#fff;font-size:10px;padding:1px 5px;border-radius:3px;font-weight:600;margin-left:4px" title="Produto novo ou com código alterado — veio em NFe pendente sem cadastro correspondente no ERP">NOVO</span>' : '';
+          h += `<tr style="${styleRow}"><td style="text-align:left">${p.codigo}</td>`
             +`<td style="text-align:left">${p.referencia||''}</td>`
-            +`<td style="text-align:left">${p.descricao}</td>`
+            +`<td style="text-align:left">${p.descricao}${badge}</td>`
             +`<td>${fmtUnid(p._v)}</td>`
             +`<td>${fmtUnid(p._s)}</td>`
             +`<td>${fmtUnid(p._t)}</td></tr>`;
