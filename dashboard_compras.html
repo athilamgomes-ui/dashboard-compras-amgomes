@@ -121,6 +121,16 @@
 
   <div class="grid" id="kpis"></div>
 
+  <div class="card" id="card-chegadas">
+    <h2>📥 Chegadas do mês · NFs por loja <span id="chegadas-mes-label" class="muted" style="font-weight:400;font-size:13px"></span></h2>
+    <div id="chegadas-conteudo"></div>
+    <div class="legend">
+      🟢 <strong>recebida</strong> = NF já lançada no ERP ·
+      🟡 <strong>em trânsito</strong> = NFe emitida pelo fornecedor, ainda não recebida fisicamente ·
+      ordenado por valor decrescente
+    </div>
+  </div>
+
   <div class="card">
     <h2>📦 Compras mês a mês · por marca × loja (ano corrente)</h2>
     <div id="tabela-mensal"></div>
@@ -240,6 +250,9 @@ function render() {
   html += `</tbody></table>`;
   document.getElementById('tabela-sugestoes').innerHTML = html;
 
+  // Card de Chegadas do mês
+  renderChegadas(filtroLoja);
+
   // Tabela mensal: compras por MARCA × LOJA × MÊS em R$
   const meses = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
   const fmtRS = n => 'R$ ' + (n||0).toLocaleString('pt-BR', {minimumFractionDigits:2, maximumFractionDigits:2});
@@ -293,6 +306,74 @@ function render() {
 
   document.getElementById('rodape').textContent =
     `Atualização automática: 12h e 18h · Próxima atualização agendada via launchd`;
+}
+
+function renderChegadas(filtroLoja) {
+  const card = document.getElementById('card-chegadas');
+  const cont = document.getElementById('chegadas-conteudo');
+  const ch = DATA.chegadas_mes;
+  if (!ch) { card.style.display = 'none'; return; }
+  card.style.display = '';
+  const meses = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+  document.getElementById('chegadas-mes-label').textContent =
+    `· ${meses[(ch.mes||1)-1]}/${ch.ano||''}`;
+  const fmtRS = n => 'R$ ' + (n||0).toLocaleString('pt-BR', {minimumFractionDigits:2, maximumFractionDigits:2});
+  const lojas = filtroLoja === 'ALL' ? ['L1','L3','L4','L5'] : [filtroLoja];
+  const fmtData = d => {
+    if (!d) return '';
+    const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(d);
+    return m ? `${m[3]}/${m[2]}` : d;
+  };
+  let html = '<div style="display:grid;grid-template-columns:repeat('+lojas.length+',1fr);gap:12px">';
+  let totalGeral = 0, totalRecebida = 0, totalPendente = 0;
+  lojas.forEach(lj => {
+    const itens = (ch[lj] || []).slice().sort((a,b) => {
+      // mais recente primeiro; sem data, valor desc
+      if (a.data && b.data) return b.data.localeCompare(a.data);
+      if (a.data) return -1;
+      if (b.data) return 1;
+      return (b.valor||0) - (a.valor||0);
+    });
+    const totLoja = itens.reduce((a,x) => a + (x.valor||0), 0);
+    const nRec = itens.filter(x => x.origem === 'lancada').length;
+    const nPend = itens.filter(x => x.origem === 'pendente').length;
+    totalGeral += totLoja; totalRecebida += nRec; totalPendente += nPend;
+    html += `<div style="border:1px solid var(--border);border-radius:8px;padding:10px;background:#fff">
+      <div style="font-weight:600;font-size:13px;margin-bottom:6px">
+        ${lj} · ${NOMES_LOJA[lj]||''}
+        <span style="float:right;color:var(--muted);font-weight:400;font-size:12px">${fmtRS(totLoja)} · ${itens.length} NF${itens.length===1?'':'s'}</span>
+      </div>`;
+    if (itens.length === 0) {
+      html += `<div style="color:var(--muted);font-size:12px;padding:6px 0">— nenhuma chegada no mês —</div>`;
+    } else {
+      html += '<table style="font-size:12px"><tbody>';
+      itens.forEach(x => {
+        const tag = x.origem === 'pendente'
+          ? '<span style="background:#fef3c7;color:#92400e;font-size:10px;padding:1px 6px;border-radius:3px;font-weight:600">🟡 em trânsito</span>'
+          : '<span style="background:#d1fae5;color:#065f46;font-size:10px;padding:1px 6px;border-radius:3px;font-weight:600">🟢 recebida</span>';
+        const valStr = x.valor != null
+          ? fmtRS(x.valor)
+          : (x.qtd_pendente ? `${x.qtd_pendente} un` : '—');
+        const nf = x.nf && x.nf !== '(agregado)' ? `NF ${x.nf}` : '<span class="muted" style="font-size:10.5px">agregado</span>';
+        const dt = fmtData(x.data);
+        html += `<tr>
+          <td style="text-align:left;padding:4px 6px;border-bottom:1px solid #f1f3f5"><strong>${x.marca}</strong>${dt?` <span class="muted" style="font-size:10.5px">${dt}</span>`:''}</td>
+          <td style="text-align:right;padding:4px 6px;border-bottom:1px solid #f1f3f5">${valStr}</td>
+          <td style="text-align:right;padding:4px 6px;border-bottom:1px solid #f1f3f5">${nf}</td>
+          <td style="text-align:right;padding:4px 6px;border-bottom:1px solid #f1f3f5">${tag}</td>
+        </tr>`;
+      });
+      html += '</tbody></table>';
+    }
+    html += '</div>';
+  });
+  html += '</div>';
+  html += `<div style="margin-top:10px;padding:8px 10px;background:#f7f9fb;border-radius:6px;font-size:12px;color:var(--muted)">
+    <strong>Total do mês:</strong> ${fmtRS(totalGeral)} ·
+    🟢 ${totalRecebida} recebida${totalRecebida===1?'':'s'} ·
+    🟡 ${totalPendente} em trânsito
+  </div>`;
+  cont.innerHTML = html;
 }
 
 function toggleProdutos(rowId, loja, marca){
