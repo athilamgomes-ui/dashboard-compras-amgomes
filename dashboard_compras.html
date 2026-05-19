@@ -121,6 +121,8 @@
 
   <div class="grid" id="kpis"></div>
 
+  <div id="card-diff"></div>
+
   <div class="card" id="card-chegadas">
     <h2>📥 Chegadas do mês · NFs por loja <span id="chegadas-mes-label" class="muted" style="font-weight:400;font-size:13px"></span></h2>
     <div id="chegadas-conteudo"></div>
@@ -250,6 +252,9 @@ function render() {
   html += `</tbody></table>`;
   document.getElementById('tabela-sugestoes').innerHTML = html;
 
+  // Card de Diff vs. execução anterior
+  renderDiff(filtroLoja);
+
   // Card de Chegadas do mês
   renderChegadas(filtroLoja);
 
@@ -306,6 +311,64 @@ function render() {
 
   document.getElementById('rodape').textContent =
     `Atualização automática: 12h e 18h · Próxima atualização agendada via launchd`;
+}
+
+function renderDiff(filtroLoja) {
+  const box = document.getElementById('card-diff');
+  if (!box) return;
+  const d = DATA._diff;
+  if (!d) { box.innerHTML = ''; return; }
+
+  // Filtrar por loja se aplicável
+  const fl = (filtroLoja && filtroLoja !== 'all') ? filtroLoja : null;
+  const rn = (d.rupturas_novas || []).filter(r => !fl || r.loja === fl);
+  const rr = (d.rupturas_resolvidas || []).filter(r => !fl || r.loja === fl);
+  const cn = (d.chegadas_novas || []).filter(c => !fl || c.loja === fl);
+  const cl = (d.chegadas_lancadas || []).filter(c => !fl || c.loja === fl);
+
+  if (!rn.length && !rr.length && !cn.length && !cl.length) {
+    const txt = d.comparado_com && d.comparado_com.startsWith('(')
+      ? d.comparado_com
+      : `vs. snapshot de ${new Date(d.comparado_com).toLocaleString('pt-BR')} · sem mudanças`;
+    box.innerHTML = `<div class="card" style="background:#f8f9fa;border-color:#e9ecef;padding:8px 14px;font-size:12px;color:#6c757d">🔄 ${txt}</div>`;
+    return;
+  }
+
+  let html = `<div class="card" style="border-left:4px solid #ff8800;background:#fff8f0">
+    <h2 style="margin-top:0">🔔 Mudanças desde a última atualização
+      <span class="muted" style="font-weight:400;font-size:12px">${d.comparado_com ? '· vs ' + new Date(d.comparado_com).toLocaleString('pt-BR') : ''}</span>
+    </h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;font-size:13px">`;
+
+  if (rn.length) {
+    html += `<div><strong style="color:#c92a2a">⚠️ Novas rupturas S (${rn.length})</strong><ul style="margin:4px 0 0 0;padding-left:18px">` +
+      rn.slice(0,10).map(r => `<li><strong>${r.marca}</strong> <span class="muted">${r.loja}</span> · ${r.cobertura_dias.toFixed(0)}d</li>`).join('') +
+      (rn.length>10?`<li class="muted">+${rn.length-10} mais</li>`:'') + `</ul></div>`;
+  }
+  if (cn.length) {
+    html += `<div><strong style="color:#2b8a3e">🆕 Novas chegadas (${cn.length})</strong><ul style="margin:4px 0 0 0;padding-left:18px">` +
+      cn.slice(0,10).map(c => {
+        const tag = c.origem === 'lancada' ? '🟢' : '🟡';
+        const v = (c.valor||0).toLocaleString('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:0});
+        return `<li>${tag} <strong>${c.marca}</strong> <span class="muted">${c.loja}</span> · ${v} · NF ${c.nf||'?'}</li>`;
+      }).join('') +
+      (cn.length>10?`<li class="muted">+${cn.length-10} mais</li>`:'') + `</ul></div>`;
+  }
+  if (cl.length) {
+    html += `<div><strong style="color:#1971c2">📦 Recebidas hoje (${cl.length})</strong><ul style="margin:4px 0 0 0;padding-left:18px">` +
+      cl.slice(0,10).map(c => {
+        const v = (c.valor||0).toLocaleString('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:0});
+        return `<li><strong>${c.marca}</strong> <span class="muted">${c.loja}</span> · ${v} · NF ${c.nf||'?'}</li>`;
+      }).join('') +
+      (cl.length>10?`<li class="muted">+${cl.length-10} mais</li>`:'') + `</ul></div>`;
+  }
+  if (rr.length) {
+    html += `<div><strong style="color:#2b8a3e">✅ Rupturas resolvidas (${rr.length})</strong><ul style="margin:4px 0 0 0;padding-left:18px">` +
+      rr.slice(0,10).map(r => `<li><strong>${r.marca}</strong> <span class="muted">${r.loja}</span></li>`).join('') +
+      (rr.length>10?`<li class="muted">+${rr.length-10} mais</li>`:'') + `</ul></div>`;
+  }
+  html += `</div></div>`;
+  box.innerHTML = html;
 }
 
 function renderChegadas(filtroLoja) {
