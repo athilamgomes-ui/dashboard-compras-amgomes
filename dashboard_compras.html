@@ -328,10 +328,12 @@ function renderChegadas(filtroLoja) {
   let totalGeral = 0, totalRecebida = 0, totalPendente = 0;
   lojas.forEach(lj => {
     const itens = (ch[lj] || []).slice().sort((a,b) => {
-      // mais recente primeiro; sem data, valor desc
-      if (a.data && b.data) return b.data.localeCompare(a.data);
-      if (a.data) return -1;
-      if (b.data) return 1;
+      // ordem crescente: lançadas usam data_lancamento (recebida); pendentes usam data_emissao
+      const da = a.data_lancamento || a.data_emissao || a.data || '';
+      const db = b.data_lancamento || b.data_emissao || b.data || '';
+      if (da && db) return da.localeCompare(db);
+      if (da) return -1;
+      if (db) return 1;
       return (b.valor||0) - (a.valor||0);
     });
     const totLoja = itens.reduce((a,x) => a + (x.valor||0), 0);
@@ -355,9 +357,17 @@ function renderChegadas(filtroLoja) {
           ? fmtRS(x.valor)
           : (x.qtd_pendente ? `${x.qtd_pendente} un` : '—');
         const nf = x.nf && x.nf !== '(agregado)' ? `NF ${x.nf}` : '<span class="muted" style="font-size:10.5px">agregado</span>';
-        const dt = fmtData(x.data);
+        // Mostrar AS 2 DATAS: Emi DD/MM · Rec DD/MM (recebida só se lançada)
+        const dEmi = fmtData(x.data_emissao || x.data);
+        const dRec = fmtData(x.data_lancamento);
+        let datasHtml = '';
+        if (dEmi && dRec) {
+          datasHtml = ` <span class="muted" style="font-size:10.5px">Emi ${dEmi} · Rec ${dRec}</span>`;
+        } else if (dEmi) {
+          datasHtml = ` <span class="muted" style="font-size:10.5px">Emi ${dEmi}</span>`;
+        }
         html += `<tr>
-          <td style="text-align:left;padding:4px 6px;border-bottom:1px solid #f1f3f5"><strong>${x.marca}</strong>${dt?` <span class="muted" style="font-size:10.5px">${dt}</span>`:''}</td>
+          <td style="text-align:left;padding:4px 6px;border-bottom:1px solid #f1f3f5"><strong>${x.marca}</strong>${datasHtml}</td>
           <td style="text-align:right;padding:4px 6px;border-bottom:1px solid #f1f3f5">${valStr}</td>
           <td style="text-align:right;padding:4px 6px;border-bottom:1px solid #f1f3f5">${nf}</td>
           <td style="text-align:right;padding:4px 6px;border-bottom:1px solid #f1f3f5">${tag}</td>
