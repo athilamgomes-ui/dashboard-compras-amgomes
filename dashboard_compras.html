@@ -348,38 +348,25 @@ function renderChegadas(filtroLoja) {
     if (itens.length === 0) {
       html += `<div style="color:var(--muted);font-size:12px;padding:6px 0">— nenhuma chegada no mês —</div>`;
     } else {
-      html += `<table style="font-size:12px;width:100%">
-        <thead>
-          <tr style="background:#f7f9fb;color:var(--muted);font-size:10.5px;text-transform:uppercase;letter-spacing:.3px">
-            <th style="text-align:left;padding:4px 6px;border-bottom:1px solid #e5e7eb;font-weight:600">Marca</th>
-            <th style="text-align:center;padding:4px 6px;border-bottom:1px solid #e5e7eb;font-weight:600">Emissão</th>
-            <th style="text-align:center;padding:4px 6px;border-bottom:1px solid #e5e7eb;font-weight:600">Recebim.</th>
-            <th style="text-align:right;padding:4px 6px;border-bottom:1px solid #e5e7eb;font-weight:600">Valor</th>
-            <th style="text-align:right;padding:4px 6px;border-bottom:1px solid #e5e7eb;font-weight:600">NF</th>
-            <th style="text-align:right;padding:4px 6px;border-bottom:1px solid #e5e7eb;font-weight:600">Status</th>
-          </tr>
-        </thead>
-        <tbody>`;
       itens.forEach(x => {
         const tag = x.origem === 'pendente'
-          ? '<span style="background:#fef3c7;color:#92400e;font-size:10px;padding:1px 6px;border-radius:3px;font-weight:600">🟡 trânsito</span>'
-          : '<span style="background:#d1fae5;color:#065f46;font-size:10px;padding:1px 6px;border-radius:3px;font-weight:600">🟢 recebida</span>';
+          ? '<span style="background:#fef3c7;color:#92400e;font-size:10px;padding:1px 5px;border-radius:3px;font-weight:600;white-space:nowrap">🟡 trânsito</span>'
+          : '<span style="background:#d1fae5;color:#065f46;font-size:10px;padding:1px 5px;border-radius:3px;font-weight:600;white-space:nowrap">🟢 recebida</span>';
         const valStr = x.valor != null
           ? fmtRS(x.valor)
           : (x.qtd_pendente ? `${x.qtd_pendente} un` : '—');
-        const nf = x.nf && x.nf !== '(agregado)' ? x.nf : '<span class="muted" style="font-size:10.5px">agreg.</span>';
+        const nf = x.nf && x.nf !== '(agregado)' ? `NF ${x.nf}` : 'agreg.';
         const dEmi = fmtData(x.data_emissao || x.data) || '—';
-        const dRec = fmtData(x.data_lancamento) || '<span class="muted">—</span>';
-        html += `<tr>
-          <td style="text-align:left;padding:4px 6px;border-bottom:1px solid #f1f3f5"><strong>${x.marca}</strong></td>
-          <td style="text-align:center;padding:4px 6px;border-bottom:1px solid #f1f3f5">${dEmi}</td>
-          <td style="text-align:center;padding:4px 6px;border-bottom:1px solid #f1f3f5">${dRec}</td>
-          <td style="text-align:right;padding:4px 6px;border-bottom:1px solid #f1f3f5">${valStr}</td>
-          <td style="text-align:right;padding:4px 6px;border-bottom:1px solid #f1f3f5">${nf}</td>
-          <td style="text-align:right;padding:4px 6px;border-bottom:1px solid #f1f3f5">${tag}</td>
-        </tr>`;
+        const dRec = fmtData(x.data_lancamento) || '—';
+        html += `<div style="display:flex;align-items:center;gap:8px;padding:4px 2px;border-bottom:1px solid #f1f3f5;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">
+          <span style="font-weight:600;flex:0 0 auto;min-width:80px">${x.marca}</span>
+          <span class="muted" style="flex:0 0 auto">Emi ${dEmi}</span>
+          <span class="muted" style="flex:0 0 auto">Rec ${dRec}</span>
+          <span style="flex:1 1 auto;text-align:right;font-variant-numeric:tabular-nums">${valStr}</span>
+          <span class="muted" style="flex:0 0 auto;font-size:11px">${nf}</span>
+          <span style="flex:0 0 auto">${tag}</span>
+        </div>`;
       });
-      html += '</tbody></table>';
     }
     html += '</div>';
   });
