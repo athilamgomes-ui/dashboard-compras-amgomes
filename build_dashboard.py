@@ -339,15 +339,15 @@ for mk in marcas_out:
         mk['lojas'][loja]['transito'] = sum(p[loja]['transito'] for p in mk['produtos'])
 
 # ============ NOVA ETAPA 3.7: Zerar trânsito baseado em LANÇAMENTO recente ============
-# Para cada (marca × loja): se há NF lançada (data_lcto) nos últimos 30 dias, zerar trânsito
+# Para cada (marca × loja): se há NF lançada (data_lancamento) nos últimos 30 dias, zerar trânsito
 CUTOFF = HOJE - timedelta(days=30)
 
 # Mapa (marca, loja) → True se houve lançamento recente
 lanc_recente = {}  # {(marca, loja): [{nota_meta}]}
 for n in notas:
-    if not n.get('data_lcto') or not n.get('loja'): continue
+    if not n.get('data_lancamento') or not n.get('loja'): continue
     try:
-        dt_lcto = datetime.fromisoformat(n['data_lcto'])
+        dt_lcto = datetime.fromisoformat(n['data_lancamento'])
     except:
         continue
     if dt_lcto < CUTOFF: continue
@@ -355,7 +355,7 @@ for n in notas:
         if marca in marca_idx:
             key = (marca, n['loja'])
             lanc_recente.setdefault(key, []).append({
-                'doc': n['doc'], 'data_lcto': n['data_lcto'], 'data_emissao': n['data'],
+                'doc': n['doc'], 'data_lancamento': n['data_lancamento'], 'data_emissao': n['data'],
                 'valor': valor, 'forn': n['forn']
             })
 
@@ -409,15 +409,15 @@ sugestoes.sort(key=lambda s: (curva_order.get(s['curva'],9), s['cobertura_dias']
 
 # ============ CHEGADAS DO MÊS (corrigido) ============
 # Inclui:
-# A) NFs lançadas nos últimos 30 dias (data_lcto recente) — independente do mês de emissão.
+# A) NFs lançadas nos últimos 30 dias (data_lancamento recente) — independente do mês de emissão.
 # B) NFes pendentes com emissão no mês corrente (mantém comportamento).
 chegadas = {'mes':MES, 'ano':ANO, 'L1':[],'L3':[],'L4':[],'L5':[]}
 # A) lançadas recentes
 nfs_lancadas_keys = set()  # para dedup vs pendentes
 for n in notas:
-    if not n.get('data_lcto'): continue
+    if not n.get('data_lancamento'): continue
     try:
-        dt_lcto = datetime.fromisoformat(n['data_lcto'])
+        dt_lcto = datetime.fromisoformat(n['data_lancamento'])
         dt_emiss = datetime.fromisoformat(n['data'])
     except:
         continue
@@ -433,7 +433,7 @@ for n in notas:
         marca = '(sem marca)'
     chegadas[n['loja']].append({
         'marca': marca, 'valor': n['valor'], 'nf': n['doc'],
-        'data': n['data'], 'data_lcto': n['data_lcto'],
+        'data': n['data'], 'data_lancamento': n['data_lancamento'],
         'origem': 'lancada', 'fornecedor': n['forn']
     })
     nfs_lancadas_keys.add((n['loja'], n['doc']))
@@ -463,7 +463,7 @@ for item in pendentes_processadas:
     })
 
 for loja in LOJAS:
-    chegadas[loja].sort(key=lambda x: x.get('data_lcto') or x.get('data',''), reverse=True)
+    chegadas[loja].sort(key=lambda x: x.get('data_lancamento') or x.get('data',''), reverse=True)
 
 # ============ MONTAR SAÍDA ============
 saida = {
@@ -488,7 +488,7 @@ saida = {
         'transito_zerado_count': len(zerados),
         'pendentes_log': pendentes_log,
         'notas_processadas': len(notas),
-        'bug_fix_2026_05_21': 'Etapa 3.7 agora zera trânsito baseado em data_lcto (lançamento ERP) últimos 30 dias, não só mês corrente emissão. Chegadas inclui lançadas recentes independente de mês emissão.'
+        'bug_fix_2026_05_21': 'Etapa 3.7 agora zera trânsito baseado em data_lancamento (lançamento ERP) últimos 30 dias, não só mês corrente emissão. Chegadas inclui lançadas recentes independente de mês emissão.'
     }
 }
 
