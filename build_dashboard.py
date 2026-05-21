@@ -128,11 +128,21 @@ print(f"Etapa 3.5: {len(notas)} notas no ano {ANO}", file=sys.stderr)
 
 # Para cada nota, identificar marca por código de cada item
 # e somar valor total da nota (rateado se multi-marca)
+def marca_por_fornecedor_nome(forn_str):
+    """Lookup substring no fornecedor_marcas.json (por_nome_substring).
+    forn_str vem como '410-A M COMERCIO DE COSMETICOS LTDA ME' (com prefixo numérico)."""
+    if not forn_str: return None
+    up = str(forn_str).upper()
+    for substr, marca in forn_marcas.get('por_nome_substring', {}).items():
+        if substr.upper() in up:
+            return marca
+    return None
+
 def attribute_nota(nota):
-    """Retorna [(marca, valor_marca)] da nota."""
+    """Retorna [(marca, valor_marca)] da nota.
+    Estratégia: (1) match por código ERP nos itens; (2) fallback por fornecedor."""
     if not nota['itens']:
         return []
-    # Soma por marca via codigo_to_marca
     soma_marca = {}
     soma_total = 0
     for it in nota['itens']:
@@ -140,9 +150,13 @@ def attribute_nota(nota):
         soma_total += it.get('v',0)
         if m:
             soma_marca[m] = soma_marca.get(m, 0) + it.get('v',0)
-    if not soma_marca:
-        return []
     valor_nota = nota.get('valor', 0)
+    if not soma_marca:
+        # Fallback: fornecedor → marca (para NFs cujos produtos não casam por código ERP)
+        m_forn = marca_por_fornecedor_nome(nota.get('forn',''))
+        if m_forn:
+            return [(m_forn, valor_nota)]
+        return []
     if len(soma_marca) == 1:
         m = list(soma_marca.keys())[0]
         return [(m, valor_nota)]

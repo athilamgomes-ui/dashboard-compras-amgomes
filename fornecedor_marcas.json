@@ -15,6 +15,12 @@
     "TRICOSMETICOS": "Cadiveu",
     "A M COMERCIO DE COSMETICOS": "Della&Delle",
     "S R DOS SANTOS EQUIPAMENTOS": "Lizze",
-    "FLORENCE INDUSTRIAL": "Marco Boni"
+    "FLORENCE INDUSTRIAL": "Marco Boni",
+    "SOLIDER COMERCIO": "Solider",
+    "MULTI BANG": "MultiBag"
+  },
+  "_uso_interno": {
+    "_descricao": "Fornecedores cujos produtos NÃO são para revenda (sacolas, embalagens, material de loja). Aparecem em chegadas_mes com marca para rastreio, mas não entram em compras_mensais_rs nem em sugestões de compra.",
+    "marcas": ["Solider", "MultiBag"]
   }
 }
