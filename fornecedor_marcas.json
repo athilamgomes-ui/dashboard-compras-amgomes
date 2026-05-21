@@ -1,7 +1,7 @@
 {
   "_descricao": "Mapeamento Fornecedor (CNPJ ou substring do Nome/RazaoSocial) → Marca no ERP. Usado pela skill quando a descrição dos produtos da NFe NÃO contém o nome da marca (caso da Kamaleão Color: produtos descritos como 'MASCARA PIGMENTANTE FLAMINGO 100ML KC'). EDITÁVEL manualmente — adicionar entradas conforme novos fornecedores apareçam.",
   "_formato": "CNPJ (14 dígitos sem pontuação) → marca | Nome contendo substring → marca",
-  "_ultima_edicao": "2026-05-18",
+  "_ultima_edicao": "2026-05-21",
   "por_cnpj": {
     "31768865000126": "Kamaleao",
     "11271239000201": "Cadiveu",
@@ -14,6 +14,7 @@
     "APICE COSMETICS": "Apice",
     "TRICOSMETICOS": "Cadiveu",
     "A M COMERCIO DE COSMETICOS": "Della&Delle",
-    "S R DOS SANTOS EQUIPAMENTOS": "Lizze"
+    "S R DOS SANTOS EQUIPAMENTOS": "Lizze",
+    "FLORENCE INDUSTRIAL": "Marco Boni"
   }
 }
