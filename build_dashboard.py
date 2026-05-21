@@ -426,17 +426,17 @@ sugestoes.sort(key=lambda s: (curva_order.get(s['curva'],9), s['cobertura_dias']
 # A) NFs lançadas nos últimos 30 dias (data_lancamento recente) — independente do mês de emissão.
 # B) NFes pendentes com emissão no mês corrente (mantém comportamento).
 chegadas = {'mes':MES, 'ano':ANO, 'L1':[],'L3':[],'L4':[],'L5':[]}
-# A) lançadas recentes
+# A) lançadas nos últimos 45 dias (data de lançamento no ERP), independente do mês de emissão.
+CUTOFF_CHEGADAS = HOJE - timedelta(days=45)
 nfs_lancadas_keys = set()  # para dedup vs pendentes
 for n in notas:
     if not n.get('data_lancamento'): continue
     try:
         dt_lcto = datetime.fromisoformat(n['data_lancamento'])
-        dt_emiss = datetime.fromisoformat(n['data'])
     except:
         continue
-    # incluir se foi lançada nos últimos 30 dias OU foi emitida no mês corrente
-    if not (dt_lcto >= CUTOFF or (dt_emiss.year==ANO and dt_emiss.month==MES)):
+    # Incluir SOMENTE se a NF foi recebida (lançada no ERP) nos últimos 45 dias.
+    if dt_lcto < CUTOFF_CHEGADAS:
         continue
     if not n.get('loja'): continue
     # Marca majoritária
