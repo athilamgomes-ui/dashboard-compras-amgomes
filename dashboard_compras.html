@@ -387,7 +387,8 @@ function renderChegadas(filtroLoja) {
     const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(d);
     return m ? `${m[3]}/${m[2]}` : d;
   };
-  let html = '<div style="display:grid;grid-template-columns:repeat('+lojas.length+',1fr);gap:12px">';
+  // Grid sempre com 4 colunas — quando filtrando 1 loja, ocupa só 1/4 da largura (mesmo tamanho que no modo "todas").
+  let html = '<div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px">';
   let totalGeral = 0, totalRecebida = 0, totalPendente = 0;
   lojas.forEach(lj => {
     const itens = (ch[lj] || []).slice().sort((a,b) => {
