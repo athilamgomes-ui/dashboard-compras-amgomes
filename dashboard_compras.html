@@ -81,6 +81,15 @@
   .footer { color: var(--muted); font-size: 12px; text-align: center; margin-top: 24px; }
   .muted { color: var(--muted); }
   #status-empty { padding: 30px; text-align: center; color: var(--muted); }
+  /* Collapsible cards */
+  .card > h2 { cursor: pointer; user-select: none; }
+  .card > h2 .toggle-icon { display: inline-block; transition: transform .15s ease; margin-right: 6px; font-size: 11px; color: var(--muted); width: 12px; }
+  .card.collapsed > h2 .toggle-icon { transform: rotate(-90deg); }
+  .card.collapsed > *:not(h2) { display: none !important; }
+  .card.collapsed > h2 { margin-bottom: 0; }
+  .card-toolbar { float: right; display: flex; gap: 6px; align-items: center; font-size: 12px; }
+  .card-toolbar button { padding: 3px 8px; border: 1px solid var(--border); border-radius: 4px; background: #fff; cursor: pointer; font-size: 11px; color: var(--muted); }
+  .card-toolbar button:hover { background: #f1f3f5; color: var(--text); }
 </style>
 </head>
 <body>
@@ -117,6 +126,10 @@
       </select>
     </label>
     <button onclick="window.location.reload()">↻ Atualizar página</button>
+    <span style="margin-left:auto;display:flex;gap:6px">
+      <button onclick="expandirTodos()" title="Expandir todos os cards">⊞ Expandir todos</button>
+      <button onclick="recolherTodos()" title="Recolher todos os cards">⊟ Recolher todos</button>
+    </span>
   </div>
 
   <div class="grid" id="kpis"></div>
@@ -124,7 +137,7 @@
   <div id="card-diff"></div>
 
   <div class="card" id="card-chegadas">
-    <h2>📥 Chegadas do mês · NFs por loja <span id="chegadas-mes-label" class="muted" style="font-weight:400;font-size:13px"></span></h2>
+    <h2 onclick="toggleCard('card-chegadas')"><span class="toggle-icon">▼</span>📥 Chegadas do mês · NFs por loja <span id="chegadas-mes-label" class="muted" style="font-weight:400;font-size:13px"></span></h2>
     <div id="chegadas-conteudo"></div>
     <div class="legend">
       🟢 <strong>recebida</strong> = NF já lançada no ERP ·
@@ -134,12 +147,12 @@
   </div>
 
   <div class="card" id="card-transf">
-    <h2 style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
-      🔄 Transferências sugeridas entre lojas
+    <h2 style="display:flex;align-items:center;gap:10px;flex-wrap:wrap" onclick="if(event.target.tagName==='BUTTON')return;toggleCard('card-transf')">
+      <span class="toggle-icon">▼</span>🔄 Transferências sugeridas entre lojas
       <span class="muted" style="font-weight:400;font-size:13px">· L1 ↔ L4 (Altamira) · L3 ↔ L5 (Itaituba↔Santarém)</span>
       <span style="margin-left:auto;display:flex;gap:6px">
-        <button onclick="exportTransfPDF()" style="padding:5px 10px;border:1px solid var(--border);border-radius:6px;background:#fff;cursor:pointer;font-size:12px">📄 Imprimir/PDF</button>
-        <button onclick="exportTransfCSV()" style="padding:5px 10px;border:1px solid var(--border);border-radius:6px;background:#fff;cursor:pointer;font-size:12px">📊 Baixar CSV</button>
+        <button onclick="event.stopPropagation();exportTransfPDF()" style="padding:5px 10px;border:1px solid var(--border);border-radius:6px;background:#fff;cursor:pointer;font-size:12px">📄 Imprimir/PDF</button>
+        <button onclick="event.stopPropagation();exportTransfCSV()" style="padding:5px 10px;border:1px solid var(--border);border-radius:6px;background:#fff;cursor:pointer;font-size:12px">📊 Baixar CSV</button>
       </span>
     </h2>
     <div id="tabela-transf"></div>
@@ -150,13 +163,13 @@
     </div>
   </div>
 
-  <div class="card">
-    <h2>📦 Compras mês a mês · por marca × loja (ano corrente)</h2>
+  <div class="card" id="card-mensal">
+    <h2 onclick="toggleCard('card-mensal')"><span class="toggle-icon">▼</span>📦 Compras mês a mês · por marca × loja (ano corrente)</h2>
     <div id="tabela-mensal"></div>
   </div>
 
-  <div class="card">
-    <h2>📋 Sugestões de compra · ordenadas por urgência</h2>
+  <div class="card" id="card-sugestoes">
+    <h2 onclick="toggleCard('card-sugestoes')"><span class="toggle-icon">▼</span>📋 Sugestões de compra · ordenadas por urgência</h2>
     <div id="tabela-sugestoes"></div>
     <div class="legend">
       cobertura = (estoque atual + em trânsito) ÷ (vendas 60d ÷ 60) ·
@@ -168,6 +181,25 @@
 
 <script src="dados.js"></script>
 <script>
+// === Collapse/expand de cards (estado persistido em localStorage) ===
+function toggleCard(cardId) {
+  const c = document.getElementById(cardId);
+  if (!c) return;
+  c.classList.toggle('collapsed');
+  try { localStorage.setItem('card-collapsed-' + cardId, c.classList.contains('collapsed') ? '1' : '0'); } catch(e) {}
+}
+function restoreCardStates() {
+  document.querySelectorAll('.card[id]').forEach(c => {
+    try { if (localStorage.getItem('card-collapsed-' + c.id) === '1') c.classList.add('collapsed'); } catch(e) {}
+  });
+}
+function expandirTodos() {
+  document.querySelectorAll('.card[id]').forEach(c => { c.classList.remove('collapsed'); try { localStorage.setItem('card-collapsed-' + c.id, '0'); } catch(e) {} });
+}
+function recolherTodos() {
+  document.querySelectorAll('.card[id]').forEach(c => { c.classList.add('collapsed'); try { localStorage.setItem('card-collapsed-' + c.id, '1'); } catch(e) {} });
+}
+
 const STATUS = {
   CRIT: { cls: "cob-crit", limite: 60 },
   WARN: { cls: "cob-warn", limite: 90 },
@@ -214,6 +246,7 @@ async function carregar() {
   }
   document.getElementById('ts').textContent = 'gerado em ' + (DATA.gerado_em || '?');
   render();
+  restoreCardStates();
 }
 
 function render() {
