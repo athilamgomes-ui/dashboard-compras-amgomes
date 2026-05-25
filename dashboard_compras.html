@@ -133,6 +133,23 @@
     </div>
   </div>
 
+  <div class="card" id="card-transf">
+    <h2 style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+      🔄 Transferências sugeridas entre lojas
+      <span class="muted" style="font-weight:400;font-size:13px">· L1 ↔ L4 (Altamira) · L3 ↔ L5 (Itaituba↔Santarém)</span>
+      <span style="margin-left:auto;display:flex;gap:6px">
+        <button onclick="exportTransfPDF()" style="padding:5px 10px;border:1px solid var(--border);border-radius:6px;background:#fff;cursor:pointer;font-size:12px">📄 Imprimir/PDF</button>
+        <button onclick="exportTransfCSV()" style="padding:5px 10px;border:1px solid var(--border);border-radius:6px;background:#fff;cursor:pointer;font-size:12px">📊 Baixar CSV</button>
+      </span>
+    </h2>
+    <div id="tabela-transf"></div>
+    <div class="legend">
+      origem: cobertura &gt; 120 dias (ou venda zero) · destino: cobertura &lt; 45 dias e com venda ·
+      quantidade limitada a manter origem ≥ 75 dias e levar destino até 75 dias ·
+      <strong>capital parado vira venda sem comprar do fornecedor.</strong>
+    </div>
+  </div>
+
   <div class="card">
     <h2>📦 Compras mês a mês · por marca × loja (ano corrente)</h2>
     <div id="tabela-mensal"></div>
@@ -173,6 +190,7 @@ const fmtCobertura = c => {
 };
 
 let DATA = null;
+let TRANSF_ULTIMA = []; // sugestões da última renderização, p/ exportação
 const NOMES_LOJA = {
   L1: 'Casa da Beleza Altamira',
   L3: 'Casa da Beleza Itaituba',
@@ -257,6 +275,9 @@ function render() {
 
   // Card de Chegadas do mês
   renderChegadas(filtroLoja);
+
+  // Card de Transferências sugeridas entre lojas
+  renderTransferencias(filtroLoja, filtroCurva);
 
   // Tabela mensal: compras por MARCA × LOJA × MÊS em R$
   const meses = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
@@ -441,6 +462,243 @@ function renderChegadas(filtroLoja) {
     🟡 ${totalPendente} em trânsito
   </div>`;
   cont.innerHTML = html;
+}
+
+function renderTransferencias(filtroLoja, filtroCurva) {
+  const card = document.getElementById('card-transf');
+  const box  = document.getElementById('tabela-transf');
+  if (!card || !box) return;
+
+  const PARES = [['L1','L4'], ['L3','L5']];
+  const COB_ALVO   = 75;   // 60d giro + 15d lead
+  const COB_MIN    = 45;   // destino precisa estar abaixo disso
+  const COB_EXCESSO= 120;  // origem precisa estar acima disso (ou vendas=0)
+
+  // filtro de pares pela loja selecionada
+  const pares = PARES.filter(([a,b]) =>
+    filtroLoja === 'ALL' || filtroLoja === a || filtroLoja === b
+  );
+  if (pares.length === 0) { card.style.display = 'none'; return; }
+  card.style.display = '';
+
+  // curva por marca (mesma lógica das outras seções)
+  function curvaDe(marcaNome) {
+    const mu = marcaNome.toUpperCase();
+    const lojasFilt = filtroLoja === 'ALL' ? ['L1','L3','L4','L5'] : [filtroLoja];
+    for (const lj of lojasFilt) {
+      const cv = (DATA.curva && DATA.curva[lj]) || {};
+      if ((cv.S||[]).some(x => x.toUpperCase() === mu)) return 'S';
+      if ((cv.A||[]).some(x => x.toUpperCase() === mu)) return 'A';
+      if ((cv.B||[]).some(x => x.toUpperCase() === mu)) return 'B';
+    }
+    return '';
+  }
+
+  // varrer produtos e gerar sugestões
+  const sugs = []; // {par, origem, destino, marca, curva, codigo, descricao, qtd, cobOri, cobDest, cobOriNova, cobDestNova}
+  (DATA.marcas || []).forEach(brand => {
+    const curva = curvaDe(brand.marca);
+    if (!curva) return;
+    if (filtroCurva !== 'ALL' && filtroCurva !== curva) return;
+    (brand.produtos || []).forEach(p => {
+      pares.forEach(([a,b]) => {
+        [[a,b],[b,a]].forEach(([ori, dst]) => {
+          const O = p[ori] || {vendas:0, saldo:0, transito:0};
+          const D = p[dst] || {vendas:0, saldo:0, transito:0};
+          // destino precisa girar e estar curto
+          if ((D.vendas||0) <= 0) return;
+          const vdDst = D.vendas / 60;
+          const cobDst = (D.saldo + D.transito) / vdDst;
+          if (cobDst >= COB_MIN) return;
+          // origem precisa ter excesso real
+          if ((O.saldo||0) <= 0) return;
+          const vdOri = (O.vendas||0) / 60;
+          const cobOri = vdOri > 0 ? (O.saldo + O.transito) / vdOri : Infinity;
+          if (cobOri <= COB_EXCESSO) return;
+          // qtd: levar destino até COB_ALVO sem drenar origem abaixo de COB_ALVO
+          const faltaDst = Math.max(0, Math.ceil(vdDst * COB_ALVO) - (D.saldo + D.transito));
+          const sobraOri = vdOri > 0
+            ? Math.max(0, O.saldo - Math.ceil(vdOri * COB_ALVO))
+            : O.saldo;
+          const qtd = Math.floor(Math.min(faltaDst, sobraOri));
+          if (qtd < 1) return;
+          const cobOriNova = vdOri > 0 ? (O.saldo - qtd + O.transito) / vdOri : Infinity;
+          const cobDestNova = (D.saldo + qtd + D.transito) / vdDst;
+          sugs.push({
+            par: ori+'→'+dst, origem: ori, destino: dst,
+            marca: brand.marca, curva,
+            codigo: p.codigo, referencia: p.referencia || '', descricao: p.descricao,
+            qtd, cobOri, cobDst, cobOriNova, cobDestNova,
+            saldoOri: O.saldo, saldoDst: D.saldo,
+            vendasOri: O.vendas, vendasDst: D.vendas
+          });
+        });
+      });
+    });
+  });
+
+  // ordenar: destino mais crítico primeiro, depois maior qtd
+  sugs.sort((x,y) => (x.cobDst - y.cobDst) || (y.qtd - x.qtd));
+  TRANSF_ULTIMA = sugs;
+
+  if (sugs.length === 0) {
+    box.innerHTML = `<div id="status-empty">Nenhuma transferência sugerida no momento — estoques equilibrados entre as lojas-par.</div>`;
+    return;
+  }
+
+  // agrupar por par
+  const porPar = {};
+  sugs.forEach(s => { (porPar[s.par] = porPar[s.par] || []).push(s); });
+
+  let html = '';
+  // KPI compacto
+  const totalQtd = sugs.reduce((a,s) => a + s.qtd, 0);
+  const marcasUnicas = new Set(sugs.map(s => s.marca)).size;
+  html += `<div style="display:flex;gap:16px;margin-bottom:10px;font-size:13px;flex-wrap:wrap">
+    <div><strong>${sugs.length}</strong> <span class="muted">transferências sugeridas</span></div>
+    <div><strong>${fmtUnid(totalQtd)}</strong> <span class="muted">no total</span></div>
+    <div><strong>${marcasUnicas}</strong> <span class="muted">marcas envolvidas</span></div>
+  </div>`;
+
+  Object.keys(porPar).sort().forEach(parKey => {
+    const linhas = porPar[parKey];
+    const totParQtd = linhas.reduce((a,s) => a + s.qtd, 0);
+    html += `<h3 style="margin:14px 0 6px;font-size:13px;color:var(--text)">
+      ${parKey.replace('→',' → ')}
+      <span class="muted" style="font-weight:400">· ${linhas.length} item${linhas.length>1?'s':''} · ${fmtUnid(totParQtd)}</span>
+    </h3>`;
+    html += `<table>
+      <thead><tr>
+        <th>Marca</th><th>Curva</th>
+        <th style="text-align:left">Produto</th>
+        <th>Qtd a transferir</th>
+        <th>Cob. origem (antes → depois)</th>
+        <th>Cob. destino (antes → depois)</th>
+      </tr></thead><tbody>`;
+    linhas.forEach(s => {
+      html += `<tr class="curva-${s.curva.toLowerCase()}">
+        <td class="brand">${s.marca}</td>
+        <td>${s.curva}</td>
+        <td style="text-align:left">
+          <div style="font-size:12px">${s.descricao}</div>
+          <div class="muted" style="font-size:11px">cód ${s.codigo}${s.referencia?' · ref '+s.referencia:''}</div>
+        </td>
+        <td class="sug has">${fmtUnid(s.qtd)}</td>
+        <td><span class="muted">${fmtCobertura(s.cobOri)}</span> → <strong>${fmtCobertura(s.cobOriNova)}</strong></td>
+        <td><span style="color:var(--crit)">${fmtCobertura(s.cobDst)}</span> → <strong style="color:var(--ok)">${fmtCobertura(s.cobDestNova)}</strong></td>
+      </tr>`;
+    });
+    html += `</tbody></table>`;
+  });
+
+  box.innerHTML = html;
+}
+
+function exportTransfCSV() {
+  if (!TRANSF_ULTIMA.length) { alert('Sem transferências sugeridas no filtro atual.'); return; }
+  const esc = v => {
+    const s = (v == null ? '' : String(v));
+    return /[",;\n]/.test(s) ? '"' + s.replace(/"/g,'""') + '"' : s;
+  };
+  const header = ['Par','Origem','Destino','Marca','Curva','Codigo','Referencia','Descricao','Qtd a transferir','Saldo origem','Vendas 60d origem','Cob origem antes','Cob origem depois','Saldo destino','Vendas 60d destino','Cob destino antes','Cob destino depois'];
+  const cob = c => (c === Infinity || !isFinite(c)) ? '99+' : Math.max(0, Math.round(c));
+  const linhas = TRANSF_ULTIMA.map(s => [
+    s.origem+'→'+s.destino, s.origem, s.destino, s.marca, s.curva,
+    s.codigo, s.referencia, s.descricao, s.qtd,
+    s.saldoOri, s.vendasOri, cob(s.cobOri), cob(s.cobOriNova),
+    s.saldoDst, s.vendasDst, cob(s.cobDst), cob(s.cobDestNova)
+  ]);
+  // BOM p/ Excel abrir UTF-8 corretamente; separador ; (padrão pt-BR)
+  const csv = '﻿' + [header, ...linhas].map(r => r.map(esc).join(';')).join('\r\n');
+  const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
+  const a = document.createElement('a');
+  const dt = new Date().toISOString().slice(0,10);
+  a.href = URL.createObjectURL(blob);
+  a.download = `transferencias_${dt}.csv`;
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  setTimeout(()=>URL.revokeObjectURL(a.href), 1000);
+}
+
+function exportTransfPDF() {
+  if (!TRANSF_ULTIMA.length) { alert('Sem transferências sugeridas no filtro atual.'); return; }
+  const cob = c => (c === Infinity || !isFinite(c)) ? '99+' : Math.max(0, Math.round(c));
+  // agrupar por par e por loja-origem (formato pra moto: "saia da loja X com isto")
+  const porPar = {};
+  TRANSF_ULTIMA.forEach(s => { (porPar[s.origem+' → '+s.destino] = porPar[s.origem+' → '+s.destino] || []).push(s); });
+  const dt = new Date().toLocaleString('pt-BR');
+  const NOMES = {L1:'Casa da Beleza Altamira',L3:'Casa da Beleza Itaituba',L4:'MissBeleza Altamira',L5:'MissBeleza Santarém'};
+
+  let html = `<!doctype html><html><head><meta charset="utf-8"><title>Transferências entre lojas</title>
+  <style>
+    body{font-family:-apple-system,Helvetica,Arial,sans-serif;color:#222;margin:24px;font-size:12px}
+    h1{font-size:18px;margin:0 0 4px}
+    .sub{color:#666;font-size:11px;margin-bottom:16px}
+    h2{font-size:14px;margin:18px 0 6px;padding:6px 10px;background:#f0f4f8;border-left:4px solid #3b82f6;page-break-after:avoid}
+    table{width:100%;border-collapse:collapse;font-size:11px;margin-bottom:8px}
+    th,td{border:1px solid #cfd6dd;padding:5px 7px;text-align:left;vertical-align:top}
+    th{background:#f7f9fb;font-size:10px;text-transform:uppercase;letter-spacing:.3px}
+    td.num{text-align:right;font-variant-numeric:tabular-nums}
+    td.qtd{font-weight:700;font-size:13px;text-align:center;background:#fff7ed}
+    .check{width:24px;text-align:center}
+    .check div{width:14px;height:14px;border:1.5px solid #555;border-radius:3px;margin:0 auto}
+    tr.cS td.brand{box-shadow:inset 3px 0 0 #ef4444;padding-left:10px}
+    .brand{font-weight:600}
+    .legenda{margin-top:8px;color:#666;font-size:10.5px}
+    .assinaturas{margin-top:30px;display:flex;gap:40px}
+    .assinaturas div{flex:1;border-top:1px solid #333;padding-top:4px;font-size:11px;color:#444;text-align:center}
+    @media print{ button{display:none} h2{page-break-after:avoid} table{page-break-inside:auto} tr{page-break-inside:avoid} }
+    .actions{margin-bottom:12px}
+    button{padding:6px 12px;border:1px solid #888;border-radius:5px;background:#fff;cursor:pointer;font-size:12px;margin-right:6px}
+  </style></head><body>
+  <div class="actions">
+    <button onclick="window.print()">🖨️ Imprimir / Salvar PDF</button>
+    <button onclick="window.close()">Fechar</button>
+  </div>
+  <h1>Transferências sugeridas entre lojas</h1>
+  <div class="sub">Grupo A.M. Gomes · gerado em ${dt} · ${TRANSF_ULTIMA.length} ite${TRANSF_ULTIMA.length===1?'m':'ns'} · ${TRANSF_ULTIMA.reduce((a,s)=>a+s.qtd,0)} peças no total</div>`;
+
+  Object.keys(porPar).sort().forEach(parKey => {
+    const linhas = porPar[parKey];
+    const [ori, dst] = parKey.split(' → ');
+    const tot = linhas.reduce((a,s)=>a+s.qtd,0);
+    html += `<h2>${parKey} &nbsp;·&nbsp; ${NOMES[ori]||ori} → ${NOMES[dst]||dst} &nbsp;·&nbsp; ${linhas.length} item(s) · ${tot} peças</h2>
+      <table>
+        <thead><tr>
+          <th class="check">✓</th><th>Marca</th><th>Código</th><th>Ref</th>
+          <th>Descrição</th><th class="num">Qtd</th>
+          <th class="num">Sd origem<br><span style="font-weight:400">(antes)</span></th>
+          <th class="num">Cob orig.<br>antes→depois</th>
+          <th class="num">Sd destino<br><span style="font-weight:400">(antes)</span></th>
+          <th class="num">Cob dest.<br>antes→depois</th>
+        </tr></thead><tbody>`;
+    linhas.forEach(s => {
+      html += `<tr class="c${s.curva}">
+        <td class="check"><div></div></td>
+        <td class="brand">${s.marca} <span style="color:#888;font-weight:400">(${s.curva})</span></td>
+        <td>${s.codigo}</td>
+        <td>${s.referencia||''}</td>
+        <td>${s.descricao}</td>
+        <td class="qtd">${s.qtd}</td>
+        <td class="num">${s.saldoOri}</td>
+        <td class="num">${cob(s.cobOri)} → ${cob(s.cobOriNova)}</td>
+        <td class="num">${s.saldoDst}</td>
+        <td class="num">${cob(s.cobDst)} → ${cob(s.cobDestNova)}</td>
+      </tr>`;
+    });
+    html += `</tbody></table>
+      <div class="assinaturas">
+        <div>Separado por (${NOMES[ori]||ori})</div>
+        <div>Conferido por (${NOMES[dst]||dst})</div>
+        <div>Data / Hora</div>
+      </div>`;
+  });
+
+  html += `<div class="legenda">Cobertura em dias = (saldo + trânsito) ÷ (vendas 60d ÷ 60). Critério: origem &gt; 120d, destino &lt; 45d, alvo pós-transf 75d.</div>
+  </body></html>`;
+
+  const w = window.open('', '_blank');
+  if (!w) { alert('Pop-up bloqueado. Permita pop-ups para este site.'); return; }
+  w.document.write(html); w.document.close();
 }
 
 function toggleProdutos(rowId, loja, marca){
