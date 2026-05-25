@@ -27,6 +27,11 @@ def load_json(p):
     return json.loads(Path(p).read_text())
 
 raw = load_json(RAW)
+
+# Compat: parser JS antigo gravava 'data_lcto' nas notas; canonizar para 'data_lancamento'.
+for n in raw.get('notas', []):
+    if 'data_lcto' in n and not n.get('data_lancamento'):
+        n['data_lancamento'] = n.pop('data_lcto')
 curva = load_json(ROOT / 'curva_marcas.json')
 marca_ids = load_json(ROOT / 'marca_ids.json')
 forn_marcas = load_json(ROOT / 'fornecedor_marcas.json')
