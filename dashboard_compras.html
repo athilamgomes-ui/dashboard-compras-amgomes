@@ -178,7 +178,9 @@
     <div id="tabela-sugestoes"></div>
     <div class="legend">
       cobertura = (estoque atual + em trânsito) ÷ (vendas 60d ÷ 60) ·
-      sugestão = vendas/dia × (60 + 15) − estoque atual − em trânsito
+      sugestão = vendas/dia × (60 + 15) − estoque atual − em trânsito ·
+      <strong>Botão de pedido</strong>: marcas curva <strong>S</strong> só liberam 45 dias após a última NF lançada
+      (passe o mouse no botão ⏳ <em>aguardar</em> para ver a data de liberação).
     </div>
   </div>
 
@@ -236,6 +238,34 @@ const NOMES_LOJA = {
 };
 
 // === Geração de pedido de compra por marca × loja ===
+// Janela de pedido p/ curva S: aguarda 45 dias após a chegada da última NF lançada
+// daquela marca×loja antes de habilitar novo pedido (evita pedir em cima da hora de
+// uma entrega recente e estourar estoque). Marcas A/B liberam imediatamente.
+const JANELA_PEDIDO_DIAS_S = 45;
+function janelaPedido(marca, loja, curva) {
+  const ch = (DATA.chegadas_mes && DATA.chegadas_mes[loja]) || [];
+  const marcaUp = String(marca).toUpperCase();
+  const lancadas = ch.filter(x => x.origem === 'lancada'
+    && String(x.marca || '').toUpperCase() === marcaUp
+    && x.data_lancamento);
+  if (!lancadas.length) {
+    return { liberado: true, motivo: 'sem histórico de entrega — primeiro pedido', ultimaLcto: null, diasDesde: null };
+  }
+  // Pegar a mais recente
+  const ult = lancadas.reduce((a,b) => (a.data_lancamento > b.data_lancamento ? a : b));
+  const dt = new Date(ult.data_lancamento);
+  const hoje = new Date();
+  const dias = Math.floor((hoje - dt) / 86400000);
+  if (curva === 'S' && dias < JANELA_PEDIDO_DIAS_S) {
+    return {
+      liberado: false,
+      motivo: `curva S — última entrega há ${dias}d. Liberar em ${JANELA_PEDIDO_DIAS_S - dias}d (${new Date(dt.getTime() + JANELA_PEDIDO_DIAS_S*86400000).toLocaleDateString('pt-BR')})`,
+      ultimaLcto: ult.data_lancamento, diasDesde: dias
+    };
+  }
+  return { liberado: true, motivo: `última entrega há ${dias}d`, ultimaLcto: ult.data_lancamento, diasDesde: dias };
+}
+
 // Prazo médio de entrega = média de (data_lancamento - data) das NFs da marca×loja em chegadas
 function calcularPrazoMedio(marca, loja) {
   const ch = (DATA.chegadas_mes && DATA.chegadas_mes[loja]) || [];
@@ -424,10 +454,17 @@ function render() {
       const rowId = `sug-${idx}`;
       const marcaEsc = s.marca.replace(/'/g, "\\'");
       const podeGerar = s.sugestao_compra > 0;
-      const btn = podeGerar
-        ? `<button class="btn-pedido" onclick="event.stopPropagation();gerarPedidoXLSX('${s.loja}','${marcaEsc}')" title="Baixar pedido em Excel">📥 XLSX</button>
-           <button class="btn-pedido" onclick="event.stopPropagation();gerarPedidoPDF('${s.loja}','${marcaEsc}')" title="Imprimir/PDF">📄 PDF</button>`
-        : `<button class="btn-pedido" disabled title="Sem sugestão para esta marca">—</button>`;
+      const jp = podeGerar ? janelaPedido(s.marca, s.loja, s.curva) : { liberado: false, motivo: 'Sem sugestão para esta marca' };
+      let btn;
+      if (!podeGerar) {
+        btn = `<button class="btn-pedido" disabled title="Sem sugestão para esta marca">—</button>`;
+      } else if (!jp.liberado) {
+        btn = `<button class="btn-pedido" disabled title="${jp.motivo}">⏳ aguardar</button>`;
+      } else {
+        const titleExtra = jp.motivo ? ` · ${jp.motivo}` : '';
+        btn = `<button class="btn-pedido" onclick="event.stopPropagation();gerarPedidoXLSX('${s.loja}','${marcaEsc}')" title="Baixar pedido em Excel${titleExtra}">📥 XLSX</button>
+           <button class="btn-pedido" onclick="event.stopPropagation();gerarPedidoPDF('${s.loja}','${marcaEsc}')" title="Imprimir/PDF${titleExtra}">📄 PDF</button>`;
+      }
       html += `<tr class="${cls}" data-key="${s.loja}|${s.marca}" onclick="toggleProdutos('${rowId}', '${s.loja}', '${marcaEsc}')" style="cursor:pointer">
         <td><span class="caret" id="caret-${rowId}">▶</span> <span class="brand">${s.marca}</span></td>
         <td>${s.curva}</td>
