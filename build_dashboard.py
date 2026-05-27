@@ -36,6 +36,13 @@ curva = load_json(ROOT / 'curva_marcas.json')
 marca_ids = load_json(ROOT / 'marca_ids.json')
 forn_marcas = load_json(ROOT / 'fornecedor_marcas.json')
 
+# Fornecedores não-revenda — NF deles deve ser excluída do dashboard inteiramente
+IGNORAR_SUBSTRINGS = [s.upper() for s in (forn_marcas.get('_ignorar_no_dashboard') or {}).get('por_nome_substring', [])]
+def fornecedor_ignorado(nome):
+    if not nome: return False
+    up = str(nome).upper()
+    return any(s in up for s in IGNORAR_SUBSTRINGS)
+
 HOJE = datetime.now()
 ANO = HOJE.year
 MES = HOJE.month
@@ -444,6 +451,9 @@ for n in notas:
     if dt_lcto < CUTOFF_CHEGADAS:
         continue
     if not n.get('loja'): continue
+    # Pular fornecedores não-revenda (postos, embalagens, peças, etc — fornecedor_marcas.json _ignorar_no_dashboard)
+    if fornecedor_ignorado(n.get('forn','')):
+        continue
     # Marca majoritária
     attrs = attribute_nota(n)
     if attrs:
@@ -470,6 +480,9 @@ for item in pendentes_processadas:
         continue
     # incluir se emitida nos últimos 45 dias
     if dt < CUTOFF_CHEGADAS:
+        continue
+    # Pular fornecedores não-revenda (postos, embalagens, peças, etc)
+    if fornecedor_ignorado(nfe.get('DadosEmitente',{}).get('Nome','')):
         continue
     nf_num = str(nfe.get('Numero') or '')
     if (loja, nf_num) in nfs_lancadas_keys:

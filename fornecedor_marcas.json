@@ -1,7 +1,7 @@
 {
   "_descricao": "Mapeamento Fornecedor (CNPJ ou substring do Nome/RazaoSocial) → Marca no ERP. Usado pela skill quando a descrição dos produtos da NFe NÃO contém o nome da marca (caso da Kamaleão Color: produtos descritos como 'MASCARA PIGMENTANTE FLAMINGO 100ML KC'). EDITÁVEL manualmente — adicionar entradas conforme novos fornecedores apareçam.",
   "_formato": "CNPJ (14 dígitos sem pontuação) → marca | Nome contendo substring → marca",
-  "_ultima_edicao": "2026-05-21",
+  "_ultima_edicao": "2026-05-26",
   "por_cnpj": {
     "31768865000126": "Kamaleao",
     "11271239000201": "Cadiveu",
@@ -17,10 +17,28 @@
     "S R DOS SANTOS EQUIPAMENTOS": "Lizze",
     "FLORENCE INDUSTRIAL": "Marco Boni",
     "SOLIDER COMERCIO": "Solider",
-    "MULTI BANG": "MultiBag"
+    "MULTI BANG": "MultiBag",
+    "BRASITECH": "Brasitech",
+    "CONFECCOES ND": "Confeccoes ND"
   },
   "_uso_interno": {
     "_descricao": "Fornecedores cujos produtos NÃO são para revenda (sacolas, embalagens, material de loja). Aparecem em chegadas_mes com marca para rastreio, mas não entram em compras_mensais_rs nem em sugestões de compra.",
     "marcas": ["Solider", "MultiBag"]
+  },
+  "_ignorar_no_dashboard": {
+    "_descricao": "Fornecedores que NÃO são de mercadoria para revenda (postos de combustível, peças, embalagens avulsas, instituições financeiras, alfaiataria etc). Suas NFs DEVEM ser excluídas do card chegadas_mes E não devem entrar em compras_mensais_rs. EDITÁVEL — adicionar substrings conforme aparecerem novos fornecedores não-revenda.",
+    "por_nome_substring": [
+      "POSTO BRIGADEIRO",
+      "CLOUD WALK INSTITUICAO DE PAGAMENTO",
+      "G J DE MELO JUNIOR",
+      "P. GONCALVES DE LIMA COMERCIO",
+      "E C NASCIMENTO LTDA",
+      "NOTRE TRICOT",
+      "LUCAS BERNARDES TOMAZOLI",
+      "M DA LUZ SANTOS",
+      "FLEXCAR PECAS E SERVICOS",
+      "RS EMBALAGENS",
+      "Brasil Card Instituicao de Pag"
+    ]
   }
 }
