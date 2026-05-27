@@ -145,8 +145,9 @@
     <h2 onclick="toggleCard('card-alertas-s')"><span class="toggle-icon">▼</span>🔔 Marcas estratégicas <strong>no ponto de pedir</strong> <span id="alertas-s-label" class="muted" style="font-weight:400;font-size:13px"></span></h2>
     <div id="alertas-s-conteudo"></div>
     <div class="legend">
-      Marcas curva S que já passaram 45d desde a última NF lançada <em>e</em> têm sugestão de compra &gt; 0.
-      Clique no botão para gerar o pedido pronto.
+      Marcas curva S que já passaram 45d desde a última NF lançada, têm sugestão &gt; 0 <em>e</em> ainda
+      não têm NFe pendente em andamento. Quando o fornecedor emite a NFe, a marca sai automaticamente
+      deste card (vira ✉️ <em>em curso</em> na tabela de Sugestões).
     </div>
   </div>
 
@@ -189,7 +190,8 @@
       cobertura = (estoque atual + em trânsito) ÷ (vendas 60d ÷ 60) ·
       sugestão = vendas/dia × (60 + 15) − estoque atual − em trânsito ·
       <strong>Botão de pedido</strong>: marcas curva <strong>S</strong> só liberam 45 dias após a última NF lançada
-      (passe o mouse no botão ⏳ <em>aguardar</em> para ver a data de liberação).
+      (badge ⏳ <em>aguardar</em>). Quando já existe NFe pendente da marca (fornecedor emitiu mas ainda não chegou)
+      o botão fica ✉️ <em>em curso</em> — evita duplicar pedido.
     </div>
   </div>
 
@@ -246,8 +248,19 @@ const NOMES_LOJA = {
   L5: 'MissBeleza Santarém'
 };
 
+// === "Pedido em andamento" = já existe NFe pendente (emitida mas não recebida) da marca×loja ===
+// Se sim, marca sai do alerta E o botão de gerar pedido vira "✉️ em curso" (disabled).
+// Evita pedir em duplicidade quando o fornecedor já emitiu a NFe.
+function temPedidoEmAndamento(marca, loja) {
+  const ch = (DATA.chegadas_mes && DATA.chegadas_mes[loja]) || [];
+  const marcaUp = String(marca).toUpperCase();
+  return ch.some(x => x.origem === 'pendente'
+    && String(x.marca || '').toUpperCase() === marcaUp);
+}
+
 // === Card de alertas: marcas curva S "no ponto de pedir" ===
-// "No ponto" = sugestao_compra > 0 E janela de 45d liberada (passou >= 45d da última NF lançada).
+// "No ponto" = sugestao_compra > 0 E janela de 45d liberada (passou >= 45d da última NF lançada)
+// E SEM NFe pendente em andamento (pedido já emitido pelo fornecedor).
 function renderAlertasS(filtroLoja) {
   const card = document.getElementById('card-alertas-s');
   const cont = document.getElementById('alertas-s-conteudo');
@@ -258,7 +271,9 @@ function renderAlertasS(filtroLoja) {
     if (s.curva !== 'S') return false;
     if (filtroLoja !== 'ALL' && s.loja !== filtroLoja) return false;
     if (!(s.sugestao_compra > 0)) return false;
-    return janelaPedido(s.marca, s.loja, s.curva).liberado;
+    if (!janelaPedido(s.marca, s.loja, s.curva).liberado) return false;
+    if (temPedidoEmAndamento(s.marca, s.loja)) return false; // já tem NFe pendente
+    return true;
   });
 
   if (!prontas.length) {
@@ -497,7 +512,10 @@ function render() {
   const crits = sug.filter(s => classifica(s.cobertura_dias) === 'CRIT').length;
   const warns = sug.filter(s => classifica(s.cobertura_dias) === 'WARN').length;
   const oks   = sug.filter(s => classifica(s.cobertura_dias) === 'OK').length;
-  const sProntas = sug.filter(s => s.curva === 'S' && s.sugestao_compra > 0 && janelaPedido(s.marca, s.loja, s.curva).liberado).length;
+  const sProntas = sug.filter(s => s.curva === 'S'
+    && s.sugestao_compra > 0
+    && janelaPedido(s.marca, s.loja, s.curva).liberado
+    && !temPedidoEmAndamento(s.marca, s.loja)).length;
   document.getElementById('kpis').innerHTML = `
     <div class="kpi"><div class="label">Marcas monitoradas</div><div class="value">${sug.length}</div><div class="sub">curva S + A + B (filtradas)</div></div>
     <div class="kpi"><div class="label">Sugestão total</div><div class="value">${fmtUnid(totSug)}</div><div class="sub">peças p/ cobrir 60+15 dias</div></div>
@@ -522,10 +540,13 @@ function render() {
       const rowId = `sug-${idx}`;
       const marcaEsc = s.marca.replace(/'/g, "\\'");
       const podeGerar = s.sugestao_compra > 0;
+      const emCurso = podeGerar && temPedidoEmAndamento(s.marca, s.loja);
       const jp = podeGerar ? janelaPedido(s.marca, s.loja, s.curva) : { liberado: false, motivo: 'Sem sugestão para esta marca' };
       let btn;
       if (!podeGerar) {
         btn = `<button class="btn-pedido" disabled title="Sem sugestão para esta marca">—</button>`;
+      } else if (emCurso) {
+        btn = `<button class="btn-pedido" disabled title="Já existe NFe pendente desta marca — pedido em andamento">✉️ em curso</button>`;
       } else if (!jp.liberado) {
         btn = `<button class="btn-pedido" disabled title="${jp.motivo}">⏳ aguardar</button>`;
       } else {
