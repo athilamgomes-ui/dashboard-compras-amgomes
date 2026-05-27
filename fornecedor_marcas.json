@@ -1,7 +1,7 @@
 {
   "_descricao": "Mapeamento Fornecedor (CNPJ ou substring do Nome/RazaoSocial) → Marca no ERP. Usado pela skill quando a descrição dos produtos da NFe NÃO contém o nome da marca (caso da Kamaleão Color: produtos descritos como 'MASCARA PIGMENTANTE FLAMINGO 100ML KC'). EDITÁVEL manualmente — adicionar entradas conforme novos fornecedores apareçam.",
   "_formato": "CNPJ (14 dígitos sem pontuação) → marca | Nome contendo substring → marca",
-  "_ultima_edicao": "2026-05-26",
+  "_ultima_edicao": "2026-05-26b",
   "por_cnpj": {
     "31768865000126": "Kamaleao",
     "11271239000201": "Cadiveu",
@@ -19,7 +19,10 @@
     "SOLIDER COMERCIO": "Solider",
     "MULTI BANG": "MultiBag",
     "BRASITECH": "Brasitech",
-    "CONFECCOES ND": "Confeccoes ND"
+    "CONFECCOES ND": "Confeccoes ND",
+    "JAPINHA INDUSTRIA": "Japinha",
+    "R C DISTRIBUICAO E COMERCIO": "Lizze",
+    "BELLIZ IND": "Vertix+Ricca"
   },
   "_uso_interno": {
     "_descricao": "Fornecedores cujos produtos NÃO são para revenda (sacolas, embalagens, material de loja). Aparecem em chegadas_mes com marca para rastreio, mas não entram em compras_mensais_rs nem em sugestões de compra.",
@@ -38,7 +41,10 @@
       "M DA LUZ SANTOS",
       "FLEXCAR PECAS E SERVICOS",
       "RS EMBALAGENS",
-      "Brasil Card Instituicao de Pag"
+      "Brasil Card Instituicao de Pag",
+      "CLOUDWALK",
+      "MALHARIA TOQUE FINAL",
+      "SELARIA MINEIRA"
     ]
   }
 }
