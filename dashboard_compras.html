@@ -141,6 +141,15 @@
 
   <div id="card-diff"></div>
 
+  <div class="card" id="card-alertas-s" style="display:none">
+    <h2 onclick="toggleCard('card-alertas-s')"><span class="toggle-icon">▼</span>🔔 Marcas estratégicas <strong>no ponto de pedir</strong> <span id="alertas-s-label" class="muted" style="font-weight:400;font-size:13px"></span></h2>
+    <div id="alertas-s-conteudo"></div>
+    <div class="legend">
+      Marcas curva S que já passaram 45d desde a última NF lançada <em>e</em> têm sugestão de compra &gt; 0.
+      Clique no botão para gerar o pedido pronto.
+    </div>
+  </div>
+
   <div class="card" id="card-chegadas">
     <h2 onclick="toggleCard('card-chegadas')"><span class="toggle-icon">▼</span>📥 Chegadas do mês · NFs por loja <span id="chegadas-mes-label" class="muted" style="font-weight:400;font-size:13px"></span></h2>
     <div id="chegadas-conteudo"></div>
@@ -236,6 +245,64 @@ const NOMES_LOJA = {
   L4: 'MissBeleza Altamira',
   L5: 'MissBeleza Santarém'
 };
+
+// === Card de alertas: marcas curva S "no ponto de pedir" ===
+// "No ponto" = sugestao_compra > 0 E janela de 45d liberada (passou >= 45d da última NF lançada).
+function renderAlertasS(filtroLoja) {
+  const card = document.getElementById('card-alertas-s');
+  const cont = document.getElementById('alertas-s-conteudo');
+  const label = document.getElementById('alertas-s-label');
+  if (!DATA || !DATA.sugestoes) { card.style.display = 'none'; return; }
+
+  let prontas = DATA.sugestoes.filter(s => {
+    if (s.curva !== 'S') return false;
+    if (filtroLoja !== 'ALL' && s.loja !== filtroLoja) return false;
+    if (!(s.sugestao_compra > 0)) return false;
+    return janelaPedido(s.marca, s.loja, s.curva).liberado;
+  });
+
+  if (!prontas.length) {
+    card.style.display = '';
+    label.textContent = '· nenhuma agora';
+    cont.innerHTML = `<div style="color:var(--muted);font-size:12px;padding:8px 0">
+      Nenhuma marca estratégica liberada para pedido neste momento. As que estão dentro da janela de 45d aparecem na tabela de Sugestões com badge ⏳ <em>aguardar</em>.
+    </div>`;
+    return;
+  }
+
+  // Ordena: cobertura crescente (mais críticas primeiro), depois sugestão decrescente
+  prontas.sort((a,b) => (a.cobertura_dias - b.cobertura_dias) || (b.sugestao_compra - a.sugestao_compra));
+
+  card.style.display = '';
+  label.textContent = `· ${prontas.length} marca${prontas.length === 1 ? '' : 's'} liberada${prontas.length === 1 ? '' : 's'}`;
+
+  let html = `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px">`;
+  prontas.forEach(s => {
+    const jp = janelaPedido(s.marca, s.loja, s.curva);
+    const stat = classifica(s.cobertura_dias);
+    const barColor = stat === 'CRIT' ? '#fa5252' : (stat === 'WARN' ? '#fab005' : '#37b24d');
+    const marcaEsc = s.marca.replace(/'/g, "\\'");
+    const diasMsg = jp.diasDesde == null
+      ? 'sem histórico — 1º pedido'
+      : `última NF há ${jp.diasDesde}d`;
+    html += `<div style="border:1px solid var(--border);border-left:4px solid ${barColor};border-radius:8px;padding:10px;background:#fff">
+      <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:4px">
+        <span style="font-weight:700;font-size:14px">${s.marca}</span>
+        <span class="muted" style="font-size:11px">${s.loja}</span>
+        <span style="margin-left:auto;font-weight:600;font-size:12px;color:${barColor}">${fmtCobertura(s.cobertura_dias)}</span>
+      </div>
+      <div style="font-size:12px;color:var(--muted);margin-bottom:6px">
+        Sugestão: <strong style="color:var(--text)">${fmtUnid(s.sugestao_compra)}</strong> · ${diasMsg}
+      </div>
+      <div style="display:flex;gap:6px">
+        <button class="btn-pedido" style="flex:1" onclick="gerarPedidoXLSX('${s.loja}','${marcaEsc}')">📥 XLSX</button>
+        <button class="btn-pedido" style="flex:1" onclick="gerarPedidoPDF('${s.loja}','${marcaEsc}')">📄 PDF</button>
+      </div>
+    </div>`;
+  });
+  html += `</div>`;
+  cont.innerHTML = html;
+}
 
 // === Geração de pedido de compra por marca × loja ===
 // Janela de pedido p/ curva S: aguarda 45 dias após a chegada da última NF lançada
@@ -430,11 +497,12 @@ function render() {
   const crits = sug.filter(s => classifica(s.cobertura_dias) === 'CRIT').length;
   const warns = sug.filter(s => classifica(s.cobertura_dias) === 'WARN').length;
   const oks   = sug.filter(s => classifica(s.cobertura_dias) === 'OK').length;
+  const sProntas = sug.filter(s => s.curva === 'S' && s.sugestao_compra > 0 && janelaPedido(s.marca, s.loja, s.curva).liberado).length;
   document.getElementById('kpis').innerHTML = `
     <div class="kpi"><div class="label">Marcas monitoradas</div><div class="value">${sug.length}</div><div class="sub">curva S + A + B (filtradas)</div></div>
     <div class="kpi"><div class="label">Sugestão total</div><div class="value">${fmtUnid(totSug)}</div><div class="sub">peças p/ cobrir 60+15 dias</div></div>
     <div class="kpi"><div class="label">Críticas</div><div class="value" style="color:var(--crit)">${crits}</div><div class="sub">cobertura &lt; 60 dias</div></div>
-    <div class="kpi"><div class="label">Atenção / OK</div><div class="value">${warns} / ${oks}</div><div class="sub">60–90d / acima de 90d</div></div>
+    <div class="kpi" style="${sProntas > 0 ? 'border-left:4px solid #fa5252' : ''}"><div class="label">⭐ S no ponto de pedir</div><div class="value" style="color:${sProntas > 0 ? '#fa5252' : 'var(--muted)'}">${sProntas}</div><div class="sub">curva S liberada (≥45d da última NF)</div></div>
   `;
 
   // Tabela de sugestões
@@ -483,6 +551,9 @@ function render() {
 
   // Card de Diff vs. execução anterior
   renderDiff(filtroLoja);
+
+  // Card de Alertas: marcas curva S no ponto de pedir
+  renderAlertasS(filtroLoja);
 
   // Card de Chegadas do mês
   renderChegadas(filtroLoja);
