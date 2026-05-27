@@ -81,16 +81,21 @@
   .footer { color: var(--muted); font-size: 12px; text-align: center; margin-top: 24px; }
   .muted { color: var(--muted); }
   #status-empty { padding: 30px; text-align: center; color: var(--muted); }
+  .btn-pedido { padding:3px 8px; border:1px solid var(--border); border-radius:4px; background:#fff; cursor:pointer; font-size:11px; color:var(--text); white-space:nowrap; }
+  .btn-pedido:hover { background:#e7f5ff; border-color:#74c0fc; }
+  .btn-pedido[disabled] { opacity:0.4; cursor:not-allowed; }
   /* Collapsible cards */
   .card > h2 { cursor: pointer; user-select: none; }
   .card > h2 .toggle-icon { display: inline-block; transition: transform .15s ease; margin-right: 6px; font-size: 11px; color: var(--muted); width: 12px; }
   .card.collapsed > h2 .toggle-icon { transform: rotate(-90deg); }
   .card.collapsed > *:not(h2) { display: none !important; }
   .card.collapsed > h2 { margin-bottom: 0; }
+  @media print { .no-print { display:none !important; } }
   .card-toolbar { float: right; display: flex; gap: 6px; align-items: center; font-size: 12px; }
   .card-toolbar button { padding: 3px 8px; border: 1px solid var(--border); border-radius: 4px; background: #fff; cursor: pointer; font-size: 11px; color: var(--muted); }
   .card-toolbar button:hover { background: #f1f3f5; color: var(--text); }
 </style>
+<script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
 </head>
 <body>
   <h1>Dashboard de Compras</h1>
@@ -230,6 +235,134 @@ const NOMES_LOJA = {
   L5: 'MissBeleza Santarém'
 };
 
+// === Geração de pedido de compra por marca × loja ===
+// Prazo médio de entrega = média de (data_lancamento - data) das NFs da marca×loja em chegadas
+function calcularPrazoMedio(marca, loja) {
+  const ch = (DATA.chegadas_mes && DATA.chegadas_mes[loja]) || [];
+  const marcaUp = String(marca).toUpperCase();
+  const diffs = ch
+    .filter(x => x.origem === 'lancada'
+      && String(x.marca || '').toUpperCase() === marcaUp
+      && x.data && x.data_lancamento)
+    .map(x => {
+      const e = new Date(x.data), l = new Date(x.data_lancamento);
+      return Math.max(0, Math.round((l - e) / 86400000));
+    })
+    .filter(d => d > 0);
+  if (!diffs.length) return null;
+  return Math.round(diffs.reduce((a,b) => a+b, 0) / diffs.length);
+}
+
+function montarLinhasPedido(marca, loja) {
+  const mk = (DATA.marcas || []).find(m => m.marca === marca);
+  if (!mk) return { erro: 'Marca não encontrada' };
+  const prazo = calcularPrazoMedio(marca, loja);            // dias (null se sem histórico)
+  const prazoExtra = prazo || 0;
+  const fator = 60 + 15 + prazoExtra;                       // dias-alvo de cobertura
+  const linhas = (mk.produtos || []).map(p => {
+    const dadosLoja = p[loja] || {};
+    const v60 = dadosLoja.vendas || 0;
+    const saldo = dadosLoja.saldo || 0;
+    const trans = dadosLoja.transito || 0;
+    const vd = v60 / 60;
+    const alvo = vd * fator;
+    const qtd = Math.max(0, Math.ceil(alvo - saldo - trans));
+    const cob = vd > 0 ? (saldo + trans) / vd : 9999;
+    return { codigo: p.codigo, referencia: p.referencia || '', descricao: p.descricao || '',
+             v60, vd, saldo, trans, cob, qtd };
+  })
+  .filter(r => r.qtd > 0)
+  .sort((a,b) => b.v60 - a.v60);                            // mais vendidos primeiro
+  return { mk, prazo, prazoExtra, fator, linhas };
+}
+
+function gerarPedidoXLSX(loja, marca) {
+  const r = montarLinhasPedido(marca, loja);
+  if (r.erro) { alert(r.erro); return; }
+  if (!r.linhas.length) { alert('Sem itens com sugestão > 0 para ' + marca + ' / ' + loja); return; }
+  if (typeof XLSX === 'undefined') {
+    alert('Biblioteca de Excel ainda carregando. Tente novamente em alguns segundos.'); return;
+  }
+  const hoje = new Date().toLocaleDateString('pt-BR');
+  const prazoTxt = r.prazo == null ? 'sem histórico (usando 60+15 dias)' : `${r.prazo} dias (cobertura ajustada para ${r.fator} dias)`;
+  const totalQtd = r.linhas.reduce((a,x) => a + x.qtd, 0);
+  // Cabeçalho
+  const head = [
+    ['Pedido de compra'],
+    ['Marca', marca],
+    ['Loja', loja + ' — ' + (NOMES_LOJA[loja] || '')],
+    ['Gerado em', hoje],
+    ['Prazo médio de entrega', prazoTxt],
+    ['Total de peças sugeridas', totalQtd],
+    [],
+    ['Código', 'Referência', 'Descrição', 'Vendas 60d', 'Vendas/dia', 'Saldo', 'Em trânsito', 'Cobertura (dias)', 'Qtd sugerida']
+  ];
+  const body = r.linhas.map(x => [
+    x.codigo, x.referencia, x.descricao,
+    x.v60, Number(x.vd.toFixed(2)),
+    x.saldo, x.trans,
+    x.cob > 999 ? '—' : Math.round(x.cob),
+    x.qtd
+  ]);
+  const aoa = [...head, ...body];
+  const wb = XLSX.utils.book_new();
+  const ws = XLSX.utils.aoa_to_sheet(aoa);
+  ws['!cols'] = [{wch:10},{wch:14},{wch:42},{wch:11},{wch:11},{wch:9},{wch:11},{wch:14},{wch:13}];
+  // Negrito no cabeçalho de colunas (linha 8 = índice 7)
+  XLSX.utils.book_append_sheet(wb, ws, marca.slice(0,28).replace(/[\\\/\?\*\[\]]/g,'_'));
+  const fname = `pedido_${marca.replace(/[^\w]+/g,'_')}_${loja}_${new Date().toISOString().slice(0,10)}.xlsx`;
+  XLSX.writeFile(wb, fname);
+}
+
+function gerarPedidoPDF(loja, marca) {
+  const r = montarLinhasPedido(marca, loja);
+  if (r.erro) { alert(r.erro); return; }
+  if (!r.linhas.length) { alert('Sem itens com sugestão > 0 para ' + marca + ' / ' + loja); return; }
+  const hoje = new Date().toLocaleDateString('pt-BR');
+  const prazoTxt = r.prazo == null ? 'sem histórico (usando 60+15 dias)' : `${r.prazo} dias (cobertura ajustada para ${r.fator} dias)`;
+  const totalQtd = r.linhas.reduce((a,x) => a + x.qtd, 0);
+  const w = window.open('', '_blank');
+  if (!w) { alert('Permita popups para gerar o PDF'); return; }
+  w.document.write(`<!doctype html><html lang="pt-br"><head><meta charset="utf-8">
+    <title>Pedido ${marca} ${loja}</title>
+    <style>
+      body { font-family: -apple-system, system-ui, sans-serif; padding: 28px; color:#111; font-size: 12px; }
+      h1 { margin: 0 0 4px; font-size: 18px; }
+      .meta { color:#555; font-size: 11px; margin-bottom: 14px; }
+      .meta div { margin: 1px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 11px; }
+      th, td { border: 1px solid #ddd; padding: 5px 7px; text-align: left; }
+      th { background:#f6f6f6; }
+      td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+      tfoot td { font-weight: 600; background: #fafafa; }
+      @media print { body { padding: 14px; } button { display: none; } }
+    </style></head><body>
+    <button onclick="window.print()" style="float:right;padding:6px 12px;border:1px solid #aaa;border-radius:4px;cursor:pointer">Imprimir / Salvar como PDF</button>
+    <h1>Pedido de compra · ${marca}</h1>
+    <div class="meta">
+      <div><strong>Loja:</strong> ${loja} — ${NOMES_LOJA[loja] || ''}</div>
+      <div><strong>Gerado em:</strong> ${hoje}</div>
+      <div><strong>Prazo médio de entrega:</strong> ${prazoTxt}</div>
+      <div><strong>Total de peças sugeridas:</strong> ${totalQtd.toLocaleString('pt-BR')}</div>
+    </div>
+    <table><thead><tr>
+      <th>Código</th><th>Ref</th><th>Descrição</th>
+      <th class="num">Vendas 60d</th><th class="num">Vd/dia</th>
+      <th class="num">Saldo</th><th class="num">Trânsito</th>
+      <th class="num">Cob (d)</th><th class="num">Qtd</th>
+    </tr></thead><tbody>
+    ${r.linhas.map(x => `<tr>
+      <td>${x.codigo}</td><td>${x.referencia}</td><td>${x.descricao}</td>
+      <td class="num">${x.v60}</td><td class="num">${x.vd.toFixed(2)}</td>
+      <td class="num">${x.saldo}</td><td class="num">${x.trans}</td>
+      <td class="num">${x.cob > 999 ? '—' : Math.round(x.cob)}</td>
+      <td class="num"><strong>${x.qtd}</strong></td>
+    </tr>`).join('')}
+    </tbody><tfoot><tr><td colspan="8" style="text-align:right">Total</td><td class="num">${totalQtd.toLocaleString('pt-BR')}</td></tr></tfoot></table>
+  </body></html>`);
+  w.document.close();
+}
+
 async function carregar() {
   // 1ª tentativa: window.DADOS injetado por dados.js (funciona em file://)
   if (window.DADOS) {
@@ -280,15 +413,22 @@ function render() {
       <th>Marca</th><th>Curva</th>
       <th>Vendas 60d (un)</th><th>Estoque (un)</th><th>Trânsito (un)</th>
       <th>Cobertura (dias)</th><th>Sugestão (un)</th>
+      <th>Pedido</th>
     </tr></thead><tbody>`;
   if (sug.length === 0) {
-    html += `<tr><td colspan="7" id="status-empty">Sem dados para o filtro selecionado.</td></tr>`;
+    html += `<tr><td colspan="8" id="status-empty">Sem dados para o filtro selecionado.</td></tr>`;
   } else {
     sug.forEach((s, idx) => {
       const stat = classifica(s.cobertura_dias);
       const cls = 'curva-' + s.curva.toLowerCase();
       const rowId = `sug-${idx}`;
-      html += `<tr class="${cls}" data-key="${s.loja}|${s.marca}" onclick="toggleProdutos('${rowId}', '${s.loja}', '${s.marca.replace(/'/g, "\\'")}')" style="cursor:pointer">
+      const marcaEsc = s.marca.replace(/'/g, "\\'");
+      const podeGerar = s.sugestao_compra > 0;
+      const btn = podeGerar
+        ? `<button class="btn-pedido" onclick="event.stopPropagation();gerarPedidoXLSX('${s.loja}','${marcaEsc}')" title="Baixar pedido em Excel">📥 XLSX</button>
+           <button class="btn-pedido" onclick="event.stopPropagation();gerarPedidoPDF('${s.loja}','${marcaEsc}')" title="Imprimir/PDF">📄 PDF</button>`
+        : `<button class="btn-pedido" disabled title="Sem sugestão para esta marca">—</button>`;
+      html += `<tr class="${cls}" data-key="${s.loja}|${s.marca}" onclick="toggleProdutos('${rowId}', '${s.loja}', '${marcaEsc}')" style="cursor:pointer">
         <td><span class="caret" id="caret-${rowId}">▶</span> <span class="brand">${s.marca}</span></td>
         <td>${s.curva}</td>
         <td>${fmtUnid(s.venda_60d)}</td>
@@ -296,8 +436,9 @@ function render() {
         <td>${fmtUnid(s.transito)}</td>
         <td class="${STATUS[stat].cls}">${fmtCobertura(s.cobertura_dias)}</td>
         <td class="sug ${s.sugestao_compra > 0 ? 'has' : ''}">${fmtUnid(s.sugestao_compra)}</td>
+        <td style="white-space:nowrap" class="no-print" onclick="event.stopPropagation()">${btn}</td>
       </tr>
-      <tr id="prod-${rowId}" class="produtos-row" style="display:none"><td colspan="7"></td></tr>`;
+      <tr id="prod-${rowId}" class="produtos-row" style="display:none"><td colspan="8"></td></tr>`;
     });
   }
   html += `</tbody></table>`;
