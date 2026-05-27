@@ -457,17 +457,19 @@ for n in notas:
     })
     nfs_lancadas_keys.add((n['loja'], n['doc']))
 
-# B) pendentes do mês corrente
+# B) pendentes nos últimos 45 dias (por data de emissão).
+# Mesma janela das lançadas — evita o card vir poluído com NFs antigas presas no SEFAZ
+# (a API retorna até 90 dias, mas o card só mostra 45d).
 for item in pendentes_processadas:
     loja = item['loja']
     nfe = item['nfe']
     de = nfe.get('DataEmissao')
     try:
-        dt = datetime.fromisoformat(de.replace('Z','+00:00'))
+        dt = datetime.fromisoformat(de.replace('Z','+00:00')).replace(tzinfo=None)
     except:
         continue
-    # incluir se emitida no mês corrente
-    if dt.year != ANO or dt.month != MES:
+    # incluir se emitida nos últimos 45 dias
+    if dt < CUTOFF_CHEGADAS:
         continue
     nf_num = str(nfe.get('Numero') or '')
     if (loja, nf_num) in nfs_lancadas_keys:
