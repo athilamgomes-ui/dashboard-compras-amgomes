@@ -5,103 +5,170 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Dashboard de Compras — Grupo A.M. Gomes</title>
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
   :root {
-    --bg: #fafbfc;
+    --bg: #f0f4f8;
     --card: #ffffff;
-    --border: #e6e8eb;
-    --text: #2c3e50;
-    --muted: #7a8794;
-    --accent: #3b82f6;
-    --ok: #10b981;
-    --warn: #f59e0b;
-    --crit: #ef4444;
+    --card2: #f8fafc;
+    --border: #e2e8f0;
+    --shadow: 0 1px 3px rgba(15,23,42,0.06), 0 4px 16px rgba(15,23,42,0.04);
+    --shadow-hover: 0 4px 12px rgba(15,23,42,0.10), 0 8px 28px rgba(15,23,42,0.06);
+    --text: #0f172a;
+    --text2: #334155;
+    --muted: #64748b;
+    --muted2: #94a3b8;
+    --accent: #6366f1;
+    --ok: #059669;
+    --warn: #d97706;
+    --crit: #dc2626;
     --curva-s: #fff1f2;
-    --curva-a: #eef4ff;
-    --curva-b: #f6f6fb;
+    --curva-a: #eef2ff;
+    --curva-b: #f8fafc;
   }
-  * { box-sizing: border-box; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
-    font-family: -apple-system, "SF Pro Display", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
     background: var(--bg);
     color: var(--text);
-    margin: 0;
     padding: 24px;
-    font-size: 14px;
+    font-size: 13.5px;
+    line-height: 1.5;
   }
-  h1 { margin: 0 0 6px; font-size: 22px; font-weight: 600; }
-  .subtitle { color: var(--muted); font-size: 13px; margin-bottom: 18px; }
-  .toolbar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 16px; }
+  /* HEADER */
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--accent);
+    border-radius: 18px;
+    padding: 22px 28px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow);
+  }
+  h1 { font-size: 21px; font-weight: 800; color: var(--text); letter-spacing: -0.5px; }
+  .subtitle { color: var(--muted); font-size: 13px; margin-top: 5px; font-weight: 400; }
+  /* TOOLBAR */
+  .toolbar {
+    display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+    margin-bottom: 16px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 12px 16px;
+    box-shadow: var(--shadow);
+  }
+  .toolbar label { font-size: 12px; font-weight: 600; color: var(--muted); display: flex; align-items: center; gap: 6px; }
   .toolbar select, .toolbar button {
-    padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px;
-    background: #fff; font-size: 13px; color: var(--text);
+    padding: 6px 10px; border: 1px solid var(--border); border-radius: 8px;
+    background: var(--card2); font-size: 12.5px; color: var(--text2);
+    font-family: inherit;
   }
-  .toolbar button { cursor: pointer; }
-  .toolbar button:hover { background: #f0f2f5; }
-  .grid { display: grid; gap: 16px; grid-template-columns: repeat(4, 1fr); margin-bottom: 16px; }
-  .kpi { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
-  .kpi .label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .5px; }
-  .kpi .value { font-size: 22px; font-weight: 600; margin-top: 4px; }
-  .kpi .sub { color: var(--muted); font-size: 12px; margin-top: 2px; }
+  .toolbar button { cursor: pointer; font-weight: 500; transition: all .15s; }
+  .toolbar button:hover { background: #eef2ff; border-color: #c7d2fe; color: var(--accent); }
+  /* KPI GRID */
+  .grid { display: grid; gap: 14px; grid-template-columns: repeat(4, 1fr); margin-bottom: 16px; }
+  .kpi {
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 18px; box-shadow: var(--shadow);
+    transition: box-shadow .2s, transform .2s;
+  }
+  .kpi:hover { box-shadow: var(--shadow-hover); transform: translateY(-1px); }
+  .kpi .label { color: var(--muted); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .6px; }
+  .kpi .value { font-size: 24px; font-weight: 800; margin-top: 6px; color: var(--text); letter-spacing: -0.5px; }
+  .kpi .sub { color: var(--muted2); font-size: 12px; margin-top: 4px; font-weight: 500; }
+  /* CARDS */
   .card {
-    background: var(--card); border: 1px solid var(--border); border-radius: 10px;
-    padding: 16px; margin-bottom: 16px;
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 18px 20px; margin-bottom: 16px; box-shadow: var(--shadow);
+    transition: box-shadow .2s;
   }
-  .card h2 { margin: 0 0 12px; font-size: 15px; font-weight: 600; color: var(--text); }
+  .card:hover { box-shadow: var(--shadow-hover); }
+  .card h2 {
+    margin: 0 0 14px; font-size: 14px; font-weight: 700; color: var(--text2);
+    display: flex; align-items: center; gap: 8px; letter-spacing: -0.2px;
+  }
+  /* TABLES */
   table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
   th, td { padding: 8px 10px; text-align: right; border-bottom: 1px solid var(--border); }
   th:first-child, td:first-child, td.brand { text-align: left; }
   thead th {
     position: sticky; top: 0;
-    background: #f7f9fb; color: var(--muted); font-weight: 600;
-    font-size: 11.5px; text-transform: uppercase; letter-spacing: .3px;
+    background: var(--card2); color: var(--muted); font-weight: 700;
+    font-size: 11px; text-transform: uppercase; letter-spacing: .4px;
+    border-bottom: 2px solid var(--border);
   }
+  tbody td { color: var(--text2); }
+  tbody td:first-child { color: var(--text); font-weight: 500; }
+  /* CURVA ROWS */
   tr.curva-s td { background: var(--curva-s); }
   tr.curva-a td { background: var(--curva-a); }
   tr.curva-b td { background: var(--curva-b); }
-  tr.curva-s td:first-child { box-shadow: inset 3px 0 0 #ef4444; }
+  tr.curva-s td:first-child { box-shadow: inset 3px 0 0 #dc2626; }
   tr.curva-s td.brand, tr.curva-a td.brand, tr.curva-b td.brand { font-weight: 600; }
   tr.curva-s td.brand::before, tr.curva-a td.brand::before, tr.curva-b td.brand::before {
-    display: inline-block; padding: 1px 6px; border-radius: 4px;
-    font-size: 10.5px; font-weight: 700; margin-right: 6px;
+    display: inline-block; padding: 1px 6px; border-radius: 6px;
+    font-size: 10px; font-weight: 700; margin-right: 6px;
   }
   tr.curva-s td.brand::before { content: "S"; background: #fee2e2; color: #b91c1c; }
-  tr.curva-a td.brand::before { content: "A"; background: #dbeafe; color: #1e40af; }
+  tr.curva-a td.brand::before { content: "A"; background: #e0e7ff; color: #3730a3; }
   tr.curva-b td.brand::before { content: "B"; background: #ede9fe; color: #5b21b6; }
-  td.cob-ok    { color: var(--ok);   font-weight: 600; }
-  td.cob-warn  { color: var(--warn); font-weight: 600; }
-  td.cob-crit  { color: var(--crit); font-weight: 700; }
+  /* STATUS COLORS */
+  td.cob-ok   { color: var(--ok);   font-weight: 600; }
+  td.cob-warn { color: var(--warn); font-weight: 600; }
+  td.cob-crit { color: var(--crit); font-weight: 700; }
   td.sug { font-weight: 600; }
   td.sug.has { color: var(--crit); }
-  .caret { display: inline-block; width: 12px; color: var(--muted); font-size: 10px; margin-right: 2px; }
-  tr.produtos-row > td { padding: 0 10px 6px; background: #fafbfc !important; }
+  .caret { display: inline-block; width: 12px; color: var(--muted2); font-size: 10px; margin-right: 2px; }
+  tr.produtos-row > td { padding: 0 10px 8px; background: var(--card2) !important; }
   tr.produtos-row table { font-size: 12px; }
   tr.produtos-row th { font-size: 10.5px; }
-  tr:hover td:not(.brand) { background-color: #f0f4f8 !important; }
-  .legend { color: var(--muted); font-size: 12px; margin-top: 8px; }
-  .footer { color: var(--muted); font-size: 12px; text-align: center; margin-top: 24px; }
+  tr:hover td:not(.brand) { background-color: #eef2ff !important; }
+  .legend {
+    color: var(--muted); font-size: 12px; margin-top: 10px;
+    padding: 8px 12px; background: var(--card2); border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .footer { color: var(--muted2); font-size: 12px; text-align: center; margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--border); }
   .muted { color: var(--muted); }
   #status-empty { padding: 30px; text-align: center; color: var(--muted); }
-  .btn-pedido { padding:3px 8px; border:1px solid var(--border); border-radius:4px; background:#fff; cursor:pointer; font-size:11px; color:var(--text); white-space:nowrap; }
-  .btn-pedido:hover { background:#e7f5ff; border-color:#74c0fc; }
-  .btn-pedido[disabled] { opacity:0.4; cursor:not-allowed; }
-  /* Collapsible cards */
+  /* BOTÕES PEDIDO */
+  .btn-pedido {
+    padding: 3px 9px; border: 1px solid var(--border); border-radius: 6px;
+    background: var(--card); cursor: pointer; font-size: 11px; font-weight: 500;
+    color: var(--text2); white-space: nowrap; font-family: inherit;
+    transition: all .15s;
+  }
+  .btn-pedido:hover { background: #eef2ff; border-color: #c7d2fe; color: var(--accent); }
+  .btn-pedido[disabled] { opacity: 0.4; cursor: not-allowed; }
+  /* COLLAPSIBLE */
   .card > h2 { cursor: pointer; user-select: none; }
-  .card > h2 .toggle-icon { display: inline-block; transition: transform .15s ease; margin-right: 6px; font-size: 11px; color: var(--muted); width: 12px; }
+  .card > h2 .toggle-icon { display: inline-block; transition: transform .15s ease; margin-right: 4px; font-size: 11px; color: var(--muted2); width: 12px; }
   .card.collapsed > h2 .toggle-icon { transform: rotate(-90deg); }
   .card.collapsed > *:not(h2) { display: none !important; }
   .card.collapsed > h2 { margin-bottom: 0; }
   @media print { .no-print { display:none !important; } }
+  /* CARD TOOLBAR */
   .card-toolbar { float: right; display: flex; gap: 6px; align-items: center; font-size: 12px; }
-  .card-toolbar button { padding: 3px 8px; border: 1px solid var(--border); border-radius: 4px; background: #fff; cursor: pointer; font-size: 11px; color: var(--muted); }
-  .card-toolbar button:hover { background: #f1f3f5; color: var(--text); }
+  .card-toolbar button {
+    padding: 4px 10px; border: 1px solid var(--border); border-radius: 7px;
+    background: var(--card2); cursor: pointer; font-size: 11px; font-weight: 500;
+    color: var(--muted); font-family: inherit; transition: all .15s;
+  }
+  .card-toolbar button:hover { background: #eef2ff; border-color: #c7d2fe; color: var(--accent); }
+  /* RESPONSIVE */
+  @media (max-width: 900px) { .grid { grid-template-columns: repeat(2,1fr); } }
+  @media (max-width: 560px) { .grid { grid-template-columns: 1fr; } body { padding: 14px; } }
 </style>
 <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
 </head>
 <body>
-  <h1>Dashboard de Compras</h1>
-  <div class="subtitle">
-    Grupo A.M. Gomes · cobertura-alvo 60 dias + lead time 15 dias ·
-    <span id="ts">carregando…</span>
+  <div class="page-header">
+    <div>
+      <h1>📦 Dashboard de Compras</h1>
+      <div class="subtitle">Grupo A.M. Gomes · cobertura-alvo 60 dias + lead time 15 dias · <span id="ts">carregando…</span></div>
+    </div>
   </div>
 
   <div class="toolbar">
