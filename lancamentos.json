@@ -1,0 +1,44 @@
+{
+  "_gerado_em": "2026-05-28",
+  "_descricao": "Lançamentos identificados na web para marcas curva S. Top 3 por marca, foco em produtos virais/sucesso de 2025-2026. Arquivo EDITÁVEL manualmente — adicionar/remover lançamentos conforme aparecerem. Atualizado periodicamente por agente de pesquisa.",
+  "_qtd_sugerida_por_loja": 12,
+  "marcas": {
+    "Widi Care": [
+      {"nome": "Shampoo Juba Transição Capilar 500ml", "categoria": "shampoo", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://lojawidicare.com.br/lancamentos-widi-care/", "obs": "Extensão da linha Juba (carro-chefe da marca) voltada para transição capilar; formato 500ml premium."},
+      {"nome": "Gelatina Phytomanga Ativadora UltraNutritiva 300g", "categoria": "gelatina/ativador", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://lojawidicare.com.br/lancamentos-widi-care/", "obs": "Novo formato 300g do ativador Phytomanga, linha vegana queridinha de cachos."}
+    ],
+    "Itallian": [
+      {"nome": "Color Shift Collection", "categoria": "coloração", "descoberto_em": "2026-05-28", "fonte": "youtube_oficial", "url": "https://www.youtube.com/watch?v=C8C9W7Tj1IM", "obs": "Lançamento de março/2026 anunciado oficialmente como o mais novo da Itallian Hairtech; linha de coloração com tendência shift."},
+      {"nome": "Kit Trivitt Extreme Up Reconstrução Profissional", "categoria": "kit reconstrução", "descoberto_em": "2026-05-28", "fonte": "marketplace", "url": "https://www.belezanaweb.com.br/kit-itallian-hairtech-extreme-up-reconstrucao-profissional-4-produtos/", "obs": "Kit profissional Extreme Up em destaque no varejo, linha Trivitt reconstrução."}
+    ],
+    "Marco Boni": [],
+    "Santa Clara": [],
+    "Truss": [
+      {"nome": "No Metal Shampoo", "categoria": "shampoo", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://www.trussprofessional.com.br/lancamentos/", "obs": "Lançamento 2026 com proposta de desintoxicação capilar e remoção de metais pesados; foco em cabelos quimicamente tratados."},
+      {"nome": "No Metal Máscara", "categoria": "máscara", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://www.trussprofessional.com.br/lancamentos/", "obs": "Máscara intensiva linha No Metal, restauração profunda e elasticidade. Par do shampoo No Metal."},
+      {"nome": "Miracle Summer", "categoria": "proteção solar capilar", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://www.trussprofessional.com.br/lancamentos/", "obs": "Linha sazonal verão 2026 com proteção solar e hidratação; venda forte na temporada."}
+    ],
+    "CBB": [
+      {"nome": "Nutry Horse", "categoria": "tratamento capilar", "descoberto_em": "2026-05-28", "fonte": "instagram_oficial", "url": "https://www.instagram.com/p/DKj9KqYML0v/", "obs": "Apresentado no Instagram oficial CBB como novidade recente; linha de cuidado capilar inspirada em fórmula equina."}
+    ],
+    "Natum": [
+      {"nome": "Revival Repair Shampoo", "categoria": "shampoo", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://natumcosmeticos.commercesuite.com.br/lancamentos", "obs": "Linha Revival Repair (Shampoo, Condicionador, Leave-in e Máscara) marcada como Lançamento/Destaque 2026 no catálogo oficial."},
+      {"nome": "Cronograma Capilar Nátum", "categoria": "kit cronograma", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://natumcosmeticos.commercesuite.com.br/lancamentos", "obs": "Kit de cronograma capilar lançado em 2026."},
+      {"nome": "LuminiSpa Seduction", "categoria": "tratamento/spa capilar", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://natumcosmeticos.commercesuite.com.br/lancamentos", "obs": "Novidade 2026 destacada no catálogo Nátum."}
+    ],
+    "Hair Extrattus": [],
+    "Beauty Color": [
+      {"nome": "E.lixir Milagre Anti-Danos", "categoria": "tratamento anti-danos", "descoberto_em": "2026-05-28", "fonte": "blog/imprensa", "url": "https://www.agazeta.com.br/secuida/de-make-a-skincare-30-lancamentos-de-beleza-imperdiveis-de-abril-de-2026-0426", "obs": "Lançamento abril/2026 destacado em lista de imperdíveis do mês; proposta de 'reset' contra danos progressivos."},
+      {"nome": "Cores Reais Argan Coco", "categoria": "coloração", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://beautycolor.com.br/cabelos/rico-em-argancoco", "obs": "Linha de coloração com blend de 8 óleos (Argan, Coco etc), em destaque na home oficial."}
+    ],
+    "ProBelle": [
+      {"nome": "Tratamento Multifuncional 10 em 1", "categoria": "ampolas/tratamento", "descoberto_em": "2026-05-28", "fonte": "instagram_oficial", "url": "https://www.instagram.com/probellecosmeticos/", "obs": "Lançamento com 3 ampolas e 50+ matérias-primas premium; hidratação, nutrição e reconstrução em um só produto."},
+      {"nome": "Force Ultra Nutritive Repair", "categoria": "protetor térmico", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://probelle.com.br/en/products/", "obs": "Protetor térmico com silicones de alta tecnologia e filtro solar; destaque recente da marca."}
+    ],
+    "Yama": [
+      {"nome": "Black Carbon Pó Descolorante", "categoria": "pó descolorante", "descoberto_em": "2026-05-28", "fonte": "imprensa/release", "url": "https://tropicocomunicacao.com.br/yama-cosmeticos-inova-mercado-de-po-descolorante-com-a-criacao-do-black-carbon-produto-com-ativos-que-contribuem-com-a-manutencao-da-saude-dos-fios/", "obs": "Primeiro pó descolorante do Brasil com Carvão Ativado; feedback positivo de cabeleireiros, viral em salões."},
+      {"nome": "Glycolic Repair", "categoria": "tratamento capilar", "descoberto_em": "2026-05-28", "fonte": "imprensa", "url": "https://cosmeticinnovation.com.br/yama-cosmeticos-lanca-nova-linha/", "obs": "Nova linha com Ácido Glicólico; rotina completa em kits."},
+      {"nome": "Scalp Repair", "categoria": "couro cabeludo", "descoberto_em": "2026-05-28", "fonte": "imprensa", "url": "https://cosmeticinnovation.com.br/yama-cosmeticos-lanca-nova-linha/", "obs": "Linha couro cabeludo com tea tree oil."}
+    ]
+  }
+}

@@ -378,13 +378,20 @@ function montarLinhasPedido(marca, loja) {
     const trans = dadosLoja.transito || 0;
     const vd = v60 / 60;
     const alvo = vd * fator;
-    const qtd = Math.max(0, Math.ceil(alvo - saldo - trans));
+    const isLanc = !!p._lancamento;
+    const qtd = isLanc
+      ? (p._lancamento_qtd_sugerida || 12)                  // lançamento usa qtd fixa
+      : Math.max(0, Math.ceil(alvo - saldo - trans));
     const cob = vd > 0 ? (saldo + trans) / vd : 9999;
     return { codigo: p.codigo, referencia: p.referencia || '', descricao: p.descricao || '',
-             v60, vd, saldo, trans, cob, qtd };
+             v60, vd, saldo, trans, cob, qtd, isLanc,
+             obsLanc: isLanc ? (p._lancamento_obs || '') : '' };
   })
   .filter(r => r.qtd > 0)
-  .sort((a,b) => b.v60 - a.v60);                            // mais vendidos primeiro
+  .sort((a,b) => {
+    if (a.isLanc !== b.isLanc) return a.isLanc ? 1 : -1;   // lançamentos no fim
+    return b.v60 - a.v60;                                   // entre não-lançamentos, mais vendidos primeiro
+  });
   return { mk, prazo, prazoExtra, fator, linhas };
 }
 
@@ -407,19 +414,20 @@ function gerarPedidoXLSX(loja, marca) {
     ['Prazo médio de entrega', prazoTxt],
     ['Total de peças sugeridas', totalQtd],
     [],
-    ['Código', 'Referência', 'Descrição', 'Vendas 60d', 'Vendas/dia', 'Saldo', 'Em trânsito', 'Cobertura (dias)', 'Qtd sugerida']
+    ['Código', 'Referência', 'Descrição', 'Vendas 60d', 'Vendas/dia', 'Saldo', 'Em trânsito', 'Cobertura (dias)', 'Qtd sugerida', 'Obs']
   ];
   const body = r.linhas.map(x => [
     x.codigo, x.referencia, x.descricao,
     x.v60, Number(x.vd.toFixed(2)),
     x.saldo, x.trans,
     x.cob > 999 ? '—' : Math.round(x.cob),
-    x.qtd
+    x.qtd,
+    x.isLanc ? ('LANÇAMENTO' + (x.obsLanc ? ' · ' + x.obsLanc : '')) : ''
   ]);
   const aoa = [...head, ...body];
   const wb = XLSX.utils.book_new();
   const ws = XLSX.utils.aoa_to_sheet(aoa);
-  ws['!cols'] = [{wch:10},{wch:14},{wch:42},{wch:11},{wch:11},{wch:9},{wch:11},{wch:14},{wch:13}];
+  ws['!cols'] = [{wch:10},{wch:14},{wch:42},{wch:11},{wch:11},{wch:9},{wch:11},{wch:14},{wch:13},{wch:50}];
   // Negrito no cabeçalho de colunas (linha 8 = índice 7)
   XLSX.utils.book_append_sheet(wb, ws, marca.slice(0,28).replace(/[\\\/\?\*\[\]]/g,'_'));
   const fname = `pedido_${marca.replace(/[^\w]+/g,'_')}_${loja}_${new Date().toISOString().slice(0,10)}.xlsx`;
@@ -461,16 +469,17 @@ function gerarPedidoPDF(loja, marca) {
       <th>Código</th><th>Ref</th><th>Descrição</th>
       <th class="num">Vendas 60d</th><th class="num">Vd/dia</th>
       <th class="num">Saldo</th><th class="num">Trânsito</th>
-      <th class="num">Cob (d)</th><th class="num">Qtd</th>
+      <th class="num">Cob (d)</th><th class="num">Qtd</th><th>Obs</th>
     </tr></thead><tbody>
-    ${r.linhas.map(x => `<tr>
+    ${r.linhas.map(x => `<tr style="${x.isLanc ? 'background:#fff4e6' : ''}">
       <td>${x.codigo}</td><td>${x.referencia}</td><td>${x.descricao}</td>
       <td class="num">${x.v60}</td><td class="num">${x.vd.toFixed(2)}</td>
       <td class="num">${x.saldo}</td><td class="num">${x.trans}</td>
       <td class="num">${x.cob > 999 ? '—' : Math.round(x.cob)}</td>
       <td class="num"><strong>${x.qtd}</strong></td>
+      <td>${x.isLanc ? '<span style="background:#fd7e14;color:#fff;font-size:9px;padding:1px 4px;border-radius:3px;font-weight:600">LANÇAMENTO</span>' + (x.obsLanc ? ' <span style="font-size:10px;color:#7c2d12">'+x.obsLanc+'</span>' : '') : ''}</td>
     </tr>`).join('')}
-    </tbody><tfoot><tr><td colspan="8" style="text-align:right">Total</td><td class="num">${totalQtd.toLocaleString('pt-BR')}</td></tr></tfoot></table>
+    </tbody><tfoot><tr><td colspan="8" style="text-align:right">Total</td><td class="num">${totalQtd.toLocaleString('pt-BR')}</td><td></td></tr></tfoot></table>
   </body></html>`);
   w.document.close();
 }
@@ -1013,16 +1022,20 @@ function toggleProdutos(rowId, loja, marca){
     if (!m || !m.produtos) {
       tr.querySelector('td').innerHTML = '<em class="muted">Sem detalhamento de produtos disponível (próxima atualização da skill traz).</em>';
     } else {
-      // filtrar produtos com vendas ou estoque na loja escolhida
+      // filtrar produtos com vendas ou estoque na loja escolhida (lançamentos sempre entram, mesmo zerados)
       const lojaUpper = loja;
-      const prods = m.produtos
-        .map(p => ({...p, _v: p[lojaUpper]?.vendas||0, _s: p[lojaUpper]?.saldo||0, _t: p[lojaUpper]?.transito||0}))
-        .filter(p => p._v !== 0 || p._s !== 0 || p._t !== 0)
-        .sort((a,b) => b._v - a._v);
+      const prodsAll = m.produtos.map(p => ({...p, _v: p[lojaUpper]?.vendas||0, _s: p[lojaUpper]?.saldo||0, _t: p[lojaUpper]?.transito||0}));
+      const prods = prodsAll
+        .filter(p => p._lancamento || p._v !== 0 || p._s !== 0 || p._t !== 0)
+        .sort((a,b) => (b._v - a._v) || (a._lancamento ? 1 : -1));      // lançamentos vão pro fim
       const numOrfaos = prods.filter(p => p._origem === 'NFe pendente').length;
+      const numLanc = prods.filter(p => p._lancamento).length;
       let h = '';
       if (numOrfaos > 0) {
         h += `<div style="margin:6px 0;padding:6px 10px;background:#fef3c7;border-left:3px solid #f59e0b;font-size:12px;color:#78350f">⚠️ ${numOrfaos} produto${numOrfaos>1?'s':''} com badge <strong>NOVO</strong>: chegaram em NFe pendente mas não têm cadastro correspondente no ERP. Pode ser <strong>produto novo</strong> (primeira compra) ou <strong>código alterado pelo fabricante</strong>.</div>`;
+      }
+      if (numLanc > 0) {
+        h += `<div style="margin:6px 0;padding:6px 10px;background:#fff4e6;border-left:3px solid #fd7e14;font-size:12px;color:#7c2d12">🆕 ${numLanc} <strong>lançamento${numLanc>1?'s':''}</strong> da marca identificado${numLanc>1?'s':''} na web e ainda <strong>não cadastrado${numLanc>1?'s':''}</strong> em nossa base — sugestão padrão de ${(DATA.marcas[0]&&(DATA.marcas.find(x=>x.marca===marca)?.produtos||[]).find(p=>p._lancamento)?._lancamento_qtd_sugerida)||12} un por loja para teste. Ajuste manualmente no pedido se quiser comprar mais/menos.</div>`;
       }
       h += '<table style="margin:6px 0; background:#fafbfc"><thead><tr>'
         +'<th style="text-align:left">Cód</th>'
@@ -1035,11 +1048,20 @@ function toggleProdutos(rowId, loja, marca){
       } else {
         prods.forEach(p => {
           const orfao = p._origem === 'NFe pendente';
-          const styleRow = orfao ? 'background:#fef3c7;' : '';
-          const badge = orfao ? ' <span style="background:#f59e0b;color:#fff;font-size:10px;padding:1px 5px;border-radius:3px;font-weight:600;margin-left:4px" title="Produto novo ou com código alterado — veio em NFe pendente sem cadastro correspondente no ERP">NOVO</span>' : '';
+          const lanc = !!p._lancamento;
+          const styleRow = lanc ? 'background:#fff4e6;' : (orfao ? 'background:#fef3c7;' : '');
+          let badge = '';
+          if (orfao) badge += ' <span style="background:#f59e0b;color:#fff;font-size:10px;padding:1px 5px;border-radius:3px;font-weight:600;margin-left:4px" title="Produto novo ou com código alterado — veio em NFe pendente sem cadastro correspondente no ERP">NOVO</span>';
+          if (lanc) {
+            const obsAttr = (p._lancamento_obs||'').replace(/"/g,'&quot;');
+            badge += ` <span style="background:#fd7e14;color:#fff;font-size:10px;padding:1px 5px;border-radius:3px;font-weight:600;margin-left:4px" title="${obsAttr}${p._lancamento_url?' — '+p._lancamento_url:''}">LANÇAMENTO</span>`;
+          }
+          const descCol = lanc && p._lancamento_url
+            ? `<a href="${p._lancamento_url}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;border-bottom:1px dotted #fd7e14">${p.descricao}</a>${badge}`
+            : `${p.descricao}${badge}`;
           h += `<tr style="${styleRow}"><td style="text-align:left">${p.codigo}</td>`
             +`<td style="text-align:left">${p.referencia||''}</td>`
-            +`<td style="text-align:left">${p.descricao}${badge}</td>`
+            +`<td style="text-align:left">${descCol}</td>`
             +`<td>${fmtUnid(p._v)}</td>`
             +`<td>${fmtUnid(p._s)}</td>`
             +`<td>${fmtUnid(p._t)}</td></tr>`;

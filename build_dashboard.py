@@ -499,6 +499,62 @@ for item in pendentes_processadas:
 for loja in LOJAS:
     chegadas[loja].sort(key=lambda x: x.get('data_lancamento') or x.get('data',''), reverse=True)
 
+# ============ LANÇAMENTOS DE MERCADO (curva S) ============
+# Cruza lancamentos.json (lista curada de produtos novos das marcas S) com nossa base de
+# produtos. Lançamentos que NÃO temos cadastrados viram entradas com flag '_lancamento'
+# nos `produtos[]` da marca — assim aparecem no drilldown do dashboard e nos pedidos.
+LANCAMENTOS_PATH = ROOT / 'lancamentos.json'
+lancamentos_log = {'total_marcas': 0, 'adicionados': [], 'ja_existentes': []}
+if LANCAMENTOS_PATH.exists():
+    try:
+        lanc_data = load_json(LANCAMENTOS_PATH)
+        qtd_loja = int(lanc_data.get('_qtd_sugerida_por_loja', 12) or 12)
+        marcas_lanc = lanc_data.get('marcas', {}) or {}
+        lancamentos_log['total_marcas'] = sum(1 for v in marcas_lanc.values() if v)
+        for marca_nome, lista in marcas_lanc.items():
+            if not lista: continue
+            mk = marca_idx.get(marca_nome)
+            if not mk: continue
+            existentes_norm = [norm(p.get('descricao','')) for p in mk['produtos']]
+            for item in lista:
+                nome_lanc = item.get('nome','').strip()
+                if not nome_lanc: continue
+                nome_norm = norm(nome_lanc)
+                # Match fuzzy ≥40% tokens em algum produto existente
+                tokens_lanc = set(t for t in nome_norm.split() if len(t) >= 3)
+                ja_tem = False
+                for desc_norm in existentes_norm:
+                    tokens_ex = set(desc_norm.split())
+                    if not tokens_lanc: break
+                    overlap = len(tokens_lanc & tokens_ex)
+                    if overlap >= 2 and overlap / len(tokens_lanc) >= 0.4:
+                        ja_tem = True; break
+                if ja_tem:
+                    lancamentos_log['ja_existentes'].append(f"{marca_nome}: {nome_lanc}")
+                    continue
+                # Adiciona como produto sintético (mesma estrutura, com flag)
+                novo = {
+                    'codigo': f"LANC-{marca_nome[:3].upper()}-{len(mk['produtos'])+1:03d}",
+                    'descricao': nome_lanc,
+                    'referencia': item.get('categoria',''),
+                    'L1': {'vendas': 0, 'saldo': 0, 'transito': 0},
+                    'L3': {'vendas': 0, 'saldo': 0, 'transito': 0},
+                    'L4': {'vendas': 0, 'saldo': 0, 'transito': 0},
+                    'L5': {'vendas': 0, 'saldo': 0, 'transito': 0},
+                    '_lancamento': True,
+                    '_lancamento_qtd_sugerida': qtd_loja,
+                    '_lancamento_fonte': item.get('fonte',''),
+                    '_lancamento_url': item.get('url',''),
+                    '_lancamento_obs': item.get('obs',''),
+                    '_lancamento_categoria': item.get('categoria',''),
+                    '_lancamento_descoberto_em': item.get('descoberto_em','')
+                }
+                mk['produtos'].append(novo)
+                lancamentos_log['adicionados'].append(f"{marca_nome}: {nome_lanc}")
+        print(f"Lançamentos: {len(lancamentos_log['adicionados'])} novos / {len(lancamentos_log['ja_existentes'])} já cadastrados", file=sys.stderr)
+    except Exception as e:
+        print(f"warn: falha ao processar lancamentos.json: {e}", file=sys.stderr)
+
 # ============ MONTAR SAÍDA ============
 saida = {
     'gerado_em': HOJE.isoformat() + 'Z',
