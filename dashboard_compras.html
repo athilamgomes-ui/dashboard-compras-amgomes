@@ -812,15 +812,15 @@ function renderChegadas(filtroLoja) {
     if (itens.length === 0) {
       html += `<div style="color:var(--muted);font-size:12px;padding:6px 0">— nenhuma chegada no mês —</div>`;
     } else {
-      html += `<table style="width:100%;border-collapse:collapse;font-size:11.5px;table-layout:fixed">
+      html += `<table style="width:100%;border-collapse:collapse;font-size:10.5px;table-layout:fixed">
         <thead>
-          <tr style="color:var(--muted);font-weight:600;font-size:10.5px;text-transform:uppercase;letter-spacing:0.3px">
-            <th style="text-align:left;padding:3px 2px;border-bottom:1px solid var(--border)">Marca</th>
-            <th style="text-align:center;padding:3px 2px;border-bottom:1px solid var(--border);width:42px">Emi</th>
-            <th style="text-align:center;padding:3px 2px;border-bottom:1px solid var(--border);width:42px">Rec</th>
-            <th style="text-align:right;padding:3px 2px;border-bottom:1px solid var(--border);width:52px">NF</th>
-            <th style="text-align:right;padding:3px 2px;border-bottom:1px solid var(--border);width:78px">Valor</th>
-            <th style="text-align:center;padding:3px 2px;border-bottom:1px solid var(--border);width:18px"></th>
+          <tr style="color:var(--muted);font-weight:600;font-size:9.5px;text-transform:uppercase;letter-spacing:0.2px">
+            <th style="text-align:left;padding:2px 1px;border-bottom:1px solid var(--border)">Marca</th>
+            <th style="text-align:center;padding:2px 1px;border-bottom:1px solid var(--border);width:34px">Emi</th>
+            <th style="text-align:center;padding:2px 1px;border-bottom:1px solid var(--border);width:34px">Rec</th>
+            <th style="text-align:right;padding:2px 1px;border-bottom:1px solid var(--border);width:42px">NF</th>
+            <th style="text-align:right;padding:2px 1px;border-bottom:1px solid var(--border);width:62px">Valor</th>
+            <th style="text-align:center;padding:2px 1px;border-bottom:1px solid var(--border);width:14px"></th>
           </tr>
         </thead>
         <tbody>`;
@@ -835,12 +835,12 @@ function renderChegadas(filtroLoja) {
         const dEmi = fmtData(x.data_emissao || x.data) || '—';
         const dRec = fmtData(x.data_lancamento) || '—';
         html += `<tr title="${x.marca} · NF ${nfNum} · Emi ${dEmi} · Rec ${dRec} · ${valStr}">
-          <td style="padding:3px 2px;border-bottom:1px solid #f1f3f5;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${x.marca}</td>
-          <td style="padding:3px 2px;border-bottom:1px solid #f1f3f5;text-align:center;color:var(--muted)">${dEmi}</td>
-          <td style="padding:3px 2px;border-bottom:1px solid #f1f3f5;text-align:center;color:var(--muted)">${dRec}</td>
-          <td style="padding:3px 2px;border-bottom:1px solid #f1f3f5;text-align:right;color:var(--muted);font-size:10.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${nfNum}</td>
-          <td style="padding:3px 2px;border-bottom:1px solid #f1f3f5;text-align:right;font-variant-numeric:tabular-nums">${valStr}</td>
-          <td style="padding:3px 2px;border-bottom:1px solid #f1f3f5;text-align:center">${tag}</td>
+          <td style="padding:2px 1px;border-bottom:1px solid #f1f3f5;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${x.marca}</td>
+          <td style="padding:2px 1px;border-bottom:1px solid #f1f3f5;text-align:center;color:var(--muted)">${dEmi}</td>
+          <td style="padding:2px 1px;border-bottom:1px solid #f1f3f5;text-align:center;color:var(--muted)">${dRec}</td>
+          <td style="padding:2px 1px;border-bottom:1px solid #f1f3f5;text-align:right;color:var(--muted);font-size:9.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${nfNum}</td>
+          <td style="padding:2px 1px;border-bottom:1px solid #f1f3f5;text-align:right;font-variant-numeric:tabular-nums">${valStr}</td>
+          <td style="padding:2px 1px;border-bottom:1px solid #f1f3f5;text-align:center">${tag}</td>
         </tr>`;
       });
       html += `</tbody></table>`;
