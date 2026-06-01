@@ -814,25 +814,19 @@ function renderChegadas(filtroLoja) {
     } else {
       itens.forEach(x => {
         const tag = x.origem === 'pendente'
-          ? '<span style="background:#fef3c7;color:#92400e;font-size:10px;padding:1px 5px;border-radius:3px;font-weight:600;white-space:nowrap">🟡 trânsito</span>'
-          : '<span style="background:#d1fae5;color:#065f46;font-size:10px;padding:1px 5px;border-radius:3px;font-weight:600;white-space:nowrap">🟢 recebida</span>';
+          ? '<span title="em trânsito" style="font-size:11px">🟡</span>'
+          : '<span title="recebida" style="font-size:11px">🟢</span>';
         const valStr = x.valor != null
           ? fmtRS(x.valor)
           : (x.qtd_pendente ? `${x.qtd_pendente} un` : '—');
         const nf = x.nf && x.nf !== '(agregado)' ? `NF ${x.nf}` : 'agreg.';
         const dEmi = fmtData(x.data_emissao || x.data) || '—';
         const dRec = fmtData(x.data_lancamento) || '—';
-        html += `<div style="padding:5px 2px;border-bottom:1px solid #f1f3f5;font-size:12px">
-          <div style="display:flex;align-items:center;gap:6px">
-            <span style="font-weight:600;flex:1 1 auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${x.marca}">${x.marca}</span>
-            <span style="flex:0 0 auto;font-variant-numeric:tabular-nums;font-weight:500">${valStr}</span>
-            <span style="flex:0 0 auto">${tag}</span>
-          </div>
-          <div class="muted" style="font-size:10.5px;margin-top:2px;display:flex;gap:8px;flex-wrap:wrap">
-            <span>Emi ${dEmi}</span>
-            <span>Rec ${dRec}</span>
-            <span>${nf}</span>
-          </div>
+        html += `<div title="${x.marca} · ${nf} · Emi ${dEmi} · Rec ${dRec}" style="display:flex;align-items:center;gap:6px;padding:4px 2px;border-bottom:1px solid #f1f3f5;font-size:11.5px;white-space:nowrap">
+          <span style="font-weight:600;flex:1 1 auto;overflow:hidden;text-overflow:ellipsis">${x.marca}</span>
+          <span class="muted" style="flex:0 0 auto;font-size:10.5px">${dRec}</span>
+          <span style="flex:0 0 auto;font-variant-numeric:tabular-nums">${valStr}</span>
+          <span style="flex:0 0 auto">${tag}</span>
         </div>`;
       });
     }
