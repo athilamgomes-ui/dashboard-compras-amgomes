@@ -822,13 +822,17 @@ function renderChegadas(filtroLoja) {
         const nf = x.nf && x.nf !== '(agregado)' ? `NF ${x.nf}` : 'agreg.';
         const dEmi = fmtData(x.data_emissao || x.data) || '—';
         const dRec = fmtData(x.data_lancamento) || '—';
-        html += `<div style="display:flex;align-items:center;gap:8px;padding:4px 2px;border-bottom:1px solid #f1f3f5;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">
-          <span style="font-weight:600;flex:0 0 auto;min-width:80px">${x.marca}</span>
-          <span class="muted" style="flex:0 0 auto">Emi ${dEmi}</span>
-          <span class="muted" style="flex:0 0 auto">Rec ${dRec}</span>
-          <span style="flex:1 1 auto;text-align:right;font-variant-numeric:tabular-nums">${valStr}</span>
-          <span class="muted" style="flex:0 0 auto;font-size:11px">${nf}</span>
-          <span style="flex:0 0 auto">${tag}</span>
+        html += `<div style="padding:5px 2px;border-bottom:1px solid #f1f3f5;font-size:12px">
+          <div style="display:flex;align-items:center;gap:6px">
+            <span style="font-weight:600;flex:1 1 auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${x.marca}">${x.marca}</span>
+            <span style="flex:0 0 auto;font-variant-numeric:tabular-nums;font-weight:500">${valStr}</span>
+            <span style="flex:0 0 auto">${tag}</span>
+          </div>
+          <div class="muted" style="font-size:10.5px;margin-top:2px;display:flex;gap:8px;flex-wrap:wrap">
+            <span>Emi ${dEmi}</span>
+            <span>Rec ${dRec}</span>
+            <span>${nf}</span>
+          </div>
         </div>`;
       });
     }
