@@ -1,22 +1,24 @@
 {
-  "_gerado_em": "2026-05-28",
+  "_gerado_em": "2026-06-01",
   "_descricao": "Lançamentos identificados na web para marcas curva S. Top 3 por marca, foco em produtos virais/sucesso de 2025-2026. Arquivo EDITÁVEL manualmente — adicionar/remover lançamentos conforme aparecerem. Atualizado periodicamente por agente de pesquisa.",
   "_qtd_sugerida_por_loja": 12,
   "marcas": {
     "Widi Care": [
-      {"nome": "Shampoo Juba Transição Capilar 500ml", "categoria": "shampoo", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://lojawidicare.com.br/lancamentos-widi-care/", "obs": "Extensão da linha Juba (carro-chefe da marca) voltada para transição capilar; formato 500ml premium."},
+      {"nome": "Shampoo Juba Transição Capilar 500ml", "categoria": "shampoo", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://lojawidicare.com.br/lancamentos-widi-care/", "obs": "Extensão da linha Juba (carro-chefe da marca) voltada para transição capilar; formato 500ml premium. Confirmado ainda listado como lançamento em jun/2026."},
       {"nome": "Gelatina Phytomanga Ativadora UltraNutritiva 300g", "categoria": "gelatina/ativador", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://lojawidicare.com.br/lancamentos-widi-care/", "obs": "Novo formato 300g do ativador Phytomanga, linha vegana queridinha de cachos."}
     ],
     "Itallian": [
       {"nome": "Color Shift Collection", "categoria": "coloração", "descoberto_em": "2026-05-28", "fonte": "youtube_oficial", "url": "https://www.youtube.com/watch?v=C8C9W7Tj1IM", "obs": "Lançamento de março/2026 anunciado oficialmente como o mais novo da Itallian Hairtech; linha de coloração com tendência shift."},
-      {"nome": "Kit Trivitt Extreme Up Reconstrução Profissional", "categoria": "kit reconstrução", "descoberto_em": "2026-05-28", "fonte": "marketplace", "url": "https://www.belezanaweb.com.br/kit-itallian-hairtech-extreme-up-reconstrucao-profissional-4-produtos/", "obs": "Kit profissional Extreme Up em destaque no varejo, linha Trivitt reconstrução."}
+      {"nome": "Kit Trivitt Extreme Up Reconstrução Profissional", "categoria": "kit reconstrução", "descoberto_em": "2026-05-28", "fonte": "marketplace", "url": "https://www.belezanaweb.com.br/kit-itallian-hairtech-extreme-up-reconstrucao-profissional-4-produtos/", "obs": "Kit profissional Extreme Up (Home Care) em destaque no varejo, nova embalagem; linha Trivitt reconstrução."}
     ],
-    "Marco Boni": [],
+    "Marco Boni": [
+      {"nome": "Escova Desembaraçante Árvore 7257", "categoria": "escova/acessório", "descoberto_em": "2026-06-01", "fonte": "site_oficial", "url": "https://www.marcoboni.com.br/produto/escova-arvore/", "obs": "Lançamento recente (vídeo oficial set/2025); corpo anatômico em formato de galhos, cerdas flexíveis de nylon, todos os tipos de cabelo. Cores sortidas, ref 7257."}
+    ],
     "Santa Clara": [],
     "Truss": [
+      {"nome": "Blond Revolution", "categoria": "linha loiros (shampoo/máscara/protetor)", "descoberto_em": "2026-06-01", "fonte": "site_oficial", "url": "https://www.trussprofessional.com.br/lancamentos/", "obs": "Último lançamento Truss e 1ª campanha global da marca; linha de 7 produtos p/ loiros com tecnologia Bond Restore, 90% menos quebra. Viral no TikTok (Impassable Blond, Net Blond Mask, Antioxidant Shampoo)."},
       {"nome": "No Metal Shampoo", "categoria": "shampoo", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://www.trussprofessional.com.br/lancamentos/", "obs": "Lançamento 2026 com proposta de desintoxicação capilar e remoção de metais pesados; foco em cabelos quimicamente tratados."},
-      {"nome": "No Metal Máscara", "categoria": "máscara", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://www.trussprofessional.com.br/lancamentos/", "obs": "Máscara intensiva linha No Metal, restauração profunda e elasticidade. Par do shampoo No Metal."},
-      {"nome": "Miracle Summer", "categoria": "proteção solar capilar", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://www.trussprofessional.com.br/lancamentos/", "obs": "Linha sazonal verão 2026 com proteção solar e hidratação; venda forte na temporada."}
+      {"nome": "No Metal Máscara", "categoria": "máscara", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://www.trussprofessional.com.br/lancamentos/", "obs": "Máscara intensiva linha No Metal, restauração profunda e elasticidade. Par do shampoo No Metal."}
     ],
     "CBB": [
       {"nome": "Nutry Horse", "categoria": "tratamento capilar", "descoberto_em": "2026-05-28", "fonte": "instagram_oficial", "url": "https://www.instagram.com/p/DKj9KqYML0v/", "obs": "Apresentado no Instagram oficial CBB como novidade recente; linha de cuidado capilar inspirada em fórmula equina."},
@@ -38,7 +40,7 @@
       {"nome": "SOS Acidificante", "categoria": "tratamento acidificante", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://probelle.com.br/sos-acidificante-o-resgate-que-seu-cabelo-clama/", "obs": "Lançamento recente apresentado como resgate instantâneo de brilho; destaque no blog oficial."}
     ],
     "Yama": [
-      {"nome": "Black Carbon Pó Descolorante", "categoria": "pó descolorante", "descoberto_em": "2026-05-28", "fonte": "imprensa/release", "url": "https://tropicocomunicacao.com.br/yama-cosmeticos-inova-mercado-de-po-descolorante-com-a-criacao-do-black-carbon-produto-com-ativos-que-contribuem-com-a-manutencao-da-saude-dos-fios/", "obs": "Primeiro pó descolorante do Brasil com Carvão Ativado; feedback positivo de cabeleireiros, viral em salões."},
+      {"nome": "Black Carbon Pó Descolorante", "categoria": "pó descolorante", "descoberto_em": "2026-05-28", "fonte": "imprensa/release", "url": "https://tropicocomunicacao.com.br/yama-cosmeticos-inova-mercado-de-po-descolorante-com-a-criacao-do-black-carbon-produto-com-ativos-que-contribuem-com-a-manutencao-da-saude-dos-fios/", "obs": "Primeiro pó descolorante do Brasil com Carvão Ativado; pigmentação cinza/efeito detox, vegano/cruelty-free. Viral em salões, feedback positivo de cabeleireiros."},
       {"nome": "Glycolic Repair", "categoria": "tratamento capilar", "descoberto_em": "2026-05-28", "fonte": "imprensa", "url": "https://cosmeticinnovation.com.br/yama-cosmeticos-lanca-nova-linha/", "obs": "Nova linha com Ácido Glicólico; rotina completa em kits."},
       {"nome": "Scalp Repair", "categoria": "couro cabeludo", "descoberto_em": "2026-05-28", "fonte": "imprensa", "url": "https://cosmeticinnovation.com.br/yama-cosmeticos-lanca-nova-linha/", "obs": "Linha couro cabeludo com tea tree oil."}
     ]
