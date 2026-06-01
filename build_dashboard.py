@@ -281,10 +281,8 @@ def marca_por_descricao(desc):
                 if norm(kw) in d: return marca
     return None
 
-def forn_brand_info(nfe):
-    """Marca do fornecedor. Retorna (marca_unica|None, is_multi).
-    is_multi=True quando o fornecedor é multi-marca (label com '+', ex 'Colorama+Elseve')
-    — nesse caso NÃO atribuir todos os produtos a uma marca só; detectar por produto."""
+def forn_brand_raw(nfe):
+    """String de marca mapeada para o fornecedor (ou None). Ex 'Lizze', 'Vertix+Ricca'."""
     cnpj = str(nfe.get('DadosEmitente',{}).get('Documento','')).replace('.','').replace('/','').replace('-','')
     v = forn_marcas.get('por_cnpj', {}).get(cnpj)
     if v is None:
@@ -292,6 +290,13 @@ def forn_brand_info(nfe):
         for substr, marca in forn_marcas.get('por_nome_substring',{}).items():
             if substr.upper() in nome:
                 v = marca; break
+    return v
+
+def forn_brand_info(nfe):
+    """Marca do fornecedor. Retorna (marca_unica|None, is_multi).
+    is_multi=True quando o fornecedor é multi-marca (label com '+', ex 'Colorama+Elseve')
+    — nesse caso NÃO atribuir todos os produtos a uma marca só; detectar por produto."""
+    v = forn_brand_raw(nfe)
     if v is None:
         return (None, False)
     return (None, True) if '+' in v else (v, False)
@@ -402,7 +407,9 @@ for loja, nfe in all_pendentes:
     curva_det = [m for m in marcas_detectadas if m in marca_idx]
     fora_det = [m for m in marcas_detectadas if m not in marca_idx]
     ordenadas = sorted(set(curva_det)) + sorted(set(fora_det))
-    label = '+'.join(ordenadas[:3]) if ordenadas else None
+    # Fallback do label: se nenhum produto foi detectado por descrição, usar o label
+    # combinado do fornecedor (ex Belliz → 'Vertix+Ricca') só para exibição na chegada.
+    label = '+'.join(ordenadas[:3]) if ordenadas else forn_brand_raw(nfe)
     pendentes_processadas.append({'loja':loja, 'nfe':nfe, 'marca':label, 'valor':valor_total})
 
 # Recalcular brand-level transito após pendentes
