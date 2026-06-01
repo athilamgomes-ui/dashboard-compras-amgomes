@@ -212,7 +212,8 @@ BRAND_KEYWORDS = {
     'Kamaleao': ['KAMALEAO','KAMALEÃO',' KC '],
     'Risque': ['RISQUE'],
     'Igora': ['IGORA'],
-    'Colorama': ['COLORAMA'],
+    'Colorama': ['COLORAMA', 'ESM COL'],
+    'Elseve': ['ELSEVE'],
     'Vizzela': ['VIZZELA'],
     'Latika': ['LATIKA'],
     'Otimo': ['OTIMO','ÓTIMO'],
@@ -269,6 +270,40 @@ def detect_marca_nfe(nfe):
         return (m, 'descricao')
     return (None, None)
 
+def marca_por_descricao(desc):
+    """Detecta marca de UM produto pela descrição (keywords). Retorna marca|None."""
+    d = norm(desc)
+    for marca, kws in BRAND_KEYWORDS.items():
+        for kw in kws:
+            if kw.startswith('\\b'):
+                if re.search(kw, d): return marca
+            else:
+                if norm(kw) in d: return marca
+    return None
+
+def forn_brand_info(nfe):
+    """Marca do fornecedor. Retorna (marca_unica|None, is_multi).
+    is_multi=True quando o fornecedor é multi-marca (label com '+', ex 'Colorama+Elseve')
+    — nesse caso NÃO atribuir todos os produtos a uma marca só; detectar por produto."""
+    cnpj = str(nfe.get('DadosEmitente',{}).get('Documento','')).replace('.','').replace('/','').replace('-','')
+    v = forn_marcas.get('por_cnpj', {}).get(cnpj)
+    if v is None:
+        nome = (nfe.get('DadosEmitente',{}).get('Nome') or '').upper()
+        for substr, marca in forn_marcas.get('por_nome_substring',{}).items():
+            if substr.upper() in nome:
+                v = marca; break
+    if v is None:
+        return (None, False)
+    return (None, True) if '+' in v else (v, False)
+
+def detect_marca_produto(prod, forn_single, is_multi):
+    """Marca de UM produto: (1) descrição; (2) se não casou e fornecedor é single-brand,
+    usa a marca do fornecedor. Multi-marca sem match de descrição → None (órfão)."""
+    m = marca_por_descricao(prod.get('DescricaoProduto',''))
+    if m: return m
+    if not is_multi and forn_single: return forn_single
+    return None
+
 def keep_nfe(nfe):
     nat = nfe.get('NaturezaOperacao','') or ''
     if EXCL_NAT_RE.match(nat): return False
@@ -301,63 +336,74 @@ for emp_s, data in pendentes_by_emp.items():
     pendentes_log[loja] = {'raw':raw_count, 'kept':len(kept)}
 print(f"Etapa 3.6 pendentes: {pendentes_log}", file=sys.stderr)
 
-# Para cada pendente, detectar marca e adicionar trânsito + compras_mensais_rs
+# Para cada pendente: detecção PER-PRODUTO (uma NFe pode ter várias marcas — ex.
+# distribuidores como Okajima: Colorama+Elseve+Risque). Cada produto é atribuído à
+# sua marca; compras_mensais_rs e trânsito somam por marca separadamente. O label
+# da chegada combina as marcas curva detectadas (ex "Colorama+Risque").
+def add_transito_produto(mk, loja, prod_nfe, qty):
+    desc_nfe = norm(prod_nfe.get('DescricaoProduto',''))
+    tokens_nfe = set(desc_nfe.split())
+    best, best_score = None, 0
+    for p in mk['produtos']:
+        tokens_erp = set(norm(p.get('descricao','')).split())
+        if not tokens_nfe or not tokens_erp: continue
+        overlap = len(tokens_nfe & tokens_erp)
+        score = overlap / max(len(tokens_nfe), len(tokens_erp))
+        if score >= 0.5 and overlap >= 3 and score > best_score:
+            best, best_score = p, score
+    if best:
+        best[loja]['transito'] = best[loja].get('transito',0) + qty
+    else:
+        cprod = str(prod_nfe.get('CProd',''))
+        novo = next((p for p in mk['produtos'] if p.get('referencia')==cprod and p.get('_origem')=='NFe pendente'), None)
+        if not novo:
+            novo = {
+                'codigo': f'NF-{cprod}', 'descricao': prod_nfe.get('DescricaoProduto',''), 'referencia': cprod,
+                'L1':{'vendas':0,'saldo':0,'transito':0}, 'L3':{'vendas':0,'saldo':0,'transito':0},
+                'L4':{'vendas':0,'saldo':0,'transito':0}, 'L5':{'vendas':0,'saldo':0,'transito':0},
+                '_origem': 'NFe pendente'
+            }
+            mk['produtos'].append(novo)
+        novo[loja]['transito'] += qty
+
 pendentes_processadas = []
 for loja, nfe in all_pendentes:
-    marca, fonte = detect_marca_nfe(nfe)
-    # Calcular valor
-    valor = sum(p.get('ValorBruto',0) or 0 for p in (nfe.get('Produtos') or []))
-    if not valor:
-        valor = nfe.get('ValorTotalNota', 0) or 0
-    pendentes_processadas.append({'loja':loja, 'nfe':nfe, 'marca':marca, 'valor':valor})
-    # Adicionar em compras_mensais_rs se marca conhecida
-    if marca and marca in marca_idx:
-        de = nfe.get('DataEmissao')
-        try:
-            dt = datetime.fromisoformat(de.replace('Z','+00:00'))
-            mes_str = str(dt.month)
-            cm = marca_idx[marca]['compras_mensais_rs'][loja]
-            cm[mes_str] = cm.get(mes_str, 0) + valor
-        except:
-            pass
-    # Trânsito per-produto: adicionar qty dos itens pendentes
-    # Fuzzy match: tentar achar produto da marca por descrição
-    if marca and marca in marca_idx:
-        mk = marca_idx[marca]
-        for prod_nfe in (nfe.get('Produtos') or []):
-            qty = prod_nfe.get('QuantidadeComercial', 0) or 0
-            if qty <= 0: continue
-            desc_nfe = norm(prod_nfe.get('DescricaoProduto',''))
-            tokens_nfe = set(desc_nfe.split())
-            best = None
-            best_score = 0
-            for p in mk['produtos']:
-                desc_erp = norm(p.get('descricao',''))
-                tokens_erp = set(desc_erp.split())
-                if not tokens_nfe or not tokens_erp: continue
-                overlap = len(tokens_nfe & tokens_erp)
-                score = overlap / max(len(tokens_nfe), len(tokens_erp))
-                if score >= 0.5 and overlap >= 3 and score > best_score:
-                    best = p; best_score = score
-            if best:
-                best[loja]['transito'] = best[loja].get('transito',0) + qty
-            else:
-                # Adicionar como produto novo (órfão)
-                cprod = str(prod_nfe.get('CProd',''))
-                novo = next((p for p in mk['produtos'] if p.get('referencia')==cprod and p.get('_origem')=='NFe pendente'), None)
-                if not novo:
-                    novo = {
-                        'codigo': f'NF-{cprod}',
-                        'descricao': prod_nfe.get('DescricaoProduto',''),
-                        'referencia': cprod,
-                        'L1':{'vendas':0,'saldo':0,'transito':0},
-                        'L3':{'vendas':0,'saldo':0,'transito':0},
-                        'L4':{'vendas':0,'saldo':0,'transito':0},
-                        'L5':{'vendas':0,'saldo':0,'transito':0},
-                        '_origem': 'NFe pendente'
-                    }
-                    mk['produtos'].append(novo)
-                novo[loja]['transito'] += qty
+    forn_single, is_multi = forn_brand_info(nfe)
+    valor_total = sum(p.get('ValorBruto',0) or 0 for p in (nfe.get('Produtos') or []))
+    if not valor_total:
+        valor_total = nfe.get('ValorTotalNota', 0) or 0
+    de = nfe.get('DataEmissao')
+    try:
+        mes_str = str(datetime.fromisoformat(de.replace('Z','+00:00')).month)
+    except:
+        mes_str = None
+    # Agrupar produtos por marca detectada
+    por_marca = {}  # marca -> {valor, prods:[(prod,qty)]}
+    for prod_nfe in (nfe.get('Produtos') or []):
+        m = detect_marca_produto(prod_nfe, forn_single, is_multi)
+        qty = prod_nfe.get('QuantidadeComercial', 0) or 0
+        val = prod_nfe.get('ValorBruto', 0) or 0
+        g = por_marca.setdefault(m, {'valor':0, 'prods':[]})
+        g['valor'] += val
+        if qty > 0: g['prods'].append((prod_nfe, qty))
+    # Atribuir por marca: compras_mensais_rs + trânsito (só marcas da curva)
+    marcas_detectadas = []
+    for m, g in por_marca.items():
+        if not m: continue
+        marcas_detectadas.append(m)
+        if m not in marca_idx: continue  # ex Elseve: rótulo só, não está na curva
+        if mes_str:
+            cm = marca_idx[m]['compras_mensais_rs'][loja]
+            cm[mes_str] = cm.get(mes_str, 0) + g['valor']
+        mk = marca_idx[m]
+        for prod_nfe, qty in g['prods']:
+            add_transito_produto(mk, loja, prod_nfe, qty)
+    # Label da chegada: marcas curva primeiro (ordenadas), depois não-curva; máx 3
+    curva_det = [m for m in marcas_detectadas if m in marca_idx]
+    fora_det = [m for m in marcas_detectadas if m not in marca_idx]
+    ordenadas = sorted(set(curva_det)) + sorted(set(fora_det))
+    label = '+'.join(ordenadas[:3]) if ordenadas else None
+    pendentes_processadas.append({'loja':loja, 'nfe':nfe, 'marca':label, 'valor':valor_total})
 
 # Recalcular brand-level transito após pendentes
 for mk in marcas_out:
