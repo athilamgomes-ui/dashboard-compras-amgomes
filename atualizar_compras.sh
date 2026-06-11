@@ -19,8 +19,18 @@ TS="$(date '+%Y-%m-%d %H:%M')"
 
 echo "=== [1/4] Coleta Microvix (Playwright headless) ==="
 cd "$SCRIPTS" || exit 20
-if ! "$NODE" coleta_compras.mjs all; then
-  echo "ERRO: coleta falhou. Dados anteriores PRESERVADOS (compras_raw.json não sobrescrito em falha)."
+# Retry: o login do ERP Microvix às vezes fica instável (NAV_FAIL / timeout 30s
+# navegando no v4/home). Tentar até 4x com intervalo crescente antes de desistir —
+# evita pular um dia inteiro por causa de lentidão transitória do servidor.
+COLETA_OK=0
+for TENT in 1 2 3 4; do
+  echo "--- coleta tentativa $TENT/4 ---"
+  if "$NODE" coleta_compras.mjs all; then COLETA_OK=1; break; fi
+  echo "coleta falhou (tentativa $TENT). Aguardando antes de retry..."
+  sleep $((TENT * 30))
+done
+if [ "$COLETA_OK" -ne 1 ]; then
+  echo "ERRO: coleta falhou após 4 tentativas. Dados anteriores PRESERVADOS (compras_raw.json não sobrescrito em falha)."
   exit 10
 fi
 
