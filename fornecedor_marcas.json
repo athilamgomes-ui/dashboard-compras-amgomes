@@ -24,7 +24,8 @@
     "JAPINHA INDUSTRIA": "Japinha",
     "R C DISTRIBUICAO E COMERCIO": "Lizze",
     "BELLIZ IND": "Vertix+Ricca",
-    "OKAJIMA": "Colorama+Elseve"
+    "OKAJIMA": "Colorama+Elseve",
+    "R S COMERCIO E INDUSTRIA DE ELETRONICOS": "Kizzen"
   },
   "_uso_interno": {
     "_descricao": "Fornecedores cujos produtos NÃO são para revenda (sacolas, embalagens, material de loja). Aparecem em chegadas_mes com marca para rastreio, mas não entram em compras_mensais_rs nem em sugestões de compra.",
