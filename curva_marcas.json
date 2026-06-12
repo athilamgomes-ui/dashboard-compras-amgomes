@@ -1,6 +1,6 @@
 {
   "_descricao": "Curva S/A/B por loja (S = estratégica/prioritária no orçamento; A = alta prioridade; B = oportunista). Editável manualmente.",
-  "_ultima_edicao": "2026-05-28",
+  "_ultima_edicao": "2026-06-12",
   "L1": {
     "_loja": "Casa da Beleza Altamira (Empresa 1)",
     "A": [
@@ -25,7 +25,8 @@
       "Mutari",
       "Belliz",
       "Depil Bella",
-      "ZGY"
+      "ZGY",
+      "Kizzen"
     ],
     "S": [
       "Widi Care",
@@ -65,7 +66,8 @@
       "Mutari",
       "Belliz",
       "Depil Bella",
-      "ZGY"
+      "ZGY",
+      "Kizzen"
     ],
     "S": [
       "Widi Care",
@@ -104,7 +106,8 @@
       "Igora",
       "Belliz",
       "Kamaleao",
-      "Depil Bella"
+      "Depil Bella",
+      "Kizzen"
     ],
     "S": [
       "Widi Care",
@@ -145,7 +148,8 @@
       "Igora",
       "Belliz",
       "Kamaleao",
-      "Mirra"
+      "Mirra",
+      "Kizzen"
     ],
     "S": [
       "Widi Care",
