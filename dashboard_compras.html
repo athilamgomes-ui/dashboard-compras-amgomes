@@ -619,8 +619,8 @@ function render() {
   let html = `<table>
     <thead><tr>
       <th>Marca</th><th>Curva</th>
-      <th>Vendas 60d (un)</th><th>Estoque (un)</th>
       <th title="Unidades que entraram na última nota fiscal lançada (somadas por produto da marca)">Últ. entrada (un)</th>
+      <th>Vendas 60d (un)</th><th>Estoque (un)</th>
       <th>Trânsito (un)</th>
       <th>Cobertura (dias)</th><th>Sugestão (un)</th>
       <th>Pedido</th>
@@ -651,9 +651,9 @@ function render() {
       html += `<tr class="${cls}" data-key="${s.loja}|${s.marca}" onclick="toggleProdutos('${rowId}', '${s.loja}', '${marcaEsc}')" style="cursor:pointer">
         <td><span class="caret" id="caret-${rowId}">▶</span> <span class="brand">${s.marca}</span></td>
         <td>${s.curva}</td>
+        <td>${s.ult_entrada ? fmtUnid(s.ult_entrada) : '<span class="muted">—</span>'}</td>
         <td>${fmtUnid(s.venda_60d)}</td>
         <td>${estoqueCell(s)}</td>
-        <td>${s.ult_entrada ? fmtUnid(s.ult_entrada) : '<span class="muted">—</span>'}</td>
         <td>${fmtUnid(s.transito)}</td>
         <td class="${STATUS[stat].cls}">${fmtCobertura(s.cobertura_dias)}</td>
         <td class="sug ${s.sugestao_compra > 0 ? 'has' : ''}">${fmtUnid(s.sugestao_compra)}</td>
@@ -1137,16 +1137,15 @@ function toggleProdutos(rowId, loja, marca){
       if (numLanc > 0) {
         h += `<div style="margin:6px 0;padding:6px 10px;background:#fff4e6;border-left:3px solid #fd7e14;font-size:12px;color:#7c2d12">🆕 ${numLanc} <strong>lançamento${numLanc>1?'s':''}</strong> da marca identificado${numLanc>1?'s':''} na web e ainda <strong>não cadastrado${numLanc>1?'s':''}</strong> em nossa base — sugestão padrão de ${(DATA.marcas[0]&&(DATA.marcas.find(x=>x.marca===marca)?.produtos||[]).find(p=>p._lancamento)?._lancamento_qtd_sugerida)||12} un por loja para teste. Ajuste manualmente no pedido se quiser comprar mais/menos.</div>`;
       }
-      const fmtEntCab = '<th title="Quantidade que entrou na última nota fiscal lançada deste produto (e a data)">Últ. entrada</th>'
-        + '<th title="Estoque estimado = última entrada − vendas desde a entrada. Usado quando o saldo do ERP pode estar errado.">Est. estimado</th>';
+      const fmtEntCab = '<th title="Quantidade que entrou na última nota fiscal lançada deste produto (e a data)">Últ. entrada</th>';
       h += '<table style="margin:6px 0; background:#fafbfc"><thead><tr>'
         +'<th style="text-align:left">Cód</th>'
         +'<th style="text-align:left">Ref</th>'
         +'<th style="text-align:left">Descrição</th>'
-        +'<th>Vendas 60d</th><th>Estoque</th>'+fmtEntCab+'<th>Trânsito</th>'
+        +fmtEntCab+'<th>Vendas 60d</th><th>Estoque</th><th>Trânsito</th>'
         +'</tr></thead><tbody>';
       if (prods.length === 0) {
-        h += `<tr><td colspan="8" style="text-align:center;color:var(--muted)">Sem produtos com movimentação em ${loja}</td></tr>`;
+        h += `<tr><td colspan="7" style="text-align:center;color:var(--muted)">Sem produtos com movimentação em ${loja}</td></tr>`;
       } else {
         prods.forEach(p => {
           const orfao = p._origem === 'NFe pendente';
@@ -1164,22 +1163,19 @@ function toggleProdutos(rowId, loja, marca){
           const entTxt = p._ent > 0
             ? `${fmtUnid(p._ent)}${p._entData ? ` <span class="muted" style="font-size:10px">${p._entData.slice(8,10)}/${p._entData.slice(5,7)}</span>` : ''}`
             : '<span class="muted">—</span>';
-          const estTxt = p._est != null ? fmtUnid(p._est) : '<span class="muted">—</span>';
           h += `<tr style="${styleRow}"><td style="text-align:left">${p.codigo}</td>`
             +`<td style="text-align:left">${p.referencia||''}</td>`
             +`<td style="text-align:left">${descCol}</td>`
+            +`<td>${entTxt}</td>`
             +`<td>${fmtUnid(p._v)}</td>`
             +`<td>${fmtUnid(p._s)}</td>`
-            +`<td>${entTxt}</td>`
-            +`<td>${estTxt}</td>`
             +`<td>${fmtUnid(p._t)}</td></tr>`;
         });
         h += `<tr style="font-weight:600;border-top:2px solid var(--border)">`
           +`<td colspan="3" style="text-align:right">TOTAL (${prods.length} produto${prods.length>1?'s':''})</td>`
+          +`<td>${fmtUnid(prods.reduce((a,p)=>a+p._ent,0))}</td>`
           +`<td>${fmtUnid(prods.reduce((a,p)=>a+p._v,0))}</td>`
           +`<td>${fmtUnid(prods.reduce((a,p)=>a+p._s,0))}</td>`
-          +`<td>${fmtUnid(prods.reduce((a,p)=>a+p._ent,0))}</td>`
-          +`<td>${fmtUnid(prods.reduce((a,p)=>a+(p._est||0),0))}</td>`
           +`<td>${fmtUnid(prods.reduce((a,p)=>a+p._t,0))}</td></tr>`;
       }
       h += '</tbody></table>';
