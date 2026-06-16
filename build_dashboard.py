@@ -186,6 +186,60 @@ for n in notas:
             cm = marca_idx[marca]['compras_mensais_rs'][n['loja']]
             cm[mes_str] = cm.get(mes_str, 0) + valor
 
+# ============ ÚLTIMA ENTRADA POR PRODUTO (qtd + data da última NF lançada) ============
+# Para cada (código, loja): a NF lançada mais recente que contém o produto + a qtd entrada.
+# Usado para (a) exibir no drilldown e (b) estimar o estoque real quando o saldo do ERP
+# está errado: estoque_estimado = última_entrada − vendas_desde_a_entrada.
+ult_entrada = {}  # (codigo, loja) -> {'q': qtd, 'data': iso}
+for n in notas:
+    loja = n.get('loja')
+    if not loja: continue
+    data_ref = n.get('data_lancamento') or n.get('data')
+    if not data_ref: continue
+    qpc = {}  # qtd por código dentro desta nota
+    for it in n.get('itens', []):
+        cod = str(it.get('c',''))
+        qpc[cod] = qpc.get(cod, 0) + (it.get('q', 0) or 0)
+    for cod, q in qpc.items():
+        key = (cod, loja)
+        prev = ult_entrada.get(key)
+        if prev is None or data_ref > prev['data']:
+            ult_entrada[key] = {'q': q, 'data': data_ref}
+        elif data_ref == prev['data']:
+            prev['q'] += q  # mesma data → soma
+
+def _dias_desde(iso):
+    try:
+        return max(0, (HOJE - datetime.fromisoformat(iso[:10])).days)
+    except:
+        return 0
+
+# Anexar a cada produto: ent (qtd última entrada), ent_data, est (estoque estimado),
+# saldo_efetivo = min(saldo ERP, estoque estimado) — conservador contra saldo inflado.
+for mk in marcas_out:
+    for p in mk['produtos']:
+        cod = str(p['codigo'])
+        for loja in LOJAS:
+            lp = p[loja]
+            ent = ult_entrada.get((cod, loja))
+            if ent and ent['q'] > 0:
+                vd = lp['vendas'] / 60.0
+                vendas_desde = min(ent['q'], vd * _dias_desde(ent['data']))
+                est = max(0, ent['q'] - vendas_desde)
+                lp['ent'] = round(ent['q'])
+                lp['ent_data'] = ent['data'][:10]
+                lp['est'] = round(est)
+                # Só usar a estimativa para REDUZIR o estoque quando a última entrada é a
+                # fonte dominante (qtd entrada >= saldo ERP). Se o saldo ERP > última entrada,
+                # há estoque acumulado de compras anteriores → confiar no ERP (senão a
+                # estimativa subestima marcas de alto giro e infla a sugestão).
+                if ent['q'] >= lp['saldo']:
+                    lp['saldo_efetivo'] = min(lp['saldo'], est)
+                else:
+                    lp['saldo_efetivo'] = lp['saldo']
+            else:
+                lp['saldo_efetivo'] = lp['saldo']
+
 # ============ ETAPA 3.6: NFes pendentes ============
 pendentes_by_emp = raw['pendentes']  # {"1":{NFes:[...]}, "3":{...}, ...}
 
@@ -464,7 +518,16 @@ for mk in marcas_out:
 
 print(f"Etapa 3.7: {len(zerados)} (marca×loja) zerados", file=sys.stderr)
 
+# Agregar por marca×loja: saldo_efetivo (Σ produtos), última entrada total, estoque estimado total
+for mk in marcas_out:
+    for loja in LOJAS:
+        mk['lojas'][loja]['saldo_efetivo'] = sum(p[loja].get('saldo_efetivo', p[loja]['saldo']) for p in mk['produtos'])
+        mk['lojas'][loja]['ult_entrada'] = sum(p[loja].get('ent', 0) for p in mk['produtos'])
+        mk['lojas'][loja]['estoque_estimado'] = sum(p[loja].get('est', p[loja].get('saldo_efetivo', p[loja]['saldo'])) for p in mk['produtos'])
+
 # ============ ETAPA 4: Sugestões ============
+# Estoque usado = saldo_efetivo = min(saldo ERP, estoque estimado pela última entrada − vendas).
+# Protege contra saldo do ERP inflado/errado (a sugestão não fica só no saldo).
 curva_order = {'S':0,'A':1,'B':2}
 sugestoes = []
 for loja in LOJAS:
@@ -474,13 +537,15 @@ for loja in LOJAS:
             if not mk: continue
             lj = mk['lojas'][loja]
             vd = lj['vendas_60d'] / 60.0
-            estoque = lj['saldo_atual'] + lj['transito']
+            saldo_ef = lj.get('saldo_efetivo', lj['saldo_atual'])
+            estoque = saldo_ef + lj['transito']
             cob = estoque/vd if vd > 0 else 9999
             alvo = vd * 75
             sug = max(0, alvo - estoque)
             sugestoes.append({
                 'loja':loja, 'marca':marca, 'curva':cv,
                 'venda_60d':lj['vendas_60d'], 'saldo_atual':lj['saldo_atual'],
+                'saldo_efetivo':round(saldo_ef), 'ult_entrada':round(lj.get('ult_entrada',0)),
                 'transito':lj['transito'],
                 'cobertura_dias':round(cob,1), 'sugestao_compra':round(sug)
             })

@@ -305,6 +305,18 @@ const fmtCobertura = c => {
   const v = Math.max(0, Math.round(c||0));
   return (v > 99 ? '99+' : v) + ' dias';
 };
+// Célula de estoque: mostra o saldo do ERP; se o estoque efetivo (usado no cálculo)
+// for menor — porque a estimativa por (última entrada − vendas) ficou abaixo do
+// saldo do ERP — sinaliza com ⚠️ e o valor efetivo usado, em tooltip.
+function estoqueCell(s) {
+  const saldo = s.saldo_atual || 0;
+  const ef = (s.saldo_efetivo != null) ? s.saldo_efetivo : saldo;
+  if (ef < saldo) {
+    return `<span title="Saldo ERP: ${fmtUnid(saldo)} · estoque usado no cálculo (última entrada − vendas): ${fmtUnid(ef)}. O cálculo usa o menor para não subestimar a compra quando o saldo do ERP está alto demais.">`
+      + `${fmtUnid(saldo)} <span style="color:var(--crit);font-weight:600">⚠️${fmtNum(ef)}</span></span>`;
+  }
+  return fmtUnid(saldo);
+}
 
 let DATA = null;
 let TRANSF_ULTIMA = []; // sugestões da última renderização, p/ exportação
@@ -442,16 +454,20 @@ function montarLinhasPedido(marca, loja) {
     const dadosLoja = p[loja] || {};
     const v60 = dadosLoja.vendas || 0;
     const saldo = dadosLoja.saldo || 0;
+    // Estoque efetivo = min(saldo ERP, estoque estimado pela última entrada − vendas).
+    // Protege contra saldo do ERP inflado/errado; cai pro saldo quando não há entrada.
+    const saldoEf = (dadosLoja.saldo_efetivo != null) ? dadosLoja.saldo_efetivo : saldo;
+    const ent = dadosLoja.ent || 0;
     const trans = dadosLoja.transito || 0;
     const vd = v60 / 60;
     const alvo = vd * fator;
     const isLanc = !!p._lancamento;
     const qtd = isLanc
       ? (p._lancamento_qtd_sugerida || 12)                  // lançamento usa qtd fixa
-      : Math.max(0, Math.ceil(alvo - saldo - trans));
-    const cob = vd > 0 ? (saldo + trans) / vd : 9999;
+      : Math.max(0, Math.ceil(alvo - saldoEf - trans));
+    const cob = vd > 0 ? (saldoEf + trans) / vd : 9999;
     return { codigo: p.codigo, referencia: p.referencia || '', descricao: p.descricao || '',
-             v60, vd, saldo, trans, cob, qtd, isLanc,
+             v60, vd, saldo, saldoEf, ent, trans, cob, qtd, isLanc,
              obsLanc: isLanc ? (p._lancamento_obs || '') : '' };
   })
   .filter(r => r.qtd > 0)
@@ -481,12 +497,12 @@ function gerarPedidoXLSX(loja, marca) {
     ['Prazo médio de entrega', prazoTxt],
     ['Total de peças sugeridas', totalQtd],
     [],
-    ['Código', 'Referência', 'Descrição', 'Vendas 60d', 'Vendas/dia', 'Saldo', 'Em trânsito', 'Cobertura (dias)', 'Qtd sugerida', 'Obs']
+    ['Código', 'Referência', 'Descrição', 'Vendas 60d', 'Vendas/dia', 'Saldo ERP', 'Últ. entrada', 'Estoque usado', 'Em trânsito', 'Cobertura (dias)', 'Qtd sugerida', 'Obs']
   ];
   const body = r.linhas.map(x => [
     x.codigo, x.referencia, x.descricao,
     x.v60, Number(x.vd.toFixed(2)),
-    x.saldo, x.trans,
+    x.saldo, x.ent, x.saldoEf, x.trans,
     x.cob > 999 ? '—' : Math.round(x.cob),
     x.qtd,
     x.isLanc ? ('LANÇAMENTO' + (x.obsLanc ? ' · ' + x.obsLanc : '')) : ''
@@ -494,7 +510,7 @@ function gerarPedidoXLSX(loja, marca) {
   const aoa = [...head, ...body];
   const wb = XLSX.utils.book_new();
   const ws = XLSX.utils.aoa_to_sheet(aoa);
-  ws['!cols'] = [{wch:10},{wch:14},{wch:42},{wch:11},{wch:11},{wch:9},{wch:11},{wch:14},{wch:13},{wch:50}];
+  ws['!cols'] = [{wch:10},{wch:14},{wch:42},{wch:11},{wch:11},{wch:9},{wch:12},{wch:13},{wch:11},{wch:14},{wch:13},{wch:50}];
   // Negrito no cabeçalho de colunas (linha 8 = índice 7)
   XLSX.utils.book_append_sheet(wb, ws, marca.slice(0,28).replace(/[\\\/\?\*\[\]]/g,'_'));
   const fname = `pedido_${marca.replace(/[^\w]+/g,'_')}_${loja}_${new Date().toISOString().slice(0,10)}.xlsx`;
@@ -535,18 +551,18 @@ function gerarPedidoPDF(loja, marca) {
     <table><thead><tr>
       <th>Código</th><th>Ref</th><th>Descrição</th>
       <th class="num">Vendas 60d</th><th class="num">Vd/dia</th>
-      <th class="num">Saldo</th><th class="num">Trânsito</th>
+      <th class="num">Saldo ERP</th><th class="num">Últ. entrada</th><th class="num">Est. usado</th><th class="num">Trânsito</th>
       <th class="num">Cob (d)</th><th class="num">Qtd</th><th>Obs</th>
     </tr></thead><tbody>
     ${r.linhas.map(x => `<tr style="${x.isLanc ? 'background:#fff4e6' : ''}">
       <td>${x.codigo}</td><td>${x.referencia}</td><td>${x.descricao}</td>
       <td class="num">${x.v60}</td><td class="num">${x.vd.toFixed(2)}</td>
-      <td class="num">${x.saldo}</td><td class="num">${x.trans}</td>
+      <td class="num">${x.saldo}</td><td class="num">${x.ent || '—'}</td><td class="num">${x.saldoEf}</td><td class="num">${x.trans}</td>
       <td class="num">${x.cob > 999 ? '—' : Math.round(x.cob)}</td>
       <td class="num"><strong>${x.qtd}</strong></td>
       <td>${x.isLanc ? '<span style="background:#fd7e14;color:#fff;font-size:9px;padding:1px 4px;border-radius:3px;font-weight:600">LANÇAMENTO</span>' + (x.obsLanc ? ' <span style="font-size:10px;color:#7c2d12">'+x.obsLanc+'</span>' : '') : ''}</td>
     </tr>`).join('')}
-    </tbody><tfoot><tr><td colspan="8" style="text-align:right">Total</td><td class="num">${totalQtd.toLocaleString('pt-BR')}</td><td></td></tr></tfoot></table>
+    </tbody><tfoot><tr><td colspan="10" style="text-align:right">Total</td><td class="num">${totalQtd.toLocaleString('pt-BR')}</td><td></td></tr></tfoot></table>
   </body></html>`);
   w.document.close();
 }
@@ -603,12 +619,14 @@ function render() {
   let html = `<table>
     <thead><tr>
       <th>Marca</th><th>Curva</th>
-      <th>Vendas 60d (un)</th><th>Estoque (un)</th><th>Trânsito (un)</th>
+      <th>Vendas 60d (un)</th><th>Estoque (un)</th>
+      <th title="Unidades que entraram na última nota fiscal lançada (somadas por produto da marca)">Últ. entrada (un)</th>
+      <th>Trânsito (un)</th>
       <th>Cobertura (dias)</th><th>Sugestão (un)</th>
       <th>Pedido</th>
     </tr></thead><tbody>`;
   if (sug.length === 0) {
-    html += `<tr><td colspan="8" id="status-empty">Sem dados para o filtro selecionado.</td></tr>`;
+    html += `<tr><td colspan="9" id="status-empty">Sem dados para o filtro selecionado.</td></tr>`;
   } else {
     sug.forEach((s, idx) => {
       const stat = classifica(s.cobertura_dias);
@@ -634,13 +652,14 @@ function render() {
         <td><span class="caret" id="caret-${rowId}">▶</span> <span class="brand">${s.marca}</span></td>
         <td>${s.curva}</td>
         <td>${fmtUnid(s.venda_60d)}</td>
-        <td>${fmtUnid(s.saldo_atual)}</td>
+        <td>${estoqueCell(s)}</td>
+        <td>${s.ult_entrada ? fmtUnid(s.ult_entrada) : '<span class="muted">—</span>'}</td>
         <td>${fmtUnid(s.transito)}</td>
         <td class="${STATUS[stat].cls}">${fmtCobertura(s.cobertura_dias)}</td>
         <td class="sug ${s.sugestao_compra > 0 ? 'has' : ''}">${fmtUnid(s.sugestao_compra)}</td>
         <td style="white-space:nowrap" class="no-print" onclick="event.stopPropagation()">${btn}</td>
       </tr>
-      <tr id="prod-${rowId}" class="produtos-row" style="display:none"><td colspan="8"></td></tr>`;
+      <tr id="prod-${rowId}" class="produtos-row" style="display:none"><td colspan="9"></td></tr>`;
     });
   }
   html += `</tbody></table>`;
@@ -1104,7 +1123,8 @@ function toggleProdutos(rowId, loja, marca){
     } else {
       // filtrar produtos com vendas ou estoque na loja escolhida (lançamentos sempre entram, mesmo zerados)
       const lojaUpper = loja;
-      const prodsAll = m.produtos.map(p => ({...p, _v: p[lojaUpper]?.vendas||0, _s: p[lojaUpper]?.saldo||0, _t: p[lojaUpper]?.transito||0}));
+      const prodsAll = m.produtos.map(p => ({...p, _v: p[lojaUpper]?.vendas||0, _s: p[lojaUpper]?.saldo||0, _t: p[lojaUpper]?.transito||0,
+        _ent: p[lojaUpper]?.ent||0, _entData: p[lojaUpper]?.ent_data||'', _est: (p[lojaUpper]?.est!=null?p[lojaUpper].est:null)}));
       const prods = prodsAll
         .filter(p => p._lancamento || p._v !== 0 || p._s !== 0 || p._t !== 0)
         .sort((a,b) => (b._v - a._v) || (a._lancamento ? 1 : -1));      // lançamentos vão pro fim
@@ -1117,14 +1137,16 @@ function toggleProdutos(rowId, loja, marca){
       if (numLanc > 0) {
         h += `<div style="margin:6px 0;padding:6px 10px;background:#fff4e6;border-left:3px solid #fd7e14;font-size:12px;color:#7c2d12">🆕 ${numLanc} <strong>lançamento${numLanc>1?'s':''}</strong> da marca identificado${numLanc>1?'s':''} na web e ainda <strong>não cadastrado${numLanc>1?'s':''}</strong> em nossa base — sugestão padrão de ${(DATA.marcas[0]&&(DATA.marcas.find(x=>x.marca===marca)?.produtos||[]).find(p=>p._lancamento)?._lancamento_qtd_sugerida)||12} un por loja para teste. Ajuste manualmente no pedido se quiser comprar mais/menos.</div>`;
       }
+      const fmtEntCab = '<th title="Quantidade que entrou na última nota fiscal lançada deste produto (e a data)">Últ. entrada</th>'
+        + '<th title="Estoque estimado = última entrada − vendas desde a entrada. Usado quando o saldo do ERP pode estar errado.">Est. estimado</th>';
       h += '<table style="margin:6px 0; background:#fafbfc"><thead><tr>'
         +'<th style="text-align:left">Cód</th>'
         +'<th style="text-align:left">Ref</th>'
         +'<th style="text-align:left">Descrição</th>'
-        +'<th>Vendas 60d</th><th>Estoque</th><th>Trânsito</th>'
+        +'<th>Vendas 60d</th><th>Estoque</th>'+fmtEntCab+'<th>Trânsito</th>'
         +'</tr></thead><tbody>';
       if (prods.length === 0) {
-        h += `<tr><td colspan="6" style="text-align:center;color:var(--muted)">Sem produtos com movimentação em ${loja}</td></tr>`;
+        h += `<tr><td colspan="8" style="text-align:center;color:var(--muted)">Sem produtos com movimentação em ${loja}</td></tr>`;
       } else {
         prods.forEach(p => {
           const orfao = p._origem === 'NFe pendente';
@@ -1139,17 +1161,25 @@ function toggleProdutos(rowId, loja, marca){
           const descCol = lanc && p._lancamento_url
             ? `<a href="${p._lancamento_url}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;border-bottom:1px dotted #fd7e14">${p.descricao}</a>${badge}`
             : `${p.descricao}${badge}`;
+          const entTxt = p._ent > 0
+            ? `${fmtUnid(p._ent)}${p._entData ? ` <span class="muted" style="font-size:10px">${p._entData.slice(8,10)}/${p._entData.slice(5,7)}</span>` : ''}`
+            : '<span class="muted">—</span>';
+          const estTxt = p._est != null ? fmtUnid(p._est) : '<span class="muted">—</span>';
           h += `<tr style="${styleRow}"><td style="text-align:left">${p.codigo}</td>`
             +`<td style="text-align:left">${p.referencia||''}</td>`
             +`<td style="text-align:left">${descCol}</td>`
             +`<td>${fmtUnid(p._v)}</td>`
             +`<td>${fmtUnid(p._s)}</td>`
+            +`<td>${entTxt}</td>`
+            +`<td>${estTxt}</td>`
             +`<td>${fmtUnid(p._t)}</td></tr>`;
         });
         h += `<tr style="font-weight:600;border-top:2px solid var(--border)">`
           +`<td colspan="3" style="text-align:right">TOTAL (${prods.length} produto${prods.length>1?'s':''})</td>`
           +`<td>${fmtUnid(prods.reduce((a,p)=>a+p._v,0))}</td>`
           +`<td>${fmtUnid(prods.reduce((a,p)=>a+p._s,0))}</td>`
+          +`<td>${fmtUnid(prods.reduce((a,p)=>a+p._ent,0))}</td>`
+          +`<td>${fmtUnid(prods.reduce((a,p)=>a+(p._est||0),0))}</td>`
           +`<td>${fmtUnid(prods.reduce((a,p)=>a+p._t,0))}</td></tr>`;
       }
       h += '</tbody></table>';
