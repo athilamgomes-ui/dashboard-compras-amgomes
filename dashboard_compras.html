@@ -327,14 +327,57 @@ const NOMES_LOJA = {
   L5: 'MissBeleza Santarém'
 };
 
+// === Pedidos do app de Planejamento de Compras (Supabase) ===
+// Cruza os pedidos lançados pela equipe (marca×loja) com as sugestões: marca já pedida
+// sai do alerta "no ponto de pedir" e tem o botão marcado como "em curso".
+const SUPABASE_URL = 'https://valhewbvjwdkkvuejrxa.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZhbGhld2J2andka2t2dWVqcnhhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE3MzEwMTgsImV4cCI6MjA5NzMwNzAxOH0.DhQaFpQ1Ca-W8Od6jl3KatGai_shXOoc14Fqk7P3lK4';
+// Planejamento usa lojas agregadas: ALTAMIRA = L1+L4, ITAITUBA = L3, SANTAREM = L5.
+const LOJA_TO_PLAN = { L1:'ALTAMIRA', L4:'ALTAMIRA', L3:'ITAITUBA', L5:'SANTAREM' };
+// Status que contam como "pedido em andamento" (ainda no pipeline; ENTREGUE/REJEITADO não).
+const PLAN_STATUS_ATIVO = ['ATHILA','APROVADO','ENVIADO','FATURADO'];
+let PEDIDOS_PLAN = [];
+
+async function carregarPedidosPlanejamento() {
+  try {
+    const url = SUPABASE_URL + '/rest/v1/pedidos?select=marca,loja,status,data_pedido,data_entrega,distribuicao,valor_total';
+    const resp = await fetch(url, { headers: { apikey: SUPABASE_ANON_KEY, Authorization: 'Bearer ' + SUPABASE_ANON_KEY } });
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    PEDIDOS_PLAN = await resp.json();
+  } catch (e) {
+    PEDIDOS_PLAN = [];
+    console.warn('Planejamento (Supabase) indisponível — seguindo sem cruzar pedidos:', e.message);
+  }
+}
+
+// Pedido ativo no planejamento p/ esta marca×loja (ou null). Mapeia a loja do dashboard
+// para a loja agregada do planejamento (Altamira = L1+L4).
+function pedidoPlanejamentoDe(marca, loja) {
+  if (!PEDIDOS_PLAN.length) return null;
+  const plan = LOJA_TO_PLAN[loja];
+  if (!plan) return null;
+  const marcaUp = String(marca).toUpperCase().trim();
+  const cands = PEDIDOS_PLAN.filter(p =>
+    p.loja === plan &&
+    String(p.marca || '').toUpperCase().trim() === marcaUp &&
+    PLAN_STATUS_ATIVO.includes(String(p.status || '').toUpperCase()));
+  if (!cands.length) return null;
+  // mais recente por data_pedido
+  cands.sort((a,b) => String(b.data_pedido||'').localeCompare(String(a.data_pedido||'')));
+  return cands[0];
+}
+
 // === "Pedido em andamento" = já existe NFe pendente (emitida mas não recebida) da marca×loja ===
 // Se sim, marca sai do alerta E o botão de gerar pedido vira "✉️ em curso" (disabled).
 // Evita pedir em duplicidade quando o fornecedor já emitiu a NFe.
 function temPedidoEmAndamento(marca, loja) {
+  // (a) NFe pendente da marca×loja (fornecedor já emitiu) OU
+  // (b) pedido lançado no app de Planejamento (equipe já pediu).
   const ch = (DATA.chegadas_mes && DATA.chegadas_mes[loja]) || [];
   const marcaUp = String(marca).toUpperCase();
-  return ch.some(x => x.origem === 'pendente'
+  const temNFe = ch.some(x => x.origem === 'pendente'
     && String(x.marca || '').toUpperCase() === marcaUp);
+  return temNFe || !!pedidoPlanejamentoDe(marca, loja);
 }
 
 // === Card de alertas: marcas curva S "no ponto de pedir" ===
@@ -582,6 +625,7 @@ async function carregar() {
     }
   }
   document.getElementById('ts').textContent = 'gerado em ' + (DATA.gerado_em || '?');
+  await carregarPedidosPlanejamento();   // cruza pedidos lançados no app de Planejamento
   render();
   restoreCardStates();
 }
@@ -640,7 +684,18 @@ function render() {
       if (!podeGerar) {
         btn = `<button class="btn-pedido" disabled title="Sem sugestão para esta marca">—</button>`;
       } else if (emCurso) {
-        btn = `<button class="btn-pedido" disabled title="Já existe NFe pendente desta marca — pedido em andamento">✉️ em curso</button>`;
+        const ped = pedidoPlanejamentoDe(s.marca, s.loja);
+        let tip, lbl;
+        if (ped) {
+          const dt = ped.data_pedido ? (' em ' + ped.data_pedido.slice(8,10) + '/' + ped.data_pedido.slice(5,7)) : '';
+          const val = ped.valor_total ? (' · R$ ' + Number(ped.valor_total).toLocaleString('pt-BR')) : '';
+          tip = `Pedido lançado no app de Planejamento (${ped.status}${dt})${val} — não pedir de novo`;
+          lbl = '📋 pedido';
+        } else {
+          tip = 'Já existe NFe pendente desta marca — pedido em andamento';
+          lbl = '✉️ em curso';
+        }
+        btn = `<button class="btn-pedido" disabled title="${tip}">${lbl}</button>`;
       } else if (!jp.liberado) {
         btn = `<button class="btn-pedido" disabled title="${jp.motivo}">⏳ aguardar</button>`;
       } else {
