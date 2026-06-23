@@ -428,9 +428,9 @@ def add_transito_produto(mk, loja, prod_nfe, qty):
 pendentes_processadas = []
 for loja, nfe in all_pendentes:
     forn_single, is_multi = forn_brand_info(nfe)
-    valor_total = sum(p.get('ValorBruto',0) or 0 for p in (nfe.get('Produtos') or []))
+    valor_total = nfe.get('ValorTotalNota', 0) or 0   # valor TOTAL da nota (com frete/impostos), igual ao Vlr.Total das lançadas
     if not valor_total:
-        valor_total = nfe.get('ValorTotalNota', 0) or 0
+        valor_total = sum(p.get('ValorBruto',0) or 0 for p in (nfe.get('Produtos') or []))
     de = nfe.get('DataEmissao')
     try:
         mes_str = str(datetime.fromisoformat(de.replace('Z','+00:00')).month)
