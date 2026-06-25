@@ -1,24 +1,6 @@
 {
  "sem_marca": [
   {
-   "loja": "L1",
-   "nf": "27465",
-   "forn": "VISAO COSMETICOS LTDA",
-   "qt": 1104,
-   "data": "2026-06-23",
-   "marcas": {},
-   "sem_un": 1104
-  },
-  {
-   "loja": "L1",
-   "nf": "12495",
-   "forn": "GARDO COSMETICOS LTDA",
-   "qt": 132,
-   "data": "2026-06-23",
-   "marcas": {},
-   "sem_un": 132
-  },
-  {
    "loja": "L3",
    "nf": "54107",
    "forn": "DEVISA COMERCIAL LTDA",
@@ -35,15 +17,6 @@
    "data": "2026-06-16",
    "marcas": {},
    "sem_un": 228
-  },
-  {
-   "loja": "L5",
-   "nf": "262633",
-   "forn": "BORTMAN E CIA LTDA",
-   "qt": 39,
-   "data": "2026-06-20",
-   "marcas": {},
-   "sem_un": 39
   }
  ],
  "fora_curva": [
@@ -70,6 +43,28 @@
    "sem_un": 0
   },
   {
+   "loja": "L1",
+   "nf": "27465",
+   "forn": "VISAO COSMETICOS LTDA",
+   "qt": 1104,
+   "data": "2026-06-23",
+   "marcas": {
+    "Softhair": 1104
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L1",
+   "nf": "12495",
+   "forn": "GARDO COSMETICOS LTDA",
+   "qt": 132,
+   "data": "2026-06-23",
+   "marcas": {
+    "La Benig": 132
+   },
+   "sem_un": 0
+  },
+  {
    "loja": "L4",
    "nf": "14644",
    "forn": "Confeccoes ND Ltda",
@@ -77,6 +72,17 @@
    "data": "2026-05-07",
    "marcas": {
     "Confeccoes ND": 15
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "262633",
+   "forn": "BORTMAN E CIA LTDA",
+   "qt": 39,
+   "data": "2026-06-20",
+   "marcas": {
+    "Loreal": 39
    },
    "sem_un": 0
   }

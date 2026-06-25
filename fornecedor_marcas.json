@@ -27,7 +27,14 @@
     "R C DISTRIBUICAO E COMERCIO": "Lizze",
     "BELLIZ IND": "Vertix+Ricca",
     "OKAJIMA": "Colorama+Elseve",
-    "R S COMERCIO E INDUSTRIA DE ELETRONICOS": "Kizzen"
+    "R S COMERCIO E INDUSTRIA DE ELETRONICOS": "Kizzen",
+    "VISAO COSMETICOS": "Softhair",
+    "GARDO COSMETICOS": "La Benig",
+    "BORTMAN E CIA": "Loreal"
+  },
+  "_marcas_sem_cadastro_erp": {
+    "_descricao": "Marcas mapeadas só para RÓTULO no card 'Chegadas do mês'. NÃO existem como grupo de Marca no Microvix (sem saldo/vendas), então NÃO geram sugestão de compra. Para gerar sugestão, cadastrar a marca no ERP e taggear os produtos; depois adicionar em curva_marcas.json. Registrado 2026-06-25.",
+    "marcas": ["Softhair", "La Benig", "Loreal", "Cadiveu", "Confeccoes ND"]
   },
   "_uso_interno": {
     "_descricao": "Fornecedores cujos produtos NÃO são para revenda (sacolas, embalagens, material de loja). Aparecem em chegadas_mes com marca para rastreio, mas não entram em compras_mensais_rs nem em sugestões de compra.",
