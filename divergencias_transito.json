@@ -1,24 +1,5 @@
 {
- "sem_marca": [
-  {
-   "loja": "L3",
-   "nf": "54107",
-   "forn": "DEVISA COMERCIAL LTDA",
-   "qt": 456,
-   "data": "2026-06-16",
-   "marcas": {},
-   "sem_un": 456
-  },
-  {
-   "loja": "L4",
-   "nf": "538",
-   "forn": "HAUSEN & SCHULTZ COMERCIAL LTDA",
-   "qt": 228,
-   "data": "2026-06-16",
-   "marcas": {},
-   "sem_un": 228
-  }
- ],
+ "sem_marca": [],
  "fora_curva": [
   {
    "loja": "L1",
@@ -113,6 +94,17 @@
   },
   {
    "loja": "L3",
+   "nf": "54107",
+   "forn": "DEVISA COMERCIAL LTDA",
+   "qt": 456,
+   "data": "2026-06-16",
+   "marcas": {
+    "Devisa": 456
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L3",
    "nf": "201966",
    "forn": "Network Beauty Fashion Cosmetica L",
    "qt": 528,
@@ -152,6 +144,17 @@
    "data": "2026-06-16",
    "marcas": {
     "Repos": 6
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
+   "nf": "538",
+   "forn": "HAUSEN & SCHULTZ COMERCIAL LTDA",
+   "qt": 228,
+   "data": "2026-06-16",
+   "marcas": {
+    "Dagua Natural": 228
    },
    "sem_un": 0
   },
