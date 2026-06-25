@@ -408,7 +408,14 @@ print(f"Etapa 3.6 pendentes: {pendentes_log}", file=sys.stderr)
 # distribuidores como Okajima: Colorama+Elseve+Risque). Cada produto é atribuído à
 # sua marca; compras_mensais_rs e trânsito somam por marca separadamente. O label
 # da chegada combina as marcas curva detectadas (ex "Colorama+Risque").
-def add_transito_produto(mk, loja, prod_nfe, qty):
+def add_transito_produto(mk, loja, prod_nfe, qty, pend_floor=False):
+    # pend_floor=True: a qtd vem de uma NFe AINDA PENDENTE (não lançada no ERP) →
+    # acumula também em 'transito_pend' (piso protegido da Etapa 3.7, que zera só o
+    # trânsito de marca que já deu entrada — uma pendente nova segue a caminho).
+    def _bump(p):
+        p[loja]['transito'] = p[loja].get('transito',0) + qty
+        if pend_floor:
+            p[loja]['transito_pend'] = p[loja].get('transito_pend',0) + qty
     desc_nfe = norm(prod_nfe.get('DescricaoProduto',''))
     tokens_nfe = set(desc_nfe.split())
     best, best_score = None, 0
@@ -420,7 +427,7 @@ def add_transito_produto(mk, loja, prod_nfe, qty):
         if score >= 0.5 and overlap >= 3 and score > best_score:
             best, best_score = p, score
     if best:
-        best[loja]['transito'] = best[loja].get('transito',0) + qty
+        _bump(best)
     else:
         cprod = str(prod_nfe.get('CProd',''))
         novo = next((p for p in mk['produtos'] if p.get('referencia')==cprod and p.get('_origem')=='NFe pendente'), None)
@@ -432,10 +439,16 @@ def add_transito_produto(mk, loja, prod_nfe, qty):
                 '_origem': 'NFe pendente'
             }
             mk['produtos'].append(novo)
-        novo[loja]['transito'] += qty
+        _bump(novo)
+
+# NFs já lançadas no ERP (por número de doc) — uma pendente que JÁ foi lançada
+# chegou fisicamente → seu trânsito não deve ser protegido como piso na 3.7.
+docs_lancados = {str(n['doc']).lstrip('0') for n in notas if n.get('doc')}
 
 pendentes_processadas = []
 for loja, nfe in all_pendentes:
+    nf_num = str(nfe.get('NumeroNFe') or nfe.get('Numero') or nfe.get('numero') or '').lstrip('0')
+    nf_ainda_pendente = nf_num not in docs_lancados  # True = não lançada → segue em trânsito
     forn_single, is_multi = forn_brand_info(nfe)
     valor_total = (nfe.get('ValorAPagar') or nfe.get('Valor') or 0)   # valor LÍQUIDO a pagar da nota (ValorTotalNota NÃO existe nessa API; cai no fallback p/ soma de produtos = menor)
     if not valor_total:
@@ -465,7 +478,7 @@ for loja, nfe in all_pendentes:
             cm[mes_str] = cm.get(mes_str, 0) + g['valor']
         mk = marca_idx[m]
         for prod_nfe, qty in g['prods']:
-            add_transito_produto(mk, loja, prod_nfe, qty)
+            add_transito_produto(mk, loja, prod_nfe, qty, pend_floor=nf_ainda_pendente)
     # Label da chegada: marcas curva primeiro (ordenadas), depois não-curva; máx 3
     curva_det = [m for m in marcas_detectadas if m in marca_idx]
     fora_det = [m for m in marcas_detectadas if m not in marca_idx]
@@ -501,16 +514,23 @@ for n in notas:
                 'valor': valor, 'forn': n['forn']
             })
 
+# Ao zerar, preservar o PISO de trânsito vindo de NFe ainda pendente (transito_pend):
+# a marca já deu entrada de UMA nota, mas pode haver OUTRA NFe nova a caminho.
+def _zera_transito(mk, loja):
+    """Zera o trânsito da marca×loja, mas mantém o piso pendente por produto."""
+    for p in mk['produtos']:
+        if loja in p:
+            p[loja]['transito'] = p[loja].get('transito_pend', 0)
+    mk['lojas'][loja]['transito'] = sum(p[loja]['transito'] for p in mk['produtos'] if loja in p)
+
 zerados = []
 for (marca, loja), lst in lanc_recente.items():
     mk = marca_idx[marca]
     old = mk['lojas'][loja]['transito']
     if old > 0:
-        mk['lojas'][loja]['transito'] = 0
-        for p in mk['produtos']:
-            if loja in p:
-                p[loja]['transito'] = 0
-        zerados.append({'marca':marca, 'loja':loja, 'transito_zerado':old, 'gatilho':lst[0]['doc']})
+        _zera_transito(mk, loja)
+        novo = mk['lojas'][loja]['transito']
+        zerados.append({'marca':marca, 'loja':loja, 'transito_zerado':old-novo, 'piso_pendente':novo, 'gatilho':lst[0]['doc']})
 
 # Etapa adicional: zerar tb se há lançamento NO MÊS CORRENTE em compras_mensais_rs (regra original)
 mes_str_cur = str(MES)
@@ -519,11 +539,10 @@ for mk in marcas_out:
         v = mk['compras_mensais_rs'][loja].get(mes_str_cur, 0)
         if v > 0 and mk['lojas'][loja]['transito'] > 0:
             old = mk['lojas'][loja]['transito']
-            mk['lojas'][loja]['transito'] = 0
-            for p in mk['produtos']:
-                if loja in p:
-                    p[loja]['transito'] = 0
-            zerados.append({'marca':mk['marca'], 'loja':loja, 'transito_zerado':old, 'gatilho':'compras_mensais_rs'})
+            _zera_transito(mk, loja)
+            novo = mk['lojas'][loja]['transito']
+            if old != novo:
+                zerados.append({'marca':mk['marca'], 'loja':loja, 'transito_zerado':old-novo, 'piso_pendente':novo, 'gatilho':'compras_mensais_rs'})
 
 print(f"Etapa 3.7: {len(zerados)} (marca×loja) zerados", file=sys.stderr)
 
