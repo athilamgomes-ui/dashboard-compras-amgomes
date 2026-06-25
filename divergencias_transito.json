@@ -43,28 +43,6 @@
    "sem_un": 0
   },
   {
-   "loja": "L1",
-   "nf": "27465",
-   "forn": "VISAO COSMETICOS LTDA",
-   "qt": 1104,
-   "data": "2026-06-23",
-   "marcas": {
-    "Softhair": 1104
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L1",
-   "nf": "12495",
-   "forn": "GARDO COSMETICOS LTDA",
-   "qt": 132,
-   "data": "2026-06-23",
-   "marcas": {
-    "La Benig": 132
-   },
-   "sem_un": 0
-  },
-  {
    "loja": "L4",
    "nf": "14644",
    "forn": "Confeccoes ND Ltda",
@@ -72,17 +50,6 @@
    "data": "2026-05-07",
    "marcas": {
     "Confeccoes ND": 15
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L5",
-   "nf": "262633",
-   "forn": "BORTMAN E CIA LTDA",
-   "qt": 39,
-   "data": "2026-06-20",
-   "marcas": {
-    "Loreal": 39
    },
    "sem_un": 0
   }
@@ -108,6 +75,28 @@
    "data": "2026-06-20",
    "marcas": {
     "Santa Clara": 1363
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L1",
+   "nf": "27465",
+   "forn": "VISAO COSMETICOS LTDA",
+   "qt": 1104,
+   "data": "2026-06-23",
+   "marcas": {
+    "Softhair": 1104
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L1",
+   "nf": "12495",
+   "forn": "GARDO COSMETICOS LTDA",
+   "qt": 132,
+   "data": "2026-06-23",
+   "marcas": {
+    "La Bening": 132
    },
    "sem_un": 0
   },
@@ -209,6 +198,17 @@
    "data": "2026-06-08",
    "marcas": {
     "Marco Boni": 132
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "262633",
+   "forn": "BORTMAN E CIA LTDA",
+   "qt": 39,
+   "data": "2026-06-20",
+   "marcas": {
+    "Loreal": 39
    },
    "sem_un": 0
   }

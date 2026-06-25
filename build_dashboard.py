@@ -293,6 +293,9 @@ BRAND_KEYWORDS = {
     'Dafu': ['DAFU'],
     'MQ': ['\\bMQ\\b'],
     'Let me be': ['LET ME BE'],
+    'Softhair': ['SOFTHAIR'],
+    'La Bening': ['LA BENIG','LA BENING'],
+    'Loreal': ['LOREAL'],
 }
 
 EXCL_CFOP = {

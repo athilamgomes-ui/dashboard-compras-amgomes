@@ -1,19 +1,59 @@
 {
   "_descricao": "Mapeamento Marca → código(s) de marca no Microvix ERP. Permite buscar produtos pelo código da marca em vez de match por nome (mais confiável). ProBelle tem 2 códigos (varejo + profissional).",
-  "_ultima_edicao": "2026-05-18",
-  "Beauty Color": [131],
-  "CBB": [1104],
-  "Hair Extrattus": [929],
-  "Itallian": [162],
-  "Marco Boni": [2],
-  "Natum": [10],
-  "ProBelle": [858, 366],
-  "Santa Clara": [9],
-  "Truss": [376],
-  "Widi Care": [1030],
-  "Yama": [57],
-  "Apice": [1048],
-  "Cadiveu": [375],
-  "Della&Delle": [380],
-  "Lizze": [134]
+  "_ultima_edicao": "2026-06-25",
+  "Beauty Color": [
+    131
+  ],
+  "CBB": [
+    1104
+  ],
+  "Hair Extrattus": [
+    929
+  ],
+  "Itallian": [
+    162
+  ],
+  "Marco Boni": [
+    2
+  ],
+  "Natum": [
+    10
+  ],
+  "ProBelle": [
+    858,
+    366
+  ],
+  "Santa Clara": [
+    9
+  ],
+  "Truss": [
+    376
+  ],
+  "Widi Care": [
+    1030
+  ],
+  "Yama": [
+    57
+  ],
+  "Apice": [
+    1048
+  ],
+  "Cadiveu": [
+    375
+  ],
+  "Della&Delle": [
+    380
+  ],
+  "Lizze": [
+    134
+  ],
+  "Softhair": [
+    103
+  ],
+  "La Bening": [
+    1015
+  ],
+  "Loreal": [
+    387
+  ]
 }
