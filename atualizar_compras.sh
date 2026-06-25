@@ -53,11 +53,14 @@ echo "=== [2/4] build_dashboard.py ==="
 cd "$COMPRAS" || exit 20
 python3 build_dashboard.py || { echo "ERRO: build_dashboard.py falhou"; exit 20; }
 
-echo "=== [3/4] compute_diff.py ==="
+echo "=== [3/5] compute_diff.py ==="
 python3 compute_diff.py || echo "WARN: compute_diff.py falhou (segue sem diff)"
 
-echo "=== [4/4] git push ==="
-git add dados.json dados.js
+echo "=== [4/5] reconcilia_transito.py (autocheck de divergências) ==="
+python3 reconcilia_transito.py || echo "WARN: reconcilia_transito.py falhou (não bloqueia)"
+
+echo "=== [5/5] git push ==="
+git add dados.json dados.js divergencias_transito.json
 git -c user.email="athilamgomes-ui@users.noreply.github.com" -c user.name="athilamgomes-ui" \
   commit -m "atualização $TS (Playwright headless)" && git push origin main || echo "WARN: git push falhou"
 

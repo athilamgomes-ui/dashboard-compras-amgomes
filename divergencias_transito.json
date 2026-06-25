@@ -1,0 +1,210 @@
+{
+ "sem_marca": [
+  {
+   "loja": "L1",
+   "nf": "27465",
+   "forn": "VISAO COSMETICOS LTDA",
+   "qt": 1104,
+   "data": "2026-06-23",
+   "marcas": {},
+   "sem_un": 1104
+  },
+  {
+   "loja": "L1",
+   "nf": "12495",
+   "forn": "GARDO COSMETICOS LTDA",
+   "qt": 132,
+   "data": "2026-06-23",
+   "marcas": {},
+   "sem_un": 132
+  },
+  {
+   "loja": "L3",
+   "nf": "54107",
+   "forn": "DEVISA COMERCIAL LTDA",
+   "qt": 456,
+   "data": "2026-06-16",
+   "marcas": {},
+   "sem_un": 456
+  },
+  {
+   "loja": "L4",
+   "nf": "538",
+   "forn": "HAUSEN & SCHULTZ COMERCIAL LTDA",
+   "qt": 228,
+   "data": "2026-06-16",
+   "marcas": {},
+   "sem_un": 228
+  },
+  {
+   "loja": "L5",
+   "nf": "262633",
+   "forn": "BORTMAN E CIA LTDA",
+   "qt": 39,
+   "data": "2026-06-20",
+   "marcas": {},
+   "sem_un": 39
+  }
+ ],
+ "fora_curva": [
+  {
+   "loja": "L1",
+   "nf": "91611",
+   "forn": "Tricosmeticos Distribuidora de Cos",
+   "qt": 504,
+   "data": "2026-04-22",
+   "marcas": {
+    "Cadiveu": 504
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L1",
+   "nf": "91631",
+   "forn": "Tricosmeticos Distribuidora de Cos",
+   "qt": 66,
+   "data": "2026-04-22",
+   "marcas": {
+    "Cadiveu": 66
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
+   "nf": "14644",
+   "forn": "Confeccoes ND Ltda",
+   "qt": 15,
+   "data": "2026-05-07",
+   "marcas": {
+    "Confeccoes ND": 15
+   },
+   "sem_un": 0
+  }
+ ],
+ "curva_nao_refletida": [],
+ "ok": [
+  {
+   "loja": "L1",
+   "nf": "13203",
+   "forn": "BROKER CARAJAS DISTRIBUIDORA LTDA",
+   "qt": 66,
+   "data": "2026-04-30",
+   "marcas": {
+    "Truss": 66
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L1",
+   "nf": "718333",
+   "forn": "SANTA CLARA MANUFATURA E COSMETICO",
+   "qt": 1363,
+   "data": "2026-06-20",
+   "marcas": {
+    "Santa Clara": 1363
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L3",
+   "nf": "1183612",
+   "forn": "OKAJIMA DISTRIBUICAO E COMERCIO LT",
+   "qt": 622,
+   "data": "2026-05-29",
+   "marcas": {
+    "Risque": 594
+   },
+   "sem_un": 28
+  },
+  {
+   "loja": "L3",
+   "nf": "201966",
+   "forn": "Network Beauty Fashion Cosmetica L",
+   "qt": 528,
+   "data": "2026-06-16",
+   "marcas": {
+    "Itallian": 54
+   },
+   "sem_un": 474
+  },
+  {
+   "loja": "L3",
+   "nf": "214716",
+   "forn": "LOGIKA DISTRIBUIDORA DE COSMETICOS",
+   "qt": 1332,
+   "data": "2026-06-24",
+   "marcas": {
+    "Beauty Color": 414
+   },
+   "sem_un": 918
+  },
+  {
+   "loja": "L4",
+   "nf": "215721",
+   "forn": "S R DOS SANTOS EQUIPAMENTOS",
+   "qt": 1,
+   "data": "2026-05-08",
+   "marcas": {
+    "Lizze": 1
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
+   "nf": "16752",
+   "forn": "DISTRIBUIDORA LITORAL COSMETICOS L",
+   "qt": 6,
+   "data": "2026-06-16",
+   "marcas": {
+    "Repos": 6
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
+   "nf": "109390",
+   "forn": "R C DISTRIBUICAO E COMERCIO LTDA",
+   "qt": 35,
+   "data": "2026-06-19",
+   "marcas": {
+    "Lizze": 35
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
+   "nf": "1238",
+   "forn": "A M GOMES IMPORT EXPORT",
+   "qt": 19,
+   "data": "2026-06-22",
+   "marcas": {
+    "Belliz": 1,
+    "Marco Boni": 1,
+    "Dafu": 1
+   },
+   "sem_un": 16
+  },
+  {
+   "loja": "L5",
+   "nf": "684024",
+   "forn": "FLORENCE INDUSTRIAL E COMERCIAL LT",
+   "qt": 336,
+   "data": "2026-06-08",
+   "marcas": {
+    "Marco Boni": 336
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "684025",
+   "forn": "FLORENCE INDUSTRIAL E COMERCIAL LT",
+   "qt": 132,
+   "data": "2026-06-08",
+   "marcas": {
+    "Marco Boni": 132
+   },
+   "sem_un": 0
+  }
+ ]
+}
