@@ -191,6 +191,18 @@ for n in notas:
 # Usado para (a) exibir no drilldown e (b) estimar o estoque real quando o saldo do ERP
 # está errado: estoque_estimado = última_entrada − vendas_desde_a_entrada.
 ult_entrada = {}  # (codigo, loja) -> {'q': qtd, 'data': iso}
+# Altamira: a NF de entrada é lançada no ERP em UMA das duas empresas (L1 OU L4),
+# mas a mercadoria é fisicamente dividida 50/50 entre as duas lojas na MESMA data.
+# Logo a entrada precisa ser registrada nas DUAS lojas (a qtd é dividida por 2 no
+# loop de anexação abaixo). Sem isso, a loja irmã fica sem "última entrada"/data.
+ALTAMIRA_IRMA = {'L1': 'L4', 'L4': 'L1'}
+def _reg_entrada(cod, loja, q, data_ref):
+    key = (cod, loja)
+    prev = ult_entrada.get(key)
+    if prev is None or data_ref > prev['data']:
+        ult_entrada[key] = {'q': q, 'data': data_ref}
+    elif data_ref == prev['data']:
+        prev['q'] += q  # mesma data → soma
 for n in notas:
     loja = n.get('loja')
     if not loja: continue
@@ -200,13 +212,11 @@ for n in notas:
     for it in n.get('itens', []):
         cod = str(it.get('c',''))
         qpc[cod] = qpc.get(cod, 0) + (it.get('q', 0) or 0)
+    # lojas alvo: Altamira (L1/L4) espelha para a loja irmã (mesma entrada, mesma data)
+    lojas_alvo = (loja, ALTAMIRA_IRMA[loja]) if loja in ALTAMIRA_IRMA else (loja,)
     for cod, q in qpc.items():
-        key = (cod, loja)
-        prev = ult_entrada.get(key)
-        if prev is None or data_ref > prev['data']:
-            ult_entrada[key] = {'q': q, 'data': data_ref}
-        elif data_ref == prev['data']:
-            prev['q'] += q  # mesma data → soma
+        for lj in lojas_alvo:
+            _reg_entrada(cod, lj, q, data_ref)
 
 def _dias_desde(iso):
     try:
