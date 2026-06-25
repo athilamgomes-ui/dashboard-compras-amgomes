@@ -214,6 +214,13 @@ def _dias_desde(iso):
     except:
         return 0
 
+# Lojas de Altamira (L1 + L4): a NF de entrada é lançada com a quantidade TOTAL,
+# mas o estoque físico é sempre dividido 50/50 entre as duas lojas (ver skill
+# dividir-nf). Logo a "última entrada" real de cada loja é metade da qtd da nota.
+# O saldo do ERP já reflete a metade — então a qtd de entrada também precisa ser
+# dividida, senão a comparação ent>=saldo infla a estimativa de estoque.
+LOJAS_DIVIDE_ENTRADA = {'L1', 'L4'}
+
 # Anexar a cada produto: ent (qtd última entrada), ent_data, est (estoque estimado),
 # saldo_efetivo = min(saldo ERP, estoque estimado) — conservador contra saldo inflado.
 for mk in marcas_out:
@@ -223,17 +230,19 @@ for mk in marcas_out:
             lp = p[loja]
             ent = ult_entrada.get((cod, loja))
             if ent and ent['q'] > 0:
+                # Altamira (L1/L4): qtd da nota é total → estoque dividido por 2.
+                ent_q = ent['q'] / 2.0 if loja in LOJAS_DIVIDE_ENTRADA else ent['q']
                 vd = lp['vendas'] / 60.0
-                vendas_desde = min(ent['q'], vd * _dias_desde(ent['data']))
-                est = max(0, ent['q'] - vendas_desde)
-                lp['ent'] = round(ent['q'])
+                vendas_desde = min(ent_q, vd * _dias_desde(ent['data']))
+                est = max(0, ent_q - vendas_desde)
+                lp['ent'] = round(ent_q)
                 lp['ent_data'] = ent['data'][:10]
                 lp['est'] = round(est)
                 # Só usar a estimativa para REDUZIR o estoque quando a última entrada é a
                 # fonte dominante (qtd entrada >= saldo ERP). Se o saldo ERP > última entrada,
                 # há estoque acumulado de compras anteriores → confiar no ERP (senão a
                 # estimativa subestima marcas de alto giro e infla a sugestão).
-                if ent['q'] >= lp['saldo']:
+                if ent_q >= lp['saldo']:
                     lp['saldo_efetivo'] = min(lp['saldo'], est)
                 else:
                     lp['saldo_efetivo'] = lp['saldo']
