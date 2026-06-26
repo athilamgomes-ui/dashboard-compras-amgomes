@@ -1,6 +1,6 @@
 {
   "_descricao": "Curva S/A/B por loja (S = estratégica/prioritária no orçamento; A = alta prioridade; B = oportunista). Editável manualmente.",
-  "_ultima_edicao": "2026-06-25",
+  "_ultima_edicao": "2026-06-26",
   "L1": {
     "_loja": "Casa da Beleza Altamira (Empresa 1)",
     "A": [
@@ -31,7 +31,8 @@
       "La Bening",
       "Loreal",
       "Devisa",
-      "Dagua Natural"
+      "Dagua Natural",
+      "Mega Bell"
     ],
     "S": [
       "Widi Care",
@@ -77,7 +78,8 @@
       "La Bening",
       "Loreal",
       "Devisa",
-      "Dagua Natural"
+      "Dagua Natural",
+      "Mega Bell"
     ],
     "S": [
       "Widi Care",
@@ -122,7 +124,8 @@
       "La Bening",
       "Loreal",
       "Devisa",
-      "Dagua Natural"
+      "Dagua Natural",
+      "Mega Bell"
     ],
     "S": [
       "Widi Care",
@@ -169,7 +172,8 @@
       "La Bening",
       "Loreal",
       "Devisa",
-      "Dagua Natural"
+      "Dagua Natural",
+      "Mega Bell"
     ],
     "S": [
       "Widi Care",

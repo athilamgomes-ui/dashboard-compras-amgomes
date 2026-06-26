@@ -1,15 +1,5 @@
 {
- "sem_marca": [
-  {
-   "loja": "L4",
-   "nf": "172610",
-   "forn": "MEGA BELL INDUSTRIA E COMERCIO LTD",
-   "qt": 40,
-   "data": "2026-06-25",
-   "marcas": {},
-   "sem_un": 40
-  }
- ],
+ "sem_marca": [],
  "fora_curva": [
   {
    "loja": "L1",
@@ -211,6 +201,17 @@
    "data": "2026-06-25",
    "marcas": {
     "Santa Clara": 1366
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
+   "nf": "172610",
+   "forn": "MEGA BELL INDUSTRIA E COMERCIO LTD",
+   "qt": 40,
+   "data": "2026-06-25",
+   "marcas": {
+    "Mega Bell": 40
    },
    "sem_un": 0
   },

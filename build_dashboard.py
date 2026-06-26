@@ -308,6 +308,7 @@ BRAND_KEYWORDS = {
     'Loreal': ['LOREAL'],
     'Devisa': ['DEVISA'],
     'Dagua Natural': ['DAGUA NATURAL','DAGUA'],
+    'Mega Bell': ['MEGA BELL','MEGA BEL'],
 }
 
 EXCL_CFOP = {
