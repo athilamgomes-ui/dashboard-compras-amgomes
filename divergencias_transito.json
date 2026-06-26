@@ -1,5 +1,24 @@
 {
- "sem_marca": [],
+ "sem_marca": [
+  {
+   "loja": "L1",
+   "nf": "567",
+   "forn": "HAUSEN E SCHULTZ COMERCIAL LTDA",
+   "qt": 30,
+   "data": "2026-06-25",
+   "marcas": {},
+   "sem_un": 30
+  },
+  {
+   "loja": "L4",
+   "nf": "172610",
+   "forn": "MEGA BELL INDUSTRIA E COMERCIO LTD",
+   "qt": 40,
+   "data": "2026-06-25",
+   "marcas": {},
+   "sem_un": 40
+  }
+ ],
  "fora_curva": [
   {
    "loja": "L1",
@@ -181,6 +200,17 @@
     "Dafu": 1
    },
    "sem_un": 16
+  },
+  {
+   "loja": "L4",
+   "nf": "718872",
+   "forn": "SANTA CLARA MANUFATURA E COSMETICO",
+   "qt": 1366,
+   "data": "2026-06-25",
+   "marcas": {
+    "Santa Clara": 1366
+   },
+   "sem_un": 0
   },
   {
    "loja": "L5",
