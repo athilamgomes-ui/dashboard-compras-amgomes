@@ -32,7 +32,7 @@
     "GARDO COSMETICOS": "La Bening",
     "BORTMAN E CIA": "Loreal",
     "DEVISA COMERCIAL": "Devisa",
-    "HAUSEN & SCHULTZ": "Dagua Natural"
+    "HAUSEN": "Dagua Natural"
   },
   "_marcas_sem_cadastro_erp": {
     "_descricao": "Marcas mapeadas só para RÓTULO no card 'Chegadas do mês'. NÃO existem como grupo de Marca no Microvix (sem saldo/vendas), então NÃO geram sugestão de compra. Para gerar sugestão, cadastrar a marca no ERP e taggear os produtos; depois adicionar em curva_marcas.json. Registrado 2026-06-25. Softhair(103)/La Bening(1015)/Loreal(387) foram cadastradas no ERP em 2026-06-25 e entraram na curva B — saíram desta lista.",
