@@ -1,18 +1,6 @@
 {
  "sem_marca": [],
- "fora_curva": [
-  {
-   "loja": "L5",
-   "nf": "145055",
-   "forn": "BENESA COMERCIAL LTDA",
-   "qt": 318,
-   "data": "2026-06-26",
-   "marcas": {
-    "Catharine Hill": 318
-   },
-   "sem_un": 0
-  }
- ],
+ "fora_curva": [],
  "curva_nao_refletida": [],
  "ok": [
   {
@@ -267,6 +255,17 @@
    "data": "2026-06-20",
    "marcas": {
     "Loreal": 39
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "145055",
+   "forn": "BENESA COMERCIAL LTDA",
+   "qt": 318,
+   "data": "2026-06-26",
+   "marcas": {
+    "Catharine Hill": 318
    },
    "sem_un": 0
   }
