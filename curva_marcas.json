@@ -1,6 +1,6 @@
 {
   "_descricao": "Curva S/A/B por loja (S = estratégica/prioritária no orçamento; A = alta prioridade; B = oportunista). Editável manualmente.",
-  "_ultima_edicao": "2026-06-26",
+  "_ultima_edicao": "2026-06-29: +Cadiveu (cod 375) curva A nas 4 lojas; Confeccoes ND -> ignore (nao-revenda)",
   "L1": {
     "_loja": "Casa da Beleza Altamira (Empresa 1)",
     "A": [
@@ -15,7 +15,8 @@
       "Colorama",
       "Lizze",
       "Mirra",
-      "MQ"
+      "MQ",
+      "Cadiveu"
     ],
     "B": [
       "Vizzela",
@@ -62,7 +63,8 @@
       "Colorama",
       "Lizze",
       "Mirra",
-      "MQ"
+      "MQ",
+      "Cadiveu"
     ],
     "B": [
       "Vizzela",
@@ -110,7 +112,8 @@
       "Vizzela",
       "Dafu",
       "Repos",
-      "MQ"
+      "MQ",
+      "Cadiveu"
     ],
     "B": [
       "Kiss",
@@ -158,7 +161,8 @@
       "Bruna Tavares",
       "Colorama",
       "Risque",
-      "Cinco"
+      "Cinco",
+      "Cadiveu"
     ],
     "B": [
       "Felps",

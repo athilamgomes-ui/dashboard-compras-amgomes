@@ -10,7 +10,9 @@
    "sem_un": 318
   }
  ],
- "fora_curva": [
+ "fora_curva": [],
+ "curva_nao_refletida": [],
+ "ok": [
   {
    "loja": "L1",
    "nf": "91611",
@@ -33,20 +35,6 @@
    },
    "sem_un": 0
   },
-  {
-   "loja": "L4",
-   "nf": "14644",
-   "forn": "Confeccoes ND Ltda",
-   "qt": 15,
-   "data": "2026-05-07",
-   "marcas": {
-    "Confeccoes ND": 15
-   },
-   "sem_un": 0
-  }
- ],
- "curva_nao_refletida": [],
- "ok": [
   {
    "loja": "L1",
    "nf": "13203",
