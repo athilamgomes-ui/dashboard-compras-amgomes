@@ -1,5 +1,24 @@
 {
- "sem_marca": [],
+ "sem_marca": [
+  {
+   "loja": "L1",
+   "nf": "202476",
+   "forn": "Network Beauty Fashion Cosmetica L",
+   "qt": 540,
+   "data": "2026-06-27",
+   "marcas": {},
+   "sem_un": 540
+  },
+  {
+   "loja": "L5",
+   "nf": "145055",
+   "forn": "BENESA COMERCIAL LTDA",
+   "qt": 318,
+   "data": "2026-06-26",
+   "marcas": {},
+   "sem_un": 318
+  }
+ ],
  "fora_curva": [
   {
    "loja": "L1",
@@ -89,6 +108,17 @@
    "data": "2026-06-25",
    "marcas": {
     "Dagua Natural": 30
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L1",
+   "nf": "12582",
+   "forn": "GARDO COSMETICOS LTDA",
+   "qt": 48,
+   "data": "2026-06-26",
+   "marcas": {
+    "La Bening": 48
    },
    "sem_un": 0
   },
