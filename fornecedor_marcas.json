@@ -1,14 +1,15 @@
 {
   "_descricao": "Mapeamento Fornecedor (CNPJ ou substring do Nome/RazaoSocial) → Marca no ERP. Usado pela skill quando a descrição dos produtos da NFe NÃO contém o nome da marca (caso da Kamaleão Color: produtos descritos como 'MASCARA PIGMENTANTE FLAMINGO 100ML KC'). EDITÁVEL manualmente — adicionar entradas conforme novos fornecedores apareçam.",
   "_formato": "CNPJ (14 dígitos sem pontuação) → marca | Nome contendo substring → marca",
-  "_ultima_edicao": "2026-06-01",
+  "_ultima_edicao": "2026-06-29: +Network Beauty Fashion Cosmetica (CNPJ 03424849000504) -> Itallian (cod 162)",
   "por_cnpj": {
     "33648842000103": "Probelle",
     "31768865000126": "Kamaleao",
     "11271239000201": "Cadiveu",
     "15563558000152": "Della&Delle",
     "09356580000129": "Lizze",
-    "05958411000299": "Colorama+Elseve"
+    "05958411000299": "Colorama+Elseve",
+    "03424849000504": "Itallian"
   },
   "por_nome_substring": {
     "SANTA CLARA": "Santa Clara",
@@ -33,15 +34,22 @@
     "BORTMAN E CIA": "Loreal",
     "DEVISA COMERCIAL": "Devisa",
     "HAUSEN": "Dagua Natural",
-    "MEGA BELL": "Mega Bell"
+    "MEGA BELL": "Mega Bell",
+    "NETWORK BEAUTY": "Itallian"
   },
   "_marcas_sem_cadastro_erp": {
     "_descricao": "Marcas mapeadas só para RÓTULO no card 'Chegadas do mês'. NÃO existem como grupo de Marca no Microvix (sem saldo/vendas), então NÃO geram sugestão de compra. Para gerar sugestão, cadastrar a marca no ERP e taggear os produtos; depois adicionar em curva_marcas.json. Registrado 2026-06-25. Softhair(103)/La Bening(1015)/Loreal(387) foram cadastradas no ERP em 2026-06-25 e entraram na curva B — saíram desta lista.",
-    "marcas": ["Cadiveu", "Confeccoes ND"]
+    "marcas": [
+      "Cadiveu",
+      "Confeccoes ND"
+    ]
   },
   "_uso_interno": {
     "_descricao": "Fornecedores cujos produtos NÃO são para revenda (sacolas, embalagens, material de loja). Aparecem em chegadas_mes com marca para rastreio, mas não entram em compras_mensais_rs nem em sugestões de compra.",
-    "marcas": ["Solider", "MultiBag"]
+    "marcas": [
+      "Solider",
+      "MultiBag"
+    ]
   },
   "_ignorar_no_dashboard": {
     "_descricao": "Fornecedores que NÃO são de mercadoria para revenda (postos de combustível, peças, embalagens avulsas, instituições financeiras, alfaiataria etc). Suas NFs DEVEM ser excluídas do card chegadas_mes E não devem entrar em compras_mensais_rs. EDITÁVEL — adicionar substrings conforme aparecerem novos fornecedores não-revenda.",

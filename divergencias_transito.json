@@ -1,15 +1,6 @@
 {
  "sem_marca": [
   {
-   "loja": "L1",
-   "nf": "202476",
-   "forn": "Network Beauty Fashion Cosmetica L",
-   "qt": 540,
-   "data": "2026-06-27",
-   "marcas": {},
-   "sem_un": 540
-  },
-  {
    "loja": "L5",
    "nf": "145055",
    "forn": "BENESA COMERCIAL LTDA",
@@ -123,6 +114,17 @@
    "sem_un": 0
   },
   {
+   "loja": "L1",
+   "nf": "202476",
+   "forn": "Network Beauty Fashion Cosmetica L",
+   "qt": 540,
+   "data": "2026-06-27",
+   "marcas": {
+    "Itallian": 540
+   },
+   "sem_un": 0
+  },
+  {
    "loja": "L3",
    "nf": "1183612",
    "forn": "OKAJIMA DISTRIBUICAO E COMERCIO LT",
@@ -151,9 +153,9 @@
    "qt": 528,
    "data": "2026-06-16",
    "marcas": {
-    "Itallian": 54
+    "Itallian": 528
    },
-   "sem_un": 474
+   "sem_un": 0
   },
   {
    "loja": "L3",
