@@ -1,7 +1,7 @@
 {
   "_descricao": "Mapeamento Fornecedor (CNPJ ou substring do Nome/RazaoSocial) → Marca no ERP. Usado pela skill quando a descrição dos produtos da NFe NÃO contém o nome da marca (caso da Kamaleão Color: produtos descritos como 'MASCARA PIGMENTANTE FLAMINGO 100ML KC'). EDITÁVEL manualmente — adicionar entradas conforme novos fornecedores apareçam.",
   "_formato": "CNPJ (14 dígitos sem pontuação) → marca | Nome contendo substring → marca",
-  "_ultima_edicao": "2026-06-29: +Network Beauty->Itallian; +CONFECCOES ND no ignore (nao-revenda)",
+  "_ultima_edicao": "2026-06-29: +Benesa Comercial (CNPJ 60819323000133) -> Catharine Hill (cod 364)",
   "por_cnpj": {
     "33648842000103": "Probelle",
     "31768865000126": "Kamaleao",
@@ -9,7 +9,8 @@
     "15563558000152": "Della&Delle",
     "09356580000129": "Lizze",
     "05958411000299": "Colorama+Elseve",
-    "03424849000504": "Itallian"
+    "03424849000504": "Itallian",
+    "60819323000133": "Catharine Hill"
   },
   "por_nome_substring": {
     "SANTA CLARA": "Santa Clara",
@@ -35,7 +36,8 @@
     "DEVISA COMERCIAL": "Devisa",
     "HAUSEN": "Dagua Natural",
     "MEGA BELL": "Mega Bell",
-    "NETWORK BEAUTY": "Itallian"
+    "NETWORK BEAUTY": "Itallian",
+    "BENESA": "Catharine Hill"
   },
   "_marcas_sem_cadastro_erp": {
     "_descricao": "Marcas mapeadas só para RÓTULO no card 'Chegadas do mês'. NÃO existem como grupo de Marca no Microvix (sem saldo/vendas), então NÃO geram sugestão de compra. Para gerar sugestão, cadastrar a marca no ERP e taggear os produtos; depois adicionar em curva_marcas.json. Registrado 2026-06-25. Softhair(103)/La Bening(1015)/Loreal(387) foram cadastradas no ERP em 2026-06-25 e entraram na curva B — saíram desta lista.",

@@ -276,6 +276,7 @@ BRAND_KEYWORDS = {
     'Yama': ['YAMA','YAMÁ'],
     'Apice': ['APICE','APSE'],
     'Cadiveu': ['CADIVEU'],
+    'Catharine Hill': ['CATHARINE'],
     'Della&Delle': ['DELLA E DELLE','DELLA&DELLE','DELLA DELLE'],
     'Lizze': ['LIZZE'],
     'Felps': ['FELPS'],
