@@ -665,8 +665,9 @@ function render() {
       <th>Marca</th><th>Curva</th>
       <th title="Unidades que entraram na última nota fiscal lançada (somadas por produto da marca)">Últ. entrada (un)</th>
       <th>Vendas 60d (un)</th><th>Estoque (un)</th>
+      <th title="Quantas peças comprar agora para cobrir 60 dias de giro + 15 de reposição. Cálculo: máx(0, (vendas 60d ÷ 60) × 75 − estoque − trânsito)">Sugestão de Compra (un)</th>
       <th>Trânsito (un)</th>
-      <th>Cobertura (dias)</th><th>Sugestão (un)</th>
+      <th>Cobertura (dias)</th>
       <th>Pedido</th>
     </tr></thead><tbody>`;
   if (sug.length === 0) {
@@ -709,9 +710,9 @@ function render() {
         <td>${s.ult_entrada ? fmtUnid(s.ult_entrada) : '<span class="muted">—</span>'}</td>
         <td>${fmtUnid(s.venda_60d)}</td>
         <td>${estoqueCell(s)}</td>
+        <td class="sug ${s.sugestao_compra > 0 ? 'has' : ''}">${fmtUnid(s.sugestao_compra)}</td>
         <td>${fmtUnid(s.transito)}</td>
         <td class="${STATUS[stat].cls}">${fmtCobertura(s.cobertura_dias)}</td>
-        <td class="sug ${s.sugestao_compra > 0 ? 'has' : ''}">${fmtUnid(s.sugestao_compra)}</td>
         <td style="white-space:nowrap" class="no-print" onclick="event.stopPropagation()">${btn}</td>
       </tr>
       <tr id="prod-${rowId}" class="produtos-row" style="display:none"><td colspan="9"></td></tr>`;
