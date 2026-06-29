@@ -1180,7 +1180,13 @@ function toggleProdutos(rowId, loja, marca){
       // filtrar produtos com vendas ou estoque na loja escolhida (lançamentos sempre entram, mesmo zerados)
       const lojaUpper = loja;
       const prodsAll = m.produtos.map(p => ({...p, _v: p[lojaUpper]?.vendas||0, _s: p[lojaUpper]?.saldo||0, _t: p[lojaUpper]?.transito||0,
-        _ent: p[lojaUpper]?.ent||0, _entData: p[lojaUpper]?.ent_data||'', _est: (p[lojaUpper]?.est!=null?p[lojaUpper].est:null)}));
+        _ent: p[lojaUpper]?.ent||0, _entData: p[lojaUpper]?.ent_data||'', _est: (p[lojaUpper]?.est!=null?p[lojaUpper].est:null),
+        _saldoEf: (p[lojaUpper]?.saldo_efetivo!=null ? p[lojaUpper].saldo_efetivo : (p[lojaUpper]?.saldo||0))}));
+      // Sugestão de compra por produto — mesmo cálculo do nível da marca (alvo de 75 dias):
+      // máx(0, (vendas 60d ÷ 60) × 75 − estoque efetivo − trânsito). Lançamento usa qtd fixa.
+      const sugProd = p => p._lancamento
+        ? (p._lancamento_qtd_sugerida || 12)
+        : Math.max(0, Math.ceil((p._v/60) * 75 - (p._saldoEf!=null?p._saldoEf:p._s) - p._t));
       const prods = prodsAll
         .filter(p => p._lancamento || p._v !== 0 || p._s !== 0 || p._t !== 0)
         .sort((a,b) => (b._v - a._v) || (a._lancamento ? 1 : -1));      // lançamentos vão pro fim
@@ -1198,10 +1204,12 @@ function toggleProdutos(rowId, loja, marca){
         +'<th style="text-align:left">Cód</th>'
         +'<th style="text-align:left">Ref</th>'
         +'<th style="text-align:left">Descrição</th>'
-        +fmtEntCab+'<th>Vendas 60d</th><th>Estoque</th><th>Trânsito</th>'
+        +fmtEntCab+'<th>Vendas 60d</th><th>Estoque</th>'
+        +'<th title="Quantas peças comprar deste produto para cobrir 75 dias: máx(0, vendas/dia × 75 − estoque − trânsito)">Sugestão de Compra</th>'
+        +'<th>Trânsito</th>'
         +'</tr></thead><tbody>';
       if (prods.length === 0) {
-        h += `<tr><td colspan="7" style="text-align:center;color:var(--muted)">Sem produtos com movimentação em ${loja}</td></tr>`;
+        h += `<tr><td colspan="8" style="text-align:center;color:var(--muted)">Sem produtos com movimentação em ${loja}</td></tr>`;
       } else {
         prods.forEach(p => {
           const orfao = p._origem === 'NFe pendente';
@@ -1225,6 +1233,7 @@ function toggleProdutos(rowId, loja, marca){
             +`<td>${entTxt}</td>`
             +`<td>${fmtUnid(p._v)}</td>`
             +`<td>${fmtUnid(p._s)}</td>`
+            +`<td class="sug ${sugProd(p) > 0 ? 'has' : ''}">${fmtUnid(sugProd(p))}</td>`
             +`<td>${fmtUnid(p._t)}</td></tr>`;
         });
         h += `<tr style="font-weight:600;border-top:2px solid var(--border)">`
@@ -1232,6 +1241,7 @@ function toggleProdutos(rowId, loja, marca){
           +`<td>${fmtUnid(prods.reduce((a,p)=>a+p._ent,0))}</td>`
           +`<td>${fmtUnid(prods.reduce((a,p)=>a+p._v,0))}</td>`
           +`<td>${fmtUnid(prods.reduce((a,p)=>a+p._s,0))}</td>`
+          +`<td class="sug has">${fmtUnid(prods.reduce((a,p)=>a+sugProd(p),0))}</td>`
           +`<td>${fmtUnid(prods.reduce((a,p)=>a+p._t,0))}</td></tr>`;
       }
       h += '</tbody></table>';

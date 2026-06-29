@@ -10,7 +10,7 @@ CORREÇÃO BUG 2026-05-21:
   mesmo se a emissão foi em mês anterior — pois para o gerente, "chegou ontem" significa
   "lançada ontem", não "emitida ontem".
 """
-import json, os, sys, re, unicodedata
+import json, os, sys, re, unicodedata, math
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -571,30 +571,9 @@ for mk in marcas_out:
         mk['lojas'][loja]['estoque_estimado'] = sum(p[loja].get('est', p[loja].get('saldo_efetivo', p[loja]['saldo'])) for p in mk['produtos'])
 
 # ============ ETAPA 4: Sugestões ============
-# Estoque usado = saldo_efetivo = min(saldo ERP, estoque estimado pela última entrada − vendas).
-# Protege contra saldo do ERP inflado/errado (a sugestão não fica só no saldo).
-curva_order = {'S':0,'A':1,'B':2}
-sugestoes = []
-for loja in LOJAS:
-    for cv in ('S','A','B'):
-        for marca in curva.get(loja,{}).get(cv,[]):
-            mk = marca_idx.get(marca)
-            if not mk: continue
-            lj = mk['lojas'][loja]
-            vd = lj['vendas_60d'] / 60.0
-            saldo_ef = lj.get('saldo_efetivo', lj['saldo_atual'])
-            estoque = saldo_ef + lj['transito']
-            cob = estoque/vd if vd > 0 else 9999
-            alvo = vd * 75
-            sug = max(0, alvo - estoque)
-            sugestoes.append({
-                'loja':loja, 'marca':marca, 'curva':cv,
-                'venda_60d':lj['vendas_60d'], 'saldo_atual':lj['saldo_atual'],
-                'saldo_efetivo':round(saldo_ef), 'ult_entrada':round(lj.get('ult_entrada',0)),
-                'transito':lj['transito'],
-                'cobertura_dias':round(cob,1), 'sugestao_compra':round(sug)
-            })
-sugestoes.sort(key=lambda s: (curva_order.get(s['curva'],9), s['cobertura_dias']))
+# (calculado MAIS ABAIXO, após a integração de lançamentos — assim os produtos
+#  sintéticos de lançamento entram na soma por produto da sugestão. Ver bloco
+#  "ETAPA 4 (cont.)".)
 
 # ============ CHEGADAS DO MÊS (corrigido) ============
 # Inclui:
@@ -717,6 +696,43 @@ if LANCAMENTOS_PATH.exists():
         print(f"Lançamentos: {len(lancamentos_log['adicionados'])} novos / {len(lancamentos_log['ja_existentes'])} já cadastrados", file=sys.stderr)
     except Exception as e:
         print(f"warn: falha ao processar lancamentos.json: {e}", file=sys.stderr)
+
+# ============ ETAPA 4 (cont.): Sugestões — APÓS lançamentos integrados ============
+# Estoque usado = saldo_efetivo = min(saldo ERP, estoque estimado pela última entrada − vendas).
+# A sugestão da marca = SOMA das necessidades POR PRODUTO (alvo de 75 dias), clampada por SKU.
+# Não usar o agregado vd*75 da marca: no agregado a sobra de um produto "compensa" a falta de
+# outro, subestimando a compra real (estoque não migra entre SKUs). Assim o número da marca =
+# soma do detalhamento por produto (reconcilia 1:1 com o drilldown do dashboard). Produtos de
+# lançamento (sintéticos) já estão em mk['produtos'] aqui e entram com a qtd fixa sugerida.
+curva_order = {'S':0,'A':1,'B':2}
+sugestoes = []
+for loja in LOJAS:
+    for cv in ('S','A','B'):
+        for marca in curva.get(loja,{}).get(cv,[]):
+            mk = marca_idx.get(marca)
+            if not mk: continue
+            lj = mk['lojas'][loja]
+            vd = lj['vendas_60d'] / 60.0
+            saldo_ef = lj.get('saldo_efetivo', lj['saldo_atual'])
+            estoque = saldo_ef + lj['transito']
+            cob = estoque/vd if vd > 0 else 9999
+            sug = 0
+            for p in mk['produtos']:
+                lp = p.get(loja)
+                if not lp: continue
+                if p.get('_lancamento'):
+                    sug += p.get('_lancamento_qtd_sugerida', 12); continue
+                vdp = lp.get('vendas', 0) / 60.0
+                ef_p = lp.get('saldo_efetivo', lp.get('saldo', 0))
+                sug += max(0, math.ceil(vdp * 75 - ef_p - lp.get('transito', 0)))
+            sugestoes.append({
+                'loja':loja, 'marca':marca, 'curva':cv,
+                'venda_60d':lj['vendas_60d'], 'saldo_atual':lj['saldo_atual'],
+                'saldo_efetivo':round(saldo_ef), 'ult_entrada':round(lj.get('ult_entrada',0)),
+                'transito':lj['transito'],
+                'cobertura_dias':round(cob,1), 'sugestao_compra':round(sug)
+            })
+sugestoes.sort(key=lambda s: (curva_order.get(s['curva'],9), s['cobertura_dias']))
 
 # ============ MONTAR SAÍDA ============
 saida = {
