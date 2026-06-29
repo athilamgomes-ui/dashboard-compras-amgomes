@@ -1,5 +1,15 @@
 {
- "sem_marca": [],
+ "sem_marca": [
+  {
+   "loja": "L3",
+   "nf": "61",
+   "forn": "Marcelo Ribeiro da Silva",
+   "qt": 272,
+   "data": "2026-06-29",
+   "marcas": {},
+   "sem_un": 272
+  }
+ ],
  "fora_curva": [],
  "curva_nao_refletida": [],
  "ok": [
@@ -222,28 +232,6 @@
    "data": "2026-06-25",
    "marcas": {
     "Mega Bell": 40
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L5",
-   "nf": "684024",
-   "forn": "FLORENCE INDUSTRIAL E COMERCIAL LT",
-   "qt": 336,
-   "data": "2026-06-08",
-   "marcas": {
-    "Marco Boni": 336
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L5",
-   "nf": "684025",
-   "forn": "FLORENCE INDUSTRIAL E COMERCIAL LT",
-   "qt": 132,
-   "data": "2026-06-08",
-   "marcas": {
-    "Marco Boni": 132
    },
    "sem_un": 0
   },
