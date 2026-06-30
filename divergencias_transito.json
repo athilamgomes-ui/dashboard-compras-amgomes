@@ -113,6 +113,28 @@
    "sem_un": 0
   },
   {
+   "loja": "L1",
+   "nf": "71227",
+   "forn": "EL BEAUTY COSMETICOS COMERCIO IMPO",
+   "qt": 558,
+   "data": "2026-06-29",
+   "marcas": {
+    "Felps": 558
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L1",
+   "nf": "41124",
+   "forn": "Maystar Cosmetica do Brasil Ltda.",
+   "qt": 795,
+   "data": "2026-06-29",
+   "marcas": {
+    "Depilflax": 795
+   },
+   "sem_un": 0
+  },
+  {
    "loja": "L3",
    "nf": "1183612",
    "forn": "OKAJIMA DISTRIBUICAO E COMERCIO LT",
@@ -152,9 +174,9 @@
    "qt": 1332,
    "data": "2026-06-24",
    "marcas": {
-    "Beauty Color": 414
+    "Beauty Color": 1332
    },
-   "sem_un": 918
+   "sem_un": 0
   },
   {
    "loja": "L4",
@@ -236,6 +258,28 @@
    "sem_un": 0
   },
   {
+   "loja": "L4",
+   "nf": "202505",
+   "forn": "Network Beauty Fashion Cosmetica L",
+   "qt": 684,
+   "data": "2026-06-29",
+   "marcas": {
+    "Itallian": 684
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
+   "nf": "14275",
+   "forn": "BROKER CARAJAS DISTRIBUIDORA LTDA",
+   "qt": 138,
+   "data": "2026-06-29",
+   "marcas": {
+    "Truss": 138
+   },
+   "sem_un": 0
+  },
+  {
    "loja": "L5",
    "nf": "262633",
    "forn": "BORTMAN E CIA LTDA",
@@ -254,6 +298,17 @@
    "data": "2026-06-26",
    "marcas": {
     "Catharine Hill": 318
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "202491",
+   "forn": "Network Beauty Fashion Cosmetica L",
+   "qt": 384,
+   "data": "2026-06-29",
+   "marcas": {
+    "Itallian": 384
    },
    "sem_un": 0
   }
