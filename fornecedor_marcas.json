@@ -41,6 +41,12 @@
     "NETWORK BEAUTY": "Itallian",
     "BENESA": "Catharine Hill"
   },
+  "_transito_sem_marca_ok": {
+    "_descricao": "Fornecedores de REVENDA cujos produtos são genéricos/sem marca rastreada (não precisam mapear). Suas NFes pendentes NÃO devem aparecer no banner 'Trânsito sem marca classificada' do dashboard — mas CONTINUAM contando em chegadas_mes e compras_mensais_rs (são compras reais). Diferente de _ignorar_no_dashboard (que é não-revenda e some de tudo). EDITÁVEL — adicionar quando o usuário disser 'é genérico, não precisa mapear'.",
+    "por_nome_substring": [
+      "MARCELO RIBEIRO DA SILVA"
+    ]
+  },
   "_marcas_sem_cadastro_erp": {
     "_descricao": "Marcas mapeadas só para RÓTULO no card 'Chegadas do mês'. NÃO existem como grupo de Marca no Microvix (sem saldo/vendas), então NÃO geram sugestão de compra. Para gerar sugestão, cadastrar a marca no ERP e taggear os produtos; depois adicionar em curva_marcas.json. Registrado 2026-06-25. Softhair(103)/La Bening(1015)/Loreal(387) foram cadastradas no ERP em 2026-06-25 e entraram na curva B — saíram desta lista.",
     "marcas": [

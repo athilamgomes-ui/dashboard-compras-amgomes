@@ -43,6 +43,14 @@ def fornecedor_ignorado(nome):
     up = str(nome).upper()
     return any(s in up for s in IGNORAR_SUBSTRINGS)
 
+# Fornecedores de revenda genérica (sem marca rastreada) — só não aparecem no banner
+# 'trânsito sem marca', mas seguem contando em chegadas/compras (são compras reais).
+SEM_MARCA_OK_SUBSTRINGS = [s.upper() for s in (forn_marcas.get('_transito_sem_marca_ok') or {}).get('por_nome_substring', [])]
+def fornecedor_sem_marca_ok(nome):
+    if not nome: return False
+    up = str(nome).upper()
+    return any(s in up for s in SEM_MARCA_OK_SUBSTRINGS)
+
 HOJE = datetime.now()
 ANO = HOJE.year
 MES = HOJE.month
@@ -512,7 +520,7 @@ for loja, nfe in all_pendentes:
     # Produtos sem marca detectada nesta NFe pendente (ainda em trânsito) → registrar p/ banner.
     g_none = por_marca.get(None)
     nome_forn = nfe.get('DadosEmitente',{}).get('Nome') or ''
-    if g_none and nf_ainda_pendente and not fornecedor_ignorado(nome_forn):
+    if g_none and nf_ainda_pendente and not fornecedor_ignorado(nome_forn) and not fornecedor_sem_marca_ok(nome_forn):
         un = round(sum(q for _, q in g_none['prods']))
         if un > 0:
             transito_nao_classificado.append({
