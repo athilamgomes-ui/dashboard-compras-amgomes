@@ -1,7 +1,7 @@
 {
   "_descricao": "Mapeamento Fornecedor (CNPJ ou substring do Nome/RazaoSocial) → Marca no ERP. Usado pela skill quando a descrição dos produtos da NFe NÃO contém o nome da marca (caso da Kamaleão Color: produtos descritos como 'MASCARA PIGMENTANTE FLAMINGO 100ML KC'). EDITÁVEL manualmente — adicionar entradas conforme novos fornecedores apareçam.",
   "_formato": "CNPJ (14 dígitos sem pontuação) → marca | Nome contendo substring → marca",
-  "_ultima_edicao": "2026-06-30: +Benesa->Catharine Hill; (BROKER Carajas NAO mapeado de proposito — Compras detecta Truss pela descricao; mapear fornecedor causava roubo de match no planejamento entre pedido ENTREGUE antigo e ENVIADO novo)",
+  "_ultima_edicao": "2026-06-30: DEVISA COMERCIAL -> Depimiel (fornecedor Devisa = marca Depimiel, cera depilatoria)",
   "por_cnpj": {
     "33648842000103": "Probelle",
     "31768865000126": "Kamaleao",
@@ -34,7 +34,7 @@
     "VISAO COSMETICOS": "Softhair",
     "GARDO COSMETICOS": "La Bening",
     "BORTMAN E CIA": "Loreal",
-    "DEVISA COMERCIAL": "Devisa",
+    "DEVISA COMERCIAL": "Depimiel",
     "HAUSEN": "Dagua Natural",
     "MEGA BELL": "Mega Bell",
     "LOGIKA DISTRIBUIDORA": "Beauty Color",

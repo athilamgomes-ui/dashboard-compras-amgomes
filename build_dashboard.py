@@ -315,7 +315,7 @@ BRAND_KEYWORDS = {
     'Softhair': ['SOFTHAIR'],
     'La Bening': ['LA BENIG','LA BENING'],
     'Loreal': ['LOREAL'],
-    'Devisa': ['DEVISA'],
+    'Depimiel': ['DEPIMIEL'],
     'Dagua Natural': ['DAGUA NATURAL','DAGUA'],
     'Mega Bell': ['MEGA BELL','MEGA BEL'],
 }

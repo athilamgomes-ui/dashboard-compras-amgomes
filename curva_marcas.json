@@ -1,6 +1,6 @@
 {
   "_descricao": "Curva S/A/B por loja (S = estratégica/prioritária no orçamento; A = alta prioridade; B = oportunista). Editável manualmente.",
-  "_ultima_edicao": "2026-06-29: +Catharine Hill curva B na L5 (cod 364)",
+  "_ultima_edicao": "2026-06-30: Devisa -> Depimiel (nome correto da marca; fornecedor Devisa)",
   "L1": {
     "_loja": "Casa da Beleza Altamira (Empresa 1)",
     "A": [
@@ -31,7 +31,7 @@
       "Softhair",
       "La Bening",
       "Loreal",
-      "Devisa",
+      "Depimiel",
       "Dagua Natural",
       "Mega Bell"
     ],
@@ -79,7 +79,7 @@
       "Softhair",
       "La Bening",
       "Loreal",
-      "Devisa",
+      "Depimiel",
       "Dagua Natural",
       "Mega Bell"
     ],
@@ -126,7 +126,7 @@
       "Softhair",
       "La Bening",
       "Loreal",
-      "Devisa",
+      "Depimiel",
       "Dagua Natural",
       "Mega Bell"
     ],
@@ -175,7 +175,7 @@
       "Softhair",
       "La Bening",
       "Loreal",
-      "Devisa",
+      "Depimiel",
       "Dagua Natural",
       "Mega Bell",
       "Catharine Hill"
