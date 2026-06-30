@@ -463,6 +463,11 @@ def add_transito_produto(mk, loja, prod_nfe, qty, pend_floor=False):
 docs_lancados = {str(n['doc']).lstrip('0') for n in notas if n.get('doc')}
 
 pendentes_processadas = []
+# Trânsito em NFe pendente cujos produtos NÃO casaram com nenhuma marca (fornecedor não
+# mapeado + descrição sem o nome da marca). Sem isto, essas unidades somem silenciosamente
+# das sugestões. Coletamos para EXIBIR no dashboard (banner) — assim nada em trânsito
+# desaparece sem aviso. Exclui fornecedores não-revenda (lista _ignorar_no_dashboard).
+transito_nao_classificado = []
 for loja, nfe in all_pendentes:
     nf_num = str(nfe.get('NumeroNFe') or nfe.get('Numero') or nfe.get('numero') or '').lstrip('0')
     nf_ainda_pendente = nf_num not in docs_lancados  # True = não lançada → segue em trânsito
@@ -504,6 +509,17 @@ for loja, nfe in all_pendentes:
     # combinado do fornecedor (ex Belliz → 'Vertix+Ricca') só para exibição na chegada.
     label = '+'.join(ordenadas[:3]) if ordenadas else forn_brand_raw(nfe)
     pendentes_processadas.append({'loja':loja, 'nfe':nfe, 'marca':label, 'valor':valor_total})
+    # Produtos sem marca detectada nesta NFe pendente (ainda em trânsito) → registrar p/ banner.
+    g_none = por_marca.get(None)
+    nome_forn = nfe.get('DadosEmitente',{}).get('Nome') or ''
+    if g_none and nf_ainda_pendente and not fornecedor_ignorado(nome_forn):
+        un = round(sum(q for _, q in g_none['prods']))
+        if un > 0:
+            transito_nao_classificado.append({
+                'loja': loja, 'nf': nf_num or '(s/nº)', 'fornecedor': nome_forn[:40],
+                'un': un, 'valor': round(g_none['valor'], 2), 'data': (de or '')[:10],
+                'amostra': (g_none['prods'][0][0].get('DescricaoProduto','') or '')[:46] if g_none['prods'] else ''
+            })
 
 # Recalcular brand-level transito após pendentes
 for mk in marcas_out:
@@ -747,6 +763,7 @@ saida = {
     'marcas': marcas_out,
     'sugestoes': sugestoes,
     'chegadas_mes': chegadas,
+    'transito_nao_classificado': sorted(transito_nao_classificado, key=lambda x: -x['un']),
     'curva': curva,
     '_meta': {
         'unidade': 'peças',

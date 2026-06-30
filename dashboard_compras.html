@@ -208,6 +208,8 @@
 
   <div id="card-diff"></div>
 
+  <div id="transito-nao-classificado"></div>
+
   <div class="card" id="card-alertas-s" style="display:none">
     <h2 onclick="toggleCard('card-alertas-s')"><span class="toggle-icon">▼</span>🔔 Marcas estratégicas <strong>no ponto de pedir</strong> <span id="alertas-s-label" class="muted" style="font-weight:400;font-size:13px"></span></h2>
     <div id="alertas-s-conteudo"></div>
@@ -724,6 +726,9 @@ function render() {
   // Card de Diff vs. execução anterior
   renderDiff(filtroLoja);
 
+  // Banner: trânsito em NFe pendente sem marca classificada (revenda não mapeada)
+  renderTransitoNaoClassificado(filtroLoja);
+
   // Card de Alertas: marcas curva S no ponto de pedir
   renderAlertasS(filtroLoja);
 
@@ -786,6 +791,42 @@ function render() {
 
   document.getElementById('rodape').textContent =
     `Atualização automática: 12h e 18h · Próxima atualização agendada via launchd`;
+}
+
+function renderTransitoNaoClassificado(filtroLoja) {
+  const box = document.getElementById('transito-nao-classificado');
+  if (!box) return;
+  let itens = DATA.transito_nao_classificado || [];
+  if (filtroLoja !== 'ALL') itens = itens.filter(x => x.loja === filtroLoja);
+  if (!itens.length) { box.innerHTML = ''; return; }
+  const totUn = itens.reduce((a, x) => a + (x.un || 0), 0);
+  const linhas = itens.map(x => `
+    <tr>
+      <td style="font-weight:600">${x.loja}</td>
+      <td>${x.fornecedor || '—'}</td>
+      <td style="text-align:left;color:var(--muted)">${x.amostra || ''}</td>
+      <td style="text-align:right">NF ${x.nf}</td>
+      <td style="text-align:right">${x.data ? x.data.slice(8,10)+'/'+x.data.slice(5,7) : '—'}</td>
+      <td style="text-align:right;font-weight:700">${fmtUnid(x.un)}</td>
+    </tr>`).join('');
+  box.innerHTML = `
+    <div class="card" style="border-left:4px solid #f59e0b;background:#fffbeb">
+      <h2 style="margin-top:0;color:#92400e">⚠️ Trânsito sem marca classificada
+        <span class="muted" style="font-weight:400;font-size:13px">${itens.length} NF(s) · ${fmtUnid(totUn)} — mercadoria emitida/em trânsito que NÃO está nas sugestões</span>
+      </h2>
+      <p style="margin:2px 0 10px;font-size:12.5px;color:#78350f">
+        Estas NFes pendentes têm produtos cujo <strong>fornecedor/descrição não casou com nenhuma marca</strong>,
+        então o trânsito não entra no cálculo de sugestão. Se for marca de revenda, mapeie o fornecedor
+        em <code>fornecedor_marcas.json</code> (ou peça ao Claude). Não-revenda pode ser ignorado.
+      </p>
+      <table style="background:#fff">
+        <thead><tr>
+          <th>Loja</th><th>Fornecedor</th><th style="text-align:left">Produto (amostra)</th>
+          <th style="text-align:right">NF</th><th style="text-align:right">Data</th><th style="text-align:right">Un</th>
+        </tr></thead>
+        <tbody>${linhas}</tbody>
+      </table>
+    </div>`;
 }
 
 function renderDiff(filtroLoja) {
