@@ -1,6 +1,6 @@
 {
   "_descricao": "Curva S/A/B por loja (S = estratégica/prioritária no orçamento; A = alta prioridade; B = oportunista). Editável manualmente.",
-  "_ultima_edicao": "2026-07-01: Felps promovida para curva S em todas as lojas (marca estratégica)",
+  "_ultima_edicao": "2026-07-01: Felps + Japinha(965) para curva S em todas as lojas",
   "L1": {
     "_loja": "Casa da Beleza Altamira (Empresa 1)",
     "A": [
@@ -46,7 +46,8 @@
       "Beauty Color",
       "ProBelle",
       "Yama",
-      "Felps"
+      "Felps",
+      "Japinha"
     ]
   },
   "L4": {
@@ -94,7 +95,8 @@
       "Beauty Color",
       "ProBelle",
       "Yama",
-      "Felps"
+      "Felps",
+      "Japinha"
     ]
   },
   "L3": {
@@ -143,7 +145,8 @@
       "Colorama",
       "Risque",
       "Apice",
-      "Felps"
+      "Felps",
+      "Japinha"
     ]
   },
   "L5": {
@@ -191,7 +194,8 @@
       "ProBelle",
       "Yama",
       "Itallian",
-      "Felps"
+      "Felps",
+      "Japinha"
     ]
   },
   "_lojas_meta": {

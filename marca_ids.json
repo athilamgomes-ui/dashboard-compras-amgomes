@@ -1,6 +1,6 @@
 {
   "_descricao": "Mapeamento Marca → código(s) de marca no Microvix ERP. Permite buscar produtos pelo código da marca em vez de match por nome (mais confiável). ProBelle tem 2 códigos (varejo + profissional).",
-  "_ultima_edicao": "2026-06-25",
+  "_ultima_edicao": "2026-07-01: Japinha=965 (marca estratégica)",
   "Beauty Color": [
     131
   ],
@@ -67,5 +67,8 @@
   ],
   "Depimiel": [
     839
+  ],
+  "Japinha": [
+    965
   ]
 }

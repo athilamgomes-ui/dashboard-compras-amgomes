@@ -318,6 +318,7 @@ BRAND_KEYWORDS = {
     'Depimiel': ['DEPIMIEL'],
     'Dagua Natural': ['DAGUA NATURAL','DAGUA'],
     'Mega Bell': ['MEGA BELL','MEGA BEL'],
+    'Japinha': ['JAPINHA'],
 }
 
 EXCL_CFOP = {
