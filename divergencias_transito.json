@@ -8,15 +8,6 @@
    "data": "2026-06-29",
    "marcas": {},
    "sem_un": 272
-  },
-  {
-   "loja": "L3",
-   "nf": "67378",
-   "forn": "ZAKAT DISTRIBUIDORA DE COSMETICOS ",
-   "qt": 450,
-   "data": "2026-06-30",
-   "marcas": {},
-   "sem_un": 450
   }
  ],
  "fora_curva": [],
@@ -188,6 +179,17 @@
    "sem_un": 0
   },
   {
+   "loja": "L3",
+   "nf": "67378",
+   "forn": "ZAKAT DISTRIBUIDORA DE COSMETICOS ",
+   "qt": 450,
+   "data": "2026-06-30",
+   "marcas": {
+    "Salon Line": 450
+   },
+   "sem_un": 0
+  },
+  {
    "loja": "L4",
    "nf": "215721",
    "forn": "S R DOS SANTOS EQUIPAMENTOS",
@@ -295,9 +297,9 @@
    "qt": 288,
    "data": "2026-06-30",
    "marcas": {
-    "Let me be": 24
+    "Let me be": 288
    },
-   "sem_un": 264
+   "sem_un": 0
   },
   {
    "loja": "L5",
