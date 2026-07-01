@@ -319,6 +319,7 @@ BRAND_KEYWORDS = {
     'Dagua Natural': ['DAGUA NATURAL','DAGUA'],
     'Mega Bell': ['MEGA BELL','MEGA BEL'],
     'Japinha': ['JAPINHA'],
+    'Salon Line': ['SALON LINE','SALONLINE'],
 }
 
 EXCL_CFOP = {

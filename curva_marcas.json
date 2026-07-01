@@ -1,6 +1,6 @@
 {
   "_descricao": "Curva S/A/B por loja (S = estratégica/prioritária no orçamento; A = alta prioridade; B = oportunista). Editável manualmente.",
-  "_ultima_edicao": "2026-07-01: Felps + Japinha(965) para curva S em todas as lojas",
+  "_ultima_edicao": "2026-07-01: Salon Line (nova, forn ZAKAT, cod 56) adicionada curva B todas lojas; Let me be ganhou codigo ERP 936 (ja era curva A)",
   "L1": {
     "_loja": "Casa da Beleza Altamira (Empresa 1)",
     "A": [
@@ -32,7 +32,8 @@
       "Loreal",
       "Depimiel",
       "Dagua Natural",
-      "Mega Bell"
+      "Mega Bell",
+      "Salon Line"
     ],
     "S": [
       "Widi Care",
@@ -81,7 +82,8 @@
       "Loreal",
       "Depimiel",
       "Dagua Natural",
-      "Mega Bell"
+      "Mega Bell",
+      "Salon Line"
     ],
     "S": [
       "Widi Care",
@@ -128,7 +130,8 @@
       "Loreal",
       "Depimiel",
       "Dagua Natural",
-      "Mega Bell"
+      "Mega Bell",
+      "Salon Line"
     ],
     "S": [
       "Widi Care",
@@ -180,7 +183,8 @@
       "Depimiel",
       "Dagua Natural",
       "Mega Bell",
-      "Catharine Hill"
+      "Catharine Hill",
+      "Salon Line"
     ],
     "S": [
       "Widi Care",

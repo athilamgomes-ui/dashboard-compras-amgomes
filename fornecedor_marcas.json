@@ -1,7 +1,7 @@
 {
   "_descricao": "Mapeamento Fornecedor (CNPJ ou substring do Nome/RazaoSocial) → Marca no ERP. Usado pela skill quando a descrição dos produtos da NFe NÃO contém o nome da marca (caso da Kamaleão Color: produtos descritos como 'MASCARA PIGMENTANTE FLAMINGO 100ML KC'). EDITÁVEL manualmente — adicionar entradas conforme novos fornecedores apareçam.",
   "_formato": "CNPJ (14 dígitos sem pontuação) → marca | Nome contendo substring → marca",
-  "_ultima_edicao": "2026-06-30: DEVISA COMERCIAL -> Depimiel (fornecedor Devisa = marca Depimiel, cera depilatoria)",
+  "_ultima_edicao": "2026-07-01: ZAKAT -> Salon Line (56) | LMB -> Let me be (936)",
   "por_cnpj": {
     "33648842000103": "Probelle",
     "31768865000126": "Kamaleao",
@@ -39,7 +39,9 @@
     "MEGA BELL": "Mega Bell",
     "LOGIKA DISTRIBUIDORA": "Beauty Color",
     "NETWORK BEAUTY": "Itallian",
-    "BENESA": "Catharine Hill"
+    "BENESA": "Catharine Hill",
+    "ZAKAT": "Salon Line",
+    "LMB COSMETICOS": "Let me be"
   },
   "_transito_sem_marca_ok": {
     "_descricao": "Fornecedores de REVENDA cujos produtos são genéricos/sem marca rastreada (não precisam mapear). Suas NFes pendentes NÃO devem aparecer no banner 'Trânsito sem marca classificada' do dashboard — mas CONTINUAM contando em chegadas_mes e compras_mensais_rs (são compras reais). Diferente de _ignorar_no_dashboard (que é não-revenda e some de tudo). EDITÁVEL — adicionar quando o usuário disser 'é genérico, não precisa mapear'.",
