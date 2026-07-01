@@ -8,6 +8,15 @@
    "data": "2026-06-29",
    "marcas": {},
    "sem_un": 272
+  },
+  {
+   "loja": "L3",
+   "nf": "67378",
+   "forn": "ZAKAT DISTRIBUIDORA DE COSMETICOS ",
+   "qt": 450,
+   "data": "2026-06-30",
+   "marcas": {},
+   "sem_un": 450
   }
  ],
  "fora_curva": [],
@@ -278,6 +287,17 @@
     "Truss": 138
    },
    "sem_un": 0
+  },
+  {
+   "loja": "L4",
+   "nf": "15755",
+   "forn": "LMB COSMETICOS LTDA",
+   "qt": 288,
+   "data": "2026-06-30",
+   "marcas": {
+    "Let me be": 24
+   },
+   "sem_un": 264
   },
   {
    "loja": "L5",
