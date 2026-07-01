@@ -761,9 +761,14 @@ function render() {
     }
     if (!curva) return;
     if (filtroCurva !== 'ALL' && filtroCurva !== curva) return;
-    linhasMarca.push({brand, curva});
+    let totalMarca = 0;
+    lojasFilt.forEach(lj => {
+      const mensal = (brand.compras_mensais_rs && brand.compras_mensais_rs[lj]) || {};
+      totalMarca += Object.values(mensal).reduce((a,v) => a + (v||0), 0);
+    });
+    linhasMarca.push({brand, curva, totalMarca});
   });
-  linhasMarca.sort((a,b) => (curvaOrder[a.curva] - curvaOrder[b.curva]) || a.brand.marca.localeCompare(b.brand.marca));
+  linhasMarca.sort((a,b) => (curvaOrder[a.curva] - curvaOrder[b.curva]) || (b.totalMarca - a.totalMarca));
   if (linhasMarca.length === 0) {
     m += `<tr><td colspan="${meses.length+2}" id="status-empty">Sem dados — aguarde próxima atualização da skill.</td></tr>`;
   } else {
