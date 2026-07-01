@@ -1,28 +1,28 @@
 {
-  "_gerado_em": "2026-06-15",
+  "_gerado_em": "2026-07-01",
   "_descricao": "Lançamentos identificados na web para marcas curva S. Top 3 por marca, foco em produtos virais/sucesso de 2025-2026. Arquivo EDITÁVEL manualmente — adicionar/remover lançamentos conforme aparecerem. Atualizado periodicamente por agente de pesquisa.",
   "_qtd_sugerida_por_loja": 12,
   "marcas": {
     "Widi Care": [
-      {"nome": "Shampoo Juba Transição Capilar 500ml", "categoria": "shampoo", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://widicare.com.br/linhas/juba-transicaocapilar/", "obs": "Extensão da linha Juba (carro-chefe da marca) voltada para transição capilar; formato 500ml premium. Linha ainda ativa no site oficial em jun/2026."},
-      {"nome": "Gelatina Phytomanga Ativadora UltraNutritiva 300g", "categoria": "gelatina/ativador", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://lojawidicare.com.br/", "obs": "Novo formato 300g do ativador Phytomanga, linha vegana queridinha de cachos."}
+      {"nome": "Shampoo Juba Transição Capilar 500ml", "categoria": "shampoo", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://widicare.com.br/linhas/juba-transicaocapilar/", "obs": "Extensão da linha Juba (carro-chefe da marca) voltada para transição capilar; formato 500ml premium. Linha ainda ativa no site oficial em jul/2026."},
+      {"nome": "Gelatina Phytomanga Ativadora UltraNutritiva 300g", "categoria": "gelatina/ativador", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://lojawidicare.com.br/", "obs": "Novo formato 300g do ativador Phytomanga, linha vegana queridinha de cachos. Nenhum produto novo identificado em jul/2026 (marca focou o trimestre no programa WidiLovers Creators, não em lançamento de produto)."}
     ],
     "Itallian": [
-      {"nome": "Color Shift Collection", "categoria": "coloração", "descoberto_em": "2026-05-28", "fonte": "youtube_oficial", "url": "https://www.youtube.com/watch?v=C8C9W7Tj1IM", "obs": "Lançamento de março/2026 anunciado oficialmente como o mais novo da Itallian Hairtech; linha de coloração com tendência shift. Reconfirmado como novidade em jun/2026."},
+      {"nome": "Color Shift Collection", "categoria": "coloração", "descoberto_em": "2026-05-28", "fonte": "youtube_oficial", "url": "https://www.youtube.com/watch?v=C8C9W7Tj1IM", "obs": "Lançamento de março/2026 anunciado oficialmente como o mais novo da Itallian Hairtech; linha de coloração com tendência shift. Segue como novidade principal em jul/2026."},
       {"nome": "Kit Trivitt Extreme Up Reconstrução Profissional", "categoria": "kit reconstrução", "descoberto_em": "2026-05-28", "fonte": "marketplace", "url": "https://www.belezanaweb.com.br/kit-itallian-hairtech-extreme-up-reconstrucao-profissional-4-produtos/", "obs": "Kit profissional Extreme Up (Home Care) em destaque no varejo, nova embalagem; linha Trivitt reconstrução."}
     ],
     "Marco Boni": [
-      {"nome": "Escova Desembaraçante Árvore 7257", "categoria": "escova/acessório", "descoberto_em": "2026-06-01", "fonte": "site_oficial", "url": "https://www.marcoboni.com.br/produto/escova-arvore/", "obs": "Lançamento recente (vídeo oficial set/2025); corpo anatômico em formato de galhos, cerdas flexíveis de nylon, todos os tipos de cabelo. Cores sortidas, ref 7257."}
+      {"nome": "Escova Desembaraçante Árvore 7257", "categoria": "escova/acessório", "descoberto_em": "2026-06-01", "fonte": "site_oficial", "url": "https://www.marcoboni.com.br/produto/escova-arvore/", "obs": "Lançamento recente (vídeo oficial set/2025); corpo anatômico em formato de galhos, cerdas flexíveis de nylon, todos os tipos de cabelo. Cores sortidas, ref 7257. Marca celebra 45 anos em 2026 com foco em escovas térmicas e acessórios profissionais — sem novo SKU nominado ainda."}
     ],
     "Santa Clara": [],
     "Truss": [
+      {"nome": "Color Shield", "categoria": "linha coloração (shampoo/condicionador/leave-in/booster)", "descoberto_em": "2026-07-01", "fonte": "site_oficial", "url": "https://www.trussprofessional.com.br/truss/color-shield/", "obs": "Lançamento abr/2026 (Grupo Boticário): blinda a cor por até 12 semanas contra desbotamento, tecnologia antioxidante + proteção UV + reparo da fibra. Linha de 4 itens (shampoo, condicionador, leave-in e Active Hair Booster profissional). Viral no TikTok, aposta no segmento de coloração em expansão."},
       {"nome": "Blond Revolution", "categoria": "linha loiros (shampoo/máscara/protetor)", "descoberto_em": "2026-06-01", "fonte": "site_oficial", "url": "https://www.trussprofessional.com.br/lancamentos/", "obs": "Flagship Truss e 1ª campanha global da marca (anunciada 09/03/2026); linha de 7 produtos p/ loiros com tecnologia Bond Restore, 90% menos quebra. Viral no TikTok (Pro Instant Dose, Impassable Blond, Net Blond Mask, Antioxidant Shampoo)."},
-      {"nome": "No Metal Shampoo", "categoria": "shampoo", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://www.trussprofessional.com.br/lancamentos/", "obs": "Lançamento 2026 com proposta de desintoxicação capilar e remoção de metais pesados; limpeza profunda sem ressecar, foco em cabelos quimicamente tratados."},
-      {"nome": "Miracle Summer", "categoria": "linha verão (proteção solar/hidratação)", "descoberto_em": "2026-06-15", "fonte": "site_oficial", "url": "https://www.trussprofessional.com.br/lancamentos/", "obs": "Linha de verão 2026 essencial para proteção solar e hidratação intensa, prepara os fios para o calor. Destaque nos lançamentos oficiais Truss em jun/2026."}
+      {"nome": "No Metal Shampoo", "categoria": "shampoo", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://www.trussprofessional.com.br/lancamentos/", "obs": "Lançamento 2026 com proposta de desintoxicação capilar e remoção de metais pesados; limpeza profunda sem ressecar, foco em cabelos quimicamente tratados. Máscara No Metal complementa a linha."}
     ],
     "CBB": [
       {"nome": "Nutry Horse", "categoria": "tratamento capilar", "descoberto_em": "2026-05-28", "fonte": "instagram_oficial", "url": "https://www.instagram.com/p/DKj9KqYML0v/", "obs": "Apresentado no Instagram oficial CBB como novidade recente; linha de cuidado capilar inspirada em fórmula equina."},
-      {"nome": "Tropical Glow", "categoria": "linha corporal/perfumaria", "descoberto_em": "2026-05-28", "fonte": "instagram_oficial", "url": "https://www.instagram.com/p/DIggeugxHau/", "obs": "Linha Tropical Glow anunciada no Instagram oficial CBB; novidade recente da marca, reconfirmada em jun/2026."}
+      {"nome": "Tropical Glow", "categoria": "linha corporal/perfumaria", "descoberto_em": "2026-05-28", "fonte": "instagram_oficial", "url": "https://www.instagram.com/p/DIggeugxHau/", "obs": "Linha Tropical Glow anunciada no Instagram oficial CBB; novidade recente da marca, segue ativa em jul/2026."}
     ],
     "Natum": [
       {"nome": "Revival Repair Shampoo", "categoria": "shampoo", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://natumcosmeticos.commercesuite.com.br/lancamentos", "obs": "Linha Revival Repair (Shampoo, Condicionador, Leave-in e Máscara) marcada como Lançamento/Destaque 2026 no catálogo oficial."},
@@ -35,7 +35,7 @@
       {"nome": "Cores Reais Argan Coco", "categoria": "coloração", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://beautycolor.com.br/cabelos/rico-em-argancoco", "obs": "Linha de coloração vegana com blend de 8 óleos (Argan, Coco etc) + aminoácidos, em destaque na home oficial."}
     ],
     "ProBelle": [
-      {"nome": "Tratamento Multifuncional 10 em 1", "categoria": "ampolas/tratamento", "descoberto_em": "2026-05-28", "fonte": "instagram_oficial", "url": "https://www.instagram.com/probellecosmeticos/", "obs": "Lançamento com 3 ampolas e 50+ matérias-primas premium; hidratação, nutrição e reconstrução em um só produto."},
+      {"nome": "Tratamento Multifuncional 10 em 1", "categoria": "ampolas/tratamento", "descoberto_em": "2026-05-28", "fonte": "instagram_oficial", "url": "https://www.instagram.com/probellecosmeticos/", "obs": "Lançamento com 3 ampolas e 50+ matérias-primas premium; hidratação, nutrição e reconstrução em um só produto. Segue em destaque no varejo em jul/2026."},
       {"nome": "Force Ultra Nutritive Repair", "categoria": "protetor térmico", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://probelle.com.br/en/products/", "obs": "Protetor térmico com silicones de alta tecnologia e filtro solar; destaque recente da marca."},
       {"nome": "SOS Acidificante", "categoria": "tratamento acidificante", "descoberto_em": "2026-05-28", "fonte": "site_oficial", "url": "https://probelle.com.br/sos-acidificante-o-resgate-que-seu-cabelo-clama/", "obs": "Lançamento recente apresentado como resgate instantâneo de brilho; destaque no blog oficial."}
     ],
