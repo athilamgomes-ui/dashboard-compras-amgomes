@@ -1,13 +1,12 @@
 {
   "_descricao": "Curva S/A/B por loja (S = estratégica/prioritária no orçamento; A = alta prioridade; B = oportunista). Editável manualmente.",
-  "_ultima_edicao": "2026-06-30: Apice promovida de A->S na L3 (marca estratégica)",
+  "_ultima_edicao": "2026-07-01: Felps promovida para curva S em todas as lojas (marca estratégica)",
   "L1": {
     "_loja": "Casa da Beleza Altamira (Empresa 1)",
     "A": [
       "Gama",
       "Apice",
       "Let me be",
-      "Felps",
       "Depilflax",
       "Risque",
       "Igora",
@@ -46,7 +45,8 @@
       "Hair Extrattus",
       "Beauty Color",
       "ProBelle",
-      "Yama"
+      "Yama",
+      "Felps"
     ]
   },
   "L4": {
@@ -55,7 +55,6 @@
       "Gama",
       "Apice",
       "Let me be",
-      "Felps",
       "Depilflax",
       "Risque",
       "Igora",
@@ -94,7 +93,8 @@
       "Hair Extrattus",
       "Beauty Color",
       "ProBelle",
-      "Yama"
+      "Yama",
+      "Felps"
     ]
   },
   "L3": {
@@ -102,7 +102,6 @@
     "A": [
       "Gama",
       "Let me be",
-      "Felps",
       "Depilflax",
       "Igora",
       "Mundial",
@@ -143,7 +142,8 @@
       "Yama",
       "Colorama",
       "Risque",
-      "Apice"
+      "Apice",
+      "Felps"
     ]
   },
   "L5": {
@@ -165,7 +165,6 @@
       "Cadiveu"
     ],
     "B": [
-      "Felps",
       "Repos",
       "Igora",
       "Belliz",
@@ -191,7 +190,8 @@
       "Beauty Color",
       "ProBelle",
       "Yama",
-      "Itallian"
+      "Itallian",
+      "Felps"
     ]
   },
   "_lojas_meta": {
