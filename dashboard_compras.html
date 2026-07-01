@@ -225,7 +225,8 @@
     <div id="chegadas-conteudo"></div>
     <div class="legend">
       🟢 <strong>recebida</strong> = NF já lançada no ERP ·
-      mostra apenas NFs recebidas nos últimos 45 dias · ordenado por data de emissão
+      🟡 <strong>em trânsito</strong> = NFe emitida pelo fornecedor, ainda não recebida fisicamente ·
+      ordenado por valor decrescente
     </div>
   </div>
 
@@ -906,11 +907,7 @@ function renderChegadas(filtroLoja) {
   let html = '<div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px">';
   let totalGeral = 0, totalRecebida = 0, totalPendente = 0;
   lojas.forEach(lj => {
-    const itens = (ch[lj] || [])
-      // Card mostra APENAS as NFes recebidas (lançadas no ERP) nos últimos 45 dias —
-      // as em trânsito (pendentes) ficam de fora pra limpar a tela.
-      .filter(x => x.origem === 'lancada')
-      .slice().sort((a,b) => {
+    const itens = (ch[lj] || []).slice().sort((a,b) => {
       // ordem crescente por data de emissão
       const da = a.data_emissao || a.data || '';
       const db = b.data_emissao || b.data || '';
@@ -968,8 +965,9 @@ function renderChegadas(filtroLoja) {
   });
   html += '</div>';
   html += `<div style="margin-top:10px;padding:8px 10px;background:#f7f9fb;border-radius:6px;font-size:12px;color:var(--muted)">
-    <strong>Recebidas (últimos 45 dias):</strong> ${fmtRS(totalGeral)} ·
-    🟢 ${totalRecebida} NF${totalRecebida===1?'':'s'}
+    <strong>Total do mês:</strong> ${fmtRS(totalGeral)} ·
+    🟢 ${totalRecebida} recebida${totalRecebida===1?'':'s'} ·
+    🟡 ${totalPendente} em trânsito
   </div>`;
   cont.innerHTML = html;
 }
