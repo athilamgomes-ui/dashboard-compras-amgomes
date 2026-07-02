@@ -1,6 +1,15 @@
 {
  "sem_marca": [
   {
+   "loja": "L1",
+   "nf": "371607",
+   "forn": "DVT COMERCIO, IMPORTACAO E EXPORTA",
+   "qt": 17,
+   "data": "2026-07-01",
+   "marcas": {},
+   "sem_un": 17
+  },
+  {
    "loja": "L3",
    "nf": "61",
    "forn": "Marcelo Ribeiro da Silva",
@@ -276,17 +285,6 @@
    "data": "2026-06-29",
    "marcas": {
     "Itallian": 684
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L4",
-   "nf": "14275",
-   "forn": "BROKER CARAJAS DISTRIBUIDORA LTDA",
-   "qt": 138,
-   "data": "2026-06-29",
-   "marcas": {
-    "Truss": 138
    },
    "sem_un": 0
   },
