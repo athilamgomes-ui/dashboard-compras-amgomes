@@ -79,17 +79,6 @@
   },
   {
    "loja": "L1",
-   "nf": "12495",
-   "forn": "GARDO COSMETICOS LTDA",
-   "qt": 132,
-   "data": "2026-06-23",
-   "marcas": {
-    "La Bening": 132
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L1",
    "nf": "567",
    "forn": "HAUSEN E SCHULTZ COMERCIAL LTDA",
    "qt": 30,
@@ -162,17 +151,6 @@
    "data": "2026-06-16",
    "marcas": {
     "Depimiel": 456
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L3",
-   "nf": "201966",
-   "forn": "Network Beauty Fashion Cosmetica L",
-   "qt": 528,
-   "data": "2026-06-16",
-   "marcas": {
-    "Itallian": 528
    },
    "sem_un": 0
   },
@@ -296,17 +274,6 @@
    "data": "2026-06-30",
    "marcas": {
     "Let me be": 288
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L5",
-   "nf": "145055",
-   "forn": "BENESA COMERCIAL LTDA",
-   "qt": 318,
-   "data": "2026-06-26",
-   "marcas": {
-    "Catharine Hill": 318
    },
    "sem_un": 0
   },
