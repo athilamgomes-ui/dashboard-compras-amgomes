@@ -3,6 +3,7 @@
   "_formato": "CNPJ (14 dígitos sem pontuação) → marca | Nome contendo substring → marca",
   "_ultima_edicao": "2026-07-06: BROKER CARAJAS (CNPJ 41282461000181) -> Truss (NF 14275 L4)",
   "por_cnpj": {
+    "19518725000102": "Felps",
     "41282461000181": "Truss",
     "33648842000103": "Probelle",
     "31768865000126": "Kamaleao",
@@ -15,6 +16,7 @@
     "06222722000177": "Beauty Color"
   },
   "por_nome_substring": {
+    "EL BEAUTY": "Felps",
     "SANTA CLARA": "Santa Clara",
     "KAMALEAO COLOR": "Kamaleao",
     "KAMALEÃO COLOR": "Kamaleao",
