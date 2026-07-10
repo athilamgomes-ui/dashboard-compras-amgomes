@@ -57,17 +57,6 @@
   },
   {
    "loja": "L1",
-   "nf": "718333",
-   "forn": "SANTA CLARA MANUFATURA E COSMETICO",
-   "qt": 1363,
-   "data": "2026-06-20",
-   "marcas": {
-    "Santa Clara": 1363
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L1",
    "nf": "27465",
    "forn": "VISAO COSMETICOS LTDA",
    "qt": 1104,
@@ -178,17 +167,6 @@
   },
   {
    "loja": "L4",
-   "nf": "109390",
-   "forn": "R C DISTRIBUICAO E COMERCIO LTDA",
-   "qt": 35,
-   "data": "2026-06-19",
-   "marcas": {
-    "Lizze": 35
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L4",
    "nf": "1238",
    "forn": "A M GOMES IMPORT EXPORT",
    "qt": 19,
@@ -199,28 +177,6 @@
     "Dafu": 1
    },
    "sem_un": 16
-  },
-  {
-   "loja": "L4",
-   "nf": "718872",
-   "forn": "SANTA CLARA MANUFATURA E COSMETICO",
-   "qt": 1366,
-   "data": "2026-06-25",
-   "marcas": {
-    "Santa Clara": 1366
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L4",
-   "nf": "172610",
-   "forn": "MEGA BELL INDUSTRIA E COMERCIO LTD",
-   "qt": 40,
-   "data": "2026-06-25",
-   "marcas": {
-    "Mega Bell": 40
-   },
-   "sem_un": 0
   },
   {
    "loja": "L4",
