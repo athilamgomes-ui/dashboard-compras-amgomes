@@ -1,15 +1,6 @@
 {
  "sem_marca": [
   {
-   "loja": "L1",
-   "nf": "371607",
-   "forn": "DVT COMERCIO, IMPORTACAO E EXPORTA",
-   "qt": 17,
-   "data": "2026-07-01",
-   "marcas": {},
-   "sem_un": 17
-  },
-  {
    "loja": "L3",
    "nf": "61",
    "forn": "Marcelo Ribeiro da Silva",
@@ -79,17 +70,6 @@
   },
   {
    "loja": "L1",
-   "nf": "12582",
-   "forn": "GARDO COSMETICOS LTDA",
-   "qt": 48,
-   "data": "2026-06-26",
-   "marcas": {
-    "La Bening": 48
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L1",
    "nf": "41124",
    "forn": "Maystar Cosmetica do Brasil Ltda.",
    "qt": 795,
@@ -151,17 +131,6 @@
    "data": "2026-06-16",
    "marcas": {
     "Repos": 6
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L4",
-   "nf": "538",
-   "forn": "HAUSEN & SCHULTZ COMERCIAL LTDA",
-   "qt": 228,
-   "data": "2026-06-16",
-   "marcas": {
-    "Dagua Natural": 228
    },
    "sem_un": 0
   },
