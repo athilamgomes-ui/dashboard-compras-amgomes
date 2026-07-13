@@ -15,3 +15,9 @@ DISTRIBUIDORA LTDA). Truss já existia em `marca_ids.json` (código 376) e na cu
 esse fornecedor específico. Motivo: NF 14275 (loja L4, 20 produtos, todos Truss por descrição)
 tinha dado entrada no ERP mas não aparecia na tela de precificação (dashboard-equipe) por falta de
 marca mapeada ao fornecedor. Confirmado por descrição de produto (100% "TRUSS ...").
+
+## 2026-07-13 — Talge (fornecedor novo)
+`fornecedor_marcas.json`: `por_cnpj["07439329000100"] = "Talge"` (DVT COMERCIO IMPORTACAO E
+EXPORTACAO LTDA). `marca_ids.json`: `Talge = [243]` (código informado pelo usuário). Motivo:
+NF 371607 (L1, 15 produtos, R$2.772) lançada 13/07 não aparecia na precificação por falta de
+mapeamento. Após mapear: 15/15 preços associados.
