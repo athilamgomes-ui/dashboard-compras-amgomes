@@ -1,7 +1,7 @@
 {
   "_descricao": "Mapeamento Fornecedor (CNPJ ou substring do Nome/RazaoSocial) → Marca no ERP. Usado pela skill quando a descrição dos produtos da NFe NÃO contém o nome da marca (caso da Kamaleão Color: produtos descritos como 'MASCARA PIGMENTANTE FLAMINGO 100ML KC'). EDITÁVEL manualmente — adicionar entradas conforme novos fornecedores apareçam.",
   "_formato": "CNPJ (14 dígitos sem pontuação) → marca | Nome contendo substring → marca",
-  "_ultima_edicao": "2026-07-06: BROKER CARAJAS (CNPJ 41282461000181) -> Truss (NF 14275 L4)",
+  "_ultima_edicao": "2026-07-14: MARCELO RIBEIRO DA SILVA -> Adesivos de Unha (rótulo-only, NF 61 L3, adesivos p/ unha). Movido de _transito_sem_marca_ok.",
   "por_cnpj": {
     "19518725000102": "Felps",
     "41282461000181": "Truss",
@@ -45,19 +45,19 @@
     "NETWORK BEAUTY": "Itallian",
     "BENESA": "Catharine Hill",
     "ZAKAT": "Salon Line",
-    "LMB COSMETICOS": "Let me be"
+    "LMB COSMETICOS": "Let me be",
+    "MARCELO RIBEIRO DA SILVA": "Adesivos de Unha"
   },
   "_transito_sem_marca_ok": {
     "_descricao": "Fornecedores de REVENDA cujos produtos são genéricos/sem marca rastreada (não precisam mapear). Suas NFes pendentes NÃO devem aparecer no banner 'Trânsito sem marca classificada' do dashboard — mas CONTINUAM contando em chegadas_mes e compras_mensais_rs (são compras reais). Diferente de _ignorar_no_dashboard (que é não-revenda e some de tudo). EDITÁVEL — adicionar quando o usuário disser 'é genérico, não precisa mapear'.",
-    "por_nome_substring": [
-      "MARCELO RIBEIRO DA SILVA"
-    ]
+    "por_nome_substring": []
   },
   "_marcas_sem_cadastro_erp": {
     "_descricao": "Marcas mapeadas só para RÓTULO no card 'Chegadas do mês'. NÃO existem como grupo de Marca no Microvix (sem saldo/vendas), então NÃO geram sugestão de compra. Para gerar sugestão, cadastrar a marca no ERP e taggear os produtos; depois adicionar em curva_marcas.json. Registrado 2026-06-25. Softhair(103)/La Bening(1015)/Loreal(387) foram cadastradas no ERP em 2026-06-25 e entraram na curva B — saíram desta lista.",
     "marcas": [
       "Cadiveu",
-      "Confeccoes ND"
+      "Confeccoes ND",
+      "Adesivos de Unha"
     ]
   },
   "_uso_interno": {

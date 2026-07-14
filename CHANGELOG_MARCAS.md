@@ -9,6 +9,19 @@ Formato: `## AAAA-MM-DD — <Marca>` + o que mudou em cada arquivo + NF/forneced
 
 <!-- novas entradas abaixo -->
 
+## 2026-07-14 — Adesivos de Unha (rótulo-only)
+Fornecedor pessoa-física **Marcelo Ribeiro da Silva** = adesivos para unhas (revenda avulsa,
+sem grupo de Marca no ERP). Antes estava em `_transito_sem_marca_ok` (genérico, suprimido do
+banner). O usuário pediu para ESPECIFICAR. Mudanças em `fornecedor_marcas.json`:
+- `por_nome_substring["MARCELO RIBEIRO DA SILVA"] = "Adesivos de Unha"` (novo rótulo).
+- removido de `_transito_sem_marca_ok.por_nome_substring` (lista ficou vazia).
+- "Adesivos de Unha" adicionado a `_marcas_sem_cadastro_erp.marcas` (rótulo-only: aparece em
+  "Chegadas do mês", NÃO vira sugestão de compra por não ter grupo de Marca no ERP).
+NÃO alterei `marca_ids.json` nem `curva_marcas.json` (não há grupo no ERP). Motivo: NF 61 (L3,
+29/06, 272 un) caía no banner "trânsito sem marca". Pós-rebuild: `sem marca: 0`, NF 61 aparece
+como `['Adesivos de Unha']` (fora de curva = só rótulo). Rebuild offline (compras_raw.json 08:57),
+sem re-raspar o Microvix.
+
 ## 2026-07-06 — Truss (fornecedor novo)
 `fornecedor_marcas.json`: adicionado `por_cnpj["41282461000181"] = "Truss"` (BROKER CARAJAS
 DISTRIBUIDORA LTDA). Truss já existia em `marca_ids.json` (código 376) e na curva — só faltava

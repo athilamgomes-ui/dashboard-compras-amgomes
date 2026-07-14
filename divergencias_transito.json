@@ -1,16 +1,18 @@
 {
- "sem_marca": [
+ "sem_marca": [],
+ "fora_curva": [
   {
    "loja": "L3",
    "nf": "61",
    "forn": "Marcelo Ribeiro da Silva",
    "qt": 272,
    "data": "2026-06-29",
-   "marcas": {},
-   "sem_un": 272
+   "marcas": {
+    "Adesivos de Unha": 272
+   },
+   "sem_un": 0
   }
  ],
- "fora_curva": [],
  "curva_nao_refletida": [],
  "ok": [
   {
