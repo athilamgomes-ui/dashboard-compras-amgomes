@@ -1,5 +1,24 @@
 {
- "sem_marca": [],
+ "sem_marca": [
+  {
+   "loja": "L3",
+   "nf": "932",
+   "forn": "FRANCA PLUS COMERCIO DE COSMETICOS",
+   "qt": 824,
+   "data": "2026-07-21",
+   "marcas": {},
+   "sem_un": 824
+  },
+  {
+   "loja": "L5",
+   "nf": "931",
+   "forn": "FRANCA PLUS COMERCIO DE COSMETICOS",
+   "qt": 336,
+   "data": "2026-07-21",
+   "marcas": {},
+   "sem_un": 336
+  }
+ ],
  "fora_curva": [
   {
    "loja": "L3",
@@ -17,45 +36,12 @@
  "ok": [
   {
    "loja": "L1",
-   "nf": "91611",
-   "forn": "Tricosmeticos Distribuidora de Cos",
-   "qt": 504,
-   "data": "2026-04-22",
-   "marcas": {
-    "Cadiveu": 504
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L1",
-   "nf": "91631",
-   "forn": "Tricosmeticos Distribuidora de Cos",
-   "qt": 66,
-   "data": "2026-04-22",
-   "marcas": {
-    "Cadiveu": 66
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L1",
    "nf": "13203",
    "forn": "BROKER CARAJAS DISTRIBUIDORA LTDA",
    "qt": 66,
    "data": "2026-04-30",
    "marcas": {
     "Truss": 66
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L1",
-   "nf": "41124",
-   "forn": "Maystar Cosmetica do Brasil Ltda.",
-   "qt": 795,
-   "data": "2026-06-29",
-   "marcas": {
-    "Depilflax": 795
    },
    "sem_un": 0
   },
@@ -82,6 +68,17 @@
    "sem_un": 0
   },
   {
+   "loja": "L3",
+   "nf": "1213501",
+   "forn": "OKAJIMA DISTRIBUICAO E COMERCIO LT",
+   "qt": 622,
+   "data": "2026-07-20",
+   "marcas": {
+    "Risque": 594
+   },
+   "sem_un": 28
+  },
+  {
    "loja": "L4",
    "nf": "215721",
    "forn": "S R DOS SANTOS EQUIPAMENTOS",
@@ -89,17 +86,6 @@
    "data": "2026-05-08",
    "marcas": {
     "Lizze": 1
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L4",
-   "nf": "16752",
-   "forn": "DISTRIBUIDORA LITORAL COSMETICOS L",
-   "qt": 6,
-   "data": "2026-06-16",
-   "marcas": {
-    "Repos": 6
    },
    "sem_un": 0
   },
@@ -115,17 +101,6 @@
     "Dafu": 1
    },
    "sem_un": 16
-  },
-  {
-   "loja": "L4",
-   "nf": "15755",
-   "forn": "LMB COSMETICOS LTDA",
-   "qt": 288,
-   "data": "2026-06-30",
-   "marcas": {
-    "Let me be": 288
-   },
-   "sem_un": 0
   },
   {
    "loja": "L4",
