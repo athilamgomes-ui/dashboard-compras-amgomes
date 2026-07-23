@@ -1,6 +1,6 @@
 {
   "_descricao": "Mapeamento Marca → código(s) de marca no Microvix ERP. Permite buscar produtos pelo código da marca em vez de match por nome (mais confiável). ProBelle tem 2 códigos (varejo + profissional).",
-  "_ultima_edicao": "2026-07-01: Salon Line=56 (nova, forn ZAKAT) + Let me be=936 (forn LMB)",
+  "_ultima_edicao": "2026-07-01: Salon Line=56 (nova, forn ZAKAT) + Let me be=936 (forn LMB) | 2026-07-23: Depilflax=957 (forn Maystar, NF 41124 L1 nao aparecia na precificacao)",
   "Beauty Color": [
     131
   ],
@@ -82,5 +82,8 @@
   ],
   "Talge": [
     243
+  ],
+  "Depilflax": [
+    957
   ]
 }

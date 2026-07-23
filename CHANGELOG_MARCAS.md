@@ -9,6 +9,22 @@ Formato: `## AAAA-MM-DD — <Marca>` + o que mudou em cada arquivo + NF/forneced
 
 <!-- novas entradas abaixo -->
 
+## 2026-07-23 — Depilflax (faltava p/ a PRECIFICAÇÃO)
+Marca **Depilflax** (fornecedor **Maystar Cosmética do Brasil**, CNPJ `11384984000178`, cód. forn.
+ERP 1032). No dashboard de **Compras** já estava OK (curva A em L1/L3/L4, saldos coletados por nome).
+O buraco era só na **precificação**: a NF 41124 (L1, lançada 22/07, R$7.950,34, 31 itens de cera/
+depilatório) **não aparecia p/ precificar** porque o coletor descarta NF sem marca mapeada
+(`coleta_precificacao.mjs` linha 449 `if(!marcaForn) continue`) e a Maystar não estava em
+`fornecedor_marcas.json`. Mudanças:
+- `marca_ids.json`: `"Depilflax": [957]` (código do grupo de Marca no ERP; confirmado — o relatório
+  de preços filtrado por 957 retornou 78 produtos e casou 31/31 itens da NF por EAN).
+- `fornecedor_marcas.json`: `por_cnpj["11384984000178"]="Depilflax"` + `por_nome_substring["MAYSTAR
+  COSMETICA"]="Depilflax"` (redundância CNPJ+nome).
+NÃO mexi em `curva_marcas.json`/`BRAND_KEYWORDS` (Compras já mapeada; descrições já contêm
+"DEPILFLAX"). Re-rodei só o coletor de **precificação** (headless) → NF 41124 entrou no L1 com os 31
+itens, custo e preço atual do ERP completos. Config lida do disco pelo cron; publicação afeta só
+`precificacao_dados.json` (repo dashboard-equipe).
+
 ## 2026-07-14 — Adesivos de Unha (rótulo-only)
 Fornecedor pessoa-física **Marcelo Ribeiro da Silva** = adesivos para unhas (revenda avulsa,
 sem grupo de Marca no ERP). Antes estava em `_transito_sem_marca_ok` (genérico, suprimido do

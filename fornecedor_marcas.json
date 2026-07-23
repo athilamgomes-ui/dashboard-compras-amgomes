@@ -1,7 +1,7 @@
 {
   "_descricao": "Mapeamento Fornecedor (CNPJ ou substring do Nome/RazaoSocial) → Marca no ERP. Usado pela skill quando a descrição dos produtos da NFe NÃO contém o nome da marca (caso da Kamaleão Color: produtos descritos como 'MASCARA PIGMENTANTE FLAMINGO 100ML KC'). EDITÁVEL manualmente — adicionar entradas conforme novos fornecedores apareçam.",
   "_formato": "CNPJ (14 dígitos sem pontuação) → marca | Nome contendo substring → marca",
-  "_ultima_edicao": "2026-07-14: MARCELO RIBEIRO DA SILVA -> Adesivos de Unha (rótulo-only, NF 61 L3, adesivos p/ unha). Movido de _transito_sem_marca_ok.",
+  "_ultima_edicao": "2026-07-14: MARCELO RIBEIRO DA SILVA -> Adesivos de Unha (rótulo-only, NF 61 L3, adesivos p/ unha). Movido de _transito_sem_marca_ok. | 2026-07-23: MAYSTAR COSMETICA->Depilflax (NF 41124 L1)",
   "por_cnpj": {
     "19518725000102": "Felps",
     "41282461000181": "Truss",
@@ -14,7 +14,8 @@
     "03424849000504": "Itallian",
     "60819323000133": "Catharine Hill",
     "06222722000177": "Beauty Color",
-    "07439329000100": "Talge"
+    "07439329000100": "Talge",
+    "11384984000178": "Depilflax"
   },
   "por_nome_substring": {
     "EL BEAUTY": "Felps",
@@ -46,7 +47,8 @@
     "BENESA": "Catharine Hill",
     "ZAKAT": "Salon Line",
     "LMB COSMETICOS": "Let me be",
-    "MARCELO RIBEIRO DA SILVA": "Adesivos de Unha"
+    "MARCELO RIBEIRO DA SILVA": "Adesivos de Unha",
+    "MAYSTAR COSMETICA": "Depilflax"
   },
   "_transito_sem_marca_ok": {
     "_descricao": "Fornecedores de REVENDA cujos produtos são genéricos/sem marca rastreada (não precisam mapear). Suas NFes pendentes NÃO devem aparecer no banner 'Trânsito sem marca classificada' do dashboard — mas CONTINUAM contando em chegadas_mes e compras_mensais_rs (são compras reais). Diferente de _ignorar_no_dashboard (que é não-revenda e some de tudo). EDITÁVEL — adicionar quando o usuário disser 'é genérico, não precisa mapear'.",
