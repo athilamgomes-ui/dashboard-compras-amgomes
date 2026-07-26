@@ -9,6 +9,13 @@ Formato: `## AAAA-MM-DD — <Marca>` + o que mudou em cada arquivo + NF/forneced
 
 <!-- novas entradas abaixo -->
 
+## 2026-07-26 — Impala + CBB (fornecedores novos, NFes de 21–24/07)
+Três fornecedores caíram no banner "sem marca" com as entradas da semana. Mapeados 2 de 3:
+- **Impala** (esmaltes) — forn **MUNDIAL DISTRIBUIDORA** (CNPJ 12744404000500), multimarca. NFs 771795 (L3, 1.716un), 771796 (L4, 2.646un), 771741 (L5, 723un) são 100% "ESMALTE IMPALA...". `marca_ids["Impala"]=[22]` + `BRAND_KEYWORDS['Impala']=['IMPALA']`. NÃO mapeei o fornecedor MUNDIAL (multimarca; a keyword resolve estas NFes e evita atribuir errado outras marcas da Mundial). Impala saiu do banner → hoje "fora de curva" (rótulo). ⚠️ Volume alto (~5k un) — candidata a curva; aguardando o Athila definir tier.
+- **CBB** — forn **CBB INDUSTRIA E COMERCIO** (CNPJ 33468006000147), marca-única. NF 2681 (L3, 306un). A marca CBB já existia (`marca_ids[1104]`, curva nas 4 lojas, keyword `\bCBB\b`), mas as descrições dos produtos NÃO trazem "CBB" (são "CONDICIONADOR NUTRY HOURSE", "MÁSCARA CAPILAR DE VERNIZ"...), então adicionei `por_cnpj["33468006000147"]="CBB"` — fallback do fornecedor marca-única. NF 2681 entrou como curva OK.
+- **Varcare (249) + Nathydras (885)** — forn **FRANCA PLUS** (CNPJ 56927323000180), multimarca. Códigos registrados em `marca_ids`, mas **mapeamento de detecção PENDENTE**: as descrições da NF 932/931 são por LINHA de produto ("ALHO THERAPY", "S.O.S.", "NUTRITION", "LISO PERFEITO") e não carregam os nomes das marcas — só um "KIT NATHYDRAS" explícito. Preciso que o Athila diga qual linha é Varcare e qual é Nathydras antes de mapear (evitar atribuição errada). NF 932/931 seguem no banner até lá.
+Rebuild offline (compras_raw.json 26/07 09:15), sem re-raspar Microvix. Sem-marca 8→4 (sobram Franca×2, Ado, JF).
+
 ## 2026-07-23 — Depilflax (faltava p/ a PRECIFICAÇÃO)
 Marca **Depilflax** (fornecedor **Maystar Cosmética do Brasil**, CNPJ `11384984000178`, cód. forn.
 ERP 1032). No dashboard de **Compras** já estava OK (curva A em L1/L3/L4, saldos coletados por nome).

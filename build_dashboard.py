@@ -278,6 +278,7 @@ BRAND_KEYWORDS = {
     'Santa Clara': ['SANTA CLARA'],
     'Truss': ['TRUSS'],
     'CBB': ['\\bCBB\\b'],
+    'Impala': ['IMPALA'],
     'Natum': ['NATUM'],
     'ProBelle': ['PROBELLE','PRO BELLE'],
     'Widi Care': ['WIDI CARE','WIDICARE'],

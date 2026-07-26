@@ -10,24 +10,6 @@
    "sem_un": 824
   },
   {
-   "loja": "L3",
-   "nf": "2681",
-   "forn": "CBB INDUSTRIA E COMERCIO DE PRODUT",
-   "qt": 306,
-   "data": "2026-07-23",
-   "marcas": {},
-   "sem_un": 306
-  },
-  {
-   "loja": "L3",
-   "nf": "771795",
-   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
-   "qt": 1716,
-   "data": "2026-07-24",
-   "marcas": {},
-   "sem_un": 1716
-  },
-  {
    "loja": "L4",
    "nf": "3368",
    "forn": "Ado Administradora de Marcas",
@@ -37,15 +19,6 @@
    "sem_un": 228
   },
   {
-   "loja": "L4",
-   "nf": "771796",
-   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
-   "qt": 2646,
-   "data": "2026-07-24",
-   "marcas": {},
-   "sem_un": 2646
-  },
-  {
    "loja": "L5",
    "nf": "931",
    "forn": "FRANCA PLUS COMERCIO DE COSMETICOS",
@@ -53,15 +26,6 @@
    "data": "2026-07-21",
    "marcas": {},
    "sem_un": 336
-  },
-  {
-   "loja": "L5",
-   "nf": "771741",
-   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
-   "qt": 723,
-   "data": "2026-07-24",
-   "marcas": {},
-   "sem_un": 723
   },
   {
    "loja": "L5",
@@ -84,6 +48,39 @@
     "Adesivos de Unha": 272
    },
    "sem_un": 0
+  },
+  {
+   "loja": "L3",
+   "nf": "771795",
+   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
+   "qt": 1716,
+   "data": "2026-07-24",
+   "marcas": {
+    "Impala": 1593
+   },
+   "sem_un": 123
+  },
+  {
+   "loja": "L4",
+   "nf": "771796",
+   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
+   "qt": 2646,
+   "data": "2026-07-24",
+   "marcas": {
+    "Impala": 2586
+   },
+   "sem_un": 60
+  },
+  {
+   "loja": "L5",
+   "nf": "771741",
+   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
+   "qt": 723,
+   "data": "2026-07-24",
+   "marcas": {
+    "Impala": 666
+   },
+   "sem_un": 57
   }
  ],
  "curva_nao_refletida": [],
@@ -131,6 +128,17 @@
     "Risque": 594
    },
    "sem_un": 28
+  },
+  {
+   "loja": "L3",
+   "nf": "2681",
+   "forn": "CBB INDUSTRIA E COMERCIO DE PRODUT",
+   "qt": 306,
+   "data": "2026-07-23",
+   "marcas": {
+    "CBB": 306
+   },
+   "sem_un": 0
   },
   {
    "loja": "L4",

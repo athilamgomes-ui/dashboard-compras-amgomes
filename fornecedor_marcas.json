@@ -1,7 +1,7 @@
 {
   "_descricao": "Mapeamento Fornecedor (CNPJ ou substring do Nome/RazaoSocial) → Marca no ERP. Usado pela skill quando a descrição dos produtos da NFe NÃO contém o nome da marca (caso da Kamaleão Color: produtos descritos como 'MASCARA PIGMENTANTE FLAMINGO 100ML KC'). EDITÁVEL manualmente — adicionar entradas conforme novos fornecedores apareçam.",
   "_formato": "CNPJ (14 dígitos sem pontuação) → marca | Nome contendo substring → marca",
-  "_ultima_edicao": "2026-07-14: MARCELO RIBEIRO DA SILVA -> Adesivos de Unha (rótulo-only, NF 61 L3, adesivos p/ unha). Movido de _transito_sem_marca_ok. | 2026-07-23: MAYSTAR COSMETICA->Depilflax (NF 41124 L1)",
+  "_ultima_edicao": "2026-07-14: MARCELO RIBEIRO DA SILVA -> Adesivos de Unha (rótulo-only, NF 61 L3). | 2026-07-23: MAYSTAR COSMETICA->Depilflax (NF 41124 L1) | 2026-07-26: CBB por CNPJ 33468006000147 (forn CBB INDUSTRIA, marca-única, produtos sem 'CBB' na descrição, NF 2681 L3). Impala via keyword IMPALA (forn MUNDIAL multimarca, NFs 771795/6/741). Franca (Varcare 249/Nathydras 885) PENDENTE split de linhas de produto.",
   "por_cnpj": {
     "19518725000102": "Felps",
     "41282461000181": "Truss",
@@ -15,7 +15,8 @@
     "60819323000133": "Catharine Hill",
     "06222722000177": "Beauty Color",
     "07439329000100": "Talge",
-    "11384984000178": "Depilflax"
+    "11384984000178": "Depilflax",
+    "33468006000147": "CBB"
   },
   "por_nome_substring": {
     "EL BEAUTY": "Felps",
