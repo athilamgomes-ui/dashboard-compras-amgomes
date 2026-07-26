@@ -48,39 +48,6 @@
     "Adesivos de Unha": 272
    },
    "sem_un": 0
-  },
-  {
-   "loja": "L3",
-   "nf": "771795",
-   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
-   "qt": 1716,
-   "data": "2026-07-24",
-   "marcas": {
-    "Impala": 1593
-   },
-   "sem_un": 123
-  },
-  {
-   "loja": "L4",
-   "nf": "771796",
-   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
-   "qt": 2646,
-   "data": "2026-07-24",
-   "marcas": {
-    "Impala": 2586
-   },
-   "sem_un": 60
-  },
-  {
-   "loja": "L5",
-   "nf": "771741",
-   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
-   "qt": 723,
-   "data": "2026-07-24",
-   "marcas": {
-    "Impala": 666
-   },
-   "sem_un": 57
   }
  ],
  "curva_nao_refletida": [],
@@ -141,6 +108,17 @@
    "sem_un": 0
   },
   {
+   "loja": "L3",
+   "nf": "771795",
+   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
+   "qt": 1716,
+   "data": "2026-07-24",
+   "marcas": {
+    "Impala": 1593
+   },
+   "sem_un": 123
+  },
+  {
    "loja": "L4",
    "nf": "215721",
    "forn": "S R DOS SANTOS EQUIPAMENTOS",
@@ -177,6 +155,17 @@
   },
   {
    "loja": "L4",
+   "nf": "771796",
+   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
+   "qt": 2646,
+   "data": "2026-07-24",
+   "marcas": {
+    "Impala": 2586
+   },
+   "sem_un": 60
+  },
+  {
+   "loja": "L4",
    "nf": "17281",
    "forn": "LMB COSMETICOS LTDA",
    "qt": 6,
@@ -196,6 +185,17 @@
     "Dafu": 30
    },
    "sem_un": 153
+  },
+  {
+   "loja": "L5",
+   "nf": "771741",
+   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
+   "qt": 723,
+   "data": "2026-07-24",
+   "marcas": {
+    "Impala": 666
+   },
+   "sem_un": 57
   }
  ]
 }
