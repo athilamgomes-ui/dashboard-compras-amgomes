@@ -176,6 +176,17 @@
    "sem_un": 0
   },
   {
+   "loja": "L4",
+   "nf": "2694",
+   "forn": "CBB INDUSTRIA E COMERCIO DE PRODUT",
+   "qt": 400,
+   "data": "2026-07-27",
+   "marcas": {
+    "CBB": 400
+   },
+   "sem_un": 0
+  },
+  {
    "loja": "L5",
    "nf": "9761",
    "forn": "LES IMPORTACAO LTDA",
