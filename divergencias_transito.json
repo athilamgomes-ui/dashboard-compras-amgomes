@@ -10,6 +10,15 @@
    "sem_un": 824
   },
   {
+   "loja": "L3",
+   "nf": "3404",
+   "forn": "Ado Administradora de Marcas",
+   "qt": 228,
+   "data": "2026-07-29",
+   "marcas": {},
+   "sem_un": 228
+  },
+  {
    "loja": "L4",
    "nf": "3368",
    "forn": "Ado Administradora de Marcas",
@@ -17,6 +26,15 @@
    "data": "2026-07-23",
    "marcas": {},
    "sem_un": 228
+  },
+  {
+   "loja": "L4",
+   "nf": "41854",
+   "forn": "FOCO DISTRIBUICAO E LOGISTICA LTDA",
+   "qt": 57,
+   "data": "2026-07-29",
+   "marcas": {},
+   "sem_un": 57
   },
   {
    "loja": "L5",
@@ -54,14 +72,14 @@
  "ok": [
   {
    "loja": "L1",
-   "nf": "13203",
-   "forn": "BROKER CARAJAS DISTRIBUIDORA LTDA",
-   "qt": 66,
-   "data": "2026-04-30",
+   "nf": "142968",
+   "forn": "BECOREL BELEZA COMERCIO DE COSMETI",
+   "qt": 577,
+   "data": "2026-07-29",
    "marcas": {
-    "Truss": 66
+    "Igora": 273
    },
-   "sem_un": 0
+   "sem_un": 304
   },
   {
    "loja": "L3",
@@ -117,6 +135,17 @@
     "Impala": 1593
    },
    "sem_un": 123
+  },
+  {
+   "loja": "L3",
+   "nf": "142900",
+   "forn": "BECOREL BELEZA COMERCIO DE COSMETI",
+   "qt": 218,
+   "data": "2026-07-29",
+   "marcas": {
+    "Igora": 97
+   },
+   "sem_un": 121
   },
   {
    "loja": "L4",
@@ -207,6 +236,17 @@
     "Impala": 666
    },
    "sem_un": 57
+  },
+  {
+   "loja": "L5",
+   "nf": "142977",
+   "forn": "BECOREL BELEZA COMERCIO DE COSMETI",
+   "qt": 384,
+   "data": "2026-07-29",
+   "marcas": {
+    "Igora": 186
+   },
+   "sem_un": 198
   }
  ]
 }
