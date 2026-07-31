@@ -148,6 +148,28 @@
    "sem_un": 121
   },
   {
+   "loja": "L3",
+   "nf": "5071",
+   "forn": "FFE E FRAIHA DISTRIBUIDORA LTDA",
+   "qt": 264,
+   "data": "2026-07-30",
+   "marcas": {
+    "Dagua Natural": 6
+   },
+   "sem_un": 258
+  },
+  {
+   "loja": "L3",
+   "nf": "52006",
+   "forn": "KAMALEAO COLOR COMERCIO DE COSMETI",
+   "qt": 246,
+   "data": "2026-07-30",
+   "marcas": {
+    "Kamaleao": 246
+   },
+   "sem_un": 0
+  },
+  {
    "loja": "L4",
    "nf": "215721",
    "forn": "S R DOS SANTOS EQUIPAMENTOS",
@@ -214,6 +236,17 @@
     "CBB": 400
    },
    "sem_un": 0
+  },
+  {
+   "loja": "L4",
+   "nf": "142995",
+   "forn": "BECOREL BELEZA COMERCIO DE COSMETI",
+   "qt": 566,
+   "data": "2026-07-30",
+   "marcas": {
+    "Igora": 267
+   },
+   "sem_un": 299
   },
   {
    "loja": "L5",
