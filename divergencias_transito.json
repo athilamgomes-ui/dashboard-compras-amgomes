@@ -19,6 +19,15 @@
    "sem_un": 228
   },
   {
+   "loja": "L3",
+   "nf": "42085",
+   "forn": "FOCO DISTRIBUICAO E LOGISTICA LTDA",
+   "qt": 38,
+   "data": "2026-07-31",
+   "marcas": {},
+   "sem_un": 38
+  },
+  {
    "loja": "L4",
    "nf": "3368",
    "forn": "Ado Administradora de Marcas",
@@ -170,6 +179,17 @@
    "sem_un": 0
   },
   {
+   "loja": "L3",
+   "nf": "17633",
+   "forn": "LMB COSMETICOS LTDA",
+   "qt": 273,
+   "data": "2026-07-31",
+   "marcas": {
+    "Let me be": 273
+   },
+   "sem_un": 0
+  },
+  {
    "loja": "L4",
    "nf": "215721",
    "forn": "S R DOS SANTOS EQUIPAMENTOS",
@@ -269,6 +289,17 @@
     "Igora": 186
    },
    "sem_un": 198
+  },
+  {
+   "loja": "L5",
+   "nf": "5078",
+   "forn": "FFE E FRAIHA DISTRIBUIDORA LTDA",
+   "qt": 258,
+   "data": "2026-07-31",
+   "marcas": {
+    "Dagua Natural": 6
+   },
+   "sem_un": 252
   }
  ]
 }
