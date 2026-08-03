@@ -92,39 +92,6 @@
   },
   {
    "loja": "L3",
-   "nf": "1183612",
-   "forn": "OKAJIMA DISTRIBUICAO E COMERCIO LT",
-   "qt": 622,
-   "data": "2026-05-29",
-   "marcas": {
-    "Risque": 594
-   },
-   "sem_un": 28
-  },
-  {
-   "loja": "L3",
-   "nf": "67378",
-   "forn": "ZAKAT DISTRIBUIDORA DE COSMETICOS ",
-   "qt": 450,
-   "data": "2026-06-30",
-   "marcas": {
-    "Salon Line": 450
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L3",
-   "nf": "1213501",
-   "forn": "OKAJIMA DISTRIBUICAO E COMERCIO LT",
-   "qt": 622,
-   "data": "2026-07-20",
-   "marcas": {
-    "Risque": 594
-   },
-   "sem_un": 28
-  },
-  {
-   "loja": "L3",
    "nf": "2681",
    "forn": "CBB INDUSTRIA E COMERCIO DE PRODUT",
    "qt": 306,
@@ -133,28 +100,6 @@
     "CBB": 306
    },
    "sem_un": 0
-  },
-  {
-   "loja": "L3",
-   "nf": "771795",
-   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
-   "qt": 1716,
-   "data": "2026-07-24",
-   "marcas": {
-    "Impala": 1593
-   },
-   "sem_un": 123
-  },
-  {
-   "loja": "L3",
-   "nf": "142900",
-   "forn": "BECOREL BELEZA COMERCIO DE COSMETI",
-   "qt": 218,
-   "data": "2026-07-29",
-   "marcas": {
-    "Igora": 97
-   },
-   "sem_un": 121
   },
   {
    "loja": "L3",
@@ -169,6 +114,17 @@
   },
   {
    "loja": "L3",
+   "nf": "17633",
+   "forn": "LMB COSMETICOS LTDA",
+   "qt": 273,
+   "data": "2026-07-31",
+   "marcas": {
+    "Let me be": 273
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L3",
    "nf": "52006",
    "forn": "KAMALEAO COLOR COMERCIO DE COSMETI",
    "qt": 246,
@@ -180,25 +136,47 @@
   },
   {
    "loja": "L3",
-   "nf": "17633",
-   "forn": "LMB COSMETICOS LTDA",
-   "qt": 273,
-   "data": "2026-07-31",
+   "nf": "142900",
+   "forn": "BECOREL BELEZA COMERCIO DE COSMETI",
+   "qt": 218,
+   "data": "2026-07-29",
    "marcas": {
-    "Let me be": 273
+    "Igora": 97
    },
-   "sem_un": 0
+   "sem_un": 121
   },
   {
-   "loja": "L4",
-   "nf": "215721",
-   "forn": "S R DOS SANTOS EQUIPAMENTOS",
-   "qt": 1,
-   "data": "2026-05-08",
+   "loja": "L3",
+   "nf": "771795",
+   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
+   "qt": 1716,
+   "data": "2026-07-24",
    "marcas": {
-    "Lizze": 1
+    "Impala": 1593
    },
-   "sem_un": 0
+   "sem_un": 123
+  },
+  {
+   "loja": "L3",
+   "nf": "1183612",
+   "forn": "OKAJIMA DISTRIBUICAO E COMERCIO LT",
+   "qt": 622,
+   "data": "2026-05-29",
+   "marcas": {
+    "Risque": 594
+   },
+   "sem_un": 28
+  },
+  {
+   "loja": "L3",
+   "nf": "1213501",
+   "forn": "OKAJIMA DISTRIBUICAO E COMERCIO LT",
+   "qt": 622,
+   "data": "2026-07-20",
+   "marcas": {
+    "Risque": 594
+   },
+   "sem_un": 28
   },
   {
    "loja": "L4",
@@ -226,17 +204,6 @@
   },
   {
    "loja": "L4",
-   "nf": "771796",
-   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
-   "qt": 2646,
-   "data": "2026-07-24",
-   "marcas": {
-    "Impala": 2586
-   },
-   "sem_un": 60
-  },
-  {
-   "loja": "L4",
    "nf": "17281",
    "forn": "LMB COSMETICOS LTDA",
    "qt": 6,
@@ -258,26 +225,37 @@
    "sem_un": 299
   },
   {
-   "loja": "L5",
-   "nf": "9761",
-   "forn": "LES IMPORTACAO LTDA",
-   "qt": 183,
-   "data": "2026-07-16",
+   "loja": "L4",
+   "nf": "215721",
+   "forn": "S R DOS SANTOS EQUIPAMENTOS",
+   "qt": 1,
+   "data": "2026-05-08",
    "marcas": {
-    "Dafu": 30
+    "Lizze": 1
    },
-   "sem_un": 153
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
+   "nf": "771796",
+   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
+   "qt": 2646,
+   "data": "2026-07-24",
+   "marcas": {
+    "Impala": 2586
+   },
+   "sem_un": 60
   },
   {
    "loja": "L5",
-   "nf": "771741",
-   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
-   "qt": 723,
-   "data": "2026-07-24",
+   "nf": "5078",
+   "forn": "FFE E FRAIHA DISTRIBUIDORA LTDA",
+   "qt": 258,
+   "data": "2026-07-31",
    "marcas": {
-    "Impala": 666
+    "Dagua Natural": 6
    },
-   "sem_un": 57
+   "sem_un": 252
   },
   {
    "loja": "L5",
@@ -292,14 +270,14 @@
   },
   {
    "loja": "L5",
-   "nf": "5078",
-   "forn": "FFE E FRAIHA DISTRIBUIDORA LTDA",
-   "qt": 258,
-   "data": "2026-07-31",
+   "nf": "771741",
+   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
+   "qt": 723,
+   "data": "2026-07-24",
    "marcas": {
-    "Dagua Natural": 6
+    "Impala": 666
    },
-   "sem_un": 252
+   "sem_un": 57
   }
  ]
 }
