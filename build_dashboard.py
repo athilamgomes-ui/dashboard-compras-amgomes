@@ -325,6 +325,7 @@ BRAND_KEYWORDS = {
     'Mega Bell': ['MEGA BELL','MEGA BEL'],
     'Japinha': ['JAPINHA'],
     'Salon Line': ['SALON LINE','SALONLINE'],
+    'Bauny': ['BAUNY'],
     # Franca Plus é multi-marca (Nathydras/Varcare) e as descrições da NFe pendente NÃO
     # trazem o nome da marca — só a linha de produto. Keywords derivadas do cadastro ERP:
     # linha "Alho Therapy"/"Açaí" = Nathydras; linha "S.O.S."/"Moisture"/"Nutrition" = Varcare.

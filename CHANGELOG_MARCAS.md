@@ -9,6 +9,22 @@ Formato: `## AAAA-MM-DD — <Marca>` + o que mudou em cada arquivo + NF/forneced
 
 <!-- novas entradas abaixo -->
 
+## 2026-08-04c — Bauny (código informado pelo Athila)
+Athila informou: **Bauny = marca 1078 no ERP**, fornecedor **FFE E FRAIHA DISTRIBUIDORA LTDA**
+(CNPJ 45998443000151). Estava caindo no banner "trânsito sem marca" com 4 NFes pendentes
+(5071/5072 em L3, 5078/5079 em L5). Mapeado:
+- `marca_ids["Bauny"] = [1078]`
+- `fornecedor_marcas.por_cnpj["45998443000151"] = "Bauny"` + `BRAND_KEYWORDS['Bauny']=['BAUNY']`
+  (redundância proposital: **100% dos itens das 4 NFes já trazem "BAUNY" na descrição**, então a
+  keyword sozinha resolveria; o CNPJ cobre eventual item futuro sem a marca no nome).
+- `curva_marcas.json`: **curva B nas 4 lojas** — diferente dos casos anteriores de hoje (onde
+  restringi às lojas com evidência de compra), aqui a marca **já tinha estoque nas 4** (L1 21,
+  L3 19, L4 14, L5 50 produtos no ERP), ou seja, todas já vendem Bauny.
+
+Pós-rebuild: 124 produtos consolidados, 4 sugestões de compra geradas (L1 28un, L3 17un, L4 7un,
+L5 25un), trânsito refletido em L3 (258un) e L5 (252un). Banner caiu de 11 para 9 itens.
+Rebuild offline (compras_raw.json das 13:42), sem re-raspar o Microvix.
+
 ## 2026-08-04b — Becorel→Igora, Franca Plus (keywords), Mundial (linhas infantis), Okajima (resíduo)
 Athila apontou que Franca, Becorel, Mundial e Okajima continuavam no banner "trânsito sem marca"
 mesmo já tendo tido entradas anteriores — ou seja, a marca era conhecida e o mapeamento é que

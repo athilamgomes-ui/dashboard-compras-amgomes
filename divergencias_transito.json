@@ -102,9 +102,10 @@
    "qt": 264,
    "data": "2026-07-30",
    "marcas": {
+    "Bauny": 258,
     "Dagua Natural": 6
    },
-   "sem_un": 258
+   "sem_un": 0
   },
   {
    "loja": "L3",
@@ -265,9 +266,10 @@
    "qt": 258,
    "data": "2026-07-31",
    "marcas": {
+    "Bauny": 252,
     "Dagua Natural": 6
    },
-   "sem_un": 252
+   "sem_un": 0
   },
   {
    "loja": "L5",

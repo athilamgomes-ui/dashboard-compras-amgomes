@@ -1,6 +1,6 @@
 {
   "_descricao": "Curva S/A/B por loja (S = estratégica/prioritária no orçamento; A = alta prioridade; B = oportunista). Editável manualmente.",
-  "_ultima_edicao": "2026-08-04: notas ja lançadas no ERP sem marca classificada (attribute_nota vazio) -> Nathydras+Varcare curva B (L1,L3,L5, forn Franca Plus, split multi-marca); Inoar curva B (L3, forn Alekosmetica); Raavi curva B (L3, forn DEDC); Real Love curva B (L4,L5, forn Real Love Cosmeticos); Maria Margarida curva B (L5, forn C&D Comercio) | 2026-07-01: Salon Line (nova, forn ZAKAT, cod 56) adicionada curva B todas lojas; Let me be ganhou codigo ERP 936 (ja era curva A)",
+  "_ultima_edicao": "2026-08-04c: Bauny (cod 1078, forn FFE E FRAIHA) curva B nas 4 lojas — já tinha estoque em todas (L1 21, L3 19, L4 14, L5 50 produtos) | 2026-08-04: notas ja lançadas no ERP sem marca classificada (attribute_nota vazio) -> Nathydras+Varcare curva B (L1,L3,L5, forn Franca Plus, split multi-marca); Inoar curva B (L3, forn Alekosmetica); Raavi curva B (L3, forn DEDC); Real Love curva B (L4,L5, forn Real Love Cosmeticos); Maria Margarida curva B (L5, forn C&D Comercio) | 2026-07-01: Salon Line (nova, forn ZAKAT, cod 56) adicionada curva B todas lojas; Let me be ganhou codigo ERP 936 (ja era curva A)",
   "L1": {
     "_loja": "Casa da Beleza Altamira (Empresa 1)",
     "A": [
@@ -36,7 +36,8 @@
       "Salon Line",
       "Impala",
       "Nathydras",
-      "Varcare"
+      "Varcare",
+      "Bauny"
     ],
     "S": [
       "Widi Care",
@@ -88,7 +89,8 @@
       "Mega Bell",
       "Salon Line",
       "Impala",
-      "Real Love"
+      "Real Love",
+      "Bauny"
     ],
     "S": [
       "Widi Care",
@@ -141,7 +143,8 @@
       "Nathydras",
       "Varcare",
       "Inoar",
-      "Raavi"
+      "Raavi",
+      "Bauny"
     ],
     "S": [
       "Widi Care",
@@ -199,7 +202,8 @@
       "Nathydras",
       "Varcare",
       "Real Love",
-      "Maria Margarida"
+      "Maria Margarida",
+      "Bauny"
     ],
     "S": [
       "Widi Care",
