@@ -1,0 +1,214 @@
+{
+  "_leiame": "Fonte UNICA de keywords marca->[termos] para deteccao por descricao. Lido por build_dashboard.py (Compras) e coleta_precificacao.mjs (Precificacao). Termos que comecam com \\b sao regex (word-boundary). norm() = maiuscula sem acento nos dois lados. NAO editar copia; editar so este arquivo. Chaves com _ sao ignoradas.",
+  "Marco Boni": [
+    "MARCO BONI",
+    "MARCOBONI"
+  ],
+  "Itallian": [
+    "ITALLIAN"
+  ],
+  "Hair Extrattus": [
+    "HAIR EXTRATTUS",
+    "EXTRATTUS"
+  ],
+  "Beauty Color": [
+    "BEAUTY COLOR",
+    "BEAUTYCOLOR"
+  ],
+  "Santa Clara": [
+    "SANTA CLARA"
+  ],
+  "Truss": [
+    "TRUSS"
+  ],
+  "CBB": [
+    "\\bCBB\\b"
+  ],
+  "Impala": [
+    "IMPALA"
+  ],
+  "Natum": [
+    "NATUM"
+  ],
+  "ProBelle": [
+    "PROBELLE",
+    "PRO BELLE"
+  ],
+  "Widi Care": [
+    "WIDI CARE",
+    "WIDICARE"
+  ],
+  "Yama": [
+    "YAMA",
+    "YAMÁ"
+  ],
+  "Apice": [
+    "APICE",
+    "APSE"
+  ],
+  "Cadiveu": [
+    "CADIVEU"
+  ],
+  "Catharine Hill": [
+    "CATHARINE"
+  ],
+  "Della&Delle": [
+    "DELLA E DELLE",
+    "DELLA&DELLE",
+    "DELLA DELLE"
+  ],
+  "Lizze": [
+    "LIZZE"
+  ],
+  "Felps": [
+    "FELPS"
+  ],
+  "Mirra": [
+    "MIRRA"
+  ],
+  "Gama": [
+    "GAMA"
+  ],
+  "Mundial": [
+    "MUNDIAL",
+    "TIRESMALT",
+    "KIT BARBIE",
+    "KIT HOT WHEELS",
+    "GIZ PARA COLORIR",
+    "INFANTIL BARBIE",
+    "KIT INFANTIL MAQUIAGEM",
+    "KIT INFANTIL BRILHO LABIAL"
+  ],
+  "Kamaleao": [
+    "KAMALEAO",
+    "KAMALEÃO",
+    " KC "
+  ],
+  "Risque": [
+    "RISQUE"
+  ],
+  "Igora": [
+    "IGORA"
+  ],
+  "Colorama": [
+    "COLORAMA",
+    "ESM COL"
+  ],
+  "Elseve": [
+    "ELSEVE"
+  ],
+  "Vizzela": [
+    "VIZZELA"
+  ],
+  "Latika": [
+    "LATIKA"
+  ],
+  "Otimo": [
+    "OTIMO",
+    "ÓTIMO"
+  ],
+  "Mari Maria": [
+    "MARI MARIA"
+  ],
+  "Bruna Tavares": [
+    "BRUNA TAVARES"
+  ],
+  "Cinco": [
+    "5 CINCO",
+    "CINCO"
+  ],
+  "Belliz": [
+    "BELLIZ"
+  ],
+  "Mutari": [
+    "MUTARI"
+  ],
+  "Kiss": [
+    "KISS"
+  ],
+  "Depilflax": [
+    "DEPILFLAX"
+  ],
+  "Depil Bella": [
+    "DEPIL BELLA"
+  ],
+  "Repos": [
+    "REPOS"
+  ],
+  "ZGY": [
+    "ZGY"
+  ],
+  "Dafu": [
+    "DAFU"
+  ],
+  "MQ": [
+    "\\bMQ\\b"
+  ],
+  "Let me be": [
+    "LET ME BE"
+  ],
+  "Softhair": [
+    "SOFTHAIR"
+  ],
+  "La Bening": [
+    "LA BENIG",
+    "LA BENING"
+  ],
+  "Loreal": [
+    "LOREAL"
+  ],
+  "Depimiel": [
+    "DEPIMIEL"
+  ],
+  "Dagua Natural": [
+    "DAGUA NATURAL",
+    "DAGUA"
+  ],
+  "Mega Bell": [
+    "MEGA BELL",
+    "MEGA BEL"
+  ],
+  "Japinha": [
+    "JAPINHA"
+  ],
+  "Salon Line": [
+    "SALON LINE",
+    "SALONLINE"
+  ],
+  "Bauny": [
+    "BAUNY"
+  ],
+  "Nathydras": [
+    "NATHYDRAS",
+    "ALHO THERAPY",
+    "MASCARA ALHO",
+    "SHAMPOO ALHO",
+    "SELANTE ALHO",
+    "CONDICIONADOR ALHO",
+    "REPARADOR DE PONTAS ALHO",
+    "MATIZADORA ACAI",
+    "MATIZADOR ALHO",
+    "MASCARA MATIZADORA ALHO"
+  ],
+  "Varcare": [
+    "VARCARE",
+    "S.O.S. INVERSOR",
+    "SOS INVERSOR",
+    "S.O.S. MOISTURE",
+    "SOS MOISTURE",
+    "LISO PERFEITO",
+    "NUTRITION SHAMPOO",
+    "NUTRITION CONDITIONER",
+    "NUTRITION MASK",
+    "HUMECTANT COMPLEX",
+    "AMINOFLUID",
+    "S.O.S. AMINO",
+    "SOS AMINO"
+  ],
+  "Tabu": [
+    "TABU"
+  ],
+  "Bozzano": [
+    "BOZZANO"
+  ]
+}

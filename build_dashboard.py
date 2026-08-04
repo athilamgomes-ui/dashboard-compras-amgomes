@@ -270,76 +270,11 @@ for mk in marcas_out:
 # ============ ETAPA 3.6: NFes pendentes ============
 pendentes_by_emp = raw['pendentes']  # {"1":{NFes:[...]}, "3":{...}, ...}
 
-BRAND_KEYWORDS = {
-    'Marco Boni': ['MARCO BONI','MARCOBONI'],
-    'Itallian': ['ITALLIAN'],
-    'Hair Extrattus': ['HAIR EXTRATTUS','EXTRATTUS'],
-    'Beauty Color': ['BEAUTY COLOR','BEAUTYCOLOR'],
-    'Santa Clara': ['SANTA CLARA'],
-    'Truss': ['TRUSS'],
-    'CBB': ['\\bCBB\\b'],
-    'Impala': ['IMPALA'],
-    'Natum': ['NATUM'],
-    'ProBelle': ['PROBELLE','PRO BELLE'],
-    'Widi Care': ['WIDI CARE','WIDICARE'],
-    'Yama': ['YAMA','YAMÁ'],
-    'Apice': ['APICE','APSE'],
-    'Cadiveu': ['CADIVEU'],
-    'Catharine Hill': ['CATHARINE'],
-    'Della&Delle': ['DELLA E DELLE','DELLA&DELLE','DELLA DELLE'],
-    'Lizze': ['LIZZE'],
-    'Felps': ['FELPS'],
-    'Mirra': ['MIRRA'],
-    'Gama': ['GAMA'],
-    # Mundial Distribuidora é multi-marca (Impala + Mundial) e as linhas licenciadas/infantis
-    # não trazem "MUNDIAL" na descrição. Keywords conferidas contra o grupo MUNDIAL do ERP.
-    # 'KIT INFANTIL ...' é ambíguo (algumas variantes estão em IMPALA) — maioria é MUNDIAL.
-    'Mundial': ['MUNDIAL','TIRESMALT','KIT BARBIE','KIT HOT WHEELS','GIZ PARA COLORIR',
-                'INFANTIL BARBIE','KIT INFANTIL MAQUIAGEM','KIT INFANTIL BRILHO LABIAL'],
-    'Kamaleao': ['KAMALEAO','KAMALEÃO',' KC '],
-    'Risque': ['RISQUE'],
-    'Igora': ['IGORA'],
-    'Colorama': ['COLORAMA', 'ESM COL'],
-    'Elseve': ['ELSEVE'],
-    'Vizzela': ['VIZZELA'],
-    'Latika': ['LATIKA'],
-    'Otimo': ['OTIMO','ÓTIMO'],
-    'Mari Maria': ['MARI MARIA'],
-    'Bruna Tavares': ['BRUNA TAVARES'],
-    'Cinco': ['5 CINCO','CINCO'],
-    'Belliz': ['BELLIZ'],
-    'Mutari': ['MUTARI'],
-    'Kiss': ['KISS'],
-    'Depilflax': ['DEPILFLAX'],
-    'Depil Bella': ['DEPIL BELLA'],
-    'Repos': ['REPOS'],
-    'ZGY': ['ZGY'],
-    'Dafu': ['DAFU'],
-    'MQ': ['\\bMQ\\b'],
-    'Let me be': ['LET ME BE'],
-    'Softhair': ['SOFTHAIR'],
-    'La Bening': ['LA BENIG','LA BENING'],
-    'Loreal': ['LOREAL'],
-    'Depimiel': ['DEPIMIEL'],
-    'Dagua Natural': ['DAGUA NATURAL','DAGUA'],
-    'Mega Bell': ['MEGA BELL','MEGA BEL'],
-    'Japinha': ['JAPINHA'],
-    'Salon Line': ['SALON LINE','SALONLINE'],
-    'Bauny': ['BAUNY'],
-    # Franca Plus é multi-marca (Nathydras/Varcare) e as descrições da NFe pendente NÃO
-    # trazem o nome da marca — só a linha de produto. Keywords derivadas do cadastro ERP:
-    # linha "Alho Therapy"/"Açaí" = Nathydras; linha "S.O.S."/"Moisture"/"Nutrition" = Varcare.
-    'Nathydras': ['NATHYDRAS','ALHO THERAPY','MASCARA ALHO','SHAMPOO ALHO','SELANTE ALHO',
-                  'CONDICIONADOR ALHO','REPARADOR DE PONTAS ALHO','MATIZADORA ACAI'],
-    'Varcare': ['VARCARE','S.O.S. INVERSOR','SOS INVERSOR','S.O.S. MOISTURE','SOS MOISTURE',
-                'LISO PERFEITO','NUTRITION SHAMPOO','NUTRITION CONDITIONER','NUTRITION MASK',
-                'HUMECTANT COMPLEX'],
-    # Rótulo-only (NÃO estão na curva): a Okajima é multi-marca e o grosso das NFes dela
-    # já casa em Risque/Colorama. O resíduo é desodorante Tabu e Bozzano — marcas que não
-    # compramos para curva, mas precisam ser reconhecidas para não caírem em "sem marca".
-    'Tabu': ['TABU'],
-    'Bozzano': ['BOZZANO'],
-}
+# BRAND_KEYWORDS vem de marca_keywords.json (fonte UNICA, compartilhada com o coletor de
+# precificacao coleta_precificacao.mjs). EDITAR SO O JSON. Termos com '\\b' sao regex (word-boundary).
+# Nota: Franca Plus multi-marca (Nathydras=Alho Therapy/Acai; Varcare=S.O.S./Moisture/Nutrition);
+# Mundial multi-marca (Impala+licenciados infantis); Okajima residuo Tabu/Bozzano.
+BRAND_KEYWORDS = {k: v for k, v in load_json(ROOT / 'marca_keywords.json').items() if not k.startswith('_')}
 
 EXCL_CFOP = {
     '5152','6152','5910','6910','5911','6911','5912','6912','5913','6913','5914','6914',

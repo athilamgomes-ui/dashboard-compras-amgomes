@@ -27,15 +27,14 @@ curva = json.load(open(_p('curva_marcas.json')))
 ANO = datetime.now().year
 EMP_TO_LOJA = {1:'L1',3:'L3',4:'L4',10:'L5'}
 
-# --- Regras de detecção: extraídas da FONTE do build_dashboard.py (single source of truth) ---
+# --- Regras de detecção ---
+# BRAND_KEYWORDS: FONTE ÚNICA em marca_keywords.json (compartilhada com build_dashboard.py e o coletor
+# de precificação). EXCL_CFOP continua extraído do build_dashboard.py.
+BRAND_KEYWORDS = {k: v for k, v in json.load(open(_p('marca_keywords.json'))).items() if not k.startswith('_')}
 _src = open(_p('build_dashboard.py')).read()
-def _grab_dict(name):
-    m = re.search(name + r' = \{(.*?)\n\}', _src, re.S)
-    return eval('{'+m.group(1)+'\n}')
 def _grab_set(name):
     m = re.search(name + r' = \{(.*?)\}', _src, re.S)
     return eval('{'+m.group(1)+'}')
-BRAND_KEYWORDS = _grab_dict('BRAND_KEYWORDS')
 EXCL_CFOP = _grab_set('EXCL_CFOP')
 EXCL_NAT_RE = re.compile(r'^(REMESSA|AMOSTRA|BONIFIC|DEVOLU|RETORNO|TRANSFER|CONSIGNAC)', re.I)
 

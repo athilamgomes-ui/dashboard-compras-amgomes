@@ -9,6 +9,18 @@ Formato: `## AAAA-MM-DD — <Marca>` + o que mudou em cada arquivo + NF/forneced
 
 <!-- novas entradas abaixo -->
 
+## 2026-08-04 — Franca Plus (multi-marca) + keywords viram FONTE ÚNICA
+Franca Plus (CNPJ 56927323000180) = distribuidora multi-marca **Nathydras + Varcare**. Motivada pela
+precificação: a NF 926 L1 (R$18k, 59 itens) precisava ter a marca de CADA item detectada p/ puxar
+preço do ERP e a margem certa.
+- `fornecedor_marcas.json`: `por_cnpj["56927323000180"]="Varcare+Nathydras"` + `por_nome_substring["FRANCA PLUS"]` idem (padrão multi-marca com '+', igual Colorama+Elseve).
+- **`BRAND_KEYWORDS` saiu de dentro do `build_dashboard.py` para `marca_keywords.json` (fonte ÚNICA, 55 marcas).** Agora `build_dashboard.py`, `reconcilia_transito.py` E o coletor de precificação `coleta_precificacao.mjs` leem do MESMO arquivo. **Editar SÓ o JSON** (chaves com `_` ignoradas; termos com `\b` são regex). Rebuild offline idêntico ao anterior (fora timestamp); reconcilia OK, Franca fora de "sem marca".
+- Termos novos em `marca_keywords.json` p/ produtos Franca que as keywords não cobriam: Nathydras += `MATIZADOR ALHO`,`MASCARA MATIZADORA ALHO`; Varcare += `AMINOFLUID`,`S.O.S. AMINO`,`SOS AMINO`.
+- `marca_ids.json` já tinha Varcare=249, Nathydras=885; curva já tinha os dois.
+Precificação (repo dashboard-equipe): a marca de cada item é resolvida no coletor — 1º pelo relatório
+de preços do ERP (fonte da verdade, já traz o preço atual), 2º por descrição (produto novo ainda sem
+preço no ERP). NF 926: 39/41 resolvidos (2 restantes = embalagem: CAIXA KIT MSA, BOBINA SHRINK).
+
 ## 2026-08-04c — Bauny (código informado pelo Athila)
 Athila informou: **Bauny = marca 1078 no ERP**, fornecedor **FFE E FRAIHA DISTRIBUIDORA LTDA**
 (CNPJ 45998443000151). Estava caindo no banner "trânsito sem marca" com 4 NFes pendentes
