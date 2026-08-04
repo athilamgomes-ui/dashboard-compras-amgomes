@@ -1,7 +1,7 @@
 {
   "_descricao": "Mapeamento Fornecedor (CNPJ ou substring do Nome/RazaoSocial) → Marca no ERP. Usado pela skill quando a descrição dos produtos da NFe NÃO contém o nome da marca (caso da Kamaleão Color: produtos descritos como 'MASCARA PIGMENTANTE FLAMINGO 100ML KC'). EDITÁVEL manualmente — adicionar entradas conforme novos fornecedores apareçam.",
   "_formato": "CNPJ (14 dígitos sem pontuação) → marca | Nome contendo substring → marca",
-  "_ultima_edicao": "2026-07-14: MARCELO RIBEIRO DA SILVA -> Adesivos de Unha (rótulo-only, NF 61 L3). | 2026-07-23: MAYSTAR COSMETICA->Depilflax (NF 41124 L1) | 2026-07-26: CBB por CNPJ 33468006000147 (forn CBB INDUSTRIA, marca-única, produtos sem 'CBB' na descrição, NF 2681 L3). Impala via keyword IMPALA (forn MUNDIAL multimarca, NFs 771795/6/741). Franca (Varcare 249/Nathydras 885) PENDENTE split de linhas de produto.",
+  "_ultima_edicao": "2026-08-04: descobertas via reconciliação de notas JÁ LANÇADAS sem marca (attribute_nota vazio, cruzamento por código ERP c/ saldos_raw): ALEKOSMETICA->Inoar (347, NFs 70845/70899 L3), DEDC - DISTRIB DO ESPIRITO SANTO->Raavi (386, NF 46100 L3), C & D COMERCIO DE COSMETICOS->Maria Margarida (1101, NF 39616 L5), REAL LOVE COSMETICOS->Real Love (362, NFs 49031 L5 + 48780 L4). Franca Plus NÃO entrou aqui (multi-marca Nathydras/Varcare, resolve por código via curva). | 2026-07-14: MARCELO RIBEIRO DA SILVA -> Adesivos de Unha (rótulo-only, NF 61 L3). | 2026-07-23: MAYSTAR COSMETICA->Depilflax (NF 41124 L1) | 2026-07-26: CBB por CNPJ 33468006000147 (forn CBB INDUSTRIA, marca-única, produtos sem 'CBB' na descrição, NF 2681 L3). Impala via keyword IMPALA (forn MUNDIAL multimarca, NFs 771795/6/741). Franca (Varcare 249/Nathydras 885) PENDENTE split de linhas de produto.",
   "por_cnpj": {
     "19518725000102": "Felps",
     "41282461000181": "Truss",
@@ -49,7 +49,11 @@
     "ZAKAT": "Salon Line",
     "LMB COSMETICOS": "Let me be",
     "MARCELO RIBEIRO DA SILVA": "Adesivos de Unha",
-    "MAYSTAR COSMETICA": "Depilflax"
+    "MAYSTAR COSMETICA": "Depilflax",
+    "ALEKOSMETICA": "Inoar",
+    "DEDC - DISTRIB DO ESPIRITO SANTO": "Raavi",
+    "C & D COMERCIO DE COSMETICOS": "Maria Margarida",
+    "REAL LOVE COSMETICOS": "Real Love"
   },
   "_transito_sem_marca_ok": {
     "_descricao": "Fornecedores de REVENDA cujos produtos são genéricos/sem marca rastreada (não precisam mapear). Suas NFes pendentes NÃO devem aparecer no banner 'Trânsito sem marca classificada' do dashboard — mas CONTINUAM contando em chegadas_mes e compras_mensais_rs (são compras reais). Diferente de _ignorar_no_dashboard (que é não-revenda e some de tudo). EDITÁVEL — adicionar quando o usuário disser 'é genérico, não precisa mapear'.",

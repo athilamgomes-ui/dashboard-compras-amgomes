@@ -9,6 +9,55 @@ Formato: `## AAAA-MM-DD — <Marca>` + o que mudou em cada arquivo + NF/forneced
 
 <!-- novas entradas abaixo -->
 
+## 2026-08-04 — Nathydras/Varcare, Inoar, Raavi, Maria Margarida, Real Love (notas JÁ LANÇADAS sem marca)
+Athila pediu auditoria: marcas em "trânsito sem classificação" cujo produto já tinha CHEGADO e a
+NFe já estava lançada no ERP (não era mais problema de trânsito pendente — era `attribute_nota()`
+em `build_dashboard.py` retornando `[]` silenciosamente, então a NF simplesmente não contava em
+`compras_mensais_rs`). Descoberto rodando um cruzamento do código interno ERP (`c` de cada item da
+nota lançada) contra `saldos_raw.json` completo (todas as ~300 marcas por loja, não só as
+curva-tracked) — alta confiança porque o código interno pós-lançamento é o MESMO espaço de ID
+usado no relatório de saldo. 14 notas de 2026 caíram nesse buraco; 5 fornecedores resolvidos:
+
+- **Franca Plus** (fornecedor "FRANCA PLUS COMERCIO DE COSMETICOS LTDA") → **split multi-marca
+  Nathydras + Varcare** (linha capilar "Alho"/"S.O.S.", descrições NÃO trazem o nome da marca).
+  `marca_ids.json` já tinha os códigos (Varcare=249, Nathydras=885, anotados 26/07 como "split
+  pendente"); faltava só a curva. Adicionado **curva B em L1, L3, L5** (evidência de compra: NF
+  822/823 lançadas L1 mar/2026; NF 932/931 ainda pendentes em trânsito L3/L5 — sem evidência em
+  L4, não adicionei lá). NÃO mapeei fornecedor→marca única (é multi-marca) — a atribuição correta
+  passa a ser 100% por código ERP (`codigo_to_marca`), que só funciona depois que a nota é
+  LANÇADA. As 2 NFs ainda pendentes (932 L3, 931 L5) continuam no banner "sem marca" até chegarem
+  e serem lançadas — isso é esperado, não é bug.
+- **Alekosmetica** ("ALEKOSMETICA COM.DE COSMETICOS LTDA") → **Inoar**. Código ERP descoberto
+  headless: **347**. `marca_ids["Inoar"]=[347]`, curva B em L3 (única loja com histórico: NF 70845
+  R$5905 + NF 70899 R$736, jan/2026). `fornecedor_marcas.por_nome_substring["ALEKOSMETICA"]="Inoar"`.
+- **DEDC** ("DEDC - DISTRIB DO ESPIRITO SANTO DE COSMETICOS EIRELI") → **Raavi**. Código ERP: **386**.
+  `marca_ids["Raavi"]=[386]`, curva B em L3 (NF 46100 R$4167, mar/2026, 100% do valor bateu por
+  código). `fornecedor_marcas.por_nome_substring["DEDC - DISTRIB DO ESPIRITO SANTO"]="Raavi"`.
+- **C & D Comercio** ("C & D COMERCIO DE COSMETICOS VESTUARIOS E ACESSORIOS LTDA") → **Maria
+  Margarida**. Código ERP: **1101**. `marca_ids["Maria Margarida"]=[1101]`, curva B em L5 (NF
+  39616 R$5787, jan/2026). `fornecedor_marcas.por_nome_substring["C & D COMERCIO DE COSMETICOS"]="Maria Margarida"`.
+- **Real Love** ("REAL LOVE COSMETICOS E ACESSORIO") → **Real Love** (marca com o mesmo nome do
+  fornecedor). Código ERP: **362**. `marca_ids["Real Love"]=[362]`, curva B em L4 e L5 (NF 48780
+  L4 R$598 + NF 49031 L5 R$892, mar/2026). `fornecedor_marcas.por_nome_substring["REAL LOVE COSMETICOS"]="Real Love"`.
+
+Pós-rebuild: os 4 fornecedores de marca única saíram completamente da lista de "notas sem marca";
+Franca Plus lançada (L1) também resolveu — apareceu em `compute_diff.py` como chegada nova
+"L1 Nathydras R$18006". Reconciliação de trânsito (pendentes) segue OK (curva não refletida = 0).
+
+**Ficaram PENDENTES de decisão (não mapeei — baixa confiança ou categoria ambígua):**
+- **DVT Comercio** ("DVT COMERCIO, IMPORTACAO E EXPORTACAO LTDA") — só ~9% do valor da NF 371607
+  (L1, jan/2026) bateu com uma marca conhecida (Talge). Nota: DVT já está mapeado por CNPJ
+  (`07439329000100`→Talge, 13/07/2026) mas esse mapeamento só vale para NFes PENDENTES (que têm
+  CNPJ na XML); notas já LANÇADAS não carregam CNPJ, só o nome do fornecedor — por isso o fallback
+  de nota lançada não pega. Precisa decidir: DVT vende só Talge (aí falta o substring de nome) ou
+  é fornecedor multi-marca (aí o 9% é o correto e o resto é outra coisa)?
+- **Nova Chance Variedades** e **Cor e Charme** → candidato "King Bolsas" (bolsas/acessórios,
+  100% do valor bate por código). Não mapeei porque não está claro se é revenda de cosmético
+  (deveria virar marca/curva) ou categoria a excluir do dashboard (`_ignorar_no_dashboard`).
+- **Fabio Porto do Nascimento** → candidato "Phallebeuty", só ~50-75% do valor bate. Fornecedor
+  provavelmente multi-marca; precisaria de keyword de descrição por produto, não fornecedor único.
+
+
 ## 2026-07-26 — Impala + CBB (fornecedores novos, NFes de 21–24/07)
 Três fornecedores caíram no banner "sem marca" com as entradas da semana. Mapeados 2 de 3:
 - **Impala** (esmaltes) — forn **MUNDIAL DISTRIBUIDORA** (CNPJ 12744404000500), multimarca. NFs 771795 (L3, 1.716un), 771796 (L4, 2.646un), 771741 (L5, 723un) são 100% "ESMALTE IMPALA...". `marca_ids["Impala"]=[22]` + `BRAND_KEYWORDS['Impala']=['IMPALA']`. NÃO mapeei o fornecedor MUNDIAL (multimarca; a keyword resolve estas NFes e evita atribuir errado outras marcas da Mundial). Impala saiu do banner. **Curva: B nas 4 lojas** (definido pelo Athila 26/07 — volume ~5k un). Agora reflete como curva OK e gera sugestão de reposição.
