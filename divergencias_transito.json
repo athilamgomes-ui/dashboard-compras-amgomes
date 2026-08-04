@@ -2,15 +2,6 @@
  "sem_marca": [
   {
    "loja": "L3",
-   "nf": "932",
-   "forn": "FRANCA PLUS COMERCIO DE COSMETICOS",
-   "qt": 824,
-   "data": "2026-07-21",
-   "marcas": {},
-   "sem_un": 824
-  },
-  {
-   "loja": "L3",
    "nf": "3404",
    "forn": "Ado Administradora de Marcas",
    "qt": 228,
@@ -47,15 +38,6 @@
   },
   {
    "loja": "L5",
-   "nf": "931",
-   "forn": "FRANCA PLUS COMERCIO DE COSMETICOS",
-   "qt": 336,
-   "data": "2026-07-21",
-   "marcas": {},
-   "sem_un": 336
-  },
-  {
-   "loja": "L5",
    "nf": "3572",
    "forn": "JF COMERCIO E IMPORTACAO EIRELI",
    "qt": 131,
@@ -86,9 +68,21 @@
    "qt": 577,
    "data": "2026-07-29",
    "marcas": {
-    "Igora": 273
+    "Igora": 577
    },
-   "sem_un": 304
+   "sem_un": 0
+  },
+  {
+   "loja": "L3",
+   "nf": "932",
+   "forn": "FRANCA PLUS COMERCIO DE COSMETICOS",
+   "qt": 824,
+   "data": "2026-07-21",
+   "marcas": {
+    "Varcare": 132,
+    "Nathydras": 656
+   },
+   "sem_un": 36
   },
   {
    "loja": "L3",
@@ -141,9 +135,9 @@
    "qt": 218,
    "data": "2026-07-29",
    "marcas": {
-    "Igora": 97
+    "Igora": 218
    },
-   "sem_un": 121
+   "sem_un": 0
   },
   {
    "loja": "L3",
@@ -152,9 +146,10 @@
    "qt": 1716,
    "data": "2026-07-24",
    "marcas": {
-    "Impala": 1593
+    "Impala": 1593,
+    "Mundial": 123
    },
-   "sem_un": 123
+   "sem_un": 0
   },
   {
    "loja": "L3",
@@ -163,9 +158,11 @@
    "qt": 622,
    "data": "2026-05-29",
    "marcas": {
-    "Risque": 594
+    "Tabu": 16,
+    "Risque": 594,
+    "Bozzano": 12
    },
-   "sem_un": 28
+   "sem_un": 0
   },
   {
    "loja": "L3",
@@ -174,9 +171,11 @@
    "qt": 622,
    "data": "2026-07-20",
    "marcas": {
-    "Risque": 594
+    "Tabu": 16,
+    "Risque": 594,
+    "Bozzano": 12
    },
-   "sem_un": 28
+   "sem_un": 0
   },
   {
    "loja": "L4",
@@ -220,9 +219,9 @@
    "qt": 566,
    "data": "2026-07-30",
    "marcas": {
-    "Igora": 267
+    "Igora": 566
    },
-   "sem_un": 299
+   "sem_un": 0
   },
   {
    "loja": "L4",
@@ -242,9 +241,22 @@
    "qt": 2646,
    "data": "2026-07-24",
    "marcas": {
-    "Impala": 2586
+    "Impala": 2586,
+    "Mundial": 60
    },
-   "sem_un": 60
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "931",
+   "forn": "FRANCA PLUS COMERCIO DE COSMETICOS",
+   "qt": 336,
+   "data": "2026-07-21",
+   "marcas": {
+    "Nathydras": 276,
+    "Varcare": 48
+   },
+   "sem_un": 12
   },
   {
    "loja": "L5",
@@ -264,9 +276,9 @@
    "qt": 384,
    "data": "2026-07-29",
    "marcas": {
-    "Igora": 186
+    "Igora": 384
    },
-   "sem_un": 198
+   "sem_un": 0
   },
   {
    "loja": "L5",
@@ -275,9 +287,10 @@
    "qt": 723,
    "data": "2026-07-24",
    "marcas": {
-    "Impala": 666
+    "Impala": 666,
+    "Mundial": 51
    },
-   "sem_un": 57
+   "sem_un": 6
   }
  ]
 }

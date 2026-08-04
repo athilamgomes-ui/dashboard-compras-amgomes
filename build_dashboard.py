@@ -291,7 +291,11 @@ BRAND_KEYWORDS = {
     'Felps': ['FELPS'],
     'Mirra': ['MIRRA'],
     'Gama': ['GAMA'],
-    'Mundial': ['MUNDIAL'],
+    # Mundial Distribuidora é multi-marca (Impala + Mundial) e as linhas licenciadas/infantis
+    # não trazem "MUNDIAL" na descrição. Keywords conferidas contra o grupo MUNDIAL do ERP.
+    # 'KIT INFANTIL ...' é ambíguo (algumas variantes estão em IMPALA) — maioria é MUNDIAL.
+    'Mundial': ['MUNDIAL','TIRESMALT','KIT BARBIE','KIT HOT WHEELS','GIZ PARA COLORIR',
+                'INFANTIL BARBIE','KIT INFANTIL MAQUIAGEM','KIT INFANTIL BRILHO LABIAL'],
     'Kamaleao': ['KAMALEAO','KAMALEÃO',' KC '],
     'Risque': ['RISQUE'],
     'Igora': ['IGORA'],
@@ -321,6 +325,19 @@ BRAND_KEYWORDS = {
     'Mega Bell': ['MEGA BELL','MEGA BEL'],
     'Japinha': ['JAPINHA'],
     'Salon Line': ['SALON LINE','SALONLINE'],
+    # Franca Plus é multi-marca (Nathydras/Varcare) e as descrições da NFe pendente NÃO
+    # trazem o nome da marca — só a linha de produto. Keywords derivadas do cadastro ERP:
+    # linha "Alho Therapy"/"Açaí" = Nathydras; linha "S.O.S."/"Moisture"/"Nutrition" = Varcare.
+    'Nathydras': ['NATHYDRAS','ALHO THERAPY','MASCARA ALHO','SHAMPOO ALHO','SELANTE ALHO',
+                  'CONDICIONADOR ALHO','REPARADOR DE PONTAS ALHO','MATIZADORA ACAI'],
+    'Varcare': ['VARCARE','S.O.S. INVERSOR','SOS INVERSOR','S.O.S. MOISTURE','SOS MOISTURE',
+                'LISO PERFEITO','NUTRITION SHAMPOO','NUTRITION CONDITIONER','NUTRITION MASK',
+                'HUMECTANT COMPLEX'],
+    # Rótulo-only (NÃO estão na curva): a Okajima é multi-marca e o grosso das NFes dela
+    # já casa em Risque/Colorama. O resíduo é desodorante Tabu e Bozzano — marcas que não
+    # compramos para curva, mas precisam ser reconhecidas para não caírem em "sem marca".
+    'Tabu': ['TABU'],
+    'Bozzano': ['BOZZANO'],
 }
 
 EXCL_CFOP = {

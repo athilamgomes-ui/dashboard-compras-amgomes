@@ -9,6 +9,47 @@ Formato: `## AAAA-MM-DD — <Marca>` + o que mudou em cada arquivo + NF/forneced
 
 <!-- novas entradas abaixo -->
 
+## 2026-08-04b — Becorel→Igora, Franca Plus (keywords), Mundial (linhas infantis), Okajima (resíduo)
+Athila apontou que Franca, Becorel, Mundial e Okajima continuavam no banner "trânsito sem marca"
+mesmo já tendo tido entradas anteriores — ou seja, a marca era conhecida e o mapeamento é que
+faltava. Todos os 4 eram o MESMO tipo de falha: a marca existe e já tem histórico, mas a
+**descrição da NFe pendente não traz o nome da marca** (usa abreviação ou nome de linha), e o
+fornecedor ou não estava mapeado ou é multi-marca. Corrigidos:
+
+- **Becorel** ("BECOREL BELEZA COMERCIO DE COSMETICOS") → **Igora**. Fornecedor especializado, todas
+  as 4 notas lançadas do histórico batem 100% no grupo IGORA ROYAL do ERP. A descrição pendente
+  abrevia para **"I. ROYAL 1-0 60ML"**, que NÃO casa com o keyword `IGORA` — por isso ficava órfã
+  apesar de Igora já ser curva A nas 4 lojas. Resolvido por
+  `fornecedor_marcas.por_nome_substring["BECOREL"]="Igora"`. Recuperou 3 NFes (L1 142968 R$6005,
+  L4 142995 R$5930, L5 142977 R$3784, L3 142900 R$2572).
+- **Franca Plus** → keywords de linha de produto para o split **Nathydras/Varcare** (curva B
+  adicionada na entrada anterior de hoje). A NFe pendente descreve só a linha, sem a marca:
+  `Nathydras` = ALHO THERAPY / MASCARA-SHAMPOO-SELANTE-CONDICIONADOR ALHO / MATIZADORA ACAI;
+  `Varcare` = S.O.S. INVERSOR / S.O.S. MOISTURE / LISO PERFEITO / NUTRITION / HUMECTANT COMPLEX.
+  Keywords conferidas contra o cadastro real do ERP. NF 932 (L3, 824un) e 931 (L5, 336un) saíram
+  do banner — resta só embalagem (BOBINA SHRINK 36un, CAIXA KIT MSA 12un), que é insumo, não revenda.
+- **Mundial Distribuidora** (multi-marca Impala + Mundial) → keywords para as linhas licenciadas e
+  infantis que não trazem "MUNDIAL" na descrição: `TIRESMALT` (removedor; mesmo prefixo de EAN
+  7896111 dos Impala = mesmo fabricante), `KIT BARBIE`, `KIT HOT WHEELS`, `GIZ PARA COLORIR`,
+  `INFANTIL BARBIE`, `KIT INFANTIL MAQUIAGEM`, `KIT INFANTIL BRILHO LABIAL`. ⚠️ As duas últimas
+  são levemente ambíguas — algumas variantes de personagem (FROZEN-maquiagem, MOANA-brilho) estão
+  no grupo IMPALA no ERP, a maioria em MUNDIAL; optei pela maioria. `Impala` vem ANTES de `Mundial`
+  no dict, então qualquer descrição com "IMPALA" literal continua ganhando. Resolveu NFs 771795
+  (L3), 771796 (L4), 771741 (L5) — restam 6un de um conjunto Barbie ambíguo.
+- **Okajima** (multi-marca) → o grosso já casava em Risque/Colorama; o resíduo eram 28un de
+  **desodorante Tabu** e **Bozzano**, marcas que não compramos para curva. Adicionadas como
+  **rótulo-only** (`BRAND_KEYWORDS` + `_marcas_sem_cadastro_erp`, padrão Elseve): são reconhecidas
+  e param de cair em "sem marca", mas não geram sugestão de compra. NFs 1183612 e 1213501 (L3) limpas.
+
+Pós-rebuild: banner caiu de 19 para 11 itens; reconciliação `curva NÃO refletida: 0`,
+`sem marca: 5` (só os 3 fornecedores realmente novos + o que já estava pendente de decisão).
+Rebuild offline (compras_raw.json das 13:42), sem re-raspar o Microvix.
+
+**Continuam pendentes de decisão do Athila:** Ado Administradora de Marcas (→Brotherhood, marca já
+existe no ERP mas falta o código), JF Comercio (necessaires sem GTIN, SKU novo), FOCO Distribuição
+(LP Curl Expression), FFE e Fraiha (linha Bauny), A M Gomes Import (bolsas), além dos 3 da entrada
+anterior (DVT, Nova Chance/Cor e Charme, Fabio Porto).
+
 ## 2026-08-04 — Nathydras/Varcare, Inoar, Raavi, Maria Margarida, Real Love (notas JÁ LANÇADAS sem marca)
 Athila pediu auditoria: marcas em "trânsito sem classificação" cujo produto já tinha CHEGADO e a
 NFe já estava lançada no ERP (não era mais problema de trânsito pendente — era `attribute_nota()`
