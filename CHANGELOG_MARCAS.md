@@ -9,6 +9,13 @@ Formato: `## AAAA-MM-DD — <Marca>` + o que mudou em cada arquivo + NF/forneced
 
 <!-- novas entradas abaixo -->
 
+## 2026-08-07 — Loreal (novo fornecedor FOCO)
+Athila informou: **FOCO DISTRIBUICAO E LOGISTICA LTDA = marca Loreal (código 387 no ERP)**. A marca
+já estava 100% mapeada (`marca_ids.json` Loreal=[387], curva B nas 4 lojas, fornecedor BORTMAN E CIA
+já apontando p/ Loreal) — faltava só o fornecedor novo.
+- `fornecedor_marcas.json`: `por_nome_substring["FOCO DISTRIBUICAO E LOGISTICA"]="Loreal"`.
+- Reconciliação após recoleta: 🔴 curva NÃO refletida = 0; chegada nova **L4 Loreal R$8461** (NF do FOCO já resolvida com marca).
+
 ## 2026-08-04 — Franca Plus (multi-marca) + keywords viram FONTE ÚNICA
 Franca Plus (CNPJ 56927323000180) = distribuidora multi-marca **Nathydras + Varcare**. Motivada pela
 precificação: a NF 926 L1 (R$18k, 59 itens) precisava ter a marca de CADA item detectada p/ puxar
