@@ -10,15 +10,6 @@
    "sem_un": 228
   },
   {
-   "loja": "L3",
-   "nf": "42085",
-   "forn": "FOCO DISTRIBUICAO E LOGISTICA LTDA",
-   "qt": 38,
-   "data": "2026-07-31",
-   "marcas": {},
-   "sem_un": 38
-  },
-  {
    "loja": "L4",
    "nf": "3368",
    "forn": "Ado Administradora de Marcas",
@@ -26,15 +17,6 @@
    "data": "2026-07-23",
    "marcas": {},
    "sem_un": 228
-  },
-  {
-   "loja": "L4",
-   "nf": "41854",
-   "forn": "FOCO DISTRIBUICAO E LOGISTICA LTDA",
-   "qt": 57,
-   "data": "2026-07-29",
-   "marcas": {},
-   "sem_un": 57
   }
  ],
  "fora_curva": [
@@ -94,6 +76,17 @@
    "data": "2026-07-31",
    "marcas": {
     "Let me be": 273
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L3",
+   "nf": "42085",
+   "forn": "FOCO DISTRIBUICAO E LOGISTICA LTDA",
+   "qt": 38,
+   "data": "2026-07-31",
+   "marcas": {
+    "Loreal": 38
    },
    "sem_un": 0
   },
@@ -205,17 +198,6 @@
   },
   {
    "loja": "L4",
-   "nf": "215721",
-   "forn": "S R DOS SANTOS EQUIPAMENTOS",
-   "qt": 1,
-   "data": "2026-05-08",
-   "marcas": {
-    "Lizze": 1
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L4",
    "nf": "771796",
    "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
    "qt": 2646,
@@ -237,18 +219,6 @@
     "Varcare": 48
    },
    "sem_un": 12
-  },
-  {
-   "loja": "L5",
-   "nf": "5078",
-   "forn": "FFE E FRAIHA DISTRIBUIDORA LTDA",
-   "qt": 258,
-   "data": "2026-07-31",
-   "marcas": {
-    "Bauny": 252,
-    "Dagua Natural": 6
-   },
-   "sem_un": 0
   },
   {
    "loja": "L5",
