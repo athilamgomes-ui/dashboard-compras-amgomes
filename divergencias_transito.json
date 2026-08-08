@@ -1,6 +1,15 @@
 {
  "sem_marca": [
   {
+   "loja": "L1",
+   "nf": "772",
+   "forn": "E DA COSTA OLIVEIRA",
+   "qt": 393,
+   "data": "2026-08-07",
+   "marcas": {},
+   "sem_un": 393
+  },
+  {
    "loja": "L3",
    "nf": "3404",
    "forn": "Ado Administradora de Marcas",
@@ -56,17 +65,6 @@
     "Nathydras": 656
    },
    "sem_un": 36
-  },
-  {
-   "loja": "L3",
-   "nf": "2681",
-   "forn": "CBB INDUSTRIA E COMERCIO DE PRODUT",
-   "qt": 306,
-   "data": "2026-07-23",
-   "marcas": {
-    "CBB": 306
-   },
-   "sem_un": 0
   },
   {
    "loja": "L3",
