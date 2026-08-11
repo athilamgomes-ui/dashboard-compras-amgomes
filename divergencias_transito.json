@@ -2,6 +2,15 @@
  "sem_marca": [
   {
    "loja": "L1",
+   "nf": "50",
+   "forn": "DISTRIBUIDORA DE COSMETICOS TIBIA ",
+   "qt": 111,
+   "data": "2026-08-10",
+   "marcas": {},
+   "sem_un": 111
+  },
+  {
+   "loja": "L1",
    "nf": "772",
    "forn": "E DA COSTA OLIVEIRA",
    "qt": 393,
@@ -26,6 +35,15 @@
    "data": "2026-07-23",
    "marcas": {},
    "sem_un": 228
+  },
+  {
+   "loja": "L5",
+   "nf": "1845",
+   "forn": "ULTRA INOVACAO COMERCIAL DE IMPORT",
+   "qt": 70,
+   "data": "2026-08-10",
+   "marcas": {},
+   "sem_un": 70
   }
  ],
  "fora_curva": [
@@ -53,18 +71,6 @@
     "Igora": 577
    },
    "sem_un": 0
-  },
-  {
-   "loja": "L3",
-   "nf": "932",
-   "forn": "FRANCA PLUS COMERCIO DE COSMETICOS",
-   "qt": 824,
-   "data": "2026-07-21",
-   "marcas": {
-    "Varcare": 132,
-    "Nathydras": 656
-   },
-   "sem_un": 36
   },
   {
    "loja": "L3",
@@ -185,6 +191,17 @@
   },
   {
    "loja": "L4",
+   "nf": "52058",
+   "forn": "KAMALEAO COLOR COMERCIO DE COSMETI",
+   "qt": 222,
+   "data": "2026-08-10",
+   "marcas": {
+    "Kamaleao": 222
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
    "nf": "142995",
    "forn": "BECOREL BELEZA COMERCIO DE COSMETI",
    "qt": 566,
@@ -203,6 +220,17 @@
    "marcas": {
     "Impala": 2586,
     "Mundial": 60
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "52066",
+   "forn": "KAMALEAO COLOR COMERCIO DE COSMETI",
+   "qt": 216,
+   "data": "2026-08-10",
+   "marcas": {
+    "Kamaleao": 216
    },
    "sem_un": 0
   },
