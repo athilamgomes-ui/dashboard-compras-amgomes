@@ -85,17 +85,6 @@
   },
   {
    "loja": "L3",
-   "nf": "42085",
-   "forn": "FOCO DISTRIBUICAO E LOGISTICA LTDA",
-   "qt": 38,
-   "data": "2026-07-31",
-   "marcas": {
-    "Loreal": 38
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L3",
    "nf": "52006",
    "forn": "KAMALEAO COLOR COMERCIO DE COSMETI",
    "qt": 246,
@@ -113,18 +102,6 @@
    "data": "2026-07-29",
    "marcas": {
     "Igora": 218
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L3",
-   "nf": "771795",
-   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
-   "qt": 1716,
-   "data": "2026-07-24",
-   "marcas": {
-    "Impala": 1593,
-    "Mundial": 123
    },
    "sem_un": 0
   },
@@ -208,18 +185,6 @@
    "data": "2026-07-30",
    "marcas": {
     "Igora": 566
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L4",
-   "nf": "771796",
-   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
-   "qt": 2646,
-   "data": "2026-07-24",
-   "marcas": {
-    "Impala": 2586,
-    "Mundial": 60
    },
    "sem_un": 0
   },
