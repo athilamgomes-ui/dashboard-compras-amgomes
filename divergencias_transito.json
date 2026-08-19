@@ -19,6 +19,15 @@
    "sem_un": 393
   },
   {
+   "loja": "L1",
+   "nf": "6422",
+   "forn": "DAMIA ACESSORIOS LTDA",
+   "qt": 280,
+   "data": "2026-08-18",
+   "marcas": {},
+   "sem_un": 280
+  },
+  {
    "loja": "L3",
    "nf": "3404",
    "forn": "Ado Administradora de Marcas",
@@ -44,6 +53,15 @@
    "data": "2026-08-10",
    "marcas": {},
    "sem_un": 70
+  },
+  {
+   "loja": "L5",
+   "nf": "6423",
+   "forn": "DAMIA ACESSORIOS LTDA",
+   "qt": 115,
+   "data": "2026-08-18",
+   "marcas": {},
+   "sem_un": 115
   }
  ],
  "fora_curva": [
@@ -94,6 +112,17 @@
     "Mirra": 316
    },
    "sem_un": 0
+  },
+  {
+   "loja": "L1",
+   "nf": "32162",
+   "forn": "BLUE COSMETICS COMERCIO E DISTRIBU",
+   "qt": 462,
+   "data": "2026-08-18",
+   "marcas": {
+    "Widi Care": 42
+   },
+   "sem_un": 420
   },
   {
    "loja": "L1",
@@ -189,6 +218,17 @@
     "Mirra": 396
    },
    "sem_un": 0
+  },
+  {
+   "loja": "L4",
+   "nf": "32161",
+   "forn": "BLUE COSMETICS COMERCIO E DISTRIBU",
+   "qt": 462,
+   "data": "2026-08-18",
+   "marcas": {
+    "Widi Care": 42
+   },
+   "sem_un": 420
   },
   {
    "loja": "L4",
