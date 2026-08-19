@@ -9,6 +9,59 @@ Formato: `## AAAA-MM-DD — <Marca>` + o que mudou em cada arquivo + NF/forneced
 
 <!-- novas entradas abaixo -->
 
+## 2026-08-19 — Auditoria de cobertura: faixas de sobra, chegada recente, histórico e de-para
+Athila auditou o dashboard e apontou 7 defeitos. O que mudou:
+
+**1. Faixas de Excesso e Morto** (`build_dashboard.py` `FAIXAS`/`classifica_cobertura`,
+`dashboard_compras.html` `STATUS`/`classifica`). Antes só existia falta (Crítico &lt;60 /
+Atenção 60–90 / OK &gt;90) — marca com 400 dias vinha VERDE como "OK" e o dashboard **nunca
+enxergava sobra**. Agora: OK 90–180 · **Excesso 180–360** · **Morto &gt;360**. Novo KPI
+"Excesso / Morto" e campo `excesso_un` (unidades acima de 180 dias) = base do plano de queima.
+Hoje: 38 marca×loja em sobra, ~5.000 un.
+
+**2. "Chegou agora"** (`historico_entregas[*].recem_chegou`, faixa `RECEM`). A cobertura
+divide saldo NOVO por venda VELHA: uma marca que recebeu dentro da janela de 60 dias aparece
+com cobertura inflada. Ex.: Nathydras L1 recebeu 508 un e marcava 786 dias. Marcas com entrada
+nos últimos 60 dias ganham selo azul "chegou agora" e **não são classificadas como sobra** até
+o giro pós-chegada aparecer. 44 marca×loja nessa situação.
+
+**3. "sem histórico — 1º pedido" em TODAS as curva S** — bug real. `janelaPedido()` e
+`calcularPrazoMedio()` liam `DATA.chegadas_mes`, que é uma **janela de 45 dias**: qualquer marca
+cuja última entrega tivesse mais de 45 dias caía no fallback de primeiro pedido. Criado
+`historico_entregas` (marca×loja, **ano inteiro**: última entrega, prazo médio, nº de entregas,
+un recebidas em 60d), consumido pelo front. Caiu de **33 → 3** (as 3 restantes — ProBelle,
+Felps e Japinha em L5 — realmente não têm entrega no ano).
+
+**4. Santa Clara — lixas** (`EXCLUIR_PRODUTOS` em `build_dashboard.py`). Copiado o tratamento do
+dashboard de VENDAS (`coleta_top_marcas.mjs`): produtos `\bLIXA` saem da marca, porque são
+comprados em pacote e saem por unidade (troco de loja) e o ERP carrega milhares de unidades
+inexistentes. Cobertura: **L1 827→259d · L4 561→407d · L5 203→94d** (L3 já estava em 97d).
+⚠️ L4 continua alto: sobra saldo fantasma em códigos antigos que NÃO são lixa (ex.
+"CLIPS PLAS CAB REFIL S CLARA" com 2.930 un) — isso é inventário, não dashboard.
+
+**5. De-para de marcas duplicadas** (`ALIASES`). Varredura de grupos ERP parecidos com marcas da
+curva encontrou **NATHY** separado de **NATHYDRAS** — 819 un de saldo invisíveis (L1 487, L4 180,
+L5 117, L3 35). Também **LIZZ**→Lizze (grafia truncada, poucas un). Apice/Apse **já estava
+resolvido** desde antes (alias existente, funcionando). Sobre L'Oréal, ver a nota abaixo.
+
+**6. Elseve entrou na curva B (L3/L5).** Tem grupo próprio no ERP e saldo, mas não estava em
+`curva_marcas.json` — cobertura nunca era lida.
+
+**7. README** reescrito: dizia que a coleta "usa o Chrome MCP (sessão do seu Chrome principal)",
+contrariando a regra nº 1 do CLAUDE.md. Agora documenta Playwright headless + perfil persistente
++ Keychain, o comando único `atualizar_compras.sh`, as faixas novas e o remédio do zumbi
+`chrome-headless-shell`.
+
+### Nota — L'Oréal NÃO estava "colado numa marca só"
+Investigado: no ERP os grupos **já são separados**. `LOREAL` contém só L'Oréal **Professionnel**
+(Absolut Repair, Serie Expert, Curl Expression, Nutrioil, Vitamino Color), fornecedores FOCO
+(R$14.052) + Bortman (R$5.429) = **R$19.481**, e **está** na curva B nas 4 lojas — a cobertura é
+lida (L4 990 dias, hoje marcada "chegou agora"). O lado **Paris** são outros grupos: `ELSEVE`
+(R$1.623) e `GARNIER` (R$339), via Okajima — Elseve entrou na curva agora, Garnier tem 9 un e
+ficou de fora. O gasto de Okajima (R$15.387) é majoritariamente **não-L'Oréal**: Risque 19%,
+Colorama 18%, OX 11%, Elseve 11%, Garnier 2% e **39% (R$6.063) em produtos sem grupo de marca no
+saldo do ERP** — esse é o valor realmente sem leitura, e a causa é cadastro no ERP, não de-para.
+
 ## 2026-08-07 — Loreal (novo fornecedor FOCO)
 Athila informou: **FOCO DISTRIBUICAO E LOGISTICA LTDA = marca Loreal (código 387 no ERP)**. A marca
 já estava 100% mapeada (`marca_ids.json` Loreal=[387], curva B nas 4 lojas, fornecedor BORTMAN E CIA

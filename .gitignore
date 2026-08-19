@@ -3,3 +3,4 @@ logs/
 *.log
 *.bak
 dados_anterior.json
+.claude/

@@ -21,6 +21,9 @@
     --ok: #059669;
     --warn: #d97706;
     --crit: #dc2626;
+    --exc: #7c3aed;
+    --morto: #4c1d95;
+    --recem: #0284c7;
     --curva-s: #fff1f2;
     --curva-a: #eef2ff;
     --curva-b: #f8fafc;
@@ -118,6 +121,11 @@
   td.cob-ok   { color: var(--ok);   font-weight: 600; }
   td.cob-warn { color: var(--warn); font-weight: 600; }
   td.cob-crit { color: var(--crit); font-weight: 700; }
+  td.cob-exc  { color: var(--exc);  font-weight: 700; }
+  td.cob-morto{ color: var(--morto);font-weight: 700; }
+  td.cob-recem{ color: var(--recem);font-weight: 600; }
+  .tag-recem { display:inline-block; margin-left:6px; padding:1px 6px; border-radius:9px;
+               background:#e0f2fe; color:#075985; font-size:10px; font-weight:700; vertical-align:middle; }
   td.sug { font-weight: 600; }
   td.sug.has { color: var(--crit); }
   .caret { display: inline-block; width: 12px; color: var(--muted2); font-size: 10px; margin-right: 2px; }
@@ -194,7 +202,10 @@
         <option value="ALL">Todos</option>
         <option value="CRIT">Crítico (&lt; 60d)</option>
         <option value="WARN">Atenção (60–90d)</option>
-        <option value="OK">OK (&gt; 90d)</option>
+        <option value="OK">OK (90–180d)</option>
+        <option value="EXCESSO">Excesso (180–360d)</option>
+        <option value="MORTO">Morto (&gt; 360d)</option>
+        <option value="RECEM">Chegou agora (recebeu &lt; 60d)</option>
       </select>
     </label>
     <button onclick="window.location.reload()">↻ Atualizar página</button>
@@ -258,6 +269,13 @@
     <div class="legend">
       cobertura = (estoque atual + em trânsito) ÷ (vendas 60d ÷ 60) ·
       sugestão = vendas/dia × (60 + 15) − estoque atual − em trânsito ·
+      <strong>faixas:</strong> Crítico &lt;60d · Atenção 60–90d · OK 90–180d ·
+      <span style="color:var(--exc);font-weight:600">Excesso 180–360d</span> ·
+      <span style="color:var(--morto);font-weight:600">Morto &gt;360d</span> —
+      Excesso/Morto é <strong>sobra</strong>, entra no plano de queima, não de compra.
+      <span class="tag-recem">chegou agora</span> = recebeu mercadoria nos últimos 60 dias: a cobertura está
+      <strong>inflada</strong> (estoque já é o novo, mas a venda de 60 dias é em boa parte anterior à chegada),
+      por isso não é classificada como sobra. ·
       <strong>Botão de pedido</strong>: marcas curva <strong>S</strong> só liberam 45 dias após a última NF lançada
       (badge ⏳ <em>aguardar</em>). Quando já existe NFe pendente da marca (fornecedor emitiu mas ainda não chegou)
       o botão fica ✉️ <em>em curso</em> — evita duplicar pedido.
@@ -287,25 +305,37 @@ function recolherTodos() {
   document.querySelectorAll('.card[id]').forEach(c => { c.classList.add('collapsed'); try { localStorage.setItem('card-collapsed-' + c.id, '1'); } catch(e) {} });
 }
 
+// Faixas de cobertura. Espelham FAIXAS em build_dashboard.py — o campo s.status já vem
+// calculado do pipeline; classifica() é o fallback p/ dados antigos sem o campo.
 const STATUS = {
-  CRIT: { cls: "cob-crit", limite: 60 },
-  WARN: { cls: "cob-warn", limite: 90 },
-  OK:   { cls: "cob-ok",   limite: Infinity }
+  CRIT:   { cls: "cob-crit",  rot: "Crítico",     desc: "< 60 dias" },
+  WARN:   { cls: "cob-warn",  rot: "Atenção",     desc: "60–90 dias" },
+  OK:     { cls: "cob-ok",    rot: "OK",          desc: "90–180 dias" },
+  EXCESSO:{ cls: "cob-exc",   rot: "Excesso",     desc: "180–360 dias" },
+  MORTO:  { cls: "cob-morto", rot: "Morto",       desc: "> 360 dias" },
+  RECEM:  { cls: "cob-recem", rot: "Chegou agora",desc: "recebeu nos últimos 60d — cobertura ainda inflada" }
 };
 
-function classifica(c) {
+function classifica(c, recem) {
   if (c < 60) return "CRIT";
   if (c < 90) return "WARN";
-  return "OK";
+  if (c < 180) return "OK";
+  if (recem) return "RECEM";
+  return c < 360 ? "EXCESSO" : "MORTO";
 }
+// Status de uma sugestão: usa o do pipeline quando existe.
+const statusDe = s => s.status || classifica(s.cobertura_dias, s.recem_chegou);
 
 const fmtUnid = n => (n||0).toLocaleString('pt-BR', { maximumFractionDigits: 0 }) + ' un';
 const fmtBRL  = fmtUnid; // valores estão em peças, manter alias para compatibilidade
 const fmtNum  = n => (n||0).toLocaleString('pt-BR', { maximumFractionDigits: 0 });
+// ⚠️ Não truncar em "99+": com as faixas de Excesso/Morto o número acima de 99 é
+// justamente o que interessa (200 dias e 800 dias pedem ações opostas). O 9999 é o
+// sentinela de "sem venda no período" — esse sim vira texto.
 const fmtCobertura = c => {
-  if (c === 9999 || !isFinite(c)) return '99+ dias';
+  if (c === 9999 || !isFinite(c)) return 'sem venda';
   const v = Math.max(0, Math.round(c||0));
-  return (v > 99 ? '99+' : v) + ' dias';
+  return (v >= 999 ? '999+' : v) + ' dias';
 };
 // Célula de estoque: mostra o saldo do ERP; se o estoque efetivo (usado no cálculo)
 // for menor — porque a estimativa por (última entrada − vendas) ficou abaixo do
@@ -418,8 +448,9 @@ function renderAlertasS(filtroLoja) {
   let html = `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px">`;
   prontas.forEach(s => {
     const jp = janelaPedido(s.marca, s.loja, s.curva);
-    const stat = classifica(s.cobertura_dias);
-    const barColor = stat === 'CRIT' ? '#fa5252' : (stat === 'WARN' ? '#fab005' : '#37b24d');
+    const stat = statusDe(s);
+    const barColor = stat === 'CRIT' ? '#fa5252' : (stat === 'WARN' ? '#fab005'
+      : (stat === 'EXCESSO' || stat === 'MORTO') ? '#7c3aed' : (stat === 'RECEM' ? '#0284c7' : '#37b24d'));
     const marcaEsc = s.marca.replace(/'/g, "\\'");
     const diasMsg = jp.diasDesde == null
       ? 'sem histórico — 1º pedido'
@@ -448,45 +479,36 @@ function renderAlertasS(filtroLoja) {
 // daquela marca×loja antes de habilitar novo pedido (evita pedir em cima da hora de
 // uma entrega recente e estourar estoque). Marcas A/B liberam imediatamente.
 const JANELA_PEDIDO_DIAS_S = 45;
+// Histórico de entregas do ANO INTEIRO (DATA.historico_entregas, vindo do pipeline).
+// ⚠️ NÃO usar DATA.chegadas_mes aqui: é uma janela de 45 dias, e era essa a causa de
+// TODAS as marcas de curva S aparecerem como "sem histórico — 1º pedido" (qualquer
+// marca cuja última entrega tivesse mais de 45 dias caía no fallback de 1º pedido).
+function histEntrega(marca, loja) {
+  const h = DATA.historico_entregas && DATA.historico_entregas[loja];
+  return (h && h[marca]) || null;
+}
 function janelaPedido(marca, loja, curva) {
-  const ch = (DATA.chegadas_mes && DATA.chegadas_mes[loja]) || [];
-  const marcaUp = String(marca).toUpperCase();
-  const lancadas = ch.filter(x => x.origem === 'lancada'
-    && String(x.marca || '').toUpperCase() === marcaUp
-    && x.data_lancamento);
-  if (!lancadas.length) {
+  const h = histEntrega(marca, loja);
+  if (!h || !h.ultima_lcto) {
     return { liberado: true, motivo: 'sem histórico de entrega — primeiro pedido', ultimaLcto: null, diasDesde: null };
   }
-  // Pegar a mais recente
-  const ult = lancadas.reduce((a,b) => (a.data_lancamento > b.data_lancamento ? a : b));
-  const dt = new Date(ult.data_lancamento);
-  const hoje = new Date();
-  const dias = Math.floor((hoje - dt) / 86400000);
+  const dt = new Date(h.ultima_lcto);
+  const dias = (h.dias_desde != null) ? h.dias_desde : Math.floor((new Date() - dt) / 86400000);
   if (curva === 'S' && dias < JANELA_PEDIDO_DIAS_S) {
     return {
       liberado: false,
       motivo: `curva S — última entrega há ${dias}d. Liberar em ${JANELA_PEDIDO_DIAS_S - dias}d (${new Date(dt.getTime() + JANELA_PEDIDO_DIAS_S*86400000).toLocaleDateString('pt-BR')})`,
-      ultimaLcto: ult.data_lancamento, diasDesde: dias
+      ultimaLcto: h.ultima_lcto, diasDesde: dias
     };
   }
-  return { liberado: true, motivo: `última entrega há ${dias}d`, ultimaLcto: ult.data_lancamento, diasDesde: dias };
+  return { liberado: true, motivo: `última entrega há ${dias}d`, ultimaLcto: h.ultima_lcto, diasDesde: dias };
 }
 
-// Prazo médio de entrega = média de (data_lancamento - data) das NFs da marca×loja em chegadas
+// Prazo médio de entrega (emissão → lançamento no ERP), do ANO INTEIRO — já calculado
+// pelo pipeline em historico_entregas. Antes vinha de chegadas_mes (janela de 45d).
 function calcularPrazoMedio(marca, loja) {
-  const ch = (DATA.chegadas_mes && DATA.chegadas_mes[loja]) || [];
-  const marcaUp = String(marca).toUpperCase();
-  const diffs = ch
-    .filter(x => x.origem === 'lancada'
-      && String(x.marca || '').toUpperCase() === marcaUp
-      && x.data && x.data_lancamento)
-    .map(x => {
-      const e = new Date(x.data), l = new Date(x.data_lancamento);
-      return Math.max(0, Math.round((l - e) / 86400000));
-    })
-    .filter(d => d > 0);
-  if (!diffs.length) return null;
-  return Math.round(diffs.reduce((a,b) => a+b, 0) / diffs.length);
+  const h = histEntrega(marca, loja);
+  return (h && h.prazo_medio != null) ? h.prazo_medio : null;
 }
 
 function montarLinhasPedido(marca, loja) {
@@ -641,15 +663,19 @@ function render() {
   let sug = (DATA.sugestoes || []).filter(s => {
     if (filtroLoja !== 'ALL' && s.loja !== filtroLoja) return false;
     if (filtroCurva !== 'ALL' && s.curva !== filtroCurva) return false;
-    if (filtroStat !== 'ALL' && classifica(s.cobertura_dias) !== filtroStat) return false;
+    if (filtroStat !== 'ALL' && statusDe(s) !== filtroStat) return false;
     return true;
   });
 
   // KPIs
   const totSug = sug.reduce((a,s) => a + s.sugestao_compra, 0);
-  const crits = sug.filter(s => classifica(s.cobertura_dias) === 'CRIT').length;
-  const warns = sug.filter(s => classifica(s.cobertura_dias) === 'WARN').length;
-  const oks   = sug.filter(s => classifica(s.cobertura_dias) === 'OK').length;
+  const crits = sug.filter(s => statusDe(s) === 'CRIT').length;
+  const warns = sug.filter(s => statusDe(s) === 'WARN').length;
+  const oks   = sug.filter(s => statusDe(s) === 'OK').length;
+  // Sobra: marcas acima de 180 dias de cobertura (fora as que acabaram de receber, cuja
+  // cobertura ainda está inflada). excesso_un = quanto passa de 180 dias — base da queima.
+  const sobras = sug.filter(s => ['EXCESSO','MORTO'].includes(statusDe(s)));
+  const sobraUn = sobras.reduce((a,s) => a + (s.excesso_un || 0), 0);
   const sProntas = sug.filter(s => s.curva === 'S'
     && s.sugestao_compra > 0
     && janelaPedido(s.marca, s.loja, s.curva).liberado
@@ -658,6 +684,7 @@ function render() {
     <div class="kpi"><div class="label">Marcas monitoradas</div><div class="value">${sug.length}</div><div class="sub">curva S + A + B (filtradas)</div></div>
     <div class="kpi"><div class="label">Sugestão total</div><div class="value">${fmtUnid(totSug)}</div><div class="sub">peças p/ cobrir 60+15 dias</div></div>
     <div class="kpi"><div class="label">Críticas</div><div class="value" style="color:var(--crit)">${crits}</div><div class="sub">cobertura &lt; 60 dias</div></div>
+    <div class="kpi" style="${sobras.length > 0 ? 'border-left:4px solid var(--exc)' : ''}"><div class="label">Excesso / Morto</div><div class="value" style="color:var(--exc)">${sobras.length}</div><div class="sub">${fmtUnid(sobraUn)} acima de 180 dias — queimar</div></div>
     <div class="kpi" style="${sProntas > 0 ? 'border-left:4px solid #fa5252' : ''}"><div class="label">⭐ S no ponto de pedir</div><div class="value" style="color:${sProntas > 0 ? '#fa5252' : 'var(--muted)'}">${sProntas}</div><div class="sub">curva S liberada (≥45d da última NF)</div></div>
   `;
 
@@ -676,7 +703,7 @@ function render() {
     html += `<tr><td colspan="9" id="status-empty">Sem dados para o filtro selecionado.</td></tr>`;
   } else {
     sug.forEach((s, idx) => {
-      const stat = classifica(s.cobertura_dias);
+      const stat = statusDe(s);
       const cls = 'curva-' + s.curva.toLowerCase();
       const rowId = `sug-${idx}`;
       const marcaEsc = s.marca.replace(/'/g, "\\'");
@@ -714,7 +741,8 @@ function render() {
         <td>${estoqueCell(s)}</td>
         <td class="sug ${s.sugestao_compra > 0 ? 'has' : ''}">${fmtUnid(s.sugestao_compra)}</td>
         <td>${fmtUnid(s.transito)}</td>
-        <td class="${STATUS[stat].cls}">${fmtCobertura(s.cobertura_dias)}</td>
+        <td class="${STATUS[stat].cls}" title="${STATUS[stat].rot} — ${STATUS[stat].desc}">${fmtCobertura(s.cobertura_dias)}${
+          s.recem_chegou ? `<span class="tag-recem" title="Recebeu ${fmtUnid(s.un_recebidas_60d)} nos últimos 60 dias (última entrega ${s.ultima_entrega || '—'}). A cobertura está inflada: o estoque já é o novo, mas a venda de 60 dias é em boa parte anterior à chegada.">chegou agora</span>` : ''}</td>
         <td style="white-space:nowrap" class="no-print" onclick="event.stopPropagation()">${btn}</td>
       </tr>
       <tr id="prod-${rowId}" class="produtos-row" style="display:none"><td colspan="9"></td></tr>`;

@@ -60,13 +60,27 @@ EMP_TO_LOJA = {1:'L1', 3:'L3', 4:'L4', 10:'L5'}
 # ============ ETAPA 3: Mesclar saldos das 4 lojas ============
 saldos = raw['saldos']  # {L1:{brandName:{prods:[]}}, ...}
 
-# Aliases para curva → grupos ERP
+# Aliases para curva → grupos ERP.
+# De-para de marcas cadastradas com mais de um grupo no ERP (grafias diferentes do
+# mesmo fornecedor). Sem isto o saldo do grupo secundário fica invisível no dashboard.
 ALIASES = {
     'CINCO': ['CINCO','5 CINCO'],
     'MIRRA': ['MIRRA','MIRRAS'],
     'YAMA': ['YAMA','YAMÁ'],
     'APICE': ['APICE','APSE'],
     'OTIMO': ['OTIMO','ÓTIMO'],
+    # 2026-08-05: grupos duplicados encontrados na auditoria de cobertura.
+    'NATHYDRAS': ['NATHYDRAS','NATHY'],   # 819 un de saldo estavam órfãs no grupo 'NATHY'
+    'LIZZE': ['LIZZE','LIZZ'],            # grafia truncada, poucas unidades
+}
+
+# Produtos a EXCLUIR de uma marca (regex na descrição). Mesmo tratamento do dashboard
+# de VENDAS (coleta_top_marcas.mjs, EXCLUIR_PRODUTOS): as lixas Santa Clara são compradas
+# em pacote e vendidas/dadas por unidade (troco de loja), então o saldo do ERP carrega
+# milhares de unidades que não existem fisicamente e congelam a cobertura da marca nº 1
+# do grupo. Sem excluir, Santa Clara aparece com 800+ dias e some do plano de compra.
+EXCLUIR_PRODUTOS = {
+    'SANTA CLARA': re.compile(r'\bLIXA', re.I),
 }
 
 def find_brand_groups(curva_name, all_groups):
@@ -111,9 +125,12 @@ for marca_name in sorted(curva_all):
     # Mesclar produtos por codigo
     prod_by_code = {}  # codigo → {codigo, descricao, referencia, L1:{vendas,saldo,transito}, ...}
     lojas_tot = {l: {'compras_periodo':0,'vendas_60d':0,'saldo_atual':0,'transito':0} for l in LOJAS}
+    excl_re = EXCLUIR_PRODUTOS.get(norm(marca_name))
     for loja in LOJAS:
         for g in find_brand_groups(marca_name, saldos[loja].keys()):
             for p in saldos[loja][g]['prods']:
+                if excl_re and excl_re.search(p.get('d','') or ''):
+                    continue  # produto excluído da marca (ex: lixa Santa Clara)
                 cod = p['c']
                 if cod not in prod_by_code:
                     prod_by_code[cod] = {
@@ -621,6 +638,65 @@ for item in pendentes_processadas:
 for loja in LOJAS:
     chegadas[loja].sort(key=lambda x: x.get('data_lancamento') or x.get('data',''), reverse=True)
 
+# ============ HISTÓRICO DE ENTREGAS POR MARCA×LOJA (ano inteiro) ============
+# Corrige o bug "todas as curva S dizem 'sem histórico — 1º pedido'": o dashboard lia o
+# histórico de `chegadas_mes`, que é uma JANELA DE 45 DIAS. Marca cuja última entrega foi
+# há mais de 45 dias parecia nunca ter sido comprada — e a janela de pedido/prazo médio
+# caíam no fallback de primeiro pedido. Aqui o histórico é do ANO INTEIRO.
+DIAS_RECEM_CHEGOU = 60
+CUTOFF_RECEM = HOJE - timedelta(days=DIAS_RECEM_CHEGOU)
+historico_entregas = {l: {} for l in LOJAS}   # loja -> marca -> {...}
+for n in notas:
+    loja = n.get('loja')
+    if not loja or not n.get('data_lancamento'): continue
+    if fornecedor_ignorado(n.get('forn','')): continue
+    try:
+        dt_lcto = datetime.fromisoformat(n['data_lancamento'][:10])
+    except:
+        continue
+    attrs = attribute_nota(n)
+    if not attrs: continue
+    marca_dom = max(attrs, key=lambda x: x[1])[0]
+    # unidades por marca dentro da nota (por código; sobra vai p/ a marca dominante)
+    un_marca = {}
+    for it in n.get('itens', []):
+        m = codigo_to_marca.get(str(it.get('c',''))) or marca_dom
+        un_marca[m] = un_marca.get(m, 0) + (it.get('q', 0) or 0)
+    prazo = None
+    if n.get('data'):
+        try:
+            prazo = max(0, (dt_lcto - datetime.fromisoformat(n['data'][:10])).days)
+        except:
+            prazo = None
+    # Altamira: a NF é lançada em UMA empresa mas a mercadoria é dividida 50/50 → a
+    # entrega conta para as DUAS lojas (mesma regra do `ult_entrada`, ver ALTAMIRA_IRMA).
+    lojas_alvo = (loja, ALTAMIRA_IRMA[loja]) if loja in ALTAMIRA_IRMA else (loja,)
+    divisor = 2 if loja in ALTAMIRA_IRMA else 1
+    for lj in lojas_alvo:
+        for m, un in un_marca.items():
+            h = historico_entregas[lj].setdefault(m, {
+                'ultima_lcto': None, 'n_entregas': 0, '_prazos': [], 'un_60d': 0, 'ultima_emissao': None
+            })
+            h['n_entregas'] += 1
+            if h['ultima_lcto'] is None or n['data_lancamento'][:10] > h['ultima_lcto']:
+                h['ultima_lcto'] = n['data_lancamento'][:10]
+                h['ultima_emissao'] = (n.get('data') or '')[:10]
+            if prazo is not None and prazo > 0:
+                h['_prazos'].append(prazo)
+            if dt_lcto >= CUTOFF_RECEM:
+                h['un_60d'] += un / divisor
+for lj in LOJAS:
+    for m, h in historico_entregas[lj].items():
+        pz = h.pop('_prazos')
+        h['prazo_medio'] = round(sum(pz)/len(pz)) if pz else None
+        h['un_60d'] = round(h['un_60d'])
+        h['dias_desde'] = (HOJE - datetime.fromisoformat(h['ultima_lcto'])).days if h['ultima_lcto'] else None
+        # "chegou agora": recebeu mercadoria dentro da janela de venda usada no cálculo.
+        # A cobertura desses fica INFLADA — o saldo já é o novo, mas a venda de 60 dias é
+        # majoritariamente anterior à chegada (saldo novo ÷ venda velha). Não classificar
+        # como Excesso/Morto sem antes o giro pós-chegada aparecer.
+        h['recem_chegou'] = bool(h['un_60d'] > 0)
+
 # ============ LANÇAMENTOS DE MERCADO (curva S) ============
 # Cruza lancamentos.json (lista curada de produtos novos das marcas S) com nossa base de
 # produtos. Lançamentos que NÃO temos cadastrados viram entradas com flag '_lancamento'
@@ -685,6 +761,21 @@ if LANCAMENTOS_PATH.exists():
 # soma do detalhamento por produto (reconcilia 1:1 com o drilldown do dashboard). Produtos de
 # lançamento (sintéticos) já estão em mk['produtos'] aqui e entram com a qtd fixa sugerida.
 curva_order = {'S':0,'A':1,'B':2}
+
+# Faixas de cobertura. Antes só existia falta (Crítico/Atenção/OK) — uma marca com 400
+# dias aparecia VERDE como "OK" e o dashboard nunca enxergava SOBRA, que é justamente o
+# que o plano de queima de estoque precisa ler.
+FAIXAS = [(60,'CRIT'), (90,'WARN'), (180,'OK'), (360,'EXCESSO'), (float('inf'),'MORTO')]
+def classifica_cobertura(cob, recem_chegou=False):
+    for lim, nome in FAIXAS:
+        if cob < lim:
+            # Marca que acabou de receber tem cobertura inflada (saldo novo ÷ venda velha):
+            # não pode ser rotulada como sobra até o giro pós-chegada aparecer.
+            if nome in ('EXCESSO','MORTO') and recem_chegou:
+                return 'RECEM'
+            return nome
+    return 'MORTO'
+
 sugestoes = []
 for loja in LOJAS:
     for cv in ('S','A','B'):
@@ -705,12 +796,20 @@ for loja in LOJAS:
                 vdp = lp.get('vendas', 0) / 60.0
                 ef_p = lp.get('saldo_efetivo', lp.get('saldo', 0))
                 sug += max(0, math.ceil(vdp * 75 - ef_p - lp.get('transito', 0)))
+            h = historico_entregas.get(loja, {}).get(marca) or {}
+            recem = bool(h.get('recem_chegou'))
             sugestoes.append({
                 'loja':loja, 'marca':marca, 'curva':cv,
                 'venda_60d':lj['vendas_60d'], 'saldo_atual':lj['saldo_atual'],
                 'saldo_efetivo':round(saldo_ef), 'ult_entrada':round(lj.get('ult_entrada',0)),
                 'transito':lj['transito'],
-                'cobertura_dias':round(cob,1), 'sugestao_compra':round(sug)
+                'cobertura_dias':round(cob,1), 'sugestao_compra':round(sug),
+                'status': classifica_cobertura(cob, recem),
+                'recem_chegou': recem, 'un_recebidas_60d': h.get('un_60d', 0),
+                'ultima_entrega': h.get('ultima_lcto'), 'dias_desde_entrega': h.get('dias_desde'),
+                'prazo_medio': h.get('prazo_medio'), 'n_entregas': h.get('n_entregas', 0),
+                # excesso em unidades: quanto passa de 180 dias de cobertura (base do plano de queima)
+                'excesso_un': max(0, round(estoque - vd*180)) if vd > 0 else 0,
             })
 sugestoes.sort(key=lambda s: (curva_order.get(s['curva'],9), s['cobertura_dias']))
 
@@ -728,6 +827,7 @@ saida = {
     'sugestoes': sugestoes,
     'chegadas_mes': chegadas,
     'transito_nao_classificado': sorted(transito_nao_classificado, key=lambda x: -x['un']),
+    'historico_entregas': historico_entregas,
     'curva': curva,
     '_meta': {
         'unidade': 'peças',
@@ -735,6 +835,8 @@ saida = {
         'sugestoes_total': len(sugestoes),
         'sugestao_total_pecas': sum(s['sugestao_compra'] for s in sugestoes),
         'criticas': sum(1 for s in sugestoes if s['cobertura_dias'] < 60 and s['sugestao_compra']>0),
+        'por_status': {st: sum(1 for s in sugestoes if s['status']==st) for st in ('CRIT','WARN','OK','EXCESSO','MORTO','RECEM')},
+        'excesso_un_total': sum(s['excesso_un'] for s in sugestoes if s['status'] in ('EXCESSO','MORTO')),
         'transito_zerado_count': len(zerados),
         'pendentes_log': pendentes_log,
         'notas_processadas': len(notas),
