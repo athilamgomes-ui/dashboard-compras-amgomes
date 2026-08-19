@@ -808,8 +808,12 @@ for loja in LOJAS:
                 'recem_chegou': recem, 'un_recebidas_60d': h.get('un_60d', 0),
                 'ultima_entrega': h.get('ultima_lcto'), 'dias_desde_entrega': h.get('dias_desde'),
                 'prazo_medio': h.get('prazo_medio'), 'n_entregas': h.get('n_entregas', 0),
-                # excesso em unidades: quanto passa de 180 dias de cobertura (base do plano de queima)
+                # Excesso = quanto passa de 180 dias de cobertura. Separado em DUAS ações
+                # diferentes: o que já está na loja se queima/transfere; o que ainda está em
+                # trânsito se segura/cancela com o fornecedor. Misturar os dois faz o plano de
+                # queima prometer liquidação de mercadoria que nem chegou.
                 'excesso_un': max(0, round(estoque - vd*180)) if vd > 0 else 0,
+                'excesso_loja_un': max(0, round(saldo_ef - vd*180)) if vd > 0 else 0,
             })
 sugestoes.sort(key=lambda s: (curva_order.get(s['curva'],9), s['cobertura_dias']))
 
@@ -837,6 +841,7 @@ saida = {
         'criticas': sum(1 for s in sugestoes if s['cobertura_dias'] < 60 and s['sugestao_compra']>0),
         'por_status': {st: sum(1 for s in sugestoes if s['status']==st) for st in ('CRIT','WARN','OK','EXCESSO','MORTO','RECEM')},
         'excesso_un_total': sum(s['excesso_un'] for s in sugestoes if s['status'] in ('EXCESSO','MORTO')),
+        'excesso_loja_un_total': sum(s['excesso_loja_un'] for s in sugestoes if s['status'] in ('EXCESSO','MORTO')),
         'transito_zerado_count': len(zerados),
         'pendentes_log': pendentes_log,
         'notas_processadas': len(notas),

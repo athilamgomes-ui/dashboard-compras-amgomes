@@ -676,6 +676,10 @@ function render() {
   // cobertura ainda está inflada). excesso_un = quanto passa de 180 dias — base da queima.
   const sobras = sug.filter(s => ['EXCESSO','MORTO'].includes(statusDe(s)));
   const sobraUn = sobras.reduce((a,s) => a + (s.excesso_un || 0), 0);
+  // O excesso que está NA LOJA é o que dá pra queimar/transferir; o resto é mercadoria
+  // ainda em trânsito — ação é segurar/cancelar pedido, não liquidar.
+  const sobraLoja = sobras.reduce((a,s) => a + (s.excesso_loja_un != null ? s.excesso_loja_un : s.excesso_un || 0), 0);
+  const sobraTransito = Math.max(0, sobraUn - sobraLoja);
   const sProntas = sug.filter(s => s.curva === 'S'
     && s.sugestao_compra > 0
     && janelaPedido(s.marca, s.loja, s.curva).liberado
@@ -684,7 +688,7 @@ function render() {
     <div class="kpi"><div class="label">Marcas monitoradas</div><div class="value">${sug.length}</div><div class="sub">curva S + A + B (filtradas)</div></div>
     <div class="kpi"><div class="label">Sugestão total</div><div class="value">${fmtUnid(totSug)}</div><div class="sub">peças p/ cobrir 60+15 dias</div></div>
     <div class="kpi"><div class="label">Críticas</div><div class="value" style="color:var(--crit)">${crits}</div><div class="sub">cobertura &lt; 60 dias</div></div>
-    <div class="kpi" style="${sobras.length > 0 ? 'border-left:4px solid var(--exc)' : ''}"><div class="label">Excesso / Morto</div><div class="value" style="color:var(--exc)">${sobras.length}</div><div class="sub">${fmtUnid(sobraUn)} acima de 180 dias — queimar</div></div>
+    <div class="kpi" style="${sobras.length > 0 ? 'border-left:4px solid var(--exc)' : ''}"><div class="label">Excesso / Morto</div><div class="value" style="color:var(--exc)">${sobras.length}</div><div class="sub" title="Excesso = unidades acima de 180 dias de cobertura. O que está na loja se queima/transfere; o que ainda está em trânsito se segura ou cancela com o fornecedor.">${fmtUnid(sobraLoja)} parada na loja${sobraTransito > 0 ? ` · ${fmtUnid(sobraTransito)} a caminho` : ''}</div></div>
     <div class="kpi" style="${sProntas > 0 ? 'border-left:4px solid #fa5252' : ''}"><div class="label">⭐ S no ponto de pedir</div><div class="value" style="color:${sProntas > 0 ? '#fa5252' : 'var(--muted)'}">${sProntas}</div><div class="sub">curva S liberada (≥45d da última NF)</div></div>
   `;
 
