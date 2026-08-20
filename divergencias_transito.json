@@ -28,24 +28,6 @@
    "sem_un": 280
   },
   {
-   "loja": "L3",
-   "nf": "3404",
-   "forn": "Ado Administradora de Marcas",
-   "qt": 228,
-   "data": "2026-07-29",
-   "marcas": {},
-   "sem_un": 228
-  },
-  {
-   "loja": "L4",
-   "nf": "3368",
-   "forn": "Ado Administradora de Marcas",
-   "qt": 228,
-   "data": "2026-07-23",
-   "marcas": {},
-   "sem_un": 228
-  },
-  {
    "loja": "L5",
    "nf": "1845",
    "forn": "ULTRA INOVACAO COMERCIAL DE IMPORT",
@@ -134,17 +116,6 @@
     "Yama": 66
    },
    "sem_un": 420
-  },
-  {
-   "loja": "L3",
-   "nf": "52006",
-   "forn": "KAMALEAO COLOR COMERCIO DE COSMETI",
-   "qt": 246,
-   "data": "2026-07-30",
-   "marcas": {
-    "Kamaleao": 246
-   },
-   "sem_un": 0
   },
   {
    "loja": "L3",
