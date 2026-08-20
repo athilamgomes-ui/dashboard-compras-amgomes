@@ -1,8 +1,14 @@
 {
   "_descricao": "Mapeamento Marca → código(s) de marca no Microvix ERP. Permite buscar produtos pelo código da marca em vez de match por nome (mais confiável). ProBelle tem 2 códigos (varejo + profissional).",
-  "_ultima_edicao": "2026-08-19: auditoria de cobertura — de-para de grupos duplicados no ERP feito via ALIASES em build_dashboard.py (NATHY->Nathydras, 819 un antes invisíveis; LIZZ->Lizze), nao aqui. Elseve entrou na curva B (L3/L5) sem codigo: o match é por nome do grupo ERP. | 2026-08-04c: Bauny=1078 (forn FFE E FRAIHA, CNPJ 45998443000151, código informado pelo Athila; já tinha estoque nas 4 lojas) | 2026-08-04: descobertas via cruzamento notas lançadas x saldos_raw (código ERP): Inoar=347 (forn Alekosmetica), Raavi=386 (forn DEDC), Real Love=362 (forn Real Love Cosmeticos), Maria Margarida=1101 (forn C&D Comercio) | 2026-07-01: Salon Line=56 (nova, forn ZAKAT) + Let me be=936 (forn LMB) | 2026-07-23: Depilflax=957 (forn Maystar) | 2026-07-26: Impala=22 (forn MUNDIAL DISTRIBUIDORA, multimarca, keyword IMPALA) + Varcare=249 + Nathydras=885 (forn FRANCA PLUS, multimarca — split de linhas pendente)",
+  "_ultima_edicao": "2026-08-20: BTH=443 (forn Ado Administradora de Marcas, CNPJ 27206583000168, NF 3404 L3) + Kamaleao=944 (forn Kamaleao Color, códigos informados pelo Athila) — pra a coluna 'preço atual' casar na precificação da L3. | 2026-08-19: auditoria de cobertura — de-para de grupos duplicados no ERP feito via ALIASES em build_dashboard.py (NATHY->Nathydras, 819 un antes invisíveis; LIZZ->Lizze), nao aqui. Elseve entrou na curva B (L3/L5) sem codigo: o match é por nome do grupo ERP. | 2026-08-04c: Bauny=1078 (forn FFE E FRAIHA, CNPJ 45998443000151, código informado pelo Athila; já tinha estoque nas 4 lojas) | 2026-08-04: descobertas via cruzamento notas lançadas x saldos_raw (código ERP): Inoar=347 (forn Alekosmetica), Raavi=386 (forn DEDC), Real Love=362 (forn Real Love Cosmeticos), Maria Margarida=1101 (forn C&D Comercio) | 2026-07-01: Salon Line=56 (nova, forn ZAKAT) + Let me be=936 (forn LMB) | 2026-07-23: Depilflax=957 (forn Maystar) | 2026-07-26: Impala=22 (forn MUNDIAL DISTRIBUIDORA, multimarca, keyword IMPALA) + Varcare=249 + Nathydras=885 (forn FRANCA PLUS, multimarca — split de linhas pendente)",
   "Beauty Color": [
     131
+  ],
+  "BTH": [
+    443
+  ],
+  "Kamaleao": [
+    944
   ],
   "Impala": [
     22

@@ -9,6 +9,13 @@ Formato: `## AAAA-MM-DD — <Marca>` + o que mudou em cada arquivo + NF/forneced
 
 <!-- novas entradas abaixo -->
 
+## 2026-08-20 — BTH e Kamaleão (código de marca p/ precificação L3)
+As duas chegaram em Itaituba (L3) e apareciam SEM "preço atual" na precificação porque faltava o código de marca.
+- `marca_ids.json`: **BTH=443** · **Kamaleao=944** (Athila informou).
+- `fornecedor_marcas.json`: `por_cnpj["27206583000168"]="BTH"` (fornecedor "Ado Administradora de Marcas", NF 3404 — NF 100% BTH/Brotherhood). Kamaleão já estava mapeado (KAMALEAO COLOR / CNPJ 31768865000126).
+- Descoberta: BTH e Kamaleão JÁ estão precificados no ERP com o MESMO preço em Altamira e Itaituba (não era 1ª vez). Gerado `.txt` de referência (preços de Altamira) p/ os itens NOVOS (frascos ROUXINOL/IGUANA/PAVÃO=50,06; sachês novos=31,00; KIT AURA ROUGE e Gel Cola 500g ficaram fora, sem referência).
+
+
 ## 2026-08-19 — Auditoria de cobertura: faixas de sobra, chegada recente, histórico e de-para
 Athila auditou o dashboard e apontou 7 defeitos. O que mudou:
 
