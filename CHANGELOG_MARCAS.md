@@ -9,6 +9,12 @@ Formato: `## AAAA-MM-DD — <Marca>` + o que mudou em cada arquivo + NF/forneced
 
 <!-- novas entradas abaixo -->
 
+## 2026-08-21 — Wella (código de marca; Sebastian é Wella)
+NF 50 (L1 Altamira) do fornecedor **Distribuidora de Cosméticos Tibia** (CNPJ 58564841000292) — 27 itens Wella (Fusion, Invigo) + Sebastian (Sebast Novo Oil). Aparecia como "Tibia / marca não mapeada".
+- `marca_ids.json`: **Wella=910** (Athila informou).
+- `fornecedor_marcas.json`: `por_cnpj["58564841000292"]="Wella"`. Athila confirmou que **Sebastian é Wella** — mapeia tudo junto.
+
+
 ## 2026-08-20 — BTH e Kamaleão (código de marca p/ precificação L3)
 As duas chegaram em Itaituba (L3) e apareciam SEM "preço atual" na precificação porque faltava o código de marca.
 - `marca_ids.json`: **BTH=443** · **Kamaleao=944** (Athila informou).
