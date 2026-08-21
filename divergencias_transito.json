@@ -2,15 +2,6 @@
  "sem_marca": [
   {
    "loja": "L1",
-   "nf": "50",
-   "forn": "DISTRIBUIDORA DE COSMETICOS TIBIA ",
-   "qt": 111,
-   "data": "2026-08-10",
-   "marcas": {},
-   "sem_un": 111
-  },
-  {
-   "loja": "L1",
    "nf": "772",
    "forn": "E DA COSTA OLIVEIRA",
    "qt": 393,
@@ -233,6 +224,17 @@
     "Igora": 566
    },
    "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "20367",
+   "forn": "MARI MARIA COSMETICOS LTDA",
+   "qt": 204,
+   "data": "2026-08-20",
+   "marcas": {
+    "Mari Maria": 24
+   },
+   "sem_un": 180
   },
   {
    "loja": "L5",
