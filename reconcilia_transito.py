@@ -67,7 +67,10 @@ def keep_nfe(nfe):
     return True
 
 ignorar = forn_marcas.get('_ignorar_no_dashboard',{}).get('por_nome_substring',[])
-def is_ignorado(nome):
+ignorar_cnpj = {re.sub(r'\D','',str(c)) for c in forn_marcas.get('_ignorar_no_dashboard',{}).get('por_cnpj',[])}
+def is_ignorado(nome, cnpj=None):
+    # CNPJ tem precedência (chave estável); nome é a rede p/ fontes que não trazem CNPJ.
+    if cnpj and re.sub(r'\D','',str(cnpj)) in ignorar_cnpj: return True
     n = (nome or '').upper()
     return any(s.upper() in n for s in ignorar)
 
@@ -98,7 +101,7 @@ for emp_s, blk in raw['pendentes'].items():
         except: continue
         if dt.year != ANO or not keep_nfe(nfe): continue
         nome = nfe.get('DadosEmitente',{}).get('Nome') or ''
-        if is_ignorado(nome): continue
+        if is_ignorado(nome, nfe.get('DadosEmitente',{}).get('Documento','')): continue
         num = str(nfe.get('NumeroNFe') or nfe.get('Numero') or '').lstrip('0')
         if num and num in docs_lancados: continue  # já lançada → chegou
         prods = nfe.get('Produtos') or []

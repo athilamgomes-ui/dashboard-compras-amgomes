@@ -1,7 +1,7 @@
 {
   "_descricao": "Mapeamento Fornecedor (CNPJ ou substring do Nome/RazaoSocial) → Marca no ERP. Usado pela skill quando a descrição dos produtos da NFe NÃO contém o nome da marca (caso da Kamaleão Color: produtos descritos como 'MASCARA PIGMENTANTE FLAMINGO 100ML KC'). EDITÁVEL manualmente — adicionar entradas conforme novos fornecedores apareçam.",
   "_formato": "CNPJ (14 dígitos sem pontuação) → marca | Nome contendo substring → marca",
-  "_ultima_edicao": "2026-08-07: FOCO DISTRIBUICAO E LOGISTICA LTDA -> Loreal (387) — Athila informou; marca já mapeada (marca_ids 387 + curva B 4 lojas), só faltava o fornecedor por substring. | 2026-08-04c: Bauny=1078 (Athila informou) — CNPJ 45998443000151 (FFE E FRAIHA) + keyword BAUNY; curva B nas 4 lojas. | 2026-08-04b: BECOREL->Igora (fornecedor especializado em Igora Royal, descrição pendente abrevia 'I. ROYAL' — não bate no keyword IGORA — resolvido por fornecedor). | 2026-08-04: descobertas via reconciliação de notas JÁ LANÇADAS sem marca (attribute_nota vazio, cruzamento por código ERP c/ saldos_raw): ALEKOSMETICA->Inoar (347, NFs 70845/70899 L3), DEDC - DISTRIB DO ESPIRITO SANTO->Raavi (386, NF 46100 L3), C & D COMERCIO DE COSMETICOS->Maria Margarida (1101, NF 39616 L5), REAL LOVE COSMETICOS->Real Love (362, NFs 49031 L5 + 48780 L4). Franca Plus NÃO entrou aqui (multi-marca Nathydras/Varcare, resolve por código via curva). | 2026-07-14: MARCELO RIBEIRO DA SILVA -> Adesivos de Unha (rótulo-only, NF 61 L3). | 2026-07-23: MAYSTAR COSMETICA->Depilflax (NF 41124 L1) | 2026-07-26: CBB por CNPJ 33468006000147 (forn CBB INDUSTRIA, marca-única, produtos sem 'CBB' na descrição, NF 2681 L3). Impala via keyword IMPALA (forn MUNDIAL multimarca, NFs 771795/6/741). Franca (Varcare 249/Nathydras 885) PENDENTE split de linhas de produto. | 2026-08-04: FRANCA PLUS (CNPJ 56927323000180) = multi-marca Varcare+Nathydras (resolvido por-item na precificacao)",
+  "_ultima_edicao": "2026-08-20b: COSMETICOS TIBIA -> Wella por NOME (o CNPJ 58564841000292 ja estava mapeado, mas o relatorio de notas LANCADAS nao traz CNPJ — sem o nome a NF 50 L1 de R$12.834 nao contava). | 2026-08-20: Athila confirmou 4 fornecedores como PRESTADORES DE SERVIÇO (não revenda) -> _ignorar_no_dashboard: E DA COSTA OLIVEIRA (18096398000177, era o único que faltava), POSTO BRIGADEIRO (13972473000100), G J DE MELO JUNIOR (06120989000153), P. GONCALVES DE LIMA (08116338000549). Criado o campo por_cnpj nesse bloco (antes só existia por_nome_substring); build_dashboard.py e reconcilia_transito.py passaram a ler os dois. | 2026-08-07: FOCO DISTRIBUICAO E LOGISTICA LTDA -> Loreal (387) — Athila informou; marca já mapeada (marca_ids 387 + curva B 4 lojas), só faltava o fornecedor por substring. | 2026-08-04c: Bauny=1078 (Athila informou) — CNPJ 45998443000151 (FFE E FRAIHA) + keyword BAUNY; curva B nas 4 lojas. | 2026-08-04b: BECOREL->Igora (fornecedor especializado em Igora Royal, descrição pendente abrevia 'I. ROYAL' — não bate no keyword IGORA — resolvido por fornecedor). | 2026-08-04: descobertas via reconciliação de notas JÁ LANÇADAS sem marca (attribute_nota vazio, cruzamento por código ERP c/ saldos_raw): ALEKOSMETICA->Inoar (347, NFs 70845/70899 L3), DEDC - DISTRIB DO ESPIRITO SANTO->Raavi (386, NF 46100 L3), C & D COMERCIO DE COSMETICOS->Maria Margarida (1101, NF 39616 L5), REAL LOVE COSMETICOS->Real Love (362, NFs 49031 L5 + 48780 L4). Franca Plus NÃO entrou aqui (multi-marca Nathydras/Varcare, resolve por código via curva). | 2026-07-14: MARCELO RIBEIRO DA SILVA -> Adesivos de Unha (rótulo-only, NF 61 L3). | 2026-07-23: MAYSTAR COSMETICA->Depilflax (NF 41124 L1) | 2026-07-26: CBB por CNPJ 33468006000147 (forn CBB INDUSTRIA, marca-única, produtos sem 'CBB' na descrição, NF 2681 L3). Impala via keyword IMPALA (forn MUNDIAL multimarca, NFs 771795/6/741). Franca (Varcare 249/Nathydras 885) PENDENTE split de linhas de produto. | 2026-08-04: FRANCA PLUS (CNPJ 56927323000180) = multi-marca Varcare+Nathydras (resolvido por-item na precificacao)",
   "por_cnpj": {
     "19518725000102": "Felps",
     "41282461000181": "Truss",
@@ -58,6 +58,7 @@
     "DEDC - DISTRIB DO ESPIRITO SANTO": "Raavi",
     "C & D COMERCIO DE COSMETICOS": "Maria Margarida",
     "REAL LOVE COSMETICOS": "Real Love",
+    "COSMETICOS TIBIA": "Wella",
     "BECOREL": "Igora",
     "FRANCA PLUS": "Varcare+Nathydras",
     "FOCO DISTRIBUICAO E LOGISTICA": "Loreal"
@@ -84,8 +85,15 @@
     ]
   },
   "_ignorar_no_dashboard": {
-    "_descricao": "Fornecedores que NÃO são de mercadoria para revenda (postos de combustível, peças, embalagens avulsas, instituições financeiras, alfaiataria etc). Suas NFs DEVEM ser excluídas do card chegadas_mes E não devem entrar em compras_mensais_rs. EDITÁVEL — adicionar substrings conforme aparecerem novos fornecedores não-revenda.",
+    "_descricao": "Fornecedores que NÃO são de mercadoria para revenda (serviços prestados à empresa, postos de combustível, peças, embalagens avulsas, instituições financeiras, alfaiataria etc). Suas NFs DEVEM ser excluídas do card chegadas_mes E não devem entrar em compras_mensais_rs. EDITÁVEL — adicionar conforme aparecerem novos fornecedores não-revenda. PREFIRA por_cnpj: a NFe pendente traz o CNPJ (chave que não muda), enquanto o nome varia de grafia entre a API de pendentes e o relatório de notas lançadas. O relatório de notas lançadas NÃO traz CNPJ — por isso todo fornecedor deve entrar TAMBÉM em por_nome_substring.",
+    "por_cnpj": [
+      "18096398000177",
+      "13972473000100",
+      "06120989000153",
+      "08116338000549"
+    ],
     "por_nome_substring": [
+      "E DA COSTA OLIVEIRA",
       "POSTO BRIGADEIRO",
       "CLOUD WALK INSTITUICAO DE PAGAMENTO",
       "G J DE MELO JUNIOR",

@@ -9,6 +9,35 @@ Formato: `## AAAA-MM-DD — <Marca>` + o que mudou em cada arquivo + NF/forneced
 
 <!-- novas entradas abaixo -->
 
+## 2026-08-20 — 4 prestadores de serviço excluídos + Wella (Tibia)
+
+**Exclusão definitiva — fornecedores de SERVIÇO, não revenda** (confirmado pelo Athila):
+E DA COSTA OLIVEIRA (18096398000177) · POSTO BRIGADEIRO (13972473000100) ·
+G J DE MELO JUNIOR (06120989000153) · P. GONCALVES DE LIMA (08116338000549).
+Três já estavam em `_ignorar_no_dashboard.por_nome_substring`; **só E DA COSTA OLIVEIRA
+faltava** (era o do banner: L1 NF 772, 393 un).
+
+Criado o campo **`por_cnpj` dentro de `_ignorar_no_dashboard`** — antes o bloco só tinha
+`por_nome_substring`. `fornecedor_ignorado(nome, cnpj=None)` (build_dashboard.py) e
+`is_ignorado(nome, cnpj=None)` (reconcilia_transito.py) agora leem os dois, e o CNPJ é passado
+nos pontos que têm a informação (NFe pendente). Motivo: o CNPJ é chave estável, o nome varia de
+grafia entre a API de pendentes e o relatório de notas lançadas. **Os dois campos continuam
+necessários** — o relatório de notas lançadas não traz CNPJ, só o nome com prefixo numérico.
+
+**Wella (910) — fornecedor DISTRIBUIDORA DE COSMETICOS TIBIA**, informado pelo Athila (NF 50,
+L1, R$12.834, lançada 10/08). O CNPJ (58564841000292) já estava em `por_cnpj`, mas faltava o
+**nome** (`"COSMETICOS TIBIA" → "Wella"`) — sem ele a nota lançada não era atribuída e os
+R$12.834 não entravam em `compras_mensais_rs`. Adicionados também `marca_keywords.json`
+(`Wella: ["WELLA"]`) e **curva B em L1** (única loja com evidência de compra).
+Código 910 confirmado no ERP por consulta headless ao relatório de saldo.
+
+Resultado pós-recoleta: **28 produtos** no grupo WELLA, saldo 61 un em L1, e os **R$12.834,46
+entraram em `compras_mensais_rs['L1']['8']`**. Cobertura sai como "sem venda" porque `vendas_60d`
+= 0 — marca recém-chegada, ainda sem giro; normal e esperado.
+(Na primeira checagem, com o `compras_raw` de 19/08, o grupo WELLA não existia no relatório de
+saldo e cheguei a registrar a ressalva do padrão Japinha — os produtos foram taggeados no ERP
+entre 19 e 24/08, então a ressalva não se aplica.)
+
 ## 2026-08-21 — Wella (código de marca; Sebastian é Wella)
 NF 50 (L1 Altamira) do fornecedor **Distribuidora de Cosméticos Tibia** (CNPJ 58564841000292) — 27 itens Wella (Fusion, Invigo) + Sebastian (Sebast Novo Oil). Aparecia como "Tibia / marca não mapeada".
 - `marca_ids.json`: **Wella=910** (Athila informou).

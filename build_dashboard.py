@@ -38,7 +38,14 @@ forn_marcas = load_json(ROOT / 'fornecedor_marcas.json')
 
 # Fornecedores não-revenda — NF deles deve ser excluída do dashboard inteiramente
 IGNORAR_SUBSTRINGS = [s.upper() for s in (forn_marcas.get('_ignorar_no_dashboard') or {}).get('por_nome_substring', [])]
-def fornecedor_ignorado(nome):
+IGNORAR_CNPJS = {re.sub(r'\D','',str(c)) for c in (forn_marcas.get('_ignorar_no_dashboard') or {}).get('por_cnpj', [])}
+def fornecedor_ignorado(nome, cnpj=None):
+    """Fornecedor não-revenda (serviço, combustível, embalagem...). O CNPJ é a chave
+    confiável — o nome varia de grafia entre a API de pendentes e o relatório de notas
+    lançadas —, mas o relatório de notas lançadas NÃO traz CNPJ, então o nome continua
+    valendo como rede. Passe o CNPJ sempre que a fonte tiver (NFe pendente)."""
+    if cnpj:
+        if re.sub(r'\D','',str(cnpj)) in IGNORAR_CNPJS: return True
     if not nome: return False
     up = str(nome).upper()
     return any(s in up for s in IGNORAR_SUBSTRINGS)
@@ -493,7 +500,8 @@ for loja, nfe in all_pendentes:
     # Produtos sem marca detectada nesta NFe pendente (ainda em trânsito) → registrar p/ banner.
     g_none = por_marca.get(None)
     nome_forn = nfe.get('DadosEmitente',{}).get('Nome') or ''
-    if g_none and nf_ainda_pendente and not fornecedor_ignorado(nome_forn) and not fornecedor_sem_marca_ok(nome_forn):
+    cnpj_forn = nfe.get('DadosEmitente',{}).get('Documento','')
+    if g_none and nf_ainda_pendente and not fornecedor_ignorado(nome_forn, cnpj_forn) and not fornecedor_sem_marca_ok(nome_forn):
         un = round(sum(q for _, q in g_none['prods']))
         if un > 0:
             transito_nao_classificado.append({
@@ -621,7 +629,7 @@ for item in pendentes_processadas:
     if dt < CUTOFF_CHEGADAS:
         continue
     # Pular fornecedores não-revenda (postos, embalagens, peças, etc)
-    if fornecedor_ignorado(nfe.get('DadosEmitente',{}).get('Nome','')):
+    if fornecedor_ignorado(nfe.get('DadosEmitente',{}).get('Nome',''), nfe.get('DadosEmitente',{}).get('Documento','')):
         continue
     nf_num = str(nfe.get('Numero') or '')
     if (loja, nf_num) in nfs_lancadas_keys:
