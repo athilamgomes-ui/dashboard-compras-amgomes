@@ -2,15 +2,6 @@
  "sem_marca": [
   {
    "loja": "L1",
-   "nf": "772",
-   "forn": "E DA COSTA OLIVEIRA",
-   "qt": 393,
-   "data": "2026-08-07",
-   "marcas": {},
-   "sem_un": 393
-  },
-  {
-   "loja": "L1",
    "nf": "6422",
    "forn": "DAMIA ACESSORIOS LTDA",
    "qt": 280,
@@ -211,17 +202,6 @@
    "data": "2026-08-10",
    "marcas": {
     "Kamaleao": 222
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L4",
-   "nf": "142995",
-   "forn": "BECOREL BELEZA COMERCIO DE COSMETI",
-   "qt": 566,
-   "data": "2026-07-30",
-   "marcas": {
-    "Igora": 566
    },
    "sem_un": 0
   },
