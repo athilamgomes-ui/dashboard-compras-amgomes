@@ -10,6 +10,24 @@
    "sem_un": 280
   },
   {
+   "loja": "L3",
+   "nf": "9953",
+   "forn": "NATY BEAUTY LTDA",
+   "qt": 396,
+   "data": "2026-08-24",
+   "marcas": {},
+   "sem_un": 396
+  },
+  {
+   "loja": "L4",
+   "nf": "9951",
+   "forn": "NATY BEAUTY LTDA",
+   "qt": 792,
+   "data": "2026-08-24",
+   "marcas": {},
+   "sem_un": 792
+  },
+  {
    "loja": "L5",
    "nf": "1845",
    "forn": "ULTRA INOVACAO COMERCIAL DE IMPORT",
@@ -20,12 +38,12 @@
   },
   {
    "loja": "L5",
-   "nf": "6423",
-   "forn": "DAMIA ACESSORIOS LTDA",
-   "qt": 115,
-   "data": "2026-08-18",
+   "nf": "9952",
+   "forn": "NATY BEAUTY LTDA",
+   "qt": 396,
+   "data": "2026-08-24",
    "marcas": {},
-   "sem_un": 115
+   "sem_un": 396
   }
  ],
  "fora_curva": [
