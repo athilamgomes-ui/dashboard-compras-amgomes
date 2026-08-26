@@ -17,6 +17,17 @@ COMPRAS="/Users/elkgomes/Desktop/claude/compras"
 NODE="$(command -v node)"
 TS="$(date '+%Y-%m-%d %H:%M')"
 
+# ── lock próprio + trava compartilhada do perfil do Microvix (26/08/2026) ───
+# Este script não tinha lock nenhum: duas execuções simultâneas, ou uma execução junto com
+# vendas/premiação, brigavam pelo mesmo ~/.claude/microvix-profile e a coleta morria em silêncio.
+LOCK="/tmp/compras_update.lock"
+if ! mkdir "$LOCK" 2>/dev/null; then
+  echo "outra execução de compras em andamento ($LOCK) — abortando."; exit 30
+fi
+source "$HOME/.claude/lib_lock_erp.sh"
+trap 'soltar_erp; rmdir "$LOCK" 2>/dev/null' EXIT
+travar_erp 12 || exit 30
+
 echo "=== [1/4] Coleta Microvix (Playwright headless) ==="
 cd "$SCRIPTS" || exit 20
 # Retry: o login do ERP Microvix às vezes fica instável (NAV_FAIL / timeout 30s
