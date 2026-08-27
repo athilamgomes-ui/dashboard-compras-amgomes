@@ -439,28 +439,48 @@ async function renderEncalhe() {
     if (!r.ok) return;
     const d = await r.json();
     if (!d || !d.produtos || !d.produtos.length) return;
+    window.__ENCALHE = d;                       // usado pelo toggle das linhas de marca
     const brl = v => 'R$ ' + Number(v).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    const [a, m, dia] = (d.gerado_em || '').split('-');
+    const [ano, mes, dia] = (d.gerado_em || '').split('-');
     document.getElementById('encalhe-label').textContent =
-      `· ${d.loja} · ${d.total_produtos} produtos · ${brl(d.total_valor)}` + (dia ? ` · levantado em ${dia}/${m}/${a}` : '');
+      `· ${d.loja} · ${d.total_produtos} produtos · ${brl(d.total_valor)}` + (dia ? ` · levantado em ${dia}/${mes}/${ano}` : '');
+
     let h = '<table><thead><tr><th>Marca</th><th style="text-align:right">Produtos</th>'
           + '<th style="text-align:right">Parado</th></tr></thead><tbody>';
-    for (const x of d.por_marca) {
-      h += `<tr><td>${x.marca}</td><td style="text-align:right">${x.produtos}</td>`
-         + `<td style="text-align:right">${brl(x.valor)}</td></tr>`;
-    }
+    d.por_marca.forEach((x, i) => {
+      h += `<tr style="cursor:pointer" onclick="toggleEncalhe(${i})" title="clique para ver os produtos">`
+         + `<td><span class="caret" id="caret-enc-${i}">▶</span> <span class="brand">${x.marca}</span></td>`
+         + `<td style="text-align:right">${x.produtos}</td>`
+         + `<td style="text-align:right">${brl(x.valor)}</td></tr>`
+         + `<tr id="enc-${i}" class="produtos-row" style="display:none"><td colspan="3"></td></tr>`;
+    });
     h += '</tbody></table>';
-    h += '<details style="margin-top:10px"><summary style="cursor:pointer;font-size:12.5px">ver os produtos</summary>'
-       + '<table style="margin-top:8px"><thead><tr><th>Cód</th><th>Produto</th><th>Marca</th>'
-       + '<th style="text-align:right">Saldo</th><th style="text-align:right">Parado</th></tr></thead><tbody>';
-    for (const p of d.produtos) {
-      h += `<tr><td>${p.cod}</td><td>${p.desc}</td><td>${p.marca}</td>`
-         + `<td style="text-align:right">${p.saldo}</td><td style="text-align:right">${brl(p.valor)}</td></tr>`;
-    }
-    h += '</tbody></table></details>';
     document.getElementById('encalhe-conteudo').innerHTML = h;
     card.style.display = '';
   } catch (e) { /* sem o arquivo, o card não aparece — não é erro */ }
+}
+
+// Abre/fecha a lista de produtos de uma marca do card "comprou e não vendeu".
+// Sem isso o card só diz "a marca X tem 15 produtos parados", que não dá para agir.
+function toggleEncalhe(i) {
+  const d = window.__ENCALHE; if (!d) return;
+  const tr = document.getElementById('enc-' + i);
+  const caret = document.getElementById('caret-enc-' + i);
+  if (tr.style.display !== 'none') { tr.style.display = 'none'; caret.textContent = '▶'; return; }
+  const marca = d.por_marca[i].marca;
+  const brl = v => 'R$ ' + Number(v).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const prods = d.produtos.filter(p => p.marca === marca).sort((a, b) => b.valor - a.valor);
+  let t = '<table><thead><tr><th>Cód</th><th>Produto</th>'
+        + '<th style="text-align:right">Saldo parado</th><th style="text-align:right">Valor</th></tr></thead><tbody>';
+  for (const p of prods) {
+    t += `<tr><td>${p.cod}</td><td>${p.desc}</td>`
+       + `<td style="text-align:right">${p.saldo}</td>`
+       + `<td style="text-align:right">${brl(p.valor)}</td></tr>`;
+  }
+  t += '</tbody></table>';
+  tr.querySelector('td').innerHTML = t;
+  tr.style.display = '';
+  caret.textContent = '▼';
 }
 
 function renderAlertasS(filtroLoja) {
