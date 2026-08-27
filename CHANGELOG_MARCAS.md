@@ -9,6 +9,25 @@ Formato: `## AAAA-MM-DD — <Marca>` + o que mudou em cada arquivo + NF/forneced
 
 <!-- novas entradas abaixo -->
 
+## 2026-08-27 — Palloma Broquini → Natum + Hair Extrattus (fornecedor multi-marca)
+
+Athila informou: fornecedor **PALLOMA BROQUINI PINTO** (fantasia N.B. Cosméticos, Dores do Rio
+Preto-ES, **CNPJ 34167246000174**) distribui DUAS marcas: **Natum** e **Hair Extrattus**.
+
+As marcas **já estavam mapeadas** (marca_ids Natum=[10] / Hair Extrattus=[929]; curva nas 4 lojas;
+keywords NATUM / HAIR EXTRATTUS / EXTRATTUS). A classificação por descrição já funcionava (as NFes
+trazem o nome da marca em cada item). Faltava só formalizar o fornecedor + fechar 1 lacuna:
+
+- **`fornecedor_marcas.json`** `por_cnpj`: `"34167246000174": "Natum+Hair Extrattus"` (multi-marca,
+  resolve por keyword — item vira Natum ou Hair Extrattus pela descrição).
+- **`marca_keywords.json`** Hair Extrattus: **+`"MORTE ESCANDALOSA"`** — o item
+  `KIT MORTE ESCANDALOSA SH/CONDIC 800HAIR 1 L HA` vem com descrição TRUNCADA (termina em "HA", sem
+  "EXTRATTUS"), escapava do keyword. Motivou: NF 48 L1 ficava 732/744 un; com o keyword fechou 744/744.
+
+Motivou: NFes 42/43/44 (trânsito) + 46 (Natum) / 48 (Hair Extrattus) lançadas L1.
+Reconciliação após rebuild: `curva NÃO refletida: 0`, Palloma 100% em "ok" (NF 46 Natum 528,
+NF 48 Hair Extrattus 744). Sem recoleta (mudança só de de-para; rebuild aplicou sobre o raw atual).
+
 ## 2026-08-20 — 4 prestadores de serviço excluídos + Wella (Tibia)
 
 **Exclusão definitiva — fornecedores de SERVIÇO, não revenda** (confirmado pelo Athila):
