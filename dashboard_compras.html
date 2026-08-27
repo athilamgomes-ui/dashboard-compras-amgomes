@@ -231,6 +231,19 @@
     </div>
   </div>
 
+  <!-- Comprou e não vendeu: entrou em 2025 e não teve NENHUMA venda nem entrada em 12 meses.
+       É retrato de uma data, não dado vivo — por isso o carimbo aparece no título. -->
+  <div class="card" id="card-encalhe" style="display:none">
+    <h2 onclick="toggleCard('card-encalhe')"><span class="toggle-icon">▼</span>🧊 Comprou e <strong>não vendeu</strong> <span id="encalhe-label" class="muted" style="font-weight:400;font-size:13px"></span></h2>
+    <div id="encalhe-conteudo"></div>
+    <div class="legend">
+      Produtos que <strong>entraram em 2025</strong> e desde então não tiveram nenhuma venda nem
+      nova entrada. Não estão vencidos — por isso não foram zerados no estoque. O que eles dizem é
+      outra coisa: <strong>não recomprar</strong>. É onde a compra errou, e o valor é dinheiro parado
+      na prateleira.
+    </div>
+  </div>
+
   <div class="card" id="card-chegadas">
     <h2 onclick="toggleCard('card-chegadas')"><span class="toggle-icon">▼</span>📥 Chegadas do mês · NFs por loja <span id="chegadas-mes-label" class="muted" style="font-weight:400;font-size:13px"></span></h2>
     <div id="chegadas-conteudo"></div>
@@ -415,6 +428,41 @@ function temPedidoEmAndamento(marca, loja) {
 // === Card de alertas: marcas curva S "no ponto de pedir" ===
 // "No ponto" = sugestao_compra > 0 E janela de 45d liberada (passou >= 45d da última NF lançada)
 // E SEM NFe pendente em andamento (pedido já emitido pelo fornecedor).
+// === Card "comprou e não vendeu" ===
+// Fonte: comprou_e_nao_vendeu.json, gerado a partir do Registro de Inventário + histórico de
+// movimento. É um RETRATO de uma data — não é regenerado pelo pipeline diário —, por isso a data
+// vai no título. Se o arquivo não existir, o card simplesmente não aparece.
+async function renderEncalhe() {
+  const card = document.getElementById('card-encalhe');
+  try {
+    const r = await fetch('comprou_e_nao_vendeu.json?t=' + Date.now());
+    if (!r.ok) return;
+    const d = await r.json();
+    if (!d || !d.produtos || !d.produtos.length) return;
+    const brl = v => 'R$ ' + Number(v).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    const [a, m, dia] = (d.gerado_em || '').split('-');
+    document.getElementById('encalhe-label').textContent =
+      `· ${d.loja} · ${d.total_produtos} produtos · ${brl(d.total_valor)}` + (dia ? ` · levantado em ${dia}/${m}/${a}` : '');
+    let h = '<table><thead><tr><th>Marca</th><th style="text-align:right">Produtos</th>'
+          + '<th style="text-align:right">Parado</th></tr></thead><tbody>';
+    for (const x of d.por_marca) {
+      h += `<tr><td>${x.marca}</td><td style="text-align:right">${x.produtos}</td>`
+         + `<td style="text-align:right">${brl(x.valor)}</td></tr>`;
+    }
+    h += '</tbody></table>';
+    h += '<details style="margin-top:10px"><summary style="cursor:pointer;font-size:12.5px">ver os produtos</summary>'
+       + '<table style="margin-top:8px"><thead><tr><th>Cód</th><th>Produto</th><th>Marca</th>'
+       + '<th style="text-align:right">Saldo</th><th style="text-align:right">Parado</th></tr></thead><tbody>';
+    for (const p of d.produtos) {
+      h += `<tr><td>${p.cod}</td><td>${p.desc}</td><td>${p.marca}</td>`
+         + `<td style="text-align:right">${p.saldo}</td><td style="text-align:right">${brl(p.valor)}</td></tr>`;
+    }
+    h += '</tbody></table></details>';
+    document.getElementById('encalhe-conteudo').innerHTML = h;
+    card.style.display = '';
+  } catch (e) { /* sem o arquivo, o card não aparece — não é erro */ }
+}
+
 function renderAlertasS(filtroLoja) {
   const card = document.getElementById('card-alertas-s');
   const cont = document.getElementById('alertas-s-conteudo');
@@ -651,6 +699,7 @@ async function carregar() {
   document.getElementById('ts').textContent = 'gerado em ' + (DATA.gerado_em || '?');
   await carregarPedidosPlanejamento();   // cruza pedidos lançados no app de Planejamento
   render();
+  renderEncalhe();          // card "comprou e não vendeu" (arquivo próprio, não vem do dados.js)
   restoreCardStates();
 }
 

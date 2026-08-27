@@ -1,0 +1,870 @@
+{
+ "gerado_em": "2026-08-27",
+ "loja": "L1",
+ "criterio": "entrou em 2025 e sem nenhuma venda ou entrada desde 27/08/2025",
+ "total_produtos": 107,
+ "total_valor": 10833.3,
+ "por_marca": [
+  {
+   "marca": "BOCA ROSA",
+   "produtos": 15,
+   "valor": 2700.27
+  },
+  {
+   "marca": "BETTER LIFE",
+   "produtos": 6,
+   "valor": 2403.0
+  },
+  {
+   "marca": "AMEND",
+   "produtos": 19,
+   "valor": 2339.84
+  },
+  {
+   "marca": "COLORAMA",
+   "produtos": 14,
+   "valor": 1467.97
+  },
+  {
+   "marca": "BELLIZ",
+   "produtos": 4,
+   "valor": 394.68
+  },
+  {
+   "marca": "HELLO MINI",
+   "produtos": 9,
+   "valor": 304.94
+  },
+  {
+   "marca": "KISS NEW YORK",
+   "produtos": 3,
+   "valor": 284.65
+  },
+  {
+   "marca": "SANTA CLARA",
+   "produtos": 10,
+   "valor": 176.46
+  },
+  {
+   "marca": "VERTIX",
+   "produtos": 2,
+   "valor": 156.9
+  },
+  {
+   "marca": "CLESS",
+   "produtos": 2,
+   "valor": 117.3
+  },
+  {
+   "marca": "RUBY ROSE",
+   "produtos": 2,
+   "valor": 105.96
+  },
+  {
+   "marca": "DAFU",
+   "produtos": 9,
+   "valor": 80.36
+  },
+  {
+   "marca": "RICCA",
+   "produtos": 2,
+   "valor": 67.96
+  },
+  {
+   "marca": "DEPIL BELLA",
+   "produtos": 1,
+   "valor": 54.57
+  },
+  {
+   "marca": "LA RIVE",
+   "produtos": 1,
+   "valor": 45.96
+  },
+  {
+   "marca": "CICLO",
+   "produtos": 2,
+   "valor": 38.96
+  },
+  {
+   "marca": "BAUNY",
+   "produtos": 1,
+   "valor": 33.26
+  },
+  {
+   "marca": "ZGY",
+   "produtos": 1,
+   "valor": 19.34
+  },
+  {
+   "marca": "BARBER SHOP",
+   "produtos": 1,
+   "valor": 12.9
+  },
+  {
+   "marca": "VIVAI",
+   "produtos": 1,
+   "valor": 11.05
+  },
+  {
+   "marca": "SOFTHAIR",
+   "produtos": 1,
+   "valor": 10.97
+  },
+  {
+   "marca": "OTIMO BIJUTERIAS",
+   "produtos": 1,
+   "valor": 6.0
+  }
+ ],
+ "produtos": [
+  {
+   "cod": "65393",
+   "desc": "NAC N-ACETIL L-CISTEINA 30 CAPSULAS",
+   "marca": "BETTER LIFE",
+   "saldo": 15.0,
+   "valor": 691.5
+  },
+  {
+   "cod": "77204",
+   "desc": "DISPLAY BETTER WAFER CHOCOLATE BRANCO 12 UN",
+   "marca": "BETTER LIFE",
+   "saldo": 18.0,
+   "valor": 559.26
+  },
+  {
+   "cod": "77205",
+   "desc": "DISPLAY BETTER WAFER COOKIES E CREAM 12 UN",
+   "marca": "BETTER LIFE",
+   "saldo": 18.0,
+   "valor": 524.34
+  },
+  {
+   "cod": "65385",
+   "desc": "COMPLETE LIFE IMUNITY & CARE 60 CAPSULAS",
+   "marca": "BETTER LIFE",
+   "saldo": 8.0,
+   "valor": 413.68
+  },
+  {
+   "cod": "7896013545012",
+   "desc": "ESM COLORAMA PRENDA NATURAL",
+   "marca": "COLORAMA",
+   "saldo": 78.0,
+   "valor": 393.9
+  },
+  {
+   "cod": "78863",
+   "desc": "ESMALTE COLORAMA BL NUDE 4.0 6X8ML",
+   "marca": "COLORAMA",
+   "saldo": 36.0,
+   "valor": 252.0
+  },
+  {
+   "cod": "77760",
+   "desc": "ESM COL DIVERTIDAMENTE ROXO TEDIO",
+   "marca": "COLORAMA",
+   "saldo": 36.0,
+   "valor": 248.04
+  },
+  {
+   "cod": "18552",
+   "desc": "4/0 MAGNIFIC AMEND",
+   "marca": "AMEND",
+   "saldo": 14.0,
+   "valor": 247.38
+  },
+  {
+   "cod": "47550",
+   "desc": "2/1 MAGNIFIC AMEND",
+   "marca": "AMEND",
+   "saldo": 13.0,
+   "valor": 229.71
+  },
+  {
+   "cod": "4748",
+   "desc": "5/0 MAGNIFIC AMEND",
+   "marca": "AMEND",
+   "saldo": 13.0,
+   "valor": 229.71
+  },
+  {
+   "cod": "14366",
+   "desc": "MASCARA MATIZADOR PRETO AMEND",
+   "marca": "AMEND",
+   "saldo": 6.0,
+   "valor": 224.76
+  },
+  {
+   "cod": "1939",
+   "desc": "REPARADOR DE PONTAS AMEND 30ML",
+   "marca": "AMEND",
+   "saldo": 21.0,
+   "valor": 213.57
+  },
+  {
+   "cod": "18531",
+   "desc": "1/0 MAGNIFIC AMEND",
+   "marca": "AMEND",
+   "saldo": 12.0,
+   "valor": 212.04
+  },
+  {
+   "cod": "78862",
+   "desc": "ESMALTE COLORAMA BL NUDE 3.0 6X8ML",
+   "marca": "COLORAMA",
+   "saldo": 30.0,
+   "valor": 210.0
+  },
+  {
+   "cod": "79697",
+   "desc": "BR STICK PELE 05- BASE/ CONT/ CORRET-CLR",
+   "marca": "BOCA ROSA",
+   "saldo": 3.0,
+   "valor": 188.64
+  },
+  {
+   "cod": "79696",
+   "desc": "BR STICK PELE 08- BASE/ CONT/ CORRET-CLR",
+   "marca": "BOCA ROSA",
+   "saldo": 3.0,
+   "valor": 188.64
+  },
+  {
+   "cod": "79693",
+   "desc": "BR STICK PELE 11-BASE/CONT/CORRET-CL MD",
+   "marca": "BOCA ROSA",
+   "saldo": 3.0,
+   "valor": 188.64
+  },
+  {
+   "cod": "79691",
+   "desc": "BR STICK PELE 17- BASE/CONT/CORRET-CL MD",
+   "marca": "BOCA ROSA",
+   "saldo": 3.0,
+   "valor": 188.64
+  },
+  {
+   "cod": "79690",
+   "desc": "BR STICK PELE 21- BASE/ CONT/CORRET- MED",
+   "marca": "BOCA ROSA",
+   "saldo": 3.0,
+   "valor": 188.64
+  },
+  {
+   "cod": "79688",
+   "desc": "BR STICK PELE 24- BASE/ CONT/ CORRET-MED",
+   "marca": "BOCA ROSA",
+   "saldo": 3.0,
+   "valor": 188.64
+  },
+  {
+   "cod": "79687",
+   "desc": "BR STICK PELE 25- BASE/ CONT/ CORRET-MED",
+   "marca": "BOCA ROSA",
+   "saldo": 3.0,
+   "valor": 188.64
+  },
+  {
+   "cod": "79684",
+   "desc": "BR STICK PELE 28- BASE/ CONT/ CORRET-MED",
+   "marca": "BOCA ROSA",
+   "saldo": 3.0,
+   "valor": 188.64
+  },
+  {
+   "cod": "79681",
+   "desc": "BR STICK PELE 32-BASE/CONT/CORRET-MD ESC",
+   "marca": "BOCA ROSA",
+   "saldo": 3.0,
+   "valor": 188.64
+  },
+  {
+   "cod": "79679",
+   "desc": "BR STICK PELE 36-BASE/CONT/CORRET-MD ESC",
+   "marca": "BOCA ROSA",
+   "saldo": 3.0,
+   "valor": 188.64
+  },
+  {
+   "cod": "79677",
+   "desc": "BR STICK PELE 39-BASE/CONT/CORRET-MD ESC",
+   "marca": "BOCA ROSA",
+   "saldo": 3.0,
+   "valor": 188.64
+  },
+  {
+   "cod": "79676",
+   "desc": "BR STICK PELE 41-BASE/CONT/CORRET- ESC",
+   "marca": "BOCA ROSA",
+   "saldo": 3.0,
+   "valor": 188.64
+  },
+  {
+   "cod": "79699",
+   "desc": "BR STICK PELE 03- BASE/ CONT/ CORRET-CLR",
+   "marca": "BOCA ROSA",
+   "saldo": 3.0,
+   "valor": 185.07
+  },
+  {
+   "cod": "5379",
+   "desc": "COLA GEL FBGL504 KISS",
+   "marca": "KISS NEW YORK",
+   "saldo": 18.0,
+   "valor": 160.02
+  },
+  {
+   "cod": "65395",
+   "desc": "D3 VITA IMUNITY & CARE 60 CAPSULAS",
+   "marca": "BETTER LIFE",
+   "saldo": 5.0,
+   "valor": 155.0
+  },
+  {
+   "cod": "11791",
+   "desc": "ESC PINK PORC VERTEX 33 1647",
+   "marca": "BELLIZ",
+   "saldo": 3.0,
+   "valor": 147.81
+  },
+  {
+   "cod": "3644",
+   "desc": "PAPEL P/ DEPILA?O VERTIX BELLIZ 3211",
+   "marca": "VERTIX",
+   "saldo": 5.0,
+   "valor": 143.55
+  },
+  {
+   "cod": "18541",
+   "desc": "3/0 MAGNIFIC AMEND",
+   "marca": "AMEND",
+   "saldo": 8.0,
+   "valor": 141.36
+  },
+  {
+   "cod": "12403",
+   "desc": "MASCARA MATIZADOR MARSALA AMEND 300G",
+   "marca": "AMEND",
+   "saldo": 4.0,
+   "valor": 130.84
+  },
+  {
+   "cod": "79692",
+   "desc": "BR STICK PELE 15- BASE/CONT/CORRET-CL MD",
+   "marca": "BOCA ROSA",
+   "saldo": 2.0,
+   "valor": 125.76
+  },
+  {
+   "cod": "79689",
+   "desc": "BR STICK PELE 23- BASE/ CONT/ CORRET-MED",
+   "marca": "BOCA ROSA",
+   "saldo": 2.0,
+   "valor": 125.76
+  },
+  {
+   "cod": "4758",
+   "desc": "7/3 MAGNIFIC AMEND",
+   "marca": "AMEND",
+   "saldo": 7.0,
+   "valor": 123.69
+  },
+  {
+   "cod": "1495",
+   "desc": "ESC PRADA REF 754 BELLIZ",
+   "marca": "BELLIZ",
+   "saldo": 3.0,
+   "valor": 122.13
+  },
+  {
+   "cod": "8076",
+   "desc": "7/7 MAGNIFIC AMEND",
+   "marca": "AMEND",
+   "saldo": 6.0,
+   "valor": 106.02
+  },
+  {
+   "cod": "1496",
+   "desc": "ESC PRADA REF 755 BELLIZ",
+   "marca": "BELLIZ",
+   "saldo": 3.0,
+   "valor": 102.39
+  },
+  {
+   "cod": "12408",
+   "desc": "MASCARA MATIZADOR COBRE AMEND 300G",
+   "marca": "AMEND",
+   "saldo": 2.0,
+   "valor": 97.46
+  },
+  {
+   "cod": "4760",
+   "desc": "6/7 MAGNIFIC AMEND",
+   "marca": "AMEND",
+   "saldo": 5.0,
+   "valor": 88.35
+  },
+  {
+   "cod": "52723",
+   "desc": "CAIXA ORGANIZADORA COM 3 ANDAR 72 DIVIS?ES - CR1696",
+   "marca": "HELLO MINI",
+   "saldo": 2.0,
+   "valor": 84.0
+  },
+  {
+   "cod": "7902",
+   "desc": "MALETA ORGANIZADORA MULTI USO - HM589",
+   "marca": "HELLO MINI",
+   "saldo": 1.0,
+   "valor": 81.6
+  },
+  {
+   "cod": "18561",
+   "desc": "110 SUPERIA AMEND",
+   "marca": "AMEND",
+   "saldo": 4.0,
+   "valor": 76.8
+  },
+  {
+   "cod": "2609",
+   "desc": "100 SUPERIA AMEND",
+   "marca": "AMEND",
+   "saldo": 5.0,
+   "valor": 75.8
+  },
+  {
+   "cod": "76166",
+   "desc": "RK CORRETIVO PARA AREA DOS OLHOS COR 34",
+   "marca": "KISS NEW YORK",
+   "saldo": 4.0,
+   "valor": 74.8
+  },
+  {
+   "cod": "78620",
+   "desc": "SO PROF MASCARA NUTRI & CRESC",
+   "marca": "CLESS",
+   "saldo": 3.0,
+   "valor": 73.5
+  },
+  {
+   "cod": "7896013545042",
+   "desc": "ESM COLORAMA INCOLOR",
+   "marca": "COLORAMA",
+   "saldo": 14.0,
+   "valor": 70.7
+  },
+  {
+   "cod": "202371",
+   "desc": "GLOSS TINT SHINE INK HBL6600-3 SI30 RUBY ROSE",
+   "marca": "RUBY ROSE",
+   "saldo": 8.0,
+   "valor": 70.64
+  },
+  {
+   "cod": "1043",
+   "desc": "ESM COL JABUTICABA",
+   "marca": "COLORAMA",
+   "saldo": 12.0,
+   "valor": 60.6
+  },
+  {
+   "cod": "77203",
+   "desc": "C VITA + VITAMINA E 60 CAPSULAS",
+   "marca": "BETTER LIFE",
+   "saldo": 2.0,
+   "valor": 59.22
+  },
+  {
+   "cod": "64639",
+   "desc": "DBELLA OLEO VEGETAL POS DEPILACAO 100 ML",
+   "marca": "DEPIL BELLA",
+   "saldo": 3.0,
+   "valor": 54.57
+  },
+  {
+   "cod": "28356",
+   "desc": "RK CARVAO MASCARA PRETA PEEL OFF",
+   "marca": "KISS NEW YORK",
+   "saldo": 3.0,
+   "valor": 49.83
+  },
+  {
+   "cod": "202534",
+   "desc": "ESC VERTIX PRO SALON 19",
+   "marca": "RICCA",
+   "saldo": 2.0,
+   "valor": 48.88
+  },
+  {
+   "cod": "59449",
+   "desc": "C2 DEO COLONIA MINI RAPOSETE 100ML LAT",
+   "marca": "LA RIVE",
+   "saldo": 4.0,
+   "valor": 45.96
+  },
+  {
+   "cod": "78616",
+   "desc": "SO PROF SH NUTRI & CRESC 1L",
+   "marca": "CLESS",
+   "saldo": 2.0,
+   "valor": 43.8
+  },
+  {
+   "cod": "27566",
+   "desc": "CAIXA ORGANIZADORA C/ 3 ANDAR - CR1695-1",
+   "marca": "HELLO MINI",
+   "saldo": 1.0,
+   "valor": 42.0
+  },
+  {
+   "cod": "65759",
+   "desc": "REPARADOR DE PONTAS AMEND CLASSICS",
+   "marca": "AMEND",
+   "saldo": 1.0,
+   "valor": 41.35
+  },
+  {
+   "cod": "79537",
+   "desc": "ESM COL DIVERTIDAMENTE VERDE INVEJA",
+   "marca": "COLORAMA",
+   "saldo": 6.0,
+   "valor": 41.34
+  },
+  {
+   "cod": "79538",
+   "desc": "ESMALTE COL DIVERTIDAMENTE LARANJA NERVO",
+   "marca": "COLORAMA",
+   "saldo": 6.0,
+   "valor": 41.34
+  },
+  {
+   "cod": "2637",
+   "desc": "700 SUPERIA AMEND",
+   "marca": "AMEND",
+   "saldo": 2.0,
+   "valor": 38.4
+  },
+  {
+   "cod": "8661",
+   "desc": "DONUTS LOIRO PEQ SANTA CLARA",
+   "marca": "SANTA CLARA",
+   "saldo": 3.0,
+   "valor": 37.86
+  },
+  {
+   "cod": "18814",
+   "desc": "BOB VELCRO S CLARA 44MM",
+   "marca": "SANTA CLARA",
+   "saldo": 2.0,
+   "valor": 36.94
+  },
+  {
+   "cod": "7904",
+   "desc": "CAVIAR P/ JOIAS DE UNHAS 1.0 - OY1394-2",
+   "marca": "HELLO MINI",
+   "saldo": 12.0,
+   "valor": 36.0
+  },
+  {
+   "cod": "18511",
+   "desc": "8/4 MAGNIFIC AMEND",
+   "marca": "AMEND",
+   "saldo": 2.0,
+   "valor": 35.34
+  },
+  {
+   "cod": "202378",
+   "desc": "GLOSS TINT SHINE INK HBL6600-6 SI60 RUBY ROSE",
+   "marca": "RUBY ROSE",
+   "saldo": 4.0,
+   "valor": 35.32
+  },
+  {
+   "cod": "78860",
+   "desc": "ESMALTE COLORAMA BL NUDE 1.0 6X8ML",
+   "marca": "COLORAMA",
+   "saldo": 30.0,
+   "valor": 35.1
+  },
+  {
+   "cod": "77758",
+   "desc": "ESM COL DIVERTIDAMENTE MEDO MEDIDA C/6",
+   "marca": "COLORAMA",
+   "saldo": 29.0,
+   "valor": 33.35
+  },
+  {
+   "cod": "65825",
+   "desc": "BAUNY BASE TINT FPS20 ACETINADO 35G - COR 020",
+   "marca": "BAUNY",
+   "saldo": 2.0,
+   "valor": 33.26
+  },
+  {
+   "cod": "65559",
+   "desc": "ESM COL UNIVERSO PARALELO ROSA PLAYE",
+   "marca": "COLORAMA",
+   "saldo": 6.0,
+   "valor": 30.3
+  },
+  {
+   "cod": "79540",
+   "desc": "ESM COL UNIVERSO PARALELO ROXO METAV",
+   "marca": "COLORAMA",
+   "saldo": 6.0,
+   "valor": 30.3
+  },
+  {
+   "cod": "202360",
+   "desc": "FLACONETE KISS YOU MORE 1ML",
+   "marca": "CICLO",
+   "saldo": 50.0,
+   "valor": 29.5
+  },
+  {
+   "cod": "52732",
+   "desc": "PORTA ACESSORIOS - HZ620",
+   "marca": "HELLO MINI",
+   "saldo": 2.0,
+   "valor": 28.38
+  },
+  {
+   "cod": "4750",
+   "desc": "7/0 MAGNIFIC AMEND",
+   "marca": "AMEND",
+   "saldo": 2.0,
+   "valor": 24.88
+  },
+  {
+   "cod": "2154",
+   "desc": "BORRIF PIAST BELLIZ 3024",
+   "marca": "BELLIZ",
+   "saldo": 3.0,
+   "valor": 22.35
+  },
+  {
+   "cod": "202176",
+   "desc": "BRACELETE ARREDONDADO 01 - ZGY",
+   "marca": "ZGY",
+   "saldo": 2.0,
+   "valor": 19.34
+  },
+  {
+   "cod": "18184",
+   "desc": "BUCHA VEGETAL REDONDA",
+   "marca": "RICCA",
+   "saldo": 3.0,
+   "valor": 19.08
+  },
+  {
+   "cod": "12513",
+   "desc": "PROT AUREOLA SEIOS 10UN ST CLARA 4314",
+   "marca": "SANTA CLARA",
+   "saldo": 2.0,
+   "valor": 18.34
+  },
+  {
+   "cod": "5196",
+   "desc": "KIT ESPONJA PARA MAQUIAGEM DAFU",
+   "marca": "DAFU",
+   "saldo": 2.0,
+   "valor": 16.8
+  },
+  {
+   "cod": "8051",
+   "desc": "DONUTS MAR MED SANTA CLARA",
+   "marca": "SANTA CLARA",
+   "saldo": 1.0,
+   "valor": 16.23
+  },
+  {
+   "cod": "74785",
+   "desc": "REFIL D.6LX.G./6LX F. REF.116",
+   "marca": "SANTA CLARA",
+   "saldo": 5.0,
+   "valor": 14.05
+  },
+  {
+   "cod": "74786",
+   "desc": "REFIL D.6LX.G/6LX F.REF.3200",
+   "marca": "SANTA CLARA",
+   "saldo": 5.0,
+   "valor": 14.05
+  },
+  {
+   "cod": "79535",
+   "desc": "ESM COL NUDE SUA COR NUDE 9.0",
+   "marca": "COLORAMA",
+   "saldo": 2.0,
+   "valor": 14.0
+  },
+  {
+   "cod": "9693",
+   "desc": "BOB VELCRO/ALUMINIO 40MM C/3",
+   "marca": "SANTA CLARA",
+   "saldo": 2.0,
+   "valor": 13.84
+  },
+  {
+   "cod": "58333",
+   "desc": "BOBES AUTO-ADERENTE N2 VERTIX",
+   "marca": "VERTIX",
+   "saldo": 3.0,
+   "valor": 13.35
+  },
+  {
+   "cod": "28489",
+   "desc": "CAIXA ORGANIZADORA COM 28 DIVISOES DE PLASTICO PARA NAIL ART/JOIAS - B-OH210-1",
+   "marca": "HELLO MINI",
+   "saldo": 2.0,
+   "valor": 12.96
+  },
+  {
+   "cod": "53584",
+   "desc": "TINTA DA ALEGRIA AZUL 250ML",
+   "marca": "BARBER SHOP",
+   "saldo": 1.0,
+   "valor": 12.9
+  },
+  {
+   "cod": "28426",
+   "desc": "ESPONJA PARA MAQUIAGEM - DAFU",
+   "marca": "DAFU",
+   "saldo": 1.0,
+   "valor": 12.0
+  },
+  {
+   "cod": "27530",
+   "desc": "PRINCESS SOMBRA PALETA TEEN - Y206",
+   "marca": "HELLO MINI",
+   "saldo": 1.0,
+   "valor": 11.9
+  },
+  {
+   "cod": "64294",
+   "desc": "LIP FRUITS LIP TINT VIVAI",
+   "marca": "VIVAI",
+   "saldo": 65.0,
+   "valor": 11.05
+  },
+  {
+   "cod": "12082",
+   "desc": "SUGADOR DE PO - DAFU",
+   "marca": "DAFU",
+   "saldo": 1.0,
+   "valor": 11.0
+  },
+  {
+   "cod": "61895",
+   "desc": "MASCARA MC MULTIBENEFICIOS 190ml - SOFTHAIR",
+   "marca": "SOFTHAIR",
+   "saldo": 1.0,
+   "valor": 10.97
+  },
+  {
+   "cod": "63439",
+   "desc": "KIT TINTURA - LILAS",
+   "marca": "SANTA CLARA",
+   "saldo": 5.0,
+   "valor": 10.05
+  },
+  {
+   "cod": "27606",
+   "desc": "CILIOS POSTICOS FIO A FIO DE FIBRA DE TEREFTALATO DE POLIETILENO DAFU",
+   "marca": "DAFU",
+   "saldo": 3.0,
+   "valor": 9.6
+  },
+  {
+   "cod": "27570",
+   "desc": "LAÇO GRANDE COLORIDO - DF422 - PR130",
+   "marca": "DAFU",
+   "saldo": 1.0,
+   "valor": 9.6
+  },
+  {
+   "cod": "202355",
+   "desc": "LOCAO HIDRATANTE HELLO HELLO NAH CARDOSO CICLO - 240ML",
+   "marca": "CICLO",
+   "saldo": 1.0,
+   "valor": 9.46
+  },
+  {
+   "cod": "79810",
+   "desc": "CARTELA TIC TAC MTP-04 C/12.",
+   "marca": "SANTA CLARA",
+   "saldo": 2.0,
+   "valor": 8.92
+  },
+  {
+   "cod": "79532",
+   "desc": "ESM COL NUDE SUA COR NUDE 6.0",
+   "marca": "COLORAMA",
+   "saldo": 1.0,
+   "valor": 7.0
+  },
+  {
+   "cod": "7266",
+   "desc": "PULV.MINI BOLINHA TRANS.180 ML",
+   "marca": "SANTA CLARA",
+   "saldo": 3.0,
+   "valor": 6.18
+  },
+  {
+   "cod": "44217",
+   "desc": "ARGOLA COLORIDA GRANDE - F11-222464",
+   "marca": "OTIMO BIJUTERIAS",
+   "saldo": 1.0,
+   "valor": 6.0
+  },
+  {
+   "cod": "28465",
+   "desc": "ESPONJA PARA MAQUIAGEM",
+   "marca": "DAFU",
+   "saldo": 1.0,
+   "valor": 5.6
+  },
+  {
+   "cod": "28425",
+   "desc": "ESPONJA PARA MAQUIAGEM - DAFU",
+   "marca": "DAFU",
+   "saldo": 1.0,
+   "valor": 5.6
+  },
+  {
+   "cod": "27615",
+   "desc": "XUXINHA PARA CABELO (RABICO) DE POLIESTER - DAFU",
+   "marca": "DAFU",
+   "saldo": 1.0,
+   "valor": 5.36
+  },
+  {
+   "cod": "7916",
+   "desc": "PORTA PERFUME 5ML - BXP310",
+   "marca": "HELLO MINI",
+   "saldo": 2.0,
+   "valor": 5.1
+  },
+  {
+   "cod": "62630",
+   "desc": "ESPONJA PARA MAQUIAGEM",
+   "marca": "DAFU",
+   "saldo": 1.0,
+   "valor": 4.8
+  },
+  {
+   "cod": "27536",
+   "desc": "ADESIVO PARA ROSTO + UNHA - LT970",
+   "marca": "HELLO MINI",
+   "saldo": 1.0,
+   "valor": 3.0
+  },
+  {
+   "cod": "18510",
+   "desc": "400 SUPERIA AMEND",
+   "marca": "AMEND",
+   "saldo": 1.0,
+   "valor": 2.38
+  }
+ ]
+}
