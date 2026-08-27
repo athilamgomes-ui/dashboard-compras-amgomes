@@ -63,28 +63,6 @@
  "ok": [
   {
    "loja": "L1",
-   "nf": "46",
-   "forn": "PALLOMA BROQUINI PINTO",
-   "qt": 528,
-   "data": "2026-08-17",
-   "marcas": {
-    "Natum": 528
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L1",
-   "nf": "48",
-   "forn": "PALLOMA BROQUINI PINTO",
-   "qt": 744,
-   "data": "2026-08-17",
-   "marcas": {
-    "Hair Extrattus": 744
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L1",
    "nf": "27776",
    "forn": "APICE COSMETICS SA",
    "qt": 1051,
@@ -211,6 +189,17 @@
     "Yama": 66
    },
    "sem_un": 492
+  },
+  {
+   "loja": "L4",
+   "nf": "221541",
+   "forn": "S R DOS SANTOS EQUIPAMENTOS",
+   "qt": 1,
+   "data": "2026-08-26",
+   "marcas": {
+    "Lizze": 1
+   },
+   "sem_un": 0
   },
   {
    "loja": "L5",
