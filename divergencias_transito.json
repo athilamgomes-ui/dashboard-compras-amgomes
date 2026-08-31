@@ -220,29 +220,6 @@
     "Mari Maria": 24
    },
    "sem_un": 180
-  },
-  {
-   "loja": "L5",
-   "nf": "27775",
-   "forn": "APICE COSMETICS SA",
-   "qt": 660,
-   "data": "2026-08-17",
-   "marcas": {
-    "Apice": 280,
-    "Mirra": 380
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L5",
-   "nf": "52066",
-   "forn": "KAMALEAO COLOR COMERCIO DE COSMETI",
-   "qt": 216,
-   "data": "2026-08-10",
-   "marcas": {
-    "Kamaleao": 216
-   },
-   "sem_un": 0
   }
  ]
 }
