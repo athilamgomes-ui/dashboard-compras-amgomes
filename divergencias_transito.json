@@ -47,6 +47,15 @@
   },
   {
    "loja": "L5",
+   "nf": "7660",
+   "forn": "M.D.BOSO COMERCIO DE COSMETICOS LT",
+   "qt": 90,
+   "data": "2026-09-01",
+   "marcas": {},
+   "sem_un": 90
+  },
+  {
+   "loja": "L5",
    "nf": "9952",
    "forn": "NATY BEAUTY LTDA",
    "qt": 396,
@@ -70,18 +79,6 @@
  ],
  "curva_nao_refletida": [],
  "ok": [
-  {
-   "loja": "L1",
-   "nf": "27776",
-   "forn": "APICE COSMETICS SA",
-   "qt": 1051,
-   "data": "2026-08-17",
-   "marcas": {
-    "Apice": 735,
-    "Mirra": 316
-   },
-   "sem_un": 0
-  },
   {
    "loja": "L1",
    "nf": "32162",
@@ -171,18 +168,6 @@
    "data": "2026-07-24",
    "marcas": {
     "Let me be": 6
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L4",
-   "nf": "27779",
-   "forn": "APICE COSMETICS SA",
-   "qt": 1031,
-   "data": "2026-08-17",
-   "marcas": {
-    "Apice": 635,
-    "Mirra": 396
    },
    "sem_un": 0
   },
