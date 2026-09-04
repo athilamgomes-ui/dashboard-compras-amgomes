@@ -92,17 +92,6 @@
   },
   {
    "loja": "L1",
-   "nf": "50865",
-   "forn": "QUMORY DISTRIBUIDORA DE COSMETICOS",
-   "qt": 486,
-   "data": "2026-08-18",
-   "marcas": {
-    "Yama": 66
-   },
-   "sem_un": 420
-  },
-  {
-   "loja": "L1",
    "nf": "51542",
    "forn": "QUMORY DISTRIBUIDORA DE COSMETICOS",
    "qt": 222,
@@ -170,17 +159,6 @@
     "Let me be": 6
    },
    "sem_un": 0
-  },
-  {
-   "loja": "L4",
-   "nf": "50863",
-   "forn": "QUMORY DISTRIBUIDORA DE COSMETICOS",
-   "qt": 558,
-   "data": "2026-08-18",
-   "marcas": {
-    "Yama": 66
-   },
-   "sem_un": 492
   },
   {
    "loja": "L4",
