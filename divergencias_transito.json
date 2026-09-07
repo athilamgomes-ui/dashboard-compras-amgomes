@@ -102,6 +102,17 @@
    "sem_un": 126
   },
   {
+   "loja": "L1",
+   "nf": "204399",
+   "forn": "Network Beauty Fashion Cosmetica L",
+   "qt": 734,
+   "data": "2026-09-04",
+   "marcas": {
+    "Itallian": 734
+   },
+   "sem_un": 0
+  },
+  {
    "loja": "L3",
    "nf": "32617",
    "forn": "BLUE COSMETICS COMERCIO E DISTRIBU",
@@ -157,6 +168,17 @@
    "data": "2026-07-24",
    "marcas": {
     "Let me be": 6
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
+   "nf": "204393",
+   "forn": "Network Beauty Fashion Cosmetica L",
+   "qt": 632,
+   "data": "2026-09-04",
+   "marcas": {
+    "Itallian": 632
    },
    "sem_un": 0
   },
