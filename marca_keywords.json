@@ -37,7 +37,8 @@
   ],
   "Widi Care": [
     "WIDI CARE",
-    "WIDICARE"
+    "WIDICARE",
+    "\\bWD\\b"
   ],
   "Yama": [
     "YAMA",

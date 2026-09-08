@@ -9,6 +9,33 @@ Formato: `## AAAA-MM-DD — <Marca>` + o que mudou em cada arquivo + NF/forneced
 
 <!-- novas entradas abaixo -->
 
+## 2026-09-08b — Blue Cosmetics → Widi Care + 2 correções no cálculo de sobra
+
+Athila apontou a **NF 32617 como Widi Care em L4**. Confirmada a marca, corrigida a loja: é **L3**
+(Casa da Beleza Itaituba). Fornecedor **BLUE COSMETICS COMERCIO E DISTRIBUIDORA** (CNPJ
+37527683000220), R$10.353, 348 un, 48 itens — **100% Widi Care** (linha Juba).
+
+Causa de nunca ter casado: **40 dos 48 itens escrevem "- WD -"** na descrição, só 8 escrevem
+"WIDI CARE". A NF era **partida em silêncio** — 48 un iam para a marca e 300 un ficavam órfãs.
+E a Blue Cosmetics é o **fornecedor histórico da marca**: R$84.539 em notas lançadas no ano,
+nunca mapeado. Mapeado por CNPJ + nome, e adicionada a keyword `\bWD\b` — verificado que em todo
+o cadastro do ERP `\bWD\b` só aparece na Widi Care (66 produtos). ⚠️ "JUBA" **não** serve de
+keyword: colide com JUBARTE (Kamaleão, 8 produtos) e JUJUBA (Dabelle, Nati, Boca Rosa).
+
+### Correção 1 — sobra vinda do TRÂNSITO não é estoque morto
+Assim que a NF entrou, L3 Widi Care virou **MORTO com 651 dias** — mas a loja tem só 30 un
+(53 dias); os 651 vinham das 348 un **a caminho**. Agora, quando a faixa daria Excesso/Morto mas
+o saldo da LOJA sozinho cobre menos de 180 dias, o status vira **RECEM**: o excesso é do pedido,
+não da prateleira, e a ação é segurar/cancelar com o fornecedor, não queimar.
+
+### Correção 2 — venda zero zerava o excesso
+`excesso_un`/`excesso_loja_un` tinham `if vd > 0 else 0`, ou seja: mercadoria que **não gira
+nada** — o pior caso possível — reportava excesso 0 e sumia do plano de queima. Removido o
+guard; agora venda zero com saldo parado conta 100% do saldo como excesso.
+
+Plano de queima após as correções: **5.260 un paradas na loja**. Maiores: L4 Santa Clara 1.664 ·
+L5 Otimo 534 · L5 ProBelle 458 · L5 Santa Clara 411 · L3 ProBelle 379.
+
 ## 2026-09-08 — Prohall (M.D.BOSO) + correção do status "Morto" falso
 
 **Prohall = 1107** (Athila informou), fornecedor **M.D.BOSO COMERCIO DE COSMETICOS LTDA**

@@ -774,7 +774,7 @@ curva_order = {'S':0,'A':1,'B':2}
 # dias aparecia VERDE como "OK" e o dashboard nunca enxergava SOBRA, que é justamente o
 # que o plano de queima de estoque precisa ler.
 FAIXAS = [(60,'CRIT'), (90,'WARN'), (180,'OK'), (360,'EXCESSO'), (float('inf'),'MORTO')]
-def classifica_cobertura(cob, recem_chegou=False, saldo_loja=None, transito=0):
+def classifica_cobertura(cob, recem_chegou=False, saldo_loja=None, transito=0, cob_loja=None):
     """Sem venda no período a cobertura vira o sentinela 9999, que caía direto em MORTO.
     Mas "morto" pressupõe mercadoria PARADA — e boa parte desses casos não tem mercadoria
     nenhuma. Separado em três leituras diferentes, porque a ação de cada uma é oposta:
@@ -791,6 +791,13 @@ def classifica_cobertura(cob, recem_chegou=False, saldo_loja=None, transito=0):
             # Marca que acabou de receber tem cobertura inflada (saldo novo ÷ venda velha):
             # não pode ser rotulada como sobra até o giro pós-chegada aparecer.
             if nome in ('EXCESSO','MORTO') and recem_chegou:
+                return 'RECEM'
+            # Sobra que vem do TRÂNSITO não é estoque morto: a loja está com pouco e uma
+            # remessa grande está a caminho. Se o saldo da LOJA sozinho cobre menos de 180
+            # dias, o excesso é do pedido, não da prateleira — a ação é segurar/cancelar
+            # com o fornecedor, não queimar. (Ex.: L3 Widi Care com 30 un na loja e 348 un
+            # chegando marcava 651 dias / "Morto".)
+            if nome in ('EXCESSO','MORTO') and saldo_loja is not None and cob_loja is not None and cob_loja < 180:
                 return 'RECEM'
             return nome
     return 'MORTO'
@@ -823,7 +830,8 @@ for loja in LOJAS:
                 'saldo_efetivo':round(saldo_ef), 'ult_entrada':round(lj.get('ult_entrada',0)),
                 'transito':lj['transito'],
                 'cobertura_dias':round(cob,1), 'sugestao_compra':round(sug),
-                'status': classifica_cobertura(cob, recem, saldo_ef, lj['transito']),
+                'status': classifica_cobertura(cob, recem, saldo_ef, lj['transito'],
+                                              (saldo_ef/vd if vd > 0 else 9999)),
                 'recem_chegou': recem, 'un_recebidas_60d': h.get('un_60d', 0),
                 'ultima_entrega': h.get('ultima_lcto'), 'dias_desde_entrega': h.get('dias_desde'),
                 'prazo_medio': h.get('prazo_medio'), 'n_entregas': h.get('n_entregas', 0),
@@ -831,8 +839,11 @@ for loja in LOJAS:
                 # diferentes: o que já está na loja se queima/transfere; o que ainda está em
                 # trânsito se segura/cancela com o fornecedor. Misturar os dois faz o plano de
                 # queima prometer liquidação de mercadoria que nem chegou.
-                'excesso_un': max(0, round(estoque - vd*180)) if vd > 0 else 0,
-                'excesso_loja_un': max(0, round(saldo_ef - vd*180)) if vd > 0 else 0,
+                # Venda ZERO com saldo parado = 100% excesso. O `if vd > 0` de antes zerava
+                # justamente o pior caso (mercadoria que não gira nada não entrava no plano
+                # de queima). Só fica de fora o que não tem saldo nenhum.
+                'excesso_un': max(0, round(estoque - vd*180)),
+                'excesso_loja_un': max(0, round(saldo_ef - vd*180)),
             })
 sugestoes.sort(key=lambda s: (curva_order.get(s['curva'],9), s['cobertura_dias']))
 
