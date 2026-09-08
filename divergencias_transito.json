@@ -10,15 +10,6 @@
    "sem_un": 280
   },
   {
-   "loja": "L1",
-   "nf": "7629",
-   "forn": "M.D.BOSO COMERCIO DE COSMETICOS LT",
-   "qt": 318,
-   "data": "2026-08-31",
-   "marcas": {},
-   "sem_un": 318
-  },
-  {
    "loja": "L3",
    "nf": "9953",
    "forn": "NATY BEAUTY LTDA",
@@ -47,15 +38,6 @@
   },
   {
    "loja": "L5",
-   "nf": "7660",
-   "forn": "M.D.BOSO COMERCIO DE COSMETICOS LT",
-   "qt": 90,
-   "data": "2026-09-01",
-   "marcas": {},
-   "sem_un": 90
-  },
-  {
-   "loja": "L5",
    "nf": "9952",
    "forn": "NATY BEAUTY LTDA",
    "qt": 396,
@@ -79,6 +61,17 @@
  ],
  "curva_nao_refletida": [],
  "ok": [
+  {
+   "loja": "L1",
+   "nf": "7629",
+   "forn": "M.D.BOSO COMERCIO DE COSMETICOS LT",
+   "qt": 318,
+   "data": "2026-08-31",
+   "marcas": {
+    "Prohall": 318
+   },
+   "sem_un": 0
+  },
   {
    "loja": "L1",
    "nf": "32380",
@@ -190,6 +183,17 @@
    "data": "2026-08-26",
    "marcas": {
     "Lizze": 1
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "7660",
+   "forn": "M.D.BOSO COMERCIO DE COSMETICOS LT",
+   "qt": 90,
+   "data": "2026-09-01",
+   "marcas": {
+    "Prohall": 90
    },
    "sem_un": 0
   },
