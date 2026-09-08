@@ -774,7 +774,18 @@ curva_order = {'S':0,'A':1,'B':2}
 # dias aparecia VERDE como "OK" e o dashboard nunca enxergava SOBRA, que é justamente o
 # que o plano de queima de estoque precisa ler.
 FAIXAS = [(60,'CRIT'), (90,'WARN'), (180,'OK'), (360,'EXCESSO'), (float('inf'),'MORTO')]
-def classifica_cobertura(cob, recem_chegou=False):
+def classifica_cobertura(cob, recem_chegou=False, saldo_loja=None, transito=0):
+    """Sem venda no período a cobertura vira o sentinela 9999, que caía direto em MORTO.
+    Mas "morto" pressupõe mercadoria PARADA — e boa parte desses casos não tem mercadoria
+    nenhuma. Separado em três leituras diferentes, porque a ação de cada uma é oposta:
+      · sem venda, sem saldo, sem trânsito  -> SEM_ESTOQUE (a loja não trabalha a marca;
+        não há o que queimar nem o que comprar — não poluir o plano de queima)
+      · sem venda, sem saldo, COM trânsito  -> RECEM (1ª compra a caminho, ainda vai chegar)
+      · sem venda, COM saldo parado         -> MORTO de verdade
+    """
+    if saldo_loja is not None and cob >= 9999:
+        if saldo_loja <= 0:
+            return 'RECEM' if transito > 0 else 'SEM_ESTOQUE'
     for lim, nome in FAIXAS:
         if cob < lim:
             # Marca que acabou de receber tem cobertura inflada (saldo novo ÷ venda velha):
@@ -812,7 +823,7 @@ for loja in LOJAS:
                 'saldo_efetivo':round(saldo_ef), 'ult_entrada':round(lj.get('ult_entrada',0)),
                 'transito':lj['transito'],
                 'cobertura_dias':round(cob,1), 'sugestao_compra':round(sug),
-                'status': classifica_cobertura(cob, recem),
+                'status': classifica_cobertura(cob, recem, saldo_ef, lj['transito']),
                 'recem_chegou': recem, 'un_recebidas_60d': h.get('un_60d', 0),
                 'ultima_entrega': h.get('ultima_lcto'), 'dias_desde_entrega': h.get('dias_desde'),
                 'prazo_medio': h.get('prazo_medio'), 'n_entregas': h.get('n_entregas', 0),
@@ -847,7 +858,7 @@ saida = {
         'sugestoes_total': len(sugestoes),
         'sugestao_total_pecas': sum(s['sugestao_compra'] for s in sugestoes),
         'criticas': sum(1 for s in sugestoes if s['cobertura_dias'] < 60 and s['sugestao_compra']>0),
-        'por_status': {st: sum(1 for s in sugestoes if s['status']==st) for st in ('CRIT','WARN','OK','EXCESSO','MORTO','RECEM')},
+        'por_status': {st: sum(1 for s in sugestoes if s['status']==st) for st in ('CRIT','WARN','OK','EXCESSO','MORTO','RECEM','SEM_ESTOQUE')},
         'excesso_un_total': sum(s['excesso_un'] for s in sugestoes if s['status'] in ('EXCESSO','MORTO')),
         'excesso_loja_un_total': sum(s['excesso_loja_un'] for s in sugestoes if s['status'] in ('EXCESSO','MORTO')),
         'transito_zerado_count': len(zerados),

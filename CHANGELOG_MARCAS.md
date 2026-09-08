@@ -9,6 +9,36 @@ Formato: `## AAAA-MM-DD — <Marca>` + o que mudou em cada arquivo + NF/forneced
 
 <!-- novas entradas abaixo -->
 
+## 2026-09-08 — Prohall (M.D.BOSO) + correção do status "Morto" falso
+
+**Prohall = 1107** (Athila informou), fornecedor **M.D.BOSO COMERCIO DE COSMETICOS LTDA**
+(CNPJ 24815160000319). Motivou: NF 7629 L1, R$13.290, 20 itens — todos com "PROHALL" na
+descrição. Mapeado em `marca_ids` (1107), `fornecedor_marcas` por **CNPJ** (pendente) **e por
+nome** `"BOSO COMERCIO DE COSMETICOS"` (nota lançada não traz CNPJ), `marca_keywords`
+(`PROHALL`, `PRO HALL`) e **curva B em L1 e L5**.
+
+Ao investigar apareceram **4 NFes do Boso**, não 1 — e em duas lojas:
+· L1 R$13.290 (318 un) + L5 R$4.428 (90 un) = compra, `VENDA MERCAD CONTRIB`, CFOP 6102
+· L1 R$2.982 (726 un) + L5 R$1.005 (228 un) = **bonificação**, CFOP 6910 → corretamente
+  excluídas de compras/trânsito pela regra `EXCL_NAT_RE`/`EXCL_CFOP` que já existia.
+⚠️ Nota de negócio: chegam **954 un de bonificação contra 408 un compradas**. O dashboard só
+conta as 408 no trânsito, então o estoque físico que vai entrar é ~2,5× o que ele mostra.
+
+### Correção — "Morto" falso quando não há mercadoria nenhuma
+`classifica_cobertura()` mandava para MORTO tudo com cobertura no sentinela 9999 (= sem venda no
+período). Mas "morto" pressupõe mercadoria **parada**, e 8 linhas não tinham mercadoria alguma:
+L3 Gama/Depilflax/Mirra/Vizzela/MQ/Mutari e L5 Japinha estavam com saldo 0, trânsito 0 e venda 0
+— a loja simplesmente não trabalha a marca —, e L1 Prohall era uma **primeira compra a caminho**.
+Poluíam o plano de queima com marcas sem nada para queimar. Agora, quando não há venda:
+
+| saldo na loja | trânsito | status |
+|---|---|---|
+| 0 | 0 | **SEM_ESTOQUE** — a loja não trabalha a marca |
+| 0 | > 0 | **RECEM** — 1ª compra a caminho |
+| > 0 | qualquer | **MORTO** — mercadoria parada de verdade |
+
+Novo filtro "Sem estoque" no dashboard. `classifica()` no HTML espelha a regra do Python.
+
 ## 2026-08-27 — Palloma Broquini → Natum + Hair Extrattus (fornecedor multi-marca)
 
 Athila informou: fornecedor **PALLOMA BROQUINI PINTO** (fantasia N.B. Cosméticos, Dores do Rio

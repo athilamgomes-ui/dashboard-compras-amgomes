@@ -124,6 +124,7 @@
   td.cob-exc  { color: var(--exc);  font-weight: 700; }
   td.cob-morto{ color: var(--morto);font-weight: 700; }
   td.cob-recem{ color: var(--recem);font-weight: 600; }
+  td.cob-sem  { color: var(--muted); }
   .tag-recem { display:inline-block; margin-left:6px; padding:1px 6px; border-radius:9px;
                background:#e0f2fe; color:#075985; font-size:10px; font-weight:700; vertical-align:middle; }
   td.sug { font-weight: 600; }
@@ -206,6 +207,7 @@
         <option value="EXCESSO">Excesso (180–360d)</option>
         <option value="MORTO">Morto (&gt; 360d)</option>
         <option value="RECEM">Chegou agora (recebeu &lt; 60d)</option>
+        <option value="SEM_ESTOQUE">Sem estoque (não trabalha a marca)</option>
       </select>
     </label>
     <button onclick="window.location.reload()">↻ Atualizar página</button>
@@ -326,10 +328,14 @@ const STATUS = {
   OK:     { cls: "cob-ok",    rot: "OK",          desc: "90–180 dias" },
   EXCESSO:{ cls: "cob-exc",   rot: "Excesso",     desc: "180–360 dias" },
   MORTO:  { cls: "cob-morto", rot: "Morto",       desc: "> 360 dias" },
-  RECEM:  { cls: "cob-recem", rot: "Chegou agora",desc: "recebeu nos últimos 60d — cobertura ainda inflada" }
+  RECEM:  { cls: "cob-recem", rot: "Chegou agora",desc: "recebeu nos últimos 60d — cobertura ainda inflada" },
+  SEM_ESTOQUE: { cls: "cob-sem", rot: "Sem estoque", desc: "sem saldo, sem trânsito e sem venda — a loja não trabalha a marca" }
 };
 
-function classifica(c, recem) {
+function classifica(c, recem, saldo, transito) {
+  // Sem venda no período: não é "morto" se não há mercadoria parada. Espelha
+  // classifica_cobertura() em build_dashboard.py.
+  if (c >= 9999 && saldo != null && saldo <= 0) return (transito > 0) ? "RECEM" : "SEM_ESTOQUE";
   if (c < 60) return "CRIT";
   if (c < 90) return "WARN";
   if (c < 180) return "OK";
@@ -337,7 +343,7 @@ function classifica(c, recem) {
   return c < 360 ? "EXCESSO" : "MORTO";
 }
 // Status de uma sugestão: usa o do pipeline quando existe.
-const statusDe = s => s.status || classifica(s.cobertura_dias, s.recem_chegou);
+const statusDe = s => s.status || classifica(s.cobertura_dias, s.recem_chegou, s.saldo_efetivo, s.transito);
 
 const fmtUnid = n => (n||0).toLocaleString('pt-BR', { maximumFractionDigits: 0 }) + ' un';
 const fmtBRL  = fmtUnid; // valores estão em peças, manter alias para compatibilidade
