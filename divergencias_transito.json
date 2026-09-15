@@ -37,15 +37,6 @@
    "sem_un": 23
   },
   {
-   "loja": "L4",
-   "nf": "9951",
-   "forn": "NATY BEAUTY LTDA",
-   "qt": 792,
-   "data": "2026-08-24",
-   "marcas": {},
-   "sem_un": 792
-  },
-  {
    "loja": "L5",
    "nf": "9952",
    "forn": "NATY BEAUTY LTDA",
@@ -83,17 +74,6 @@
   },
   {
    "loja": "L1",
-   "nf": "32380",
-   "forn": "IMBECOR Produtos de Beleza Ltda.",
-   "qt": 400,
-   "data": "2026-08-28",
-   "marcas": {
-    "Kiss": 1
-   },
-   "sem_un": 399
-  },
-  {
-   "loja": "L1",
    "nf": "51542",
    "forn": "QUMORY DISTRIBUIDORA DE COSMETICOS",
    "qt": 222,
@@ -102,17 +82,6 @@
     "Yama": 96
    },
    "sem_un": 126
-  },
-  {
-   "loja": "L1",
-   "nf": "204399",
-   "forn": "Network Beauty Fashion Cosmetica L",
-   "qt": 734,
-   "data": "2026-09-04",
-   "marcas": {
-    "Itallian": 734
-   },
-   "sem_un": 0
   },
   {
    "loja": "L3",
@@ -175,17 +144,6 @@
   },
   {
    "loja": "L4",
-   "nf": "204393",
-   "forn": "Network Beauty Fashion Cosmetica L",
-   "qt": 632,
-   "data": "2026-09-04",
-   "marcas": {
-    "Itallian": 632
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L4",
    "nf": "221541",
    "forn": "S R DOS SANTOS EQUIPAMENTOS",
    "qt": 1,
@@ -203,6 +161,17 @@
    "data": "2026-09-01",
    "marcas": {
     "Prohall": 90
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "20091",
+   "forn": "LMB COSMETICOS LTDA",
+   "qt": 253,
+   "data": "2026-09-14",
+   "marcas": {
+    "Let me be": 253
    },
    "sem_un": 0
   }
