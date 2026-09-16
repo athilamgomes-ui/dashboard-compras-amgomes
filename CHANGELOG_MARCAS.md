@@ -9,6 +9,39 @@ Formato: `## AAAA-MM-DD — <Marca>` + o que mudou em cada arquivo + NF/forneced
 
 <!-- novas entradas abaixo -->
 
+## 2026-09-16 — BUG: estoque de produto parado não aparecia (72% do saldo fora da tela)
+
+Athila viu a CBB com estoque diferente do ERP "sendo que foi atualizado ontem à noite".
+A atualização estava em dia — o erro era de **cobertura do relatório**, não de horário.
+
+**Causa (verificada):** `coleta_compras.mjs` gera o `relatorio_compra_venda_saldo_empresa.asp`
+**sem** a opção `sem_movimentacao`. Nesse modo o ERP só lista produto que **se movimentou** na
+janela (vendeu nos 60 dias ou entrou no ano). Produto com saldo que não girou **não vem**, e o
+saldo dele some. Nos produtos que vinham, o saldo batia **100%** com o ERP (conferido produto a
+produto contra o `snapshot.json` do pipeline de estoque, que usa o catálogo inteiro).
+
+Tamanho medido em 16/09: **10.892 produtos, ~208 mil un (72% do saldo das 4 lojas)** fora da tela;
+nas marcas da curva, ~24.500 un. CBB L1: 239 na tela × 352 no ERP (23 dos 58 produtos invisíveis).
+Pior: era exatamente o estoque **que não gira** — o que o plano de queima (Excesso/Morto) precisa ver.
+
+**Correção:** 2ª passada por loja em `coleta_compras.mjs` (`coletaSaldoParadoLoja` +
+`mesclarSaldoParado`) com `sem_movimentacao` **e** `saldo_positivo` ligados (só quem tem saldo — o
+catálogo inteiro são 56 mil linhas por loja). O merge só acrescenta códigos que a 1ª passada não
+trouxe; quem já veio mantém seus números. Espera o evento `load` da navegação (método do coletor
+de estoque) — contar linhas "até parar de crescer" já entregou relatório truncado em silêncio.
+Se a 2ª passada falhar 2x, publica com a 1ª (como antes) e grava `_saldo_parado_completo:{Lx:false}`
+no `compras_raw.json`.
+
+⚠️ **Efeito colateral esperado:** entre as unidades que passam a aparecer, **372 produtos da L4 têm
+saldo exatamente 10** (3.720 un) e 762 da L1 têm saldo 1 — assinatura do balanço "AJUSTE" de
+junho (negativos viraram 10/1, ver memória `balanco_ajuste_custo_medio_corrompido`). É saldo que o
+ERP realmente tem; vai inflar Excesso/Morto até o inventário ser corrigido. Não foi escondido de
+propósito: esconder faria o dashboard divergir do ERP de novo.
+
+**Tela:** o Athila também leu a **sugestão de compra** (31) do shampoo 203384 como estoque
+(ERP 13 — e a tela mostrava 13 corretamente, na coluna ao lado). As colunas agora são
+"Estoque no ERP" (cabeçalho azul) e "🛒 Comprar (sugestão)" (cabeçalho e célula em rosa, com ícone).
+
 ## 2026-09-08b — Blue Cosmetics → Widi Care + 2 correções no cálculo de sobra
 
 Athila apontou a **NF 32617 como Widi Care em L4**. Confirmada a marca, corrigida a loja: é **L3**

@@ -9,6 +9,17 @@
 
 **Pasta:** `/Users/elkgomes/Desktop/claude/compras/`
 
+⚠️ **SALDO = DUAS PASSADAS NO ERP (16/09/2026).** O relatório de saldo sem `sem_movimentacao` só
+lista produto que se MOVIMENTOU (vendeu em 60d ou entrou no ano) — produto parado sumia com o saldo
+dele (72% do saldo das lojas, ~24,5 mil un nas marcas da curva). `coleta_compras.mjs` agora faz a
+1ª passada (movimento: vendas/trânsito/saldo) + 2ª passada `coletaSaldoParadoLoja`
+(`sem_movimentacao`+`saldo_positivo`) e mescla só os códigos que faltavam. **Se alguém reclamar de
+estoque diferente do ERP:** (1) conferir `compras_raw._saldo_parado_completo` (false = 2ª passada
+falhou e o parado ficou de fora); (2) comparar produto a produto com
+`dashboard-equipe/dados_estoque/snapshot.json` (catálogo inteiro, coletado 22:10) — nos produtos
+presentes nas duas fontes o saldo tem que bater; (3) lembrar que a coluna ao lado do estoque é a
+SUGESTÃO de compra (já confundida uma vez). Detalhe em CHANGELOG_MARCAS.md 2026-09-16.
+
 ⚠️ **REGRA — commit imediato de mudanças no HTML/CSS do dashboard:**
 A skill `dashboard-compras-update` faz `git add + commit + push` automático **apenas** dos arquivos de dados (`dados.json`, `dados.js`, e snapshots auxiliares). Qualquer alteração que eu fizer em `dashboard_compras.html`, `compute_diff.py`, `build_dashboard.py` ou outros arquivos de UI/lógica **NÃO** é pushada automaticamente — fica só local enquanto o GitHub Pages continua servindo a versão antiga. Resultado: usuário não vê a mudança e acha que quebrou. **Sempre que eu editar um desses arquivos, fazer `git add <arquivo> && git commit && git push origin main` na mesma resposta, antes de declarar a tarefa concluída.** Aprendido em 25/05/2026 quando implementei o card de transferências entre lojas e esqueci de pushar — usuário esperou a skill atualizar e o card não apareceu.
 

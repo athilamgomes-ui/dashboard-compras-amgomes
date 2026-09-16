@@ -128,7 +128,13 @@
   .tag-recem { display:inline-block; margin-left:6px; padding:1px 6px; border-radius:9px;
                background:#e0f2fe; color:#075985; font-size:10px; font-weight:700; vertical-align:middle; }
   td.sug { font-weight: 600; }
+  /* 16/09/2026: estoque e sugestão ficavam lado a lado, os dois como "N un", e o Athila leu a
+     sugestão (31) como estoque (ERP 13). A sugestão agora é uma pílula com fundo e ícone. */
   td.sug.has { color: var(--crit); }
+  td.sug.has::before { content: "🛒 "; font-size: 11px; }
+  td.sug.has { background: #fff1f2; box-shadow: inset 3px 0 0 #fda4af; }
+  th.th-sug { background: #fff1f2 !important; color: #9f1239 !important; }
+  th.th-est { background: #f0f9ff !important; color: #075985 !important; }
   .caret { display: inline-block; width: 12px; color: var(--muted2); font-size: 10px; margin-right: 2px; }
   tr.produtos-row > td { padding: 0 10px 8px; background: var(--card2) !important; }
   tr.produtos-row table { font-size: 12px; }
@@ -772,8 +778,8 @@ function render() {
     <thead><tr>
       <th>Marca</th><th>Curva</th>
       <th title="Unidades que entraram na última nota fiscal lançada (somadas por produto da marca)">Últ. entrada (un)</th>
-      <th>Vendas 60d (un)</th><th>Estoque (un)</th>
-      <th title="Quantas peças comprar agora para cobrir 60 dias de giro + 15 de reposição. Cálculo: máx(0, (vendas 60d ÷ 60) × 75 − estoque − trânsito)">Sugestão de Compra (un)</th>
+      <th>Vendas 60d (un)</th><th class="th-est" title="Saldo atual no ERP, nesta loja. Com ⚠️: o número menor ao lado é o estoque usado no cálculo (última entrada − vendas), quando fica abaixo do saldo do ERP">Estoque no ERP (un)</th>
+      <th class="th-sug" title="NÃO é estoque: quantas peças COMPRAR agora para cobrir 60 dias de giro + 15 de reposição. Cálculo: máx(0, (vendas 60d ÷ 60) × 75 − estoque − trânsito)">🛒 Comprar (sugestão, un)</th>
       <th>Trânsito (un)</th>
       <th>Cobertura (dias)</th>
       <th>Pedido</th>
@@ -1357,8 +1363,8 @@ function toggleProdutos(rowId, loja, marca){
         +'<th style="text-align:left">Cód</th>'
         +'<th style="text-align:left">Ref</th>'
         +'<th style="text-align:left">Descrição</th>'
-        +fmtEntCab+'<th>Vendas 60d</th><th>Estoque</th>'
-        +'<th title="Quantas peças comprar deste produto para cobrir 75 dias: máx(0, vendas/dia × 75 − estoque − trânsito)">Sugestão de Compra</th>'
+        +fmtEntCab+'<th>Vendas 60d</th><th class="th-est" title="Saldo atual no ERP, nesta loja">Estoque no ERP</th>'
+        +'<th class="th-sug" title="NÃO é estoque: quantas peças COMPRAR deste produto para cobrir 75 dias = máx(0, vendas/dia × 75 − estoque − trânsito)">🛒 Comprar (sugestão)</th>'
         +'<th>Trânsito</th>'
         +'</tr></thead><tbody>';
       if (prods.length === 0) {
