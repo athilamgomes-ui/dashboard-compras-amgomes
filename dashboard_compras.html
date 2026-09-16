@@ -305,7 +305,7 @@
 
   <div class="footer" id="rodape">—</div>
 
-<script src="dados.js"></script>
+<!-- dados: carregados em carregar() — dados.json sem cache no site; dados.js só em file:// -->
 <script>
 // === Collapse/expand de cards (estado persistido em localStorage) ===
 function toggleCard(cardId) {
@@ -715,18 +715,28 @@ function gerarPedidoPDF(loja, marca) {
 }
 
 async function carregar() {
-  // 1ª tentativa: window.DADOS injetado por dados.js (funciona em file://)
-  if (window.DADOS) {
-    DATA = window.DADOS;
-  } else {
-    // Fallback: fetch (servido via http)
-    try {
-      const resp = await fetch('dados.json?t=' + Date.now());
+  // ⚠️ 16/09/2026: antes a página carregava <script src="dados.js"> estático. O GitHub Pages
+  // manda cache de 10 min e o `?v=` da URL só fura o cache do HTML — o navegador seguia com o
+  // dados.js VELHO: tela nova, números e carimbo "gerado em" de ontem (pego na verificação da
+  // correção do saldo parado). No site, buscar dados.json com marca de tempo (sem cache).
+  // dados.js fica só para abrir o arquivo direto do disco (file://), onde fetch não funciona.
+  const carregarScript = src => new Promise((ok, erro) => {
+    const el = document.createElement('script'); el.src = src; el.onload = ok; el.onerror = erro;
+    document.head.appendChild(el);
+  });
+  try {
+    if (location.protocol.startsWith('http')) {
+      const resp = await fetch('dados.json?t=' + Date.now(), { cache: 'no-store' });
+      if (!resp.ok) throw new Error('HTTP ' + resp.status);
       DATA = await resp.json();
-    } catch (e) {
-      document.getElementById('ts').textContent = '⚠️ dados.js/json não encontrado — rode a skill dashboard-compras-update.';
-      return;
+    } else {
+      await carregarScript('dados.js');
+      DATA = window.DADOS;
     }
+    if (!DATA) throw new Error('vazio');
+  } catch (e) {
+    document.getElementById('ts').textContent = '⚠️ dados.js/json não encontrado — rode atualizar_compras.sh.';
+    return;
   }
   document.getElementById('ts').textContent = 'gerado em ' + (DATA.gerado_em || '?');
   await carregarPedidosPlanejamento();   // cruza pedidos lançados no app de Planejamento
