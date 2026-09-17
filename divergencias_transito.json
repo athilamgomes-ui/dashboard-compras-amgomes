@@ -10,15 +10,6 @@
    "sem_un": 280
   },
   {
-   "loja": "L1",
-   "nf": "12875",
-   "forn": "MULTI BAG IND. E COM. DE PLASTICOS",
-   "qt": 31200,
-   "data": "2026-09-09",
-   "marcas": {},
-   "sem_un": 31200
-  },
-  {
    "loja": "L3",
    "nf": "9953",
    "forn": "NATY BEAUTY LTDA",
@@ -26,6 +17,15 @@
    "data": "2026-08-24",
    "marcas": {},
    "sem_un": 396
+  },
+  {
+   "loja": "L3",
+   "nf": "133962",
+   "forn": "CLESS COMERCIO DE COSMETICOS LTDA",
+   "qt": 648,
+   "data": "2026-09-15",
+   "marcas": {},
+   "sem_un": 648
   },
   {
    "loja": "L4",
