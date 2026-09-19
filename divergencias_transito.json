@@ -2,12 +2,12 @@
  "sem_marca": [
   {
    "loja": "L1",
-   "nf": "6422",
-   "forn": "DAMIA ACESSORIOS LTDA",
-   "qt": 280,
-   "data": "2026-08-18",
+   "nf": "81827",
+   "forn": "VILLE COMERCIO DE COSMETICOS LTDA",
+   "qt": 156,
+   "data": "2026-09-16",
    "marcas": {},
-   "sem_un": 280
+   "sem_un": 156
   },
   {
    "loja": "L3",
@@ -17,6 +17,15 @@
    "data": "2026-08-24",
    "marcas": {},
    "sem_un": 396
+  },
+  {
+   "loja": "L3",
+   "nf": "81829",
+   "forn": "VILLE COMERCIO DE COSMETICOS LTDA",
+   "qt": 156,
+   "data": "2026-09-16",
+   "marcas": {},
+   "sem_un": 156
   },
   {
    "loja": "L3",
@@ -46,13 +55,22 @@
    "sem_un": 150
   },
   {
-   "loja": "L5",
-   "nf": "9952",
-   "forn": "NATY BEAUTY LTDA",
-   "qt": 396,
-   "data": "2026-08-24",
+   "loja": "L4",
+   "nf": "81828",
+   "forn": "VILLE COMERCIO DE COSMETICOS LTDA",
+   "qt": 156,
+   "data": "2026-09-16",
    "marcas": {},
-   "sem_un": 396
+   "sem_un": 156
+  },
+  {
+   "loja": "L5",
+   "nf": "82060",
+   "forn": "VILLE COMERCIO DE COSMETICOS LTDA",
+   "qt": 150,
+   "data": "2026-09-17",
+   "marcas": {},
+   "sem_un": 150
   }
  ],
  "fora_curva": [
@@ -70,17 +88,6 @@
  ],
  "curva_nao_refletida": [],
  "ok": [
-  {
-   "loja": "L1",
-   "nf": "7629",
-   "forn": "M.D.BOSO COMERCIO DE COSMETICOS LT",
-   "qt": 318,
-   "data": "2026-08-31",
-   "marcas": {
-    "Prohall": 318
-   },
-   "sem_un": 0
-  },
   {
    "loja": "L1",
    "nf": "51542",
