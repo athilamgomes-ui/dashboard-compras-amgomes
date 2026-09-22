@@ -47,15 +47,6 @@
   },
   {
    "loja": "L4",
-   "nf": "2357",
-   "forn": "KARINA A. GARCIA PINHEIRO - ME",
-   "qt": 23,
-   "data": "2026-09-02",
-   "marcas": {},
-   "sem_un": 23
-  },
-  {
-   "loja": "L4",
    "nf": "23576",
    "forn": "CHROMA COSMETICOS LTDA",
    "qt": 150,
@@ -109,17 +100,6 @@
  "curva_nao_refletida": [],
  "ok": [
   {
-   "loja": "L1",
-   "nf": "51542",
-   "forn": "QUMORY DISTRIBUIDORA DE COSMETICOS",
-   "qt": 222,
-   "data": "2026-09-03",
-   "marcas": {
-    "Yama": 96
-   },
-   "sem_un": 126
-  },
-  {
    "loja": "L3",
    "nf": "1213501",
    "forn": "OKAJIMA DISTRIBUICAO E COMERCIO LT",
@@ -162,17 +142,6 @@
    "data": "2026-07-24",
    "marcas": {
     "Let me be": 6
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L4",
-   "nf": "221541",
-   "forn": "S R DOS SANTOS EQUIPAMENTOS",
-   "qt": 1,
-   "data": "2026-08-26",
-   "marcas": {
-    "Lizze": 1
    },
    "sem_un": 0
   },
