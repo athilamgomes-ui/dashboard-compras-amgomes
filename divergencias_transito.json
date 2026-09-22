@@ -2,6 +2,15 @@
  "sem_marca": [
   {
    "loja": "L1",
+   "nf": "4064",
+   "forn": "MADAME LIS INDUSTRIA E COMERCIO DE",
+   "qt": 360,
+   "data": "2026-09-21",
+   "marcas": {},
+   "sem_un": 360
+  },
+  {
+   "loja": "L1",
    "nf": "81827",
    "forn": "VILLE COMERCIO DE COSMETICOS LTDA",
    "qt": 156,
@@ -84,6 +93,17 @@
     "Adesivos de Unha": 272
    },
    "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "50046",
+   "forn": "A M COMERCIO DE COSMETICOS LTDA",
+   "qt": 90,
+   "data": "2026-09-21",
+   "marcas": {
+    "Della&Delle": 90
+   },
+   "sem_un": 0
   }
  ],
  "curva_nao_refletida": [],
@@ -101,17 +121,6 @@
   },
   {
    "loja": "L3",
-   "nf": "32617",
-   "forn": "BLUE COSMETICS COMERCIO E DISTRIBU",
-   "qt": 348,
-   "data": "2026-08-28",
-   "marcas": {
-    "Widi Care": 348
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L3",
    "nf": "1213501",
    "forn": "OKAJIMA DISTRIBUICAO E COMERCIO LT",
    "qt": 622,
@@ -125,25 +134,23 @@
   },
   {
    "loja": "L4",
-   "nf": "1238",
-   "forn": "A M GOMES IMPORT EXPORT",
-   "qt": 19,
-   "data": "2026-06-22",
-   "marcas": {
-    "Belliz": 1,
-    "Marco Boni": 1,
-    "Dafu": 1
-   },
-   "sem_un": 16
-  },
-  {
-   "loja": "L4",
    "nf": "1245",
    "forn": "A M GOMES IMPORT EXPORT",
    "qt": 1,
    "data": "2026-07-15",
    "marcas": {
     "Marco Boni": 1
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
+   "nf": "15925",
+   "forn": "BROKER CARAJAS DISTRIBUIDORA LTDA",
+   "qt": 145,
+   "data": "2026-09-21",
+   "marcas": {
+    "Truss": 145
    },
    "sem_un": 0
   },
