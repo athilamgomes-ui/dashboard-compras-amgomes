@@ -116,17 +116,6 @@
   },
   {
    "loja": "L4",
-   "nf": "15925",
-   "forn": "BROKER CARAJAS DISTRIBUIDORA LTDA",
-   "qt": 145,
-   "data": "2026-09-21",
-   "marcas": {
-    "Truss": 145
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L4",
    "nf": "17281",
    "forn": "LMB COSMETICOS LTDA",
    "qt": 6,
@@ -155,6 +144,28 @@
    "data": "2026-09-14",
    "marcas": {
     "Let me be": 253
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "42505",
+   "forn": "Maystar Cosmetica do Brasil Ltda.",
+   "qt": 343,
+   "data": "2026-09-23",
+   "marcas": {
+    "Depilflax": 343
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "205033",
+   "forn": "Network Beauty Fashion Cosmetica L",
+   "qt": 328,
+   "data": "2026-09-23",
+   "marcas": {
+    "Itallian": 328
    },
    "sem_un": 0
   }
