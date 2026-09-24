@@ -23,9 +23,16 @@
     "58564841000292": "Wella",
     "24815160000319": "Prohall",
     "34167246000174": "Natum+Hair Extrattus",
-    "37527683000220": "Widi Care"
+    "37527683000220": "Widi Care",
+    "40286926000100": "Yama",
+    "11235228000500": "Kiss",
+    "13413341000130": "Martini",
+    "12744404000500": "Impala+Barbie"
   },
   "por_nome_substring": {
+    "QUMORY": "Yama",
+    "IMBECOR": "Kiss",
+    "NATY BEAUTY": "Martini",
     "EL BEAUTY": "Felps",
     "SANTA CLARA": "Santa Clara",
     "KAMALEAO COLOR": "Kamaleao",
@@ -95,9 +102,11 @@
       "18096398000177",
       "13972473000100",
       "06120989000153",
-      "08116338000549"
+      "08116338000549",
+      "18780646000102"
     ],
     "por_nome_substring": [
+      "KARINA A. GARCIA",
       "E DA COSTA OLIVEIRA",
       "POSTO BRIGADEIRO",
       "CLOUD WALK INSTITUICAO DE PAGAMENTO",

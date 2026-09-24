@@ -9,6 +9,54 @@ Formato: `## AAAA-MM-DD — <Marca>` + o que mudou em cada arquivo + NF/forneced
 
 <!-- novas entradas abaixo -->
 
+## 2026-09-24 — QUMORY → Yama (fornecedor marca-única)
+
+Athila informou: fornecedor **QUMORY DISTRIBUIDORA DE COSMETICOS LTDA** (CNPJ **40286926000100**) é a
+marca **Yama**. A marca já estava mapeada (marca_ids Yama=[57]; curva nas 4 lojas; keyword YAMA). Faltava
+só o fornecedor — as descrições em maioria NÃO trazem "YAMA" (linha Nano Infusion coloração, tonalizantes,
+oxidante, pó descolorante, shampoos profissionais), então a keyword só pegava alguns itens e 3 NFes ficavam
+com "⚠️ marca não mapeada" na precificação: **NF 51542 (16 itens) + 50865 (37) L1, NF 50863 (40) L4**.
+
+- **`fornecedor_marcas.json`** `por_cnpj`: `"40286926000100": "Yama"` (precificação casa por CNPJ) +
+  `por_nome_substring`: `"QUMORY": "Yama"` (nota LANÇADA de compras não traz CNPJ). Fornecedor marca-única.
+
+Sem mudança em marca_ids/curva/keywords (Yama já completa). Rebuild + recoleta clareiam o pendente.
+
+## 2026-09-24 — IMBECOR → Kiss (New York), código 288
+
+Athila informou: fornecedor **IMBECOR PRODUTOS DE BELEZA LTDA** (CNPJ **11235228000500**) é a marca
+**Kiss New York** (código ERP **288**). A marca tinha keyword (KISS) e curva (Kiss, 3 lojas), mas **faltava
+o código no marca_ids** — adicionado `"Kiss": [288]`. Fornecedor marca-única: os 36 itens da NF 32380 L1
+são todos linha **RK / Ruby Kisses** (a descrição usa "RK ..." em vez de "KISS", então a keyword não pegava
+e a NF ficava "⚠️ marca não mapeada").
+
+- **`marca_ids.json`**: `"Kiss": [288]`.
+- **`fornecedor_marcas.json`** `por_cnpj`: `"11235228000500": "Kiss"` + `por_nome_substring`: `"IMBECOR": "Kiss"`.
+
+Nome canônico mantido "Kiss" (igual curva/keywords já existentes), não "Kiss New York", pra alinhar o de-para.
+
+## 2026-09-24 — Nat Beauty → Martini (856) + Mundial (multi-marca) → Impala
+
+**NATY BEAUTY LTDA** (CNPJ **13413341000130**) = marca **Martini** (acessórios de salão: bigudim, pincel,
+escova, espátula, dosador — marca-única). Athila informou código **856**. Era o fornecedor "sem marca" que
+tinha ficado pendente no trânsito (NFs 9951 L4 / 9952 L5 / 9953 L3, ~1.584 un).
+- `marca_ids.json`: `"Martini": [856]`.
+- `fornecedor_marcas.json` `por_cnpj` `"13413341000130"` + `por_nome_substring` `"NATY BEAUTY"` → Martini.
+
+**MUNDIAL DISTRIBUIDORA** (CNPJ **12744404000500**) = **multi-marca** (Athila confirmou). É ~96% **Impala**
+(esmaltes + removedor TiraEsmalt) + linhas infantis licenciadas (Barbie/Hot Wheels/Frozen/Moana/Giz). NÃO
+mapear o CNPJ todo pra Impala (rotularia errado os infantis). Usado o mecanismo **multi-marca por-item** da
+precificação: `por_cnpj "12744404000500": "Impala+Barbie"` → o coletor resolve cada item pela candidata cujo
+relatório de preço o contém; só marcas COM código resolvem (Impala=22), então os itens Impala (toda a NF
+771796, e a 771795) viram Impala e os ~15 itens infantis ficam pendentes até terem marca/código próprios.
+Só por CNPJ (precificação); no compras o Mundial segue pela keyword IMPALA (nota lançada não traz CNPJ).
+
+## 2026-09-24 — KARINA A. GARCIA PINHEIRO - ME → excluído (prestador de serviço)
+
+Athila confirmou: fornecedor de **serviço**, não revenda. Adicionado a `_ignorar_no_dashboard` por
+**CNPJ 18780646000102** + nome **"KARINA A. GARCIA"**. Some do card chegadas_mes e não entra em
+compras_mensais_rs; na precificação a NF 2357 L4 (18 itens) sai da tela na próxima coleta.
+
 ## 2026-09-16 — BUG: estoque de produto parado não aparecia (72% do saldo fora da tela)
 
 Athila viu a CBB com estoque diferente do ERP "sendo que foi atualizado ontem à noite".
