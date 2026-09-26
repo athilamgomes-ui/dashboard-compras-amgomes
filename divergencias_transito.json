@@ -2,6 +2,24 @@
  "sem_marca": [
   {
    "loja": "L1",
+   "nf": "3463",
+   "forn": "MOTIVO INDUSTRIA IMPORTACAO E EXPO",
+   "qt": 658,
+   "data": "2026-09-24",
+   "marcas": {},
+   "sem_un": 658
+  },
+  {
+   "loja": "L1",
+   "nf": "3464",
+   "forn": "MOTIVO INDUSTRIA IMPORTACAO E EXPO",
+   "qt": 120,
+   "data": "2026-09-24",
+   "marcas": {},
+   "sem_un": 120
+  },
+  {
+   "loja": "L1",
    "nf": "4064",
    "forn": "MADAME LIS INDUSTRIA E COMERCIO DE",
    "qt": 360,
@@ -90,6 +108,17 @@
  ],
  "curva_nao_refletida": [],
  "ok": [
+  {
+   "loja": "L3",
+   "nf": "728672",
+   "forn": "SANTA CLARA MANUFATURA E COSMETICO",
+   "qt": 1242,
+   "data": "2026-09-24",
+   "marcas": {
+    "Santa Clara": 1242
+   },
+   "sem_un": 0
+  },
   {
    "loja": "L3",
    "nf": "1213501",
