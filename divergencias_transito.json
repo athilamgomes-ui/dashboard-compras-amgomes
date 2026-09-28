@@ -20,21 +20,21 @@
   },
   {
    "loja": "L1",
-   "nf": "4064",
-   "forn": "MADAME LIS INDUSTRIA E COMERCIO DE",
-   "qt": 360,
-   "data": "2026-09-21",
-   "marcas": {},
-   "sem_un": 360
-  },
-  {
-   "loja": "L1",
    "nf": "81827",
    "forn": "VILLE COMERCIO DE COSMETICOS LTDA",
    "qt": 156,
    "data": "2026-09-16",
    "marcas": {},
    "sem_un": 156
+  },
+  {
+   "loja": "L3",
+   "nf": "23588",
+   "forn": "CHROMA COSMETICOS LTDA",
+   "qt": 60,
+   "data": "2026-09-25",
+   "marcas": {},
+   "sem_un": 60
   },
   {
    "loja": "L3",
@@ -84,17 +84,6 @@
  ],
  "fora_curva": [
   {
-   "loja": "L3",
-   "nf": "61",
-   "forn": "Marcelo Ribeiro da Silva",
-   "qt": 272,
-   "data": "2026-06-29",
-   "marcas": {
-    "Adesivos de Unha": 272
-   },
-   "sem_un": 0
-  },
-  {
    "loja": "L5",
    "nf": "50046",
    "forn": "A M COMERCIO DE COSMETICOS LTDA",
@@ -108,6 +97,28 @@
  ],
  "curva_nao_refletida": [],
  "ok": [
+  {
+   "loja": "L1",
+   "nf": "4064",
+   "forn": "MADAME LIS INDUSTRIA E COMERCIO DE",
+   "qt": 360,
+   "data": "2026-09-21",
+   "marcas": {
+    "Madame Liss": 360
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L3",
+   "nf": "173536",
+   "forn": "MEGA BELL INDUSTRIA E COMERCIO LTD",
+   "qt": 32,
+   "data": "2026-09-25",
+   "marcas": {
+    "Mega Bell": 32
+   },
+   "sem_un": 0
+  },
   {
    "loja": "L3",
    "nf": "728672",
