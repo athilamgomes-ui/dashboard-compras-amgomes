@@ -9,6 +9,30 @@ Formato: `## AAAA-MM-DD — <Marca>` + o que mudou em cada arquivo + NF/forneced
 
 <!-- novas entradas abaixo -->
 
+## 2026-09-28 — Madame Liss (907), fornecedor MADAME LIS
+Athila informou: **Madame Liss = 907**, mapear em todas as empresas. Motivou a **NF 4064, L1,
+R$10.108, 27 itens, 360 un** (fornecedor MADAME LIS INDUSTRIA E COMERCIO DE COSMETICOS LTDA,
+CNPJ 10481819000171, emissão 21/09) — **primeira compra** desse fornecedor no ano.
+
+- `marca_ids["Madame Liss"] = [907]` — **código conferido no ERP** por consulta headless:
+  `Marca: MADAMELIS (907)`.
+- `fornecedor_marcas`: `por_cnpj["10481819000171"]` **e** `por_nome_substring["MADAME LIS"]`.
+  ⚠️ O mapeamento por fornecedor aqui é **obrigatório**: nenhum dos 27 itens da NF traz o nome da
+  marca na descrição (são "MASK PRO MASCARA…", "SHAMPOO ANTIRRESIDUOS 1L", "MASCARA REPAIR
+  SOLUTION 300ML"), então keyword sozinha não resolveria.
+- `marca_keywords["Madame Liss"] = ["MADAMELIS","MADAME LISS"]` — vale para os produtos **já
+  cadastrados** no ERP, que trazem MADAMELIS na descrição.
+- `curva_marcas`: **B nas 4 lojas** (pedido do Athila). B é o default de marca nova — se a margem
+  for ≥17% e não puder faltar, é caso de S.
+- **`ALIASES` em build_dashboard.py: `'MADAME LISS': ['MADAME LISS','MADAMELIS']`** — o grupo no
+  ERP é `MADAMELIS` (sem espaço, um S só) e sem o alias a curva não acharia o grupo.
+  ⚠️ NÃO usar `LISS` solto: o ERP tem **BABYLISS (142), FOREVER LISS (355), LISSE PROFISSIONAL
+  (307) e JONALISSA BIJOUX (1037)** — marcas diferentes. Alias conferido: casa só MADAMELIS.
+
+Situação hoje: só a **L4** tem produtos taggeados no grupo (14 produtos, 116 un, **zero venda em
+60 dias**) e a compra nova entrou pela **L1**. Ou seja, a marca deve aparecer como "chegou agora"
+na L1 e como estoque parado na L4 até começar a girar.
+
 ## 2026-09-24 — QUMORY → Yama (fornecedor marca-única)
 
 Athila informou: fornecedor **QUMORY DISTRIBUIDORA DE COSMETICOS LTDA** (CNPJ **40286926000100**) é a

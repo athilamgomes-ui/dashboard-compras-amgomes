@@ -79,6 +79,11 @@ ALIASES = {
     # 2026-08-05: grupos duplicados encontrados na auditoria de cobertura.
     'NATHYDRAS': ['NATHYDRAS','NATHY'],   # 819 un de saldo estavam órfãs no grupo 'NATHY'
     'LIZZE': ['LIZZE','LIZZ'],            # grafia truncada, poucas unidades
+    # 2026-09-28: o grupo no ERP é 'MADAMELIS' (sem espaço e com um S só); o fornecedor é
+    # 'MADAME LIS INDUSTRIA'. Sem o alias a curva 'Madame Liss' não acha o grupo. ⚠️ NÃO usar
+    # 'LISS' solto: o ERP tem BABYLISS, FOREVER LISS, LISSE PROFISSIONAL e JONALISSA, que são
+    # marcas diferentes.
+    'MADAME LISS': ['MADAME LISS','MADAMELIS'],
 }
 
 # Produtos a EXCLUIR de uma marca (regex na descrição). Mesmo tratamento do dashboard
