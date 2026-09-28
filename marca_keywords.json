@@ -223,5 +223,14 @@
   "Madame Liss": [
     "MADAMELIS",
     "MADAME LISS"
+  ],
+  "Lisse": [
+    "\\bLISSE\\b"
+  ],
+  "Cless": [
+    "\\bCLESS\\b"
+  ],
+  "Dona Pele": [
+    "DONA PELE"
   ]
 }

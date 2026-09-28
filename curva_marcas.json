@@ -1,6 +1,6 @@
 {
   "_descricao": "Curva de LUCRO por loja (definição do Athila, 25/08/2026). S = margem de lucro 17% ou mais E não pode faltar na loja — prioridade máxima de compra. A = também lucro alto, mas entre uma A e uma S, a S tem prioridade na compra. B = compramos quando as S e A já estão bem abastecidas e ainda há espaço/orçamento. NÃO é curva de giro nem de importância comercial: é lucro + risco de ruptura. Editável manualmente.",
-  "_ultima_edicao": "2026-09-28: Madame Liss (907, forn MADAME LIS) curva B nas 4 lojas (pedido do Athila). Hoje so a L4 tem produtos taggeados no grupo MADAMELIS (14 prod, 116 un, zero venda); a NF 4064 entrou pela L1. | 2026-09-08: Prohall (1107, forn M.D.BOSO COMERCIO DE COSMETICOS) curva B em L1 e L5 — as duas lojas compraram (L1 R$13.290 + L5 R$4.428, ambas pendentes). | 2026-08-20: Wella (910, forn Tibia) curva B em L1 — NAO tem grupo no relatorio de saldo ainda; entra p/ o valor da NF 50 contar em compras_mensais_rs. Saldo/cobertura so depois de taggear os produtos no grupo Wella no ERP (licao Japinha). | 2026-08-05: Elseve (L'Oreal Paris, grupo ELSEVE no ERP, forn Okajima) curva B em L3/L5 — tinha grupo e saldo no ERP mas nao estava na curva, entao a cobertura nunca era lida. | 2026-08-04c: Bauny (cod 1078, forn FFE E FRAIHA) curva B nas 4 lojas — já tinha estoque em todas (L1 21, L3 19, L4 14, L5 50 produtos) | 2026-08-04: notas ja lançadas no ERP sem marca classificada (attribute_nota vazio) -> Nathydras+Varcare curva B (L1,L3,L5, forn Franca Plus, split multi-marca); Inoar curva B (L3, forn Alekosmetica); Raavi curva B (L3, forn DEDC); Real Love curva B (L4,L5, forn Real Love Cosmeticos); Maria Margarida curva B (L5, forn C&D Comercio) | 2026-07-01: Salon Line (nova, forn ZAKAT, cod 56) adicionada curva B todas lojas; Let me be ganhou codigo ERP 936 (ja era curva A)",
+  "_ultima_edicao": "2026-09-28c: Cless (54), Dona Pele (310) e Payot (937) curva B nas 4 lojas (pedido do Athila: \"mapeie todas as NFes em todas as lojas\"). As 3 ja tinham grupo e estoque no ERP nas 4 lojas mas nao estavam na curva. | 2026-09-28b: Lisse (307, grupo LISSE PROFISSIONAL) curva B nas 4 lojas (pedido do Athila) — as 4 ja tinham estoque (L1 109, L3 84, L4 24, L5 87 un) mas a marca nao estava na curva, entao nao era lida. | 2026-09-28: Madame Liss (907, forn MADAME LIS) curva B nas 4 lojas (pedido do Athila). Hoje so a L4 tem produtos taggeados no grupo MADAMELIS (14 prod, 116 un, zero venda); a NF 4064 entrou pela L1. | 2026-09-08: Prohall (1107, forn M.D.BOSO COMERCIO DE COSMETICOS) curva B em L1 e L5 — as duas lojas compraram (L1 R$13.290 + L5 R$4.428, ambas pendentes). | 2026-08-20: Wella (910, forn Tibia) curva B em L1 — NAO tem grupo no relatorio de saldo ainda; entra p/ o valor da NF 50 contar em compras_mensais_rs. Saldo/cobertura so depois de taggear os produtos no grupo Wella no ERP (licao Japinha). | 2026-08-05: Elseve (L'Oreal Paris, grupo ELSEVE no ERP, forn Okajima) curva B em L3/L5 — tinha grupo e saldo no ERP mas nao estava na curva, entao a cobertura nunca era lida. | 2026-08-04c: Bauny (cod 1078, forn FFE E FRAIHA) curva B nas 4 lojas — já tinha estoque em todas (L1 21, L3 19, L4 14, L5 50 produtos) | 2026-08-04: notas ja lançadas no ERP sem marca classificada (attribute_nota vazio) -> Nathydras+Varcare curva B (L1,L3,L5, forn Franca Plus, split multi-marca); Inoar curva B (L3, forn Alekosmetica); Raavi curva B (L3, forn DEDC); Real Love curva B (L4,L5, forn Real Love Cosmeticos); Maria Margarida curva B (L5, forn C&D Comercio) | 2026-07-01: Salon Line (nova, forn ZAKAT, cod 56) adicionada curva B todas lojas; Let me be ganhou codigo ERP 936 (ja era curva A)",
   "L1": {
     "_loja": "Casa da Beleza Altamira (Empresa 1)",
     "A": [
@@ -40,7 +40,11 @@
       "Bauny",
       "Wella",
       "Prohall",
-      "Madame Liss"
+      "Madame Liss",
+      "Lisse",
+      "Cless",
+      "Dona Pele",
+      "Payot"
     ],
     "S": [
       "Widi Care",
@@ -94,7 +98,11 @@
       "Impala",
       "Real Love",
       "Bauny",
-      "Madame Liss"
+      "Madame Liss",
+      "Lisse",
+      "Cless",
+      "Dona Pele",
+      "Payot"
     ],
     "S": [
       "Widi Care",
@@ -150,7 +158,11 @@
       "Raavi",
       "Bauny",
       "Elseve",
-      "Madame Liss"
+      "Madame Liss",
+      "Lisse",
+      "Cless",
+      "Dona Pele",
+      "Payot"
     ],
     "S": [
       "Widi Care",
@@ -212,7 +224,11 @@
       "Bauny",
       "Elseve",
       "Prohall",
-      "Madame Liss"
+      "Madame Liss",
+      "Lisse",
+      "Cless",
+      "Dona Pele",
+      "Payot"
     ],
     "S": [
       "Widi Care",

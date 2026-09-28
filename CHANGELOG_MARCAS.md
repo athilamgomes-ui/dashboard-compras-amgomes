@@ -9,6 +9,35 @@ Formato: `## AAAA-MM-DD — <Marca>` + o que mudou em cada arquivo + NF/forneced
 
 <!-- novas entradas abaixo -->
 
+## 2026-09-28c — Lisse, Cless, Dona Pele e Payot (banner zerado)
+
+**Lisse = 307** (grupo `LISSE PROFISSIONAL`), fabricante **MOTIVO INDUSTRIA** (CNPJ
+08785274000145). NFs **3463 (R$17.419, 658 un, 47 itens) e 3464 (R$1.254, 120 un)**, ambas L1,
+24/09. Keyword `\bLISSE\b` — conferido: só aparece no grupo LISSE PROFISSIONAL (95 produtos).
+Não precisou de alias: "Lisse" casa com "LISSE PROFISSIONAL" pelo prefixo, e **só com ele**.
+Curva B nas 4 lojas; as 4 já tinham estoque (L1 109, L3 84, L4 24, L5 87) sem estar na curva.
+
+**Cless = 54** (Athila informou, conferido no ERP), **CLESS COMERCIO** (CNPJ 06034119000323),
+NF 133962 L3 R$7.596, 648 un. Itens vêm com prefixo `CL `/`LG ` e **não** trazem o nome da
+marca → mapeamento por fornecedor. Keyword `\bCLESS\b` (só no grupo CLESS, 57 produtos).
+
+**Dona Pele = 310**, **CHROMA COSMETICOS** (CNPJ 13227874000128), NFs 23576 L4 + 23588 L3.
+13 de 13 itens casaram com o grupo DONA PELE. Keyword `DONA PELE` (exclusiva do grupo).
+
+**Payot = 937**, **VILLE COMERCIO DE COSMETICOS** (CNPJ 02167473000294) — **4 NFs, uma por
+loja**: 81827 L1, 81829 L3, 81828 L4, 82060 L5, R$4.798 cada (~R$19 mil). Identificado pelos
+itens "PRIMER FACIAL BLUR **PAYOT**" e displays "PAYOT 2024/2025", + 10 itens casando com o
+grupo PAYOT. ⚠️ **Payot NÃO ganhou keyword**: a palavra "PAYOT" aparece em 10 produtos dos
+grupos **BOCA ROSA (8) e BOCA ROSA BEAUTY (2)** — keyword roubaria produtos dessas marcas.
+Fica só por fornecedor (CNPJ + nome).
+
+Resultado: **banner de trânsito sem marca ZERADO** (7 → 0 NFes).
+
+⚠️ Leitura de negócio que apareceu junto: **Cless e Payot chegam com o estoque já parado.**
+Cless tem 1.079 un nas 4 lojas vendendo 198/60d e recebe mais 648 (L3 fica com 1.880 dias);
+Payot vende 2 un/60d no grupo inteiro e recebe 618 un. Registrado para a conversa com os
+fornecedores, junto com a análise da Lisse (ver resposta ao Athila em 28/09).
+
 ## 2026-09-28 — Madame Liss (907), fornecedor MADAME LIS
 Athila informou: **Madame Liss = 907**, mapear em todas as empresas. Motivou a **NF 4064, L1,
 R$10.108, 27 itens, 360 un** (fornecedor MADAME LIS INDUSTRIA E COMERCIO DE COSMETICOS LTDA,
