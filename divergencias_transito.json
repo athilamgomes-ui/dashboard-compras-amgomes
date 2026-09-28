@@ -1,69 +1,5 @@
 {
- "sem_marca": [
-  {
-   "loja": "L1",
-   "nf": "81827",
-   "forn": "VILLE COMERCIO DE COSMETICOS LTDA",
-   "qt": 156,
-   "data": "2026-09-16",
-   "marcas": {},
-   "sem_un": 156
-  },
-  {
-   "loja": "L3",
-   "nf": "23588",
-   "forn": "CHROMA COSMETICOS LTDA",
-   "qt": 60,
-   "data": "2026-09-25",
-   "marcas": {},
-   "sem_un": 60
-  },
-  {
-   "loja": "L3",
-   "nf": "81829",
-   "forn": "VILLE COMERCIO DE COSMETICOS LTDA",
-   "qt": 156,
-   "data": "2026-09-16",
-   "marcas": {},
-   "sem_un": 156
-  },
-  {
-   "loja": "L3",
-   "nf": "133962",
-   "forn": "CLESS COMERCIO DE COSMETICOS LTDA",
-   "qt": 648,
-   "data": "2026-09-15",
-   "marcas": {},
-   "sem_un": 648
-  },
-  {
-   "loja": "L4",
-   "nf": "23576",
-   "forn": "CHROMA COSMETICOS LTDA",
-   "qt": 150,
-   "data": "2026-09-15",
-   "marcas": {},
-   "sem_un": 150
-  },
-  {
-   "loja": "L4",
-   "nf": "81828",
-   "forn": "VILLE COMERCIO DE COSMETICOS LTDA",
-   "qt": 156,
-   "data": "2026-09-16",
-   "marcas": {},
-   "sem_un": 156
-  },
-  {
-   "loja": "L5",
-   "nf": "82060",
-   "forn": "VILLE COMERCIO DE COSMETICOS LTDA",
-   "qt": 150,
-   "data": "2026-09-17",
-   "marcas": {},
-   "sem_un": 150
-  }
- ],
+ "sem_marca": [],
  "fora_curva": [
   {
    "loja": "L5",
@@ -109,6 +45,50 @@
    "data": "2026-09-21",
    "marcas": {
     "Madame Liss": 360
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L1",
+   "nf": "81827",
+   "forn": "VILLE COMERCIO DE COSMETICOS LTDA",
+   "qt": 156,
+   "data": "2026-09-16",
+   "marcas": {
+    "Payot": 156
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L3",
+   "nf": "23588",
+   "forn": "CHROMA COSMETICOS LTDA",
+   "qt": 60,
+   "data": "2026-09-25",
+   "marcas": {
+    "Dona Pele": 60
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L3",
+   "nf": "81829",
+   "forn": "VILLE COMERCIO DE COSMETICOS LTDA",
+   "qt": 156,
+   "data": "2026-09-16",
+   "marcas": {
+    "Payot": 156
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L3",
+   "nf": "133962",
+   "forn": "CLESS COMERCIO DE COSMETICOS LTDA",
+   "qt": 648,
+   "data": "2026-09-15",
+   "marcas": {
+    "Cless": 648
    },
    "sem_un": 0
   },
@@ -170,6 +150,28 @@
    "sem_un": 0
   },
   {
+   "loja": "L4",
+   "nf": "23576",
+   "forn": "CHROMA COSMETICOS LTDA",
+   "qt": 150,
+   "data": "2026-09-15",
+   "marcas": {
+    "Dona Pele": 150
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
+   "nf": "81828",
+   "forn": "VILLE COMERCIO DE COSMETICOS LTDA",
+   "qt": 156,
+   "data": "2026-09-16",
+   "marcas": {
+    "Payot": 156
+   },
+   "sem_un": 0
+  },
+  {
    "loja": "L5",
    "nf": "7660",
    "forn": "M.D.BOSO COMERCIO DE COSMETICOS LT",
@@ -199,6 +201,17 @@
    "data": "2026-09-23",
    "marcas": {
     "Depilflax": 343
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "82060",
+   "forn": "VILLE COMERCIO DE COSMETICOS LTDA",
+   "qt": 150,
+   "data": "2026-09-17",
+   "marcas": {
+    "Payot": 150
    },
    "sem_un": 0
   },
