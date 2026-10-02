@@ -1,18 +1,16 @@
 {
- "sem_marca": [],
- "fora_curva": [
+ "sem_marca": [
   {
    "loja": "L5",
-   "nf": "50046",
-   "forn": "A M COMERCIO DE COSMETICOS LTDA",
-   "qt": 90,
-   "data": "2026-09-21",
-   "marcas": {
-    "Della&Delle": 90
-   },
-   "sem_un": 0
+   "nf": "38799",
+   "forn": "EAP COMERCIO, DISTRIBUICAO, IMP. E",
+   "qt": 288,
+   "data": "2026-09-29",
+   "marcas": {},
+   "sem_un": 288
   }
  ],
+ "fora_curva": [],
  "curva_nao_refletida": [],
  "ok": [
   {
@@ -50,12 +48,56 @@
   },
   {
    "loja": "L1",
-   "nf": "81827",
-   "forn": "VILLE COMERCIO DE COSMETICOS LTDA",
-   "qt": 156,
-   "data": "2026-09-16",
+   "nf": "15374",
+   "forn": "LM JOAO PESSOA DISTRIBUIDORA DE CO",
+   "qt": 35,
+   "data": "2026-09-30",
    "marcas": {
-    "Payot": 156
+    "Vizzela": 34
+   },
+   "sem_un": 1
+  },
+  {
+   "loja": "L1",
+   "nf": "15375",
+   "forn": "LM JOAO PESSOA DISTRIBUIDORA DE CO",
+   "qt": 234,
+   "data": "2026-09-30",
+   "marcas": {
+    "Vizzela": 234
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L1",
+   "nf": "205406",
+   "forn": "Network Beauty Fashion Cosmetica L",
+   "qt": 679,
+   "data": "2026-09-30",
+   "marcas": {
+    "Itallian": 679
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L3",
+   "nf": "15355",
+   "forn": "LM JOAO PESSOA DISTRIBUIDORA DE CO",
+   "qt": 31,
+   "data": "2026-09-29",
+   "marcas": {
+    "Vizzela": 30
+   },
+   "sem_un": 1
+  },
+  {
+   "loja": "L3",
+   "nf": "15356",
+   "forn": "LM JOAO PESSOA DISTRIBUIDORA DE CO",
+   "qt": 288,
+   "data": "2026-09-29",
+   "marcas": {
+    "Vizzela": 288
    },
    "sem_un": 0
   },
@@ -100,6 +142,17 @@
    "data": "2026-09-25",
    "marcas": {
     "Mega Bell": 32
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L3",
+   "nf": "205405",
+   "forn": "Network Beauty Fashion Cosmetica L",
+   "qt": 462,
+   "data": "2026-09-30",
+   "marcas": {
+    "Itallian": 462
    },
    "sem_un": 0
   },
@@ -151,6 +204,17 @@
   },
   {
    "loja": "L4",
+   "nf": "21286",
+   "forn": "LMB COSMETICOS LTDA",
+   "qt": 272,
+   "data": "2026-09-30",
+   "marcas": {
+    "Let me be": 272
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
    "nf": "23576",
    "forn": "CHROMA COSMETICOS LTDA",
    "qt": 150,
@@ -161,24 +225,24 @@
    "sem_un": 0
   },
   {
-   "loja": "L4",
-   "nf": "81828",
-   "forn": "VILLE COMERCIO DE COSMETICOS LTDA",
-   "qt": 156,
-   "data": "2026-09-16",
+   "loja": "L5",
+   "nf": "15321",
+   "forn": "LM JOAO PESSOA DISTRIBUIDORA DE CO",
+   "qt": 25,
+   "data": "2026-09-29",
    "marcas": {
-    "Payot": 156
+    "Vizzela": 24
    },
-   "sem_un": 0
+   "sem_un": 1
   },
   {
    "loja": "L5",
-   "nf": "7660",
-   "forn": "M.D.BOSO COMERCIO DE COSMETICOS LT",
-   "qt": 90,
-   "data": "2026-09-01",
+   "nf": "15322",
+   "forn": "LM JOAO PESSOA DISTRIBUIDORA DE CO",
+   "qt": 276,
+   "data": "2026-09-29",
    "marcas": {
-    "Prohall": 90
+    "Vizzela": 276
    },
    "sem_un": 0
   },
@@ -190,17 +254,6 @@
    "data": "2026-09-23",
    "marcas": {
     "Depilflax": 343
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L5",
-   "nf": "82060",
-   "forn": "VILLE COMERCIO DE COSMETICOS LTDA",
-   "qt": 150,
-   "data": "2026-09-17",
-   "marcas": {
-    "Payot": 150
    },
    "sem_un": 0
   },
