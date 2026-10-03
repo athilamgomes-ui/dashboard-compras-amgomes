@@ -193,6 +193,17 @@
   },
   {
    "loja": "L4",
+   "nf": "2947",
+   "forn": "CBB INDUSTRIA E COMERCIO DE PRODUT",
+   "qt": 834,
+   "data": "2026-10-02",
+   "marcas": {
+    "CBB": 834
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
    "nf": "17281",
    "forn": "LMB COSMETICOS LTDA",
    "qt": 6,
