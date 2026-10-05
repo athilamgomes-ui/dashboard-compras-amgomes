@@ -15,28 +15,6 @@
  "ok": [
   {
    "loja": "L1",
-   "nf": "3463",
-   "forn": "MOTIVO INDUSTRIA IMPORTACAO E EXPO",
-   "qt": 658,
-   "data": "2026-09-24",
-   "marcas": {
-    "Lisse": 658
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L1",
-   "nf": "3464",
-   "forn": "MOTIVO INDUSTRIA IMPORTACAO E EXPO",
-   "qt": 120,
-   "data": "2026-09-24",
-   "marcas": {
-    "Lisse": 120
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L1",
    "nf": "4064",
    "forn": "MADAME LIS INDUSTRIA E COMERCIO DE",
    "qt": 360,
@@ -109,17 +87,6 @@
    "data": "2026-09-25",
    "marcas": {
     "Dona Pele": 60
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L3",
-   "nf": "81829",
-   "forn": "VILLE COMERCIO DE COSMETICOS LTDA",
-   "qt": 156,
-   "data": "2026-09-16",
-   "marcas": {
-    "Payot": 156
    },
    "sem_un": 0
   },
