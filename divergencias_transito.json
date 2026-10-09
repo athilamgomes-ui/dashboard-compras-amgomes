@@ -1,6 +1,96 @@
 {
  "sem_marca": [
   {
+   "loja": "L1",
+   "nf": "22026",
+   "forn": "BRK LABORATORIOS LTDA",
+   "qt": 306,
+   "data": "2026-10-08",
+   "marcas": {},
+   "sem_un": 306
+  },
+  {
+   "loja": "L3",
+   "nf": "1792",
+   "forn": "VLS COMERCIO ATACADISTA DE COSMETI",
+   "qt": 228,
+   "data": "2026-10-05",
+   "marcas": {},
+   "sem_un": 228
+  },
+  {
+   "loja": "L3",
+   "nf": "22029",
+   "forn": "BRK LABORATORIOS LTDA",
+   "qt": 240,
+   "data": "2026-10-08",
+   "marcas": {},
+   "sem_un": 240
+  },
+  {
+   "loja": "L4",
+   "nf": "1791",
+   "forn": "VLS COMERCIO ATACADISTA DE COSMETI",
+   "qt": 360,
+   "data": "2026-10-05",
+   "marcas": {},
+   "sem_un": 360
+  },
+  {
+   "loja": "L4",
+   "nf": "22028",
+   "forn": "BRK LABORATORIOS LTDA",
+   "qt": 306,
+   "data": "2026-10-08",
+   "marcas": {},
+   "sem_un": 306
+  },
+  {
+   "loja": "L4",
+   "nf": "165681",
+   "forn": "PROLINK INDUSTRIA QUIMICA LTDA",
+   "qt": 732,
+   "data": "2026-10-07",
+   "marcas": {},
+   "sem_un": 732
+  },
+  {
+   "loja": "L5",
+   "nf": "1790",
+   "forn": "VLS COMERCIO ATACADISTA DE COSMETI",
+   "qt": 144,
+   "data": "2026-10-05",
+   "marcas": {},
+   "sem_un": 144
+  },
+  {
+   "loja": "L5",
+   "nf": "10297",
+   "forn": "FORTALEZA DA MAQUIAGEM DISTRIB DE ",
+   "qt": 48,
+   "data": "2026-10-08",
+   "marcas": {},
+   "sem_un": 48
+  },
+  {
+   "loja": "L5",
+   "nf": "10309",
+   "forn": "FORTALEZA DA MAQUIAGEM DISTRIB DE ",
+   "qt": 233,
+   "data": "2026-10-08",
+   "marcas": {},
+   "sem_un": 233
+  },
+  {
+   "loja": "L5",
+   "nf": "22025",
+   "forn": "BRK LABORATORIOS LTDA",
+   "qt": 240,
+   "data": "2026-10-08",
+   "marcas": {},
+   "sem_un": 240
+  },
+  {
    "loja": "L5",
    "nf": "38799",
    "forn": "EAP COMERCIO, DISTRIBUICAO, IMP. E",
@@ -13,17 +103,6 @@
  "fora_curva": [],
  "curva_nao_refletida": [],
  "ok": [
-  {
-   "loja": "L1",
-   "nf": "4064",
-   "forn": "MADAME LIS INDUSTRIA E COMERCIO DE",
-   "qt": 360,
-   "data": "2026-09-21",
-   "marcas": {
-    "Madame Liss": 360
-   },
-   "sem_un": 0
-  },
   {
    "loja": "L1",
    "nf": "15374",
@@ -58,6 +137,18 @@
    "sem_un": 0
   },
   {
+   "loja": "L1",
+   "nf": "789848",
+   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
+   "qt": 2654,
+   "data": "2026-10-07",
+   "marcas": {
+    "Mundial": 596,
+    "Impala": 2058
+   },
+   "sem_un": 0
+  },
+  {
    "loja": "L3",
    "nf": "15355",
    "forn": "LM JOAO PESSOA DISTRIBUIDORA DE CO",
@@ -87,17 +178,6 @@
    "data": "2026-09-25",
    "marcas": {
     "Dona Pele": 60
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L3",
-   "nf": "133962",
-   "forn": "CLESS COMERCIO DE COSMETICOS LTDA",
-   "qt": 648,
-   "data": "2026-09-15",
-   "marcas": {
-    "Cless": 648
    },
    "sem_un": 0
   },
@@ -160,17 +240,6 @@
   },
   {
    "loja": "L4",
-   "nf": "2947",
-   "forn": "CBB INDUSTRIA E COMERCIO DE PRODUT",
-   "qt": 834,
-   "data": "2026-10-02",
-   "marcas": {
-    "CBB": 834
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L4",
    "nf": "17281",
    "forn": "LMB COSMETICOS LTDA",
    "qt": 6,
@@ -182,23 +251,23 @@
   },
   {
    "loja": "L4",
-   "nf": "21286",
-   "forn": "LMB COSMETICOS LTDA",
-   "qt": 272,
-   "data": "2026-09-30",
-   "marcas": {
-    "Let me be": 272
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L4",
    "nf": "23576",
    "forn": "CHROMA COSMETICOS LTDA",
    "qt": 150,
    "data": "2026-09-15",
    "marcas": {
     "Dona Pele": 150
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
+   "nf": "111868",
+   "forn": "R C DISTRIBUICAO E COMERCIO LTDA",
+   "qt": 34,
+   "data": "2026-10-02",
+   "marcas": {
+    "Lizze": 34
    },
    "sem_un": 0
   },
@@ -232,17 +301,6 @@
    "data": "2026-09-23",
    "marcas": {
     "Depilflax": 343
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L5",
-   "nf": "205033",
-   "forn": "Network Beauty Fashion Cosmetica L",
-   "qt": 328,
-   "data": "2026-09-23",
-   "marcas": {
-    "Itallian": 328
    },
    "sem_un": 0
   }
