@@ -28,6 +28,15 @@
    "sem_un": 240
   },
   {
+   "loja": "L3",
+   "nf": "166070",
+   "forn": "PROLINK INDUSTRIA QUIMICA LTDA",
+   "qt": 720,
+   "data": "2026-10-13",
+   "marcas": {},
+   "sem_un": 720
+  },
+  {
    "loja": "L4",
    "nf": "1791",
    "forn": "VLS COMERCIO ATACADISTA DE COSMETI",
@@ -127,17 +136,6 @@
   },
   {
    "loja": "L1",
-   "nf": "205406",
-   "forn": "Network Beauty Fashion Cosmetica L",
-   "qt": 679,
-   "data": "2026-09-30",
-   "marcas": {
-    "Itallian": 679
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L1",
    "nf": "789848",
    "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
    "qt": 2654,
@@ -172,34 +170,12 @@
   },
   {
    "loja": "L3",
-   "nf": "23588",
-   "forn": "CHROMA COSMETICOS LTDA",
-   "qt": 60,
-   "data": "2026-09-25",
-   "marcas": {
-    "Dona Pele": 60
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L3",
    "nf": "173536",
    "forn": "MEGA BELL INDUSTRIA E COMERCIO LTD",
    "qt": 32,
    "data": "2026-09-25",
    "marcas": {
     "Mega Bell": 32
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L3",
-   "nf": "205405",
-   "forn": "Network Beauty Fashion Cosmetica L",
-   "qt": 462,
-   "data": "2026-09-30",
-   "marcas": {
-    "Itallian": 462
    },
    "sem_un": 0
   },
@@ -224,17 +200,6 @@
     "Tabu": 16,
     "Risque": 594,
     "Bozzano": 12
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L4",
-   "nf": "1245",
-   "forn": "A M GOMES IMPORT EXPORT",
-   "qt": 1,
-   "data": "2026-07-15",
-   "marcas": {
-    "Marco Boni": 1
    },
    "sem_un": 0
   },
