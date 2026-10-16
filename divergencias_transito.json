@@ -2,12 +2,21 @@
  "sem_marca": [
   {
    "loja": "L1",
-   "nf": "22026",
-   "forn": "BRK LABORATORIOS LTDA",
-   "qt": 306,
-   "data": "2026-10-08",
+   "nf": "83763",
+   "forn": "CIGEL INDUSTRIAL LTDA",
+   "qt": 1316,
+   "data": "2026-10-15",
    "marcas": {},
-   "sem_un": 306
+   "sem_un": 1316
+  },
+  {
+   "loja": "L3",
+   "nf": "101",
+   "forn": "L F TRINDADE SERVICOS DE REFRIGERA",
+   "qt": 1,
+   "data": "2026-10-15",
+   "marcas": {},
+   "sem_un": 1
   },
   {
    "loja": "L3",
@@ -17,15 +26,6 @@
    "data": "2026-10-05",
    "marcas": {},
    "sem_un": 228
-  },
-  {
-   "loja": "L3",
-   "nf": "22029",
-   "forn": "BRK LABORATORIOS LTDA",
-   "qt": 240,
-   "data": "2026-10-08",
-   "marcas": {},
-   "sem_un": 240
   },
   {
    "loja": "L3",
@@ -44,15 +44,6 @@
    "data": "2026-10-05",
    "marcas": {},
    "sem_un": 360
-  },
-  {
-   "loja": "L4",
-   "nf": "22028",
-   "forn": "BRK LABORATORIOS LTDA",
-   "qt": 306,
-   "data": "2026-10-08",
-   "marcas": {},
-   "sem_un": 306
   },
   {
    "loja": "L4",
@@ -92,24 +83,58 @@
   },
   {
    "loja": "L5",
-   "nf": "22025",
-   "forn": "BRK LABORATORIOS LTDA",
-   "qt": 240,
-   "data": "2026-10-08",
-   "marcas": {},
-   "sem_un": 240
-  },
-  {
-   "loja": "L5",
    "nf": "38799",
    "forn": "EAP COMERCIO, DISTRIBUICAO, IMP. E",
    "qt": 288,
    "data": "2026-09-29",
    "marcas": {},
    "sem_un": 288
+  },
+  {
+   "loja": "L5",
+   "nf": "166270",
+   "forn": "PROLINK INDUSTRIA QUIMICA LTDA",
+   "qt": 720,
+   "data": "2026-10-15",
+   "marcas": {},
+   "sem_un": 720
   }
  ],
- "fora_curva": [],
+ "fora_curva": [
+  {
+   "loja": "L1",
+   "nf": "50322",
+   "forn": "A M COMERCIO DE COSMETICOS LTDA",
+   "qt": 260,
+   "data": "2026-10-14",
+   "marcas": {
+    "Della&Delle": 260
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L3",
+   "nf": "22029",
+   "forn": "BRK LABORATORIOS LTDA",
+   "qt": 240,
+   "data": "2026-10-08",
+   "marcas": {
+    "Bellkit": 240
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "22025",
+   "forn": "BRK LABORATORIOS LTDA",
+   "qt": 240,
+   "data": "2026-10-08",
+   "marcas": {
+    "Bellkit": 240
+   },
+   "sem_un": 0
+  }
+ ],
  "curva_nao_refletida": [],
  "ok": [
   {
@@ -119,9 +144,9 @@
    "qt": 35,
    "data": "2026-09-30",
    "marcas": {
-    "Vizzela": 34
+    "Vizzela": 35
    },
-   "sem_un": 1
+   "sem_un": 0
   },
   {
    "loja": "L1",
@@ -131,6 +156,17 @@
    "data": "2026-09-30",
    "marcas": {
     "Vizzela": 234
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L1",
+   "nf": "55645",
+   "forn": "DEVISA COMERCIAL LTDA",
+   "qt": 822,
+   "data": "2026-10-15",
+   "marcas": {
+    "Depimiel": 822
    },
    "sem_un": 0
   },
@@ -148,23 +184,12 @@
   },
   {
    "loja": "L3",
-   "nf": "15355",
-   "forn": "LM JOAO PESSOA DISTRIBUIDORA DE CO",
-   "qt": 31,
-   "data": "2026-09-29",
+   "nf": "112041",
+   "forn": "R C DISTRIBUICAO E COMERCIO LTDA",
+   "qt": 17,
+   "data": "2026-10-13",
    "marcas": {
-    "Vizzela": 30
-   },
-   "sem_un": 1
-  },
-  {
-   "loja": "L3",
-   "nf": "15356",
-   "forn": "LM JOAO PESSOA DISTRIBUIDORA DE CO",
-   "qt": 288,
-   "data": "2026-09-29",
-   "marcas": {
-    "Vizzela": 288
+    "Lizze": 17
    },
    "sem_un": 0
   },
@@ -227,12 +252,23 @@
   },
   {
    "loja": "L4",
-   "nf": "111868",
-   "forn": "R C DISTRIBUICAO E COMERCIO LTDA",
-   "qt": 34,
-   "data": "2026-10-02",
+   "nf": "115928",
+   "forn": "Tricosmeticos Distribuidora de Cos",
+   "qt": 120,
+   "data": "2026-10-15",
    "marcas": {
-    "Lizze": 34
+    "Cadiveu": 120
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
+   "nf": "115929",
+   "forn": "Tricosmeticos Distribuidora de Cos",
+   "qt": 740,
+   "data": "2026-10-15",
+   "marcas": {
+    "Cadiveu": 740
    },
    "sem_un": 0
   },
@@ -244,28 +280,6 @@
    "data": "2026-10-11",
    "marcas": {
     "Cless": 780
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L5",
-   "nf": "15321",
-   "forn": "LM JOAO PESSOA DISTRIBUIDORA DE CO",
-   "qt": 25,
-   "data": "2026-09-29",
-   "marcas": {
-    "Vizzela": 24
-   },
-   "sem_un": 1
-  },
-  {
-   "loja": "L5",
-   "nf": "15322",
-   "forn": "LM JOAO PESSOA DISTRIBUIDORA DE CO",
-   "qt": 276,
-   "data": "2026-09-29",
-   "marcas": {
-    "Vizzela": 276
    },
    "sem_un": 0
   },
