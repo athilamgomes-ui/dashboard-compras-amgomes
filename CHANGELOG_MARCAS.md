@@ -487,3 +487,8 @@ marca mapeada ao fornecedor. Confirmado por descrição de produto (100% "TRUSS 
 EXPORTACAO LTDA). `marca_ids.json`: `Talge = [243]` (código informado pelo usuário). Motivo:
 NF 371607 (L1, 15 produtos, R$2.772) lançada 13/07 não aparecia na precificação por falta de
 mapeamento. Após mapear: 15/15 preços associados.
+
+## 2026-10-16 — Vizzela (maquiagem)
+- **marca_ids.json**: Vizzela=[1100] (Athila informou o código do ERP).
+- **fornecedor_marcas.json** (por_cnpj): 48952018000110 "LM JOAO PESSOA DISTRIBUIDORA DE COSMETICOS LTDA" -> Vizzela.
+- Motivo: NFs de precificação L3 15355/15356 e L5 15321/15322 entraram como "marca não mapeada" (base líquida matte, corretivo, pó, batom, lápis — maquiagem Vizzela; algumas linhas "PROVADOR"=tester). Após mapear, preço atual casou (L3 44/72, L5 43/66 do relatório da marca 1100). Só p/ precificação — não adicionado à curva de Compras (sem curva definida pelo Athila).
