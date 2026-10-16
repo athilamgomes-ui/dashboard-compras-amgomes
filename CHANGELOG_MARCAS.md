@@ -495,3 +495,8 @@ mapeamento. Após mapear: 15/15 preços associados.
 
 ## 2026-10-16 — MULTI BAG (uso interno)
 - **fornecedor_marcas.json** (por_cnpj): 06126316000100 "MULTI BAG IND. E COM. DE PLASTICOS LTDA" -> MultiBag (marca já em _uso_interno.marcas). Sacola/embalagem, não-revenda → sai do dashboard de precificação (NF L1 12875 estava como "marca não mapeada"). Athila: "uso interno, ignora".
+
+## 2026-10-16 — Mari Maria (1072) e Damia (927)
+- **marca_ids.json**: Mari Maria=[1072], Damia=[927] (Athila informou os códigos do ERP).
+- **fornecedor_marcas.json** (por_cnpj): 25249077000120 "MARI MARIA COSMETICOS LTDA" -> Mari Maria; 46098775000142 "DAMIA ACESSORIOS LTDA" -> Damia.
+- Motivo: NFs de precificação como "marca não mapeada" (Mari Maria L5 20367; Damia L1 6422 e L5 6423). Só p/ precificação (sem curva de Compras definida).
