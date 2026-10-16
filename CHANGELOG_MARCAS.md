@@ -500,3 +500,8 @@ mapeamento. Após mapear: 15/15 preços associados.
 - **marca_ids.json**: Mari Maria=[1072], Damia=[927] (Athila informou os códigos do ERP).
 - **fornecedor_marcas.json** (por_cnpj): 25249077000120 "MARI MARIA COSMETICOS LTDA" -> Mari Maria; 46098775000142 "DAMIA ACESSORIOS LTDA" -> Damia.
 - Motivo: NFs de precificação como "marca não mapeada" (Mari Maria L5 20367; Damia L1 6422 e L5 6423). Só p/ precificação (sem curva de Compras definida).
+
+## 2026-10-16 — Bellkit (422)
+- **marca_ids.json**: Bellkit=[422] (Athila informou; grupo único no ERP que engloba BELKIT + NEW HAIR + SWISS BEAUTY do fornecedor BRK).
+- **fornecedor_marcas.json** (por_cnpj): 11761463000192 "BRK LABORATORIOS LTDA" -> Bellkit.
+- Motivo: NF precificação L4 22028 "marca não mapeada" (romaneio pedido 23067, R$3.894,61; custo da NFe já batia 100% o romaneio — não subfaturada). Multi-marca sob 1 código, então só CNPJ basta (sem keyword). Só p/ precificação.
