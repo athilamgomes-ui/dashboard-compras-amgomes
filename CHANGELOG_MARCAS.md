@@ -492,3 +492,6 @@ mapeamento. Após mapear: 15/15 preços associados.
 - **marca_ids.json**: Vizzela=[1100] (Athila informou o código do ERP).
 - **fornecedor_marcas.json** (por_cnpj): 48952018000110 "LM JOAO PESSOA DISTRIBUIDORA DE COSMETICOS LTDA" -> Vizzela.
 - Motivo: NFs de precificação L3 15355/15356 e L5 15321/15322 entraram como "marca não mapeada" (base líquida matte, corretivo, pó, batom, lápis — maquiagem Vizzela; algumas linhas "PROVADOR"=tester). Após mapear, preço atual casou (L3 44/72, L5 43/66 do relatório da marca 1100). Só p/ precificação — não adicionado à curva de Compras (sem curva definida pelo Athila).
+
+## 2026-10-16 — MULTI BAG (uso interno)
+- **fornecedor_marcas.json** (por_cnpj): 06126316000100 "MULTI BAG IND. E COM. DE PLASTICOS LTDA" -> MultiBag (marca já em _uso_interno.marcas). Sacola/embalagem, não-revenda → sai do dashboard de precificação (NF L1 12875 estava como "marca não mapeada"). Athila: "uso interno, ignora".
