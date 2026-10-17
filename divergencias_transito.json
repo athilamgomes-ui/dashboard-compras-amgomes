@@ -217,6 +217,18 @@
   },
   {
    "loja": "L3",
+   "nf": "791444",
+   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
+   "qt": 2397,
+   "data": "2026-10-16",
+   "marcas": {
+    "Mundial": 369,
+    "Impala": 2028
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L3",
    "nf": "1213501",
    "forn": "OKAJIMA DISTRIBUICAO E COMERCIO LT",
    "qt": 622,
