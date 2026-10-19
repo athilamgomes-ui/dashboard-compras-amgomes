@@ -505,3 +505,8 @@ mapeamento. Após mapear: 15/15 preços associados.
 - **marca_ids.json**: Bellkit=[422] (Athila informou; grupo único no ERP que engloba BELKIT + NEW HAIR + SWISS BEAUTY do fornecedor BRK).
 - **fornecedor_marcas.json** (por_cnpj): 11761463000192 "BRK LABORATORIOS LTDA" -> Bellkit.
 - Motivo: NF precificação L4 22028 "marca não mapeada" (romaneio pedido 23067, R$3.894,61; custo da NFe já batia 100% o romaneio — não subfaturada). Multi-marca sob 1 código, então só CNPJ basta (sem keyword). Só p/ precificação.
+
+## 2026-10-19 — Dermachem (947)
+- **marca_ids.json**: Dermachem=[947] (Athila informou).
+- **fornecedor_marcas.json** (por_cnpj): 01140700000144 "PROLINK INDUSTRIA QUIMICA LTDA" -> Dermachem.
+- Motivo: NF precificação L4 165681 "marca não mapeada" (57 itens). Só p/ precificação.
