@@ -28,15 +28,6 @@
    "sem_un": 228
   },
   {
-   "loja": "L3",
-   "nf": "166070",
-   "forn": "PROLINK INDUSTRIA QUIMICA LTDA",
-   "qt": 720,
-   "data": "2026-10-13",
-   "marcas": {},
-   "sem_un": 720
-  },
-  {
    "loja": "L4",
    "nf": "1791",
    "forn": "VLS COMERCIO ATACADISTA DE COSMETI",
@@ -44,15 +35,6 @@
    "data": "2026-10-05",
    "marcas": {},
    "sem_un": 360
-  },
-  {
-   "loja": "L4",
-   "nf": "165681",
-   "forn": "PROLINK INDUSTRIA QUIMICA LTDA",
-   "qt": 732,
-   "data": "2026-10-07",
-   "marcas": {},
-   "sem_un": 732
   },
   {
    "loja": "L5",
@@ -80,24 +62,6 @@
    "data": "2026-10-08",
    "marcas": {},
    "sem_un": 233
-  },
-  {
-   "loja": "L5",
-   "nf": "38799",
-   "forn": "EAP COMERCIO, DISTRIBUICAO, IMP. E",
-   "qt": 288,
-   "data": "2026-09-29",
-   "marcas": {},
-   "sem_un": 288
-  },
-  {
-   "loja": "L5",
-   "nf": "166270",
-   "forn": "PROLINK INDUSTRIA QUIMICA LTDA",
-   "qt": 720,
-   "data": "2026-10-15",
-   "marcas": {},
-   "sem_un": 720
   }
  ],
  "fora_curva": [
@@ -124,6 +88,17 @@
    "sem_un": 0
   },
   {
+   "loja": "L3",
+   "nf": "166070",
+   "forn": "PROLINK INDUSTRIA QUIMICA LTDA",
+   "qt": 720,
+   "data": "2026-10-13",
+   "marcas": {
+    "Dermachem": 720
+   },
+   "sem_un": 0
+  },
+  {
    "loja": "L5",
    "nf": "22025",
    "forn": "BRK LABORATORIOS LTDA",
@@ -133,32 +108,21 @@
     "Bellkit": 240
    },
    "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "166270",
+   "forn": "PROLINK INDUSTRIA QUIMICA LTDA",
+   "qt": 720,
+   "data": "2026-10-15",
+   "marcas": {
+    "Dermachem": 720
+   },
+   "sem_un": 0
   }
  ],
  "curva_nao_refletida": [],
  "ok": [
-  {
-   "loja": "L1",
-   "nf": "15374",
-   "forn": "LM JOAO PESSOA DISTRIBUIDORA DE CO",
-   "qt": 35,
-   "data": "2026-09-30",
-   "marcas": {
-    "Vizzela": 35
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L1",
-   "nf": "15375",
-   "forn": "LM JOAO PESSOA DISTRIBUIDORA DE CO",
-   "qt": 234,
-   "data": "2026-09-30",
-   "marcas": {
-    "Vizzela": 234
-   },
-   "sem_un": 0
-  },
   {
    "loja": "L1",
    "nf": "55645",
@@ -229,14 +193,12 @@
   },
   {
    "loja": "L3",
-   "nf": "1213501",
+   "nf": "1265952",
    "forn": "OKAJIMA DISTRIBUICAO E COMERCIO LT",
-   "qt": 622,
-   "data": "2026-07-20",
+   "qt": 492,
+   "data": "2026-10-17",
    "marcas": {
-    "Tabu": 16,
-    "Risque": 594,
-    "Bozzano": 12
+    "Colorama": 492
    },
    "sem_un": 0
   },
@@ -292,17 +254,6 @@
    "data": "2026-10-11",
    "marcas": {
     "Cless": 780
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L5",
-   "nf": "42505",
-   "forn": "Maystar Cosmetica do Brasil Ltda.",
-   "qt": 343,
-   "data": "2026-09-23",
-   "marcas": {
-    "Depilflax": 343
    },
    "sem_un": 0
   }
