@@ -2,6 +2,15 @@
  "sem_marca": [
   {
    "loja": "L1",
+   "nf": "620",
+   "forn": "M. MAGALHAES DE SOUSA",
+   "qt": 4,
+   "data": "2026-10-19",
+   "marcas": {},
+   "sem_un": 4
+  },
+  {
+   "loja": "L1",
    "nf": "83763",
    "forn": "CIGEL INDUSTRIAL LTDA",
    "qt": 1316,
@@ -125,6 +134,17 @@
  "ok": [
   {
    "loja": "L1",
+   "nf": "54424",
+   "forn": "DEDC - DISTRIB DO ESPIRITO SANTO D",
+   "qt": 1391,
+   "data": "2026-10-19",
+   "marcas": {
+    "Raavi": 1391
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L1",
    "nf": "55645",
    "forn": "DEVISA COMERCIAL LTDA",
    "qt": 822,
@@ -159,28 +179,6 @@
   },
   {
    "loja": "L3",
-   "nf": "173536",
-   "forn": "MEGA BELL INDUSTRIA E COMERCIO LTD",
-   "qt": 32,
-   "data": "2026-09-25",
-   "marcas": {
-    "Mega Bell": 32
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L3",
-   "nf": "728672",
-   "forn": "SANTA CLARA MANUFATURA E COSMETICO",
-   "qt": 1242,
-   "data": "2026-09-24",
-   "marcas": {
-    "Santa Clara": 1242
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L3",
    "nf": "791444",
    "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
    "qt": 2397,
@@ -210,6 +208,17 @@
    "data": "2026-07-24",
    "marcas": {
     "Let me be": 6
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
+   "nf": "17822",
+   "forn": "DISTRIBUIDORA LITORAL COSMETICOS L",
+   "qt": 780,
+   "data": "2026-10-19",
+   "marcas": {
+    "Repos": 780
    },
    "sem_un": 0
   },
