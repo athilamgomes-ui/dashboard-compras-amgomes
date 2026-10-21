@@ -75,17 +75,6 @@
  ],
  "fora_curva": [
   {
-   "loja": "L1",
-   "nf": "50322",
-   "forn": "A M COMERCIO DE COSMETICOS LTDA",
-   "qt": 260,
-   "data": "2026-10-14",
-   "marcas": {
-    "Della&Delle": 260
-   },
-   "sem_un": 0
-  },
-  {
    "loja": "L3",
    "nf": "22029",
    "forn": "BRK LABORATORIOS LTDA",
@@ -134,6 +123,28 @@
  "ok": [
   {
    "loja": "L1",
+   "nf": "4150",
+   "forn": "MADAME LIS INDUSTRIA E COMERCIO DE",
+   "qt": 768,
+   "data": "2026-10-20",
+   "marcas": {
+    "Madame Liss": 768
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L1",
+   "nf": "28327",
+   "forn": "VISAO COSMETICOS LTDA",
+   "qt": 512,
+   "data": "2026-10-20",
+   "marcas": {
+    "Softhair": 512
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L1",
    "nf": "54424",
    "forn": "DEDC - DISTRIB DO ESPIRITO SANTO D",
    "qt": 1391,
@@ -168,6 +179,28 @@
   },
   {
    "loja": "L3",
+   "nf": "4153",
+   "forn": "MADAME LIS INDUSTRIA E COMERCIO DE",
+   "qt": 384,
+   "data": "2026-10-20",
+   "marcas": {
+    "Madame Liss": 384
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L3",
+   "nf": "17829",
+   "forn": "DISTRIBUIDORA LITORAL COSMETICOS L",
+   "qt": 468,
+   "data": "2026-10-20",
+   "marcas": {
+    "Repos": 468
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L3",
    "nf": "112041",
    "forn": "R C DISTRIBUICAO E COMERCIO LTDA",
    "qt": 17,
@@ -197,6 +230,17 @@
    "data": "2026-10-17",
    "marcas": {
     "Colorama": 492
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
+   "nf": "4151",
+   "forn": "MADAME LIS INDUSTRIA E COMERCIO DE",
+   "qt": 768,
+   "data": "2026-10-20",
+   "marcas": {
+    "Madame Liss": 768
    },
    "sem_un": 0
   },
@@ -263,6 +307,17 @@
    "data": "2026-10-11",
    "marcas": {
     "Cless": 780
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "4149",
+   "forn": "MADAME LIS INDUSTRIA E COMERCIO DE",
+   "qt": 384,
+   "data": "2026-10-20",
+   "marcas": {
+    "Madame Liss": 384
    },
    "sem_un": 0
   }
