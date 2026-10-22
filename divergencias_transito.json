@@ -75,28 +75,6 @@
  ],
  "fora_curva": [
   {
-   "loja": "L3",
-   "nf": "22029",
-   "forn": "BRK LABORATORIOS LTDA",
-   "qt": 240,
-   "data": "2026-10-08",
-   "marcas": {
-    "Bellkit": 240
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L3",
-   "nf": "166070",
-   "forn": "PROLINK INDUSTRIA QUIMICA LTDA",
-   "qt": 720,
-   "data": "2026-10-13",
-   "marcas": {
-    "Dermachem": 720
-   },
-   "sem_un": 0
-  },
-  {
    "loja": "L5",
    "nf": "22025",
    "forn": "BRK LABORATORIOS LTDA",
@@ -196,6 +174,17 @@
    "data": "2026-10-20",
    "marcas": {
     "Repos": 468
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L3",
+   "nf": "55758",
+   "forn": "DEVISA COMERCIAL LTDA",
+   "qt": 260,
+   "data": "2026-10-22",
+   "marcas": {
+    "Depimiel": 260
    },
    "sem_un": 0
   },
