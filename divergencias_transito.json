@@ -53,24 +53,6 @@
    "data": "2026-10-05",
    "marcas": {},
    "sem_un": 144
-  },
-  {
-   "loja": "L5",
-   "nf": "10297",
-   "forn": "FORTALEZA DA MAQUIAGEM DISTRIB DE ",
-   "qt": 48,
-   "data": "2026-10-08",
-   "marcas": {},
-   "sem_un": 48
-  },
-  {
-   "loja": "L5",
-   "nf": "10309",
-   "forn": "FORTALEZA DA MAQUIAGEM DISTRIB DE ",
-   "qt": 233,
-   "data": "2026-10-08",
-   "marcas": {},
-   "sem_un": 233
   }
  ],
  "fora_curva": [
@@ -235,17 +217,6 @@
   },
   {
    "loja": "L4",
-   "nf": "17281",
-   "forn": "LMB COSMETICOS LTDA",
-   "qt": 6,
-   "data": "2026-07-24",
-   "marcas": {
-    "Let me be": 6
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L4",
    "nf": "17822",
    "forn": "DISTRIBUIDORA LITORAL COSMETICOS L",
    "qt": 780,
@@ -263,6 +234,17 @@
    "data": "2026-09-15",
    "marcas": {
     "Dona Pele": 150
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
+   "nf": "28353",
+   "forn": "VISAO COSMETICOS LTDA",
+   "qt": 770,
+   "data": "2026-10-22",
+   "marcas": {
+    "Softhair": 770
    },
    "sem_un": 0
   },
@@ -307,6 +289,17 @@
    "data": "2026-10-20",
    "marcas": {
     "Madame Liss": 384
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "35007",
+   "forn": "BLUE COSMETICS COMERCIO E DISTRIBU",
+   "qt": 498,
+   "data": "2026-10-22",
+   "marcas": {
+    "Widi Care": 498
    },
    "sem_un": 0
   }
