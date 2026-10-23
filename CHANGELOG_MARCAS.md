@@ -510,3 +510,8 @@ mapeamento. Após mapear: 15/15 preços associados.
 - **marca_ids.json**: Dermachem=[947] (Athila informou).
 - **fornecedor_marcas.json** (por_cnpj): 01140700000144 "PROLINK INDUSTRIA QUIMICA LTDA" -> Dermachem.
 - Motivo: NF precificação L4 165681 "marca não mapeada" (57 itens). Só p/ precificação.
+
+## 2026-10-23 — Face Beautiful (979)
+- **marca_ids.json**: Face Beautiful=[979] (Athila informou; grupo único no ERP do fornecedor Fortaleza da Maquiagem / Grupo Raotes — engloba Face Beautiful/Lovely/JUPXT/BeautyLoo/You Se Me).
+- **fornecedor_marcas.json** (por_cnpj): 58137453000144 "FORTALEZA DA MAQUIAGEM DISTRIB DE COSMET E ACESSORIOS LTDA" -> Face Beautiful.
+- Motivo: NF precificação L5 10309 subfaturada (20% do real; multiplicador_custo=5 em precificacao_ajustes_nf.json) + marca não mapeada. Só p/ precificação.
