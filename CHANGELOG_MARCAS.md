@@ -515,3 +515,8 @@ mapeamento. Após mapear: 15/15 preços associados.
 - **marca_ids.json**: Face Beautiful=[979] (Athila informou; grupo único no ERP do fornecedor Fortaleza da Maquiagem / Grupo Raotes — engloba Face Beautiful/Lovely/JUPXT/BeautyLoo/You Se Me).
 - **fornecedor_marcas.json** (por_cnpj): 58137453000144 "FORTALEZA DA MAQUIAGEM DISTRIB DE COSMET E ACESSORIOS LTDA" -> Face Beautiful.
 - Motivo: NF precificação L5 10309 subfaturada (20% do real; multiplicador_custo=5 em precificacao_ajustes_nf.json) + marca não mapeada. Só p/ precificação.
+
+## 2026-10-27 — Magic Color (861)
+- **VLS COMERCIO ATACADISTA DE COSMETICOS LTDA** (CNPJ 35602918000195) → **Magic Color**, código ERP **861**.
+- Motivo: NF **1790** entrou na L5 em 27/10 como *marca não mapeada* no dashboard de precificação; Athila informou a marca/código.
+- Alterações: `marca_ids.json` (Magic Color=[861]) + `fornecedor_marcas.json` `por_cnpj`.
