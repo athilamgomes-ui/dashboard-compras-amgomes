@@ -520,3 +520,8 @@ mapeamento. Após mapear: 15/15 preços associados.
 - **VLS COMERCIO ATACADISTA DE COSMETICOS LTDA** (CNPJ 35602918000195) → **Magic Color**, código ERP **861**.
 - Motivo: NF **1790** entrou na L5 em 27/10 como *marca não mapeada* no dashboard de precificação; Athila informou a marca/código.
 - Alterações: `marca_ids.json` (Magic Color=[861]) + `fornecedor_marcas.json` `por_cnpj`.
+
+## 2026-10-30 — Alyne (962)
+- **CIGEL INDUSTRIAL LTDA** (CNPJ 03773027000105) → **Alyne**, código ERP **962**.
+- Motivo: NF **83763** entrou na L1 (R$ 12.876, 66 itens) como *marca não mapeada* no dashboard de precificação; Athila informou.
+- Alterações: `marca_ids.json` (Alyne=[962]) + `fornecedor_marcas.json` `por_cnpj`.
