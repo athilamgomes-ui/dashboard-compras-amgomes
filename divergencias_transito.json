@@ -11,12 +11,12 @@
   },
   {
    "loja": "L1",
-   "nf": "83763",
-   "forn": "CIGEL INDUSTRIAL LTDA",
-   "qt": 1316,
-   "data": "2026-10-15",
+   "nf": "10133",
+   "forn": "F. F. FISCHER LTDA",
+   "qt": 2,
+   "data": "2026-10-27",
    "marcas": {},
-   "sem_un": 1316
+   "sem_un": 2
   },
   {
    "loja": "L3",
@@ -28,42 +28,51 @@
    "sem_un": 1
   },
   {
-   "loja": "L3",
-   "nf": "1792",
-   "forn": "VLS COMERCIO ATACADISTA DE COSMETI",
-   "qt": 228,
-   "data": "2026-10-05",
+   "loja": "L4",
+   "nf": "140",
+   "forn": "JS ALTAMIRA COMERCIO DE PNEUS LTDA",
+   "qt": 8,
+   "data": "2026-10-26",
    "marcas": {},
-   "sem_un": 228
+   "sem_un": 8
   },
+  {
+   "loja": "L4",
+   "nf": "5349",
+   "forn": "LUCKY GIRL IMPORTACAO E EXPORTACAO",
+   "qt": 45,
+   "data": "2026-10-26",
+   "marcas": {},
+   "sem_un": 45
+  },
+  {
+   "loja": "L4",
+   "nf": "28878",
+   "forn": "W R DA GAMA LTDA",
+   "qt": 52,
+   "data": "2026-10-29",
+   "marcas": {},
+   "sem_un": 52
+  },
+  {
+   "loja": "L4",
+   "nf": "217491",
+   "forn": "PMZ DISTRIBUIDORA S.A",
+   "qt": 1,
+   "data": "2026-10-26",
+   "marcas": {},
+   "sem_un": 1
+  }
+ ],
+ "fora_curva": [
   {
    "loja": "L4",
    "nf": "1791",
    "forn": "VLS COMERCIO ATACADISTA DE COSMETI",
    "qt": 360,
    "data": "2026-10-05",
-   "marcas": {},
-   "sem_un": 360
-  },
-  {
-   "loja": "L5",
-   "nf": "1790",
-   "forn": "VLS COMERCIO ATACADISTA DE COSMETI",
-   "qt": 144,
-   "data": "2026-10-05",
-   "marcas": {},
-   "sem_un": 144
-  }
- ],
- "fora_curva": [
-  {
-   "loja": "L5",
-   "nf": "22025",
-   "forn": "BRK LABORATORIOS LTDA",
-   "qt": 240,
-   "data": "2026-10-08",
    "marcas": {
-    "Bellkit": 240
+    "Magic Color": 360
    },
    "sem_un": 0
   },
@@ -83,14 +92,14 @@
  "ok": [
   {
    "loja": "L1",
-   "nf": "4150",
-   "forn": "MADAME LIS INDUSTRIA E COMERCIO DE",
-   "qt": 768,
-   "data": "2026-10-20",
+   "nf": "27473",
+   "forn": "MCR PROFESSIONAL COMERCIO DE ARTIG",
+   "qt": 54,
+   "data": "2026-10-29",
    "marcas": {
-    "Madame Liss": 768
+    "MQ": 44
    },
-   "sem_un": 0
+   "sem_un": 10
   },
   {
    "loja": "L1",
@@ -100,6 +109,17 @@
    "data": "2026-10-20",
    "marcas": {
     "Softhair": 512
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L1",
+   "nf": "40644",
+   "forn": "IMBECOR Produtos de Beleza Ltda.",
+   "qt": 457,
+   "data": "2026-10-27",
+   "marcas": {
+    "Kiss": 457
    },
    "sem_un": 0
   },
@@ -127,24 +147,34 @@
   },
   {
    "loja": "L1",
-   "nf": "789848",
-   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
-   "qt": 2654,
-   "data": "2026-10-07",
+   "nf": "106553",
+   "forn": "EL BEAUTY COSMETICOS COMERCIO IMPO",
+   "qt": 493,
+   "data": "2026-10-23",
    "marcas": {
-    "Mundial": 596,
-    "Impala": 2058
+    "Felps": 493
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L1",
+   "nf": "206122",
+   "forn": "Network Beauty Fashion Cosmetica L",
+   "qt": 937,
+   "data": "2026-10-29",
+   "marcas": {
+    "Itallian": 937
    },
    "sem_un": 0
   },
   {
    "loja": "L3",
-   "nf": "4153",
-   "forn": "MADAME LIS INDUSTRIA E COMERCIO DE",
-   "qt": 384,
-   "data": "2026-10-20",
+   "nf": "52",
+   "forn": "PALLOMA BROQUINI PINTO",
+   "qt": 224,
+   "data": "2026-10-28",
    "marcas": {
-    "Madame Liss": 384
+    "Natum": 224
    },
    "sem_un": 0
   },
@@ -156,6 +186,17 @@
    "data": "2026-10-20",
    "marcas": {
     "Repos": 468
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L3",
+   "nf": "40541",
+   "forn": "IMBECOR Produtos de Beleza Ltda.",
+   "qt": 496,
+   "data": "2026-10-27",
+   "marcas": {
+    "Kiss": 496
    },
    "sem_un": 0
   },
@@ -194,24 +235,24 @@
    "sem_un": 0
   },
   {
-   "loja": "L3",
-   "nf": "1265952",
-   "forn": "OKAJIMA DISTRIBUICAO E COMERCIO LT",
-   "qt": 492,
-   "data": "2026-10-17",
+   "loja": "L4",
+   "nf": "16394",
+   "forn": "LM JOAO PESSOA DISTRIBUIDORA DE CO",
+   "qt": 282,
+   "data": "2026-10-23",
    "marcas": {
-    "Colorama": 492
+    "Vizzela": 282
    },
    "sem_un": 0
   },
   {
    "loja": "L4",
-   "nf": "4151",
-   "forn": "MADAME LIS INDUSTRIA E COMERCIO DE",
-   "qt": 768,
-   "data": "2026-10-20",
+   "nf": "16396",
+   "forn": "LM JOAO PESSOA DISTRIBUIDORA DE CO",
+   "qt": 35,
+   "data": "2026-10-23",
    "marcas": {
-    "Madame Liss": 768
+    "Vizzela": 35
    },
    "sem_un": 0
   },
@@ -250,6 +291,17 @@
   },
   {
    "loja": "L4",
+   "nf": "40642",
+   "forn": "IMBECOR Produtos de Beleza Ltda.",
+   "qt": 452,
+   "data": "2026-10-27",
+   "marcas": {
+    "Kiss": 452
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
    "nf": "115928",
    "forn": "Tricosmeticos Distribuidora de Cos",
    "qt": 120,
@@ -282,6 +334,28 @@
    "sem_un": 0
   },
   {
+   "loja": "L4",
+   "nf": "224269",
+   "forn": "LOGIKA DISTRIBUIDORA DE COSMETICOS",
+   "qt": 1434,
+   "data": "2026-10-23",
+   "marcas": {
+    "Beauty Color": 1434
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "1401",
+   "forn": "HAUSEN E SCHULTZ COMERCIAL LTDA",
+   "qt": 80,
+   "data": "2026-10-29",
+   "marcas": {
+    "Dagua Natural": 80
+   },
+   "sem_un": 0
+  },
+  {
    "loja": "L5",
    "nf": "4149",
    "forn": "MADAME LIS INDUSTRIA E COMERCIO DE",
@@ -300,6 +374,17 @@
    "data": "2026-10-22",
    "marcas": {
     "Widi Care": 498
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "55816",
+   "forn": "DEVISA COMERCIAL LTDA",
+   "qt": 372,
+   "data": "2026-10-27",
+   "marcas": {
+    "Depimiel": 372
    },
    "sem_un": 0
   }
