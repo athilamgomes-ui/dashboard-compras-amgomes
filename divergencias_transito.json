@@ -47,6 +47,15 @@
   },
   {
    "loja": "L4",
+   "nf": "27971",
+   "forn": "COLORCENTER TINTAS LTDA",
+   "qt": 13,
+   "data": "2026-10-30",
+   "marcas": {},
+   "sem_un": 13
+  },
+  {
+   "loja": "L4",
    "nf": "28878",
    "forn": "W R DA GAMA LTDA",
    "qt": 52,
@@ -280,6 +289,17 @@
   },
   {
    "loja": "L4",
+   "nf": "23604",
+   "forn": "CHROMA COSMETICOS LTDA",
+   "qt": 150,
+   "data": "2026-10-30",
+   "marcas": {
+    "Dona Pele": 150
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
    "nf": "28353",
    "forn": "VISAO COSMETICOS LTDA",
    "qt": 770,
@@ -385,6 +405,28 @@
    "data": "2026-10-27",
    "marcas": {
     "Depimiel": 372
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "119085",
+   "forn": "Tricosmeticos Distribuidora de Cos",
+   "qt": 198,
+   "data": "2026-10-31",
+   "marcas": {
+    "Cadiveu": 198
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "119126",
+   "forn": "Tricosmeticos Distribuidora de Cos",
+   "qt": 76,
+   "data": "2026-10-31",
+   "marcas": {
+    "Cadiveu": 76
    },
    "sem_un": 0
   }
