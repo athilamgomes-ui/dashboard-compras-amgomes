@@ -65,12 +65,48 @@
   },
   {
    "loja": "L4",
+   "nf": "138455",
+   "forn": "TELEFONICA BRASIL S.A.",
+   "qt": 1,
+   "data": "2026-10-31",
+   "marcas": {},
+   "sem_un": 1
+  },
+  {
+   "loja": "L4",
    "nf": "217491",
    "forn": "PMZ DISTRIBUIDORA S.A",
    "qt": 1,
    "data": "2026-10-26",
    "marcas": {},
    "sem_un": 1
+  },
+  {
+   "loja": "L5",
+   "nf": "1287071",
+   "forn": "BELLIZ IND. COM. IMP. E EXP. LTDA",
+   "qt": 202,
+   "data": "2026-10-31",
+   "marcas": {},
+   "sem_un": 202
+  },
+  {
+   "loja": "L5",
+   "nf": "1287072",
+   "forn": "BELLIZ IND. COM. IMP. E EXP. LTDA",
+   "qt": 48,
+   "data": "2026-10-31",
+   "marcas": {},
+   "sem_un": 48
+  },
+  {
+   "loja": "L5",
+   "nf": "1287074",
+   "forn": "BELLIZ IND. COM. IMP. E EXP. LTDA",
+   "qt": 36,
+   "data": "2026-10-31",
+   "marcas": {},
+   "sem_un": 36
   }
  ],
  "fora_curva": [
@@ -129,6 +165,18 @@
    "data": "2026-10-27",
    "marcas": {
     "Kiss": 457
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L1",
+   "nf": "41602",
+   "forn": "IMBECOR Produtos de Beleza Ltda.",
+   "qt": 318,
+   "data": "2026-10-31",
+   "marcas": {
+    "Kiss": 312,
+    "Bruna Tavares": 6
    },
    "sem_un": 0
   },
@@ -322,6 +370,18 @@
   },
   {
    "loja": "L4",
+   "nf": "41546",
+   "forn": "IMBECOR Produtos de Beleza Ltda.",
+   "qt": 318,
+   "data": "2026-10-31",
+   "marcas": {
+    "Kiss": 312,
+    "Bruna Tavares": 6
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
    "nf": "115928",
    "forn": "Tricosmeticos Distribuidora de Cos",
    "qt": 120,
@@ -339,6 +399,17 @@
    "data": "2026-10-15",
    "marcas": {
     "Cadiveu": 740
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
+   "nf": "119253",
+   "forn": "Tricosmeticos Distribuidora de Cos",
+   "qt": 24,
+   "data": "2026-10-31",
+   "marcas": {
+    "Cadiveu": 24
    },
    "sem_un": 0
   },
@@ -394,6 +465,17 @@
    "data": "2026-10-22",
    "marcas": {
     "Widi Care": 498
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "41387",
+   "forn": "IMBECOR Produtos de Beleza Ltda.",
+   "qt": 521,
+   "data": "2026-10-31",
+   "marcas": {
+    "Kiss": 521
    },
    "sem_un": 0
   },
