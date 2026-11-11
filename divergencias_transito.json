@@ -11,12 +11,48 @@
   },
   {
    "loja": "L1",
+   "nf": "4533",
+   "forn": "INOVARE COMERCIO DE COSMETICOS LTD",
+   "qt": 195,
+   "data": "2026-11-06",
+   "marcas": {},
+   "sem_un": 195
+  },
+  {
+   "loja": "L1",
+   "nf": "4550",
+   "forn": "INOVARE COMERCIO DE COSMETICOS LTD",
+   "qt": 216,
+   "data": "2026-11-06",
+   "marcas": {},
+   "sem_un": 216
+  },
+  {
+   "loja": "L1",
    "nf": "10133",
    "forn": "F. F. FISCHER LTDA",
    "qt": 2,
    "data": "2026-10-27",
    "marcas": {},
    "sem_un": 2
+  },
+  {
+   "loja": "L1",
+   "nf": "39341",
+   "forn": "EAP COMERCIO, DISTRIBUICAO, IMP. E",
+   "qt": 294,
+   "data": "2026-11-04",
+   "marcas": {},
+   "sem_un": 294
+  },
+  {
+   "loja": "L1",
+   "nf": "39397",
+   "forn": "EAP COMERCIO, DISTRIBUICAO, IMP. E",
+   "qt": 526,
+   "data": "2026-11-10",
+   "marcas": {},
+   "sem_un": 526
   },
   {
    "loja": "L3",
@@ -38,15 +74,6 @@
   },
   {
    "loja": "L4",
-   "nf": "5349",
-   "forn": "LUCKY GIRL IMPORTACAO E EXPORTACAO",
-   "qt": 45,
-   "data": "2026-10-26",
-   "marcas": {},
-   "sem_un": 45
-  },
-  {
-   "loja": "L4",
    "nf": "27971",
    "forn": "COLORCENTER TINTAS LTDA",
    "qt": 13,
@@ -65,6 +92,15 @@
   },
   {
    "loja": "L4",
+   "nf": "39338",
+   "forn": "EAP COMERCIO, DISTRIBUICAO, IMP. E",
+   "qt": 294,
+   "data": "2026-11-04",
+   "marcas": {},
+   "sem_un": 294
+  },
+  {
+   "loja": "L4",
    "nf": "138455",
    "forn": "TELEFONICA BRASIL S.A.",
    "qt": 1,
@@ -80,6 +116,15 @@
    "data": "2026-10-26",
    "marcas": {},
    "sem_un": 1
+  },
+  {
+   "loja": "L5",
+   "nf": "39398",
+   "forn": "EAP COMERCIO, DISTRIBUICAO, IMP. E",
+   "qt": 738,
+   "data": "2026-11-10",
+   "marcas": {},
+   "sem_un": 738
   },
   {
    "loja": "L5",
@@ -111,30 +156,52 @@
  ],
  "fora_curva": [
   {
-   "loja": "L4",
-   "nf": "1791",
-   "forn": "VLS COMERCIO ATACADISTA DE COSMETI",
-   "qt": 360,
-   "data": "2026-10-05",
+   "loja": "L1",
+   "nf": "22257",
+   "forn": "BRK LABORATORIOS LTDA",
+   "qt": 258,
+   "data": "2026-11-03",
    "marcas": {
-    "Magic Color": 360
+    "Bellkit": 258
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
+   "nf": "22258",
+   "forn": "BRK LABORATORIOS LTDA",
+   "qt": 258,
+   "data": "2026-11-03",
+   "marcas": {
+    "Bellkit": 258
    },
    "sem_un": 0
   },
   {
    "loja": "L5",
-   "nf": "166270",
-   "forn": "PROLINK INDUSTRIA QUIMICA LTDA",
-   "qt": 720,
-   "data": "2026-10-15",
+   "nf": "22256",
+   "forn": "BRK LABORATORIOS LTDA",
+   "qt": 739,
+   "data": "2026-11-03",
    "marcas": {
-    "Dermachem": 720
+    "Bellkit": 739
    },
    "sem_un": 0
   }
  ],
  "curva_nao_refletida": [],
  "ok": [
+  {
+   "loja": "L1",
+   "nf": "53",
+   "forn": "PALLOMA BROQUINI PINTO",
+   "qt": 1343,
+   "data": "2026-11-05",
+   "marcas": {
+    "Natum": 1343
+   },
+   "sem_un": 0
+  },
   {
    "loja": "L1",
    "nf": "27473",
@@ -145,17 +212,6 @@
     "MQ": 44
    },
    "sem_un": 10
-  },
-  {
-   "loja": "L1",
-   "nf": "28327",
-   "forn": "VISAO COSMETICOS LTDA",
-   "qt": 512,
-   "data": "2026-10-20",
-   "marcas": {
-    "Softhair": 512
-   },
-   "sem_un": 0
   },
   {
    "loja": "L1",
@@ -177,17 +233,6 @@
    "marcas": {
     "Kiss": 312,
     "Bruna Tavares": 6
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L1",
-   "nf": "54424",
-   "forn": "DEDC - DISTRIB DO ESPIRITO SANTO D",
-   "qt": 1391,
-   "data": "2026-10-19",
-   "marcas": {
-    "Raavi": 1391
    },
    "sem_un": 0
   },
@@ -215,6 +260,17 @@
   },
   {
    "loja": "L1",
+   "nf": "148209",
+   "forn": "BECOREL BELEZA COMERCIO DE COSMETI",
+   "qt": 394,
+   "data": "2026-11-04",
+   "marcas": {
+    "Igora": 394
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L1",
    "nf": "206122",
    "forn": "Network Beauty Fashion Cosmetica L",
    "qt": 937,
@@ -232,17 +288,6 @@
    "data": "2026-10-28",
    "marcas": {
     "Natum": 224
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L3",
-   "nf": "17829",
-   "forn": "DISTRIBUIDORA LITORAL COSMETICOS L",
-   "qt": 468,
-   "data": "2026-10-20",
-   "marcas": {
-    "Repos": 468
    },
    "sem_un": 0
   },
@@ -281,6 +326,17 @@
   },
   {
    "loja": "L3",
+   "nf": "148190",
+   "forn": "BECOREL BELEZA COMERCIO DE COSMETI",
+   "qt": 746,
+   "data": "2026-11-04",
+   "marcas": {
+    "Igora": 746
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L3",
    "nf": "791444",
    "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
    "qt": 2397,
@@ -293,36 +349,27 @@
   },
   {
    "loja": "L4",
-   "nf": "16394",
-   "forn": "LM JOAO PESSOA DISTRIBUIDORA DE CO",
-   "qt": 282,
-   "data": "2026-10-23",
+   "nf": "58",
+   "forn": "PALLOMA BROQUINI PINTO",
+   "qt": 1923,
+   "data": "2026-11-06",
    "marcas": {
-    "Vizzela": 282
+    "Natum": 744,
+    "Hair Extrattus": 1167
    },
-   "sem_un": 0
+   "sem_un": 12
   },
   {
    "loja": "L4",
-   "nf": "16396",
-   "forn": "LM JOAO PESSOA DISTRIBUIDORA DE CO",
-   "qt": 35,
-   "data": "2026-10-23",
+   "nf": "1018",
+   "forn": "FRANCA PLUS COMERCIO DE COSMETICOS",
+   "qt": 876,
+   "data": "2026-11-06",
    "marcas": {
-    "Vizzela": 35
+    "Varcare": 260,
+    "Nathydras": 288
    },
-   "sem_un": 0
-  },
-  {
-   "loja": "L4",
-   "nf": "17822",
-   "forn": "DISTRIBUIDORA LITORAL COSMETICOS L",
-   "qt": 780,
-   "data": "2026-10-19",
-   "marcas": {
-    "Repos": 780
-   },
-   "sem_un": 0
+   "sem_un": 328
   },
   {
    "loja": "L4",
@@ -382,28 +429,6 @@
   },
   {
    "loja": "L4",
-   "nf": "115928",
-   "forn": "Tricosmeticos Distribuidora de Cos",
-   "qt": 120,
-   "data": "2026-10-15",
-   "marcas": {
-    "Cadiveu": 120
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L4",
-   "nf": "115929",
-   "forn": "Tricosmeticos Distribuidora de Cos",
-   "qt": 740,
-   "data": "2026-10-15",
-   "marcas": {
-    "Cadiveu": 740
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L4",
    "nf": "119253",
    "forn": "Tricosmeticos Distribuidora de Cos",
    "qt": 24,
@@ -415,12 +440,12 @@
   },
   {
    "loja": "L4",
-   "nf": "135043",
-   "forn": "CLESS COMERCIO DE COSMETICOS LTDA",
-   "qt": 780,
-   "data": "2026-10-11",
+   "nf": "148216",
+   "forn": "BECOREL BELEZA COMERCIO DE COSMETI",
+   "qt": 394,
+   "data": "2026-11-04",
    "marcas": {
-    "Cless": 780
+    "Igora": 394
    },
    "sem_un": 0
   },
@@ -432,6 +457,39 @@
    "data": "2026-10-23",
    "marcas": {
     "Beauty Color": 1434
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
+   "nf": "796537",
+   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
+   "qt": 2628,
+   "data": "2026-11-10",
+   "marcas": {
+    "Impala": 2628
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "55",
+   "forn": "PALLOMA BROQUINI PINTO",
+   "qt": 381,
+   "data": "2026-11-05",
+   "marcas": {
+    "Natum": 381
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "56",
+   "forn": "PALLOMA BROQUINI PINTO",
+   "qt": 282,
+   "data": "2026-11-05",
+   "marcas": {
+    "Hair Extrattus": 282
    },
    "sem_un": 0
   },
@@ -448,12 +506,12 @@
   },
   {
    "loja": "L5",
-   "nf": "4149",
-   "forn": "MADAME LIS INDUSTRIA E COMERCIO DE",
-   "qt": 384,
-   "data": "2026-10-20",
+   "nf": "3037",
+   "forn": "CBB INDUSTRIA E COMERCIO DE PRODUT",
+   "qt": 828,
+   "data": "2026-11-10",
    "marcas": {
-    "Madame Liss": 384
+    "CBB": 828
    },
    "sem_un": 0
   },
@@ -509,6 +567,17 @@
    "data": "2026-10-31",
    "marcas": {
     "Cadiveu": 76
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "148189",
+   "forn": "BECOREL BELEZA COMERCIO DE COSMETI",
+   "qt": 478,
+   "data": "2026-11-04",
+   "marcas": {
+    "Igora": 478
    },
    "sem_un": 0
   }
