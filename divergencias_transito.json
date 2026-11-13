@@ -304,17 +304,6 @@
   },
   {
    "loja": "L3",
-   "nf": "55758",
-   "forn": "DEVISA COMERCIAL LTDA",
-   "qt": 260,
-   "data": "2026-10-22",
-   "marcas": {
-    "Depimiel": 260
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L3",
    "nf": "112041",
    "forn": "R C DISTRIBUICAO E COMERCIO LTDA",
    "qt": 17,
@@ -462,6 +451,17 @@
   },
   {
    "loja": "L4",
+   "nf": "226190",
+   "forn": "LOGIKA DISTRIBUIDORA DE COSMETICOS",
+   "qt": 1200,
+   "data": "2026-11-12",
+   "marcas": {
+    "Beauty Color": 1200
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L4",
    "nf": "796537",
    "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
    "qt": 2628,
@@ -517,6 +517,17 @@
   },
   {
    "loja": "L5",
+   "nf": "16786",
+   "forn": "BROKER CARAJAS DISTRIBUIDORA LTDA",
+   "qt": 136,
+   "data": "2026-11-11",
+   "marcas": {
+    "Truss": 136
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
    "nf": "35007",
    "forn": "BLUE COSMETICS COMERCIO E DISTRIBU",
    "qt": 498,
@@ -534,17 +545,6 @@
    "data": "2026-10-31",
    "marcas": {
     "Kiss": 521
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L5",
-   "nf": "55816",
-   "forn": "DEVISA COMERCIAL LTDA",
-   "qt": 372,
-   "data": "2026-10-27",
-   "marcas": {
-    "Depimiel": 372
    },
    "sem_un": 0
   },
@@ -578,6 +578,28 @@
    "data": "2026-11-04",
    "marcas": {
     "Igora": 478
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "711154",
+   "forn": "FLORENCE INDUSTRIAL E COMERCIAL LT",
+   "qt": 269,
+   "data": "2026-11-12",
+   "marcas": {
+    "Marco Boni": 269
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "711155",
+   "forn": "FLORENCE INDUSTRIAL E COMERCIAL LT",
+   "qt": 138,
+   "data": "2026-11-12",
+   "marcas": {
+    "Marco Boni": 138
    },
    "sem_un": 0
   }
