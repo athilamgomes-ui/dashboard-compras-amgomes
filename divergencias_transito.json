@@ -55,6 +55,15 @@
    "sem_un": 526
   },
   {
+   "loja": "L1",
+   "nf": "168802",
+   "forn": "LABOTRAT DISTRIBUIDORA DE PRODUTOS",
+   "qt": 504,
+   "data": "2026-11-13",
+   "marcas": {},
+   "sem_un": 504
+  },
+  {
    "loja": "L3",
    "nf": "101",
    "forn": "L F TRINDADE SERVICOS DE REFRIGERA",
@@ -125,6 +134,15 @@
    "data": "2026-11-10",
    "marcas": {},
    "sem_un": 738
+  },
+  {
+   "loja": "L5",
+   "nf": "168773",
+   "forn": "LABOTRAT DISTRIBUIDORA DE PRODUTOS",
+   "qt": 756,
+   "data": "2026-11-13",
+   "marcas": {},
+   "sem_un": 756
   },
   {
    "loja": "L5",
@@ -204,14 +222,14 @@
   },
   {
    "loja": "L1",
-   "nf": "27473",
-   "forn": "MCR PROFESSIONAL COMERCIO DE ARTIG",
-   "qt": 54,
-   "data": "2026-10-29",
+   "nf": "197",
+   "forn": "DISTRIBUIDORA DE COSMETICOS TIBIA ",
+   "qt": 36,
+   "data": "2026-11-13",
    "marcas": {
-    "MQ": 44
+    "Wella": 36
    },
-   "sem_un": 10
+   "sem_un": 0
   },
   {
    "loja": "L1",
@@ -238,17 +256,6 @@
   },
   {
    "loja": "L1",
-   "nf": "55645",
-   "forn": "DEVISA COMERCIAL LTDA",
-   "qt": 822,
-   "data": "2026-10-15",
-   "marcas": {
-    "Depimiel": 822
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L1",
    "nf": "106553",
    "forn": "EL BEAUTY COSMETICOS COMERCIO IMPO",
    "qt": 493,
@@ -270,17 +277,6 @@
    "sem_un": 0
   },
   {
-   "loja": "L1",
-   "nf": "206122",
-   "forn": "Network Beauty Fashion Cosmetica L",
-   "qt": 937,
-   "data": "2026-10-29",
-   "marcas": {
-    "Itallian": 937
-   },
-   "sem_un": 0
-  },
-  {
    "loja": "L3",
    "nf": "52",
    "forn": "PALLOMA BROQUINI PINTO",
@@ -288,6 +284,17 @@
    "data": "2026-10-28",
    "marcas": {
     "Natum": 224
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L3",
+   "nf": "196",
+   "forn": "DISTRIBUIDORA DE COSMETICOS TIBIA ",
+   "qt": 36,
+   "data": "2026-11-13",
+   "marcas": {
+    "Wella": 36
    },
    "sem_un": 0
   },
@@ -495,6 +502,17 @@
   },
   {
    "loja": "L5",
+   "nf": "195",
+   "forn": "DISTRIBUIDORA DE COSMETICOS TIBIA ",
+   "qt": 36,
+   "data": "2026-11-13",
+   "marcas": {
+    "Wella": 36
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
    "nf": "1401",
    "forn": "HAUSEN E SCHULTZ COMERCIAL LTDA",
    "qt": 80,
@@ -600,6 +618,18 @@
    "data": "2026-11-12",
    "marcas": {
     "Marco Boni": 138
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "798059",
+   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
+   "qt": 1592,
+   "data": "2026-11-14",
+   "marcas": {
+    "Impala": 1284,
+    "Mundial": 308
    },
    "sem_un": 0
   }
