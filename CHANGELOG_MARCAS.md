@@ -525,3 +525,8 @@ mapeamento. Após mapear: 15/15 preços associados.
 - **CIGEL INDUSTRIAL LTDA** (CNPJ 03773027000105) → **Alyne**, código ERP **962**.
 - Motivo: NF **83763** entrou na L1 (R$ 12.876, 66 itens) como *marca não mapeada* no dashboard de precificação; Athila informou.
 - Alterações: `marca_ids.json` (Alyne=[962]) + `fornecedor_marcas.json` `por_cnpj`.
+
+## 2026-11-16 — MQ (930)
+- **MCR PROFESSIONAL COMERCIO DE ARTIGOS DE TOUCADOR LTDA** (CNPJ 24742869000250) → **MQ**, código ERP **930**.
+- Motivo: NF **27473** entrou na L1 (R$ 12.126, 13 itens) como *marca não mapeada* no dashboard de precificação; Athila informou.
+- Alterações: `marca_ids.json` (MQ=[930]) + `fornecedor_marcas.json` `por_cnpj`.
