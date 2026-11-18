@@ -546,6 +546,17 @@
   },
   {
    "loja": "L5",
+   "nf": "18164",
+   "forn": "DISTRIBUIDORA LITORAL COSMETICOS L",
+   "qt": 510,
+   "data": "2026-11-16",
+   "marcas": {
+    "Repos": 510
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
    "nf": "35007",
    "forn": "BLUE COSMETICS COMERCIO E DISTRIBU",
    "qt": 498,
