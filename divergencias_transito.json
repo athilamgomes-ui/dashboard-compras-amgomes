@@ -73,6 +73,15 @@
    "sem_un": 1
   },
   {
+   "loja": "L3",
+   "nf": "169518",
+   "forn": "LABOTRAT DISTRIBUIDORA DE PRODUTOS",
+   "qt": 691,
+   "data": "2026-11-18",
+   "marcas": {},
+   "sem_un": 691
+  },
+  {
    "loja": "L4",
    "nf": "140",
    "forn": "JS ALTAMIRA COMERCIO DE PNEUS LTDA",
@@ -116,6 +125,15 @@
    "data": "2026-10-31",
    "marcas": {},
    "sem_un": 1
+  },
+  {
+   "loja": "L4",
+   "nf": "169572",
+   "forn": "LABOTRAT DISTRIBUIDORA DE PRODUTOS",
+   "qt": 556,
+   "data": "2026-11-18",
+   "marcas": {},
+   "sem_un": 556
   },
   {
    "loja": "L4",
@@ -233,17 +251,6 @@
   },
   {
    "loja": "L1",
-   "nf": "40644",
-   "forn": "IMBECOR Produtos de Beleza Ltda.",
-   "qt": 457,
-   "data": "2026-10-27",
-   "marcas": {
-    "Kiss": 457
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L1",
    "nf": "41602",
    "forn": "IMBECOR Produtos de Beleza Ltda.",
    "qt": 318,
@@ -332,18 +339,6 @@
    "sem_un": 0
   },
   {
-   "loja": "L3",
-   "nf": "791444",
-   "forn": "MUNDIAL DISTRIBUIDORA DE PRODUTOS ",
-   "qt": 2397,
-   "data": "2026-10-16",
-   "marcas": {
-    "Mundial": 369,
-    "Impala": 2028
-   },
-   "sem_un": 0
-  },
-  {
    "loja": "L4",
    "nf": "58",
    "forn": "PALLOMA BROQUINI PINTO",
@@ -354,18 +349,6 @@
     "Hair Extrattus": 1167
    },
    "sem_un": 12
-  },
-  {
-   "loja": "L4",
-   "nf": "1018",
-   "forn": "FRANCA PLUS COMERCIO DE COSMETICOS",
-   "qt": 876,
-   "data": "2026-11-06",
-   "marcas": {
-    "Varcare": 260,
-    "Nathydras": 288
-   },
-   "sem_un": 328
   },
   {
    "loja": "L4",
@@ -397,17 +380,6 @@
    "data": "2026-10-22",
    "marcas": {
     "Softhair": 770
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L4",
-   "nf": "40642",
-   "forn": "IMBECOR Produtos de Beleza Ltda.",
-   "qt": 452,
-   "data": "2026-10-27",
-   "marcas": {
-    "Kiss": 452
    },
    "sem_un": 0
   },
@@ -535,12 +507,12 @@
   },
   {
    "loja": "L5",
-   "nf": "16786",
-   "forn": "BROKER CARAJAS DISTRIBUIDORA LTDA",
-   "qt": 136,
-   "data": "2026-11-11",
+   "nf": "15711",
+   "forn": "GARDO COSMETICOS LTDA",
+   "qt": 144,
+   "data": "2026-11-17",
    "marcas": {
-    "Truss": 136
+    "La Bening": 144
    },
    "sem_un": 0
   },
