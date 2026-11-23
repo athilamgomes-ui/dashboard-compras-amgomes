@@ -192,28 +192,6 @@
  ],
  "fora_curva": [
   {
-   "loja": "L1",
-   "nf": "22257",
-   "forn": "BRK LABORATORIOS LTDA",
-   "qt": 258,
-   "data": "2026-11-03",
-   "marcas": {
-    "Bellkit": 258
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L4",
-   "nf": "22258",
-   "forn": "BRK LABORATORIOS LTDA",
-   "qt": 258,
-   "data": "2026-11-03",
-   "marcas": {
-    "Bellkit": 258
-   },
-   "sem_un": 0
-  },
-  {
    "loja": "L5",
    "nf": "22256",
    "forn": "BRK LABORATORIOS LTDA",
@@ -369,17 +347,6 @@
    "data": "2026-10-30",
    "marcas": {
     "Dona Pele": 150
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L4",
-   "nf": "28353",
-   "forn": "VISAO COSMETICOS LTDA",
-   "qt": 770,
-   "data": "2026-10-22",
-   "marcas": {
-    "Softhair": 770
    },
    "sem_un": 0
   },
