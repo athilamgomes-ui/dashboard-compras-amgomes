@@ -251,28 +251,6 @@
    "sem_un": 0
   },
   {
-   "loja": "L1",
-   "nf": "148209",
-   "forn": "BECOREL BELEZA COMERCIO DE COSMETI",
-   "qt": 394,
-   "data": "2026-11-04",
-   "marcas": {
-    "Igora": 394
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L3",
-   "nf": "52",
-   "forn": "PALLOMA BROQUINI PINTO",
-   "qt": 224,
-   "data": "2026-10-28",
-   "marcas": {
-    "Natum": 224
-   },
-   "sem_un": 0
-  },
-  {
    "loja": "L3",
    "nf": "196",
    "forn": "DISTRIBUIDORA DE COSMETICOS TIBIA ",
@@ -370,17 +348,6 @@
    "data": "2026-10-31",
    "marcas": {
     "Cadiveu": 24
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L4",
-   "nf": "148216",
-   "forn": "BECOREL BELEZA COMERCIO DE COSMETI",
-   "qt": 394,
-   "data": "2026-11-04",
-   "marcas": {
-    "Igora": 394
    },
    "sem_un": 0
   },
@@ -496,23 +463,34 @@
   },
   {
    "loja": "L5",
-   "nf": "35007",
-   "forn": "BLUE COSMETICS COMERCIO E DISTRIBU",
-   "qt": 498,
-   "data": "2026-10-22",
-   "marcas": {
-    "Widi Care": 498
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L5",
    "nf": "41387",
    "forn": "IMBECOR Produtos de Beleza Ltda.",
    "qt": 521,
    "data": "2026-10-31",
    "marcas": {
     "Kiss": 521
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "115628",
+   "forn": "EL BEAUTY COSMETICOS COMERCIO IMPO",
+   "qt": 436,
+   "data": "2026-11-23",
+   "marcas": {
+    "Felps": 436
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "115630",
+   "forn": "EL BEAUTY COSMETICOS COMERCIO IMPO",
+   "qt": 9,
+   "data": "2026-11-23",
+   "marcas": {
+    "Felps": 9
    },
    "sem_un": 0
   },
@@ -540,17 +518,6 @@
   },
   {
    "loja": "L5",
-   "nf": "148189",
-   "forn": "BECOREL BELEZA COMERCIO DE COSMETI",
-   "qt": 478,
-   "data": "2026-11-04",
-   "marcas": {
-    "Igora": 478
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L5",
    "nf": "711154",
    "forn": "FLORENCE INDUSTRIAL E COMERCIAL LT",
    "qt": 269,
@@ -568,6 +535,17 @@
    "data": "2026-11-12",
    "marcas": {
     "Marco Boni": 138
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "735664",
+   "forn": "SANTA CLARA MANUFATURA E COSMETICO",
+   "qt": 1833,
+   "data": "2026-11-23",
+   "marcas": {
+    "Santa Clara": 1833
    },
    "sem_un": 0
   },
