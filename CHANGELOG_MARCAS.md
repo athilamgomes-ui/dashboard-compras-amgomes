@@ -530,3 +530,8 @@ mapeamento. Após mapear: 15/15 preços associados.
 - **MCR PROFESSIONAL COMERCIO DE ARTIGOS DE TOUCADOR LTDA** (CNPJ 24742869000250) → **MQ**, código ERP **930**.
 - Motivo: NF **27473** entrou na L1 (R$ 12.126, 13 itens) como *marca não mapeada* no dashboard de precificação; Athila informou.
 - Alterações: `marca_ids.json` (MQ=[930]) + `fornecedor_marcas.json` `por_cnpj`.
+
+## 2026-11-26 — AMMO Beauty (855)
+- **EAP COMERCIO, DISTRIBUICAO, IMP. E EXP. DE COSMETICOS LTDA** (CNPJ 25086167000148) → **AMMO Beauty**, código ERP **855**.
+- Motivo: NFs 39341 (L1), 39338 (L4) e 38799 (L5) entraram como *marca não mapeada* no dashboard de precificação; Athila informou.
+- Alterações: `marca_ids.json` (AMMO Beauty=[855]) + `fornecedor_marcas.json` `por_cnpj`.
