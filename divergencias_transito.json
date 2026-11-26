@@ -38,15 +38,6 @@
   },
   {
    "loja": "L1",
-   "nf": "39397",
-   "forn": "EAP COMERCIO, DISTRIBUICAO, IMP. E",
-   "qt": 526,
-   "data": "2026-11-10",
-   "marcas": {},
-   "sem_un": 526
-  },
-  {
-   "loja": "L1",
    "nf": "168802",
    "forn": "LABOTRAT DISTRIBUIDORA DE PRODUTOS",
    "qt": 504,
@@ -128,15 +119,6 @@
   },
   {
    "loja": "L5",
-   "nf": "39398",
-   "forn": "EAP COMERCIO, DISTRIBUICAO, IMP. E",
-   "qt": 738,
-   "data": "2026-11-10",
-   "marcas": {},
-   "sem_un": 738
-  },
-  {
-   "loja": "L5",
    "nf": "168773",
    "forn": "LABOTRAT DISTRIBUIDORA DE PRODUTOS",
    "qt": 756,
@@ -145,7 +127,30 @@
    "sem_un": 756
   }
  ],
- "fora_curva": [],
+ "fora_curva": [
+  {
+   "loja": "L1",
+   "nf": "39397",
+   "forn": "EAP COMERCIO, DISTRIBUICAO, IMP. E",
+   "qt": 526,
+   "data": "2026-11-10",
+   "marcas": {
+    "AMMO Beauty": 526
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "39398",
+   "forn": "EAP COMERCIO, DISTRIBUICAO, IMP. E",
+   "qt": 738,
+   "data": "2026-11-10",
+   "marcas": {
+    "AMMO Beauty": 738
+   },
+   "sem_un": 0
+  }
+ ],
  "curva_nao_refletida": [],
  "ok": [
   {
