@@ -38,15 +38,6 @@
   },
   {
    "loja": "L1",
-   "nf": "39341",
-   "forn": "EAP COMERCIO, DISTRIBUICAO, IMP. E",
-   "qt": 294,
-   "data": "2026-11-04",
-   "marcas": {},
-   "sem_un": 294
-  },
-  {
-   "loja": "L1",
    "nf": "39397",
    "forn": "EAP COMERCIO, DISTRIBUICAO, IMP. E",
    "qt": 526,
@@ -110,15 +101,6 @@
   },
   {
    "loja": "L4",
-   "nf": "39338",
-   "forn": "EAP COMERCIO, DISTRIBUICAO, IMP. E",
-   "qt": 294,
-   "data": "2026-11-04",
-   "marcas": {},
-   "sem_un": 294
-  },
-  {
-   "loja": "L4",
    "nf": "138455",
    "forn": "TELEFONICA BRASIL S.A.",
    "qt": 1,
@@ -161,48 +143,9 @@
    "data": "2026-11-13",
    "marcas": {},
    "sem_un": 756
-  },
-  {
-   "loja": "L5",
-   "nf": "1287071",
-   "forn": "BELLIZ IND. COM. IMP. E EXP. LTDA",
-   "qt": 202,
-   "data": "2026-10-31",
-   "marcas": {},
-   "sem_un": 202
-  },
-  {
-   "loja": "L5",
-   "nf": "1287072",
-   "forn": "BELLIZ IND. COM. IMP. E EXP. LTDA",
-   "qt": 48,
-   "data": "2026-10-31",
-   "marcas": {},
-   "sem_un": 48
-  },
-  {
-   "loja": "L5",
-   "nf": "1287074",
-   "forn": "BELLIZ IND. COM. IMP. E EXP. LTDA",
-   "qt": 36,
-   "data": "2026-10-31",
-   "marcas": {},
-   "sem_un": 36
   }
  ],
- "fora_curva": [
-  {
-   "loja": "L5",
-   "nf": "22256",
-   "forn": "BRK LABORATORIOS LTDA",
-   "qt": 739,
-   "data": "2026-11-03",
-   "marcas": {
-    "Bellkit": 739
-   },
-   "sem_un": 0
-  }
- ],
+ "fora_curva": [],
  "curva_nao_refletida": [],
  "ok": [
   {
@@ -293,18 +236,6 @@
     "Igora": 746
    },
    "sem_un": 0
-  },
-  {
-   "loja": "L4",
-   "nf": "58",
-   "forn": "PALLOMA BROQUINI PINTO",
-   "qt": 1923,
-   "data": "2026-11-06",
-   "marcas": {
-    "Natum": 744,
-    "Hair Extrattus": 1167
-   },
-   "sem_un": 12
   },
   {
    "loja": "L4",
@@ -408,39 +339,6 @@
   },
   {
    "loja": "L5",
-   "nf": "195",
-   "forn": "DISTRIBUIDORA DE COSMETICOS TIBIA ",
-   "qt": 36,
-   "data": "2026-11-13",
-   "marcas": {
-    "Wella": 36
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L5",
-   "nf": "1401",
-   "forn": "HAUSEN E SCHULTZ COMERCIAL LTDA",
-   "qt": 80,
-   "data": "2026-10-29",
-   "marcas": {
-    "Dagua Natural": 80
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L5",
-   "nf": "3037",
-   "forn": "CBB INDUSTRIA E COMERCIO DE PRODUT",
-   "qt": 828,
-   "data": "2026-11-10",
-   "marcas": {
-    "CBB": 828
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L5",
    "nf": "15711",
    "forn": "GARDO COSMETICOS LTDA",
    "qt": 144,
@@ -458,17 +356,6 @@
    "data": "2026-11-16",
    "marcas": {
     "Repos": 510
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L5",
-   "nf": "41387",
-   "forn": "IMBECOR Produtos de Beleza Ltda.",
-   "qt": 521,
-   "data": "2026-10-31",
-   "marcas": {
-    "Kiss": 521
    },
    "sem_un": 0
   },
