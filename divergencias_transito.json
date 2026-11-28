@@ -125,6 +125,60 @@
    "data": "2026-11-13",
    "marcas": {},
    "sem_un": 756
+  },
+  {
+   "loja": "L5",
+   "nf": "203897",
+   "forn": "EXECUTIVA DISTRIBUIDORA LTDA",
+   "qt": 276,
+   "data": "2026-11-26",
+   "marcas": {},
+   "sem_un": 276
+  },
+  {
+   "loja": "L5",
+   "nf": "1291597",
+   "forn": "BELLIZ IND. COM. IMP. E EXP. LTDA",
+   "qt": 58,
+   "data": "2026-11-26",
+   "marcas": {},
+   "sem_un": 58
+  },
+  {
+   "loja": "L5",
+   "nf": "1291598",
+   "forn": "BELLIZ IND. COM. IMP. E EXP. LTDA",
+   "qt": 444,
+   "data": "2026-11-26",
+   "marcas": {},
+   "sem_un": 444
+  },
+  {
+   "loja": "L5",
+   "nf": "1291599",
+   "forn": "BELLIZ IND. COM. IMP. E EXP. LTDA",
+   "qt": 10,
+   "data": "2026-11-26",
+   "marcas": {},
+   "sem_un": 10
+  },
+  {
+   "loja": "L5",
+   "nf": "1291601",
+   "forn": "BELLIZ IND. COM. IMP. E EXP. LTDA",
+   "qt": 11,
+   "data": "2026-11-26",
+   "marcas": {},
+   "sem_un": 11
+  },
+  {
+   "loja": "L5",
+   "nf": "1291602",
+   "forn": "BELLIZ IND. COM. IMP. E EXP. LTDA",
+   "qt": 22,
+   "data": "2026-11-26",
+   "marcas": {},
+   "sem_un": 22
   }
  ],
  "fora_curva": [
@@ -200,17 +254,6 @@
   },
   {
    "loja": "L3",
-   "nf": "196",
-   "forn": "DISTRIBUIDORA DE COSMETICOS TIBIA ",
-   "qt": 36,
-   "data": "2026-11-13",
-   "marcas": {
-    "Wella": 36
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L3",
    "nf": "40541",
    "forn": "IMBECOR Produtos de Beleza Ltda.",
    "qt": 496,
@@ -278,17 +321,6 @@
   },
   {
    "loja": "L4",
-   "nf": "119253",
-   "forn": "Tricosmeticos Distribuidora de Cos",
-   "qt": 24,
-   "data": "2026-10-31",
-   "marcas": {
-    "Cadiveu": 24
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L4",
    "nf": "224269",
    "forn": "LOGIKA DISTRIBUIDORA DE COSMETICOS",
    "qt": 1434,
@@ -344,6 +376,17 @@
   },
   {
    "loja": "L5",
+   "nf": "1243",
+   "forn": "R S COMERCIO E INDUSTRIA DE ELETRO",
+   "qt": 30,
+   "data": "2026-11-25",
+   "marcas": {
+    "Kizzen": 30
+   },
+   "sem_un": 0
+  },
+  {
+   "loja": "L5",
    "nf": "15711",
    "forn": "GARDO COSMETICOS LTDA",
    "qt": 144,
@@ -388,23 +431,12 @@
   },
   {
    "loja": "L5",
-   "nf": "119085",
-   "forn": "Tricosmeticos Distribuidora de Cos",
-   "qt": 198,
-   "data": "2026-10-31",
+   "nf": "206910",
+   "forn": "Network Beauty Fashion Cosmetica L",
+   "qt": 704,
+   "data": "2026-11-26",
    "marcas": {
-    "Cadiveu": 198
-   },
-   "sem_un": 0
-  },
-  {
-   "loja": "L5",
-   "nf": "119126",
-   "forn": "Tricosmeticos Distribuidora de Cos",
-   "qt": 76,
-   "data": "2026-10-31",
-   "marcas": {
-    "Cadiveu": 76
+    "Itallian": 704
    },
    "sem_un": 0
   },
@@ -452,6 +484,17 @@
     "Mundial": 308
    },
    "sem_un": 0
+  },
+  {
+   "loja": "L5",
+   "nf": "1291596",
+   "forn": "BELLIZ IND. COM. IMP. E EXP. LTDA",
+   "qt": 1190,
+   "data": "2026-11-26",
+   "marcas": {
+    "Belliz": 90
+   },
+   "sem_un": 1100
   }
  ]
 }
